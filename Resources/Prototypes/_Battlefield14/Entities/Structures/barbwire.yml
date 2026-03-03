@@ -55,6 +55,11 @@
     soundGroups:
       Brute:
         path: /Audio/Weapons/grille_hit.ogg
+  - type: BarbedWire
+  - type: Barbed
+    thornsDamage:
+      types:
+        Slash: 10
   - type: Destructible
     thresholds:
     - trigger: !type:DamageTrigger
