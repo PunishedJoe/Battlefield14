@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackRucksackBlack
+  name: black rucksack
+  description: A combat-ready rucksack in fashionable tan.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Back/rucksackblack.rsi
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBackpackRucksackTan
+  name: tan rucksack
+  description: A combat-ready rucksack in fashionable black.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Back/rucksacktan.rsi

@@ -1,0 +1,9 @@
+- type: loadout
+  id: LoadoutMaskBF14NeckGaiter
+  equipment:
+    mask: ClothingMaskNeckGaiter
+
+- type: loadout
+  id: LoadoutMaskBF14MilitaryBalaclava
+  equipment:
+    balaclava: ClothingBalaclavaMilitary

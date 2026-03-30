@@ -3,8 +3,8 @@
 - type: entity
   parent: BaseItem
   id: ArmorPlateLight
-  name: durathread plate
-  description: A lightweight protective plate made from advanced durathread fibers. Initially manufactured by Aether, but the process has long been reverse-engineered.
+  name: kevlar insert # BF14
+  description: A lightweight protective kevlar insert, made to protect against pistol-class threats. # BF14
   suffix: Light
   components:
   - type: Sprite
@@ -14,29 +14,36 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 25
-    walkSpeedModifier: 0.94
-    sprintSpeedModifier: 0.94
-    staminaDamageMultiplier: 1.0
+    maxDurability: 60 # BF14
+    walkSpeedModifier: 1 # BF14
+    sprintSpeedModifier: 1 # BF14
+    staminaDamageMultiplier: 0.3 # BF14
     absorptionRatios:
       Piercing: 1
+      Structural: 1 # BF14
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 25
+        damage: 60 #BF14
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior #BF14
+        sound:
+          path: /Audio/_Battlefield14/Effects/armor_break.ogg
+          params:
+            volume: 5
+            variation: 0.125
 
 # Ceramic
 - type: entity
   parent: BaseItem
   id: ArmorPlateMedium
   name: ceramic plate
-  description: A medium-weight ceramic composite plate manufactured with a material process proprietary to Aether.
+  description: Ceramic armour absorbs impacts by using ceramic tiles that the bullet breaks on impact instead of you, uncountable soldiers depend on this kind of plate to save their life. # BF14
   suffix: Medium
   components:
   - type: Sprite
@@ -46,29 +53,36 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 50
-    walkSpeedModifier: 0.92
-    sprintSpeedModifier: 0.92
-    staminaDamageMultiplier: 1.0
+    maxDurability: 120 # BF14
+    walkSpeedModifier: 0.98 # BF14
+    sprintSpeedModifier: 0.98 # BF14
+    staminaDamageMultiplier: 0.15 # BF14
     absorptionRatios:
       Piercing: 1
+      Structural: 1 # BF14
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 120 #BF14
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior #BF14
+        sound:
+          path: /Audio/_Battlefield14/Effects/armor_break.ogg
+          params:
+            volume: 5
+            variation: 0.125
 
 # Plasteel
 - type: entity
   parent: BaseItem
   id: ArmorPlateTactical
-  name: plasteel plate
-  description: A heavy-duty plasteel plate manufactured by a layered cold-stamping process proprietary to Aether.
+  name: heavy steel plate
+  description: A heavy-duty steel plate manufactured to take multiple high-caliber shots to the same area. # BF14
   suffix: Tactical
   components:
   - type: Sprite
@@ -78,22 +92,29 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_tactical.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 75
-    walkSpeedModifier: 0.90
-    sprintSpeedModifier: 0.90
-    staminaDamageMultiplier: 1.0
+    maxDurability: 200 # BF14
+    walkSpeedModifier: 9.6 # BF14
+    sprintSpeedModifier: 9.6 # BF14
+    staminaDamageMultiplier: 0.15 # BF14
     absorptionRatios:
       Piercing: 1
+      Structural: 1 # BF14
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 75
+        damage: 200 # BF14
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior #BF14
+        sound:
+          path: /Audio/_Battlefield14/Effects/armor_break.ogg
+          params:
+            volume: 5
+            variation: 0.125
 
 # Plastitanium
 - type: entity
@@ -110,22 +131,29 @@
     sprite: _Mono/Clothing/ArmorPlate/armor_plastitanium.rsi
     size: Normal
   - type: ArmorPlateItem
-    maxDurability: 100
-    walkSpeedModifier: 1.0
-    sprintSpeedModifier: 1.0
-    staminaDamageMultiplier: 0.0
+    maxDurability: 300 # BF14
+    walkSpeedModifier: 0.94 # BF14
+    sprintSpeedModifier: 0.94 # BF14
+    staminaDamageMultiplier: 0.0 # BF14
     absorptionRatios:
       Piercing: 1
+      Structural: 1 # BF14
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: StructuralInorganic # BF14
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 350
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior #BF14
+        sound:
+          path: /Audio/_Battlefield14/Effects/armor_break.ogg
+          params:
+            volume: 5
+            variation: 0.125
 
 #PLATE EXPANSION PACK
 # Refractive

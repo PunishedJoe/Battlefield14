@@ -1,0 +1,263 @@
+# US
+- type: entity
+  name: M320
+  parent: WeaponFlareGun
+  id: WeaponGrenadeLauncherUSM320
+  description: The United States replacement to the classic M203 that allows for loading of longer cartridges, which despite contract requirements is heavier than the M203.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Normal
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
+    storedSprite:
+      sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
+      state: storage
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+
+- type: entity
+  name: M320
+  parent: WeaponGrenadeLauncherUSM320
+  id: WeaponGrenadeLauncherUSM320HE
+  suffix: loaded, HE
+  components:
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge40x46mmHE
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+
+- type: entity
+  name: M320
+  parent: WeaponGrenadeLauncherUSM320
+  id: WeaponGrenadeLauncherUSM320HEDP
+  suffix: loaded, HEDP
+  components:
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge40x46mmHEDP
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+
+- type: entity
+  name: M320
+  parent: WeaponGrenadeLauncherUSM320
+  id: WeaponGrenadeLauncherUSM320Frag
+  suffix: loaded, Frag
+  components:
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge40x46mmFrag
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+
+- type: entity
+  name: M79 (Embiggened)
+  parent: WeaponFlareGun
+  id: WeaponGrenadeLauncherUSM79Big
+  description: An M79 grenade launcher big enough to fire 120mm cartridges. It's reccomended to prop it up on a rock or something before firing.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M79big.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+    scale: 1.5, 1.5
+  - type: Item
+    size: Huge
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M79big.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M79big.rsi
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    boltClosed: false
+    canRack: false
+    soundBoltClosed: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+    soundBoltOpened: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge120mm
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: Gun
+    fireRate: 1
+    projectileSpeed: 40
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: GunRequiresWield
+
+- type: entity
+  name: M-25 "Punisher" smart grenade launcher
+  parent: BaseWeaponRifle
+  id: WeaponGrenadeLauncherUSXM25
+  description: No longer just a prototype; fires highly customisable and highly lethal 25x40mm projectiles with a variety of payloads.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/XM25.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/XM25.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -20
+  - type: Gun
+    minAngle: 16
+    maxAngle: 30
+    angleIncrease: 3
+    projectileSpeed: 40
+    fireRate: 2
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    soundGunshot:
+      collection: BF_M16_Gunshots # change later
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineGrenadeLauncherXM25HE
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineGrenadeLauncherXM25
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeGrenade25x40HE
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeGrenade25x40
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
+  - type: GunRequiresWield
+
+# PACT
+
+- type: entity
+  name: GM-94
+  parent: [BaseWeaponLauncher, BaseGunWieldable]
+  id: WeaponGrenadeLauncherRUGM94
+  description: An odd design, loaded from the top into a magazine tube, and then pumped, like a shotgun. Brings to mind the M90A from Halo™.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/GM94.rsi
+    layers:
+      - state: icon
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/GM94.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: AmmoCounter
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    minAngle: 3
+    maxAngle: 6
+    angleIncrease: 3
+    fireRate: 0.75
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+        - Cartridge43x30mmGrenade
+    capacity: 3
+#    proto: Cartridge43x30mmHEFrag
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: GunRequiresWield
+
+- type: entity
+  parent: WeaponGrenadeLauncherRUGM94
+  id: WeaponGrenadeLauncherRUGM94HEFrag
+  suffix: HE-Frag
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge43x30mmHEFrag
+
+- type: entity
+  parent: WeaponGrenadeLauncherRUGM94
+  id: WeaponGrenadeLauncherRUGM94Thermobaric
+  suffix: Thermobaric
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge43x30mmThermobaric
+
+- type: entity
+  parent: WeaponGrenadeLauncherRUGM94
+  id: WeaponGrenadeLauncherRUGM94ChemicalSmoke
+  suffix: CS Gas
+  components:
+  - type: BallisticAmmoProvider
+    proto: Cartridge43x30mmChemicalSmoke

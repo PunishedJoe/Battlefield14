@@ -3,7 +3,8 @@
                       xmlns:ui="clr-namespace:Content.Client.Shuttles.UI"
                       Title="{Loc 'radar-console-window-title'}"
                       SetSize="648 672"
-                      MinSize="256 256">
+                      MinSize="648 740">
+                      <!-- BF14 - MinSize changed to 648, 740 because else it does not display properly; elongated vertically so the sonar interface fits, if enabled -->
     <ui:ShuttleNavControl Name="RadarScreen"
                      Margin="4"
                      HorizontalExpand = "True"

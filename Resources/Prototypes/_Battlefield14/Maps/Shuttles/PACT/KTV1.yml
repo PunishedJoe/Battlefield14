@@ -1,0 +1,27 @@
+- type: vessel
+  id: KTV1
+  parent: BaseVesselAntag
+  name: VDV KTV-1
+  description: A whole new design of boarding craft, for the final frontier.
+  price: 10000
+  purchasable: false # voucher only, money doesn't matter
+  category: Small
+  shuttlePath: /Maps/_Battlefield14/Shuttles/PACT/KTV1.yml
+
+- type: gameMap
+  id: KTV1
+  mapName: 'VDV KTV1'
+  mapPath: /Maps/_Battlefield14/Shuttles/PACT/KTV1.yml
+  minPlayers: 0
+  stations:
+    KTV1:
+      stationProto: StandardFrontierSecurityVessel
+      gridComponents:
+      - type: VesselInfo
+        description: "A whole new design of boarding craft, for the final frontier."
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'VDV KTV-1 {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'

@@ -1,0 +1,58 @@
+## NATO
+# US
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponNATOUSLauncher
+  name: random NATO US launcher crate
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAW.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - CrateSecgearNATOFilledSMAW
+      - CrateSecgearNATOFilledSMAWDisposable
+      - CrateSecgearNATOFilledAT4
+    chance: 1
+
+## PACT
+# RU
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponPACTRUSniper
+  name: random PACT RU sniper crate
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - CrateSecgearPACTFilledSV98
+      - CrateSecgearPACTFilledSVDS
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponPACTRULauncher
+  name: random PACT RU launcher crate
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG7.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - CrateSecgearPACTFilledRPG7
+      - CrateSecgearPACTFilledRPG26Thermobaric
+      - CrateSecgearPACTFilledRPG30
+    chance: 1

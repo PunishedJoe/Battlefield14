@@ -52,9 +52,9 @@
     - Belt
   - type: Item
     sprite: _NF/Objects/Tools/crowbar.rsi # Frontier: _NF prefix
-    size: Normal
-    shape:
-    - 0,0,0,1
+    size: Small # BF14
+#    shape: BF14
+#    - 0,0,0,1
   - type: Tweezers # Shitmed
     speed: 0.55
   - type: SurgeryTool # Shitmed

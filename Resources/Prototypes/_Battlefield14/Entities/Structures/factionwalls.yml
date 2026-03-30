@@ -1,0 +1,113 @@
+#faction-flagged walls to guide autoturret targeting
+
+# base
+
+- type: entity # cant parent off WallPlastitanium because it's weird and piercing is fucked otherwise
+  parent: [ BaseWall , BaseWallTierThree ]
+  id: BaseWallPlastitaniumBF14
+  name: plastitanium wall
+  description: Skub knows this wall is too hard to destroy.
+  suffix: BF14
+  components:
+  - type: Tag
+    tags:
+    - Wall
+  - type: Sprite
+    sprite: Structures/Walls/plastitanium.rsi
+  - type: Icon
+    sprite: Structures/Walls/plastitanium.rsi
+  - type: IconSmooth
+    key: walls
+    base: plastitanium
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 9000
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: RadiationBlocker
+    resistance: 5
+  - type: StaticPrice
+    price: 110 # Mono
+  - type: ArmorThickness
+    thickness: 8
+
+#plastitanium
+
+- type: entity
+  parent: BaseWallPlastitaniumBF14
+  id: WallPlastitaniumNATO
+  suffix: NATO Warship
+  components:
+  - type: NpcFactionMember
+    factions:
+      - NATOWarship
+  - type: ArmorThickness
+    thickness: 8
+
+- type: entity
+  parent: BaseWallPlastitaniumBF14
+  id: WallPlastitaniumPACT
+  suffix: PACT Warship
+  components:
+  - type: NpcFactionMember
+    factions:
+      - PACTWarship
+  - type: ArmorThickness
+    thickness: 8
+
+#reinforced
+
+- type: entity
+  parent: WallReinforced
+  id: WallReinforcedNATO
+  suffix: NATO Warship
+  components:
+  - type: NpcFactionMember
+    factions:
+      - NATOWarship
+  - type: ArmorThickness
+    thickness: 3
+
+- type: entity
+  parent: WallReinforced
+  id: WallReinforcedPACT
+  suffix: PACT Warship
+  components:
+  - type: NpcFactionMember
+    factions:
+      - PACTWarship
+  - type: ArmorThickness
+    thickness: 3
+
+#shuttlewalls
+
+- type: entity
+  parent: WallShuttle
+  id: WallShuttleNATO
+  suffix: NATO Warship
+  components:
+  - type: NpcFactionMember
+    factions:
+      - NATOWarship
+  - type: ArmorThickness
+    thickness: 3
+
+- type: entity
+  parent: WallShuttle
+  id: WallShuttlePACT
+  suffix: PACT Warship
+  components:
+  - type: NpcFactionMember
+    factions:
+      - PACTWarship
+  - type: ArmorThickness
+    thickness: 3

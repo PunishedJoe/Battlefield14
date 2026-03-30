@@ -99,9 +99,10 @@
         amount: 2
       - id: Ointment
         amount: 1
-      - id: Bloodpack
-        amount: 1
+#BF14      - id: Bloodpack
+#BF14        amount: 1
       - id: Gauze
+        amount: 2 # BF14
       - id: EmergencyMedipen #You never know what people are going to latejoin into
 
 - type: entity
@@ -113,7 +114,7 @@
     contents:
       - id: Brutepack
       - id: Ointment
-      - id: Bloodpack
+#      - id: Bloodpack # BF14
       - id: Gauze
       - id: EmergencyMedipen #You never know what people are going to latejoin into
         amount: 3

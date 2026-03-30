@@ -75,6 +75,7 @@
   description: drake-industries-description
   color: "#C97D7D"
   image: /Textures/_Mono/Companies/drake_industries.png
+  disabled: true # BF14
 
 - type: company
   id: SteelHammerManufacturing
@@ -83,6 +84,7 @@
   description: steel-hammer-description
   color: "#92a2a1"
   image: /Textures/_Mono/Companies/steel_hammer.png
+  disabled: true # BF14
 
 - type: company
   id: HarmonyMedicalEnterprises
@@ -91,6 +93,7 @@
   description: harmony-medical-enterprises-description
   color: "#FC7303"
   image: /Textures/_Mono/Companies/HME.png
+  disabled: true # BF14
 
 - type: company
   id: MidnightArmsCo
@@ -99,13 +102,14 @@
   description: midnight-arms-co-description
   color: "#FF2E2E"
   image: /Textures/_Mono/Companies/MACo.png
+  disabled: true # BF14
 
 - type: company
   id: USSP
   form: Antagonist
   name: USSP
   color: "#B01340"
-  disabled: false # Mercs are now USSP-pilled.
+  disabled: true # BF14 # Mercs are now USSP-pilled.
   description: ussp-description
 
 # Major companies
@@ -117,6 +121,7 @@
   description: dark-matter-enterprises-description
   color: "#BF00B9"
   image: /Textures/_Mono/Companies/dme.png #DME Logo
+  disabled: true # BF14
 
 - type: company
   id: AetherionDynamics
@@ -124,6 +129,7 @@
   name: Aetherion Dynamics
   description: aetherion-dynamics-description
   color: "#7E72B2"
+  disabled: true # BF14
 
 - type: company
   id: HorizonEnergy
@@ -132,6 +138,7 @@
   description: horizon-energy-description
   color: "#69E37F"
   image: /Textures/_Mono/Companies/horizon_energy.png
+  disabled: true # BF14
 
 
 # Minor companies
@@ -143,6 +150,7 @@
   description: universal-states-of-america-description
   color: "#0A3161"
   image: /Textures/_Mono/Companies/UNSA.png
+  disabled: true # BF14
 
 - type: company
   id: CivilDefenseMilita
@@ -150,6 +158,7 @@
   name: Civil Defense Militia
   description: civil-defense-milita-description
   color: "#666600"
+  disabled: true # BF14
 
 - type: company
   id: UllmanIndustries
@@ -158,6 +167,7 @@
   description: ullman-industries-description
   color: "#52326A"
   image: /Textures/_Mono/Companies/ullman_industries.png
+  disabled: true # BF14
 
 - type: company
   id: NosskeEienResearchandDevelopment
@@ -166,6 +176,7 @@
   description: nosske-eien-rnd-description
   color: "#9573AF"
   image: /Textures/_Mono/Companies/ne_rd.png
+  disabled: true # BF14
 
 - type: company
   id: blackhawkpmc
@@ -174,6 +185,7 @@
   description: blackhawkpmc-description
   color: "#419E23"
   image: /Textures/_Mono/Companies/BMC.png
+  disabled: true # BF14
 
 
 # Religious groups
@@ -199,6 +211,7 @@
   name: The Hive
   description: The-Hive-description
   color: "#5918a8"
+  disabled: true # BF14
 
 # Black Market Companies
 
@@ -208,6 +221,7 @@
   name: Paycheck Bratva
   description: paycheck-bratva-description
   color: "#7a0303"
+  disabled: true # BF14
 
 - type: company
   id: CerberusSurplusProvisions

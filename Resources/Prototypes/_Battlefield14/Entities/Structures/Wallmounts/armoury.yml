@@ -1,0 +1,110 @@
+- type: entity
+  id: StructureGunRackSingle
+  name: gun rack
+  parent: StructureGunRackWallmounted
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      weapon:
+        insertVerbText: weapon-rack-verb-insert-weapon-01
+        ejectVerbText: weapon-rack-verb-eject-weapon-01
+        name: Weapon
+        whitelist:
+          components:
+          - Gun
+      ammunition:
+        insertVerbText: weapon-rack-verb-insert-weapon-02
+        ejectVerbText: weapon-rack-verb-eject-weapon-02
+        name: Ammunition
+        whitelist:
+          tags:
+          - BoxCardboard
+          - Magazine
+  - type: Sprite
+    layers:
+    - state: base-pistol
+      color: "#515e5e"
+    - state: lock
+      color: "#515e5e"
+    - state: pistol-0
+    - map: ["enum.StorageFillLayers.Fill"]
+    - state: locked
+      map: [ enum.LockVisualLayers.Lock ]
+      shader: unshaded
+  - type: AccessReader
+  - type: LockVisuals
+  - type: Lock
+    locked: true
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+
+- type: entity
+  id: StructureRackLockWallmountedSingle
+  parent: StructurePistolRackLock
+  name: defence weapon locker
+  components:
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    layers:
+    - state: base-pistol-wall
+      color: "#515e5e"
+    - state: lock
+      color: "#515e5e"
+    - state: pistol-0
+    - map: ["enum.StorageFillLayers.Fill"]
+    - state: locked
+      map: [ enum.LockVisualLayers.Lock ]
+      shader: unshaded
+  - type: Storage
+    grid:
+    - 0,0,3,5
+    maxItemSize: Ginormous
+    whitelist:
+      components:
+      - Gun
+      tags:
+      - BoxCardboard
+      - Magazine
+  - type: Lock
+    locked: true
+
+# fills
+
+## NATO
+# US
+- type: entity
+  parent: StructureRackLockWallmountedSingle
+  id: StructureRackLockWallmountedSingleFilledNATOUSCaptainM30
+  suffix: Filled, NATO, Captain, M-30 MR-C
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifleUSM30MRC
+      - id: Magazine68x52mmCaseless
+        amount: 4
+  - type: AccessReader
+    access: [ ["NATOCaptain"] ]
+  - type: Lock
+    locked: true
+
+
+## PACT
+# RU
+- type: entity
+  parent: StructureRackLockWallmountedSingle
+  id: StructureRackLockWallmountedSingleFilledPACTRUCaptainAKS74U
+  suffix: Filled, PACT, Captain, AKS-74u
+  components:
+  - type: StorageFill
+    contents:
+      - id: WeaponRifleRUAKS74U
+      - id: MagazineRifleAK74
+        amount: 4
+  - type: AccessReader
+    access: [ ["PACTCaptain"] ]
+  - type: Lock
+    locked: true

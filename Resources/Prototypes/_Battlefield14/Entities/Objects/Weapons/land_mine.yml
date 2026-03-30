@@ -1,0 +1,49 @@
+- type: entity
+  name: TM-62
+  description: FUCK CQB, SLAVIC USE TM-62
+  parent: BaseLandMine
+  id: TM62
+  components:
+#  - type: Item # Lets you pick it up and toss it, but also detonates instantly when it touches any entity
+#    size: Large
+  - type: Sprite
+    drawdepth: Items
+    sprite: _Battlefield14/Objects/Weapons/Landmines/TM62.rsi
+    state: icon
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 10
+    intensitySlope: 3
+    totalIntensity: 120 # about a 4-5 tile radius
+    canCreateVacuum: true
+  - type: StepTrigger
+    requiredTriggeredSpeed: 2.5 # lets you crawl but not walk over it
+#    stepOn: false
+#  - type: DamageOtherOnHit # Only for if you can pick it up
+#    damage:
+#      types:
+#        Blunt: 12
+#    soundHit:
+#      collection: MetalThud
+#    staminaCost: 60
+#  - type: Tool
+#    qualities:
+#    - Hammering # hammering shit with a fucking anti-tank mine lololol unknown technology blyat
+#    useSound:
+#      path: /Audio/Items/wirecutter.ogg # placeholder
+  - type: TriggerOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Trigger
+
+- type: entity
+  parent: BaseFlatpack
+  id: TM62Flatpack
+  name: TM-62 flatpack
+  description: A flatpack with a single TM-62 inside, opened with a multitool.
+  components:
+  - type: Flatpack
+    entity: TM62
+  - type: Item
+    size: Normal

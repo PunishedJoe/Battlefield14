@@ -1,0 +1,23 @@
+{
+  "license": "CC-BY-3.0",
+  "copyright": "Taken from HaloSSE at https://github.com/HaloSpaceStation/HaloSpaceStation13/pull/3442/changes/960d3351d4656e8a76d19b7eec284cb941be0472",
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "biofoam"
+        },
+        {
+            "name": "biofoam_empty"
+        },
+        {
+            "name": "urf"
+        },
+        {
+            "name": "urf_empty"
+        }
+    ]
+}

@@ -1,0 +1,137 @@
+# NATO
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxIFFNATOBlue
+  name: box of blue IFF identifiers
+  description: A box full of blue IFF identifiers, for use by NATO.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckIFFBlue
+        amount: 4
+      - id: ClothingNeckIFFtapeBlue
+        amount: 4
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxIFFNATOYellow
+  name: box of yellow IFF identifiers
+  description: A box full of yellow IFF identifiers, for use by NATO.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: BF_ClothingNeckIFFYellow
+        amount: 4
+      - id: ClothingNeckIFFtapeYellow
+        amount: 4
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxIFFNATOGreen
+  name: box of green IFF identifiers
+  description: A box full of green IFF identifiers, for use by NATO.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckIFFGreen
+        amount: 4
+      - id: ClothingNeckIFFtapeGreen
+        amount: 4
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxIPOCK
+  name: IPOCK
+  description: Individual Point Of Capture Kit. Contains everything you need to safely capture a person for transport to a secondary location.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckHeadphones
+      - id: ClothingEyesBlindfold
+      - id: Handcuffs
+      - id: DrinkWaterBottleFull
+      - id: Zipties
+  - type: Sprite
+    layers:
+      - state: box_security
+
+# PACT
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxIFFPACTWhite
+  name: box of white IFF identifiers
+  description: A box full of white IFF identifiers, for use by the Warsaw Pact.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckIFFNeutral
+        amount: 4
+      - id: ClothingNeckIFFtapeWhite
+        amount: 4
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxIFFPACTRed
+  name: box of red IFF identifiers
+  description: A box full of red IFF identifiers, for use by the Warsaw Pact.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckIFFRed
+        amount: 4
+      - id: ClothingNeckIFFtapeRed
+        amount: 4
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxIFFPACTStGeorge
+  name: box of St. George IFF identifiers
+  description: A box full of IFF identifiers representing the St George's ribbon, for use by the Warsaw Pact.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: ClothingNeckIFFOrange
+        amount: 4
+      - id: ClothingNeckIFFtapeStGeorge
+        amount: 4
+  - type: Sprite
+    layers:
+      - state: box_security

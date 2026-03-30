@@ -1,0 +1,31 @@
+- type: entity
+  id: TrackingImplanterNATOUS
+  parent: BaseImplantOnlyImplanter
+  suffix: tracking, NATO US
+  components:
+    - type: Implanter
+      implant: TrackingImplantNATOUS
+
+- type: entity
+  id: TranslatorImplanterEnglish
+  parent: BaseImplantOnlyImplanter
+  suffix: translator, English
+  components:
+    - type: Implanter
+      implant: TranslatorImplantEnglish
+
+- type: entity
+  id: TrackingImplanterPACTRU
+  parent: BaseImplantOnlyImplanter
+  suffix: tracking, PACT RU
+  components:
+    - type: Implanter
+      implant: TrackingImplantPACTRU
+
+- type: entity
+  id: TranslatorImplanterRussian
+  parent: BaseImplantOnlyImplanter
+  suffix: translator, Russian
+  components:
+    - type: Implanter
+      implant: TranslatorImplantRussian

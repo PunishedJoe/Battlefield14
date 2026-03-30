@@ -106,8 +106,8 @@
   categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: AccessReader
-    access:
-    - [ Command ]
+    access: [ [ Command ] , ["NATOCommand"] , ["PACTCommand"] ] # BF14
+#BF14    - [ Command ]
   - type: EmergencyShuttleConsole
   - type: ActivatableUI
     key: enum.EmergencyConsoleUiKey.Key
@@ -143,6 +143,7 @@
         enum.WiresUiKey.Key:
           type: WiresBoundUserInterface
   - type: RadarConsole
+    maxRange: 1024 # BF14
     relativePanning: true # Mono
   - type: WorldLoader
     radius: 700 # Mono

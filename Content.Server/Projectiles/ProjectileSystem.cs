@@ -118,6 +118,13 @@ public sealed class ProjectileSystem : SharedProjectileSystem
                 {
                     component.ProjectileSpent = true;
                 }
+                else
+                {
+                    // Reset DamagedEntity to allow penetration projectiles to continue hitting things
+                    // This allows the projectile to penetrate through multiple entities
+                    component.DamagedEntity = false;
+                    Dirty(uid, component);
+                }
             }
         }
         else

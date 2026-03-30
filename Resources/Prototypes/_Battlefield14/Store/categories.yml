@@ -1,0 +1,60 @@
+## NATO
+# American
+- type: storeCategory
+  id: UplinkNATOUSWeapons
+  name: store-category-bf-weapons
+
+- type: storeCategory
+  id: UplinkNATOUSAmmo
+  name: store-category-bf-ammo
+
+- type: storeCategory
+  id: UplinkNATOUSArmour
+  name: store-category-bf-armour
+
+- type: storeCategory
+  id: UplinkNATOUSUtility
+  name: store-category-bf-utility
+
+- type: storeCategory
+  id: UplinkNATOUSMedical
+  name: store-category-bf-medical
+
+- type: storeCategory
+  id: UplinkNATOUSExplosives
+  name: store-category-bf-explosives
+
+- type: storeCategory
+  id: UplinkNATOUSShipAmmo
+  name: store-category-bf-shipammo
+
+## PACT
+# Russian
+
+- type: storeCategory
+  id: UplinkPACTRUWeapons
+  name: store-category-bf-weapons
+
+- type: storeCategory
+  id: UplinkPACTRUAmmo
+  name: store-category-bf-ammo
+
+- type: storeCategory
+  id: UplinkPACTRUArmour
+  name: store-category-bf-armour
+
+- type: storeCategory
+  id: UplinkPACTRUUtility
+  name: store-category-bf-utility
+
+- type: storeCategory
+  id: UplinkPACTRUMedical
+  name: store-category-bf-medical
+
+- type: storeCategory
+  id: UplinkPACTRUExplosives
+  name: store-category-bf-explosives
+
+- type: storeCategory
+  id: UplinkPACTRUShipAmmo
+  name: store-category-bf-shipammo

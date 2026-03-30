@@ -1,0 +1,171 @@
+# lockers with weapons pretty much
+
+# NATO | America
+
+- type: entity
+  id: LockerArmoryNATOFilledM249Para
+  suffix: Filled, M249 Para
+  parent: LockerSyndicatePersonal
+  name: M249 Para locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponMachineGunUSM249Para
+          amount: 2
+        - id: MagazineBeltBoxM249
+          amount: 4
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: LockerArmoryNATOFilledM27IAR
+  suffix: Filled, M27IAR
+  parent: LockerSyndicatePersonal
+  name: M27-IAR locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleUSM27IAR
+          amount: 5
+        - id: BoxMagazineSTANAG
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: LockerArmoryNATOFilledM320
+  suffix: Filled, M320
+  parent: LockerSyndicatePersonal
+  name: M320 locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSM320
+          amount: 2
+        - id: BoxMagazine40x46HE
+          amount: 1
+        - id: BoxMagazine40x46Frag
+          amount: 2
+        - id: BoxMagazine40x46ChemicalSmoke
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: LockerArmoryNATOFilledF22
+  parent: LockerSyndicatePersonal
+  suffix: Filled, F-22 equipment
+  name: F-22 "Raptor" equipment locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: LightFighterM61A2
+        - id: MediumFighterMaverick
+        - id: LightFighterAIM9
+        - id: LightFighterFlarePod
+        - id: CrowbarRed
+        - id: Screwdriver
+        - id: WelderIndustrial
+        - id: ClothingEyesGlassesMeson
+  - type: AccessReader
+    access: [["NATOArmory"]]
+
+# PACT | Russia
+
+- type: entity
+  id: LockerArmoryPACTFilledSV98
+  parent: LockerSyndicatePersonal
+  suffix: Filled, SV98
+  name: SV-98 locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperRUSV98
+          amount: 2
+        - id: BoxMagazineSV98AP
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledSVDS
+  parent: LockerSyndicatePersonal
+  suffix: Filled, SVDS
+  name: SVDS locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperRUSVDS
+          amount: 2
+        - id: BoxMagazineSVDS
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledAK203
+  parent: LockerSyndicatePersonal
+  suffix: Filled, AK203
+  name: AK-203 locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAK203
+          amount: 5
+        - id: BoxMagazineAK203
+          amount: 2
+        - id: ClothingUniformJumpsuitCamoRUDigitalRed
+          amount: 5
+        - id: ClothingHelmetCoverRUDigitalRed
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledKSK
+  parent: LockerSyndicatePersonal
+  suffix: Filled, KSK
+  name: KSK locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunRUKSK
+          amount: 2
+        - id: BoxMagazineKSKBuckshot
+          amount: 2
+        - id: BoxMagazineKSKSlug
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledPKM
+  parent: LockerSyndicatePersonal
+  suffix: Filled, PKM
+  name: PKM locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponMachineGunRUPKM
+          amount: 2
+        - id: MagazineBeltBoxPKM
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: LockerArmoryPACTFilledSU57
+  parent: LockerSyndicatePersonal
+  suffix: Filled, SU-57 equipment
+  name: SU-57 "Felon" equipment locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: LightFighterGSH301
+        - id: LightFighterS8
+        - id: LightFighterFlarePod
+        - id: CrowbarRed
+        - id: Screwdriver
+        - id: WelderIndustrial
+        - id: ClothingEyesGlassesMeson
+  - type: AccessReader
+    access: [["PACTArmory"]]

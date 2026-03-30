@@ -1,0 +1,125 @@
+- type: entity
+  id: Bullet43x30mmHEFrag
+  name: 43x30mm HE-Frag grenade
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 80
+        Piercing: 50
+    deleteOnCollide: true
+  - type: HeFragProjectile
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 20
+    fragmentationPrototype: Bullet43x30mmFragFragment
+    plasmaAmount: 0
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 120
+    intensitySlope: 4
+    maxIntensity: 20
+    maxTileBreak: 0
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+
+- type: entity
+  id: Bullet43x30mmFragFragment
+  name: 43x30mm fragment
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 20
+        Slash: 10
+        Piercing: 10
+  - type: StaminaDamageOnCollide
+    damage: 6 # ~17 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _Mono/Objects/SpaceArtillery/50_armorpiercing_machinegun_casing.rsi
+    layers:
+    - state: base-projectile
+    scale: 0.4, 0.4
+  - type: TimedDespawn
+    lifetime: 2
+  - type: PointLight
+    radius: 1
+    color: orange
+    energy: 0.2
+
+- type: entity
+  id: Bullet43x30mmThermobaric
+  name: 43x30mm thermobaric grenade
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 80
+        Piercing: 50
+    deleteOnCollide: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FireBomb
+    totalIntensity: 150
+    intensitySlope: 5
+    maxIntensity: 30
+    maxTileBreak: 0
+  - type: SpawnOnTrigger
+    proto: InstantEffectGravityWellThermobaric
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+
+- type: entity
+  id: Bullet43x30mmChemicalSmoke
+  name: 43x30mm CS gas shell
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 80
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SmokeOnTrigger
+    duration: 40
+    spreadAmount: 20
+    smokePrototype: Smoke
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    radius: 3
+    color: gray
+    energy: 0.5

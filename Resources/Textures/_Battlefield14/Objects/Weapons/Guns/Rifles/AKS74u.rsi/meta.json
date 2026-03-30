@@ -1,0 +1,53 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Inhands/worn taken/modified from civ13 at https://github.com/Civ13/Civ13/blob/c1d4512d573f18d9e9fee5c227b8aaff93806ac3/icons/obj/gun.dmi Icon sprites made by WillyBillyGilly, permission given for use in the Battlefield14 project.",
+    "size": { 
+        "x": 48,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "base"
+        },
+        {
+            "name": "bolt-open"
+        },
+        {
+            "name": "mag-0"
+        },
+        {
+            "name": "icon-storage"
+        },
+        {
+            "name": "supp"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "wielded-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "wielded-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "equipped-BACKPACK",
+            "directions": 4
+        },
+        {
+            "name": "equipped-SUITSTORAGE",
+            "directions": 4
+        }
+    ]
+}

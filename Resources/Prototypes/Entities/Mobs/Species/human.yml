@@ -17,9 +17,10 @@
       amount: 5
   - type: LanguageKnowledge # Einstein Engines - Languages
     speaks:
-    - TauCetiBasic
+    - Sign # BF14
     understands:
-    - TauCetiBasic
+    - Sign # BF14
+    - TauCetiBasic # BF14
   - type: HumanoidAppearance
     species: Human
     hideLayersOnEquip:
@@ -35,6 +36,47 @@
   - type: Carriable # Frontier: Carrying system from nyanotrasen.
   - type: Speech # Frontier
     allowedEmotes: ['Belch'] # Frontier
+  - type: Destructible # BF14 pain screams
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GruntUSPainClean
+          params:
+            volume: 5
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GruntUSHitClean
+          params:
+            volume: 5
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 400
+      behaviors:
+      - !type:GibBehavior { }
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Heat
+        damage: 1500 # BF14 welcome back ashing
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawnInContainer: true
+        spawn:
+          Ash:
+            min: 1
+            max: 1
+      - !type:BurnBodyBehavior { }
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MeatLaserImpact
 
 - type: entity
   parent: BaseSpeciesDummy

@@ -1,0 +1,22 @@
+- type: entity
+  id: SpeedLoader357magnum
+  name: "speed loader (.357 magnum)"
+  parent: BaseSpeedLoader45_magnum
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol357
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/SpeedLoaders/45_magnum/45_magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 7
+    zeroVisible: false
+  - type: Appearance
+  - type: Tag
+    tags:
+      - SpeedLoader357magnum

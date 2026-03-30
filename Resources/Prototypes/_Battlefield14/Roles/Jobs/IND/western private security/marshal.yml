@@ -1,0 +1,63 @@
+- type: job
+  id: WPSMarshal
+  name: job-name-wps-marshal
+  description: job-description-wps-marshal
+  playTimeTracker: JobWPSMarshal
+  weight: 77
+  startingGear: WPSMarshalGear
+  alwaysUseSpawner: true
+  icon: "JobIconHeadOfSecurity"
+  requireAdminNotify: false
+  supervisors: job-supervisors-wps
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+#  - !type:AddComponentSpecial
+#    components:
+#    - type: NpcFactionMember
+#      factions:
+#      - USMC
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+#  - Captain # Frontier
+  - Security
+  - Brig
+  - Armory
+  - HeadOfSecurity
+  - Command
+  - Medical
+  - Cargo
+  - Engineering
+  - Research
+
+- type: startingGear
+  id: WPSMarshalGear
+  equipment:
+    id: WPSMarshalPDA
+    ears: ClothingHeadsetAltWPS
+    belt: ClothingBeltStationSecurityFilled
+    jumpsuit: ClothingUniformJumpsuitUtilityCrewblackSec
+    head: ClothingHeadHatBeretSecBF14
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorWebVestSec
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - Tourniquet
+    - Zipties

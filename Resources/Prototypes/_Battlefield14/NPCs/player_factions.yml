@@ -1,0 +1,69 @@
+- type: npcFaction
+  id: NATO
+  friendly:
+  - USMC
+  neutral:
+  - NanoTrasen
+  - Cat
+  - PetsNT
+  - SimpleNeutral
+  hostile:
+  - PACT
+  - VDV
+  - FSB
+
+- type: npcFaction
+  id: USMC
+  friendly:
+  - NATO
+  neutral:
+  - NanoTrasen
+  - Cat
+  - PetsNT
+  - SimpleNeutral
+  hostile:
+  - PACT
+  - VDV
+  - FSB
+
+- type: npcFaction
+  id: PACT
+  friendly:
+  - VDV
+  - FSB
+  neutral:
+  - NanoTrasen
+  - Cat
+  - PetsNT
+  - SimpleNeutral
+  hostile:
+  - NATO
+  - USMC
+
+- type: npcFaction
+  id: VDV
+  friendly:
+  - PACT
+  - FSB
+  neutral:
+  - NanoTrasen
+  - Cat
+  - PetsNT
+  - SimpleNeutral
+  hostile:
+  - NATO
+  - USMC
+
+- type: npcFaction
+  id: FSB
+  friendly:
+  - PACT
+  - VDV
+  neutral:
+  - NanoTrasen
+  - Cat
+  - PetsNT
+  - SimpleNeutral
+  hostile:
+  - NATO
+  - USMC

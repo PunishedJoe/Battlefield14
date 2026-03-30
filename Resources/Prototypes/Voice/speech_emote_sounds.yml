@@ -1,11 +1,11 @@
 # species
 - type: emoteSounds
   id: MaleHuman
-  params:
-    variation: 0.125
+#BF14  params:
+#BF14    variation: 0.125 commented out so the grunt voicelines sound good
   sounds:
     Scream:
-      collection: MaleScreams
+      collection: GruntUSScreamClean # BF14 | MaleScreams
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -42,6 +42,16 @@
       collection: MaleDeathGasp
     Belch: # Frontier
       collection: Belch # Frontier
+    GruntUSMedicClean: # BF14
+      collection: GruntUSMedicClean # BF14
+    GruntUSContactClean: # BF14
+      collection: GruntUSContactClean # BF14
+    GruntUSChargeClean: # BF14
+      collection: GruntUSChargeClean # BF14
+    GruntUSGrenadeThrowingClean: # BF14
+      collection: GruntUSGrenadeThrowingClean # BF14
+    GruntUSGrenadeSurprisedClean: # BF14
+      collection: GruntUSGrenadeSurprisedClean # BF14
 
 - type: emoteSounds
   id: FemaleHuman

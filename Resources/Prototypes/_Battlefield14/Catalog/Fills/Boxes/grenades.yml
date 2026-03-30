@@ -1,0 +1,393 @@
+### Grenades
+
+## US
+
+# Handthrown
+
+- type: entity
+  name: box of MK21 HE grenades
+  parent: BoxMagazine
+  id: BoxGrenadesMK21
+  description: A box full of high explosive MK21 grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MK21Handgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of M18 smoke grenades
+  parent: BoxMagazine
+  id: BoxGrenadesM18
+  description: A box full of M18 smoke grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: USM18SmokeHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of M84 flashbang grenades
+  parent: BoxMagazine
+  id: BoxGrenadesM84
+  description: A box full of M84 flashbang grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: USM84FlashBangHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of M58 CS gas grenades
+  parent: BoxMagazine
+  id: BoxGrenadesM58
+  description: A box full of M58 CS gas grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: USM58CSGasHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of M34 white phosphorus smoke grenades
+  parent: BoxMagazine
+  id: BoxGrenadesM34
+  description: A box full of M34 white phosphorus smoke grenades.
+  suffix: WAR CRIME
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: USHandgrenadeM34WhitePhosphorus
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+# 40x46mm
+
+- type: entity
+  name: box of 40x46 HE grenades
+  parent: BoxMagazine
+  id: BoxMagazine40x46HE
+  description: A box full of high explosive 40x46mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmHE
+        amount: 8
+
+- type: entity
+  name: box of 40x46 HEDP grenades
+  parent: BoxMagazine
+  id: BoxMagazine40x46HEDP
+  description: A box full of high explosive dual purpose 40x46mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmHEDP
+        amount: 8
+
+- type: entity
+  name: box of 40x46 frag grenades
+  parent: BoxMagazine
+  id: BoxMagazine40x46Frag
+  description: A box full of fragmenting 40x46mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmFrag
+        amount: 8
+
+- type: entity
+  name: box of mixed 40x46 grenades
+  parent: BoxMagazine
+  id: BoxMagazine40x46Mixed
+  description: A box full of fragmenting and high explosive 40x46mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmHE
+        amount: 4
+      - id: Cartridge40x46mmFrag
+        amount: 4
+
+- type: entity
+  name: box of 40x46 CS smoke grenades
+  parent: BoxMagazine
+  id: BoxMagazine40x46ChemicalSmoke
+  description: A box full of CS gas loaded 40x46mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmChemicalSmokeInfantry
+        amount: 8
+
+- type: entity
+  name: box of 40x46 MP-APERS grenades
+  parent: BoxMagazine
+  id: BoxMagazine40x46mmMPAPERS
+  description: A box full of 40x46mm multiple projectile shells.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmMPAPERS
+        amount: 8
+
+- type: entity
+  name: box of 40x46 plasma grenades
+  parent: BoxMagazine
+  id: BoxMagazine40x46PlasmaGas
+  description: A box full of plasma gas loaded 40x46mm grenades that penetrate walls and inject plasma gas on the other side.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge40x46mmPlasmaGas # TODO infantry version
+        amount: 8
+
+
+## RU
+
+# Hand thrown
+
+- type: entity
+  name: box of RGD5 HE grenades
+  parent: BoxMagazine
+  id: BoxGrenadesRGD5
+  description: A box full of high explosive RGD5 grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RURGD5Handgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of RGO impact grenades
+  parent: BoxMagazine
+  id: BoxGrenadesRGO
+  description: A box full of high explosive RGO impact grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RGOImpactHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of RDG-2 smoke grenades
+  parent: BoxMagazine
+  id: BoxGrenadesRDG2
+  description: A box full of RDG-2 smoke grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RURDG2SmokeHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of zarya flashbang grenades
+  parent: BoxMagazine
+  id: BoxGrenadesZarya
+  description: A box full of zarya flashbang grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RUZaryaFlashBangHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of K-51 CS gas grenades
+  parent: BoxMagazine
+  id: BoxGrenadesK51
+  description: A box full of K-51 CS gas grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RUK51CSGasHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of K-52 sarin gas grenades
+  parent: BoxMagazine
+  id: BoxGrenadesK52
+  description: A box full of K-52 sarin gas grenades.
+  suffix: WAR CRIME
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: RUK52SarinGasHandgrenade
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+# 43x30mm
+
+- type: entity
+  name: box of 43x30mm HE-Frag grenades
+  parent: BoxMagazine
+  id: BoxMagazine43x30HEFrag
+  description: A box full of high explosive fragmenting 43x30mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge43x30mmHEFrag
+        amount: 8
+
+- type: entity
+  name: box of 43x30mm thermobaric grenades
+  parent: BoxMagazine
+  id: BoxMagazine43x30Thermobaric
+  description: A box full of thermobaric 43x30mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge43x30mmThermobaric
+        amount: 8
+
+- type: entity
+  name: box of 43x30mm CS gas grenades
+  parent: BoxMagazine
+  id: BoxMagazine43x30ChemicalSmoke
+  description: A box full of CS gas 43x30mm grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: Cartridge43x30mmChemicalSmoke
+        amount: 8
+
+## Charges
+
+# RU
+
+- type: entity
+  name: box of APM-6 cluster charges
+  parent: BoxMagazine
+  id: BoxChargeFuze
+  description: A box full of APM-6 cluster charges.
+  components:
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+    whitelist:
+      tags:
+        - RemoteSignaller
+        - Multitool
+      components:
+        - Sticky
+  - type: StorageFill
+    contents:
+      - id: FuzeCharge
+        amount: 4
+
+- type: entity
+  name: APM-6 cluster charge kit
+  parent: BoxChargeFuze
+  id: BoxChargeFuzeKit
+  description: A box containing one APM-6 cluster charge, a detonator, and a multitool.
+  components:
+  - type: StorageFill
+    contents:
+      - id: FuzeCharge
+      - id: RemoteSignallerClacker
+      - id: Multitool

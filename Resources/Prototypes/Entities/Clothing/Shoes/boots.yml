@@ -18,9 +18,9 @@
   description: Combat boots for combat scenarios or combat situations. All combat, all the time. # Frontier
   components:
   - type: Sprite
-    sprite: Clothing/Shoes/Boots/jackboots.rsi
+    sprite: _Battlefield14/Clothing/Shoes/Boots/combat.rsi # BF14
   - type: Clothing
-    sprite: Clothing/Shoes/Boots/jackboots.rsi
+    sprite: _Battlefield14/Clothing/Shoes/Boots/combat.rsi # BF14
   # - type: ClothingSlowOnDamageModifier # Mono: Added to parent
   #   modifier: 0.5
 

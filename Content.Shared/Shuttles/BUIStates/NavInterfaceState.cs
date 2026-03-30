@@ -49,6 +49,8 @@ public sealed class NavInterfaceState
     public bool Pannable = true; // Mono
     public bool RelativePanning = false; // Mono
 
+    public SonarState? Sonar = null; // BF14
+
     public NavInterfaceState(
         float maxRange,
         NetCoordinates? coordinates,
@@ -57,7 +59,8 @@ public sealed class NavInterfaceState
         InertiaDampeningMode dampeningMode, // Frontier: add dampeningMode
         Dictionary<string, string>? networkPortNames = null,
         bool pannable = true, // Mono
-        bool relativePan = false) // Mono
+        bool relativePan = false, // Mono
+        SonarState? sonar = null) // BF14
     {
         MaxRange = maxRange;
         Coordinates = coordinates;
@@ -67,6 +70,7 @@ public sealed class NavInterfaceState
         NetworkPortNames = networkPortNames ?? new Dictionary<string, string>();
         Pannable = pannable; // Mono
         RelativePanning = relativePan; // Mono
+        Sonar = sonar; // BF14
     }
 }
 
@@ -75,3 +79,7 @@ public enum RadarConsoleUiKey : byte
 {
     Key
 }
+
+// BF14
+[Serializable, NetSerializable]
+public record struct SonarState(Angle Width, float Distance, TimeSpan Duration, TimeSpan Cooldown, bool SeeCloaked);

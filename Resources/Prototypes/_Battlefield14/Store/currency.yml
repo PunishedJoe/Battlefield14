@@ -1,0 +1,155 @@
+- type: currency
+  id: NATORequisition
+  displayName: store-currency-display-nato-requisition
+  cash:
+    1: NATORequisition1
+  canWithdraw: true
+
+- type: stack
+  id: NATORequisition
+  name: NATO requisition chip
+  icon: _Battlefield14/Objects/Economy/natoreq.rsi
+  spawn: NATORequisition1
+
+- type: entity
+  name: NATO Requisition chip
+  parent: BaseItem
+  id: NATORequisition
+  suffix: 20 REQ
+  description: High command awards these to good boys and girls to buy light machine guns in their faction store.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Economy/natoreq.rsi
+    state: icon
+  - type: Item
+    sprite: _Battlefield14/Objects/Economy/natoreq.rsi
+    size: Tiny
+  - type: Stack
+    count: 20
+    stackType: NATORequisition
+  - type: StaticPrice
+    price: 0
+  - type: StackPrice
+    price: 200
+  - type: Currency
+    price:
+      NATORequisition: 1
+
+- type: entity
+  parent: NATORequisition
+  id: NATORequisition1
+  suffix: 1 REQ
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: NATORequisition
+  id: NATORequisition5
+  suffix: 5 REQ
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: NATORequisition
+  id: NATORequisition10
+  suffix: 10 REQ
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: NATORequisition
+  id: NATORequisition50
+  suffix: 50 REQ
+  components:
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: NATORequisition
+  id: NATORequisition100
+  suffix: 100 REQ
+  components:
+  - type: Stack
+    count: 100
+
+# PACT
+
+- type: currency
+  id: PACTRequisition
+  displayName: store-currency-display-pact-requisition
+  cash:
+    1: PACTRequisition1
+  canWithdraw: true
+
+- type: stack
+  id: PACTRequisition
+  name: PACT requisition chip
+  icon: _Battlefield14/Objects/Economy/pactreq.rsi
+  spawn: PACTRequisition1
+
+- type: entity
+  name: PACT Requisition chip
+  parent: BaseItem
+  id: PACTRequisition
+  suffix: 20 REQ
+  description: Putin Clause awards these to good boys and girls to buy light machine guns in their faction store.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Economy/pactreq.rsi
+    state: icon
+  - type: Item
+    sprite: _Battlefield14/Objects/Economy/pactreq.rsi
+    size: Tiny
+  - type: Stack
+    count: 20
+    stackType: PACTRequisition
+  - type: StaticPrice
+    price: 0
+  - type: StackPrice
+    price: 200
+  - type: Currency
+    price:
+      PACTRequisition: 1
+
+- type: entity
+  parent: PACTRequisition
+  id: PACTRequisition1
+  suffix: 1 REQ
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  parent: PACTRequisition
+  id: PACTRequisition5
+  suffix: 5 REQ
+  components:
+  - type: Stack
+    count: 5
+
+- type: entity
+  parent: PACTRequisition
+  id: PACTRequisition10
+  suffix: 10 REQ
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: PACTRequisition
+  id: PACTRequisition50
+  suffix: 50 REQ
+  components:
+  - type: Stack
+    count: 50
+
+- type: entity
+  parent: PACTRequisition
+  id: PACTRequisition100
+  suffix: 100 REQ
+  components:
+  - type: Stack
+    count: 100

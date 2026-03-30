@@ -1,0 +1,43 @@
+### NATO
+## US
+#USMC
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherAAVP8
+  name: USMC AAVP-8 LPC
+  description: A small card that contains the data for the procurement of an AAVP-8 from naval reserves.
+  components:
+  - type: Sprite
+    layers:
+    - state: mtech
+    - state: stripetsfmc
+    - state: vouchermilitary
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: USMC
+    vessels:
+    - AAVP8
+
+### PACT
+## RU
+# VDV
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherKTV1
+  name: VDV KTV-1 LPC
+  description: A small card that authorizes the acquisition of a KTV-1 troop transport shuttle.
+  components:
+  - type: Sprite
+    layers:
+    - state: htech
+    - state: stripeussp
+    - state: icon1
+  - type: ShipyardVoucher
+    destroyOnEmpty: true
+    consoleType: Custom
+    companyName: VDV
+    vessels:
+    - KTV1

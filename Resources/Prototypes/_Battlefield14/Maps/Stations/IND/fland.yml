@@ -1,0 +1,41 @@
+- type: pointOfInterest
+  id: INDFland
+  parent: [BasePOI, BaseRepairablePOI]
+  name: 'Independant Fland Installation'
+#  minimumDistance: 0
+#  maximumDistance: 0
+#  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+#  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Stations/IND/flandgrid.yml
+  addComponents:
+  - type: IFF
+    color: "#efefef"
+#    flags: [HideLabel]
+#    readOnly: true
+
+- type: gameMap
+  id: BF14Fland
+  mapName: 'Fland Installation'
+  mapPath: /Maps/_Battlefield14/Stations/IND/fland.yml
+  minPlayers: 25
+  maxPlayers: 120
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Fland:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Independant "Fland" Installation' # Redo to 'N.G. 'Fland' defense installation' once I add national guard
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+#            Contractor: [ 2, 3 ]
+            WPSSecurityOfficer: [ 1, 1 ] # National guard
+            WPSWarden: [ 1, 1 ]
+            WPSMarshal: [ 1, 1 ]
+            FSBRecon: [ 3, 3 ]

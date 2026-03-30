@@ -1,0 +1,31 @@
+{
+  "copyright" : "Made by JoeHammad.",
+  "license" : "CC-BY-NC-SA-4.0",
+  "version": 1,
+  "size": {
+    "x": 96,
+    "y": 96
+  },
+    "states": [
+        {
+            "name": "felon",
+            "directions": 4
+        },
+        {
+            "name": "felon-open"
+        },
+        {
+            "name": "felon-broken"
+        },
+        {
+            "name": "raptor",
+            "directions": 4
+        },
+        {
+            "name": "raptor-open"
+        },
+        {
+            "name": "raptor-broken"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+- type: job
+  id: FSBRecon
+  name: job-name-fsb-recon
+  description: job-description-fsb-recon
+  playTimeTracker: JobFSBRecon
+  weight: 74
+  startingGear: FSBReconGearEVA # EVA for spawning on fland
+  alwaysUseSpawner: true
+  icon: "JobIconPACTSpecialForces"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - Russian
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - FSB
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTMedical
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: FSBReconGear
+  equipment:
+    id: FSBReconPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilledAK74
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
+    head: ClothingHeadHatHelmetRUEMR # blank
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
+    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackBlack
+    neck: ClothingNeckIFFtapeFSB
+    suitstorage: WeaponRifleRUAKS74UB
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledVDVScout
+    leftarmband: ClothingArmbandDumpPouchBlack
+    rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - ArmorPlateMedium
+    - HandheldStationMapUnpowered
+    - Rangefinder
+    - MagazinePistolSR1MP
+    - MagazinePistolSR1MP
+    - CrowbarRed
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
+    - Tourniquet
+    - Zipties
+
+- type: startingGear
+  id: FSBReconGearEVA
+  equipment:
+    id: FSBReconPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilledAK74
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
+    head: ClothingHeadHatHelmetRUEMR # can't wear the NVGs without this
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
+    outerClothing: ClothingOuterVoidsuitRussianCombat
+    shoes: ClothingShoesBootsMagAshenFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackBlack
+    neck: ClothingNeckIFFtapeFSB
+    suitstorage: WeaponRifleRUAKS74UB
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledVDVScout
+    leftarmband: ClothingArmbandDumpPouchBlack
+    rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - ArmorPlateMedium
+    - HandheldStationMapUnpowered
+    - Rangefinder
+    - MagazinePistolSR1MP
+    - MagazinePistolSR1MP
+    - CrowbarRed
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
+    - DoubleEmergencyOxygenTankFilled
+    - Tourniquet
+    - Zipties

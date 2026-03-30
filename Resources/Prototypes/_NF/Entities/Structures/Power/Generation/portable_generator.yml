@@ -30,7 +30,7 @@
   components:
   - type: MaterialStorage
     storage:
-      FuelGradeUranium: 2000 # mono
+      FuelGradeUranium: 3000 # mono
 
 - type: entity
   parent:

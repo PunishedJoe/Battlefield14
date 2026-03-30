@@ -1,0 +1,75 @@
+# NATO #
+
+- type: accessLevel
+  id: NATOCommon
+  name: id-card-access-level-NATO-common
+
+- type: accessLevel
+  id: NATOMaintenance
+  name: id-card-access-level-NATO-maintenance
+
+- type: accessLevel
+  id: NATOMedical
+  name: id-card-access-level-NATO-medical
+
+- type: accessLevel
+  id: NATOSoldier
+  name: id-card-access-level-NATO-soldier
+
+- type: accessLevel
+  id: NATOArmory
+  name: id-card-access-level-NATO-armory
+
+- type: accessLevel
+  id: NATOCommand
+  name: id-card-access-level-NATO-command
+
+- type: accessLevel
+  id: NATOFunds
+  name: id-card-access-NATO-funds
+
+- type: accessLevel
+  id: NATOCrew
+  name: id-card-access-NATO-crew
+
+- type: accessLevel
+  id: NATOCaptain
+  name: id-card-access-NATO-captain
+
+# PACT #
+
+- type: accessLevel
+  id: PACTCommon
+  name: id-card-access-level-PACT-common
+
+- type: accessLevel
+  id: PACTMaintenance
+  name: id-card-access-level-PACT-maintenance
+
+- type: accessLevel
+  id: PACTMedical
+  name: id-card-access-level-PACT-medical
+
+- type: accessLevel
+  id: PACTSoldier
+  name: id-card-access-level-PACT-soldier
+
+- type: accessLevel
+  id: PACTArmory
+  name: id-card-access-level-PACT-armory
+
+- type: accessLevel
+  id: PACTCommand
+  name: id-card-access-level-PACT-command
+
+- type: accessLevel
+  id: PACTFunds
+  name: id-card-access-PACT-funds
+
+- type: accessLevel
+  id: PACTCrew
+  name: id-card-access-PACT-crew
+
+- type: accessLevel
+  id: PACTCaptain
+  name: id-card-access-PACT-captain

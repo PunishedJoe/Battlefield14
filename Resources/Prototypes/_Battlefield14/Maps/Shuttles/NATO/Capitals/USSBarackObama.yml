@@ -1,0 +1,44 @@
+- type: pointOfInterest
+  id: USSBarackObama
+  parent: [BaseMobilePOI, BaseRepairablePOI]
+  name: 'USS Barack Obama'
+  minimumDistance: 3000
+  maximumDistance: 3000
+  spawnGamePreset: [ USMC_vs_VDV ]
+  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Shuttles/NATO/Capitals/USSBarackObama.yml
+  addComponents:
+  - type: IFF
+    color: "#047abd"
+#    readOnly: true
+
+- type: gameMap
+  id: USSBarackObama
+  mapName: 'USS Barack Obama'
+  mapPath: /Maps/_Battlefield14/Shuttles/NATO/Capitals/USSBarackObama.yml
+  minPlayers: 0
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    USSBarackObama:
+      stationProto: SecurityFrontierOutpost
+      gridComponents:
+      - type: VesselInfo
+        description: "A Jefferson Davis class spacecraft carrier, pride and joy of the United States Space Force."
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'USS Barack Obama'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Battlefield14/poi_icons.rsi/barackobama.png
+          stationSubtext: 'USS Barack Obama'
+          stationDescription: 'A Jefferson Davis class spacecraft carrier, pride and joy of the United States Space Force.'
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            USSFCaptain: [ 1, 1 ]
+            USSFCrewman: [ 3, 3 ]
+            USMCSquadLeader: [ 3, 3 ]
+            USMCRifleman: [ -1, -1 ]
+            USMCAutomaticRifleman: [ 3, 3 ]
+            USMCMedic: [ 3, 3 ]
+            USMCRecon: [ 3, 3 ]

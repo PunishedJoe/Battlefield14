@@ -1,0 +1,70 @@
+- type: job
+  id: USMCMedic
+  name: job-name-usmc-medic
+  description: job-description-usmc-medic
+  playTimeTracker: JobUSMCMedic
+  weight: 75
+  startingGear: USMCMedicGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOMedic"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.65
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-corporal
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - Medical
+  - NATOCommon
+  - NATOMaintenance
+  - NATOMedical
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: USMCMedicGear
+  equipment:
+    id: USMCMedicPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMedicalEMTFilledBF14 # ClothingBeltMilitaryWebbingUSFilledMP5
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUS
+    eyes: ClothingEyesHudMedicalBF
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesLatex
+    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponSubmachinegunUSMP5
+    pocket1: PouchMagsPistolLargeFilledMP5
+    pocket2: PouchGrenadesFilledUSMCScout
+  storage:
+    back:
+    - SupplyBoxMedicalFilled
+    - DefibrillatorCompactBF
+    - SyringeCaseFilledBF14
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - Tourniquet
+    - Zipties

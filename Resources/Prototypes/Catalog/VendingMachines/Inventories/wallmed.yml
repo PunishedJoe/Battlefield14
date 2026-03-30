@@ -3,11 +3,13 @@
   startingInventory:
     Brutepack: 6 # Frontier: 3<6
     Ointment: 6 # Frontier: 3<6
-    Bloodpack: 6 # Frontier: 3<6
+#BF14    Bloodpack: 6 # Frontier: 3<6
     Gauze: 6 # Frontier
+    Tourniquet: 10 # BF14
+    PillCanisterIron: 6 #BF14
     EpinephrineChemistryBottle: 6 # Frontier: 3<6
     Syringe: 6 # Frontier: 3<6
-    BoxFolderMedicalDoctor: 1 #Frontier
-    MedTekCartridge: 1 # Frontier
+#BF14    BoxFolderMedicalDoctor: 1 #Frontier
+#BF14    MedTekCartridge: 1 # Frontier
   contrabandInventory:
     PowerCellSmall: 2

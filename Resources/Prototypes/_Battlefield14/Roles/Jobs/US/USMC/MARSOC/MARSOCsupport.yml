@@ -1,0 +1,108 @@
+- type: job
+  id: MARSOCAutomaticRifleman
+  name: job-name-marsoc-automatic-rifleman
+  description: job-description-marsoc-automatic-rifleman
+  playTimeTracker: JobMARSOCAutomaticRifleman
+  weight: 76
+  startingGear: MARSOCAutomaticRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSpecialForces"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-corporal
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOMedical
+  - NATOSoldier
+  - NATOArmory
+  - NATOFunds
+  - NATOCrew
+  - NATOCaptain
+
+- type: startingGear
+  id: MARSOCAutomaticRiflemanGear
+  equipment:
+    id: MARSOCAutomaticRiflemanPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltWebbingsNormalTanFilledMK48
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUSRiot
+    eyes: ClothingEyesGogglesTan
+    balaclava: ClothingBalaclavaMilitary
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponMachineGunUSMK48
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: Tourniquet
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - SupplyBoxAmmoUSFilledMarsoc # Marsoc variant with bulk 7.62x51 and 6.8x52, and MP7 mags
+    - BoxMRE
+    - CrowbarRed
+    - ClothingMaskGasM40Green
+    - Tourniquet
+    - Zipties
+
+- type: startingGear
+  id: MARSOCAutomaticRiflemanGearEVA
+  equipment:
+    id: MARSOCAutomaticRiflemanPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltWebbingsNormalBlackFilledMK48
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    eyes: ClothingEyesGogglesTan
+    balaclava: ClothingBalaclavaMilitary
+    outerClothing: ClothingOuterVoidsuitAmericanCombatMarine
+    shoes: ClothingShoesBootsMagAshenFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackBlack
+    suitstorage: WeaponMachineGunUSMK48
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: ClothingArmbandMassScanner
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - SupplyBoxAmmoUSFilledMarsoc # Marsoc variant with bulk 7.62x51 and 6.8x52, and MP7 mags
+    - BoxMRE
+    - CrowbarRed
+    - ClothingMaskGasM40Green
+    - DoubleEmergencyOxygenTankFilled
+    - Tourniquet
+    - Zipties

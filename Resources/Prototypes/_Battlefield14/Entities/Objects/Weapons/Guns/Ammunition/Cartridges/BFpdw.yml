@@ -1,0 +1,37 @@
+- type: entity
+  id: BF_CartridgePDW46x30
+  name: cartridge (4.6x30mm)
+  parent: BaseCartridge
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPDWBF46x30
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePDW46x30
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgePDW9x21
+  name: cartridge (9x21mm)
+  parent: BaseCartridge
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPDWBF9x21
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePDW9x21
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

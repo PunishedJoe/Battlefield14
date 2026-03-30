@@ -1,0 +1,41 @@
+- type: lobbyBackground
+  id: BackgroundNews
+  background: /Textures/_Battlefield14/LobbyScreens/readingthenews.jpg
+#  name: Reading the news
+#  artist: Russian Airborne Troops
+
+- type: lobbyBackground
+  id: BackgroundPKM
+  background: /Textures/_Battlefield14/LobbyScreens/shoulderedPKM.jpg
+#  name: PKM
+#  artist: OMOH "Special Purpose Police"
+
+- type: lobbyBackground
+  id: BackgroundGorka
+  background: /Textures/_Battlefield14/LobbyScreens/gorkanohelmet.jpg
+#  name: Gorka
+#  artist: Unknown
+
+- type: lobbyBackground
+  id: BackgroundFAGOT
+  background: /Textures/_Battlefield14/LobbyScreens/FAGOT.jpg
+#  name: FAGOT
+#  artist: Russian Airborne Troops
+
+- type: lobbyBackground
+  id: BackgroundFriendshiptree
+  background: /Textures/_Battlefield14/LobbyScreens/friendshiptree.jpg
+#  name: Friendship tree
+#  artist: Macedonian special police?
+
+- type: lobbyBackground
+  id: BackgroundLaststraightman
+  background: /Textures/_Battlefield14/LobbyScreens/laststraightman.jpg
+#  name: Last straight man in Russia
+#  artist: OMOH "Special Purpose Police"
+
+- type: lobbyBackground
+  id: BackgroundZBTRBF14
+  background: /Textures/_Battlefield14/LobbyScreens/ZBTRBF14.png
+#  name: ZBTRBF14
+#  artist: Russian Airborne forces and JoeHammad

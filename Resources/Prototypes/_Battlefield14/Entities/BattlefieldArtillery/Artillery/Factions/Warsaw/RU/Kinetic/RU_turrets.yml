@@ -1,0 +1,425 @@
+# K-145 "Kord-N" Heavy Machine Gun
+- type: entity
+  id: WeaponTurretKordN
+  name: K-145 "Kord-N" Heavy Machine Gun
+  suffix: BF14, PACT, RU
+  parent: BattlefieldArtilleryMagazine
+  description: A remotely operated heavy machine gun produced by Russian state manufacturers for PACT naval service. Internally derived from the Kord lineage and enlarged for sustained shipboard fire. Intended for suppressing infantry, boarding parties, and lightly armored craft. Limited effectiveness against reinforced ship armor.
+  components:
+  - type: StaticPrice
+    price: 500
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/hmg.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: DeviceLinkSink
+    ports:
+    - Toggle
+  - type: Gun
+    recoil: 0
+    fireRate: 10
+    projectileSpeed: 140
+    minAngle: 0
+    maxAngle: 9
+    shootThermalSignature: 15000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 80
+    powerUsePassive: 80
+  - type: Actions
+  - type: CombatMode
+    isInCombatMode: true
+  - type: Airtight
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine127mmKordN
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine127mmKordN
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 8
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Light
+
+# Z-230 "Volna-N" Autocannon
+- type: entity
+  id: WeaponTurretVolnaN
+  name: Z-230 "Volna-N" Autocannon
+  suffix: BF14, PACT, RU
+  parent: BattlefieldArtilleryMagazine
+  description: A twin barrel naval autocannon chambered in 23 mm high explosive ammunition. Produced for Russian and PACT fleets as a close range defense and area denial system. Intended to saturate light craft, exposed decks.
+  components:
+  - type: StaticPrice
+    price: 700
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/pdt.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: DeviceLinkSink
+    ports:
+    - Toggle
+  - type: Gun
+    recoil: 0
+    fireRate: 14
+    projectileSpeed: 120
+    minAngle: 0
+    maxAngle: 8
+    shootThermalSignature: 20000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 100
+    powerUsePassive: 100
+  - type: Actions
+  - type: CombatMode
+    isInCombatMode: true
+  - type: Airtight
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine23mmAPT
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine23mmVolnaN
+          - Magazine23mmAPT
+          - Magazine23mmFrag
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 8
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Light
+
+# A-300 "Grom-N" Autocannon
+- type: entity
+  id: WeaponTurretGromN
+  name: A-300 "Grom-N" Autocannon
+  suffix: BF14, PACT, RU
+  parent: BattlefieldArtilleryMagazine
+  description: A medium caliber naval autocannon firing 30 mm mixed purpose ammunition. Based on adaptations of earlier PACT autocannon designs. Intended to engage transport grade hulls, patrol vessels, and lightly armored targets using APDS and HEI rounds. Commonly mounted on PACT escorts.
+  components:
+  - type: StaticPrice
+    price: 1200
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/vulcan.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: DeviceLinkSink
+    ports:
+    - Toggle
+  - type: Gun
+    recoil: 0
+    fireRate: 12
+    projectileSpeed: 150
+    minAngle: 0
+    maxAngle: 8
+    shootThermalSignature: 25000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 120
+    powerUsePassive: 120
+  - type: Actions
+  - type: CombatMode
+    isInCombatMode: true
+  - type: Airtight
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine30mmAPT
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine30mmGromN
+          - Magazine30mmAPT
+          - Magazine30mmFrag
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 8
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1.2
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+
+# S-570 "Burevestnik-N" Heavy Cannon
+- type: entity
+  id: WeaponTurretBurevestnikN
+  name: S-570 "Burevestnik-N" Heavy Cannon
+  suffix: BF14, PACT, RU
+  parent: BattlefieldArtilleryMagazine
+  description: This 57mm weapon has a long history of anti-aircraft service; originally designed to counter ground-attack aircraft in the second world war after truck-mounted machineguns proved ineffective, this weapon eventually found itself strapped on anything from technicals to dual mounted on soviet tanks.
+  components:
+  - type: StaticPrice
+    price: 2000
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/flak.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: Gun
+    recoil: 0
+    fireRate: 8
+    projectileSpeed: 120
+    minAngle: 3
+    maxAngle: 15
+    shootThermalSignature: 40000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 150
+    powerUsePassive: 150
+    powerUseActive: 2000
+  - type: Actions
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine57mmBurevestnikN
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine57mmBurevestnikN
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 8000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 10
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1.5
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+
+# V-830 "Vasilek-N" Automatic Mortar System
+- type: entity
+  id: WeaponTurretVasilekN
+  name: V-830 "Vasilek-N" Automatic Mortar System
+  suffix: BF14, PACT, RU
+  parent: BattlefieldArtilleryMagazine
+  description: A "light" mortar using a unique harmonica style clip feeding mechanism, allowing four 83mm mortars to be launched in quick succession; highly regarded on the ground for its quick reloads. However space combat sees it falling somewhat short; requiring a full time loader to be used effectively due to its small clip size and higher frequency of fire, necessitating higher capacity clips be developed.
+  components:
+  - type: StaticPrice
+    price: 1800
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/flak.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: Gun
+    recoil: 0
+    fireRate: 2
+    projectileSpeed: 100
+    minAngle: 10
+    maxAngle: 45
+    shootThermalSignature: 30000
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 120
+    powerUsePassive: 120
+    powerUseActive: 1500
+  - type: Actions
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine83mmVasilekN
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine83mmVasilekN
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 9
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1.3
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+
+# K-1250 "Molot-N" Heavy Cannon
+- type: entity
+  id: WeaponTurretMolotN
+  name: K-1250 "Molot-N" Heavy Cannon
+  suffix: BF14, PACT, RU
+  parent: BallisticArtilleryBase
+  description: Ripped off a current manufacture T-90 tank, much like the T-90 this weapon has been around since the T-64 and "modernised" by slapping whatever modern gizmos and bells and whistles on it until it counts as up-to-date.
+  components:
+  - type: StaticPrice
+    price: 25000
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/charon.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 0
+    fireRate: 0.1
+    minAngle: 0
+    maxAngle: 0
+    projectileSpeed: 180
+    shootThermalSignature: 25000000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 450
+    powerUsePassive: 1400
+    powerUseActive: 9000
+  - type: Actions
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge125mmAPFSDS
+    capacity: 5
+    proto: Cartridge125mmAPFSDS
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 10
+#  - type: RadarBlip
+#    radarColor: "#FF0000"
+#    scale: 3
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Heavy

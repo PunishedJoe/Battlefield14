@@ -1,0 +1,44 @@
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyUS
+  name: US communications encryption key
+  description: SOME FOLKS ARE BORN-.
+  components:
+    - type: EncryptionKey
+      channels:
+        - USRadio
+      defaultChannel: USRadio
+    - type: Sprite
+      layers:
+        - state: crypt_silver
+        - state: nano_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyRU
+  name: RU communications encryption key
+  description: I have never used this in my entire life.. - Ivan
+  components:
+    - type: EncryptionKey
+      channels:
+        - RURadio
+      defaultChannel: RURadio
+    - type: Sprite
+      layers:
+        - state: crypt_silver
+        - state: nano_label
+
+- type: entity
+  parent: EncryptionKey
+  id: EncryptionKeyWPS
+  name: Western private security communications encryption key
+  description: Hey we got a civilian uhh littering over in rnd over.
+  components:
+    - type: EncryptionKey
+      channels:
+        - Security
+      defaultChannel: Security
+    - type: Sprite
+      layers:
+        - state: crypt_silver
+        - state: nano_label

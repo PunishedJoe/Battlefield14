@@ -1,0 +1,22 @@
+- type: entity
+  parent: ClothingHelmetCoverBase
+  id: ClothingHelmetCoverRUDigitalRed
+  name: red digital helmet cover
+  description: A red digital camouflage helmet cover for your tactical fashion needs or to mount attachments.
+  suffix: BF14 USE THIS
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/HelmetCover/cover_digital_red.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/HelmetCover/cover_digital_red.rsi
+    clothingVisuals:
+      helmetcover:
+      - state: equipped-HELMETCOVER
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#2F2F2F"
+      right:
+      - state: inhand-right
+        color: "#2F2F2F"

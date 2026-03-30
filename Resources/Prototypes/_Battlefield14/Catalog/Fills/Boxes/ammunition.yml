@@ -1,0 +1,277 @@
+# As opposed to MagazineBox these are boxes of magazines so BoxMagazine
+
+# Rifle
+
+# US
+- type: entity
+  name: box of STANAG magazines
+  parent: BoxMagazine
+  id: BoxMagazineSTANAG
+  description: A box full of 5.56x45mm STANAG magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSTANAG
+        amount: 8
+
+- type: entity
+  name: box of MP5 magazines
+  parent: BoxMagazine
+  id: BoxMagazineMP5
+  description: A box full of 9mm MP7 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunMP5
+        amount: 8
+
+- type: entity
+  name: box of M9 magazines
+  parent: BoxMagazine
+  id: BoxMagazineM9
+  description: A box full of 9mm MP7 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolM9
+        amount: 8
+
+- type: entity
+  name: box of M107 magazines
+  parent: BoxMagazine
+  id: BoxMagazineM107
+  description: A box full of .50 BMG M107 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSniperM107
+        amount: 8
+
+- type: entity
+  name: box of mixed M-25 magazines
+  parent: BoxMagazine
+  id: BoxMagazineXM25Mixed
+  description: A box full of HE, HEAB, Flechette, and APDS M-25 magazines, 2 each.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineGrenadeLauncherXM25HE
+        amount: 2
+      - id: MagazineGrenadeLauncherXM25HEAB
+        amount: 2
+      - id: MagazineGrenadeLauncherXM25Flechette
+        amount: 2
+      - id: MagazineGrenadeLauncherXM25APDS
+        amount: 2
+
+- type: entity
+  name: box of M14 magazines
+  parent: BoxMagazine
+  id: BoxMagazineM14
+  description: A box full of 7.62x51mm M14 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleM14
+        amount: 8
+
+# DE
+
+- type: entity
+  name: box of MP7 magazines
+  parent: BoxMagazine
+  id: BoxMagazineMP7
+  description: A box full of 4.6x30mm MP7 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunMP7
+        amount: 8
+
+# RU
+- type: entity
+  name: box of 5.45x39mm AK-74 magazines
+  parent: BoxMagazine
+  id: BoxMagazineAK74
+  description: A box full of 5.45x39mm '74 pattern magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK74
+        amount: 8
+
+- type: entity
+  name: box of 5.45x39mm AK-12 magazines
+  parent: BoxMagazine
+  id: BoxMagazineAK12
+  description: A box full of 5.45x39mm '74 pattern magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK12
+        amount: 8
+
+- type: entity
+  name: box of 7.62x39mm AKM magazines
+  parent: BoxMagazine
+  id: BoxMagazineAKM
+  description: A box full of 7.62x39mm '47 pattern magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAKM
+        amount: 8
+
+- type: entity
+  name: box of 7.62x39mm AK-203 magazines
+  parent: BoxMagazine
+  id: BoxMagazineAK203
+  description: A box full of 7.62x39mm '47 pattern magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK203
+        amount: 8
+
+- type: entity
+  name: box of 9x39mm AS-VAL magazines
+  parent: BoxMagazine
+  id: BoxMagazineASVAL
+  description: A box full of 9x39mm AS-VAL compatible magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleASVAL
+        amount: 8
+
+- type: entity
+  name: box of 9x39mm AS-VAL magazines
+  parent: BoxMagazine
+  suffix: Short
+  id: BoxMagazineASVALShort
+  description: A box full of 9x39mm AS-VAL compatible magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleASVALShort
+        amount: 8
+
+- type: entity
+  name: box of 7.62x54mmR SV-98 magazines
+  parent: BoxMagazine
+  id: BoxMagazineSV98
+  description: A box full of 7.62x54mmR SV-98 compatible magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSV98
+        amount: 8
+
+- type: entity
+  name: box of 7.62x54mmR AP SV-98 magazines
+  parent: BoxMagazine
+  id: BoxMagazineSV98AP
+  description: A box full of 7.62x54mmR SV-98 compatible magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSV98AP
+        amount: 8
+
+- type: entity
+  name: box of 7.62x54mmR SVDS magazines
+  parent: BoxMagazine
+  id: BoxMagazineSVDS
+  description: A box full of 7.62x54mmR SVDS compatible magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineSniperSVDS
+        amount: 8
+
+- type: entity
+  name: box of 12 gauge KS-K buckshot magazines
+  parent: BoxMagazine
+  id: BoxMagazineKSKBuckshot
+  description: A box full of 12 gauge KS-K compatible magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineShotgunKSK
+        amount: 8
+
+- type: entity
+  name: box of 12 gauge KS-K slug magazines
+  parent: BoxMagazine
+  id: BoxMagazineKSKSlug
+  description: A box full of 12 gauge KS-K compatible magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineShotgunKSKSlug
+        amount: 8
+
+- type: entity
+  name: box of PP-19 Vityaz magazines
+  parent: BoxMagazine
+  id: BoxMagazineVityaz
+  description: A box full of 9mm PP-19 Vityaz magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunVityaz
+        amount: 8
+
+- type: entity
+  name: box of MP443 magazines
+  parent: BoxMagazine
+  id: BoxMagazineMP443
+  description: A box full of 9mm MP443 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolMP443
+        amount: 8
+
+## UNSC
+
+- type: entity
+  name: box of MA5B magazines
+  parent: BoxMagazine
+  id: BoxMagazineMA5B
+  description: A box full of 7.62x51mm MA5B magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleMA5B
+        amount: 8

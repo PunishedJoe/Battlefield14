@@ -264,14 +264,14 @@
   description: These tactical gloves are fireproof and shock resistant.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/combat.rsi
+    sprite: _Battlefield14/Clothing/Hands/Gloves/combat.yml # BF14
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/combat.rsi
+    sprite: _Battlefield14/Clothing/Hands/Gloves/combat.yml # BF14
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
   - type: StaminaDamageResistance # Mono - Stamres
-    coefficient: 0.95 # *grabs ur baton* nice knife
+    coefficient: 0.95
 
 # can't parent combat gloves since they are butcherable
 - type: entity

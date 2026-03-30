@@ -1,0 +1,131 @@
+- type: job
+  id: HECUSupport
+  name: job-name-usmc-automatic-rifleman
+  description: job-description-usmc-automatic-rifleman
+  playTimeTracker: JobHECUSupport
+  weight: 76
+  startingGear: HECUSupportGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOEngineer"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-corporal
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: HECUSupportGear
+  equipment:
+    id: HECUSupportPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlugBreach
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponShotgunUSSPAS12
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
+  storage:
+    back:
+    - SupplyBoxAmmoUSFilled
+    - BoxMRE
+    - ClothingMaskGasM40
+    - CrowbarRed
+    - WelderIndustrial
+    - Wrench
+    - Screwdriver
+    - Wirecutter
+    - Multitool
+    - Zipties
+
+- type: startingGear
+  id: HECUSupportM249Gear
+  equipment:
+    id: HECUSupportPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltMilitaryWebbingUSFilledM249
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponMachineGunUSM249Para
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: Tourniquet
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+    wallet: ClothingWalletLeatherBrown
+  storage:
+    back:
+    - SupplyBoxAmmoUSFilled
+    - BoxMRE
+    - ClothingMaskGasM40
+    - CrowbarRed
+    - WelderIndustrial
+    - Tourniquet
+    - Zipties
+
+- type: startingGear
+  id: HECUSupportSMAWGear
+  equipment:
+    id: HECUSupportPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSMAW
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponLauncherUSSMAW
+    pocket1: PouchMagsPistolLargeFilledMP5
+    pocket2: PouchFirstAidFilled
+    leftarmband: Tourniquet
+    rightarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
+  storage:
+    back:
+    - WeaponSubmachinegunUSMP5
+    - CartridgeSMAWNE
+    - CartridgeSMAWNE
+    - ClothingMaskGasM40
+    - CrowbarRed

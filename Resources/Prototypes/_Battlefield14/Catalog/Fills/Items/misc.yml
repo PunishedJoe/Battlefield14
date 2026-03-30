@@ -1,0 +1,57 @@
+- type: entity
+  id: SyringeCaseFilledBF14
+  parent: SyringeCase
+  suffix: Filled, BF14
+  components:
+  - type: StorageFill
+    contents:
+    - id: Syringe
+#    - id: MorphineChemistryBottle # Tramadol
+    - id: EpinephrineChemistryBottle # these are mostly to show off the sprite
+    - id: EmergencyMedipen
+#    - id: PainMedipen
+#    - id: CartridgeBicaridine
+#      amount: 2
+#    - id: CartridgeSaline
+#      amount: 2
+#    - id: CartridgeAtropine
+
+- type: entity
+  id: ClothingArmbandThighHolsterFilledUS
+  parent: ClothingArmbandThighHolster
+  suffix: Filled, US, M9
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolM9
+
+- type: entity
+  id: ClothingArmbandThighHolsterFilledRU
+  parent: ClothingArmbandThighHolster
+  suffix: Filled, RU, MP443
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolMP443
+
+- type: entity
+  id: ClothingArmbandThighHolsterFilledRUSR1MP
+  parent: ClothingArmbandThighHolster
+  suffix: Filled, RU, SR1MP
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolRUSR1MP
+
+- type: entity
+  id: ClothingArmbandSheathKnifePolymerFilled
+  parent: ClothingArmbandSheathKnifePolymer
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - CombatKnife

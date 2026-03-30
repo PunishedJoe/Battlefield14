@@ -5,6 +5,8 @@
   description: Displays a readout of the current station.
   abstract: true
   components:
+    - type: Item # BF14
+      size: Normal
     - type: StationMap
     - type: Sprite
       sprite: Objects/Devices/tablets.rsi

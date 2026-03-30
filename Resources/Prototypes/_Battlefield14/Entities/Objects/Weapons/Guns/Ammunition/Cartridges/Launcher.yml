@@ -1,0 +1,117 @@
+## US
+# SMAW
+
+- type: entity
+  id: CartridgeSMAWHEAA
+  name: "SMAW cartridge (HEAA)"
+  parent: BaseCartridge
+  description: High explosive anti armour, pierces and does damage on the inside, like HEAT.
+  components:
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+    - CartridgeLauncher
+    - CartridgeSMAW
+  - type: CartridgeAmmo
+    proto: BulletRocket84mmHEATArmingDistance
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/SMAW.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: CartridgeSMAWNE
+  name: "SMAW cartridge (SMAW-NE)"
+  parent: BaseCartridge
+  description: Detonates on contact and sends fragments everywhere with a wide explosion for killing infantry.
+  components:
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+    - CartridgeLauncher
+    - CartridgeSMAW
+  - type: CartridgeAmmo
+    proto: BulletRocket83mmNEArmingDistance
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/SMAW.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: CartridgeSMAWHEDM
+  name: "SMAW cartridge (HEDM)"
+  parent: BaseCartridge
+  description: High explosive dual mode, explodes on contact in a small area to blast open walls and such.
+  components:
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+    - CartridgeLauncher
+    - CartridgeSMAW
+  - type: CartridgeAmmo
+    proto: BulletRocket83mmHEDMArmingDistance
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/SMAW.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+## RU
+# RPG-7
+
+- type: entity
+  id: CartridgeRPG7HEAT
+  name: "RPG-7 rocket (PG-7VL)"
+  parent: BaseCartridge
+  description: High explosive anti armour, pierces and does damage on the inside, like HEAT.
+  components:
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+    - CartridgeLauncher
+    - CartridgeRPG7
+  - type: CartridgeAmmo
+    proto: BulletRocketRPG7HEATArmingDistance
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: CartridgeRPG7Frag
+  name: "RPG-7 rocket (OG-7V)"
+  parent: BaseCartridge
+  description: Detonates on contact and sends fragments everywhere with a wide explosion for killing infantry.
+  components:
+  - type: Item
+    size: Large
+  - type: Tag
+    tags:
+    - CartridgeLauncher
+    - CartridgeRPG7
+  - type: CartridgeAmmo
+    proto: BulletRocketRPG7FragArmingDistance
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

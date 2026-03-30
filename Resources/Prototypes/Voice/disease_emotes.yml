@@ -8,7 +8,7 @@
   id: Cough
   name: chat-emote-name-cough
   icon: Interface/Emotes/cough.png
-  category: Vocal
+#BF14   category: Vocal
   whitelist:
     components:
     - Vocal
@@ -55,7 +55,7 @@
   id: Yawn
   name: chat-emote-name-yawn
   icon: Interface/Emotes/yawn.png
-  category: Vocal
+#BF14   category: Vocal
   whitelist:
     components:
     - Vocal

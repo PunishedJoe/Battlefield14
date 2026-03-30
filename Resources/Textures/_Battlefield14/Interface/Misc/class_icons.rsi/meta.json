@@ -1,0 +1,59 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Made by JoeHammad",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+    {
+      "name": "natocaptain"
+    },
+    {
+      "name": "natosquadleader"
+    },
+    {
+      "name": "natoinfantry"
+    },
+    {
+      "name": "natosupport"
+    },
+    {
+      "name": "natorecon"
+    },
+    {
+      "name": "natomedic"
+    },
+    {
+      "name": "natoengineer"
+    },
+    {
+      "name": "natospecialforces"
+    },
+    {
+      "name": "pactcaptain"
+    },
+    {
+      "name": "pactsquadleader"
+    },
+    {
+      "name": "pactinfantry"
+    },
+    {
+      "name": "pactsupport"
+    },
+    {
+      "name": "pactrecon"
+    },
+    {
+      "name": "pactmedic"
+    },
+    {
+      "name": "pactengineer"
+    },
+    {
+      "name": "pactspecialforces"
+    }
+  ]
+}

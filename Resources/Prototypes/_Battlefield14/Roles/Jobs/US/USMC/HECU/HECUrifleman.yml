@@ -1,0 +1,73 @@
+- type: job
+  id: HECURifleman
+  name: job-name-hecu-rifleman
+  description: job-description-hecu-rifleman
+  playTimeTracker: JobHECURifleman
+  weight: 77
+  startingGear: USMCRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATORifleman"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: HECURiflemanGear
+  equipment:
+    id: HECURiflemanPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    head: ClothingHeadHatHelmetUSUrban
+#    eyes: ClothingEyesGogglesTan
+    mask: ClothingMaskGasM40Green
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponRifleUSM4A1
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
+  storage:
+    back:
+    - WeaponGrenadeLauncherUSM320HE
+    - BoxFlare
+    - BoxMRE
+    - CrowbarRed
+    - PowerCellPCV
+    - Cartridge40x46mmHE
+    - Cartridge40x46mmHE
+    - Cartridge40x46mmHE
+    - Tourniquet
+    - Zipties

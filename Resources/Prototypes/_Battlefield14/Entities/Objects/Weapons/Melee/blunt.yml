@@ -1,0 +1,55 @@
+- type: entity
+  name: FUBAR
+  parent: BaseItem
+  id: FUBAR
+  description: The BAR that fucks you up beyond all recognition. Can be used to pry open airlocks and unanchor things.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Tools/maintenance-jack.rsi
+    state: icon
+  - type: MeleeWeapon
+    heavyStaminaCost: 20
+    wideAnimationRotation: -90
+    swingLeft: true
+    attackRate: 0.6
+    damage:
+      types:
+        Blunt: 10
+        Structural: 5
+    soundHit:
+      collection: MetalThud
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/crowbar_drop.ogg
+      params:
+        volume: 2
+  - type: Wieldable 
+#    unwieldOnUse: false
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 35
+        Structural: 95
+  - type: PhysicalComposition
+    materialComposition: 
+      Steel: 200
+  - type: Item
+    size: Large
+  - type: Clothing
+    sprite: _NF/Objects/Tools/maintenance-jack.rsi
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+  - type: ToolTileCompatible
+  - type: Tool
+    qualities:
+      - Prying
+      - Anchoring
+    speedModifier: 1.2
+    useSound: /Audio/Items/crowbar.ogg
+  - type: Prying
+    useSound: /Audio/Items/crowbar.ogg
+    pryPowered: true
+  - type: UseDelay
+    delay: 1

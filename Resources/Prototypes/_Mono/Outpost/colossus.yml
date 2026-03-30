@@ -1,45 +1,45 @@
-- type: gameMap
-  id: Frontier
-  mapName: 'Colossus Central'
-  mapPath: /Maps/_Mono/Outpost/colossus_central.yml # Mono
-  minPlayers: 0
-  maxPlayers: 100
-  randomRotation: false
-  maxRandomOffset: 0
-  stations:
-    Frontier:
-      stationProto: StandardFrontierStation
-      gridComponents:
-      - type: VesselMusic
-        ambientMusicPrototype: ColossusCentralMusic
-      - type: VesselInfo
-        description: "The closest thing to civilisation in this sector. You almost feel safe."
-      components:
-        - type: StationNameSetup
-          mapNameTemplate: 'Colossus Central'
-#          nameGenerator:
-#            !type:NanotrasenNameGenerator
-#            prefixCreator: '14'
-        - type: ExtraStationInformation
-          icon: /Textures/_Mono/Logo/icon/icon-256x256.png # used the biggest one, looks better when downscaling than upscaling
-          stationSubtext: 'frontier-lobby-frontier-subtext'
-          stationDescription: 'frontier-lobby-frontier-description'
-          lobbySortOrder: 1
-        # - type: StationPlanetSpawner # Mono - Commented out planet spawner (for now)
-        #   planet: DesertWorld
-        #   gridPath: /Maps/_Mono/POI/surface_outpost_desert.yml
-        - type: StationJobs
-          availableJobs:
-            Contractor: [ -1, -1 ]
-            Pilot: [ -1, -1 ]
-            Mercenary: [ -1, -1 ]
-            Borg: [ -1, -1 ]
-            StationRepresentative: [ 1, 1 ]
-            StationTrafficController: [ 2, 2 ]
-            SecurityGuard: [ 3, 3 ]
-            CCServiceWorker: [ 2, 2 ]
-            NFJanitor: [ 2, 2 ]
-            MailCarrier: [ 2, 2 ]
-          tags:
-          - HeadOfPersonnel
-          - HeadOfSecurity
+#BF14- type: gameMap
+#BF14  id: Frontier
+#BF14  mapName: 'Colossus Central'
+#BF14  mapPath: /Maps/_Mono/Outpost/colossus_central.yml # Mono
+#BF14  minPlayers: 0
+#BF14  maxPlayers: 100
+#BF14  randomRotation: false
+#BF14  maxRandomOffset: 0
+#BF14  stations:
+#BF14    Frontier:
+#BF14      stationProto: StandardFrontierStation
+#BF14      gridComponents:
+#BF14      - type: VesselMusic
+#BF14        ambientMusicPrototype: ColossusCentralMusic
+#BF14      - type: VesselInfo
+#BF14        description: "The closest thing to civilisation in this sector. You almost feel safe."
+#BF14      components:
+#BF14        - type: StationNameSetup
+#BF14          mapNameTemplate: 'Colossus Central'
+#BF14#          nameGenerator:
+#BF14#            !type:NanotrasenNameGenerator
+#BF14#            prefixCreator: '14'
+#BF14        - type: ExtraStationInformation
+#BF14          icon: /Textures/_Mono/Logo/icon/icon-256x256.png # used the biggest one, looks better when downscaling than upscaling
+#BF14          stationSubtext: 'frontier-lobby-frontier-subtext'
+#BF14          stationDescription: 'frontier-lobby-frontier-description'
+#BF14          lobbySortOrder: 1
+#BF14        # - type: StationPlanetSpawner # Mono - Commented out planet spawner (for now)
+#BF14        #   planet: DesertWorld
+#BF14        #   gridPath: /Maps/_Mono/POI/surface_outpost_desert.yml
+#BF14        - type: StationJobs
+#BF14          availableJobs:
+#BF14            Contractor: [ -1, -1 ]
+#BF14            Pilot: [ -1, -1 ]
+#BF14            Mercenary: [ -1, -1 ]
+#BF14            Borg: [ -1, -1 ]
+#BF14            StationRepresentative: [ 1, 1 ]
+#BF14            StationTrafficController: [ 2, 2 ]
+#BF14            SecurityGuard: [ 3, 3 ]
+#BF14            CCServiceWorker: [ 2, 2 ]
+#BF14            NFJanitor: [ 2, 2 ]
+#BF14            MailCarrier: [ 2, 2 ]
+#BF14          tags:
+#BF14          - HeadOfPersonnel
+#BF14          - HeadOfSecurity

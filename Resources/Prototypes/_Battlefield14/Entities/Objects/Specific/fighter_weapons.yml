@@ -1,0 +1,394 @@
+# Base
+- type: entity
+  id: LightFighterEquipment
+  abstract: true
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Tag
+    tags:
+    - LightFighterEquipment
+  - type: MechEquipment
+    preventFireOnGrid: true
+  - type: StaticPrice
+    price: 500
+
+# NATO
+
+- type: entity
+  id: LightFighterM61A2
+  name: M61A2 20mm gatling gun
+  description: From high-tech aircraft, to naval CIWS mounts, to 1980's era M113's, this weapon is hungry for aircraft (and infantry) everywhere. Approx range 1 kilometer.
+  suffix: Fighter weapon, Light, Gun
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: M61A2
+  - type: Gun
+    projectileSpeed: 110
+    fireRate: 8
+    minAngle: 0
+    maxAngle: 5
+    angleIncrease: 0.1
+    angleDecay: 20
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/machinegun.ogg
+  - type: Battery
+    maxCharge: 180
+  - type: ProjectileBatteryAmmoProvider
+    proto: Bullet20mmPhalanx
+    fireCost: 25 # 300 shots
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  id: LightFighterAIM9
+  name: AIM-9XS missile gantry
+  description: The latest iteration of the AIM-9, fins removed and replaced with shifting titanium cubes to steer and thruster redesigned to work in space. approx 500 meter range.
+  suffix: Fighter weapon, Light, Missile
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: MechEquipment
+    preventFireOnGrid: true
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: aim9
+  - type: Gun
+    projectileSpeed: 50
+    fireRate: 0.2
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket1.ogg
+  - type: Battery
+    maxCharge: 1500
+  - type: ProjectileBatteryAmmoProvider
+    proto: FighterMissileAim9xs
+    fireCost: 1500 # 5 shots at max
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  id: FighterMissileAim9xs
+  name: AIM-9XS Missile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
+        Structural: 300
+        Blunt: 70
+        Heat: 70
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+    layers:
+    - state: aim9
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 3 # approx 500 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 2
+    intensitySlope: 8
+    maxIntensity: 8
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 300
+    detectionRange: 275
+    scanArc: 40
+    launchSpeed: 150
+    maxSpeed: 180
+    trackDelay: 1
+
+- type: entity
+  id: MediumFighterMaverick
+  name: AGM-67 Maverick missile gantry
+  description: An american classic, with fins redesigned to house shifting titanium cubes to steer and thrusters redesigned to work in space. approx 700 meter range.
+  suffix: Fighter weapon, Light, Missile
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: MechEquipment
+    preventFireOnGrid: true
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: hellfire
+  - type: Gun
+    projectileSpeed: 50
+    fireRate: 0.2
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket2.ogg
+  - type: Battery
+    maxCharge: 1500
+  - type: ProjectileBatteryAmmoProvider
+    proto: FighterMissileMaverick
+    fireCost: 1500 # 5 shots at max
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  id: FighterMissileMaverick
+  name: AGM-67 Maverick
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 350
+        Blunt: 100
+        Heat: 40
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+    layers:
+    - state: hellfire_launched
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 3
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 6 # approx 700 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 700
+    intensitySlope: 25
+    maxIntensity: 100
+    maxTileBreak: 2
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 80
+    detectionRange: 512
+    scanArc: 30
+    launchSpeed: 1
+    maxSpeed: 90
+    trackDelay: 2
+
+# PACT
+
+- type: entity
+  id: LightFighterGSH301
+  name: GSh-30-1 30mm autocannon
+  description: It may be from the 80's but the 30mm frag coming out doesn't care. Approx range 256 meters.
+  suffix: Fighter weapon, Light, Gun
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: GSH30
+  - type: Gun
+    projectileSpeed: 90
+    fireRate: 5
+    minAngle: 0
+    maxAngle: 5
+    angleIncrease: 1
+    angleDecay: 20
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+  - type: Battery
+    maxCharge: 180
+  - type: ProjectileBatteryAmmoProvider
+    proto: Bullet23mmFrag
+    fireCost: 35 # ~200 shots
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  id: LightFighterS8
+  name: S-8 Rocket pod
+  description: 80mm rockets coming at you can be described as highly concerning. Approx range 256 meters.
+  suffix: Fighter weapon, Light, Gun
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: smallrocketpod
+  - type: Gun
+    projectileSpeed: 65
+    fireRate: 8
+    minAngle: 0
+    maxAngle: 10
+    angleIncrease: 2
+    angleDecay: 10
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket3.ogg
+  - type: Battery
+    maxCharge: 180
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRocketS8
+    fireCost: 50 # ~180 shots
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketS8
+  name: 80mm S-8 rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+    layers:
+    - state: FFAR
+  - type: Projectile
+    damage:
+      types:
+        Structural: 40
+        Blunt: 40
+  - type: HeFragProjectile
+    fillPrototype: Bullet25x40Fragment
+    capacity: 16
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 1
+    requireNoGrid: true
+    shape: triangle
+  - type: TimedDespawn
+    lifetime: 4 # approx 256 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: MicroBomb
+    totalIntensity: 30
+    intensitySlope: 1.5
+    maxIntensity: 10
+    maxTileBreak: 1
+  - type: StaminaDamageOnCollide
+    damage: 40 # ~3 hits to stun
+
+# neutral
+
+- type: entity
+  id: LightFighterFlarePod
+  name: IR countermeasure pod
+  description: A countermeasure pod that dispenses IR flares for disrupting heat-seeking, or 'Fox-2', missiles.
+  suffix: Fighter weapon, Light, Countermeasure, IR
+  parent: [ BaseMechWeaponRange, LightFighterEquipment ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapons.rsi
+    state: flares
+  - type: Gun
+    projectileSpeed: 20
+    fireRate: 4
+    minAngle: 0
+    maxAngle: 2
+    angleIncrease: 2
+    angleDecay: 10
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/flare.ogg
+  - type: Battery
+    maxCharge: 180
+  - type: ProjectileBatteryAmmoProvider
+    proto: CountermeasureFlare_Spread
+    fireCost: 50 # ~180 shots
+  - type: Appearance
+  - type: AmmoCounter
+
+- type: entity
+  id: CountermeasureFlare
+  name: countermeasure flare
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Physics
+    bodyType: Dynamic
+    fixedRotation: false
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.1"
+        mask:
+          - BulletImpassable
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot-flare
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 8
+  - type: AmbientSound
+    enabled: true
+    volume: 0
+    range: 7
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: PointLight
+    enabled: true
+    color: "#FF8080"
+    radius: 15.0
+    energy: 9.0
+  - type: Projectile
+    deleteOnCollide: true
+    damage:
+      types:
+        Heat: 5
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2
+    requireNoGrid: true
+    shape: diamond
+  - type: TargetSeekingTarget
+
+- type: entity
+  id: CountermeasureFlare_Spread
+  categories: [ HideSpawnMenu ]
+  parent: CountermeasureFlare
+  components:
+  - type: ProjectileSpread
+    proto: CountermeasureFlare
+    count: 4
+    spread: 100

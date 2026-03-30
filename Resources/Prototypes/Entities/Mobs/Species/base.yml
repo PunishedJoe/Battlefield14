@@ -223,7 +223,7 @@
     tags:
     - CanPilot
     - FootstepSound
-    - DoorBumpOpener
+#BF14    - DoorBumpOpener
     - AnomalyHost
     - Humanoid # Mono
   - type: Targeting # Shitmed Change

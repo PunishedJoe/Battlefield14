@@ -1,0 +1,61 @@
+- type: entity
+  id: BulletPistolBF9x19
+  name: bullet (9x19 Parabellum)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 22
+    armorPenetration: -0.1
+  - type: StaminaDamageOnCollide
+    damage: 5 # 20 hits to stun lol
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+
+- type: entity
+  id: BulletPistolBF45ACP
+  name: bullet (.45 ACP)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 26
+    armorPenetration: -0.2
+  - type: StaminaDamageOnCollide
+    damage: 9 # ~11 hits to stun
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+
+- type: entity
+  id: BulletPistolBF357
+  name: bullet (.357 Magnum)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 35
+        Structural: 35
+    armorPenetration: 0.5
+  - type: StaminaDamageOnCollide
+    damage: 10 # 10 hits to stun
+
+- type: entity
+  id: BulletPistolBF50AE
+  name: bullet (.50 Action Express)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 50
+        Structural: 20
+    armorPenetration: -0.4
+  - type: StaminaDamageOnCollide
+    damage: 10 # 10 hits to stun

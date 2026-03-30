@@ -1,0 +1,1081 @@
+
+# K-145 "Kord-N" 12.7mm HMG
+- type: entity
+  id: Magazine127mmKordN
+  name: "12.7mm Kord-N HMG magazine (AP)"
+  description: "An ammunition belt for the K-145 Kord-N heavy machine gun. Loaded with armor-piercing rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine127mmKordN
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge127mmKordN
+    capacity: 200
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge127mmKordN
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge127mmKordN
+  name: cartridge (12.7mm Kord-N)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge127mmKordN
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet127mmKordN
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.5
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# Z-230 "Volna-N" 23mm Autocannon
+- type: entity
+  id: Magazine23mmVolnaN
+  name: "23mm Volna-N autocannon magazine (HE)"
+  description: "An ammunition loader for the Z-230 Volna-N autocannon. Loaded with high-explosive rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine23mmVolnaN
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge23mmHE
+    capacity: 400
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge23mmHE
+      - Cartridge23mmAPT
+      - Cartridge23mmFrag
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge23mmHE
+  name: cartridge (23mm HE)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge23mmHE
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet23mmHE
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.8
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# Z-230 "Volna-N" 23mm AP-T
+- type: entity
+  id: Cartridge23mmAPT
+  name: cartridge (23mm AP-T)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge23mmAPT
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet23mmAPT
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.7
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# Z-230 "Volna-N" 23mm Frag
+- type: entity
+  id: Cartridge23mmFrag
+  name: cartridge (23mm fragmentation)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge23mmFrag
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet23mmFrag
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.85
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# Z-230 "Volna-N" 23mm AP-T Magazine
+- type: entity
+  id: Magazine23mmAPT
+  name: "23mm Volna-N magazine (AP-T)"
+  description: "An ammunition loader for the Z-230 Volna-N autocannon, loaded with armor-piercing tracer rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine23mmAPT
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge23mmAPT
+    capacity: 400
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge23mmAPT
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+# Z-230 "Volna-N" 23mm Frag Magazine
+- type: entity
+  id: Magazine23mmFrag
+  name: "23mm Volna-N magazine (Fragmentation)"
+  description: "An ammunition loader for the Z-230 Volna-N autocannon, loaded with fragmentation rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine23mmFrag
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge23mmFrag
+    capacity: 400
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge23mmFrag
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+# A-300 "Grom-N" 30mm Autocannon
+- type: entity
+  id: Magazine30mmGromN
+  name: "30mm Grom-N autocannon magazine (APDS)"
+  description: "An ammunition loader for the A-300 Grom-N autocannon. Loaded with armor-piercing discarding sabot rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine30mmGromN
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge30mmAPDS
+    capacity: 150
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge30mmAPDS
+      - Cartridge30mmAPT
+      - Cartridge30mmHEI
+      - Cartridge30mmFrag
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge30mmAPDS
+  name: cartridge (30mm APDS)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge30mmAPDS
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet30mmAPDS
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 450
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.85
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+- type: entity
+  id: Cartridge30mmHEI
+  name: cartridge (30mm HEI)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge30mmHEI
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet30mmHEI
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.1
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# A-300 "Grom-N" 30mm AP-T
+- type: entity
+  id: Cartridge30mmAPT
+  name: cartridge (30mm AP-T)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge30mmAPT
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet30mmAPT
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 450
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.8
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# A-300 "Grom-N" 30mm Frag
+- type: entity
+  id: Cartridge30mmFrag
+  name: cartridge (30mm fragmentation)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge30mmFrag
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet30mmFrag
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.95
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# A-300 "Grom-N" 30mm AP-T Magazine
+- type: entity
+  id: Magazine30mmAPT
+  name: "30mm Grom-N magazine (AP-T)"
+  description: "An ammunition loader for the A-300 Grom-N autocannon, loaded with armor-piercing tracer rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine30mmAPT
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge30mmAPT
+    capacity: 150
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge30mmAPT
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+# A-300 "Grom-N" 30mm Frag Magazine
+- type: entity
+  id: Magazine30mmFrag
+  name: "30mm Grom-N magazine (Fragmentation)"
+  description: "An ammunition loader for the A-300 Grom-N autocannon, loaded with fragmentation rounds."
+  parent: [BaseItem, RecyclableItemSteelTiny]
+  components:
+  - type: Tag
+    tags:
+    - Magazine30mmFrag
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge30mmFrag
+    capacity: 150
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge30mmFrag
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+# S-570 "Burevestnik-N" 57mm Heavy Cannon
+- type: entity
+  id: Magazine57mmBurevestnikN
+  name: "57mm Burevestnik-N magazine (HE)"
+  description: "An ammunition loader for the S-570 Burevestnik-N heavy cannon. Loaded with high-explosive rounds."
+  parent: [BaseItem, RecyclableItemSteelSmall]
+  components:
+  - type: Tag
+    tags:
+    - Magazine57mmBurevestnikN
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge57mmBurevestnikN
+    capacity: 100
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge57mmBurevestnikN
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge57mmBurevestnikN
+  name: cartridge (57mm Burevestnik-N)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge57mmBurevestnikN
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet57mmBurevestnikN
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 90mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 650
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 3.2
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar
+- type: entity
+  id: Magazine83mmVasilekN
+  name: "83mm Vasilek-N mortar magazine (HE)"
+  description: "An ammunition clip for the V-830 Vasilek-N automatic mortar system. Loaded with high-explosive rounds."
+  parent: [BaseItem, RecyclableItemSteelSmall]
+  components:
+  - type: Tag
+    tags:
+    - Magazine83mmVasilekN
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge83mmMortar
+    capacity: 10
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge83mmMortar
+      - Cartridge83mmMortarIncendiary
+      - Cartridge83mmMortarSmoke
+      - Cartridge83mmMortarHEFrag
+      - Cartridge83mmMortarSteelCore
+      - Cartridge83mmMortarCSGas
+      - Cartridge83mmMortarSarin
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge83mmMortar
+  name: cartridge (83mm mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortar
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortar
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 2.2
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar Incendiary
+- type: entity
+  id: Cartridge83mmMortarIncendiary
+  name: cartridge (83mm incendiary mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarIncendiary
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarIncendiary
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.8
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar Smoke
+- type: entity
+  id: Cartridge83mmMortarSmoke
+  name: cartridge (83mm smoke mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarSmoke
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarSmoke
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.5
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar HE-Frag
+- type: entity
+  id: Cartridge83mmMortarHEFrag
+  name: cartridge (83mm HE-Frag mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarHEFrag
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarHEFrag
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 2.4
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar Steel Core
+- type: entity
+  id: Cartridge83mmMortarSteelCore
+  name: cartridge (83mm steel core mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarSteelCore
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarSteelCore
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 0.3
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar CS Gas
+- type: entity
+  id: Cartridge83mmMortarCSGas
+  name: cartridge (83mm CS gas mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarCSGas
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarCSGas
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.2
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# V-830 "Vasilek-N" 83mm Mortar Sarin
+- type: entity
+  id: Cartridge83mmMortarSarin
+  name: cartridge (83mm Sarin mortar)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge83mmMortarSarin
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet83mmMortarSarin
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 1.5
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+
+# K-1250 "Molot-N" 125mm Heavy Cannon
+- type: entity
+  id: Magazine125mmMolotN
+  name: "125mm Molot-N magazine (APFSDS)"
+  description: "An ammunition loader for the K-1250 Molot-N heavy cannon. Loaded with armor-piercing fin-stabilized discarding sabot rounds."
+  parent: [BaseItem, RecyclableItemSteelSmall]
+  components:
+  - type: Tag
+    tags:
+    - Magazine125mmMolotN
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    proto: Cartridge125mmAPFSDS
+    capacity: 5
+    mayTransfer: true
+    whitelist:
+      tags:
+      - Cartridge125mm
+      - Cartridge125mmAPFSDS
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: Cartridge125mmAPFSDS
+  name: cartridge (125mm APFSDS)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - Cartridge125mm
+    - Cartridge125mmAPFSDS
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: Bullet125mmAPFSDS
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/generic_cartridges.rsi
+    layers:
+    - state: 220mm
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 5.5
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Item
+    size: Large
+  - type: MultiHandedItem
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier

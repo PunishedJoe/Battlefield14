@@ -1,0 +1,238 @@
+- type: entity
+  id: BaseShellShotgunBF12Gauge
+  name: shotgun shell (12 gauge)
+  parent: BaseCartridge
+  description: Standard shotgun round practically everywhere.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeShotgun12Gauge
+  - type: CartridgeAmmo
+    soundEject:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: EmitSoundOnLand
+    sound:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/12_gauge_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+    scale: 0.8, 0.8
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: BF_CartridgeShotgun12GaugeBuckshot
+  name: shotgun shell (12 gauge buckshot)
+  parent: BaseShellShotgunBF12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF12Gauge_Spread
+
+- type: entity
+  id: PelletShotgunBF12Gauge_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF12Gauge
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF12Gauge
+    count: 10
+    spread: 15
+
+- type: entity
+  id: BF_CartridgeShotgun12GaugeSlug
+  name: shotgun shell (12 gauge slug)
+  parent: BaseShellShotgunBF12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: slug
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: SlugShotgunBF12Gauge
+  - type: SpentAmmoVisuals
+    state: "slug"
+
+- type: entity
+  id: BF_CartridgeShotgun12GaugeBreaching
+  name: shotgun shell (12 gauge breaching)
+  parent: BaseShellShotgunBF12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: practice
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF12GaugeBreaching_Spread
+  - type: SpentAmmoVisuals
+    state: "practice"
+
+- type: entity
+  id: PelletShotgunBF12GaugeBreaching_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF12GaugeBreaching
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF12GaugeBreaching
+    count: 3
+    spread: 5
+
+- type: entity
+  id: BF_CartridgeShotgun12GaugeFrag
+  name: shotgun shell (12 gauge frag)
+  parent: BaseShellShotgunBF12Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: flare
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF12GaugeFrag_Spread
+  - type: SpentAmmoVisuals
+    state: "flare"
+
+- type: entity
+  id: PelletShotgunBF12GaugeFrag_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF12GaugeFrag
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF12GaugeFrag
+    count: 10
+    spread: 15
+
+# 4 gauge
+
+- type: entity
+  id: BaseShellShotgunBF4Gauge
+  name: shotgun shell (4 gauge)
+  parent: BaseCartridge
+  description: Standard shotgun round practically everywhere.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeShotgun4Gauge
+  - type: CartridgeAmmo
+    soundEject:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: EmitSoundOnLand
+    sound:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Casings/4_gauge_shell.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+    scale: 0.8, 0.8
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: BF_CartridgeShotgun4GaugeShrap10
+  name: shotgun shell (4 gauge shrap-10)
+  parent: BaseShellShotgunBF4Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF4GaugeShrap10_Spread
+
+- type: entity
+  id: PelletShotgunBF4GaugeShrap10_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF4Gauge
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF4Gauge
+    count: 8
+    spread: 15
+
+- type: entity
+  id: BF_CartridgeShotgun4GaugeShrap25
+  name: shotgun shell (4 gauge shrap-25)
+  parent: BaseShellShotgunBF4Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: flechette
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF4GaugeShrap25_Spread
+  - type: SpentAmmoVisuals
+    state: "flechette"
+
+- type: entity
+  id: PelletShotgunBF4GaugeShrap25_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF4Gauge
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF4Gauge
+    count: 8
+    spread: 8
+
+- type: entity
+  id: BF_CartridgeShotgun4GaugeBarricade
+  name: shotgun shell (4 gauge barricade)
+  parent: BaseShellShotgunBF4Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: slug
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: SlugShotgunBF4Gauge
+  - type: SpentAmmoVisuals
+    state: "slug"
+
+- type: entity
+  id: BF_CartridgeShotgun4GaugeFlashbang
+  name: shotgun shell (4 gauge zvesza)
+  parent: BaseShellShotgunBF4Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: flare
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Bullet40mmGrenadeFlash # lol
+  - type: SpentAmmoVisuals
+    state: "flare"
+
+- type: entity
+  id: BF_CartridgeShotgun4GaugeFuck23
+  name: shotgun shell (4 gauge fuck-23)
+  description: We managed to shove in one of those 23mm anti aircraft fragmentation shells the barrel was supposed to fire. Don't ask.
+  parent: BaseShellShotgunBF4Gauge
+  components:
+  - type: Sprite
+    layers:
+      - state: RIP
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: Bullet23mmFrag # lol
+  - type: SpentAmmoVisuals
+    state: "RIP"

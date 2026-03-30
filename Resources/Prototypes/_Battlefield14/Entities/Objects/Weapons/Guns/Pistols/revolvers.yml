@@ -1,0 +1,17 @@
+- type: entity
+  name: MP412 REX
+  parent: WeaponRevolverMateba
+  id: WeaponPistolRevolverRUMP412
+  description: A rare and nearly extinct revolver designed for export, which of course was a venture doomed from the start. It now finds itself almost exclusively in the hands of high ranking officers (and grandpa back home).
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/MP412REX.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/MP412REX.rsi
+  - type: RevolverAmmoProvider
+    proto: BF_CartridgePistol357
+    capacity: 6
+    whitelist:
+      tags:
+        - BF_CartridgePistol357
+        - SpeedLoader357magnum

@@ -76,6 +76,16 @@
     sound:
       collection: SMGDrop
   # Goobstation edit end
+  - type: AltFireMelee # BF14
+    attackType: Heavy
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 15
+    angle: 0
+    wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+    soundHit:
+      collection: MetalThud
 
 - type: entity
   name: MA PDW-58 Atreides (5.7x28mm)

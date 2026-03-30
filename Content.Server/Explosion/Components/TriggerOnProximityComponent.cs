@@ -75,7 +75,7 @@ namespace Content.Server.Explosion.Components
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite)]
         [DataField("triggerSpeed")]
-        public float TriggerSpeed = 3.5f;
+        public float TriggerSpeed = 0.1f; // BF14 3.5f; - Trying to use the triggerspeed field doesn't work in yaml, no idea what the issue is so i'm changing it here for the BarbwireFloor proto
 
         /// <summary>
         /// If this proximity is triggered should we continually repeat it?

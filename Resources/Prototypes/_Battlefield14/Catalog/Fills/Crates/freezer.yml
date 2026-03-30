@@ -1,0 +1,29 @@
+- type: entity
+  id: CrateFreezerPartsLimbsCyber
+  parent: CrateFreezer
+  name: cybernetic limbs crate
+  description: A crate full of cybernetic limbs for prosthesis.
+  components:
+  - type: StorageFill
+    contents:
+      - id: LeftArmIPC
+      - id: RightArmIPC
+      - id: LeftLegIPC
+      - id: RightLegIPC
+      - id: LeftHandIPC
+      - id: RightHandIPC
+      - id: LeftFootIPC
+      - id: RightFootIPC
+
+- type: entity
+  id: CrateFreezerPartsOrgansSynthetic
+  parent: CrateFreezer
+  name: cybernetic organ crate
+  description: A box full of synthetic organs for prosthesis.
+  components:
+  - type: StorageFill
+    contents:
+    - id: BasicCyberneticEyes
+    - id: OrganSyntheticHeart
+    - id: OrganSyntheticKidneys
+    - id: OrganSyntheticLiver

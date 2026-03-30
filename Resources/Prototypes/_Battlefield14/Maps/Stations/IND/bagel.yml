@@ -1,0 +1,40 @@
+- type: pointOfInterest
+  id: INDBagel
+  parent: [BasePOI, BaseRepairablePOI]
+  name: 'Independant Bagel Station'
+#  minimumDistance: 0
+#  maximumDistance: 0
+#  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+#  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Stations/IND/bagelgrid.yml
+  addComponents:
+  - type: IFF
+    color: "#efefef"
+#    flags: [HideLabel]
+#    readOnly: true
+
+- type: gameMap
+  id: BF14Bagel
+  mapName: 'Bagel Station'
+  mapPath: /Maps/_Battlefield14/Stations/IND/bagel.yml
+  minPlayers: 0
+  maxPlayers: 25
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Bagel:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Independant "Bagel" Station'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+#            Contractor: [ 2, 3 ]
+            WPSSecurityOfficer: [ 1, 1 ] #[ 3, 3 ]
+            WPSWarden: [ 1, 1 ]
+            WPSMarshal: [ 1, 1 ]

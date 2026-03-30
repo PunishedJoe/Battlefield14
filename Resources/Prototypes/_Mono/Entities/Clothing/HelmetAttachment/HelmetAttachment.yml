@@ -86,6 +86,9 @@
       helmetattachment:
       - state: equipped-HELMETATTACHMENT
   - type: NightVision
+    color: "#407614" # BF14
+    noise: 0.5 # BF14 base noise
+    strength: 1 # BF14 prevents white tiles looking like shit
     flashDurationMultiplier: 3
     isEquipment: true
   - type: IdentityBlocker

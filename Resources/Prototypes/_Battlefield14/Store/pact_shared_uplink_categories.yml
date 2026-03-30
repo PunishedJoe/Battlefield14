@@ -1,0 +1,263 @@
+# Ammo
+
+- type: listing
+  id: UplinkPACTAmmoBox545Big
+  name:  uplink-PACT-ammo-box-545-big-name
+  description: uplink-PACT-ammo-box-545-big-desc
+  productEntity: MagazineBox545x39Big
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base-b }
+  cost:
+    PACTRequisition: 6 # 1 minutes
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox545
+  name:  uplink-PACT-ammo-box-545-name
+  description: uplink-PACT-ammo-box-545-desc
+  productEntity: MagazineBox545x39
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/5.56x45mm.rsi, state: base }
+  cost:
+    PACTRequisition: 1 # 10 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox9mmBig
+  name:  uplink-PACT-ammo-box-9mm-big-name
+  description: uplink-PACT-ammo-box-9mm-big-desc
+  productEntity: MagazineBox9x19mmBig
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/9x19mm.rsi, state: base-b }
+  cost:
+    PACTRequisition: 4 # 40 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox12gBuckshot
+  name:  uplink-PACT-ammo-box-12g-buckshot-name
+  description: uplink-PACT-ammo-box-12g-buckshot-desc
+  productEntity: ShellBoxBF12GaugeBuckshot
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi, state: icon-lethal }
+  cost:
+    PACTRequisition: 1 # 10 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTAmmoBox12gSlug
+  name:  uplink-PACT-ammo-box-12g-slug-name
+  description: uplink-PACT-ammo-box-12g-slug-desc
+  productEntity: ShellBoxBF12GaugeSlug
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi, state: icon-slug }
+  cost:
+    PACTRequisition: 1 # 10 seconds
+  categories:
+    - UplinkPACTRUAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+# Armour
+
+- type: listing
+  id: UplinkPACTArmorPlateLight
+  name:  uplink-PACT-armor-plate-light-crate-name
+  description: uplink-PACT-armor-plate-light-crate-desc
+  productEntity: CratePlateLight
+  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_light.rsi, state: icon }
+  cost:
+    PACTRequisition: 6 # 1 minute
+  categories:
+    - UplinkPACTRUArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTArmorPlateMedium
+  name:  uplink-PACT-armor-plate-medium-crate-name
+  description: uplink-PACT-armor-plate-medium-crate-desc
+  productEntity: CratePlateMedium
+  icon: { sprite: _Mono/Clothing/ArmorPlate/armor_medium.rsi, state: icon }
+  cost:
+    PACTRequisition: 12 # 2 minutes
+  categories:
+    - UplinkPACTRUArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+# Utility
+
+- type: listing
+  id: UplinkPACTMacheteBelt
+  name:  uplink-PACT-machete-belt-name
+  description: uplink-PACT-machete-belt-desc
+  productEntity: ClothingBeltMacheteFilled
+  icon: { sprite: _Battlefield14/Clothing/Belt/machetebelt.rsi, state: icon }
+  cost:
+    PACTRequisition: 8 # 1 minute 20 seconds
+  categories:
+    - UplinkPACTRUUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTThighHolster
+  name:  uplink-PACT-thigh-holster-name
+  description: uplink-PACT-thigh-holster-desc
+  productEntity: ClothingArmbandThighHolsterFilledRU
+  icon: { sprite: _Battlefield14/Clothing/Accessories/thighholster.rsi, state: icon } # TODO fix this weird shit where it has to be 64x64 or it doesn't work
+  cost:
+    PACTRequisition: 6 # 1 minute
+  categories:
+    - UplinkPACTRUUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTKnifeSheath
+  name:  uplink-PACT-knife-sheath-name
+  description: uplink-PACT-knife-sheath-desc
+  productEntity: ClothingArmbandSheathKnifePolymerFilled
+  icon: { sprite: _Battlefield14/Clothing/Accessories/knifesheathpolymer.rsi, state: icon } # TODO fix this weird shit where it has to be 64x64 or it doesn't work
+  cost:
+    PACTRequisition: 1 # 10 seconds
+  categories:
+    - UplinkPACTRUUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTWristScanner
+  name:  uplink-PACT-wrist-scanner-name
+  description: uplink-PACT-wrist-scanner-desc
+  productEntity: ClothingArmbandMassScanner
+  icon: { sprite: _Battlefield14/Clothing/Accessories/wristscanner.rsi, state: icon } # TODO fix this weird shit where it has to be 64x64 or it doesn't work
+  cost:
+    PACTRequisition: 6 # 1 minutes
+  categories:
+    - UplinkPACTRUUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTBarbwire
+  name:  uplink-PACT-barbwirecrate-name
+  description: uplink-PACT-barbwirecrate-desc
+  productEntity: CrateSecgearFilledBarbwire
+  icon: { sprite: _RMC14/Objects/barbed_wire.rsi, state: barbed_wire_3 }
+  cost:
+    PACTRequisition: 4 # 40 seconds
+  categories:
+    - UplinkPACTRUUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+# Medical
+
+- type: listing
+  id: UplinkPACTMedkitCombat
+  name:  uplink-PACT-medkit-combat-name
+  description: uplink-PACT-medkit-combat-desc
+  productEntity: MedkitCombatFilled
+  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  cost:
+    NATORequisition: 10 # 1 minute 40 seconds
+  categories:
+    - UplinkPACTRUMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTMedkitAdvanced
+  name:  uplink-PACT-medkit-advanced-name
+  description: uplink-PACT-medkit-advanced-desc
+  productEntity: MedkitAdvancedFilled
+  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: advkit }
+  cost:
+    PACTRequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkPACTRUMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTPartsLimbsCyberBox
+  name:  uplink-PACT-parts-limbs-cyber-box-name
+  description: uplink-PACT-parts-limbs-cyber-box-desc
+  productEntity: BoxPartsLimbsCyber
+  icon: { sprite: _EinsteinEngines/Mobs/Species/IPC/parts.rsi, state: full }
+  cost:
+    PACTRequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkPACTRUMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTPartsOrgansSynthCrate
+  name:  uplink-PACT-parts-organs-synth-crate-name
+  description: uplink-PACT-parts-organs-synth-crate-desc
+  productEntity: CrateFreezerPartsOrgansSynthetic
+  icon: { sprite: Mobs/Species/Human/organs.rsi, state: heart-off }
+  cost:
+    PACTRequisition: 15 # 2 minutes 30 seconds
+  categories:
+    - UplinkPACTRUMedical
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink

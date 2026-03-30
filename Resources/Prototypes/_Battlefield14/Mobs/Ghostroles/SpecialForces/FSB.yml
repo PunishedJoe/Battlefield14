@@ -1,0 +1,210 @@
+# Base
+- type: entity
+  parent: MobHuman
+  id: MobHumanFSBBase
+  name: vlad FSB
+  suffix: Human, Base, FSB, BF14
+  components:
+  - type: HumanoidAppearance
+    height: 1.0
+    width: 1.0
+  - type: Loadout
+    prototypes: [FSBRiflemanGear]
+  - type: GhostRole
+    name: job-name-fsb-rifleman
+    description: job-description-fsb-rifleman
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - SyndicateNamesPrefix
+    - SyndicateNamesNormal # OPSEC bro..
+  - type: NpcFactionMember
+    factions:
+    - FSB
+  - type: Company
+    companyName: VDV
+  - type: SurgerySpeedModifier
+    speedModifier: 1.5
+  - type: LanguageKnowledge # Einstein Engines
+    speaks:
+    - Russian
+    - English
+    - Esperanto
+    - Sign
+    understands:
+    - Russian
+    - English
+    - Esperanto
+    - Sign
+    - TauCetiBasic
+
+## IN-ATMOSPHERE
+
+# Fireteam Leader
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBSquadLeader
+  name: FSB Team Leader
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [FSBSquadLeaderGear]
+  - type: GhostRole
+    name: job-name-fsb-squadleader
+    description: job-description-fsb-squadleader
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+
+# Rifleman
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBRifleman
+  name: FSB Rifleman
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [FSBRiflemanGear]
+  - type: GhostRole
+    name: job-name-fsb-rifleman
+    description: job-description-fsb-rifleman
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+
+# Support
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBSupport
+  name: FSB Support
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [FSBSupportGear]
+  - type: GhostRole
+    name: job-name-fsb-automatic-rifleman
+    description: job-description-fsb-automatic-rifleman
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+
+# Combat Medic
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBMedic
+  name: FSB Combat Medic
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [FSBMedicGear]
+  - type: GhostRole
+    name: job-name-fsb-medic
+    description: job-description-fsb-medic
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+  - type: SurgerySpeedModifier
+    speedModifier: 2.25
+
+# Recon
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBRecon
+  name: FSB Recon
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [FSBReconGear]
+  - type: GhostRole
+    name: job-name-fsb-recon
+    description: job-description-fsb-recon
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+
+## OUT OF ATMOSPHERE / SPACE
+
+# Fireteam Leader
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBSquadLeaderEVA
+  name: FSB Team Leader
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [FSBSquadLeaderGearEVA]
+  - type: GhostRole
+    name: job-name-fsb-squadleader
+    description: job-description-fsb-squadleader
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+
+# Rifleman
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBRiflemanEVA
+  name: FSB Rifleman
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [FSBRiflemanGearEVA]
+  - type: GhostRole
+    name: job-name-fsb-rifleman
+    description: job-description-fsb-rifleman
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+
+# Support
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBSupportEVA
+  name: FSB Support
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [FSBSupportGearEVA]
+  - type: GhostRole
+    name: job-name-fsb-automatic-rifleman
+    description: job-description-fsb-automatic-rifleman
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+
+# Combat Medic
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBMedicEVA
+  name: FSB Combat Medic
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [FSBMedicGearEVA]
+  - type: GhostRole
+    name: job-name-fsb-medic
+    description: job-description-fsb-medic
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short
+  - type: SurgerySpeedModifier
+    speedModifier: 2.25
+
+# Recon
+- type: entity
+  parent: MobHumanFSBBase
+  id: MobHumanFSBReconEVA
+  name: FSB Recon
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [FSBReconGearEVA]
+  - type: GhostRole
+    name: job-name-fsb-recon
+    description: job-description-fsb-recon
+    rules: ghost-role-information-fsb-rules
+    raffle:
+      settings: short

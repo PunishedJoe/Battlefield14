@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Numerics;
 using Content.Client._Mono.Blocking.Components;
 using Content.Shared._Mono.Blocking;
 using Content.Shared.Blocking.Components;
@@ -22,6 +23,7 @@ using Content.Shared.Verbs;
 using Robust.Shared.Network;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Dynamics;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
@@ -119,11 +121,13 @@ public sealed partial class BlockingSystem : SharedBlockingSystem // Mono
         // Mono end
         // Mono - change args.User to args.Equippee
         StopBlockingHelper(uid, component, args.Equipee);
+        removeExpandedFixture(args.Equipee, component);
     }
 
     private void OnDrop(EntityUid uid, BlockingComponent component, DroppedEvent args)
     {
         StopBlockingHelper(uid, component, args.User);
+        removeExpandedFixture(args.User, component);
     }
 
     private void OnGetActions(EntityUid uid, BlockingComponent component, GetItemActionsEvent args)
@@ -132,15 +136,61 @@ public sealed partial class BlockingSystem : SharedBlockingSystem // Mono
             args.AddAction(ref component.BlockingToggleActionEntity, component.BlockingToggleAction);
     }
 
+    private void ensureExpandedFixture(EntityUid uid, BlockingComponent comp)
+    {
+        if (_net.IsClient)
+            return;
+        var v = comp.expandFixture;
+        _fixtureSystem.TryCreateFixture(uid,
+            v.Shape,
+            BlockingComponent.ExpandedFixtureID,
+            v.Density,
+            v.Hard,
+            v.CollisionLayer,
+            v.CollisionMask,
+            v.Friction,
+            v.Restitution,
+            true);
+        if(!comp.visualEnt.IsValid())
+            comp.visualEnt = Spawn("VisualEntityBase");
+        _transformSystem.SetParent(comp.visualEnt, uid);
+        _transformSystem.SetLocalPosition(comp.visualEnt, Vector2.Zero);
+        _transformSystem.SetLocalRotation(comp.visualEnt, Angle.Zero);
+    }
+
+
+    private void removeExpandedFixture(EntityUid uid, BlockingComponent comp)
+    {
+        if (_net.IsClient)
+            return;
+        _transformSystem.SetParent(comp.visualEnt, EntityUid.Invalid);
+        _fixtureSystem.DestroyFixture(uid, BlockingComponent.ExpandedFixtureID, true);
+    }
+
     // Mono start
     private void OnItemToggleAction(EntityUid uid, BlockingComponent component, ItemToggledEvent args)
     {
+        if (component.User is null)
+            return;
         if (TryComp<ItemToggleComponent>(uid, out var itemToggleComponent))
         {
-            if (component.IsClothing && itemToggleComponent.Activated && component.User != null)
-                AddComp<BlockingVisualsComponent>(component.User.Value);
-            else if (component.User != null && !itemToggleComponent.Activated)
+            if (itemToggleComponent.Activated)
+            {
+                if (component.IsClothing)
+                    AddComp<BlockingVisualsComponent>(component.User.Value);
+                if (component.fixtureOnExpand)
+                {
+                   ensureExpandedFixture(component.User.Value, component);
+                }
+            }
+            else
+            {
                 RemCompDeferred<BlockingVisualsComponent>(component.User.Value);
+                if (component.fixtureOnExpand)
+                {
+                    removeExpandedFixture(component.User.Value, component);
+                }
+            }
         }
     }
     // Mono end
@@ -185,6 +235,7 @@ public sealed partial class BlockingSystem : SharedBlockingSystem // Mono
         {
             _actionsSystem.RemoveProvidedActions(component.User.Value, uid);
             StopBlockingHelper(uid, component, component.User.Value);
+            removeExpandedFixture(component.User.Value, component);
             // Mono start
             var user = component.User.Value;
             if (HasComp<BlockingVisualsComponent>(user))

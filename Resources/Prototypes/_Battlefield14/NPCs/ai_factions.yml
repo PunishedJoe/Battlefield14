@@ -1,0 +1,25 @@
+#
+
+# NATO
+
+- type: npcFaction
+  id: NATOFighter
+  hostile:
+    - PACTFighter
+
+- type: npcFaction
+  id: NATOWarship
+  hostile:
+    - PACTWarship
+
+# PACT
+
+- type: npcFaction
+  id: PACTFighter
+  hostile:
+    - NATOFighter
+
+- type: npcFaction
+  id: PACTWarship
+  hostile:
+    - NATOWarship

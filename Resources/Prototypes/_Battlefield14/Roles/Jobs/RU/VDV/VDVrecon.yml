@@ -1,0 +1,64 @@
+- type: job
+  id: VDVRecon
+  name: job-name-vdv-recon
+  description: job-description-vdv-recon
+  playTimeTracker: JobVDVRecon
+  weight: 74
+  startingGear: VDVReconGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTRecon"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: VDVReconGear
+  equipment:
+    id: VDVReconPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilledASVALShort
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+    head: ClothingHeadHatHelmetRUEMR
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
+#    eyes: ClothingEyesGogglesGreen
+    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackRucksackBlack
+    neck: ClothingNeckIFFtapeWhite
+    suitstorage: WeaponRifleRUASVAL
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledVDVScout
+  storage:
+    back:
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
+    - Rangefinder
+    - HandheldStationMapUnpowered
+    - Tourniquet
+    - Zipties

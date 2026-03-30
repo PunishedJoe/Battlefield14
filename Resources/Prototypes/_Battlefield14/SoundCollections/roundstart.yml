@@ -1,0 +1,6 @@
+- type: soundCollection # doesnt work btw, round start sound can only be a path not a collection, if you see this remind me to fix it later
+  id: BFWelcomeSounds
+  files:
+  - /Audio/_Battlefield14/Announcements/welcome.ogg
+  - /Audio/_Battlefield14/Announcements/get_tactical.ogg
+  - /Audio/_Battlefield14/Announcements/maga_country.ogg

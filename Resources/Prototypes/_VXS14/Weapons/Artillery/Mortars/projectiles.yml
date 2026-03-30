@@ -1,0 +1,79 @@
+
+- type: entity
+  id: ArtilleryMarkerFrag82mm
+  categories: [ HideSpawnMenu ]
+  name: artillery strike 82mm frag
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 30
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: BulletGrenadeF1Fragment #BF14 PelletClusterLethalHeavy does not exist
+    capacity: 40
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+
+- type: entity
+  id: ArtilleryMarkerSmoke82mm
+  categories: [ HideSpawnMenu ]
+  name: artillery strike 82mm smoke
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: TimedDespawn
+    lifetime: 30
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 50
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - trigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10
+    intensitySlope: 5
+    maxIntensity: 1
+
+- type: entity
+  id: ArtilleryMarkerEMP82mm
+  categories: [ HideSpawnMenu ]
+  name: artillery strike 82mm emp
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: EmpOnTrigger
+    range: 5
+    energyConsumption: 10000
+    disableDuration: 5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10
+    intensitySlope: 5
+    maxIntensity: 1

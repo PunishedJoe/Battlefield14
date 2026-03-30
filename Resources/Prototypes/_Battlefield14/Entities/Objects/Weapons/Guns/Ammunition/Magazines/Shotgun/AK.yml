@@ -1,0 +1,89 @@
+- type: entity
+  parent: BaseItem
+  id: MagazineShotgunKSK
+  name: "KS-K magazine (12 Gauge buckshot)"
+  description: 8 round 12 gauge magazine for the KS-K automatic shotgun.
+  components:
+  - type: Tag
+    tags:
+      - Magazine
+      - MagazineShotgunKSK
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeShotgun12Gauge
+    capacity: 8
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineShotgunKSKSlug
+  name: "KS-K magazine (12 Gauge slug)"
+  description: 8 round 12 gauge magazine for the KS-K automatic shotgun.
+  components:
+  - type: Tag
+    tags:
+      - Magazine
+      - MagazineShotgunKSK
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeShotgun12GaugeSlug
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeShotgun12Gauge
+    capacity: 8
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineShotgunKSKBreaching
+  name: "KS-K magazine (12 Gauge breaching)"
+  description: 8 round 12 gauge magazine for the KS-K automatic shotgun.
+  components:
+  - type: Tag
+    tags:
+      - Magazine
+      - MagazineShotgunKSK
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeShotgun12GaugeBreaching
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeShotgun12Gauge
+    capacity: 8
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/KSK.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance

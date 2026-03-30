@@ -7,6 +7,7 @@
   - type: Tag
     tags:
       - Magazine68x52mmCaseless
+      - Magazine # BF14
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
@@ -68,17 +69,23 @@
 
 - type: entity
   id: Magazine68x52mmCaseless
-  name: "magazine (6.8x52mm STANAG Caseless)"
+  name: "magazine (6.8x52mm Caseless)" # BF14
   parent: BaseMagazine68x52mmCaseless
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge68x52mmCaseless
   - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/M30.rsi # BF14
     layers:
-    - state: red
+    - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3 # BF14
+    zeroVisible: false
+  - type: Appearance
 
 - type: entity
   id: Magazine68x52mmCaselessPractice

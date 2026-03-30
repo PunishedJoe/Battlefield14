@@ -1,0 +1,471 @@
+#NATO
+
+- type: entity
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOCommon
+  suffix: NATO Common, Locked
+  name: NATO Common airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCommon ]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockMaintLockedNATOMaintenance
+  suffix: NATO Maintenance, Locked
+  name: NATO Maintenance airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOMaintenance ]
+
+- type: entity
+  parent: AirlockMedical
+  id: AirlockMedicalLockedNATOMedical
+  suffix: NATO Medical, Locked
+  name: NATO Medical airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOMedical ]
+
+- type: entity
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOSoldier
+  suffix: NATO Soldier, Locked
+  name: NATO Soldier airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOSoldier ]
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedNATOArmory
+  suffix: NATO Armoury, Locked
+  name: NATO Armoury airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOArmory ]
+
+- type: entity
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOCommand
+  suffix: NATO Command, Locked
+  name: NATO Command airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCommand]
+
+- type: entity
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOFunds
+  suffix: NATO Funds, Locked
+  name: NATO Funds airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOFunds ]
+
+- type: entity
+  parent: AirlockNfsd
+  id: AirlockNfsdLockedNATOCrew
+  suffix: NATO Crew, Locked
+  name: NATO Crew airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCrew ]
+
+# NATO glass
+
+- type: entity
+  parent: AirlockNfsdGlass
+  id: AirlockNfsdGlassLockedNATOCommon
+  suffix: NATO Common, Locked
+  name: NATO Common airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCommon ]
+
+- type: entity
+  parent: AirlockMaintGlass
+  id: AirlockMaintGlassLockedNATOMaintenance
+  suffix: NATO Maintenance, Locked
+  name: NATO Maintenance airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOMaintenance ]
+
+- type: entity
+  parent: AirlockMedicalGlass
+  id: AirlockMedicalGlassLockedNATOMedical
+  suffix: NATO Medical, Locked
+  name: NATO Medical airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOMedical ]
+
+- type: entity
+  parent: AirlockNfsdGlass
+  id: AirlockNfsdGlassLockedNATOSoldier
+  suffix: NATO Soldier, Locked
+  name: NATO Soldier airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOSoldier ]
+
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlassLockedNATOArmory
+  suffix: NATO Armoury, Locked
+  name: NATO Armoury airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOArmory ]
+
+- type: entity
+  parent: AirlockNfsdGlass
+  id: AirlockNfsdGlassLockedNATOCommand
+  suffix: NATO Command, Locked
+  name: NATO Command airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCommand]
+
+- type: entity
+  parent: AirlockNfsdGlass
+  id: AirlockNfsdGlassLockedNATOFunds
+  suffix: NATO Funds, Locked
+  name: NATO Funds airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOFunds ]
+
+- type: entity
+  parent: AirlockNfsdGlass
+  id: AirlockNfsdGlassLockedNATOCrew
+  suffix: NATO Crew, Locked
+  name: NATO Crew airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCrew ]
+
+# NATO windoors
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOCommon
+  suffix: NATO Common, Locked, Windoor
+  name: NATO Common windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCommon ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOMaintenance
+  suffix: NATO Maintenance, Locked, Windoor
+  name: NATO Maintenance windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOMaintenance ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOMedical
+  suffix: NATO Medical, Locked, Windoor
+  name: NATO Medical windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOMedical ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOArmory
+  suffix: NATO Armory, Locked, Windoor
+  name: NATO Armoury windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOArmory ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOSoldier
+  suffix: NATO Soldier, Locked, Windoor
+  name: NATO Soldier windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOSoldier ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOCommand
+  suffix: NATO Command, Locked, Windoor
+  name: NATO Command windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCommand ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureNATOCrew
+  suffix: NATO Crew, Locked, Windoor
+  name: NATO Crew windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNATOCrew ]
+
+#PACT
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACT
+  suffix: PACT, Locked
+  name: PACT Common airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCommon ]
+
+- type: entity
+  parent: AirlockMaint
+  id: AirlockSyndicateLockedPACTMaintenance
+  suffix: PACT Maintenance, Locked
+  name: PACT Maintenance airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTMaintenance ]
+
+- type: entity
+  parent: AirlockMedical
+  id: AirlockMedicalLockedPACTMedical
+  suffix: PACT Medical, Locked
+  name: PACT Medical airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTMedical ]
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTSoldier
+  suffix: PACT Soldier, Locked
+  name: PACT Soldier airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTSoldier ]
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTArmory
+  suffix: PACT Armoury, Locked
+  name: PACT Armoury airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTArmory ]
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTCommand
+  suffix: PACT Command, Locked
+  name: PACT Command airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCommand]
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTFunds
+  suffix: PACT Funds, Locked
+  name: PACT Funds airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTFunds ]
+
+- type: entity
+  parent: AirlockSyndicate
+  id: AirlockSyndicateLockedPACTCrew
+  suffix: PACT Crew, Locked
+  name: PACT Crew airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCrew ]
+
+# PACT glass
+
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlassLockedPACT
+  suffix: PACT, Locked
+  name: PACT Common airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCommon ]
+
+- type: entity
+  parent: AirlockMaintGlass
+  id: AirlockMaintGlassLockedPACTMaintenance
+  suffix: PACT Maintenance, Locked
+  name: PACT Maintenance airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTMaintenance ]
+
+- type: entity
+  parent: AirlockMedicalGlass
+  id: AirlockMedicalGlassLockedPACTMedical
+  suffix: PACT Medical, Locked
+  name: PACT Medical airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTMedical ]
+
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlassLockedPACTSoldier
+  suffix: PACT Soldier, Locked
+  name: PACT Soldier airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTSoldier ]
+
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlassLockedPACTArmory
+  suffix: PACT Armoury, Locked
+  name: PACT Armoury airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTArmory ]
+
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlassLockedPACTCommand
+  suffix: PACT Command, Locked
+  name: PACT Command airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCommand]
+
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlassLockedPACTFunds
+  suffix: PACT Funds, Locked
+  name: PACT Funds airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTFunds ]
+
+- type: entity
+  parent: AirlockSyndicateGlass
+  id: AirlockSyndicateGlassLockedPACTCrew
+  suffix: PACT Crew, Locked
+  name: PACT Crew airlock
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCrew ]
+
+# PACT windoors
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTCommon
+  suffix: PACT Common, Windoor
+  name: PACT Common windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCommon ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTMaintenance
+  suffix: PACT Maintenance, Locked, Windoor
+  name: PACT Maintenance windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTMaintenance ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTMedical
+  suffix: PACT Medical, Locked, Windoor
+  name: PACT Medical windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTMedical ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTArmory
+  suffix: PACT Armoury, Locked, Windoor
+  name: PACT Armoury windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTArmory ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTSoldier
+  suffix: PACT Soldier, Locked, Windoor
+  name: PACT Soldier windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTSoldier ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTCommand
+  suffix: PACT Command, Windoor
+  name: PACT Command windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCommand ]
+
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePACTCrew
+  suffix: PACT Crew, Windoor
+  name: PACT Crew windoor
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPACTCrew ]

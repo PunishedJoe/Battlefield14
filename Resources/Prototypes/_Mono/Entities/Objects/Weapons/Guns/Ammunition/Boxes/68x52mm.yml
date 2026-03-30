@@ -39,7 +39,7 @@
 - type: entity
   parent: BaseAmmoBox68x52mmCaseless
   id: AmmoBox68x52mmCaseless
-  name: ammunition box (6.8x52mm STANAG Caseless)
+  name: ammunition box (6.8x52mm Caseless) # BF14 -STANAG
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge68x52mmCaseless
@@ -105,3 +105,4 @@
   - type: Tag
     tags:
      - Magazine68x52mmCaselessBoxBig
+     - AmmunitionBox # BF14

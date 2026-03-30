@@ -1,0 +1,415 @@
+## NATO
+# US
+- type: entity
+  id: CrateSecgearNATOFilledM249Para
+  suffix: Filled, M249 Para
+  parent: CrateSecgear
+  name: M249 Para crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponMachineGunUSM249Para
+          amount: 2
+        - id: MagazineBeltBoxM249
+          amount: 4
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledSMAW
+  suffix: Filled, SMAW
+  parent: CrateSecgear
+  name: SMAW crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSSMAW
+          amount: 2
+        - id: CartridgeSMAWHEAA
+          amount: 4
+        - id: CartridgeSMAWNE
+          amount: 4
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledAT4
+  suffix: Filled, AT4
+  parent: CrateSecgear
+  name: AT4 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSAT4
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledSMAWDisposable
+  suffix: Filled, SMAW-D
+  parent: CrateSecgear
+  name: SMAW-D crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSSMAWDisposable
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledStinger
+  suffix: Filled, Stinger
+  parent: CrateSecgear
+  name: FIM-92 Stinger MANPADS crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherUSStinger
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM27IAR
+  suffix: Filled, M27IAR
+  parent: CrateSecgear
+  name: M27-IAR crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleUSM27IAR
+          amount: 5
+        - id: BoxMagazineSTANAG
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM16A4
+  suffix: Filled, M16A4
+  parent: CrateSecgear
+  name: M16A4 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleUSM16A4
+          amount: 10
+        - id: BoxMagazineSTANAG
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM4A1
+  suffix: Filled, M4A1
+  parent: CrateSecgear
+  name: M4A1 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleUSM4A1
+          amount: 5
+        - id: BoxMagazineSTANAG
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM870
+  suffix: Filled, M870
+  parent: CrateSecgear
+  name: M870 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunUSM870
+          amount: 5
+        - id: ShellBoxBF12GaugeBuckshot
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM590
+  suffix: Filled, M590
+  parent: CrateSecgear
+  name: M590 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunUSM590
+          amount: 5
+        - id: ShellBoxBF12GaugeBreaching
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM320
+  suffix: Filled, M320
+  parent: CrateSecgear
+  name: M320 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSM320
+          amount: 2
+        - id: BoxMagazine40x46HE
+          amount: 1
+        - id: BoxMagazine40x46Frag
+          amount: 2
+        - id: BoxMagazine40x46ChemicalSmoke
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM14EBR
+  suffix: Filled, Mk-14 EBR
+  parent: CrateSecgear
+  name: Mk-14 EBR crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperUSM14EBR
+          amount: 2
+        - id: BoxMagazineM14
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+## PACT
+# RU
+
+- type: entity
+  id: CrateSecgearPACTFilledAK12
+  suffix: Filled, AK-12
+  parent: CrateSecgear
+  name: AK-12 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAK12
+          amount: 10
+        - id: BoxMagazineAK12
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledAK74
+  suffix: Filled, AK-74
+  parent: CrateSecgear
+  name: AK-74 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAK74
+          amount: 10
+        - id: BoxMagazineAK74
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledAK203
+  suffix: Filled, AK-203
+  parent: CrateSecgear
+  name: AK-203 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAK203
+          amount: 5
+        - id: BoxMagazineAK203
+          amount: 2
+        - id: ClothingUniformJumpsuitCamoRUDigitalRed
+          amount: 5
+        - id: ClothingHelmetCoverRUDigitalRed
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledSV98
+  suffix: Filled, SV-98
+  parent: CrateSecgear
+  name: SV-98 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperRUSV98
+          amount: 2
+        - id: BoxMagazineSV98AP
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledSVDS
+  suffix: Filled, SVDS
+  parent: CrateSecgear
+  name: SVDS crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperRUSVDS
+          amount: 2
+        - id: BoxMagazineSVDS
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledKSK
+  suffix: Filled, KSK
+  parent: CrateSecgear
+  name: KSK crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunRUKSK
+          amount: 2
+        - id: BoxMagazineKSKBuckshot
+          amount: 2
+        - id: BoxMagazineKSKSlug
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledPKM
+  suffix: Filled, PKM
+  parent: CrateSecgear
+  name: PKM crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponMachineGunRUPKM
+          amount: 2
+        - id: MagazineBeltBoxPKM
+          amount: 4
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPG7
+  suffix: Filled, RPG-7
+  parent: CrateSecgear
+  name: RPG-7 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRURPG7
+          amount: 2
+        - id: CartridgeRPG7HEAT
+          amount: 4
+        - id: CartridgeRPG7Frag
+          amount: 4
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPG30
+  suffix: Filled, RPG-30
+  parent: CrateSecgear
+  name: RPG-30 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRURPG30
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPG26
+  suffix: Filled, RPG-26
+  parent: CrateSecgear
+  name: RPG-26 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRURPG26
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPG26Thermobaric
+  suffix: Filled, RShG-2
+  parent: CrateSecgear
+  name: RShG-2 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRURPG26Thermobaric
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledIgla
+  suffix: Filled, Igla
+  parent: CrateSecgear
+  name: Igla MANPADS crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherRUIgla
+          amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledKS23M
+  suffix: Filled, KS-23M
+  parent: CrateSecgear
+  name: KS-23M crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunRUKS23M
+          amount: 2
+        - id: ShellBoxBF4GaugeShrap10
+          amount: 4
+        - id: ShellBoxBF4GaugeBarricade
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledGM94
+  suffix: Filled, GM-94
+  parent: CrateSecgear
+  name: GM-94 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherRUGM94
+          amount: 2
+        - id: BoxMagazine43x30HEFrag
+          amount: 2
+        - id: BoxMagazine43x30Thermobaric
+          amount: 2
+        - id: BoxMagazine43x30ChemicalSmoke
+          amount: 2
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+## Misc
+# Shared
+
+- type: entity
+  id: CrateSecgearFilledBarbwire
+  suffix: Filled, barbed wire
+  parent: CrateSecgear
+  name: barbed wire coil crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: BarbedWire30
+          amount: 5
+  - type: AccessReader
+    access: [["NATOSoldier"] , ["PACTSoldier"]]

@@ -1,0 +1,128 @@
+- type: entity
+  id: DebugMortarShell
+  parent: BaseItem
+  name: Mortar Shell
+  categories: [ HideSpawnMenu ]
+  description: Mortar Shell
+  components:
+  - type: Tag
+    tags:
+      - MortarShell
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: shell
+  - type: MortarShell
+    delayPerTile: 0.15
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+  - type: DamageOnLand
+    damage:
+      types:
+        Blunt: 5
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Electronic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 120 # BF14 10>120
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+
+- type: entity
+  id: MortarFragShell
+  parent: DebugMortarShell
+  suffix: FRAG 82
+  name: 1OF29M fragmentation shell
+  description: A mortar shell designed to destroy manpower and light fortifications.
+  components:
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: shell
+  - type: MortarShell
+    delayPerTile: 0.15
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+    explosionEntity: ArtilleryMarkerFrag82mm
+    useDirectExplosion: false
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 8
+
+- type: entity
+  id: MortarExplosiveShell
+  parent: DebugMortarShell
+  suffix: HE 82
+  name: 1O10M explosive shell
+  description: A mortar shell designed to destroy manpower and light fortifications.
+  components:
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: shell
+  - type: MortarShell
+    explosionType: Default
+    totalIntensity: 60
+    slope: 4
+    maxTileIntensity: 8
+    delayPerTile: 0.16
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 8
+
+- type: entity
+  id: MortarSmokeShell
+  parent: DebugMortarShell
+  suffix: SM 82
+  name: 1SS11M smoke shell
+  description: A mortar shell designed to cover advancing troops in smoke.
+  components:
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: shell2
+  - type: MortarShell
+    explosionEntity: ArtilleryMarkerSmoke82mm
+    useDirectExplosion: false
+    delayPerTile: 0.14
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10
+    intensitySlope: 2
+    maxIntensity: 1
+
+- type: entity
+  id: MortarEMPShell
+  parent: DebugMortarShell
+  suffix: EMP 82
+  name: 1EW49M emp shell
+  description: A mortar shell designed to disable enemy electronics.
+  components:
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: shell2
+  - type: MortarShell
+    explosionEntity: ArtilleryMarkerEMP82mm
+    useDirectExplosion: false
+    delayPerTile: 0.17
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10
+    intensitySlope: 2
+    maxIntensity: 1

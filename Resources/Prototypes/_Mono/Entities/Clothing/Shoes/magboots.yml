@@ -35,16 +35,25 @@
     modifier: 0.35
 
 - type: entity
-  parent: [ ClothingShoesBootsMagSyndie, BaseFactionGearPDVT1 ]
+  parent: [ClothingShoesBootsMagAdv , ClothingShoesMilitaryBase ] # BF14
   id: ClothingShoesBootsMagAshen
   name: tactical magboots
-  description: Tactical magnetic boots that have a heavy magnetic pull and integrated thrusters for boarding. It can hold 0.75 L of gas.
+  description: Tactical magnetic boots that have a heavy magnetic pull for boarding. # BF14
   components:
   - type: Sprite
     sprite: _Mono/Clothing/Shoes/Boots/magboots-ashen.rsi
     state: icon
   - type: Clothing
     sprite: _Mono/Clothing/Shoes/Boots/magboots-ashen.rsi
+  - type: Tag # BF14
+    tags:
+    - FitsInVoidsuitKit
+
+- type: entity
+  id: ClothingShoesBootsMagAshenFilled
+  parent:
+  - ClothingShoesBootsMagAshen
+  - ClothingShoesBootsSecFilled
 
 - type: entity
   parent: [ ClothingShoesBootsMagAdv, BaseFactionGearPDVT2, BaseJetpack ]

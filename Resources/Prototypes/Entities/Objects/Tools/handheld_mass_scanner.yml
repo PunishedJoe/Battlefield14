@@ -15,6 +15,7 @@
         visible: true
         map: [ "enum.PowerDeviceVisualLayers.Powered" ]
   - type: RadarConsole
+    maxRange: 512 # BF14
     followEntity: true
   # Mono
   - type: DetectionRangeMultiplier
@@ -40,6 +41,9 @@
         type: RadarConsoleBoundUserInterface
   - type: StaticPrice
     price: 150
+  - type: Tag
+    tags:
+    - FitsInVoidsuitKit
 
 - type: entity
   id: HandHeldMassScannerEmpty

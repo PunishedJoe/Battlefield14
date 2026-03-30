@@ -1,0 +1,61 @@
+- type: job
+  id: WPSWarden
+  name: job-name-wps-warden
+  description: job-description-wps-warden
+  playTimeTracker: JobWPSWarden
+  weight: 75
+  startingGear: WPSWardenGear
+  alwaysUseSpawner: true
+  icon: "JobIconWarden"
+  requireAdminNotify: false
+  supervisors: job-supervisors-wps
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+#  - !type:AddComponentSpecial
+#    components:
+#    - type: NpcFactionMember
+#      factions:
+#      - USMC
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-private
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+#  - Captain # Frontier
+  - Security
+  - Brig
+  - Armory
+  - Command
+  - Medical
+  - Cargo
+  - Engineering
+  - Research
+
+- type: startingGear
+  id: WPSWardenGear
+  equipment:
+    id: WPSWardenPDA
+    ears: ClothingHeadsetAltWPS
+    belt: ClothingBeltStationSecurityFilled
+    jumpsuit: ClothingUniformJumpsuitUtilityCrewblackSec
+    head: ClothingHeadHatBeretSecBF14
+    outerClothing: ClothingOuterArmorWebVestSec
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - Tourniquet
+    - Zipties

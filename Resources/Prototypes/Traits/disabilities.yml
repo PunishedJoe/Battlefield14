@@ -41,7 +41,7 @@
   components:
     - type: Unrevivable
 
-- type: trait
+- type: trait #BF14 removed it and it shit the bed so here we are
   id: Muted
   name: trait-muted-name
   description: trait-muted-desc

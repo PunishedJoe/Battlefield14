@@ -1,7 +1,9 @@
 using Content.Shared.Damage;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+using Robust.Shared.Physics;
 using Robust.Shared.Physics.Collision.Shapes;
+using Robust.Shared.Physics.Dynamics;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
@@ -35,6 +37,14 @@ public sealed partial class BlockingComponent : Component
     /// </summary>
     [DataField("shape"), ViewVariables(VVAccess.ReadWrite)]
     public IPhysShape Shape = new PhysShapeCircle(0.5f);
+
+    [DataField, AutoNetworkedField]
+    public bool fixtureOnExpand = false;
+
+    [DataField("expandShape"), ViewVariables(VVAccess.ReadWrite)]
+    public Fixture expandFixture = new();
+
+    public const string ExpandedFixtureID = "expanded-active";
 
     /// <summary>
     /// The damage modifer to use while passively blocking
@@ -90,4 +100,8 @@ public sealed partial class BlockingComponent : Component
     /// </summary>
     [DataField]
     public bool IsClothing = false;
+
+    // bf14
+    [ViewVariables]
+    public EntityUid visualEnt;
 }

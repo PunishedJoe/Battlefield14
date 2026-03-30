@@ -1,0 +1,110 @@
+## US
+
+# USMC
+- type: playTimeTracker
+  id: JobUSMCSquadLeader
+
+- type: playTimeTracker
+  id: JobUSMCRifleman
+
+- type: playTimeTracker
+  id: JobUSMCAutomaticRifleman
+
+- type: playTimeTracker
+  id: JobUSMCMedic
+
+- type: playTimeTracker
+  id: JobUSMCRecon
+
+# USMC - MARSOC
+
+- type: playTimeTracker
+  id: JobMARSOCSquadLeader
+
+- type: playTimeTracker
+  id: JobMARSOCRifleman
+
+- type: playTimeTracker
+  id: JobMARSOCAutomaticRifleman
+
+- type: playTimeTracker
+  id: JobMARSOCMedic
+
+# USMC - HECU
+
+- type: playTimeTracker
+  id: JobHECUSquadLeader
+
+- type: playTimeTracker
+  id: JobHECURifleman
+
+- type: playTimeTracker
+  id: JobHECUSupport
+
+- type: playTimeTracker
+  id: JobHECUMedic
+
+# USSF
+
+- type: playTimeTracker
+  id: JobUSSFCaptain
+
+- type: playTimeTracker
+  id: JobUSSFCrewman
+
+## RU
+
+# VDV
+
+- type: playTimeTracker
+  id: JobVDVSquadLeader
+
+- type: playTimeTracker
+  id: JobVDVRifleman
+
+- type: playTimeTracker
+  id: JobVDVAutomaticRifleman
+
+- type: playTimeTracker
+  id: JobVDVMedic
+
+- type: playTimeTracker
+  id: JobVDVRecon
+
+# FSB
+
+- type: playTimeTracker
+  id: JobFSBSquadLeader
+
+- type: playTimeTracker
+  id: JobFSBRifleman
+
+- type: playTimeTracker
+  id: JobFSBSupport
+
+- type: playTimeTracker
+  id: JobFSBMedic
+
+- type: playTimeTracker
+  id: JobFSBRecon
+
+# VKS
+
+- type: playTimeTracker
+  id: JobVKSCaptain
+
+- type: playTimeTracker
+  id: JobVKSCrewman
+
+## IND
+
+# Western Private Security
+
+- type: playTimeTracker
+  id: JobWPSSecurityOfficer
+
+- type: playTimeTracker
+  id: JobWPSWarden
+
+- type: playTimeTracker
+  id: JobWPSMarshal

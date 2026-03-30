@@ -173,6 +173,10 @@
   # - type: PhysicalComposition # Frontier
     # materialComposition:
       # Glass: 50
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 60 # BF14 50 > 60
   - type: SolutionContainerVisuals
     maxFillLevels: 6
     fillBaseName: beaker
@@ -189,10 +193,10 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 50
+        maxVol: 60 # BF14 50 > 60
         reagents:
         - ReagentId: Cryoxadone
-          Quantity: 50
+          Quantity: 60 # BF14 50 > 60
 
 - type: entity
   name: large beaker
@@ -215,7 +219,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
+        maxVol: 120 # BF14 60 > 120
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 6
@@ -555,7 +559,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 50 # BF14 WELCOME BACK
   - type: ExplosionResistance
     damageCoefficient: 0.025 # survives conventional explosives but not minibombs and nukes
   - type: Damageable
@@ -584,7 +588,7 @@
   name: pill canister
   id: PillCanister
   parent: [BaseStorageItem, RecyclableItemPlasticTiny] # Frontier: added RecyclableItemPlasticTiny
-  description: Holds up to 10 pills.
+  description: Holds up to 15 pills. #BF14
   components:
   - type: Item
     size: Tiny
@@ -597,7 +601,7 @@
       - PillCanister
   - type: Storage
     grid:
-    - 0,0,4,1
+    - 0,0,4,2 # BF14 | fuck this is going to merge conflict later with goobstation isn't it lol
     quickInsert: true
     areaInsert: true
     areaInsertRadius: 1

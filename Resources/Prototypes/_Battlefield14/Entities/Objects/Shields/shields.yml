@@ -1,0 +1,35 @@
+- type: entity
+  id: VisualEntityBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Transform
+    anchored: True
+  - type: Sprite
+    drawdepth: Effects
+    sprite: /Textures/_Battlefield14/debug.rsi
+    state: block
+  - type: Tag
+    tags:
+    - HideContextMenu
+
+- type: entity
+  name: wide telescopic shield
+  parent: TelescopicShield
+  id: WideTelescopicShield
+  description: a advanced riot shield utilizing infolded plates to cover a larger area once deployed
+  components:
+  - type: Blocking
+    fixtureOnExpand: true
+    expandShape:
+      shape:
+        !type:PolygonShape
+        vertices:
+        - "-1,-0.4"
+        - "1,0"
+        - "1,-0.4"
+        - "-1,0"
+      density: 1
+      mask:
+      - Impassable
+      layer:
+      - BulletImpassable

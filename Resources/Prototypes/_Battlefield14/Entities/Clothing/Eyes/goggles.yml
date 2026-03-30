@@ -1,0 +1,63 @@
+- type: entity
+  abstract: true
+  id: BallisticGlasses
+  components:
+  - type: Reflect # Ballistic glasses are any glasses that have a small chance to deflect projectiles | doesn't seem to work though
+    reflectProb: 0.01
+    spread: 270
+#    innate: true
+    reflects:
+    - Energy
+    - NonEnergy
+
+- type: entity
+  parent: [ ClothingEyesHudSecurity, BallisticGlasses ]
+  id: ClothingEyesGogglesTan
+  name: ballistic goggles
+  description: Robust ballistic goggles gitted with high-tech IFF detection and display, and advanced polymer lenses that provide welding protection. For true patriots. # Copy pasted from homeguard goggles, couldn't not leave this in.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglestan.rsi
+  - type: Clothing
+    slots:
+    - EYES
+    - HELMETATTACHMENT
+    sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglestan.rsi
+    clothingVisuals:
+      helmetattachment:
+      - state: equipped-HELMETATTACHMENT
+      eyes:
+      - state: equipped-EYES
+  - type: EyeProtection # welding protection, not flash protection
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: Reflect # just putting this here in case the parent doesn't work
+    reflectProb: 0.01
+    spread: 270
+    reflects:
+    - Energy
+    - NonEnergy
+
+- type: entity
+  parent: ClothingEyesGogglesTan
+  id: ClothingEyesGogglesGreen
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesgreen.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesgreen.rsi
+
+- type: entity
+  parent: ClothingEyesNightVisionGoggles
+  id: ClothingEyesGogglesSkullcrusher
+  name: skullcrusher-mounted PVS-14 binoculars
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/skullcrusher.rsi
+    state: goggle
+  - type: Clothing
+    sprite: null
+#  - type: NightVision
+#    isEquipment: true
+

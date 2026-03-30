@@ -1,0 +1,102 @@
+- type: entity
+  abstract: true
+  id: EnergyShieldClothingPCV
+  components:
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_Battlefield14/Effects/pcv_vest.ogg
+    soundDeactivate:
+      path: /Audio/Misc/cryo_warning.ogg
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+      params:
+        variation: 0.250
+    onUse: false
+    onAltUse: true
+    onActivate: false
+  - type: PointLight
+    enabled: false
+    radius: 1.4
+    energy: 2
+    color: "#3ACCFF" # "#328464" this doesnt change the outline colour
+  - type: LightBehaviour
+    behaviours:
+    - !type:FadeBehaviour
+      id: radiating
+      interpolate: Linear
+      maxDuration: 2.0
+      startValue: 3.0
+      endValue: 2.0
+      isLooped: true
+      reverseWhenFinished: true
+    - !type:PulseBehaviour
+      id: blinking
+      interpolate: Nearest
+      maxDuration: 1.0
+      minValue: 0.1
+      maxValue: 2.0
+      isLooped: true
+  - type: ItemTogglePointLight
+#  - type: ItemToggleActiveSound
+#    activeSound:
+#      path: /Audio/Weapons/ebladehum.ogg
+  - type: UseDelay
+    delay: 0.5
+  - type: Blocking
+    passiveBlockModifier:
+      coefficients:
+        Blunt: 1.2
+        Slash: 0.25
+        Piercing: 0.3
+        Heat: 1.5
+    activeBlockModifier: # Doesnt matter, isnt used
+      coefficients:
+        Blunt: 1.2
+        Slash: 0.3
+        Piercing: 0.2
+        Heat: 0.1
+      flatReductions:
+        Piercing: 15
+    passiveBlockFraction: 1.0
+    activeBlockFraction: 1.0
+    isClothing: true
+  - type: Damageable
+    damageContainer: Shield
+  - type: PowerCellSlot # this works but if theres no cell in the vest it doesnt check to see if there should be a cell so it has infinite durability | apparantly this only happens if you take the cell out before turning it on the first time?
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        whitelist:
+          tags:
+          - PCVCell
+        startingItem: PowerCellPCV
+  - type: RechargeableBlocking # I think this makes it check to see if there's any power left, see above comment
+
+- type: entity
+  parent: [ ClothingOuterArmorBase , EnergyShieldClothingPCV , GeigerCounterClothing , ShowSecurityIcons , BaseIntegratedOxygenSupply ]
+  id: ClothingOuterArmorPCV
+  name: powered combat vest
+  suffix: HECU
+  description: A state-of-the-art combat vest including a powered armour system recharged with specialised cells, a geiger counter, and internal oxygen supply. # ,and an automatic intravenous morphine injector | WHEN THIS WORKS
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/security.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/security.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.60
+        Piercing: 0.60
+        Heat: 0.65
+        Shock: 0.20
+        Caustic: 0.20
+        Radiation: 0.00
+  - type: ExplosionResistance
+    damageCoefficient: 0.65

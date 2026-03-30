@@ -1,0 +1,38 @@
+- type: entity
+  id: AdminInstantEffectCSGas
+  suffix: CS Gas, BF14
+  parent: AdminInstantEffectBase
+  components:
+  - type: SmokeOnTrigger
+    duration: 10
+    spreadAmount: 18
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+
+- type: entity
+  id: AdminInstantEffectSarin
+  suffix: Sarin Gas, BF14
+  parent: AdminInstantEffectBase
+  components:
+  - type: SmokeOnTrigger
+    duration: 10
+    spreadAmount: 10
+    solution:
+      reagents:
+      - ReagentId: Sarin
+        Quantity: 50
+
+- type: entity
+  id: AdminInstantEffectWhitePhosphorus
+  suffix: White Phosphorus, BF14
+  parent: AdminInstantEffectBase
+  components:
+  - type: SmokeOnTrigger
+    duration: 10
+    spreadAmount: 5
+    solution:
+      reagents:
+      - ReagentId: WhitePhosphorus
+        Quantity: 50

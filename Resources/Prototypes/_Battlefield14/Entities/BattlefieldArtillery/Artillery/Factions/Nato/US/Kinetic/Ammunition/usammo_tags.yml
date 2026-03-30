@@ -1,0 +1,99 @@
+# US Ship Weapons
+
+# 17.76mm Railgun
+- type: Tag
+  id: Magazine1776mmRailgun
+
+- type: Tag
+  id: Cartridge1776mmRailgun
+
+# 12.7mm M5 Browning
+- type: Tag
+  id: Magazine127mmM5
+
+- type: Tag
+  id: Cartridge127mmAP
+
+# 20mm Phalanx CIWS
+- type: Tag
+  id: Magazine20mmPhalanx
+
+- type: Tag
+  id: Cartridge20mmPhalanx
+
+# 25mm M242 Bushmaster
+- type: Tag
+  id: Magazine25mmBushmaster
+
+- type: Tag
+  id: Cartridge25mmAPDS
+
+- type: Tag
+  id: Cartridge25mmAPT
+
+- type: Tag
+  id: Cartridge25mmFrag
+
+- type: Tag
+  id: Magazine25mmAPT
+
+- type: Tag
+  id: Magazine25mmFrag
+
+- type: Tag
+  id: Cartridge25mmHEIT
+
+# 40x46mm MK20 AGL
+- type: Tag
+  id: Magazine40x46mmMK20
+
+- type: Tag
+  id: Cartridge40x46mmGrenade
+
+- type: Tag
+  id: Cartridge40x46mmHE
+
+- type: Tag
+  id: Cartridge40x46mmHEDP
+
+- type: Tag
+  id: Cartridge40x46mmFrag
+
+- type: Tag
+  id: Cartridge40x46mmMPAPERS
+
+- type: Tag
+  id: Cartridge40x46mmPlasmaGas
+
+- type: Tag
+  id: Cartridge40x46mmChemicalSmoke
+
+- type: Tag
+  id: Magazine40x46mmPlasmaGas
+
+- type: Tag
+  id: Magazine40x46mmChemicalSmoke
+
+# 40mm L/99 Bofors
+- type: Tag
+  id: Magazine40mmBofors
+
+- type: Tag
+  id: Cartridge40mmBofors
+
+# 120mm M256
+- type: Tag
+  id: Magazine120mmM256
+
+- type: Tag
+  id: Cartridge120mm
+
+- type: Tag
+  id: Cartridge120mmAPFSDS
+
+- type: Tag
+  id: Cartridge120mmCanister
+
+# TOW3
+- type: Tag
+  id: TOW3Cartridge

@@ -1,0 +1,15 @@
+- type: company
+  id: NATOUSMC
+  form: Protagonist
+  name: USMC
+  description: usmc-description
+  color: "#203564"
+#  image: /Textures/_Battlefield14/faction_icons/nato.png
+
+- type: company
+  id: PACTVDV
+  form: Protagonist
+  name: VDV
+  description: vdv-description
+  color: "#a02829"
+#  image: /Textures/_Battlefield14/faction_icons/pact.png

@@ -1,22 +1,35 @@
 - type: vendingMachineInventory
   id: NanoMedPlusInventory
   startingInventory:
-    HandheldHealthAnalyzer: 3
+    HandheldHealthAnalyzer: 5
     Brutepack: 5
     Ointment: 5
-    Bloodpack: 5
+#BF14    Bloodpack: 5
     Gauze: 5 # Frontier
+    Tourniquet: 20 # BF14
+    PillCanisterBicaridine: 5 #BF14
+    PillCanisterKelotane: 5 #BF14
+    PillCanisterTricordrazine: 5 #BF14
+#    PillCanisterTramadol: 5
+    PillCanisterIron: 5 #BF14
+    MedkitFilled: 5 #BF14
+    MedkitBruteFilled: 5 #BF14
+    MedkitBurnFilled: 5 #BF14
+    MedkitOxygenFilled: 5 #BF14
+    MedkitToxinFilled: 5 #BF14
+    MedkitRadiationFilled: 5 #BF14
+    MedkitCombatFilled: 2 #BF14
     EpinephrineChemistryBottle: 3
     PillCanisterTricordrazine: 3 # Mono
     Syringe: 5
     BoxBottle: 3
-    ClothingEyesHudMedical: 2
-    ClothingEyesEyepatchHudMedical: 2
-    MedicalTrackingImplanterLabeled: 4294967295 # Frontier - infinite
-    SadTromboneImplanterLabeled: 10 # Frontier
-    BikeHornImplanterLabeled: 10 # Frontier
-    LightImplanterLabeled: 10 # Frontier
-    BoxFolderMedicalDoctor: 4294967295 # Frontier - infinite
-    MedTekCartridge: 3 # Frontier
+#    ClothingEyesHudMedical: 2
+#    ClothingEyesEyepatchHudMedical: 2
+#    MedicalTrackingImplanterLabeled: 4294967295 # Frontier - infinite
+#    SadTromboneImplanterLabeled: 10 # Frontier
+#    BikeHornImplanterLabeled: 10 # Frontier
+#    LightImplanterLabeled: 10 # Frontier
+#    BoxFolderMedicalDoctor: 4294967295 # Frontier - infinite
+#    MedTekCartridge: 3 # Frontier
   contrabandInventory: # Frontier
     FoodApple: 1

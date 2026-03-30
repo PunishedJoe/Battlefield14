@@ -3,26 +3,26 @@
   startingInventory: # Mono changed some numbers from Frontier's small ones.
     SecurityWhistle: 3 # Frontier 5<1
     Handcuffs: 6 # Frontier 8<3
-    GrenadeFlashBang: 3 # Frontier 4<1
-    TearGasGrenade: 3 # Frontier 4<1
-    ClusterBangFull: 2 # Frontier 2<1
+    USM84FlashBangHandgrenade: 3 #BF14     GrenadeFlashBang: 3 # Frontier 4<1
+    USM58CSGasHandgrenade: 3 #BF14     TearGasGrenade: 3 # Frontier 4<1
+#BF14    ClusterBangFull: 2 # Frontier 2<1
     GrenadeStinger: 3 # Frontier 4<1
     Flash: 4 # Frontier 5<1
-    Tourniquet: 4 # Frontier 5<1
+    Tourniquet: 10 # BF14 4>10 # Frontier 5<1
     FlashlightSeclite: 3 # Frontier 5<1
-    ClothingEyesGlassesSunglasses: 2 # Frontier 2<1
-    ClothingEyesHudSecurity: 2 # Frontier 2<1
-    ClothingEyesEyepatchHudSecurity: 2 # Frontier 2<1
+#BF14    ClothingEyesGlassesSunglasses: 2 # Frontier 2<1
+#BF14    ClothingEyesHudSecurity: 2 # Frontier 2<1
+#BF14    ClothingEyesEyepatchHudSecurity: 2 # Frontier 2<1
     ClothingBeltSecurityWebbing: 2 # Frontier 5<1
-    CombatKnife: 1 # Frontier 3<1
+    CombatKnife: 3 # BF14 1>3 # Frontier 3<1
     Zipties: 8 # Frontier 12<4
     RiotShield: 2 # Frontier 2<1
-    RiotLaserShield: 2 # Frontier 2<1
+#BF14    RiotLaserShield: 2 # Frontier 2<1
     RiotBulletShield: 2 # Frontier 2<1
     LogProbeCartridge: 1 # Frontier
     ForensicScanner: 1 # Frontier
     BoxForensicPad: 1 # Frontier
-    ContrabandAppraisalTool: 1 # Frontier
+#BF14    ContrabandAppraisalTool: 1 # Frontier
     FoodDonutHomer: 12 # mono
     FoodBoxDonut: 2 # Mono
 #    RadioHandheldSecurity: 5 # Frontier

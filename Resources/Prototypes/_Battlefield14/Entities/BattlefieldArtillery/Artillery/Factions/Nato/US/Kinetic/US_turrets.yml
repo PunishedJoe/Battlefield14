@@ -1,0 +1,477 @@
+# TRUMPCARD 17.76mm Railgun
+- type: entity
+  id: WeaponTurretTRUMPCARD
+  name: TRUMPCARD 17.76mm railgun
+  suffix: BF14, NATO, US
+  parent: BallisticArtilleryBase
+  description: A capital ship mounted electromagnetic railgun chambered in 17.76 mm. Designed for deliberate, single-shot engagements against orbital infrastructure and designated enemies of freedom. Deployed almost exclusively aboard U.S. capital vessels, with limited NATO export.
+  components:
+  - type: StaticPrice
+    price: 35000
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/charon.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 100 # you know it
+    fireRate: 0.08
+    minAngle: 0
+    maxAngle: 0
+    projectileSpeed: 1600
+    shootThermalSignature: 20000000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 400
+    powerUsePassive: 1200
+    powerUseActive: 8000
+  - type: Actions
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge1776mmRailgun
+    capacity: 1
+    proto: Cartridge1776mmRailgun
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 12000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 10
+#  - type: RadarBlip
+#    radarColor: "#0099FF"
+#    scale: 3
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Heavy
+
+# M5 Browning 12.7mm HMG
+- type: entity
+  id: WeaponTurretM5Browning
+  name: M5 Browning Heavy Machine Gun
+  suffix: BF14, NATO, US
+  parent: BattlefieldArtilleryMagazine
+  description: A remotely operated heavy machine gun produced under Browning Corporation contract for U.S. naval service. Intended for suppressing infantry and defeating light armor during boarding actions. Performs poorly against real warship armor.
+  components:
+  - type: StaticPrice
+    price: 500
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/hmg.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: DeviceLinkSink
+    ports:
+    - Toggle
+  - type: Gun
+    recoil: 0
+    fireRate: 8
+    projectileSpeed: 140
+    minAngle: 0
+    maxAngle: 5
+    shootThermalSignature: 15000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 80
+    powerUsePassive: 80
+  - type: Actions
+  - type: CombatMode
+    isInCombatMode: true
+  - type: Airtight
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine127mmM5
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine127mmM5
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 8
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Light
+
+# Phalanx CIWS 20mm
+- type: entity
+  id: WeaponTurretPhalanx
+  name: Phalanx CIWS (LPWS)
+  suffix: BF14, NATO, US
+  parent: BattlefieldArtilleryMagazine
+  description: A close-in weapon system standard across U.S. and NATO fleets. Designed to intercept missiles, rockets, and light craft using extreme rates of fire and automated targeting. Doctrine discourages use against personnel.
+  components:
+  - type: StaticPrice
+    price: 800
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/pdt.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AutoShootGun
+  - type: GunSignalControl
+  - type: WirelessNetworkConnection
+    range: 700
+  - type: DeviceLinkSink
+    ports:
+    - Toggle
+  - type: Gun
+    recoil: 0
+    fireRate: 20
+    projectileSpeed: 150
+    minAngle: 0
+    maxAngle: 3
+    shootThermalSignature: 25000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/slammer.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 100
+    powerUsePassive: 100
+  - type: Actions
+  - type: CombatMode
+    isInCombatMode: true
+  - type: Airtight
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine20mmPhalanx
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine20mmPhalanx
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 8
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Light
+
+# M242 Bushmaster 25mm Autocannon
+- type: entity
+  id: WeaponTurretM242Bushmaster
+  name: M242 Bushmaster Autocannon
+  suffix: BF14, US
+  parent: BattlefieldArtilleryMagazine
+  description: A next-generation, chain-driven autocannon mounted to remote gunnery systems. Widely deployed by U.S. forces and licensed to NATO partners for engaging armored targets and light vehicles. Reliable under proper maintenance, power-hungry by design, and unforgiving when neglected.
+  components:
+  - type: StaticPrice
+    price: 1500
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/autocannon.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 0
+    fireRate: 3
+    projectileSpeed: 200
+    minAngle: 0
+    maxAngle: 1
+    shootThermalSignature: 500000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/mortar.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 150
+    powerUsePassive: 500
+    powerUseActive: 0
+  - type: Actions
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine25mmAPT
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine25mmBushmaster
+          - Magazine25mmAPT
+          - Magazine25mmFrag
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 8500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 1.5
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+
+# MK20 Automatic Grenade Launcher 40mm
+- type: entity
+  id: WeaponTurretMK20
+  name: Mk 20 Automatic Grenade Launcher
+  suffix: BF14, NATO, US
+  parent: BattlefieldArtilleryMagazine
+  description: A remotely operated 40 mm automatic grenade launcher favored by U.S. naval security forces. Effective against clustered infantry and loitering craft. Features an airburst mode that remains deactivated.
+  components:
+  - type: StaticPrice
+    price: 1200
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/autocannon.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 0
+    fireRate: 2
+    projectileSpeed: 100
+    minAngle: 0
+    maxAngle: 5
+    shootThermalSignature: 200000
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 120
+    powerUsePassive: 400
+    powerUseActive: 0
+  - type: Actions
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine40x46mmMK20
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine40x46mmMK20
+          - Magazine40x46mmPlasmaGas
+          - Magazine40x46mmChemicalSmoke
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 8000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+#  - type: RadarBlip
+#    radarColor: "#FF3300"
+#    scale: 1.5
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+
+# L/99 Bofors 40mm Cannon
+- type: entity
+  id: WeaponTurretBofors40mm
+  name: L/99 Bofors Cannon
+  suffix: BF14, NATO, US
+  parent: BattlefieldArtilleryMagazine
+  description: A modernized Bofors pattern autocannon retained through NATO standardization agreements. Adapted for naval and orbital defense roles. Long service lineage, incremental improvements, and familiar limitations. Remains in service largely due to projectile mass and institutional inertia.
+  components:
+  - type: StaticPrice
+    price: 2000
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/flak.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 0
+    fireRate: 1.5
+    projectileSpeed: 220
+    minAngle: 0
+    maxAngle: 2
+    shootThermalSignature: 1500000
+    soundGunshot:
+      collection: BF_Bofors_Gunshots
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 200
+    powerUsePassive: 600
+    powerUseActive: 0
+  - type: Actions
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine40mmBofors
+        insertSound: /Audio/Weapons/Guns/MagIn/hpistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine40mmBofors
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+#  - type: RadarBlip
+#    radarColor: "#FF4400"
+#    scale: 2
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+
+# M256 120mm Heavy Cannon
+- type: entity
+  id: WeaponTurretM256
+  name: 120mm M256 Heavy Cannon
+  suffix: BF14, NATO, US
+  parent: BallisticArtilleryBase
+  description: A high-caliber heavy cannon derived from the M256 Abrams tank gun lineage. Developed under U.S. defense contracts at extreme cost through iterative scaling rather than conceptual redesign. Adopted by NATO fleets. Delivers overwhelming force with minimal novelty.
+  components:
+  - type: StaticPrice
+    price: 8000
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/charon.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: FireControlRotate
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 0
+    fireRate: 0.3
+    minAngle: 0
+    maxAngle: 0
+    projectileSpeed: 180
+    shootThermalSignature: 5000000
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 300
+    powerUsePassive: 800
+    powerUseActive: 5000
+  - type: Actions
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Cartridge120mm
+    capacity: 5
+    proto: Cartridge120mmAPFSDS
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 11000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: RadiationBlocker
+    resistance: 10
+#  - type: RadarBlip
+#    radarColor: "#FF6600"
+#    scale: 3
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Heavy

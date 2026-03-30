@@ -1,0 +1,67 @@
+- type: job
+  id: USMCAutomaticRifleman
+  name: job-name-usmc-automatic-rifleman
+  description: job-description-usmc-automatic-rifleman
+  playTimeTracker: JobUSMCAutomaticRifleman
+  weight: 76
+  startingGear: USMCAutomaticRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSupport"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-corporal
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: USMCAutomaticRiflemanGear
+  equipment:
+    id: USMCAutomaticRiflemanPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUSRiot
+#    eyes: ClothingEyesGogglesTan
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponRifleUSM27IAR
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCSupport
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+  storage:
+    back:
+    - SupplyBoxAmmoUSFilled
+    - FlashlightMilitaryUS
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - ClothingMaskGasM40
+    - Tourniquet
+    - Zipties

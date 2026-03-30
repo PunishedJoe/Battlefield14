@@ -1,0 +1,118 @@
+- type: entity
+  name: XT-520 Explosive Charge
+  description: Used to fill inaccesible rooms with explosives.
+  parent: BasePlasticExplosive
+  id: XT520
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Bombs/c4.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["base"]
+    - state: icon
+      map: ["complete"]
+  - type: OnUseTimerTrigger
+    delay: 10
+    delayOptions: [1, 5 ,10, 30, 60, 120, 300]
+    initialBeepDelay: 0
+    beepSound: /Audio/Machines/Nuke/general_beep.ogg
+    startOnStick: false
+    canToggleStartOnStick: true
+  - type: TimerStartOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Timer
+  - type: ThroughWallProjectileFire
+    projectilePrototype: explosiveBouncer
+    projectileCount: 5
+    throwVariation: 15
+    throwDelay: 1
+    sound:
+      path: "/Audio/Weapons/smash.ogg"
+
+- type: entity
+  parent: BaseBullet
+  id: explosiveBouncer
+  name: mini grenade
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+      - state: grenade
+  - type: Projectile
+    onlyCollideWhenShot: true
+    damage:
+      types:
+        Blunt: 7 # more damage than a punch.
+  - type: ActiveTimerTrigger
+    timeRemaining: 3
+  - type: Fixtures
+    fixtures:
+      trigger:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.15,-0.45,0.15,0.15"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+        restitution: 0.9  # bouncyness
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: BulletGrenadeF1Fragment
+    capacity: 10
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 30
+    intensitySlope: 3
+    maxIntensity: 15
+    maxTileBreak: 0
+
+#    explosionType: Default
+#    maxIntensity: 1 # max 15 per tile
+#    intensitySlope: 1
+#    totalIntensity: 2 # 30 total damage to distribute over tiles
+#    maxTileBreak: 0
+
+- type: entity
+  name: APM-6 "Matryoshka" cluster charge
+  description: Used to fill inaccesible rooms with explosives.
+  parent: BasePlasticExplosive
+  id: FuzeCharge
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Charges/fuze.rsi
+    state: icon
+    layers:
+    - state: icon
+      map: ["icon"]
+  - type: OnUseTimerTrigger
+    delay: 1
+    delayOptions: [1, 5 ,10, 30, 60, 120, 300]
+    initialBeepDelay: 0
+    beepSound: /Audio/Machines/Nuke/general_beep.ogg
+    startOnStick: false
+    canToggleStartOnStick: false
+  - type: TimerStartOnSignal
+  - type: DeviceLinkSink
+    ports:
+      - Timer
+  - type: ThroughWallProjectileFire
+    projectilePrototype: explosiveBouncer
+    projectileCount: 5
+    throwVariation: 15
+    throwDelay: 1
+    sound:
+      path: "/Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg"
+  - type: GenericVisualizer
+    visuals:
+      enum.Trigger.TriggerVisuals.VisualState:
+        base:
+          Primed: { state: primed }
+          Unprimed: { state: base }

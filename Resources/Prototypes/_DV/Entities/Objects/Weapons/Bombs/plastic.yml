@@ -1,6 +1,6 @@
 - type: entity
   name: breaching charge
-  description: A breaching explosive for security officers to break through walls.
+  description: A precision shaped charge for blowing holes through walls without too much extra hole #A breaching explosive for security officers to break through walls.
   parent: SeismicCharge
   id: BreachingCharge
   components:
@@ -11,8 +11,8 @@
     - state: icon
       map: ["base"]
   - type: OnUseTimerTrigger
-    delay: 10
-    delayOptions: [10, 15, 20, 25]
+    delay: 5 # BF14 10 > 5
+    delayOptions: [5, 10, 15, 20] # BF14 reduced delay by 5 seconds
     initialBeepDelay: 0
     beepSound:
       path: /Audio/Effects/Cargo/buzz_two.ogg
@@ -20,9 +20,11 @@
         volume: -6
     startOnStick: true
     canToggleStartOnStick: true
+  - type: TriggerOnSignal # BF14
   - type: Explosive
     explosionType: DemolitionCharge
-    totalIntensity: 400 # mono
-    intensitySlope: 50
+    totalIntensity: 200 #BF14 (200) # mono (400)
+    intensitySlope: 800 # BF14 50 > 200 | 1x1 explosion (still hits what's directly next to it because of their bounding box or something
     maxIntensity: 150 # mono
-    canCreateVacuum: false # mono
+    maxTileBreak: 0 # BF14
+#BF14    canCreateVacuum: false # mono

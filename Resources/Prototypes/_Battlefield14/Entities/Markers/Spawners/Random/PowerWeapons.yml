@@ -1,0 +1,18 @@
+- type: entity
+  parent: MarkerBase
+  id: RandomPowerWeapon
+  name: random power weapon
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/USAS12.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - CratePowerWeaponFilledM107
+      - CratePowerWeaponFilledUSAS12
+      - CratePowerWeaponFilledAEK971
+      - CratePowerWeaponFilledXM25
+    chance: 1

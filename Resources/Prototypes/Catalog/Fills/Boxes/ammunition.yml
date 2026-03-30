@@ -147,7 +147,7 @@
   - type: StorageFill
     contents:
     - id: Magazine68x52mmCaseless
-      amount: 4
+      amount: 8 # BF14
 #mono edit end
 
 # 556x45mm

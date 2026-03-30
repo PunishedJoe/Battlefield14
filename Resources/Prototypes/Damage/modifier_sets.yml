@@ -209,7 +209,7 @@
   id: Zombie #Blunt resistant and immune to biological threats, but can be hacked apart and burned
   coefficients:
     Blunt: 0.6
-    Piercing: 0.8
+    Piercing: 0.6 # BF14 0.8 > 0.6
     Cold: 0.3
     Heat: 1.25
     Poison: 0.0

@@ -1,0 +1,230 @@
+- type: entity
+  name: KS-K
+  parent: BaseWeaponRifle # BaseWeaponShotgun breaks the gun right now
+  id: WeaponShotgunRUKSK
+  description: A semi-automatic shotgun based on the kalashnikov platform.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KSK.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KSK.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: Gun
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 2
+    projectileSpeed: 35
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
+      params:
+        volume: -5
+        variation: 0.125
+  - type: GunRequiresWield
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineShotgunKSK
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineShotgunKSK
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeShotgun12GaugeBuckshot
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeShotgun12Gauge
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/shotgun_mouse.rsi
+      state: all
+
+- type: entity
+  name: M26 MASS
+  parent: BaseWeaponRifle # BaseWeaponShotgun breaks the gun right now
+  id: WeaponShotgunUSM26
+  description: A peculiar bolt action shotgun, meant for breaching doors.
+  suffix: INCOMPLETE DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KSK.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KSK.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: Gun
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 2
+    projectileSpeed: 30
+    soundGunshot:
+      collection: BF_AK_545_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: GunRequiresWield
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineShotgunKSK
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineShotgunKSK
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeShotgun12GaugeBuckshot
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeShotgun12Gauge
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/shotgun_mouse.rsi
+      state: all
+
+- type: entity
+  name: USAS-12
+  parent: BaseWeaponRifle # BaseWeaponShotgun breaks the gun right now
+  id: WeaponShotgunUSUSAS12
+  description: You could kill the sun with this.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/USAS12.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/USAS12.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: Gun
+    availableModes:
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 5
+    projectileSpeed: 40
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/Guns/USAS/uc_m16_fire_usas.ogg
+      params:
+        volume: -2
+        variation: 0.125
+  - type: GunRequiresWield
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/USAS/uc_m16_usas_rack.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineShotgunUSAS
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineShotgunUSAS
+            - MagazineShotgunUSASDrum
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeShotgun12GaugeBuckshot
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeShotgun12Gauge
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/shotgun_mouse.rsi
+      state: all
+
+- type: entity
+  parent: WeaponShotgunUSUSAS12
+  id: WeaponShotgunUSUSAS12Frag
+  suffix: frag drum
+  components:
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/USAS/uc_m16_usas_rack.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineShotgunUSASDrumFrag
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineShotgunUSAS
+            - MagazineShotgunUSASDrum
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeShotgun12GaugeFrag
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeShotgun12Gauge
+

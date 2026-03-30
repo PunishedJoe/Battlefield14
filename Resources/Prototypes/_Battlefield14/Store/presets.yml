@@ -1,0 +1,37 @@
+- type: entity
+  id: StorePresetNATOUSUplink
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-nato-uplink
+    categories:
+    - UplinkNATOUSWeapons
+    - UplinkNATOUSAmmo
+    - UplinkNATOUSArmour
+    - UplinkNATOUSUtility
+    - UplinkNATOUSMedical
+    - UplinkNATOUSExplosives
+    - UplinkNATOUSShipAmmo
+    currencyWhitelist:
+    - NATORequisition
+    balance:
+      NATORequisition: 0
+
+- type: entity
+  id: StorePresetPACTRUUplink
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-pact-uplink
+    categories:
+    - UplinkPACTRUWeapons
+    - UplinkPACTRUAmmo
+    - UplinkPACTRUArmour
+    - UplinkPACTRUUtility
+    - UplinkPACTRUMedical
+    - UplinkPACTRUExplosives
+    - UplinkPACTRUShipAmmo
+    currencyWhitelist:
+    - PACTRequisition
+    balance:
+      PACTRequisition: 0

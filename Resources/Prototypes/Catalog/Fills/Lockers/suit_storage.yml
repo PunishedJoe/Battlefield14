@@ -125,14 +125,16 @@
   components:
   - type: StorageFill
     contents:
-        - id: OxygenTankFilled
-        - id: NitrogenTankFilled
+        - id: DoubleEmergencyOxygenTankFilled # BF14
+#BF14        - id: NitrogenTankFilled
         - id: ClothingShoesBootsMag
-        - id: UndeterminedVoidsuitEngineer # Goob edit
+        - id: ClothingOuterHardsuitEngineering # BF14 | UndeterminedVoidsuitEngineer # Goob edit
         - id: ClothingMaskBreath
-        - id: JetpackMiniFilled # Frontier
+        - id: JetpackBlackFilled # BF14
+        - id: HandheldGPSBasic # BF14
+        - id: HandHeldMassScanner # BF14
   - type: AccessReader
-    # access: [["Engineering"]] # Frontier
+    access: [["Engineering"]] # BF14 uncommented, frontier commented this out
 
 #Atmospherics hardsuit
 - type: entity
@@ -158,12 +160,13 @@
   components:
   - type: StorageFill
     contents:
-        - id: OxygenTankFilled
-        - id: NitrogenTankFilled
-        - id: UndeterminedVoidsuitSecurity # Goob edit
+        - id: DoubleEmergencyOxygenTankFilled # BF14
+        - id: ClothingOuterHardsuitSecurity # BF14
         - id: ClothingMaskBreath
         - id: JetpackSecurityFilled # Frontier
-        - id: ClothingShoesBootsMagSecurityFilled # Frontier
+        - id: ClothingShoesBootsMagAshenFilled # BF14
+        - id: HandheldGPSBasic # BF14
+        - id: HandHeldMassScanner # BF14
   - type: AccessReader
     access: [["Security"]]
 

@@ -1,0 +1,10 @@
+- type: entity
+  parent: BasePetRock
+  id: RockOrSomething
+  name: rock or something
+  description: i guess you could toss it at someone?
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Fun/petrock.rsi
+    layers:
+    - state: rock

@@ -1,0 +1,92 @@
+- type: entity
+  parent: BaseItem
+  id: MagazineSubmachinegunMP7
+  name: MP7 magazine (4.6x30mm)
+  description: A bunch of itty bitty bullets that like to go ZIP right through you, packaged all neat.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolMP7
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePDW46x30
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePDW46x30
+    capacity: 40
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/PDW/MP7.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazinePistolSR1MP
+  name: SR1MP magazine (9x21mm)
+  description: When you pull the trigger, the last bullet in the magazine will ascend a fixed distance, until fired; after which the slide will lock to the rear.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolSR1MP
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePDW9x21
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePDW9x21
+    capacity: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/SR1MP.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineSubmachinegunSR2MP
+  name: SR2MP magazine (9x21mm)
+  description: Gun food.
+  components:
+  - type: Tag
+    tags:
+      - MagazineSubmachinegunSR2MP
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePDW9x21
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePDW9x21
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/vlad.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance

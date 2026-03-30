@@ -1,0 +1,41 @@
+- type: pointOfInterest
+  id: INDBox
+  parent: [BasePOI, BaseRepairablePOI]
+  name: 'Independant Box Station'
+#  minimumDistance: 0
+#  maximumDistance: 0
+#  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+#  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Stations/IND/boxgrid.yml
+  addComponents:
+  - type: IFF
+    color: "#efefef"
+#    flags: [HideLabel]
+#    readOnly: true
+
+- type: gameMap
+  id: BF14Box
+  mapName: 'Box Station'
+  mapPath: /Maps/_Battlefield14/Stations/IND/box.yml
+  minPlayers: 0
+  maxPlayers: 120
+  fallback: true
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Box:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Independant "Box" Station'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+#            Contractor: [ 2, 3 ]
+            WPSSecurityOfficer: [ 1, 1 ] #[ 3, 3 ]
+            WPSWarden: [ 1, 1 ]
+            WPSMarshal: [ 1, 1 ]

@@ -24,7 +24,7 @@
 - type: radioChannel
   id: CorticalBorer
   name: chat-radio-cortical-borer
-  keycode: 'z'
+  keycode: '\'
   color: "#d842fc"
   longRange: true
 

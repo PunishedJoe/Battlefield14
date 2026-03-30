@@ -1,0 +1,51 @@
+- type: entity
+  id: BaseIntegratedManeuveringThrusters
+  name: integrated maneuvering thrusters
+  description: A set of maneuvering thrusters integrated into a suit.
+  abstract: true
+  components:
+  - type: GasTank
+    outputPressure: 18.5
+    air:
+      # 10 minutes of thrust
+      volume: 3.75
+      temperature: 293.15
+      moles:
+      - 1.53853429 # oxygen
+  - type: ActivatableUI
+    key: enum.SharedGasTankUiKey.Key
+    verbOnly: true
+  - type: UserInterface
+    interfaces:
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
+  - type: Jetpack
+    moleUsage: 0.00085
+  - type: CanMoveInAir
+  - type: InputMover
+    toParent: true
+  - type: MovementSpeedModifier
+    weightlessAcceleration: 1
+    weightlessFriction: 0.3
+    weightlessModifier: 2
+
+- type: entity
+  id: BaseIntegratedOxygenSupply
+  name: integrated oxygen supply
+  description: A set of oxygen integrated into a suit.
+  abstract: true
+  components:
+  - type: GasTank
+    outputPressure: 18.5
+    air:
+      volume: 3.75
+      temperature: 293.15
+      moles:
+      - 1.53853429 # oxygen
+  - type: ActivatableUI
+    key: enum.SharedGasTankUiKey.Key
+    verbOnly: false
+  - type: UserInterface
+    interfaces:
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface

@@ -78,6 +78,8 @@
     entity: WeaponCapacitorRecharger
   - type: StaticPrice
     price: 15
+  - type: Item
+    size: Normal # BF14
 
 - type: entity
   parent: BaseNFFlatpack

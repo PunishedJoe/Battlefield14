@@ -1,0 +1,121 @@
+- type: entity
+  parent: BaseItem
+  id: MagazineRifleSV98
+  name: "SV-98 magazine (7.62x54mmR)"
+  description: A small, 5 round magazine for the SV-98, but dont let its small size fool you, these rounds pack a punch.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleSV98
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x54r
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x54r
+    capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/SV98.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineRifleSV98AP
+  name: "SV-98 magazine (7.62x54mmR AP)"
+  description: A small, 5 round magazine for the SV-98, but dont let its small size fool you, these rounds pack a punch.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleSV98
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x54rAP
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x54r
+    capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/SV98.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineSniperM107
+  name: "M107 magazine (.50 BMG)"
+  description: A 5 round magazine for the M107, made to disable engine blocks on lightly armoured vehicles.
+  components:
+  - type: Tag
+    tags:
+      - MagazineSniperM107
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: Cartridge127mmAP
+    mayTransfer: true
+    whitelist:
+      tags:
+        - Cartridge127mmAP
+    capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/M107.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineSniperSVDS
+  name: "SVDS magazine (7.62x54mmR)"
+  description: A 10 round magazine for the SVDS, for tapping americans a little further than your average infantryman.
+  components:
+  - type: Tag
+    tags:
+      - MagazineSniperSVDS
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x54r
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x54r
+    capacity: 10
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/SVDS.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      scale: 1.5,1.5
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+      scale: 1.5,1.5
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance

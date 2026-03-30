@@ -1,0 +1,80 @@
+#- type: Tag
+#  id: Armorplate
+
+- type: Tag
+  id: MortarShell
+
+## Ammunition
+#
+#- type: Tag
+#  id: MagazineVeresk
+#
+#- type: Tag
+#  id: MagazineLightMachineGunRPK
+#
+#- type: Tag
+#  id: CartridgeSniper
+#
+#- type: Tag
+#  id: MagazineSniper
+#
+#- type: Tag
+#  id: CartridgeRocketFragTag
+#
+#- type: Tag
+#  id: CartridgeRocketThermobarUnloaded
+#
+#- type: Tag
+#  id: CartridgeRocketFragUnloaded
+#
+#- type: Tag
+#  id: CartridgeRocketFugasUnloaded
+#
+#- type: Tag
+#  id: CartridgeRocketThermobar
+#
+#- type: Tag
+#  id: CartridgeRocketGunpowderRPG
+#
+#- type: Tag
+#  id: CartridgeSniperSupressor
+#
+#- type: Tag
+#  id: MagazineSniperSupressorTag
+#
+#- type: Tag
+#  id: CartridgeRocketDisposably
+#
+#- type: Tag
+#  id: HMGMagBox
+#
+## Implants
+#
+#- type: Tag
+#  id: ThermalImplant
+#
+## Artillery
+#
+#- type: Tag
+#  id: ArtilleryShell30mm
+#
+#- type: Tag
+#  id: ArtilleryShellBox30mm
+#
+#- type: Tag
+#  id: ArtilleryShell57mm
+#
+#- type: Tag
+#  id: ArtilleryShellClip57mm
+#
+#- type: Tag
+#  id: ArtilleryShell120mm
+#
+#- type: Tag
+#  id: Torpedo530mm
+#
+#- type: Tag
+#  id: HeatCountermeasuresShell
+#
+#- type: Tag
+#  id: RadarCountermeasuresShell

@@ -1,0 +1,213 @@
+## NATO
+# US
+
+- type: entity
+  id: ShellMortar81M252HEFrag
+  parent: DebugMortarShell
+  suffix: HE-FRAG, 81mm, M252, NATO, US
+  name: M821A4 81mm HE-EF shell
+  description: High explosive Enhanced Fragmentation, a mortar shell designed to destroy manpower and light fortifications.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: HE
+  - type: Tag
+    tags:
+      - MortarShell
+      - ShellMortar81M252
+  - type: Item
+    size: Normal
+  - type: MortarShell
+    delayPerTile: 0.15
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+    explosionEntity: ArtilleryMarkerM252HEFrag
+    useDirectExplosion: false
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 8
+
+- type: entity
+  id: ShellMortar81M252Smoke
+  parent: DebugMortarShell
+  suffix: Smoke, 81mm, M252, NATO, US
+  name: M819 81mm smoke shell
+  description: A mortar shell designed to cover advancing troops in smoke.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: smoke
+  - type: Tag
+    tags:
+      - MortarShell
+      - ShellMortar81M252
+  - type: Item
+    size: Normal
+  - type: MortarShell
+    delayPerTile: 0.12
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+    explosionEntity: ArtilleryMarkerM252Smoke
+    useDirectExplosion: false # Allows smoke to work
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 8
+
+- type: entity
+  id: ShellMortar81M252ChemicalSmoke
+  parent: ShellMortar81M252Smoke
+  suffix: CS-Gas, 81mm, M252, NATO, US
+  name: M819-CS 81mm chemical smoke shell
+  description: A mortar shell that releases CS gas on impact for non lethal incapacitation.
+  components:
+  - type: MortarShell
+    delayPerTile: 0.15
+    explosionEntity: ArtilleryMarkerM252ChemicalSmoke
+
+- type: entity
+  id: ShellMortar81M252WhitePhosphorus
+  parent: ShellMortar81M252Smoke
+  suffix: WAR CRIME, White Phosphorus, 81mm, M252, NATO, US
+  name: M819-WP 81mm smoke shell
+  description: A mortar shell that releases white phosphorus smoke on impact.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: incendiary
+  - type: MortarShell
+    delayPerTile: 0.16
+    explosionEntity: ArtilleryMarkerM252WhitePhosphorus
+
+- type: entity
+  id: ShellMortar81M252Flare
+  parent: ShellMortar81M252Smoke
+  suffix: Illumination, 81mm, M252, NATO, US
+  name: M853A1 81mm illumination flare shell
+  description: A mortar shell that releases a parachute and visible spectrum flare.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: illumination
+  - type: MortarShell
+    delayPerTile: 0.14
+    explosionEntity: ArtilleryMarkerM252Flare
+
+## PACT
+# RU
+
+- type: entity
+  id: ShellMortar822B14HEFrag
+  parent: DebugMortarShell
+  suffix: HE-FRAG, 82mm, 2B14, PACT, RU
+  name: O-832-D 82mm HE-Frag shell
+  description: A mortar shell designed to destroy manpower and light fortifications.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: HE
+  - type: Tag
+    tags:
+      - MortarShell
+      - ShellMortar822B14
+  - type: Item
+    size: Normal
+  - type: MortarShell
+    delayPerTile: 0.15
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+    explosionEntity: ArtilleryMarker2B14HEFrag
+    useDirectExplosion: false
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 8
+
+- type: entity
+  id: ShellMortar822B14Thermobaric
+  parent: ShellMortar822B14HEFrag
+  suffix: Thermobaric, 82mm, 2B14, PACT, RU
+  name: TB-832-D 82mm thermobaric shell
+  description: A mortar shell designed to destroy manpower and light fortifications.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: incendiary
+  - type: MortarShell
+    delayPerTile: 0.15
+    explosionEntity: ArtilleryMarker2B14Thermobaric
+
+- type: entity
+  id: ShellMortar822B14Smoke
+  parent: DebugMortarShell
+  suffix: Smoke, 82mm, 2B14, PACT, RU
+  name: M819 82mm smoke shell
+  description: A mortar shell designed to cover advancing troops in smoke.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: smoke
+  - type: Tag
+    tags:
+      - MortarShell
+      - ShellMortar822B14
+  - type: Item
+    size: Normal
+  - type: MortarShell
+    delayPerTile: 0.12
+    fireSound: /Audio/_VXS14/Weapons/Guns/Artillery/fire1.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    insertSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarload.ogg
+    explosionEntity: ArtilleryMarker2B14Smoke
+    useDirectExplosion: false # Allows smoke to work
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 60
+    intensitySlope: 4
+    maxIntensity: 8
+
+- type: entity
+  id: ShellMortar822B14ChemicalSmoke
+  parent: ShellMortar822B14Smoke
+  suffix: CS-Gas, 82mm, 2B14, PACT, RU
+  name: M832-CS 82mm chemical smoke shell
+  description: A mortar shell that releases CS gas on impact for non-lethal incapacitation.
+  components:
+  - type: MortarShell
+    delayPerTile: 0.16
+    explosionEntity: ArtilleryMarker2B14ChemicalSmoke
+
+- type: entity
+  id: ShellMortar822B14WhitePhosphorus
+  parent: ShellMortar822B14Smoke
+  suffix: WAR CRIME, White Phosphorus, 82mm, 2B14, PACT, RU
+  name: D-832P 82mm white phosphorus smoke shell
+  description: A mortar shell that releases white phosphorus smoke on impact.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: incendiary
+  - type: MortarShell
+    delayPerTile: 0.16
+    explosionEntity: ArtilleryMarker2B14WhitePhosphorus
+
+- type: entity
+  id: ShellMortar822B14Flare
+  parent: ShellMortar822B14Smoke
+  suffix: Illumination, 82mm, 2B14, PACT, RU
+  name: S-832S 82mm illumination flare shell
+  description: A mortar shell that releases a parachute and visible spectrum flare.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/BattlefieldArtillery/GroundArtillery/Mortar/shells.rsi
+    state: illumination
+  - type: MortarShell
+    delayPerTile: 0.14
+    explosionEntity: ArtilleryMarker2B14Flare

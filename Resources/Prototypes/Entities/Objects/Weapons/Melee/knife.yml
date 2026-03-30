@@ -121,7 +121,7 @@
     attackRate: 1.3
     damage:
       types:
-        Slash: 22
+        Slash: 28 # BF14
   - type: EmbeddableProjectile
     sound: /Audio/Weapons/star_hit.ogg
     offset: -0.15,0.0

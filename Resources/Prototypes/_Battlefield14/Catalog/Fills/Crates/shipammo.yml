@@ -1,0 +1,128 @@
+## US
+
+## RU
+
+# Molot-N
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxRU125APFSDS
+  name: 125mm APFSDS cartridge box
+  description: Contains 10 shells.
+  suffix: Molot-N
+  components:
+  - type: StorageFill
+    contents:
+    - id: Cartridge125mmAPFSDS
+      amount: 10
+    access: [["PACTArmory"]]
+
+# Grom-N
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxRU30Frag
+  name: 30mm fragmentation magazine box
+  description: Contains 12 belts.
+  suffix: Grom-N
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine30mmFrag
+      amount: 12
+    access: [["PACTArmory"]]
+
+- type: entity
+  parent: CrateAmmoBoxRU30Frag
+  id: CrateAmmoBoxRU30APT
+  name: 30mm armour piercing tracer magazine box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine30mmAPT
+      amount: 12
+
+- type: entity
+  parent: CrateAmmoBoxRU30Frag
+  id: CrateAmmoBoxRU30APDS
+  name: 30mm armour piercing discarding sabot magazine box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine30mmGromN
+      amount: 12
+
+# Volna-N
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxRU23Frag
+  name: 23mm fragmentation magazine box
+  suffix: Volna-N
+  description: Contains 25 belts.
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine23mmFrag
+      amount: 25
+    access: [["PACTArmory"]]
+
+- type: entity
+  parent: CrateAmmoBoxRU23Frag
+  id: CrateAmmoBoxRU23APT
+  name: 23mm armour piercing tracer magazine box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine23mmAPT
+      amount: 25
+
+- type: entity
+  parent: CrateAmmoBoxRU23Frag
+  id: CrateAmmoBoxRU23HE
+  name: 23mm high explosive magazine box
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine23mmVolnaN
+      amount: 25
+
+# Vasilek-N
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxRU83HE
+  name: 83mm high explosive mortar magazine box
+  description: Contains 10 clips.
+  suffix: Vasilek-N
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine83mmVasilekN
+      amount: 10
+    access: [["PACTArmory"]]
+
+# Kornet-N
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBoxRUKornet
+  name: Kornet rocket box
+  description: Contains 10 rockets.
+  suffix: Kornet-N
+  components:
+  - type: StorageFill
+    contents:
+    - id: KornetNCartridge
+      amount: 10
+    access: [["PACTArmory"]]
+
+- type: entity
+  parent: CrateAmmoSecureMercenary
+  id: CrateAmmoBox57mmHE
+  name: 57mm high explosive magazine box
+  description: Contains 10 mags.
+  suffix: Burevestnik-N
+  components:
+  - type: StorageFill
+    contents:
+    - id: Magazine57mmBurevestnikN
+      amount: 10
+    access: [["PACTArmory"]]

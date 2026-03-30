@@ -1,0 +1,301 @@
+# Base
+
+- type: entity
+  id: BattlefieldArtilleryBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 6000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 800
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+    rotateWhilePulling: false
+    rotateWhileAnchored: false
+    increment: 45
+  - type: DeviceLinkSink
+    ports:
+    - SpaceArtilleryFire
+    - SpaceArtilleryLoad
+  - type: SpaceArtillery
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 100
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: FireControllable
+  - type: RadarBlip
+    visibleFromOtherGrids: false
+    radarColor: "#9999FF"
+    scale: 1
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+  - type: LightningTarget
+    priority: 1
+  - type: ThermalSignature # at least most have a thermal signature when firing
+  - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+
+- type: entity
+  id: BattlefieldArtilleryUnanchorable
+  parent: BattlefieldArtilleryBase
+  abstract: true
+  components:
+  - type: RequiresGrid
+
+- type: entity
+  id: BattlefieldArtillery
+  parent: BattlefieldArtilleryBase
+  abstract: true
+  components:
+  - type: Anchorable
+    delay: 10
+  - type: Pullable
+  - type: PirateBountyItem # not putting this on the other, because like. how do you get a cyrexa for your bounty. thats stupid.
+    id: ShipWeapon
+
+- type: entity
+  id: BattlefieldArtilleryBaseCartridge
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 8000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 800
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Transform
+    anchored: true
+  - type: DeviceLinkSink
+    ports:
+    - SpaceArtilleryFire
+    - SpaceArtilleryLoad
+  - type: SpaceArtillery
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: FireControllable
+  - type: RadarBlip
+    visibleFromOtherGrids: false
+    radarColor: "#9999FF"
+    scale: 1
+  - type: Gun
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - Grenade
+    capacity: 2
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+
+- type: entity
+  id: BattlefieldArtilleryCartridge
+  parent: BattlefieldArtilleryBaseCartridge
+  abstract: true
+  components:
+  - type: Anchorable
+    delay: 10
+  - type: Pullable
+  - type: PirateBountyItem # not putting this on the other, because like. how do you get a cyrexa for your bounty. thats stupid.
+    id: ShipWeapon
+
+- type: entity
+  id: BattlefieldArtilleryUnanchorableCartridge
+  parent: BattlefieldArtilleryBaseCartridge
+  abstract: true
+  components:
+  - type: RequiresGrid
+
+- type: entity
+  id: BattlefieldArtilleryBaseMagazine
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 7000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 6000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 800
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Transform
+    anchored: true
+  - type: DeviceLinkSink
+    ports:
+    - SpaceArtilleryFire
+    - SpaceArtilleryLoad
+  - type: SpaceArtillery
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+  - type: FireControllable
+  - type: RadarBlip
+    visibleFromOtherGrids: false
+    radarColor: "#9999FF"
+    scale: 1
+  - type: Gun
+    fireRate: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Medium
+  - type: MagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        priority: 2
+        whitelist:
+          tags:
+          - Magazine40mm
+        insertSound:
+          path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+          params:
+            pitch: 2
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+
+
+- type: entity
+  id: BattlefieldArtilleryMagazine
+  parent: BattlefieldArtilleryBaseMagazine
+  abstract: true
+  components:
+  - type: Anchorable
+    delay: 10
+  - type: Pullable
+  - type: PirateBountyItem # not putting this on the other, because like. how do you get a cyrexa for your bounty. thats stupid.
+    id: ShipWeapon
+
+- type: entity
+  id: BattlefieldArtilleryUnanchorableMagazine
+  parent: BattlefieldArtilleryBaseMagazine
+  abstract: true
+  components:
+  - type: RequiresGrid

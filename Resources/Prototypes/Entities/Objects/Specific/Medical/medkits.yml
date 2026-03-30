@@ -9,12 +9,11 @@
     state: firstaid
   - type: Storage
     maxItemSize: Small
+    defaultStorageOrientation: Vertical # BF14
     grid:
-    - 0,0,3,1
+    - 0,0,3,2 # BF14
   - type: Item
-    size: Normal # Frontier: Large<Normal
-    shape: # Frontier
-    - 0,0,2,1 # Frontier
+    size: Normal # BF14
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi # Frontier: _NF prefix
     heldPrefix: firstaid
   - type: PhysicalComposition
@@ -93,16 +92,16 @@
 - type: entity
   name: combat medical kit
   description: "For the big weapons among us."
-  parent: BaseStorageItem
+  parent: Medkit # BF14
   id: MedkitCombat
   components:
   - type: Sprite
     sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi
     state: blackkit
-  - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,3,1
+#  - type: Storage
+#    maxItemSize: Small
+#    grid:
+#    - 0,0,3,1
   - type: Item
     size: Normal
     shape:

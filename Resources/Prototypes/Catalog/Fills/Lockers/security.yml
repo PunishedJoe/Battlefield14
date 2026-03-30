@@ -87,20 +87,20 @@
   parent: LockerBrigmedic
   categories: [ HideSpawnMenu ] # Frontier
   components:
-  - type: StorageFill
+  - type: StorageFill # Commented out items by BF14
     contents:
       - id: ClothingEyesGlassesSecurity
-      - id: WeaponDisabler
-      - id: TrackingImplanter
-        amount: 2
-      - id: ClothingOuterHardsuitBrigmedic
+#      - id: WeaponDisabler
+#      - id: TrackingImplanter
+#        amount: 2
+#      - id: ClothingOuterHardsuitBrigmedic
       - id: BoxSterileMask
       - id: ClothingHeadHatBeretBrigmedic
       - id: ClothingOuterCoatAMG
       - id: ClothingUniformJumpsuitBrigmedic
-      - id: ClothingUniformJumpskirtBrigmedic
-      - id: ClothingUniformJumpskirtOfLife
-        prob: 0.1
+#      - id: ClothingUniformJumpskirtBrigmedic
+#      - id: ClothingUniformJumpskirtOfLife
+#        prob: 0.1
       - id: MedkitFilled
       - id: MedkitCombatFilled
         prob: 0.6
@@ -114,8 +114,8 @@
         prob: 0.3
       - id: MedkitBurnFilled
         prob: 0.7
-      - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
-        prob: 0.15
+#      - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
+#        prob: 0.15
 
 - type: entity
   id: LockerDetectiveFilled

@@ -1,0 +1,116 @@
+- type: entity
+  id: MortarNATOUS81mmM252
+  parent: BaseStructure # no moving once placed, disassemble with wrench
+  name: M252 81mm mortar
+  suffix: 81mm
+  description: An 81mm battalion mortar. It offers a fairly moderate rate of fire, tolerable accuracy, and fires a wide variety of relatively inexpensive ammunition. Dont shoot straight up.
+  components:
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: mortar
+  - type: Mortar
+    baseAccuracy: 0.5
+    accuracyDegradation: 0.05
+    minOffsetX: -40
+    maxOffsetX: 40
+    minOffsetY: -40
+    maxOffsetY: 40
+    minSafeDistance: 0
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - ShellMortar81M252
+  - type: Construction
+    graph: MortarNATOUS81mmM252
+    node: MortarM252Deployed
+    deconstructionTarget: start
+
+- type: entity
+  parent: BaseItem
+  id: MortarNATOUS81mmM252Assembly
+  name: M252 81mm mortar assembly
+  description: A folded up mortar, assemble with a wrench.
+  components:
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: Objects/Devices/flatpack.rsi
+    layers:
+    - state: base
+    - state: overlay
+      color: "#cec8ac"
+      map: ["enum.FlatpackVisualLayers.Overlay"]
+    - state: icon-default
+  - type: Appearance
+    price: 250
+  - type: Rotatable # Frontier
+  - type: Construction
+    graph: MortarNATOUS81mmM252
+    node: MortarM252Assembly
+    deconstructionTarget: start
+
+- type: entity
+  id: MortarPACTRU82mm2B14
+  parent: BaseStructure
+  name: 2B14 82mm mortar
+  suffix: 82mm
+  description: Another cold war classic that still sees use in the modern day, although the laws of physics have stayed the same since at least the 80's.
+  components:
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: mortar
+  - type: Mortar
+    baseAccuracy: 0.5
+    accuracyDegradation: 0.05
+    minOffsetX: -40
+    maxOffsetX: 40
+    minOffsetY: -40
+    maxOffsetY: 40
+    minSafeDistance: 0
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - ShellMortar822B14
+  - type: Construction
+    graph: MortarPACTRU82mm2B14
+    node: Mortar2B14Deployed
+    deconstructionTarget: start
+
+- type: entity
+  parent: BaseItem
+  id: MortarPACTRU82mm2B14Assembly
+  name: 2B14 82mm mortar assembly
+  description: A folded up mortar, assemble with a wrench.
+  components:
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: Objects/Devices/flatpack.rsi
+    layers:
+    - state: base
+    - state: overlay
+      color: "#cec8ac"
+      map: ["enum.FlatpackVisualLayers.Overlay"]
+    - state: icon-default
+  - type: Appearance
+    price: 250
+  - type: Rotatable # Frontier
+  - type: Construction
+    graph: MortarPACTRU82mm2B14
+    node: Mortar2B14Assembly
+    deconstructionTarget: start
+

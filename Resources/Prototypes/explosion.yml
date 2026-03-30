@@ -7,7 +7,7 @@
       Heat: 5
       Blunt: 5
       Piercing: 5
-      Structural: 20 # Mono: buff explosions
+#BF14      Structural: 20 # Mono: buff explosions
   tileBreakChance: [0, 0.5, 1]
   tileBreakIntensity: [0, 10, 30]
   tileBreakRerollReduction: 20
@@ -124,9 +124,9 @@
   id: FireBomb
   damagePerIntensity:
     types:
-      Heat: 1
-      Blunt: 2
-      Piercing: 3
+      Heat: 4 # BF14 1 > 4
+      Blunt: 3 # BF14 2 > 3
+      Piercing: 2 # BF14 3 > 2
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 6

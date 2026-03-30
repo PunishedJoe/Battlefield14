@@ -1,0 +1,74 @@
+- type: job
+  id: HECUMedic
+  name: job-name-usmc-medic
+  description: job-description-usmc-medic
+  playTimeTracker: JobHECUMedic
+  weight: 75
+  startingGear: HECUMedicGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOMedic"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.65
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-corporal
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOMedical
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: HECUMedicGear
+  equipment:
+    id: HECUMedicPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltMedicalEMTFilledBF14
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    head: ClothingHeadHatHelmetUSUrban
+    eyes: ClothingEyesHudMedicalBF
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesLatex
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponSubmachinegunUSMP5
+    pocket1: PouchMagsPistolLargeFilledMP5
+    pocket2: PouchGrenadesFilledUSMCScout
+    leftarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
+  storage:
+    back:
+    - SupplyBoxMedicalFilled
+    - DefibrillatorCompactBF
+    - BoxMRE
+    - MedkitAdvancedFilled
+    - CrowbarRed
+    - ClothingMaskGasM40
+    - PillCanisterHyronalin
+    - Tourniquet
+    - Zipties

@@ -23,11 +23,12 @@
       - Timer
   - type: Damageable
     damageContainer: Inorganic
+    damageModifierSet: Grenade # BF14 grenades thrown over barbed wire would take damage from the DamageUserOnTrigger comp and can detonate instantly without the proper damage modifer set
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 10
+        damage: 20 # BF14 10 > 20
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior

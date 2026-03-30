@@ -1,0 +1,37 @@
+- type: guideEntry
+  id: BattlefieldRuleset
+  name: guide-entry-battlefield-rules
+  text: "/ServerInfo/_Battlefield14/Guidebook/Rules/BF14Ruleset.xml"
+  priority: -2
+  ruleEntry: true
+  children:
+    - BattlefieldRuleOne
+    - BattlefieldRuleTwo
+    - BattlefieldRuleThree
+    - BattlefieldRuleFour
+
+# Core Rules
+
+- type: guideEntry
+  id: BattlefieldRuleOne
+  name: guide-entry-battlefield-rule-one
+  text: "/ServerInfo/_Battlefield14/Guidebook/Rules/One_ConvincingCharacter.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: BattlefieldRuleTwo
+  name: guide-entry-battlefield-rule-two
+  text: "/ServerInfo/_Battlefield14/Guidebook/Rules/Two_NoSabotage.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: BattlefieldRuleThree
+  name: guide-entry-battlefield-rule-three
+  text: "/ServerInfo/_Battlefield14/Guidebook/Rules/Three_NoERP.xml"
+  ruleEntry: true
+
+- type: guideEntry
+  id: BattlefieldRuleFour
+  name: guide-entry-battlefield-rule-four
+  text: "/ServerInfo/_Battlefield14/Guidebook/Rules/Four_Reputation.xml"
+  ruleEntry: true

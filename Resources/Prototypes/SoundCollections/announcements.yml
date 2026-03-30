@@ -1,9 +1,14 @@
 - type: soundCollection
   id: RoundEnd
   files:
-  - /Audio/Announcements/RoundEnd/apc_destroyed.ogg
-  - /Audio/Announcements/RoundEnd/disappointed.ogg
-  - /Audio/Announcements/RoundEnd/notevenpaidforthis.ogg
+  - /Audio/_Battlefield14/RoundEnd/lightsoff.ogg
+  - /Audio/_Battlefield14/RoundEnd/nicecamo.ogg
+  - /Audio/_Battlefield14/RoundEnd/enough.ogg # Move this to round start once we get collections working for that
+  - /Audio/_Battlefield14/RoundEnd/sneakybeaky.ogg # This too
+  - /Audio/_Battlefield14/RoundEnd/bullied.ogg
+#BF14  - /Audio/Announcements/RoundEnd/apc_destroyed.ogg
+#BF14  - /Audio/Announcements/RoundEnd/disappointed.ogg
+#BF14  - /Audio/Announcements/RoundEnd/notevenpaidforthis.ogg
 
 - type: soundCollection
   id: PowerOn

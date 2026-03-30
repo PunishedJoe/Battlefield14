@@ -1,0 +1,147 @@
+# NATO #
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOCommon
+  suffix: NATO Common, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOCommon"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOMaintenance
+  suffix: NATO Maintenance, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOMaintenance"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOMedical
+  suffix: NATO Medical, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOMedical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOSoldier
+  suffix: NATO Soldier, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOArmory
+  suffix: NATO Armory, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOArmory"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOCommand
+  suffix: NATO Command, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOCommand"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOFunds
+  suffix: NATO Funds, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOFunds"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOCrew
+  suffix: NATO Crew, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOCrew"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNATOCaptain
+  suffix: NATO Captain, Locked
+  components:
+  - type: AccessReader
+    access: [["NATOCaptain"]]
+
+# PACT #
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTCommon
+  suffix: PACT Common, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTCommon"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTMaintenance
+  suffix: PACT Maintenance, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTMaintenance"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTMedical
+  suffix: PACT Medical, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTMedical"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTSoldier
+  suffix: PACT Soldier, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTArmory
+  suffix: PACT Armory, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTArmory"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTCommand
+  suffix: PACT Command, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTCommand"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTFunds
+  suffix: PACT Funds, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTFunds"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTCrew
+  suffix: PACT Crew, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTCrew"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPACTCaptain
+  suffix: PACT Captain, Locked
+  components:
+  - type: AccessReader
+    access: [["PACTCaptain"]]

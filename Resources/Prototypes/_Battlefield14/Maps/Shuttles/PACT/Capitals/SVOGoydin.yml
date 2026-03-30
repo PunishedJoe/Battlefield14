@@ -1,0 +1,44 @@
+- type: pointOfInterest
+  id: SVOGoydin
+  parent: [BaseMobilePOI, BaseRepairablePOI]
+  name: 'SVO Goydin'
+  minimumDistance: 3000
+  maximumDistance: 3000
+  spawnGamePreset: [ USMC_vs_VDV ]
+  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Shuttles/PACT/Capitals/SVOGoydin.yml
+  addComponents:
+  - type: IFF
+    color: "#bd0404"
+#    readOnly: true
+
+- type: gameMap
+  id: SVOGoydin
+  mapName: 'SVO Goydin'
+  mapPath: /Maps/_Battlefield14/Shuttles/PACT/Capitals/SVOGoydin.yml
+  minPlayers: 0
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    SVOGoydin:
+      stationProto: SecurityFrontierOutpost
+      gridComponents:
+      - type: VesselInfo
+        description: "A Katsap class spacecraft carrier, woe to whoever crosses her."
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'SVO Goydin'
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Battlefield14/poi_icons.rsi/svogoydin.png
+          stationSubtext: 'SVO Goydin'
+          stationDescription: "A Katsap class spacecraft carrier, woe to whoever crosses her."
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            VKSCaptain: [ 1, 1 ]
+            VKSCrewman: [ 3, 3 ]
+            VDVSquadLeader: [ 3, 3 ]
+            VDVRifleman: [ -1, -1 ]
+            VDVAutomaticRifleman: [ 3, 3 ]
+            VDVMedic: [ 3, 3 ]
+            VDVRecon: [ 3, 3 ]

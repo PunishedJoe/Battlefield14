@@ -1,0 +1,99 @@
+# Kornet-N Guided Missile System Launcher
+- type: entity
+  id: WeaponTurretKornetN
+  name: Kornet-N Guided Missile System
+  suffix: BF14, PACT, RU
+  parent: BattlefieldArtilleryCartridge
+  description: An upgrade from the previous 9K111 and 9K113 ATGMs, this missile launcher has been used in all sorts of roles; from an infantry portable anti-tank solution, to mounted onto the latest and greatest helicopters, tanks, and warships that come out of the design beurau. Despite being superior to its previous iterations, they still see use due to its semi-prohibitive cost and weight. Does not rotate.
+  components:
+  - type: StaticPrice
+    price: 6500
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/vanyk.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 0
+    fireRate: 0.5
+    shootThermalSignature: 4500000
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 260
+    powerUsePassive: 650
+    powerUseActive: 0
+  - type: Actions
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    whitelist:
+      tags:
+      - KornetNCartridge
+    capacity: 4
+    proto: KornetNCartridge
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+#  - type: RadarBlip
+#    radarColor: "#FF0000"
+#    scale: 2
+  - type: ShipGunType
+    shipType: Missile
+  - type: ShipGunClass
+    shipClass: Medium
+
+- type: entity
+  id: KornetNCartridge
+  name: cartridge (Kornet-N)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - KornetNCartridge
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: BulletKornetN
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 850
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 5.5
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+

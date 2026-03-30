@@ -1,0 +1,159 @@
+- type: entity
+  parent: [BaseAmmoProvider, RecyclableItemCardboard]
+  id: BaseShellBoxBF12Gauge
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - BF_CartridgeShotgun12Gauge
+      capacity: 30
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  name: shotgun shell box (12 gauge buckshot)
+  parent: BaseShellBoxBF12Gauge
+  id: ShellBoxBF12GaugeBuckshot
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun12GaugeBuckshot
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: lethal
+
+- type: entity
+  name: shotgun shell box (12 gauge slug)
+  parent: BaseShellBoxBF12Gauge
+  id: ShellBoxBF12GaugeSlug
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun12GaugeSlug
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-alt-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: slug
+
+- type: entity
+  name: shotgun shell box (12 gauge Breaching)
+  parent: BaseShellBoxBF12Gauge
+  id: ShellBoxBF12GaugeBreaching
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun12GaugeBreaching
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: practice
+
+# 4 gauge
+
+- type: entity
+  parent: [BaseAmmoProvider, RecyclableItemCardboard]
+  id: BaseShellBoxBF4Gauge
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Boxes/12gbox.rsi
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - BF_CartridgeShotgun12Gauge
+      capacity: 20
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+    - type: Appearance
+
+- type: entity
+  name: shotgun shell box (4 gauge shrap-10)
+  parent: BaseShellBoxBF4Gauge
+  id: ShellBoxBF4GaugeShrap10
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun4GaugeShrap10
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: lethal
+
+- type: entity
+  name: shotgun shell box (4 gauge shrap-25)
+  parent: BaseShellBoxBF4Gauge
+  id: ShellBoxBF4GaugeShrap25
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun4GaugeShrap25
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: lethal
+
+- type: entity
+  name: shotgun shell box (4 gauge barricade)
+  parent: BaseShellBoxBF4Gauge
+  id: ShellBoxBF4GaugeBarricade
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun4GaugeBarricade
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: slug
+
+- type: entity
+  name: shotgun shell box (4 gauge zvesda)
+  parent: BaseShellBoxBF4Gauge
+  id: ShellBoxBF4GaugeFlashbang
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun4GaugeFlashbang
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: flare
+
+- type: entity
+  name: shotgun shell box (4 gauge fuck-23)
+  parent: BaseShellBoxBF4Gauge
+  id: ShellBoxBF4GaugeFuck23
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun4GaugeFuck23
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: lethal

@@ -1,0 +1,60 @@
+- type: entity
+  id: DebugMortar
+  parent: BaseStructureDynamic
+  name: Mortar
+  suffix: DEBUG
+  categories: [ HideSpawnMenu ]
+  description: pizdec
+  components:
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: mortar
+  - type: Mortar
+    baseAccuracy: 0.5
+    accuracyDegradation: 0.05
+    minOffsetX: -50
+    maxOffsetX: 50
+    minOffsetY: -50
+    maxOffsetY: 50
+    minSafeDistance: 5
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - MortarShell
+
+- type: entity
+  id: Mortar82mm1A103E
+  parent: BaseStructureDynamic
+  name: 1A103E 82mm mortar
+  suffix: 82mm
+  description: An 82-mm battalion mortar. It offers a fairly moderate rate of fire, tolerable accuracy, and fires a wide variety of relatively inexpensive ammunition. Dont shoot straight up.
+  components:
+  - type: Sprite
+    sprite: _VXS14/Structures/mortar.rsi
+    state: mortar
+  - type: Mortar
+    baseAccuracy: 0.5
+    accuracyDegradation: 0.05
+    minOffsetX: -40
+    maxOffsetX: 40
+    minOffsetY: -40
+    maxOffsetY: 40
+    minSafeDistance: 0
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - MortarShell

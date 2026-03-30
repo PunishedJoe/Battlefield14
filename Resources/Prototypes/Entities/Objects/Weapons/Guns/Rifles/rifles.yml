@@ -68,7 +68,16 @@
   - type: EmitSoundOnLand
     sound:
       collection: RiflesDrop
-  # Goobstation edit end
+  - type: AltFireMelee # BF14
+    attackType: Heavy
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 20
+    angle: 0
+    wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+    soundHit:
+      collection: MetalThud
 
 - type: entity
   name: LWC AKM (7.62x39mm)

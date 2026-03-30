@@ -30,7 +30,7 @@
     price: 20 # Frontier
     vendPrice: 2000 # Frontier
   - type: StaminaDamageResistance # Mono - Stamres
-    coefficient: 0.6
+    coefficient: 0.7 # BF14
   - type: ToggleableClothing # Goobstation - Modsuits change - Mono - this is a solution for helmet attachment/cover to not fit on hardsuits
     requiredSlot: outerclothing
     blockUnequipWhenAttached: false
@@ -88,7 +88,7 @@
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitEngineering
-  name: engineering hardsuit
+  name: engineering voidsuit # BF14
   description: A special suit that protects against hazardous, low pressure environments. Has radiation shielding.
   components:
   - type: Sprite
@@ -292,9 +292,9 @@
 
 #Security Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitBase
+  parent: [ ClothingOuterHardsuitBase , ClothingArmorPlateLight ] # BF14
   id: ClothingOuterHardsuitSecurity
-  name: security hardsuit
+  name: security voidsuit # BF14
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
   components:
   - type: Sprite
@@ -309,9 +309,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.6
-        Piercing: 0.5
+        Blunt: 0.7 # BF14
+        Slash: 0.5 # BF14
+        Piercing: 0.6 # BF14
         Caustic: 0.8
         Heat: 0.7 # Goobstation
   - type: ClothingSpeedModifier

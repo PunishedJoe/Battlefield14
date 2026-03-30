@@ -1,0 +1,27 @@
+- type: vessel
+  id: AAVP8
+  parent: BaseVesselAntag
+  name: USMC AAVP8
+  description: Reminiscent of amphibious landing craft, it even shares a designation, just moved one up.
+  price: 10000
+  purchasable: false # voucher only, money doesn't matter
+  category: Small
+  shuttlePath: /Maps/_Battlefield14/Shuttles/NATO/aavp.yml
+
+- type: gameMap
+  id: AAVP8
+  mapName: 'USMC AAVP-8'
+  mapPath: /Maps/_Battlefield14/Shuttles/NATO/aavp.yml
+  minPlayers: 0
+  stations:
+    AAVP8:
+      stationProto: StandardFrontierSecurityVessel
+      gridComponents:
+      - type: VesselInfo
+        description: "Reminiscent of amphibious landing craft, it even shares a designation, just moved one up."
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: 'USMC AAVP-8 {1}'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '14'

@@ -129,7 +129,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 32 # Mono this amount of slash is now treated as the "base" for all large sized melee weapons
+        Slash: 40 # BF14
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Item

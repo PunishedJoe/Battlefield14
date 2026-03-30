@@ -1,0 +1,236 @@
+### NATO
+
+##US
+
+# USMC
+- type: entity
+  id: SpawnPointUSMCSquadLeader
+  parent: SpawnPointJobBase
+  name: USMCSquadLeader
+  components:
+  - type: SpawnPoint
+    job_id: USMCSquadLeader
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointUSMCRifleman
+  parent: SpawnPointJobBase
+  name: USMCRifleman
+  components:
+  - type: SpawnPoint
+    job_id: USMCRifleman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointUSMCAutomaticRifleman
+  parent: SpawnPointJobBase
+  name: USMCAutomaticRifleman
+  components:
+  - type: SpawnPoint
+    job_id: USMCAutomaticRifleman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointUSMCMedic
+  parent: SpawnPointJobBase
+  name: USMCMedic
+  components:
+  - type: SpawnPoint
+    job_id: USMCMedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointUSMCRecon
+  parent: SpawnPointJobBase
+  name: USMCRecon
+  components:
+  - type: SpawnPoint
+    job_id: USMCRecon
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+# USSF
+
+- type: entity
+  id: SpawnPointUSSFCaptain
+  parent: SpawnPointJobBase
+  name: USSFCaptain
+  components:
+  - type: SpawnPoint
+    job_id: USSFCaptain
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointUSSFCrewman
+  parent: SpawnPointJobBase
+  name: USSFCrewman
+  components:
+  - type: SpawnPoint
+    job_id: USSFCrewman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+### PACT
+
+## RU
+
+# VDV
+
+- type: entity
+  id: SpawnPointVDVSquadLeader
+  parent: SpawnPointJobBase
+  name: VDVSquadLeader
+  components:
+  - type: SpawnPoint
+    job_id: VDVSquadLeader
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointVDVRifleman
+  parent: SpawnPointJobBase
+  name: VDVRifleman
+  components:
+  - type: SpawnPoint
+    job_id: VDVRifleman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointVDVAutomaticRifleman
+  parent: SpawnPointJobBase
+  name: VDVAutomaticRifleman
+  components:
+  - type: SpawnPoint
+    job_id: VDVAutomaticRifleman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointVDVMedic
+  parent: SpawnPointJobBase
+  name: VDVMedic
+  components:
+  - type: SpawnPoint
+    job_id: VDVMedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointVDVRecon
+  parent: SpawnPointJobBase
+  name: VDVRecon
+  components:
+  - type: SpawnPoint
+    job_id: VDVRecon
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+# FSB
+
+- type: entity
+  id: SpawnPointFSBRecon
+  parent: SpawnPointJobBase
+  name: FSB Recon
+  components:
+  - type: SpawnPoint
+    job_id: FSBRecon
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+# VKS
+
+- type: entity
+  id: SpawnPointVKSCaptain
+  parent: SpawnPointJobBase
+  name: VKSCaptain
+  components:
+  - type: SpawnPoint
+    job_id: VKSCaptain
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointVKSCrewman
+  parent: SpawnPointJobBase
+  name: VKSCrewman
+  components:
+  - type: SpawnPoint
+    job_id: VKSCrewman
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+### IND
+
+# Western Private Security
+
+- type: entity
+  id: SpawnPointWPSSecurityOfficer
+  parent: SpawnPointJobBase
+  name: WPSSecurityOfficer
+  components:
+  - type: SpawnPoint
+    job_id: WPSSecurityOfficer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointWPSWarden
+  parent: SpawnPointJobBase
+  name: WPSWarden
+  components:
+  - type: SpawnPoint
+    job_id: WPSWarden
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+
+- type: entity
+  id: SpawnPointWPSMarshal
+  parent: SpawnPointJobBase
+  name: WPSMarshal
+  components:
+  - type: SpawnPoint
+    job_id: WPSMarshal
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger

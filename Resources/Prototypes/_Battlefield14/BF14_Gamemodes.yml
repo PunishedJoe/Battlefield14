@@ -1,0 +1,9 @@
+- type: gamePreset
+  id: USMC_vs_VDV
+  alias:
+  - USMCvsVDV
+  name: USMC vs. VDV
+  showInVote: true
+  description: Larp and frag.
+  rules:
+  - NFAdventure

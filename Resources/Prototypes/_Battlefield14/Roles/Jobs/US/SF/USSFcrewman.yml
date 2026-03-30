@@ -1,0 +1,61 @@
+- type: job
+  id: USSFCrewman
+  name: job-name-ussf-crewman
+  description: job-description-ussf-crewman
+  playTimeTracker: JobUSSFCrewman
+  weight: 77
+  startingGear: USSFCrewmanGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOEngineer"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - NATO
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOMedical
+  - NATOArmory
+  - NATOCrew
+
+- type: startingGear
+  id: USSFCrewmanGear
+  equipment:
+    id: USSFCrewmanPDA
+    ears: ClothingHeadsetAltUS
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    belt: ClothingBeltAssaultFilledToolsSRD
+    outerClothing: ClothingOuterArmorWebVestSec
+    gloves: ClothingHandsGlovesCombat
+    suitstorage: WeaponSubmachinegunUSMP5
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazineSubmachinegunMP5
+    - MagazineSubmachinegunMP5
+    - Tourniquet
+    - Zipties

@@ -1,0 +1,154 @@
+- type: soundCollection
+  id: BF_M16_Gunshots # M16's/M4's, 5.56x45 - Used by AR-15 pattern weapons
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_M16_Gunshots_SUPP # M16's/M4's, 5.56x45, suppressed - Used by AS-VAL
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-sup-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-sup-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-sup-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-sup-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-sup-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_fire-sup-06.ogg"
+
+- type: soundCollection
+  id: BF_M249_Gunshots # M249, 5.56x45 - Used by M249 Para
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_AK_545_Gunshots # AK-74's/12's, 5.45x39 - Used by 5.45 AK weapons
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_AK_545_Gunshots_SUPP # AK-74's/12's, 5.45x39 - Used by 5.45 AK weapons
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_545_39_fire-sup-06.ogg"
+
+- type: soundCollection
+  id: BF_AK_762_Gunshots # AKM's/47's, 7.62x39
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_762/uc_ak_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_762/uc_ak_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_762/uc_ak_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_762/uc_ak_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_762/uc_ak_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/AK_762/uc_ak_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_Galil_Gunshots_SUPP # 5.56x45 - Used by M4A1 SUPP.
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/Galil/uc_galil_fire-sup-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Galil/uc_galil_fire-sup-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Galil/uc_galil_fire-sup-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Galil/uc_galil_fire-sup-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Galil/uc_galil_fire-sup-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Galil/uc_galil_fire-sup-06.ogg"
+
+- type: soundCollection
+  id: BF_MP5_Gunshots # MP5 - Used for MP5
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_UZI_Gunshots # UZI - Used for PP-19 Vityaz
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_MP7_Gunshots # MP7 - Used for MP7
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_SPAS12_Gunshots # SPAS-12 - Used for SPAS-12
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_SPAS12_ShellIn # SPAS-12 - Used for SPAS-12
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-05.ogg"
+
+- type: soundCollection
+  id: BF_FAL_Gunshots # FAL - Used for ASH-12
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_fire-05.ogg"
+
+- type: soundCollection
+  id: BF_M870_Gunshots # M870 - Used for M870
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_fire-06.ogg"
+
+- type: soundCollection
+  id: BF_M870_ShellIn # M870 - Used for M870
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_shell-insert-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_shell-insert-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M870/uc_r870_shell-insert-03.ogg"
+
+- type: soundCollection
+  id: BF_M14_Gunshots # M14 - Used for M14/EBR
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_fire-06.ogg"

@@ -1,0 +1,98 @@
+- type: constructionGraph
+  id: MortarNATOUS81mmM252
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: MortarM252Deployed
+          completed:
+            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+              message: "An M252 mortar was assembled"
+            - !type:SpawnPrototype
+              prototype: MortarNATOUS81mmM252
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Anchoring
+              doAfter: 5
+
+    - node: MortarM252Assembly
+      entity: MortarNATOUS81mmM252Assembly
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+              message: "An M252 mortar was assembled"
+            - !type:SpawnPrototype
+              prototype: MortarNATOUS81mmM252
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Anchoring
+              doAfter: 5
+
+
+    - node: MortarM252Deployed
+      entity: MortarNATOUS81mmM252
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+              message: "An M252 mortar was disassembled"
+            - !type:SpawnPrototype
+              prototype: MortarNATOUS81mmM252Assembly
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Anchoring
+              doAfter: 5
+
+
+- type: constructionGraph
+  id: MortarPACTRU82mm2B14
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: Mortar2B14Deployed
+          completed:
+            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+              message: "A 2B14 mortar was assembled"
+            - !type:SpawnPrototype
+              prototype: MortarPACTRU82mm2B14
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Anchoring
+              doAfter: 5
+
+    - node: Mortar2B14Assembly
+      entity: MortarPACTRU82mm2B14Assembly
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+              message: "A 2B14 mortar was assembled"
+            - !type:SpawnPrototype
+              prototype: MortarPACTRU82mm2B14
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Anchoring
+              doAfter: 5
+
+
+    - node: Mortar2B14Deployed
+      entity: MortarPACTRU82mm2B14
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+              message: "A 2B14 mortar was disassembled"
+            - !type:SpawnPrototype
+              prototype: MortarPACTRU82mm2B14Assembly
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Anchoring
+              doAfter: 5

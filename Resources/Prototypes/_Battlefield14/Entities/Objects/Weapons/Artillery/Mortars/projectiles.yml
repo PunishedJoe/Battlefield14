@@ -1,0 +1,278 @@
+## NATO
+# US
+
+- type: entity
+  id: ArtilleryMarkerM252HEFrag
+  name: artillery strike M821A4 81mm HE-Frag
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    maxIntensity: 80
+    intensitySlope: 4
+    totalIntensity: 80
+    maxTileBreak: 1
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: BulletGrenadeM67Fragment
+    capacity: 50
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+
+- type: entity
+  id: ArtilleryMarkerM252Smoke
+  name: artillery strike M819 81mm smoke
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: TimedDespawn
+    lifetime: 30
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 30
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - trigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10
+    intensitySlope: 5
+    maxIntensity: 1
+
+- type: entity
+  id: ArtilleryMarkerM252ChemicalSmoke
+  parent: ArtilleryMarkerM252Smoke
+  name: artillery strike M819-CS 81mm CS-Gas
+  components:
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 25
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+
+- type: entity
+  id: ArtilleryMarkerM252WhitePhosphorus
+  parent: ArtilleryMarkerM252Smoke
+  name: artillery strike M819-WP 81mm white phosphorus smoke
+  components:
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 20
+    solution:
+      reagents:
+      - ReagentId: WhitePhosphorus
+        Quantity: 50
+
+- type: entity
+  id: ArtilleryMarkerM252Flare
+  name: artillery strike M853A1 81mm Illumination
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 90
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_RMC14/Items/fulton.ogg
+  - type: AmbientSound
+    enabled: true
+    volume: 0
+    range: 7
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: PointLight
+    enabled: true
+    color: "#fffbc8"
+    radius: 15.0
+    energy: 8.0
+
+## PACT
+# RU
+
+- type: entity
+  id: ArtilleryMarker2B14HEFrag
+  name: artillery strike O-832-D 82mm HE-Frag
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    maxIntensity: 80
+    intensitySlope: 4
+    totalIntensity: 80
+    maxTileBreak: 1
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: BulletGrenadeF1Fragment
+    capacity: 50
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+
+- type: entity
+  id: ArtilleryMarker2B14Thermobaric
+  name: artillery strike TB-832-D 82mm thermobaric
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FireBomb
+    maxIntensity: 120
+    intensitySlope: 4
+    totalIntensity: 120
+    maxTileBreak: 0
+  - type: SpawnOnTrigger
+    proto: InstantEffectGravityWellThermobaric
+
+- type: entity
+  id: ArtilleryMarker2B14Smoke
+  name: artillery strike M819 82mm smoke
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: TimedDespawn
+    lifetime: 30
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 30
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - trigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 10
+    intensitySlope: 5
+    maxIntensity: 1
+
+- type: entity
+  id: ArtilleryMarker2B14ChemicalSmoke
+  parent: ArtilleryMarker2B14Smoke
+  name: artillery strike M819-CS 82mm CS-Gas
+  components:
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 25
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+
+- type: entity
+  id: ArtilleryMarker2B14WhitePhosphorus
+  parent: ArtilleryMarker2B14Smoke
+  name: artillery strike D-832P 82mm white phosphorus
+  components:
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 25
+    solution:
+      reagents:
+      - ReagentId: WhitePhosphorus
+        Quantity: 50
+
+- type: entity
+  id: ArtilleryMarker2B14Flare
+  name: artillery strike S-832S 82mm Illumination
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 90
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_RMC14/Items/fulton.ogg
+  - type: AmbientSound
+    enabled: true
+    volume: 0
+    range: 7
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: PointLight
+    enabled: true
+    color: "#FF8080"
+    radius: 15.0
+    energy: 9.0
+#  - type: LightBehaviour
+#    behaviours:
+#      - !type:FadeBehaviour # have the radius start small and get larger as it starts to burn
+#        id: turn_on
+#        maxDuration: 45.0
+#        startValue: 2.5
+#        endValue: 10.0
+#      - !type:RandomizeBehaviour # weaker flicker as it fades out
+#        id: fade_out
+#        interpolate: Nearest
+#        minDuration: 0.001
+#        maxDuration: 0.001
+#        startValue: 4.0
+#        endValue: 8.0
+#        property: Energy
+#        isLooped: true
+#      - !type:FadeBehaviour # fade out radius as it burns out
+#        id: fade_out
+#        maxDuration: 15.0
+#        startValue: 10.0
+#        endValue: 1.0

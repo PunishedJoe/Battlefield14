@@ -31,6 +31,10 @@ using Content.Shared._Mono.FireControl;
 using Content.Shared._Mono.Ships.Components;
 using Content.Shared.Verbs;
 
+// BF14
+using Content.Shared._Battlefield14.Sonar;
+using Robust.Shared.Map.Components;
+
 namespace Content.Server.Shuttles.Systems;
 
 public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
@@ -551,6 +555,26 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         if (!Resolve(entity, ref entity.Comp1, ref entity.Comp2, false))
             return new NavInterfaceState(SharedRadarConsoleSystem.DefaultMaxRange, GetNetCoordinates(coordinates), angle, docks, InertiaDampeningMode.Dampen); // Frontier: add inertial dampening
 
+        // BF14: query sonar
+        var sonarState = (SonarState?)null;
+        if (entity.Comp1.HasSonar && entity.Comp2?.GridUid is { } grid && TryComp<MapGridComponent>(grid, out var gridComp))
+        {
+            var sonars = new HashSet<Entity<SonarModuleComponent>>();
+            _lookup.GetLocalEntitiesIntersecting(grid, gridComp.LocalAABB, sonars);
+            foreach (var sonar in sonars)
+            {
+                if (!Transform(sonar).Anchored || !this.IsPowered(sonar, EntityManager))
+                    continue;
+
+                sonarState = new(sonar.Comp.SonarWidth,
+                                 sonar.Comp.SonarDistance,
+                                 sonar.Comp.SonarDuration,
+                                 sonar.Comp.SonarCooldown,
+                                 sonar.Comp.SeeCloaked);
+                break;
+            }
+        }
+
         return new NavInterfaceState(
             entity.Comp1.MaxRange,
             GetNetCoordinates(coordinates),
@@ -559,7 +583,8 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             _shuttle.NfGetInertiaDampeningMode(entity), // Frontier: inertia dampening
             portNames,
             entity.Comp1.Pannable, // Mono
-            entity.Comp1.RelativePanning); // Mono
+            entity.Comp1.RelativePanning, // Mono
+            sonarState); // BF14
     }
 
     /// <summary>

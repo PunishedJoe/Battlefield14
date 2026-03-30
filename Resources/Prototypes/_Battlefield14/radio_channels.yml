@@ -1,0 +1,15 @@
+- type: radioChannel
+  id: USRadio
+  name: chat-radio-us
+  keycode: 'w' # Changed from 'l' to avoid conflict with Letoferol channel
+  frequency: 1210
+  color: "#2948ff"
+  longRange: true
+
+- type: radioChannel
+  id: RURadio
+  name: chat-radio-ru
+  keycode: 'z'
+  frequency: 1220
+  color: "#d30000"
+  longRange: true

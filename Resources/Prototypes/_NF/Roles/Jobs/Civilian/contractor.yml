@@ -9,6 +9,8 @@
   accessGroups: # Frontier
   - GeneralAccess # Frontier
   special:
-  - !type:GiveItemOnHolidaySpecial
-    holiday: FrontierBirthday
-    prototype: FrontierBirthdayGift
+  - !type:AddLanguageSpecial # BF14
+    languagesSpoken:
+    - Esperanto
+    languagesUnderstood:
+    - Esperanto

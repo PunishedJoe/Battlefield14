@@ -1,0 +1,176 @@
+# Base
+- type: entity
+  parent: MobHuman
+  id: MobHumanMarsocBaseBF14
+  name: john marsoc
+  suffix: Human, Base, Marsoc, BF14
+  components:
+  - type: HumanoidAppearance
+    height: 1.0
+    width: 1.0
+  - type: Loadout
+    prototypes: [MARSOCRiflemanGear]
+  - type: GhostRole
+    name: job-name-marsoc-rifleman
+    description: job-description-marsoc-rifleman
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments: # Save this for the maga marines[names_death_commando]
+    - NamesFirstMilitary
+    - names_last
+  - type: NpcFactionMember
+    factions:
+    - USMC
+  - type: Company
+    companyName: USMC
+  - type: SurgerySpeedModifier
+    speedModifier: 1.5
+  - type: LanguageKnowledge # Einstein Engines
+    speaks:
+    - English
+    - Esperanto
+    - Sign
+    understands:
+    - English
+    - Esperanto
+    - Sign
+    - TauCetiBasic
+
+## IN-ATMOSPHERE
+
+# Fireteam Leader
+- type: entity
+  parent: MobHumanMarsocBaseBF14
+  id: MobHumanMarsocBF14SquadLeader
+  name: MARSOC Fireteam Leader
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [MARSOCSquadLeaderGear]
+  - type: GhostRole
+    name: job-name-marsoc-squadleader
+    description: job-description-marsoc-squadleader
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+
+# Rifleman
+- type: entity
+  parent: MobHumanMarsocBaseBF14
+  id: MobHumanMarsocBF14Rifleman
+  name: MARSOC Rifleman
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [MARSOCRiflemanGear]
+  - type: GhostRole
+    name: job-name-marsoc-rifleman
+    description: job-description-marsoc-rifleman
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+
+# Automatic Rifleman
+- type: entity
+  parent: MobHumanMarsocBaseBF14
+  id: MobHumanMarsocBF14AutomaticRifleman
+  name: MARSOC Automatic Rifleman
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [MARSOCAutomaticRiflemanGear]
+  - type: GhostRole
+    name: job-name-marsoc-automatic-rifleman
+    description: job-description-marsoc-automatic-rifleman
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+
+# Corpsman
+- type: entity
+  parent: MobHumanMarsocBaseBF14
+  id: MobHumanMarsocBF14Medic
+  name: MARSOC Corpsman
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [MARSOCMedicGear]
+  - type: GhostRole
+    name: job-name-marsoc-medic
+    description: job-description-marsoc-medic
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+  - type: SurgerySpeedModifier
+    speedModifier: 2.25
+
+## OUT OF ATMOSPHERE / SPACE
+
+# Fireteam Leader
+- type: entity
+  parent: MobHumanMarsocBaseBF14
+  id: MobHumanMarsocBF14SquadLeaderEVA
+  name: MARSOC Fireteam Leader
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [MARSOCSquadLeaderGearEVA]
+  - type: GhostRole
+    name: job-name-marsoc-squadleader
+    description: job-description-marsoc-squadleader
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+
+# Rifleman
+- type: entity
+  parent: MobHumanMarsocBaseBF14
+  id: MobHumanMarsocBF14RiflemanEVA
+  name: MARSOC Rifleman
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [MARSOCRiflemanGearEVA]
+  - type: GhostRole
+    name: job-name-marsoc-rifleman
+    description: job-description-marsoc-rifleman
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+
+# Automatic Rifleman
+- type: entity
+  parent: MobHumanMarsocBaseBF14
+  id: MobHumanMarsocBF14AutomaticRiflemanEVA
+  name: MARSOC Automatic Rifleman
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [MARSOCAutomaticRiflemanGearEVA]
+  - type: GhostRole
+    name: job-name-marsoc-automatic-rifleman
+    description: job-description-marsoc-automatic-rifleman
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+
+# Corpsman
+- type: entity
+  parent: MobHumanMarsocBaseBF14
+  id: MobHumanMarsocBF14MedicEVA
+  name: MARSOC Corpsman
+  suffix: BF14, EVA
+  components:
+  - type: Loadout
+    prototypes: [MARSOCMedicGearEVA]
+  - type: GhostRole
+    name: job-name-marsoc-medic
+    description: job-description-marsoc-medic
+    rules: ghost-role-information-marsoc-rules-bf14
+    raffle:
+      settings: short
+  - type: SurgerySpeedModifier
+    speedModifier: 2.25

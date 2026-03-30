@@ -23,6 +23,7 @@
   - NFJanitor
   - MailCarrier # nyano
   - SecurityGuard
+  editorHidden: true # BF14
 
 - type: department
   id: Antag
@@ -38,3 +39,4 @@
   - PDVInfiltrator # Mono
   - PdvBorg # Mono
   - Prisoner #nyano
+  editorHidden: true # BF14

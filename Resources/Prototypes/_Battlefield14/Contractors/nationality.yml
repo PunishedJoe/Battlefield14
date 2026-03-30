@@ -1,0 +1,57 @@
+# COMMENTED OUT: Unsupported prototype type 'nationality'
+# This system is not implemented in the current codebase.
+# Requires: nationality prototype type registration, passport system, faction system
+
+# - type: nationality
+#   id: EuropeanUnion
+#   nameKey: nationality_name_european_union
+#   descriptionKey: nationality_desc_european_union
+#   hostile:
+#   - Russian
+#   functions:
+#     - !type:TraitModifyLanguages
+#       languagesSpoken:
+#         - Esperanto
+#         - Sign
+#       languagesUnderstood:
+#         - Esperanto
+#         - Sign
+#   passportPrototype: EuropeanPassport
+# 
+# - type: nationality
+#   id: AmericanBF14
+#   nameKey: nationality_name_BF_american
+#   descriptionKey: nationality_desc_BF_american
+#   requirements:
+#     - !type:FactionRequirement
+#       factionID: "NATO"
+#   hostile:
+#   - Russian
+#   functions:
+#     - !type:TraitModifyLanguages
+#       languagesSpoken:
+#         - English
+#         - Sign
+#       languagesUnderstood:
+#         - English
+#         - Sign
+#   passportPrototype: AmericanPassportBF14
+# 
+# - type: nationality
+#   id: Russian
+#   nameKey: nationality_name_russian
+#   descriptionKey: nationality_desc_russian
+#   requirements:
+#     - !type:FactionRequirement
+#       factionID: "PACT"
+#   hostile:
+#   - AmericanBF14
+#   functions:
+#     - !type:TraitModifyLanguages
+#       languagesSpoken:
+#         - Russian
+#         - Sign
+#       languagesUnderstood:
+#         - Russian
+#         - Sign
+#   passportPrototype: RussianPassport

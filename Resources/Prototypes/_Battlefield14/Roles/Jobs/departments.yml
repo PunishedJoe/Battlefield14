@@ -1,0 +1,56 @@
+- type: department
+  id: USMC
+  name: department-USMC-name
+  description: department-USMC-description
+  color: "#203564"
+  weight: 75
+  roles:
+  - USMCSquadLeader
+  - USMCRifleman
+  - USMCAutomaticRifleman
+  - USMCMedic
+  - USMCRecon
+
+- type: department
+  id: USSF
+  name: department-USSF-name
+  description: department-USSF-description
+  color: "#203564"
+  weight: 74
+  roles:
+  - USSFCaptain
+  - USSFCrewman
+
+- type: department
+  id: VDV
+  name: department-VDV-name
+  description: department-VDV-description
+  color: "#a02829"
+  weight: 70
+  roles:
+  - VDVSquadLeader
+  - VDVRifleman
+  - VDVAutomaticRifleman
+  - VDVMedic
+  - VDVRecon
+
+- type: department
+  id: VKS
+  name: department-VKS-name
+  description: department-VKS-description
+  color: "#203564"
+  weight: 69
+  roles:
+  - VKSCaptain
+  - VKSCrewman
+
+- type: department
+  id: WPS
+  name: department-WPS-name
+  description: department-WPS-description
+  color: "#203564"
+  weight: 60
+  roles:
+  - WPSSecurityOfficer
+  - WPSWarden
+  - WPSMarshal

@@ -1,0 +1,127 @@
+- type: entity
+  id: BulletRifleBF556x45
+  name: bullet (5.56x45)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~15 hits to stun
+
+- type: entity
+  id: BulletRifleBF545x39
+  name: bullet (5.45x39)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 25
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~15 hits to stun
+
+- type: entity
+  id: BulletRifleBF762x39
+  name: bullet (7.62x39)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 27
+        Structural: 3
+    armorPenetration: 0.2
+  - type: StaminaDamageOnCollide
+    damage: 8 # ~13 hits to stun
+
+- type: entity
+  id: BulletRifleBF762x51
+  name: bullet (7.62x51)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+        Structural: 10
+    armorPenetration: 0.3
+  - type: StaminaDamageOnCollide
+    damage: 8 # ~13 hits to stun
+
+- type: entity
+  id: BulletRifleBF9x39
+  name: bullet (9x39)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+        Structural: 5
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~15 hits to stun
+
+- type: entity
+  id: BulletRifleBF762x54mmR
+  name: bullet (7.62x54mmR)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40
+        Structural: 30
+    armorPenetration: 0.3
+  - type: StaminaDamageOnCollide
+    damage: 10 # ~10 hits to stun
+
+- type: entity
+  id: BulletRifleBF762x54mmRAP
+  name: bullet (7.62x54mmR AP)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+        Structural: 80
+    armorPenetration: 0.8
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~15 hits to stun
+
+- type: entity
+  id: BulletRifleBF127x55
+  name: bullet (12.7x55)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 50
+        Structural: 5
+  - type: StaminaDamageOnCollide
+    damage: 10 # ~10 hits to stun
+
+- type: entity
+  id: BulletRifleBF127x55Duplex
+  name: bullet (12.7x55 duplex)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30 # x2 = 60
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~15 hits to stun, x2 = ~8
+

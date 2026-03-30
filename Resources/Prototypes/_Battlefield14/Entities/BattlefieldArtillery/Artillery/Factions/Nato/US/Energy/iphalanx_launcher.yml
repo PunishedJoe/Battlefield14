@@ -1,0 +1,63 @@
+# iPhalanx Point Defense Laser
+- type: entity
+  id: WeaponTurretiPhalanx
+  name: iPhalanx Point Defense Laser
+  parent: BattlefieldArtillery
+  description: An energy-based point defense system standard across U.S. and NATO fleets. Designed to intercept missiles, rockets, and light craft using extreme rates of fire and automated targeting. Uses hitscan laser technology for instant target engagement.
+  suffix: BF14, NATO, US
+  components:
+  - type: StaticPrice
+    price: 2500
+  - type: Sprite
+    sprite: _Battlefield14/BattlefieldArtillery/pdtlaser.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: Battery
+    maxCharge: 50000
+    startingCharge: 50000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 500
+  - type: ExaminableBattery
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 0
+    fireRate: 20
+    minAngle: 0
+    maxAngle: 0
+    shootThermalSignature: 2000000
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 200
+    powerUsePassive: 300
+    powerUseActive: 0
+  - type: FireControlRotate
+  - type: Actions
+  - type: HitscanBatteryAmmoProvider
+    proto: iPhalanxLaser
+    fireCost: 25
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 6000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+#  - type: RadarBlip
+#    radarColor: "#00FF00"
+#    scale: 1
+  - type: ShipGunType
+    shipType: Energy
+  - type: ShipGunClass
+    shipClass: Light
+

@@ -1,0 +1,26 @@
+- type: loadout
+  id: LoadoutHandsGlovesSoldierBlack
+  equipment:
+    gloves: ClothingHandsGlovesColorBlack
+
+- type: loadout
+  id: LoadoutHandsGlovesSoldierCombat
+  equipment:
+    gloves: ClothingHandsGlovesCombat
+
+
+- type: loadout
+  id: LoadoutHandsGlovesSoldierFingerless
+  equipment:
+    gloves: ClothingHandsGlovesFingerless
+
+- type: loadout
+  id: LoadoutHandsGlovesSoldierMercCombat
+  equipment:
+    gloves: ClothingHandsMercenaryGlovesCombat
+
+        
+- type: loadout
+  id: LoadoutHandsGlovesSoldierMercFingerless
+  equipment:
+    gloves: ClothingHandsGlovesMercFingerless

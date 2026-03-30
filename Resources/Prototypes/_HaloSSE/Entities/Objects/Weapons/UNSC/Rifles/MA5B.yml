@@ -1,0 +1,61 @@
+- type: entity
+  name: MA5B
+  parent: BaseWeaponRifle
+  id: WeaponRifleUNSCMA5B
+  description: Standard-issue service rifle of the UNSC Marines. Has an inbuilt underbarrel flashlight. Takes 7.62mm calibre magazines.
+  components:
+  - type: Sprite
+    sprite: _HaloSSE/Objects/Weapons/UNSC/Rifles/MA5B.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _HaloSSE/Objects/Weapons/UNSC/Rifles/MA5B.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -16
+  - type: Gun
+    minAngle: 16
+    maxAngle: 32
+    angleIncrease: 0.3
+    projectileSpeed: 40
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+    selectedMode: Burst
+    shotsPerBurst: 5
+    burstCooldown: 0.5
+    burstFireRate: 8
+    fireRate: 7
+    soundGunshot:
+      path: /Audio/_HaloSSE/Weapons/UNSC/Assault_Rifle_Fire_New.ogg
+      params:
+        volume: -4
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleMA5B
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleMA5B
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: Appearance

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "Custom",
+  "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "size": {
+    "x": 64,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "hellfire"
+    },
+    {
+      "name": "M61A2"
+    },
+    {
+      "name": "GSH30"
+    },
+    {
+      "name": "smallrocketpod"
+    },
+    {
+      "name": "aim9"
+    },
+    {
+      "name": "flares"
+    }
+  ]
+}

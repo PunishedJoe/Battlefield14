@@ -1,0 +1,90 @@
+# Western / west associated songs
+
+ - type: jukebox
+   id: littledarkage
+   name: My Little Dark Age - MGMT
+   path:
+     path: /Audio/_Battlefield14/Lobby/littledarkage.ogg
+
+ - type: jukebox
+   id: fortunateson
+   name: Fortunate son - Creedence Clearwater Revival
+   path:
+     path: /Audio/_Battlefield14/Lobby/fortunate.ogg
+
+ - type: jukebox
+   id: bluemonday
+   name: Blue monday - New Order
+   path:
+     path: /Audio/_Battlefield14/Lobby/bluemonday.ogg
+
+ - type: jukebox
+   id: rebelyellinstrumental
+   name: Rebel yell - Billy Idol (Instrumental)
+   path:
+     path: /Audio/_Battlefield14/Lobby/RebelYellInstrumental.ogg
+
+ - type: jukebox
+   id: junglework
+   name: Jungle work - Warren Zevon
+   path:
+     path: /Audio/_Battlefield14/Lobby/junglework.ogg
+
+
+# Eastern / east associated songs
+
+ - type: jukebox
+   id: artiljerija
+   name: Artiljerija - Bosnian patriots
+   path:
+     path: /Audio/_Battlefield14/Lobby/artiljerija.ogg
+
+ - type: jukebox
+   id: bloodtype
+   name: Bloodtype - KINO
+   path:
+     path: /Audio/_Battlefield14/Lobby/bloodtype.ogg
+
+ - type: jukebox
+   id: atas
+   name: Atas - Lube
+   path:
+     path: /Audio/_Battlefield14/Lobby/atas.ogg
+
+ - type: jukebox
+   id: kombat
+   name: Kombat - Lube
+   path:
+     path: /Audio/_Battlefield14/Lobby/kombat.ogg
+
+ - type: jukebox
+   id: STIMFSMCATTALU2YTR # It has no real name, this is the acronym
+   name: STIMFSMCATTALU2YTR - Ben_19M # seriously
+   path:
+     path: /Audio/_Battlefield14/Jukebox/STIMFSMCATTALU2YTR.ogg
+
+ - type: jukebox
+   id: hellofromthesky
+   name: Hello from the sky - Russian Airborne Forces (VDV)
+   path:
+     path: /Audio/_Battlefield14/Jukebox/vdv.ogg
+
+ - type: jukebox
+   id: russianmate
+   name: Russian mate - Sektor Gaza
+   path:
+     path: /Audio/_Battlefield14/Lobby/secondchechenwar.ogg
+
+# Misc
+
+ - type: jukebox
+   id: fighttothetop
+   name: Fight to the Top - Lazer Hawk
+   path:
+     path: /Audio/_Battlefield14/Jukebox/fighttothetop.ogg
+
+ - type: jukebox
+   id: kingofthestreets
+   name: King of the Streets - Lazer Hawk
+   path:
+     path: /Audio/_Battlefield14/Jukebox/kingofthestreets.ogg

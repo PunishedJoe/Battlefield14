@@ -1,0 +1,38 @@
+# Distinct from the ones in _Battlefield14\Entities\BattlefieldArtillery\Artillery\Factions\Nato\US\Kinetic\Ammunition but similar, chemicalsmoke and plasmagas dont work well with infantry gameplay
+
+- type: entity
+  id: Bullet40x46mmChemicalSmokeInfantry
+  name: 40x46mm CS gas shell
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 80
+        Blunt: 40
+    deleteOnCollide: false
+  - type: SmokeOnTrigger
+    duration: 40
+    spreadAmount: 20
+    smokePrototype: Smoke
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: grenade
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    radius: 3
+    color: gray
+    energy: 0.5
+  - type: RadarBlip
+    scale: 1.5
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#666666"

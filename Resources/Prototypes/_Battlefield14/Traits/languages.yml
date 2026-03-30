@@ -1,0 +1,38 @@
+- type: trait
+  id: Esperanto
+  name: language-Esperanto-name
+  description: language-Esperanto-description
+  category: LanguageTraits
+  cost: 1
+  components:
+  - type: LanguageSpeaker
+  languagesSpoken:
+    - Esperanto
+  languagesUnderstood:
+    - Esperanto
+
+- type: trait
+  id: German
+  name: language-German-name
+  description: language-German-description
+  category: LanguageTraits
+  cost: 1
+  components:
+  - type: LanguageSpeaker
+  languagesSpoken:
+    - German
+  languagesUnderstood:
+    - German
+
+- type: trait
+  id: Mexican
+  name: language-Mexican-name
+  description: language-Mexican-description
+  category: LanguageTraits
+  cost: 1
+  components:
+  - type: LanguageSpeaker
+  languagesSpoken:
+    - Mexican
+  languagesUnderstood:
+    - Mexican

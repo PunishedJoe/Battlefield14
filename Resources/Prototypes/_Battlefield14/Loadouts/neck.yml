@@ -1,0 +1,63 @@
+# IFF | NATO
+
+- type: loadout
+  id: LoadoutNeckIFFBlue
+  equipment:
+    neck: ClothingNeckIFFBlue
+
+- type: loadout
+  id: LoadoutNeckIFFBlueTape
+  equipment:
+    neck: ClothingNeckIFFtapeBlue
+
+- type: loadout
+  id: LoadoutNeckIFFYellow
+  equipment:
+    neck: BF_ClothingNeckIFFYellow
+
+- type: loadout
+  id: LoadoutNeckIFFYellowTape
+  equipment:
+    neck: ClothingNeckIFFtapeYellow
+
+- type: loadout
+  id: LoadoutNeckIFFGreen
+  equipment:
+    neck: ClothingNeckIFFGreen
+
+- type: loadout
+  id: LoadoutNeckIFFGreenTape
+  equipment:
+    neck: ClothingNeckIFFtapeGreen
+
+# IFF | PACT
+
+- type: loadout
+  id: LoadoutNeckIFFWhite
+  equipment:
+    neck: ClothingNeckIFFNeutral
+
+- type: loadout
+  id: LoadoutNeckIFFWhiteTape
+  equipment:
+    neck: ClothingNeckIFFtapeWhite
+
+- type: loadout
+  id: LoadoutNeckIFFRed
+  equipment:
+    neck: ClothingNeckIFFRed
+
+- type: loadout
+  id: LoadoutNeckIFFRedTape
+  equipment:
+    neck: ClothingNeckIFFtapeRed
+
+- type: loadout
+  id: LoadoutNeckIFFOrange
+  equipment:
+    neck: ClothingNeckIFFOrange
+
+- type: loadout
+  id: LoadoutNeckIFFOrangeTape
+  equipment:
+    neck: ClothingNeckIFFtapeStGeorge

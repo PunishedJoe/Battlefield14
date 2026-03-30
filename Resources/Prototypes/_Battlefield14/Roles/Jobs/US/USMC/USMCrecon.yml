@@ -1,0 +1,65 @@
+- type: job
+  id: USMCRecon
+  name: job-name-usmc-recon
+  description: job-description-usmc-recon
+  playTimeTracker: JobUSMCRecon
+  weight: 74
+  startingGear: USMCReconGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATORecon"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  # - !type:AddComponentSpecial
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-corporal
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: USMCReconGear
+  equipment:
+    id: USMCReconPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUS
+    helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
+#    eyes: ClothingEyesGogglesTan
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponRifleUSM4A1SUPP
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCScout
+  storage:
+    back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - Rangefinder
+    - HandheldStationMapUnpowered
+    - Tourniquet
+    - Zipties

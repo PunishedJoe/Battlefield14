@@ -1,0 +1,60 @@
+- type: job
+  id: VKSCaptain
+  name: job-name-vks-captain
+  description: job-description-vks-captain
+  playTimeTracker: JobVKSCaptain
+  weight: 78
+  startingGear: VKSCaptainGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTCaptain"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    - Esperanto
+    languagesUnderstood:
+    - Russian
+    - Esperanto
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - PACT
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+  - PACTFunds
+  - PACTCrew
+  - PACTCaptain
+
+- type: startingGear
+  id: VKSCaptainGear
+  equipment:
+    id: VKSCaptainPDA
+    ears: ClothingHeadsetAltRU
+    jumpsuit: ClothingUniformJumpsuitVKSCaptain
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSatchelSecurity
+    belt: ClothingBeltCommandFilledRU
+    gloves: ClothingHandsGlovesCombat
+    pocket1: PouchFirstAidFilled
+  storage:
+    back:
+    - ClothingMaskGasRussia
+    - Tourniquet
+    - Zipties

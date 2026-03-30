@@ -1,7 +1,6 @@
 using System.Numerics;
 using Content.Shared.Interaction;
 using Content.Shared.Projectiles;
-using Content.Server._Mono.FireControl;
 using Content.Shared._Mono.FireControl;
 using Robust.Server.GameObjects;
 using EntityCoordinates = Robust.Shared.Map.EntityCoordinates;
@@ -16,20 +15,10 @@ public sealed class TargetGuidedSystem : EntitySystem
     [Dependency] private readonly SharedTransformSystem _transform = null!;
     [Dependency] private readonly RotateToFaceSystem _rotateToFace = null!;
     [Dependency] private readonly PhysicsSystem _physics = null!;
-    [Dependency] private readonly FireControlSystem _fireControl = null!;
 
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<TargetGuidedComponent, ProjectileHitEvent>(OnProjectileHit);
-    }
-
-    /// <summary>
-    /// Called when a guided projectile hits something.
-    /// </summary>
-    private void OnProjectileHit(EntityUid uid, TargetGuidedComponent component, ref ProjectileHitEvent args)
-    {
-        // No special handling needed after removing target seeking
     }
 
     public override void Update(float frameTime)

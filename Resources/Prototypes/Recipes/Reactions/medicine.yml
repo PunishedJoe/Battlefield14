@@ -298,17 +298,17 @@
   products:
     Lipozine: 3
 
-- type: reaction
-  id: Mannitol
-  reactants:
-    Hydrogen:
-      amount: 1
-    Water:
-      amount: 1
-    Sugar:
-      amount: 1
-  products:
-    Mannitol: 3
+#BF14 - type: reaction
+#BF14   id: Mannitol # Alkyzine on top -BF14
+#BF14   reactants:
+#BF14     Hydrogen:
+#BF14       amount: 1
+#BF14     Water:
+#BF14       amount: 1
+#BF14     Sugar:
+#BF14       amount: 1
+#BF14   products:
+#BF14     Mannitol: 3
 
 - type: reaction
   id: MindbreakerToxin
@@ -408,42 +408,42 @@
   products:
     Saline: 5
 
-- type: reaction
-  id: Lacerinol
-  impact: Medium
-  minTemp: 335
-  reactants:
-    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
-      amount: 1
-    Benzene:
-      amount: 1
-  products:
-    Lacerinol: 2
-
-- type: reaction
-  id: Puncturase
-  impact: Medium
-  minTemp: 325
-  reactants:
-    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
-      amount: 1
-    Hydroxide:
-      amount: 1
-  products:
-    Puncturase: 2
-
-- type: reaction
-  id: Bruizine
-  impact: Medium
-  reactants:
-    Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
-      amount: 1
-    Lithium:
-      amount: 0.9
-    Sugar:
-      amount: 1
-  products:
-    Bruizine: 2
+#BF14 - type: reaction
+#BF14   id: Lacerinol
+#BF14   impact: Medium
+#BF14   minTemp: 335
+#BF14   reactants:
+#BF14     Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
+#BF14       amount: 1
+#BF14     Benzene:
+#BF14       amount: 1
+#BF14   products:
+#BF14     Lacerinol: 2
+#BF14 
+#BF14 - type: reaction
+#BF14   id: Puncturase
+#BF14   impact: Medium
+#BF14   minTemp: 325
+#BF14   reactants:
+#BF14     Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
+#BF14       amount: 1
+#BF14     Hydroxide:
+#BF14       amount: 1
+#BF14   products:
+#BF14     Puncturase: 2
+#BF14 
+#BF14 - type: reaction
+#BF14   id: Bruizine
+#BF14   impact: Medium
+#BF14   reactants:
+#BF14     Bicaridine: # Bicaridine is a conflicting brute medication and if mixed incorrectly will make Razorium. This is intended.
+#BF14       amount: 1
+#BF14     Lithium:
+#BF14       amount: 0.9
+#BF14     Sugar:
+#BF14       amount: 1
+#BF14   products:
+#BF14     Bruizine: 2
 
 - type: reaction
   id: BruizineLacerinol # mixing any two brute medications will make Razorium
@@ -478,51 +478,51 @@
   products:
     Razorium: 1
 
-- type: reaction
-  id: Diphenhydramine
-  impact: Medium
-  minTemp: 377.59
-  reactants:
-    Diethylamine:
-      amount: 1
-    Oil:
-      amount: 1
-    TableSalt:
-      amount: 1
-    Carbon:
-      amount: 1
-    Ethanol:
-      amount: 1
-  products:
-    Diphenhydramine: 3
-
-- type: reaction
-  id: Pyrazine
-  impact: Medium
-  minTemp: 540
-  reactants:
-    Leporazine:
-      amount: 1
-    Dermaline:
-      amount: 1
-    Carbon:
-      amount: 1
-  products:
-    Pyrazine: 3
-
-- type: reaction
-  id: Insuzine
-  impact: Medium
-  minTemp: 433
-  reactants:
-    Leporazine:
-      amount: 1
-    Kelotane:
-      amount: 1
-    Silicon:
-      amount: 1
-  products:
-    Insuzine: 3
+#BF14 - type: reaction
+#BF14   id: Diphenhydramine
+#BF14   impact: Medium
+#BF14   minTemp: 377.59
+#BF14   reactants:
+#BF14     Diethylamine:
+#BF14       amount: 1
+#BF14     Oil:
+#BF14       amount: 1
+#BF14     TableSalt:
+#BF14       amount: 1
+#BF14     Carbon:
+#BF14       amount: 1
+#BF14     Ethanol:
+#BF14       amount: 1
+#BF14   products:
+#BF14     Diphenhydramine: 3
+#BF14 
+#BF14 - type: reaction
+#BF14   id: Pyrazine
+#BF14   impact: Medium
+#BF14   minTemp: 540
+#BF14   reactants:
+#BF14     Leporazine:
+#BF14       amount: 1
+#BF14     Dermaline:
+#BF14       amount: 1
+#BF14     Carbon:
+#BF14       amount: 1
+#BF14   products:
+#BF14     Pyrazine: 3
+#BF14 
+#BF14 - type: reaction
+#BF14   id: Insuzine
+#BF14   impact: Medium
+#BF14   minTemp: 433
+#BF14   reactants:
+#BF14     Leporazine:
+#BF14       amount: 1
+#BF14     Kelotane:
+#BF14       amount: 1
+#BF14     Silicon:
+#BF14       amount: 1
+#BF14   products:
+#BF14     Insuzine: 3
 
 - type: reaction
   id: Opporozidone

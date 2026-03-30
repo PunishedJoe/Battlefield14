@@ -1,0 +1,92 @@
+- type: entity
+  name: military flashlight
+  parent: [BaseItem, RecyclableItemDeviceSmall] # Frontier: added RecyclableItemDeviceSmall
+  id: FlashlightMilitaryUS
+  description: It lights the way to freedom.
+  components:
+  - type: Tag
+    tags:
+    - Flashlight
+    - SecBeltEquip
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        minValue: 0.1
+        maxValue: 2.0
+        isLooped: true
+  - type: ToggleableLightVisuals
+    spriteLayer: light
+    inhandVisuals:
+      left:
+      - state: inhand-left-light
+        shader: unshaded
+      right:
+      - state: inhand-right-light
+        shader: unshaded
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Tools/flashlightmilitary.rsi
+    layers:
+      - state: flashlight
+      - state: flashlight-overlay
+        shader: unshaded
+        visible: false
+        map: [ "light" ]
+  - type: Item
+    sprite: _Battlefield14/Objects/Tools/flashlightmilitary.rsi
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 8
+    netsync: false
+  - type: Appearance
+  - type: Clothing
+    quickEquip: false
+    slots:
+      - Belt
+      - Neck
+      - suitStorage
+      - ARMBANDLEFT
+      - ARMBANDRIGHT
+
+- type: entity
+  name: military flashlight
+  parent: FlashlightMilitaryUS
+  id: FlashlightMilitaryAlt
+  description: A robust flashlight that can be mounted nearly anywhere. For true patriots.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Tools/flashlightmilitaryalt.rsi
+    layers:
+      - state: flashlight
+      - state: flashlight-overlay
+        shader: unshaded
+        visible: false
+        map: [ "light" ]
+  - type: Item
+    sprite: _Battlefield14/Objects/Tools/flashlightmilitaryalt.rsi
+

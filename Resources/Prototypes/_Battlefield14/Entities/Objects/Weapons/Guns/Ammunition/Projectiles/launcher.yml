@@ -1,0 +1,557 @@
+## US
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocket84mmHEATArmingDistance
+  name: 84mm HEAT rocket
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocket84mmHEAT
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocket84mmHEAT # High explosive anti tank, pierces and does damage on the inside
+  name: 84mm HEAT rocket # Used for the AT4 and HEAA SMAW cartridge
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 2000
+        Blunt: 250
+        Piercing: 250
+    deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 7
+  - type: Heat
+    explosionDelay: 0.1
+    fragmentationDelay: 0.1
+    fragmentationCount: 40
+    fragmentationPrototype: Bullet84mmHEATFragment
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 300
+    intensitySlope: 5
+    maxIntensity: 50
+    maxTileBreak: 2
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocket83mmNEArmingDistance
+  name: 83mm Novel Explosive projectile
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocket83mmNE
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocket83mmNE
+  name: 83mm Novel Explosive projectile # anti infantry, explodes on contact and sends fragments everywhere with a wide explosive for killing infantry
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 150
+        Blunt: 250
+  - type: HeFragProjectile
+    fillPrototype: Bullet84mmHEATFragment
+    capacity: 40
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 300
+    intensitySlope: 5
+    maxIntensity: 25
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+
+- type: entity
+  id: Bullet84mmHEATFragment
+  name: 84mm HEAT fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 15
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocket83mmHEDMArmingDistance
+  name: 83mm HEDM projectile
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocket83mmHEDM
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocket83mmHEDM
+  name: 83mm HEDM projectile # High explosive dual mode, explodes on contact in a 3x3 area to blast open walls and such
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 400
+        Blunt: 250
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 300
+    intensitySlope: 25
+    maxIntensity: 100
+    maxTileBreak: 1
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+
+- type: entity
+  id: BulletRocketStingerMANPADSMissile
+  name: stinger missile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
+        Structural: 400
+        Blunt: 20
+        Heat: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+    layers:
+    - state: aim9
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2
+    requireNoGrid: true
+    shape: diamond
+  - type: TimedDespawn
+    lifetime: 3 # approx 500 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 2
+    intensitySlope: 8
+    maxIntensity: 8
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 300
+    detectionRange: 275
+    scanArc: 40
+    launchSpeed: 8
+    maxSpeed: 180
+    trackDelay: 0.5
+
+## RU
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketRPG7HEATArmingDistance
+  name: PG-7VL HEAT rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketRPG7HEAT
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketRPG7HEAT
+  name: PG-7VL HEAT rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 2000
+        Piercing: 250
+    deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 7
+  - type: Heat
+    explosionDelay: 0.1
+    fragmentationDelay: 0.1
+    fragmentationCount: 40
+    fragmentationPrototype: BulletRPG7OG7VFragment
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 300
+    intensitySlope: 5
+    maxIntensity: 50
+    maxTileBreak: 2
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketRPG7FragArmingDistance
+  name: OG-7V frag rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketRPG7Frag
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketRPG7Frag
+  name: OG-7V frag rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: frag-spent
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 250
+  - type: HeFragProjectile
+    fillPrototype: BulletRPG7OG7VFragment
+    capacity: 40
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 300
+    intensitySlope: 5
+    maxIntensity: 25
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+
+- type: entity
+  id: BulletRPG7OG7VFragment
+  name: OG-7V fragment
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 15
+        Piercing: 15
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+  - type: ShipWeaponProjectile
+  - type: TimedDespawn
+    lifetime: 1.5
+  - type: PointLight
+    radius: 0.8
+    color: orange
+    energy: 0.15
+  - type: RadarBlip
+    scale: 0.4
+    requireNoGrid: true
+    shape: triangle
+    radarColor: "#FF9900"
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketRPG26HEATArmingDistance
+  name: 72.5mm HEAT rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketRPG26HEAT
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketRPG26HEAT
+  name: 72.5mm HEAT rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: base-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 1000
+        Blunt: 250
+        Piercing: 250
+    deleteOnCollide: false
+  - type: ArmorPiercing
+    piercingThickness: 4
+  - type: Heat
+    explosionDelay: 0.1
+    fragmentationDelay: 0.1
+    fragmentationCount: 20
+    fragmentationPrototype: BulletRPG7OG7VFragment
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 200
+    intensitySlope: 5
+    maxIntensity: 50
+    maxTileBreak: 1
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletRocketRPG26ThermobaricArmingDistance
+  name: 72.5mm thermobaric rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: frag-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletRocketRPG26Thermobaric
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletRocketRPG26Thermobaric
+  name: 72.5mm thermobaric rocket
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    layers:
+    - state: frag-spent
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 250
+  - type: HeFragProjectile
+    fillPrototype: BulletRPG7OG7VFragment
+    capacity: 40
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: SpawnOnTrigger
+    proto: InstantEffectGravityWellThermobaric
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: FireBomb
+    totalIntensity: 350
+    intensitySlope: 6
+    maxIntensity: 25
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+
+- type: entity
+  id: BulletRocketIglaMANPADSMissile
+  name: igla missile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types: # For reference, air to air missiles should be mainly direct damage, so they are worse at taking out ships; fighters have 1,000 health
+        Structural: 400
+        Blunt: 20
+        Heat: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+    layers:
+    - state: aim9
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+  - type: ShipWeaponProjectile
+  - type: RadarBlip
+    radarColor: "#FCBA03"
+    scale: 2
+    requireNoGrid: true
+    shape: diamond
+  - type: TimedDespawn
+    lifetime: 3 # approx 500 meter range
+  - type: PointLight
+    radius: 3.5
+    color: orange
+    energy: 0.5
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 2
+    intensitySlope: 8
+    maxIntensity: 8
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+  - type: MiningGatheringHard
+  - type: TargetSeeking
+    acceleration: 300
+    detectionRange: 275
+    scanArc: 40
+    launchSpeed: 8
+    maxSpeed: 180
+    trackDelay: 0.5

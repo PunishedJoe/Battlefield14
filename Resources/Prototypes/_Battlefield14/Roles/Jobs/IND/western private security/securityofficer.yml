@@ -1,0 +1,50 @@
+- type: job
+  id: WPSSecurityOfficer
+  name: job-name-wps-officer
+  description: job-description-wps-officer
+  playTimeTracker: JobWPSSecurityOfficer
+  weight: 70
+  startingGear: WPSSecurityOfficerGear
+  alwaysUseSpawner: true
+  icon: "JobIconSecurityOfficer"
+  requireAdminNotify: false
+  supervisors: job-supervisors-wps
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+#  - Captain # Frontier
+  - Security
+  - Brig
+  - Command
+  - Medical
+  - Cargo
+  - Engineering
+  - Research
+
+- type: startingGear
+  id: WPSSecurityOfficerGear
+  equipment:
+    id: WPSSecurityOfficerPDA
+    ears: ClothingHeadsetAltWPS
+    belt: ClothingBeltStationSecurityFilled
+    jumpsuit: ClothingUniformJumpsuitUtilityCrewblackSec
+    head: ClothingHeadHatHelmetSecurityBF14
+    outerClothing: ClothingOuterArmorWebVestSec
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSecurity
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - Tourniquet
+    - Zipties

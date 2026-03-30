@@ -1,0 +1,134 @@
+- type: entity
+  id: LockerSecurityFilledBF
+  suffix: Filled, BF14
+  parent: LockerSecurity
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+#      - id: M9 rubber bullet magazine
+      - id: ClothingUniformJumpsuitUtilityCrewblackSec
+        prob: 0.3
+      - id: ClothingHeadHatHelmetSecurityBF14
+      - id: ClothingOuterArmorWebVestSec
+      - id: ClothingBeltStationSecurityFilled
+      - id: Flash
+      - id: ClothingHeadsetAltWPS
+      - id: ClothingHandsGlovesColorBlack
+      - id: ClothingShoesBootsJack
+      - id: ClothingBackpackSecurity
+      - id: ClothingBackpackSatchelSecurity
+        prob: 0.3
+
+- type: entity
+  id: LockerWardenFilledBF
+  suffix: Filled, BF14
+  parent: LockerWarden
+  name: brig chief's locker
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+#      - id: M9 rubber bullet magazine
+      - id: ClothingUniformJumpsuitUtilityCrewblackSec
+        prob: 0.3
+      - id: ClothingHeadHatHelmetSecurityBF14
+      - id: ClothingOuterCoatWarden
+      - id: ClothingBeltStationSecurityFilled
+      - id: Flash
+      - id: ClothingHeadsetAltWPS
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingShoesBootsJack
+      - id: RubberStampWarden
+      - id: DoorRemoteArmory
+      - id: ClothingBackpackElectropack
+        amount: 2
+      - id: RemoteSignaller
+        amount: 2
+      - id: ClothingBackpackSecurity
+      - id: ClothingBackpackSatchelSecurity
+        prob: 0.3
+      - id: WeaponShotgunUSM870
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 2
+      - id: CrowbarRed
+      - id: Wrench
+
+- type: entity
+  id: LockerMarshalFilledBF
+  suffix: Filled, BF14
+  parent: LockerHeadOfSecurity
+  name: marshal's locker
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlashlightSeclite
+      - id: ClothingUniformJumpsuitUtilityCrewblackSec
+      - id: ClothingHeadHatHelmetCommand
+      - id: ClothingOuterArmorWebVestSec
+      - id: ClothingBeltStationSecurityFilled
+      - id: Flash
+      - id: ClothingHeadsetAltWPS
+      - id: ClothingHandsGlovesCombat
+      - id: ClothingShoesBootsJack
+      - id: DoorRemoteSecurity
+      - id: ClothingBackpackSecurity
+      - id: ClothingBackpackSatchelSecurity
+      - id: ClothingEyesGlassesSunglasses
+      - id: ArmorPlateMedium
+        amount: 2
+      - id: WeaponSubmachinegunDEMP7
+      - id: BoxMagazineMP7
+      - id: CrowbarRed
+
+- type: entity
+  parent: GunSafeBaseSecure
+  id: GunSafeWPSM9
+  name: Pistol safe
+  Suffix: WPS, M9, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolM9
+      amount: 5
+    - id: BoxMagazineM9
+      amount: 3
+
+- type: entity
+  parent: GunSafeBaseSecure
+  id: GunSafeWPSMP5
+  name: Submachinegun safe
+  Suffix: WPS, MP5, 5
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunUSMP5
+      amount: 5
+    - id: BoxMagazineMP5
+      amount: 3
+
+- type: entity
+  parent: GunSafeBaseSecure
+  id: GunSafeWPSM4A1
+  name: Rifle safe
+  Suffix: WPS, M4A1, 2
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleUSM4A1
+      amount: 2
+    - id: BoxMagazineSTANAG
+      amount: 2
+
+- type: entity
+  parent: GunSafeBaseSecure
+  id: GunSafeWPSM870
+  name: Shotgun safe
+  Suffix: WPS, M870, 2
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponShotgunUSM870
+      amount: 2
+    - id: ShellBoxBF12GaugeBuckshot
+      amount: 6

@@ -1,0 +1,33 @@
+- type: entity
+  id: BulletPDWBF46x30
+  name: bullet (4.6x30mm)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+        Structural: 5
+    armorPenetration: 0.3
+  - type: StaminaDamageOnCollide
+    damage: 4 # 25 hits to stun lol
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall
+
+- type: entity
+  id: BulletPDWBF9x21
+  name: bullet (9x21mm)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+        Structural: 5
+    armorPenetration: 0.3
+  - type: StaminaDamageOnCollide
+    damage: 4 # 25 hits to stun lol
+  - type: Ammo
+    muzzleFlash: MuzzleFlashEffectSmall

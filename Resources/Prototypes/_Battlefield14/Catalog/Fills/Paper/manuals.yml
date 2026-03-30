@@ -1,0 +1,8 @@
+- type: entity
+  id: PaperWrittenManualArtilleryMortar
+  name: mortar operation manual
+  description: Standard issue guide on how to use mortar systems.
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-manual-artillery-mortar

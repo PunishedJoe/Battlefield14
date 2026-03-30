@@ -1,0 +1,98 @@
+# BF14 - MAGA meal
+- type: entity
+  id: HappyHonkMcCargoMAGA
+  parent: HappyHonk
+  name: MAGA meal
+  description: Only the finest for Trvmp's charge.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Storage/Happyhonk/mccargo.rsi
+    state: box
+  - type: Item
+    sprite: _NF/Objects/Storage/Happyhonk/mccargo.rsi
+    heldPrefix: box
+  - type: StorageFill
+    contents:
+    # Burger
+    - id: FoodBurgerPlain
+      orGroup: BurgerPool
+      prob: 0.40
+    - id: FoodBurgerMcrib
+      orGroup: BurgerPool
+      prob: 0.10
+    - id: FoodBurgerBacon
+      orGroup: BurgerPool
+      prob: 0.10
+    - id: FoodBurgerCheese
+      orGroup: BurgerPool
+      prob: 0.10
+    - id: FoodBurgerMcguffin
+      orGroup: BurgerPool
+      prob: 0.10
+    - id: FoodBurgerDuck
+      orGroup: BurgerPool
+      prob: 0.10
+    - id: FoodBurgerChicken
+      orGroup: BurgerPool
+      prob: 0.10
+    # Fries
+    - id: FoodMealFries
+      orGroup: FriesPool
+      prob: 0.60
+    - id: FoodMealFriesCheesy
+      orGroup: FriesPool
+      prob: 0.20
+    - id: FoodMealFriesCarrot
+      orGroup: FriesPool
+      prob: 0.15
+    - id: FoodOnionRings
+      orGroup: FriesPool
+      prob: 0.05
+      amount: 2
+    # Drinks
+    - id: DrinkColaCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkGrapeCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkPwrGameCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkEnergyDrinkCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkSpaceMountainWindCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkStarkistCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkSpaceUpCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkLemonLimeCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkDrGibbCan
+      orGroup: DrinkPool
+      prob: 0.10
+    - id: DrinkSolDryCan
+      orGroup: DrinkPool
+      prob: 0.10
+    # Condiment
+    - id: FoodCondimentPacketBbq
+      orGroup: CondimentPool
+      prob: 0.25
+    - id: FoodCondimentPacketMustard
+      orGroup: CondimentPool
+      prob: 0.25
+    - id: FoodCondimentPacketHotsauce
+      orGroup: CondimentPool
+      prob: 0.25
+    - id: FoodCondimentPacketKetchup
+      orGroup: CondimentPool
+      prob: 0.25
+  - type: StaticPrice
+    price: 1
+    vendPrice: 200 # Need this to not bug out the cardbox worth...

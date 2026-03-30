@@ -5,6 +5,8 @@ using Content.Shared.Projectiles;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Shuttles.Components;
+using Content.Shared.Popups;
+using Robust.Server.GameObjects;
 using EntityCoordinates = Robust.Shared.Map.EntityCoordinates;
 
 namespace Content.Server._Mono.FireControl;
@@ -24,12 +26,23 @@ public sealed partial class FireControlSystem
     private readonly Dictionary<EntityUid, EntityCoordinates> _consoleMousePositions = new();
 
     /// <summary>
+    /// Tracks missiles that have been hit to avoid duplicate HIT alerts
+    /// </summary>
+    private readonly HashSet<EntityUid> _hitMissiles = new();
+
+    /// <summary>
+    /// Tracks previous connection state to detect when connection is lost
+    /// </summary>
+    private readonly Dictionary<EntityUid, bool> _previousConnectionState = new();
+
+    /// <summary>
     /// Registers handlers for events related to target guided projectiles.
     /// </summary>
     private void InitializeTargetGuided()
     {
         SubscribeLocalEvent<GunComponent, AmmoShotEvent>(OnTargetGuidedShot);
         SubscribeLocalEvent<TargetGuidedComponent, ComponentShutdown>(OnGuidedMissileShutdown);
+        SubscribeLocalEvent<TargetGuidedComponent, ProjectileHitEvent>(OnGuidedMissileHit);
         // Track fire messages to update cursor positions
         SubscribeLocalEvent<FireControlConsoleComponent, FireControlConsoleFireEvent>(OnConsoleFireEvent);
     }
@@ -107,6 +120,9 @@ public sealed partial class FireControlSystem
 
             // Add to our tracking list for cursor position updates
             _activeMissiles.Add(projectileUid);
+            
+            // Initialize connection state tracking
+            _previousConnectionState[projectileUid] = guidedComp.ConnectionLost;
 
             // Record the console this was fired from for position updates
             if (controllingConsole.HasValue)
@@ -117,11 +133,35 @@ public sealed partial class FireControlSystem
     }
 
     /// <summary>
+    /// Called when a guided missile hits something
+    /// </summary>
+    private void OnGuidedMissileHit(EntityUid uid, TargetGuidedComponent component, ref ProjectileHitEvent args)
+    {
+        // Mark as hit to avoid duplicate alerts
+        _hitMissiles.Add(uid);
+        
+        // Send HIT alert to controlling console
+        if (component.ControllingConsole.HasValue)
+        {
+            SendAtgmAlert(component.ControllingConsole.Value, "ATGM HIT", PopupType.MediumCaution);
+        }
+    }
+
+    /// <summary>
     /// Cleanup guided missiles when they're destroyed
     /// </summary>
     private void OnGuidedMissileShutdown(EntityUid uid, TargetGuidedComponent component, ComponentShutdown args)
     {
         _activeMissiles.Remove(uid);
+        _previousConnectionState.Remove(uid);
+        
+        // If missile despawned without hitting, send MISS alert
+        if (!_hitMissiles.Contains(uid) && component.ControllingConsole.HasValue)
+        {
+            SendAtgmAlert(component.ControllingConsole.Value, "ATGM MISS", PopupType.Medium);
+        }
+        
+        _hitMissiles.Remove(uid);
     }
 
     /// <summary>
@@ -176,6 +216,15 @@ public sealed partial class FireControlSystem
                 !guidedComp.ControllingConsole.HasValue)
                 continue;
 
+            // Check for connection loss (detect when ConnectionLost changes from false to true)
+            var wasConnected = !_previousConnectionState.GetValueOrDefault(missileUid, false);
+            if (wasConnected && guidedComp.ConnectionLost)
+            {
+                // Connection was just lost - send DISCONNECT alert
+                SendAtgmAlert(guidedComp.ControllingConsole.Value, "ATGM DISCONNECT", PopupType.MediumCaution);
+            }
+            _previousConnectionState[missileUid] = guidedComp.ConnectionLost;
+
             // Get the controlling console
             var consoleUid = guidedComp.ControllingConsole.Value;
             if (!_consoleMousePositions.TryGetValue(consoleUid, out var mousePosition))
@@ -221,6 +270,23 @@ public sealed partial class FireControlSystem
             {
                 _consoleMousePositions.Remove(consoleUid);
             }
+        }
+    }
+
+    /// <summary>
+    /// Sends an ATGM status alert to all users viewing the specified console
+    /// </summary>
+    private void SendAtgmAlert(EntityUid consoleUid, string message, PopupType popupType)
+    {
+        if (!Exists(consoleUid) || !TryComp<FireControlConsoleComponent>(consoleUid, out _))
+            return;
+
+        // Get all actors (users) viewing this console
+        var actors = _ui.GetActors(consoleUid, FireControlConsoleUiKey.Key);
+        
+        foreach (var actor in actors)
+        {
+            _popup.PopupEntity(message, actor, actor, popupType);
         }
     }
 }

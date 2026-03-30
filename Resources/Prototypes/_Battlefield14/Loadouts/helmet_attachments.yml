@@ -1,0 +1,14 @@
+- type: loadout
+  id: LoadoutHelmetAttachmentGogglesCoverBlack
+  equipment:
+    helmetattachment: ClothingHelmetAttachmentGogglesCoverBlack
+
+- type: loadout
+  id: LoadoutHelmetAttachmentGogglesCoverOlive
+  equipment:
+    helmetattachment: ClothingHelmetAttachmentGogglesCoverOlive
+
+- type: loadout
+  id: LoadoutHelmetAttachmentGogglesCoverTan
+  equipment:
+    helmetattachment: ClothingHelmetAttachmentGogglesCoverTan

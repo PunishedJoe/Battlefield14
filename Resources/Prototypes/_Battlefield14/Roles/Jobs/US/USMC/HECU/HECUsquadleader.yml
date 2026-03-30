@@ -1,0 +1,77 @@
+- type: job
+  id: HECUSquadLeader
+  name: job-name-hecu-squadleader
+  description: job-description-hecu-squadleader
+  playTimeTracker: JobHECUSquadLeader
+  weight: 78
+  startingGear: HECUSquadLeaderGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSquadleader"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-sergeant
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: HECUSquadLeaderGear
+  equipment:
+    id: USMCSquadLeaderPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    head: ClothingHeadHatBeret
+#    eyes: ClothingEyesGogglesTan
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorPCV
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackMercenary
+    suitstorage: WeaponRifleUSM4A1
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+    leftarmband: Tourniquet
+    wallet: ClothingWalletLeatherBrown
+  storage:
+    back:
+    - WeaponCapacitorRechargerFlatpack
+    - BoxMRE
+    - WeaponGrenadeLauncherUSM320HE
+    - CrowbarRed
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - PowerCellPCV
+    - ClothingMaskGasM40
+    - Cartridge40x46mmHE
+    - Cartridge40x46mmHE
+    - Tourniquet
+    - Zipties

@@ -97,7 +97,7 @@
   - type: StorageFill
     contents:
       - id: BodyBagFolded
-        amount: 4
+        amount: 8 # BF14
   - type: Sprite
     layers:
       - state: box

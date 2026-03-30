@@ -1,0 +1,165 @@
+- type: entity
+  name: M870
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunUSM870
+  description: A popular civilian hunting shotgun, adapted for military use with a heatshield, pistol grip stock, and handy sling.
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,1
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 35
+    soundGunshot:
+      collection: BF_M870_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: GunSpreadModifier
+    spread: 0.6
+  - type: Tag
+    tags:
+    - WeaponShotgunKammerer
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun12Gauge
+    capacity: 7
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+    soundInsert:
+      collection: BF_M870_ShellIn
+      params:
+        volume: -5
+
+- type: entity
+  name: M590
+  parent: BaseWeaponShotgun
+  id: WeaponShotgunUSM590
+  description: A popular civilian hunting shotgun, chopped down to breach doors more handily. Direct combat use ill-advised.
+  components:
+  - type: Item
+    size: Normal
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi
+  - type: Gun
+    fireRate: 2
+    projectileSpeed: 20 # short barrel
+  - type: GunSpreadModifier
+    spread: 1.5 # short barrel
+  - type: Tag
+    tags:
+    - WeaponShotgunKammerer
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun12Gauge
+    capacity: 4
+    proto: BF_CartridgeShotgun12GaugeBreaching
+    soundInsert:
+      collection: BF_M870_ShellIn
+      params:
+        volume: -5
+  - type: AltFireMelee
+    attackType: Heavy
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 6.7 # idiot
+    angle: 0
+    wideAnimationRotation: -90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+    soundHit:
+      collection: MetalThud
+
+- type: entity
+  name: KS-23M
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunRUKS23M
+  description: After a batch of shoddy 23mm anti aircraft barrels, Ivan thought to himself to recycle the barrels into 4 gauge shotguns. Used for riot control and obliteration by internal/special police units with specialised ammunition.
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,1
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/KS23M.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 1
+    projectileSpeed: 45 # why not lol
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/bigshotgun_fire.ogg
+#  - type: GunSpreadModifier
+#    spread: 0.7
+  - type: Tag
+    tags:
+    - WeaponShotgunKammerer
+  - type: BallisticAmmoProvider
+    autoCycle: false
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun4Gauge
+    capacity: 4
+    proto: BF_CartridgeShotgun4GaugeShrap10
+    soundInsert:
+      collection: BF_SPAS12_ShellIn
+      params:
+        volume: -5
+
+- type: entity
+  name: SPAS-12
+  parent: [BaseWeaponShotgun, BaseGunWieldable]
+  id: WeaponShotgunUSSPAS12
+  description: Special Purpose Automatic Shotgun; tried to rebrand into a Sporting purpose (automatic shotgun) to get around the assault weapons ban, which didn't work. # Comes with a handy claw for firing one handed
+  components:
+  - type: Item
+    size: Huge
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/spas12.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/spas12.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/spas12.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    availableModes:
+    - SemiAuto
+    - Burst
+    selectedMode: SemiAuto
+    fireRate: 2
+    projectileSpeed: 35
+    burstFireRate: 20
+    burstCooldown: 3
+    shotsPerBurst: 2
+    soundGunshot:
+      collection: BF_SPAS12_Gunshots
+      params:
+        volume: -7
+        variation: 0.125
+  - type: Tag
+    tags:
+    - WeaponShotgunKammerer
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun12Gauge
+    capacity: 8
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+    soundInsert:
+      collection: BF_SPAS12_ShellIn
+      params:
+        volume: -5

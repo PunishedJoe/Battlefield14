@@ -1,0 +1,62 @@
+# COMMENTED OUT: Unsupported prototype type 'employer'
+# This system is not implemented in the current codebase.
+# Requires: employer prototype type registration
+
+# # American
+# 
+# - type: employer
+#   id: UnitedStatesArmy
+#   nameKey: employer_name_USA
+#   descriptionKey: employer_description_USA
+#   primaryColour: "#ff595e"
+#   secondaryColour: "#3b3b3b"
+#   requirements:
+#     - !type:CharacterNationalityRequirement
+#       nationalities:
+#       - AmericanBF14
+# 
+# - type: employer
+#   id: UnitedStatesMarineCorps
+#   nameKey: employer_name_USMC
+#   descriptionKey: employer_description_USMC
+#   primaryColour: "#ff595e"
+#   secondaryColour: "#3b3b3b"
+#   requirements:
+#     - !type:CharacterNationalityRequirement
+#       nationalities:
+#       - AmericanBF14
+# 
+# - type: employer
+#   id: UnitedStatesSpaceForce
+#   nameKey: employer_name_USSF
+#   descriptionKey: employer_description_USSF
+#   primaryColour: "#ff595e"
+#   secondaryColour: "#3b3b3b"
+#   requirements:
+#     - !type:CharacterNationalityRequirement
+#       nationalities:
+#       - AmericanBF14
+# 
+# # Russian
+# 
+# - type: employer
+#   id: RussianAirborneForces
+#   nameKey: employer_name_VDV
+#   descriptionKey: employer_description_VDV
+#   primaryColour: "#ff595e"
+#   secondaryColour: "#3b3b3b"
+#   requirements:
+#     - !type:CharacterNationalityRequirement
+#       nationalities:
+#       - Russian
+# 
+# - type: employer
+#   id: RussianGroundForces
+#   nameKey: employer_name_RGF
+#   descriptionKey: employer_description_RGF
+#   primaryColour: "#ff595e"
+#   secondaryColour: "#3b3b3b"
+#   requirements:
+#     - !type:CharacterNationalityRequirement
+#       nationalities:
+#       - Russian

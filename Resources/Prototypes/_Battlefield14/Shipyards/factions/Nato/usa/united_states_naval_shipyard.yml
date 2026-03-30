@@ -1,0 +1,73 @@
+- type: entity
+  id: ComputerShipyardUnitedStatesNaval
+  parent: ComputerShipyardBase
+  name: United States Naval Shipyard
+  description: Used to buy ships from United States naval reserves.
+  components:
+  - type: ActivatableUI
+    key: enum.ShipyardConsoleUiKey.Custom
+  - type: UserInterface
+    interfaces:
+      enum.ShipyardConsoleUiKey.Custom:
+        type: ShipyardConsoleBoundUserInterface
+  - type: Sprite
+    sprite: _NF/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_sr
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard_sr
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: ShipyardConsole
+    shipyardChannel: Traffic
+    ignoreBaseSaleRate: true # Fixed 70% sale rate.
+    canTransferDeed: false
+  - type: ShipyardListing
+    shuttles:
+    - AAVP8
+
+- type: entity
+  id: ComputerShipyardUnitedStatesNavalGracePeriod
+  name: United States Naval Shipyard
+  description: Used to buy ships from United States naval reserves. Currently on cooldown.
+  suffix: grace period, 600s/10m
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: generic
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: Appearance
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: ActiveTimerTrigger
+    timeRemaining: 600
+  - type: SpawnOnTrigger
+    proto: ComputerShipyardUnitedStatesNaval
+  - type: DeleteOnTrigger

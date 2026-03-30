@@ -1,0 +1,154 @@
+- type: entity
+  parent: BaseItem
+  id: MagazineSubmachinegunMP5
+  name: MP5 magazine (9x19mm)
+  description: Gun food.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolMP5
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x19
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x19
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineSubmachinegunVityaz
+  name: PP-19 Vityaz magazine (9x19mm)
+  description: You expected them to make this in 9x18, but you're kindof glad they didn't.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolVityaz
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x19
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x19
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/Vityaz.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineSubmachinegunVlad
+  name: vladistokyov magazine (9x19mm)
+  description: Gun food.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolVlad
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x19
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x19
+    capacity: 32
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/vlad.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazinePistolM9
+  name: M9 magazine (9x19mm)
+  description: A 9x19 MILLY METAH magazine that fits in the M9 beretta.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolM9
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x19
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x19
+    capacity: 15
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/M9.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazinePistolMP443
+  name: MP443 magazine (9x19mm)
+  description: The rook needs a man in the tower, this has 18.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolMP443
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x19
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x19
+    capacity: 18
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP443.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance

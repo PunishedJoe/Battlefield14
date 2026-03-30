@@ -12,7 +12,7 @@
   name: department-Civilian
   description: department-NFCivilian-description # Frontier
   color: "#9FED58"
-  weight: 130 # Mono
+  weight: 1 # BF14
   roles:
   # - Bartender # Frontier
   # - Botanist # Frontier
@@ -31,9 +31,9 @@
   # - Zookeeper # Frontier
   # - ServiceWorker # Frontier
   - Contractor # Frontier
-  - Mercenary # Frontier
-  - Pilot # Frontier
-  - Borg # Frontier
+#  - Mercenary # Frontier # BF14 commented this out
+#  - Pilot # Frontier # BF14 commented this out
+#  - Borg # Frontier # BF14 commented this out
 
 - type: department
   id: CentralCommand
@@ -81,6 +81,7 @@
   - StationTrafficController # Frontier
   - DirectorOfCare # Mono
   primary: false
+  editorHidden: true # BF14
   weight: 100
 
 - type: department
@@ -101,6 +102,7 @@
   roles: # Mono
   - DirectorOfCare # Mono
   - MdMedic # Mono
+  editorHidden: true # BF14
 
 - type: department
   id: Security
@@ -126,6 +128,7 @@
   - PublicAffairsLiaison # Frontier
   - TsfEngineer # Mono
   - TsfBorg # Mono
+  editorHidden: true # BF14
 
 - type: department
   id: Science

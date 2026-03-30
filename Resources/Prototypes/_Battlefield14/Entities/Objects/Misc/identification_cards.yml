@@ -1,0 +1,443 @@
+## US
+
+# USMC
+
+- type: entity
+  parent: IDCardStandard
+  id: USMCSquadLeaderIDCard
+  name: Marine Corps ID card
+  suffix: squad leader
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USMCSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: USMCRiflemanIDCard
+  name: Marine Corps ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USMCRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: USMCAutomaticRiflemanIDCard
+  name: Marine Corps ID card
+  suffix: automatic rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USMCAutomaticRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: USMCMedicIDCard
+  name: Marine Corps ID card
+  suffix: navy corpsman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USMCMedic
+
+- type: entity
+  parent: IDCardStandard
+  id: USMCReconIDCard
+  name: Marine Corps ID card
+  suffix: force recon
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USMCRecon
+
+# MARSOC
+
+- type: entity
+  parent: IDCardStandard
+  id: MARSOCSquadLeaderIDCard
+  name: MARSOC ID card
+  suffix: fireteam leader
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: MARSOCSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: MARSOCRiflemanIDCard
+  name: MARSOC ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: MARSOCRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: MARSOCAutomaticRiflemanIDCard
+  name: MARSOC ID card
+  suffix: automatic rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: MARSOCAutomaticRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: MARSOCMedicIDCard
+  name: MARSOC ID card
+  suffix: corpsman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: MARSOCMedic
+
+# HECU
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUSquadLeaderIDCard
+  name: HECU ID card
+  suffix: fireteam leader
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: HECURiflemanIDCard
+  name: HECU ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECURifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUSupportIDCard
+  name: HECU ID card
+  suffix: support
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUSupport
+
+- type: entity
+  parent: IDCardStandard
+  id: HECUMedicIDCard
+  name: HECU ID card
+  suffix: corpsman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: HECUMedic
+
+# USSF
+
+- type: entity
+  parent: IDCardStandard
+  id: USSFCaptainIDCard
+  name: Space Force ID card
+  suffix: captain
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USSFCaptain
+
+- type: entity
+  parent: IDCardStandard
+  id: USSFCrewmanIDCard
+  name: Space Force ID card
+  suffix: crewman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USSFCrewman
+
+
+## RU
+
+# VDV
+
+- type: entity
+  parent: IDCardStandard
+  id: VDVSquadLeaderIDCard
+  name: VDV ID card
+  suffix: senior rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VDVSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: VDVRiflemanIDCard
+  name: VDV ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VDVRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: VDVAutomaticRiflemanIDCard
+  name: VDV ID card
+  suffix: automatic rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VDVAutomaticRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: VDVMedicIDCard
+  name: VDV ID card
+  suffix: combat medic
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VDVMedic
+
+- type: entity
+  parent: IDCardStandard
+  id: VDVReconIDCard
+  name: VDV ID card
+  suffix: recon scout
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VDVRecon
+
+# FSB
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBSquadLeaderIDCard
+  name: FSB ID card
+  suffix: senior rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBRiflemanIDCard
+  name: FSB ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBSupportIDCard
+  name: FSB ID card
+  suffix: support
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBSupport
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBMedicIDCard
+  name: FSB ID card
+  suffix: combat medic
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBMedic
+
+- type: entity
+  parent: IDCardStandard
+  id: FSBReconIDCard
+  name: FSB ID card
+  suffix: recon scout
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: FSBRecon
+
+# VKS
+
+- type: entity
+  parent: IDCardStandard
+  id: VKSCaptainIDCard
+  name: VKS ID card
+  suffix: captain
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VKSCaptain
+
+- type: entity
+  parent: IDCardStandard
+  id: VKSCrewmanIDCard
+  name: VKS ID card
+  suffix: crewman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: VKSCrewman
+
+
+## IND
+
+# Western Private Security
+
+- type: entity
+  parent: IDCardStandard
+  id: WPSSecurityOfficerIDCard
+  name: Chevron ID card
+  suffix: security officer
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: WPSSecurityOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: WPSWardenIDCard
+  name: Chevron ID card
+  suffix: warden
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: WPSWarden
+
+- type: entity
+  parent: IDCardStandard
+  id: WPSMarshalIDCard
+  name: Chevron ID card
+  suffix: marshal
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: WPSMarshal

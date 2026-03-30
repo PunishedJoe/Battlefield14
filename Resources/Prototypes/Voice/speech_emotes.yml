@@ -29,7 +29,7 @@
 - type: emote
   id: Laugh
   name: chat-emote-name-laugh
-  category: Vocal
+#BF14  category: Vocal
   icon: Interface/Emotes/laugh.png
   whitelist:
     components:
@@ -73,7 +73,7 @@
 - type: emote
   id: Sigh
   name: chat-emote-name-sigh
-  category: Vocal
+#BF14  category: Vocal
   icon: Interface/Emotes/sigh.png
   whitelist:
     components:
@@ -91,7 +91,7 @@
 - type: emote
   id: Whistle
   name: chat-emote-name-whistle
-  category: Vocal
+#BF14  category: Vocal
   icon: Interface/Emotes/whistle.png
   whitelist:
     components:
@@ -109,7 +109,7 @@
 - type: emote
   id: Crying
   name: chat-emote-name-crying
-  category: Vocal
+#BF14   category: Vocal
   icon: Interface/Emotes/cry.png
   whitelist:
     components:

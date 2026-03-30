@@ -23,6 +23,7 @@
   - type: EncryptionKey
     channels:
     - Common
+    - Traffic # BF14
     defaultChannel: Common
   - type: Sprite
     sprite: _NF/Objects/Devices/encryption_keys.rsi # Frontier

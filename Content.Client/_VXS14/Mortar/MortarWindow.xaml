@@ -1,0 +1,17 @@
+﻿<controls:MortarWindow
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client._VXS14.Mortar">
+    <BoxContainer Orientation="Vertical">
+        <Label Text="Mortar Control" />
+        <BoxContainer Orientation="Horizontal">
+            <Label Text="Offset X:" />
+            <SpinBox Name="OffsetX" Value="5" />
+        </BoxContainer>
+        <BoxContainer Orientation="Horizontal">
+            <Label Text="Offset Y:" />
+            <SpinBox Name="OffsetY" Value="0" />
+        </BoxContainer>
+        <Button Name="Recentre" Text="Recentre" />
+        <Button Name="Spawn" Text="Fire" />
+    </BoxContainer>
+</controls:MortarWindow>

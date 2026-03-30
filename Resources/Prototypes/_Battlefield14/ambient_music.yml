@@ -1,0 +1,37 @@
+# Make sure you go to Content.Client/Audio/ContentAudioSystem.AmbientMusic.cs to add your faction there (~ line 50 and 300) so this works
+# Also make sure the ID is CombatMode<FACTION>
+
+# USMC | Techno/Synth tracks
+- type: ambientMusic
+  id: CombatModeUSMC
+  sound:
+    collection: CombatModeUSMC
+
+- type: soundCollection
+  id: CombatModeUSMC
+  files:
+    - /Audio/_Battlefield14/Ambience/CombatMode/USMC_1.ogg
+    - /Audio/_Battlefield14/Ambience/CombatMode/USMC_2.ogg
+
+# VDV | More industrial tracks / just whatever Russian stuff
+- type: ambientMusic
+  id: CombatModeVDV
+  sound:
+    collection: CombatModeVDV
+
+- type: soundCollection
+  id: CombatModeVDV
+  files:
+    - /Audio/_Battlefield14/Ambience/CombatMode/VDV_1.ogg
+    - /Audio/_Battlefield14/Ambience/CombatMode/VDV_2.ogg
+
+# FSB | Somewhat stealthy I guess tracks with some industrial hints, or the other way around / just whatever Russian stuff
+- type: ambientMusic
+  id: CombatModeFSB
+  sound:
+    collection: CombatModeFSB
+
+- type: soundCollection
+  id: CombatModeFSB
+  files:
+    - /Audio/_Battlefield14/Ambience/CombatMode/FSB_1.ogg

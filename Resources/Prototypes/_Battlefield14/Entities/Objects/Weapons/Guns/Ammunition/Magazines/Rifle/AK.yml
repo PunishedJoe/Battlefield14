@@ -1,0 +1,191 @@
+- type: entity
+  # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
+  # parent: BaseMagazineRifle
+  parent: BaseItem
+  id: MagazineRifleAK74
+  name: "AK-74 magazine (5.45x39mm)"
+  description: Classic rock-and-lock magazine in 5.45, for 74 pattern rifles.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleAK74
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle545x39
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle545x39
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK74.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: MagazineRifleAK74
+  id: MagazineRifleAK12
+  name: "AK-12 magazine (5.45x39mm)"
+  description: A modernised '74 pattern rifle magazine, with handy features like a 45 degree cutout for use as a monopod while prone, and windows to see your remaining ammo.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK12.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 13
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
+  # parent: BaseMagazineRifle
+  parent: BaseItem
+  id: MagazineRifleAK74blackdrum
+  name: "AK-74 pattern 75 round drum magazine (5.45x39)"
+  description: 75 rounds for your 74.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleAK74
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle545x39
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle545x39
+    capacity: 75
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK74blackdrum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+
+- type: entity
+  # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
+  # parent: BaseMagazineRifle
+  parent: BaseItem
+  id: MagazineRifleAKM
+  name: "AKM magazine (7.62x39)"
+  description: Classic banana mag, just not yellow.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleAKM
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x39
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x39
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AKM.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineRifleAK203
+  name: "AK-203 magazine (7.62x39)"
+  description: Classic banana mag.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleAKM
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x39
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x39
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AK203.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  # COMMENTED OUT: Missing parent 'BaseMagazineRifle'
+  # parent: BaseMagazineRifle
+  parent: BaseItem
+  id: MagazineRifleASVAL
+  name: "AS-VAL magazine (9x39)"
+  description: 9mm slugs, a little slow but still hit hard.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleASVAL
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle9x39
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle9x39
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/ASVAL.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: MagazineRifleASVAL
+  id: MagazineRifleASVALShort
+  name: "AS-VAL magazine short (9x39)"
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle9x39
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle9x39
+    capacity: 20

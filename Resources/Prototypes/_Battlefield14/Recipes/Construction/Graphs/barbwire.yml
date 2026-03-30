@@ -1,0 +1,29 @@
+- type: constructionGraph
+  id: BarbwireFloor
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: barbwirefloor
+          completed:
+            - !type:SnapToGrid
+              southRotation: false
+          steps:
+            - material: BarbedWire
+              amount: 5
+              doAfter: 4
+
+    - node: barbwirefloor
+      entity: BarbwireFloor
+      edges:
+        - to: start
+          completed:
+            - !type:AdminLog # Needs a log for start of attempt in addition to the completion log
+              message: "A barbed wire roll was cut"
+            - !type:SpawnPrototype
+              prototype: BarbedWire1
+              amount: 5
+            - !type:DeleteEntity
+          steps:
+            - tool: Cutting
+              doAfter: 3.5

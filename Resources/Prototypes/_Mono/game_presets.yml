@@ -71,7 +71,7 @@
   id: MonoADS
   name: mono-ads-title
   description: mono-ads-description
-  showInVote: true
+  showInVote: false # BF14
   rules:
   - NFAdventure
   - BasicStationEventScheduler
@@ -90,7 +90,7 @@
   id: MonoChimera
   name: mono-chimera-title
   description: mono-chimera-description
-  showInVote: true
+  showInVote: false # BF14
   rules:
   - NFAdventure
   - BasicStationEventScheduler
@@ -107,7 +107,7 @@
   id: MonoMixed
   name: mono-mixed-title
   description: mono-mixed-description
-  showInVote: true
+  showInVote: false # BF14
   rules:
   - NFAdventure
   - BasicStationEventScheduler

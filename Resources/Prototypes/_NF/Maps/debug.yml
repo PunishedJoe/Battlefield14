@@ -30,38 +30,22 @@
         - type: StationJobs
           availableJobs:
             Contractor: [ -1, -1 ]
-            Pilot: [ -1, -1 ]
-            Mercenary: [ -1, -1 ]
-            Borg: [ -1, -1]
-            StationRepresentative: [ -1, -1 ]
-            StationTrafficController: [ -1, -1 ]
-            DirectorOfCare: [ -1, -1 ]
-            MdMedic: [ -1, -1 ] # mono
-            SecurityGuard: [ -1, -1 ]
-            CCServiceWorker: [ -1, -1 ]
-            NFJanitor: [ -1, -1 ]
-            MailCarrier: [ -1, -1 ]
-            Sheriff: [ -1, -1]
-            # Bailiff: [ -1, -1] Mono
-            SeniorOfficer: [ -1, -1]
-            Brigmedic: [ -1, -1]
-            # NFDetective: [ -1, -1] Mono
-            Deputy: [ -1, -1]
-            # Cadet: [ -1, -1] Mono
-            # PublicAffairsLiaison: [ -1, -1] Mono
-            PirateCaptain: [ -1, -1]
-            PirateFirstMate: [ -1, -1]
-            PDVDenasvar: [ -1, -1] #Mono
-            Pirate: [ -1, -1]
-            PDVInfiltrator: [ -1, -1] # Mono]
-            TsfBorg: [ -1, -1 ]
-            PdvBorg: [ -1, -1 ]
-            # Prisoner: [ -1, -1] # Mono
-            # USSPCommissar: [ -1, -1]
-            # USSPSergeant: [ -1, -1]
-            # USSPCorporal: [ -1, -1]
-            # USSPMedic: [ -1, -1]
-            # USSPRifleman: [ -1, -1]
-            TsfEngineer: [ -1, -1 ]
+            USSFCaptain: [ -1, -1 ] # BF14 V
+            USSFCrewman: [ -1, -1 ]
+            VKSCaptain: [ -1, -1 ]
+            VKSCrewman: [ -1, -1 ]
+            USMCSquadLeader: [-1, -1]
+            USMCRifleman: [-1, -1]
+            USMCAutomaticRifleman: [-1, -1]
+            USMCMedic: [-1, -1]
+            USMCRecon: [-1, -1]
+            VDVSquadLeader: [-1, -1]
+            VDVRifleman: [-1, -1]
+            VDVAutomaticRifleman: [-1, -1]
+            VDVMedic: [-1, -1]
+            VDVRecon: [-1, -1]
+            WPSSecurityOfficer: [-1, -1]
+            WPSWarden: [-1, -1]
+            WPSMarshal: [-1, -1] # BF14 ^
         - type: StationDeadDrop
           maxDeadDrops: 20 # Testing

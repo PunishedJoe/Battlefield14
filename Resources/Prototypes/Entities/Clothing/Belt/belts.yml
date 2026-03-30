@@ -258,28 +258,48 @@
     sprite: Clothing/Belt/medical.rsi
   - type: Clothing
     sprite: Clothing/Belt/medical.rsi
-  # - type: Storage # Frontier: commented out whitelist
-  #   whitelist:
-  #     tags:
-  #       - Wrench
-  #       - Bottle
-  #       - Spray
-  #       - Brutepack
-  #       - Bloodpack
-  #       - Gauze
-  #       - Ointment
-  #       - CigPack
-  #       - PillCanister
-  #       - Radio
-  #       - DiscreteHealthAnalyzer
-  #       - SurgeryTool
-  #       - Dropper
-  #     components:
-  #       - Hypospray
-  #       - Injector
-  #       - Pill
-  #       - HandLabeler
-  #       - SurgeryTool # Shitmed Change
+  - type: Storage # Frontier: commented out whitelist # BF14 uncommented out
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical # BF14
+    grid:
+    - 0,0,9,1 # 10x2
+    whitelist:
+      tags:
+        - Wrench
+        - Bottle
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - CigPack
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+        - SurgeryTool
+        - Dropper
+        - GlassBeaker # BF14
+        - Tourniquet # BF14
+        - Packet # BF14
+      components:
+        - Hypospray
+        - Injector
+        - Pill
+        - HandLabeler
+        - SurgeryTool # Shitmed Change
+        - Defibrillator # BF14
+  - type: ContainerContainer # BF14
+    containers:
+      item: !type:ContainerSlot
+      storagebase: !type:Container
+        ents: []
+  - type: ItemSlots
+    slots:
+      item:
+        name: Medkit
+        whitelist:
+          tags:
+          - Medkit
   - type: ItemMapper
     mapLayers:
       bottle:
@@ -314,6 +334,8 @@
           - Wrench
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+  - type: ExplosionResistance # BF14
+    damageCoefficient: 0.0
 
 - type: entity
   parent: ClothingBeltMedical
@@ -705,7 +727,7 @@
     #- type: Item # Frontier
     #size: Huge # Frontier
   - type: ExplosionResistance
-    damageCoefficient: 0.1
+    damageCoefficient: 0.0 # BF14 0.1 > 0.0
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase

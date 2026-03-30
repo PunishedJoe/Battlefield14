@@ -23,16 +23,27 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
+// BF14
+using Content.Client.Stylesheets;
+using Content.Shared.Physics;
+using Robust.Client.Audio;
+using Robust.Client.UserInterface.Controls;
+using Robust.Shared.Physics.Collision.Shapes;
+using Robust.Shared.Physics.Systems;
+using Robust.Shared.Utility;
+
 namespace Content.Client.Shuttles.UI;
 
 [GenerateTypedNameReferences]
 [Virtual]
 public partial class ShuttleNavControl : BaseShuttleControl // Mono
 {
+    [Dependency] private readonly IGameTiming _timing = default!; // BF14
     [Dependency] private readonly IMapManager _mapManager = default!;
     [Dependency] private readonly IUserInterfaceManager _uiManager = default!;
     private readonly DetectionSystem _detection; // Mono
     private readonly StationSystem _station; // Frontier
+    private readonly AudioSystem _audio; // BF14
     private readonly SharedShuttleSystem _shuttles;
     private readonly SharedTransformSystem _transform;
     private readonly RadarBlipsSystem _blips;
@@ -87,6 +98,26 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
     // Mono - set if we want this to detect not from itself
     public List<EntityUid>? Detectors = null;
 
+    // <BF14>
+    public bool HasSonar = false;
+    public Angle SonarWidth;
+    public float SonarDistance;
+    public bool SonarSeeCloaked;
+    // what fraction of the duration we spend drawing the ping animation
+    public float SonarPingFraction = 0.25f;
+    public Color SonarColor = Color.Orange;
+    public TimeSpan SonarDuration;
+    public TimeSpan SonarCooldown;
+
+    private List<Control> _sonarControls = new();
+    private Dictionary<EntityUid, TimeSpan> _sonarRevealed = new();
+    // last pulse is stored on the comp to make cheating it just a little bit harder
+
+    private SliderIntInput? _sonarAngleSlider = null;
+    private Label? _sonarReadyLabel = null;
+    private Button? _sonarButton = null;
+    // </BF14>
+
     #region Mono
     public bool RelativePanning = false;
 
@@ -114,6 +145,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         _transform = EntManager.System<SharedTransformSystem>();
         _station = EntManager.System<StationSystem>(); // Frontier
         _blips = EntManager.System<RadarBlipsSystem>();
+        _audio = EntManager.System<AudioSystem>(); // BF14
 
         OnMouseEntered += HandleMouseEntered;
         OnMouseExited += HandleMouseExited;
@@ -231,6 +263,38 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
                 _lastFireTime = (float)currentTime;
             }
         }
+
+        // BF14
+        if (_sonarButton is { } button
+            && _sonarReadyLabel is { } label
+            && _consoleEntity is { } cons
+            && EntManager.TryGetComponent<RadarConsoleComponent>(cons, out var radar))
+        {
+            var wasDisabled = button.Disabled;
+            if (radar.SonarLastPulse is { } pulse)
+            {
+                var toRemove = new HashSet<EntityUid>();
+                foreach (var (uid, time) in _sonarRevealed)
+                    if (_timing.CurTime - time > SonarDuration)
+                        toRemove.Add(uid);
+
+                foreach (var uid in toRemove)
+                    _sonarRevealed.Remove(uid);
+
+                var remaining = (SonarCooldown - (_timing.CurTime - pulse)).TotalSeconds;
+                button.Disabled = remaining > 0;
+                label.Text = button.Disabled ?
+                    Loc.GetString("shuttle-console-sonar-await-label", ("time", remaining))
+                    : Loc.GetString("shuttle-console-sonar-ready-label");
+            }
+            else
+            {
+                button.Disabled = false;
+                label.Text = Loc.GetString("shuttle-console-sonar-ready-label");
+            }
+            if (wasDisabled && !button.Disabled)
+                _audio.PlayLocal(radar.SonarCooledSound, cons, null);
+        }
     }
 
     private void TryFireAtPosition(Vector2 relativePosition)
@@ -287,6 +351,23 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
 
         RotateWithEntity = state.RotateWithEntity;
 
+        // BF14
+        if (state.Sonar is { } sonar)
+        {
+            HasSonar = true;
+            SonarWidth = sonar.Width;
+            SonarDistance = sonar.Distance;
+            SonarDuration = sonar.Duration;
+            SonarCooldown = sonar.Cooldown;
+            SonarSeeCloaked = sonar.SeeCloaked;
+            PopulateSonarControls();
+        }
+        else
+        {
+            HasSonar = false;
+            ClearSonarControls();
+        }
+
         // Frontier
         if (state.MaxIffRange != null)
             MaximumIFFDistance = state.MaxIffRange.Value;
@@ -296,6 +377,139 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         _docks = state.Docks;
 
         NfUpdateState(state); // Frontier Update State
+    }
+
+    // BF14 - evil UI hijack but i'm not sure how to do this better without merge conflict bait
+    private void PopulateSonarControls()
+    {
+        if (Parent is not { } parent || _sonarControls.Count != 0)
+            return;
+
+        var origParent = parent;
+
+        // if we're not in a BoxContainer make it so
+        if (parent is not BoxContainer box || box.Orientation != BoxContainer.LayoutOrientation.Vertical)
+        {
+            var newBox = new BoxContainer
+            {
+                Orientation = BoxContainer.LayoutOrientation.Vertical,
+                HorizontalExpand = true
+            };
+            var pos = GetPositionInParent();
+            parent.AddChild(newBox);
+
+            parent.RemoveChild(this);
+            newBox.AddChild(this);
+            newBox.SetPositionInParent(pos);
+            parent = newBox;
+        }
+
+        var label = new Label
+        {
+            Text = Loc.GetString("shuttle-console-sonar-label"),
+            MinHeight = 20
+        };
+        parent.AddChild(label);
+        _sonarControls.Add(label);
+
+        // horizontal alignment inner BoxContainer
+        var innerBox = new BoxContainer
+        {
+            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+            HorizontalExpand = true,
+            MinHeight = 20,
+            VerticalAlignment = Control.VAlignment.Bottom
+        };
+        parent.AddChild(innerBox);
+        _sonarControls.Add(innerBox);
+
+        var angleSlider = new SliderIntInput
+        {
+            MinValue = 0,
+            MaxValue = 359,
+            HorizontalExpand = false,
+            SetWidth = 360
+        };
+        innerBox.AddChild(angleSlider);
+        _sonarAngleSlider = angleSlider;
+
+        var goButton = new Button
+        {
+            Text = Loc.GetString("shuttle-console-sonar-button"),
+            SetWidth = 55
+        };
+        goButton.AddStyleClass(StyleBase.ButtonSquare);
+        innerBox.AddChild(goButton);
+        goButton.OnPressed += _ => TriggerSonar();
+        _sonarButton = goButton;
+
+        var readyLabel = new Label
+        {
+            Text = Loc.GetString("shuttle-console-sonar-ready-label")
+        };
+        innerBox.AddChild(readyLabel);
+        _sonarReadyLabel = readyLabel;
+    }
+
+    // BF14
+    private void ClearSonarControls()
+    {
+        foreach (var control in _sonarControls)
+            Parent?.RemoveChild(control);
+
+        _sonarControls.Clear();
+        _sonarReadyLabel = null;
+        _sonarAngleSlider = null;
+        _sonarButton = null;
+    }
+
+    // BF14
+    private void TriggerSonar()
+    {
+        if (_sonarAngleSlider is not { } slider
+            || _consoleEntity is not { } cons
+            || !EntManager.TryGetComponent<TransformComponent>(cons, out var xform)
+            || !EntManager.TryGetComponent<RadarConsoleComponent>(cons, out var radar)
+        )
+            return;
+
+        var sliderAngle = Angle.FromDegrees(slider.Value);
+
+        var halfWidth = new Angle(SonarWidth * 0.5);
+        var mapCenter = _transform.GetMapCoordinates(cons);
+        var center = mapCenter.Position;
+        var midpoint = center + sliderAngle.RotateVec(new Vector2(0, SonarDistance));
+        var relMidpoint = midpoint - center;
+        var leftPoint = (-halfWidth).RotateVec(relMidpoint);
+
+        var segments = PhysicsConstants.MaxPolygonVertices - 2;
+        var segmentSize = new Angle(SonarWidth / segments);
+        var buffer = new Vector2[segments + 2];
+        buffer[0] = center;
+
+        for (var i = 0; i <= segments; i++)
+        {
+            var rotAngle = new Angle(segmentSize * i);
+            var vec = center + rotAngle.RotateVec(leftPoint);
+
+            buffer[i + 1] = vec;
+        }
+
+        var shape = new PolygonShape();
+        shape.Set(buffer, segments + 2);
+
+        var grids = new List<Entity<MapGridComponent>>();
+        _mapManager.FindGridsIntersecting(mapCenter.MapId, shape, new Transform(Vector2.Zero, 0f), ref grids, false, false);
+
+        foreach (var grid in grids)
+        {
+            if (grid != xform.GridUid)
+                _sonarRevealed[grid] = _timing.CurTime;
+        }
+
+        radar.SonarLastPulse = _timing.CurTime;
+
+        _audio.PlayLocal(radar.SonarPingSound, cons, null);
     }
 
     protected override void Draw(DrawingHandleScreen handle)
@@ -336,6 +550,65 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         // Frontier Corvax: north line drawing
         var rot = ourEntRot + _rotation.Value;
         DrawNorthLine(handle, rot);
+
+        // BF14: draw sonar
+        if (HasSonar && _sonarAngleSlider is { } slider && _consoleEntity is { } cons)
+        {
+            var segmentSize = Angle.FromDegrees(5);
+            var sliderAngle = Angle.FromDegrees(slider.Value);
+            var pingPos = (float?)null;
+            if (EntManager.TryGetComponent<RadarConsoleComponent>(cons, out var radar)
+                && radar.SonarLastPulse is { } pulse)
+            {
+                var timeSince = _timing.CurTime - pulse;
+                var fractionSince = timeSince.TotalSeconds / SonarDuration.TotalSeconds;
+                var wantPingPos = (float)fractionSince / SonarPingFraction;
+                pingPos = wantPingPos > 1f ? null : wantPingPos;
+            }
+
+            // worldToView already calculated above, reusing it
+
+            var halfWidth = new Angle(SonarWidth * 0.5);
+            var worldCenter = _transform.GetWorldPosition(cons); // mr president..
+            var worldMidpoint = worldCenter + sliderAngle.RotateVec(new Vector2(0, SonarDistance));
+            var center = Vector2.Transform(worldCenter, worldToView);
+            var midpoint = Vector2.Transform(worldMidpoint, worldToView);
+            var relMidpoint = midpoint - center;
+            var leftPoint = (-halfWidth).RotateVec(relMidpoint);
+
+            var segments = (int)Math.Floor(SonarWidth / segmentSize);
+            var buffer = new Vector2[segments + 3];
+            buffer[0] = center;
+
+            for (var i = 0; i <= segments; i++)
+            {
+                var rotAngle = new Angle(segmentSize * i);
+                var vec = center + rotAngle.RotateVec(leftPoint);
+
+                buffer[i + 1] = vec;
+            }
+            buffer[segments + 2] = center + halfWidth.RotateVec(relMidpoint);
+
+            handle.DrawPrimitives(DrawPrimitiveTopology.LineLoop, buffer, SonarColor);
+
+            // also draw ping if applicable
+            if (pingPos is { } pingFrac)
+            {
+                pingFrac = MathF.Pow(pingFrac, 1.3f); // looks better
+
+                var pingLine = new Vector2[segments + 2];
+                for (var i = 0; i <= segments; i++)
+                {
+                    var rotAngle = new Angle(segmentSize * i);
+                    var vec = center + rotAngle.RotateVec(leftPoint * pingFrac);
+
+                    pingLine[i] = vec;
+                }
+                pingLine[segments + 1] = center + halfWidth.RotateVec(relMidpoint * pingFrac);
+
+                handle.DrawPrimitives(DrawPrimitiveTopology.LineStrip, pingLine, SonarColor);
+            }
+        }
 
         // Draw our grid in detail
         var ourGridId = xform.GridUid;
@@ -382,12 +655,20 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
             var gridBody = bodyQuery.GetComponent(gUid);
             EntManager.TryGetComponent<IFFComponent>(gUid, out var iff);
 
-            if (!_shuttles.CanDraw(gUid, gridBody, iff))
+            var sonarDetected = _sonarRevealed.ContainsKey(grid.Owner); // BF14
+
+            if (!_shuttles.CanDraw(gUid, gridBody, iff)
+                && (!SonarSeeCloaked || !sonarDetected) // BF14
+            )
                 continue;
 
             var hideLabel = iff != null && (iff.Flags & IFFFlags.HideLabel) != 0x0;
             var noLabel = iff != null && (iff.Flags & IFFFlags.HideLabelAlways) != 0x0;
             var detectionLevel = _consoleEntity == null ? DetectionLevel.Detected : GetGridDetected(grid.Owner);
+            // BF14
+            if (sonarDetected)
+                detectionLevel = DetectionLevel.Detected;
+
             var detected = detectionLevel != DetectionLevel.Undetected || !hideLabel;
             var blipOnly = detectionLevel != DetectionLevel.Detected; // don't show outline outside of detection radius even if IFF on
             if (!detected)

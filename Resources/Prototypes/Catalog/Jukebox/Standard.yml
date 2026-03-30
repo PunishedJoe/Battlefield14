@@ -3,39 +3,39 @@
   name: X-CEED - Flip Flap
   path:
     path: /Audio/Jukebox/flip-flap.ogg
-
-- type: jukebox
-  id: Tintin
-  name: Jeroen Tel - Tintin on the Moon
-  path:
-    path: /Audio/Jukebox/title3.ogg
-
-- type: jukebox
-  id: Thunderdome
-  name: MashedByMachines - Sector 11
-  path:
-    path: /Audio/Jukebox/sector11.ogg
-
-- type: jukebox
-  id: Constellations
-  name: Qwertyquerty - Constellations
-  path:
-    path: /Audio/Jukebox/constellations.ogg
-
-- type: jukebox
-  id: Drifting
-  name: Qwertyquerty - Drifting
-  path:
-    path: /Audio/Jukebox/drifting.ogg
-
-- type: jukebox
-  id: starlight
-  name: Qwertyquerty - Starlight
-  path:
-    path: /Audio/Jukebox/starlight.ogg
-
-- type: jukebox
-  id: sunset
-  name: PigeonBeans - Sunset
-  path:
-    path: /Audio/Jukebox/sunset.ogg
+# BF14
+# BF14- type: jukebox
+# BF14  id: Tintin
+# BF14  name: Jeroen Tel - Tintin on the Moon
+# BF14  path:
+# BF14    path: /Audio/Jukebox/title3.ogg
+# BF14
+# BF14- type: jukebox
+# BF14  id: Thunderdome
+# BF14  name: MashedByMachines - Sector 11
+# BF14  path:
+# BF14    path: /Audio/Jukebox/sector11.ogg
+# BF14
+# BF14- type: jukebox
+# BF14  id: Constellations
+# BF14  name: Qwertyquerty - Constellations
+# BF14  path:
+# BF14    path: /Audio/Jukebox/constellations.ogg
+# BF14
+# BF14- type: jukebox
+# BF14  id: Drifting
+# BF14  name: Qwertyquerty - Drifting
+# BF14  path:
+# BF14    path: /Audio/Jukebox/drifting.ogg
+# BF14
+# BF14- type: jukebox
+# BF14  id: starlight
+# BF14  name: Qwertyquerty - Starlight
+# BF14  path:
+# BF14    path: /Audio/Jukebox/starlight.ogg
+# BF14
+# BF14- type: jukebox
+# BF14  id: sunset
+# BF14  name: PigeonBeans - Sunset
+# BF14  path:
+# BF14    path: /Audio/Jukebox/sunset.ogg

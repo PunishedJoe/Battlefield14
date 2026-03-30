@@ -1,0 +1,117 @@
+- type: entity
+  parent: BaseItem
+  id: MagazineGrenadeLauncherXM25HE
+  name: "M-25 magazine (25x40mm HE)"
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. Explodes on contact with shrapnel.
+  components:
+  - type: Tag
+    tags:
+      - MagazineGrenadeLauncherXM25
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeGrenade25x40HE
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeGrenade25x40
+    capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-red
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: MagazineGrenadeLauncherXM25HE
+  id: MagazineGrenadeLauncherXM25HEAB
+  name: "M-25 magazine (25x40mm HEAB)"
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. Rounds detonate after 8 tiles to hit targets behind cover.
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeGrenade25x40HEAB
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeGrenade25x40
+    capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-yellow
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5
+
+- type: entity
+  parent: MagazineGrenadeLauncherXM25HE
+  id: MagazineGrenadeLauncherXM25Flechette
+  name: "M-25 magazine (25x40mm flechette)"
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. It basically turns your grenade launcher into a shotgun.
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeGrenade25x40Flechette
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeGrenade25x40
+    capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-purple
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5
+
+- type: entity
+  parent: MagazineGrenadeLauncherXM25HE
+  id: MagazineGrenadeLauncherXM25APDS
+  name: "M-25 magazine (25x40mm APDS)"
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. Discarding sabot rounds penetrate through armour easily.
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeGrenade25x40APDS
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeGrenade25x40
+    capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-darkblue
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5
+
+- type: entity
+  parent: MagazineGrenadeLauncherXM25HE
+  id: MagazineGrenadeLauncherXM25Flak
+  name: "M-25 magazine (25x40mm flak)"
+  description: A 5 round magazine for the 25x40mm fuck off bullet that fucking kills you. These rounds are designed for taking out fighters.
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeGrenade25x40Flak
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeGrenade25x40
+    capacity: 5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/GrenadeLauncher/XM25.rsi
+    layers:
+    - state: base-green
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    scale: 1.5, 1.5

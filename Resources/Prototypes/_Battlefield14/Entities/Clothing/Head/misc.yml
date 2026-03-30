@@ -1,0 +1,16 @@
+- type: entity
+  parent: [ ClothingHeadHeadHatBaseFlippable , ClothingOuterBaseToggleable ]
+  id: ClothingHeadHatSkullcrusher
+  name: skullcrusher
+  description: a series of straps and a steel frame for mointing night vision devices
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/skullcrusher.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/skullcrusher.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingEyesGogglesSkullcrusher # so you cant wear sunglasses with these, I know it's weird
+    requiredSlot:
+    - head
+    slot: eyes
+  - type: ShowJobIcons

@@ -1,0 +1,69 @@
+- type: job
+  id: VDVMedic
+  name: job-name-vdv-medic
+  description: job-description-vdv-medic
+  playTimeTracker: JobVDVMedic
+  weight: 75
+  startingGear: VDVMedicGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTMedic"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.65
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-corporal
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - Medical
+  - PACTCommon
+  - PACTMaintenance
+  - PACTMedical
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: VDVMedicGear
+  equipment:
+    id: VDVMedicPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMedicalEMTFilledBF14 # ClothingBeltMilitaryWebbingRUFilledVityaz
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+    head: ClothingHeadHatHelmetRUEMR
+    eyes: ClothingEyesHudMedicalBF
+    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesLatex
+    back: ClothingBackpackRucksackBlack
+    neck: ClothingNeckIFFtapeWhite
+    suitstorage: WeaponSubmachinegunRUVityaz
+    pocket1: PouchMagsPistolLargeFilledVityaz
+    pocket2: PouchGrenadesFilledVDVScout
+  storage:
+    back:
+    - SupplyBoxMedicalFilled
+    - DefibrillatorCompactBF
+    - SyringeCaseFilledBF14
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
+    - Tourniquet
+    - Zipties

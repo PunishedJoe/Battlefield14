@@ -1,0 +1,110 @@
+#gauze
+
+- type: entity
+  parent: BaseItem #CMBaseHealingItem
+  id: AU14HemostaticGauzePacket
+  name: hemostatic gauze packet
+  description: A vacuum sealed packet of chemically treated gauze designed to stop bleeding fast. The powder burns like hell, but it works. Rip it open, jam it in, hope for the best.
+  components:
+  - type: Sprite
+    sprite: _AU14/Items/quickclot.rsi
+    state: quickclot
+  - type: Item
+    sprite: _AU14/Items/quickclot.rsi
+    inhandVisuals:
+      left:
+      - state: qc_left
+      right:
+      - state: qc_right
+  - type: SpawnItemsOnUse
+    items:
+    - id: AU14HemostaticGauzePacketTrash
+    - id: AU14HemostaticGauze
+    sound:
+      path: /Audio/_RMC14/Items/paper_ripped.ogg # BF14
+      params: # BF14
+        variation: 0.125
+  - type: Tag
+    tags:
+    - Brutepack
+    - Gauze
+
+- type: entity
+  parent: BaseItem #CMBaseHealingItem
+  id: AU14HemostaticGauzePacketTrash
+  name: used hemostatic gauze packet
+  description: A vacuum sealed packet of chemically treated gauze designed to stop bleeding fast. The powder burns like hell, but it works. This one is trash, it's already been used!
+  components:
+  - type: Sprite
+    sprite: _AU14/Items/quickclot.rsi
+    state: qc_ripped
+  - type: Item
+    sprite: _AU14/Items/quickclot.rsi
+    inhandVisuals:
+      left:
+      - state: qc_left
+      right:
+      - state: qc_right
+
+- type: entity
+  parent: Gauze
+  id: AU14HemostaticGauze
+  name: hemostatic gauze
+  description: A strip of gauze soaked with a powdery clotting agent. Once it’s out of the packet, stuff it deep into the wound and stop the bleeding before it’s too late.
+  components:
+  - type: Tag
+    tags:
+    - Brutepack
+    - Gauze
+  - type: Sprite
+    sprite: _AU14/Items/quickclot.rsi
+    state: hemgauze
+  - type: Item
+    sprite: _AU14/Items/quickclot.rsi
+    inhandVisuals:
+      left:
+      - state: hemgauze_left
+      right:
+      - state: hemgauze_right
+
+#- type: entity ORIGINAL YML
+#  parent: CMBaseHealingItem
+#  id: AU14HemostaticGauze
+#  name: hemostatic gauze
+#  description: A strip of gauze soaked with a powdery clotting agent. Once it’s out of the packet, the clock’s ticking, stuff it deep into the wound and stop the bleeding before it’s too late.
+#  components:
+#  - type: Tag
+#    tags:
+#    - Brutepack
+#  - type: Sprite
+#    sprite: _AU14/Items/quickclot.rsi
+#    state: hemgauze
+#  - type: Item
+#    sprite: _AU14/Items/quickclot.rsi
+#    inhandVisuals:
+#      left:
+#      - state: hemgauze_left
+#      right:
+#      - state: hemgauze_right
+#  - type: WoundTreater
+#    wound: Brute
+#    treats: true
+#    group: Brute
+#    consumable: true
+#    canUseUnskilled: true
+#    skills:
+#      RMCSkillMedical: 2
+#    treatBeginSound:
+#      path: "/Audio/_RMC14/Medical/bandage.ogg"
+#    treatEndSound:
+#      path: "/Audio/Items/Medical/brutepack_end.ogg"
+#    userPopup: au14-hs-user-popup
+#    targetPopup: au14-hs-target-popup
+#    othersPopup: au14-hs-others-popup
+#    noneSelfPopup: cm-gauze-none-self-popup
+#    noneOtherPopup: cm-gauze-none-other-popup
+#    noWoundsOnUserPopup: cm-wounds-already-treated-self-popup
+#    noWoundsOnTargetPopup: cm-wounds-already-treated-target-popup
+#  - type: MedicallyUnskilledDoAfter
+#    min: 5
+#    doAfter: 8

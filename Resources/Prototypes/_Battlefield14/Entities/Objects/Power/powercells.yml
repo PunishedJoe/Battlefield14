@@ -1,0 +1,23 @@
+- type: entity
+  name: powered combat vest battery
+  description: A rechargeable power cell designed to to fit into a powered combat vest. A warning sticker reads 'UNITED STATES ARMY PROPERTY'.
+  id: PowerCellPCV
+  suffix: Full
+  parent: BasePowerCell
+  components:
+  - type: Item
+    storedRotation: 0
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Power/power_cells.rsi
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: pcv
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 80
+    startingCharge: 80
+  - type: Tag
+    tags:
+      - PCVCell

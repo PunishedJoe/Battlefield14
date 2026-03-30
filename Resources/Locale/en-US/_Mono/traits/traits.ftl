@@ -66,10 +66,16 @@ trait-striking-calluses-name = Striking Calluses
 trait-striking-calluses-desc = An iconic enhancement from the world of cyber-enhanced martial arts. Bony dermal deposits (or hard plastic shells for prosthetics) reinforce your knuckles. Increases your unarmed strike base damage by 2, but provides no benefit to armed melee.
 
 trait-steadfast-name = Steadfast
-trait-steadfast-desc = When others would buckle from the weight of your injuries, you still march forward unrelentingly. For most species, this reduces your movement slow: 25% at 60 damage becomes 17% at 70 damage, and 45% at 80 damage becomes 30% at 90 damage.
+trait-steadfast-desc = When others would buckle from the weight of your injuries, you still march forward unrelentingly. This reduces your movement slow: 25% at 60 damage becomes 17% at 70 damage, and 45% at 80 damage becomes 30% at 90 damage.
 
-trait-dermal-armor-name = Dermal Armor
-trait-dermal-armor-desc = Your skin has been replaced with a flexible, yet sturdy, hard-polymer shell wrapped in a layer of synthetic flesh. Provides 3.5 flat reduction to Blunt, Slash, and Piercing damage, but you take 25% more Shock damage.
+# BF14 ^ removed "For most species,"
+
+trait-dermal-armor-name = Thick skin
+trait-dermal-armor-desc = You were born with thick skin, you have a 3.5 flat reduction to Blunt, Slash, and Piercing damage, but you take 25% more Shock damage.
+
+# BF14 wuz here (and edited the dermal armo(u)r .ftl)
+#Dermal Armor
+#Your skin has been replaced with a flexible, yet sturdy, hard-polymer shell wrapped in a layer of synthetic flesh. Provides 3.5 flat reduction to Blunt, Slash, and Piercing damage, but you take 25% more Shock damage.
 
 trait-ironman-name = Ironman
 trait-ironman-desc = You live strictly on hard cash. You can't withdraw from your bank account, but you start the shift with a Baeg Voucher to make your way.

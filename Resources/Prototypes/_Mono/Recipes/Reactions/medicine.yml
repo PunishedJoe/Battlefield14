@@ -62,19 +62,19 @@
   products:
     Mesotaxinide: 7.5
 
-- type: reaction
-  id: Mesophenerol
-  reactants:
-    Bicaridine:
-      amount: 2
-    Dylovene:
-      amount: 2
-    Kelotane:
-      amount: 2
-    Dexalin:
-      amount: 2
-  products:
-    Mesophenerol: 6
+#BF14- type: reaction
+#BF14  id: Mesophenerol
+#BF14  reactants: who the fuck thought this was a good idea in a combat fork? have they never played CM/TGMC?
+#BF14    Bicaridine:
+#BF14      amount: 2
+#BF14    Dylovene:
+#BF14      amount: 2
+#BF14    Kelotane:
+#BF14      amount: 2
+#BF14    Dexalin:
+#BF14      amount: 2
+#BF14  products:
+#BF14    Mesophenerol: 6
 
 - type: reaction
   id: Letoferol

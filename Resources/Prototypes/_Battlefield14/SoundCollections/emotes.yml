@@ -1,0 +1,92 @@
+- type: soundCollection
+  id: GruntUSMedicClean
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Medic/hg_medic01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Medic/hg_medic01_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Medic/hg_medic02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Medic/hg_medic03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Medic/hg_medic04.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Medic/hg_medic05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Medic/hg_medic06.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Hit/hg_hit02.ogg
+
+- type: soundCollection
+  id: GruntUSContactClean
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Contact/hg_alert01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Contact/hg_alert01_var02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Contact/hg_alert03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Contact/hg_alert04.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Contact/hg_alert05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Contact/hg_alert05_var02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Contact/hg_alert16.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Contact/hg_alert16_var01.ogg
+
+- type: soundCollection
+  id: GruntUSChargeClean
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge01_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge02_subd01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge02_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge02_var02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge02_var03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge03_subd01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge03_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge03_var02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge03_var03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge05_extrm01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge05_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge06.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge06_extrm01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge06_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge07.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge07_extrm01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge07_extrm02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge07_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge07_var02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge11.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge11_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge11_var02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge12.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge12_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Charge/hg_charge12_var02.ogg
+
+- type: soundCollection
+  id: GruntUSGrenadeThrowingClean
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw02_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw04.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw05_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadethrowing/hg_throw06.ogg
+
+- type: soundCollection
+  id: GruntUSGrenadeSurprisedClean
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren04.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren05_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren10.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren10_var01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Grenadesurprised/hg_gren10_var03.ogg
+
+- type: soundCollection
+  id: GruntUSScreamClean
+  files:
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Screaming/hg_onfire01.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Screaming/hg_onfire02.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Screaming/hg_onfire03.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Screaming/hg_onfire04.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Screaming/hg_onfire05.ogg
+  - /Audio/_Battlefield14/Voice/Human/BlackMesa/Raw/Screaming/hg_onfire06.ogg

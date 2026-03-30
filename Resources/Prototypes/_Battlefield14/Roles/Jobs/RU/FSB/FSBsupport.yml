@@ -1,0 +1,105 @@
+- type: job
+  id: FSBSupport
+  name: job-name-fsb-support
+  description: job-description-fsb-support
+  playTimeTracker: JobFSBSupport
+  weight: 76
+  startingGear: FSBSupportGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTSpecialForces"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - Russian
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - FSB
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTMedical
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: FSBSupportGear
+  equipment:
+    id: FSBSupportPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilledAK74
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
+    head: ClothingHeadHatHelmetRUEMR # blank
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackBlack
+    neck: ClothingNeckIFFtapeFSB
+    suitstorage: WeaponGrenadeLauncherRUGM94
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledVDVSupport
+    leftarmband: ClothingArmbandDumpPouchBlack
+    rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - BoxMagazine43x30HEFrag
+    - SupplyBoxAmmoRUFilledFSB
+    - WeaponRifleRUAKS74UB
+    - BoxMagazine43x30Thermobaric
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
+    - Tourniquet
+    - MagazinePistolSR1MP
+
+- type: startingGear
+  id: FSBSupportGearEVA
+  equipment:
+    id: FSBSupportPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilledAK74
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
+    balaclava: ClothingBalaclavaMilitary
+    eyes: ClothingEyesGogglesGreen
+    outerClothing: ClothingOuterVoidsuitRussianCombat
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackBlack
+    neck: ClothingNeckIFFtapeFSB
+    suitstorage: WeaponGrenadeLauncherRUGM94
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledVDVSupport
+    leftarmband: ClothingArmbandDumpPouchBlack
+    rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - BoxMagazine43x30HEFrag
+    - SupplyBoxAmmoRUFilledFSB
+    - WeaponRifleRUAKS74UB
+    - BoxMagazine43x30Thermobaric
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussia
+    - Tourniquet
+    - MagazinePistolSR1MP
+

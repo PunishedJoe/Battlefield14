@@ -223,7 +223,7 @@
   name: burn auto-injector
   parent: ChemicalMedipen
   id: BurnAutoInjector
-  description: A rapid dose of dermaline and leporazine, intended for combat applications.
+  description: A rapid dose of kelotane and leporazine, intended for combat applications. # BF14
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/medipen.rsi
@@ -244,10 +244,10 @@
       pen:
         maxVol: 20
         reagents:
-        - ReagentId: Dermaline
-          Quantity: 10
+        - ReagentId: Kelotane # BF14
+          Quantity: 15 # BF14
         - ReagentId: Leporazine
-          Quantity: 10
+          Quantity: 5 # BF14
   - type: Tag
     tags: []
 

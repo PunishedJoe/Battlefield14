@@ -76,7 +76,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitEngineering
-  name: engineering hardsuit helmet
+  name: engineering voidsuit helmet # BF14
   description: An engineering hardsuit helmet designed for working in low-pressure, high radioactive environments.
   components:
   - type: Sprite
@@ -222,8 +222,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitSecurity
-  name: security hardsuit helmet
-  description: Armored hardsuit helmet for security needs.
+  name: security voidsuit helmet # BF14
+  description: Armored voidsuit helmet for security needs. #BF14
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/security.rsi

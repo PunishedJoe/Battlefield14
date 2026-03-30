@@ -99,8 +99,12 @@ public abstract partial class SharedProjectileSystem : EntitySystem
     /// </summary>
     private void OnProjectileMetaStartup(EntityUid uid, ProjectileComponent component, ComponentStartup args)
     {
-        // Check if the entity still exists before trying to add a component
-        if (!EntityManager.EntityExists(uid))
+        // Check if the entity still exists and isn't deleted before trying to add a component
+        if (!EntityManager.EntityExists(uid) || Deleted(uid))
+            return;
+
+        // Check if MetaDataComponent already exists to avoid unnecessary operations
+        if (HasComp<MetaDataComponent>(uid))
             return;
 
         EnsureComp<MetaDataComponent>(uid);

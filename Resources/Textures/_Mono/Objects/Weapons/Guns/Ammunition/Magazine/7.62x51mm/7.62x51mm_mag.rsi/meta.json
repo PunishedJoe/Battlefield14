@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from SS13 Shiptest. Special states edited by starch. tarkov states by zeranov",
+  "copyright": "Taken from SS13 Shiptest. Special states edited by starch. tarkov states by zeranov. Added mag-2 - BF14",
   "size": {
     "x": 32,
     "y": 32
@@ -9,6 +9,9 @@
   "states": [
     {
       "name": "mag-1"
+    },
+    {
+      "name": "mag-2"
     },
     {
       "name": "base"

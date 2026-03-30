@@ -1,0 +1,58 @@
+- type: entity
+  parent: ChemicalMedipen
+  id: BiofoamCanister
+  suffix: Biofoam
+  name: biofoam canister
+  description: A military-grade olive drab canister filled with biofoam, used to rapidly fix internal and external injuries. Do not inject a second dose until fifteen seconds have passed, as interference from the remnants of previous injections may lead to a lethal overdose.
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _HaloSSE/Objects/Specific/Medical/biofoam.rsi
+    layers:
+    - state: biofoam
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: biofoam_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Biofoam
+          Quantity: 10
+
+- type: entity
+  parent: BiofoamCanister
+  id: BiofoamCanisterRed
+  description: A civilian-grade canister filled with biofoam, used to rapidly fix internal and external injuries. Do not inject a second dose until fifteen seconds have passed, as interference from the remnants of previous injections may lead to a lethal overdose.
+  suffix: URF
+  components:
+  - type: Sprite
+    sprite: _HaloSSE/Objects/Specific/Medical/biofoam.rsi
+    layers:
+    - state: urf
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: urf_empty
+
+- type: entity
+  parent: BiofoamCanister
+  id: BiofoamCanisterRedDARPA
+  name: prototype DARPA wound stasis system canister
+  description: A semi-secretive semi-public expanding foam developed under DARPA with the ability to stem bleeding and promote homeostasis in the applicated area. Resembles biofoam from the Halo™ franchise. Do not inject a second dose until fifteen seconds have passed.
+  suffix: Biofoam, DARPA
+  components:
+  - type: Sprite
+    sprite: _HaloSSE/Objects/Specific/Medical/biofoam.rsi
+    layers:
+    - state: urf
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: urf_empty

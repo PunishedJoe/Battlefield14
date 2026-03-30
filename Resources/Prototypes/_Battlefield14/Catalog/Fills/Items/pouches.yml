@@ -1,0 +1,158 @@
+- type: entity
+  parent: PouchFirstAid
+  id: PouchFirstAidFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: AU14HemostaticGauzePacket # Gauze but sovl
+    - id: Ointment
+    - id: PillCanisterTricordrazine
+    - id: Tourniquet
+    - id: PillCanisterIron # Tramadol
+    - id: InaprovalineMedipen
+
+- type: entity
+  parent: PouchMedkit
+  id: PouchMedkitFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: PillCanisterBicaridine
+      - id: PillCanisterKelotane
+      - id: PillCanisterTricordrazine
+#      - id: PillCanisterTramadol
+      - id: InaprovalineMedipen
+
+- type: entity
+  parent: PouchMedkit
+  id: PouchMedkitFilledMarsoc
+  suffix: Filled, Marsoc
+  components:
+  - type: StorageFill
+    contents:
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: BF14HyposprayFilledAdvanced
+      - id: InaprovalineMedipen # BF14
+      - id: PillCanisterTricordrazine
+      - id: Tourniquet
+        amount: 2
+
+- type: entity
+  parent: PouchMagsPistolLarge
+  id: PouchMagsPistolLargeFilledMP5
+  suffix: Filled, MP5
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineSubmachinegunMP5
+      amount: 6
+
+- type: entity
+  parent: PouchMagsPistolLarge
+  id: PouchMagsPistolLargeFilledMP7
+  suffix: Filled, MP7
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineSubmachinegunMP7
+      amount: 6
+
+- type: entity
+  parent: PouchMagsPistolLarge
+  id: PouchMagsPistolLargeFilledVityaz
+  suffix: Filled, Vityaz
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineSubmachinegunVityaz
+      amount: 6
+
+- type: entity
+  parent: PouchMagsPistolLarge
+  id: PouchMagsPistolLargeFilledSR2MP
+  suffix: Filled, SR2MP
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineSubmachinegunSR2MP
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledUSMCRifleman
+  suffix: Filled, USMC Rifleman
+  components:
+  - type: StorageFill
+    contents:
+    - id: MK21Handgrenade
+      amount: 3
+    - id: USM18SmokeHandgrenade
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledUSMCScout
+  suffix: Filled, USMC Scout
+  components:
+  - type: StorageFill
+    contents:
+    - id: USM84FlashBangHandgrenade
+      amount: 3
+    - id: USM18SmokeHandgrenade
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledUSMCSupport
+  suffix: Filled, USMC Support
+  components:
+  - type: StorageFill
+    contents:
+    - id: MK21Handgrenade
+      amount: 3
+    - id: USM58CSGasHandgrenade
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledVDVRifleman
+  suffix: Filled, VDV Rifleman
+  components:
+  - type: StorageFill
+    contents:
+    - id: RURGD5Handgrenade
+      amount: 2
+    - id: RGOImpactHandgrenade
+    - id: RURDG2SmokeHandgrenade
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledVDVScout
+  suffix: Filled, VDV Scout
+  components:
+  - type: StorageFill
+    contents:
+    - id: RUZaryaFlashBangHandgrenade
+      amount: 3
+    - id: RURDG2SmokeHandgrenade
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledVDVSupport
+  suffix: Filled, VDV Support
+  components:
+  - type: StorageFill
+    contents:
+    - id: RURGD5Handgrenade
+      amount: 3
+    - id: RUK51CSGasHandgrenade
+      amount: 3

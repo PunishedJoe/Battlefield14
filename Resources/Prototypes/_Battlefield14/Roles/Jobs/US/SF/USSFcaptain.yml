@@ -1,0 +1,61 @@
+- type: job
+  id: USSFCaptain
+  name: job-name-ussf-captain
+  description: job-description-ussf-captain
+  playTimeTracker: JobUSSFCaptain
+  weight: 78
+  startingGear: USSFCaptainGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOCaptain"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - NATO
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.25
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+  - NATOFunds
+  - NATOCrew
+  - NATOCaptain
+
+- type: startingGear
+  id: USSFCaptainGear
+  equipment:
+    id: USSFCaptainPDA
+    ears: ClothingHeadsetAltUS
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCaptain
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackSatchelSecurity
+    belt: ClothingBeltCommandFilledUS
+    gloves: ClothingHandsGlovesCombat
+    pocket1: PouchFirstAidFilled
+  storage:
+    back:
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - Tourniquet
+    - Zipties

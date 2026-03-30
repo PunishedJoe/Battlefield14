@@ -1,0 +1,488 @@
+- type: entity
+  name: hypospray
+  parent: BaseItem
+  description: A military model of hypospray (which are intended for high-volume vaccinations) with a larger, portable chemical reserve and compatible with specialised ports in voidsuits.
+  id: BF14Hypospray
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/hypo.rsi
+    layers:
+      - state: hypo1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+      - state: hypo_base6 # this currently doesnt work sadly, supposed to work like syringes so the plunger moves back as its filled
+        map: ["enum.SolutionContainerLayers.Base"]
+  - type: Icon
+    sprite: _Battlefield14/Objects/Specific/Medical/hypo.rsi
+    state: "hypo_base6"
+  - type: Item
+    size: Small
+    sprite: _Battlefield14/Objects/Specific/Medical/hypo.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.2
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: hypo
+
+- type: entity
+  name: medical hypospray
+  parent: BaseItem
+  description: A military model of hypospray (which are intended for high-volume vaccinations) with a larger, portable chemical reserve and compatible with specialised ports in voidsuits.
+  id: BF14HyposprayBig
+  suffix: DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/hypobig.rsi
+    layers:
+      - state: hypo1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+      - state: hypo_base6
+        map: ["enum.SolutionContainerLayers.Base"]
+  - type: Icon
+    sprite: _Battlefield14/Objects/Specific/Medical/hypobig.rsi
+    state: "hypo_base6"
+  - type: Item
+    size: Small
+    sprite: _Battlefield14/Objects/Specific/Medical/hypobig.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 0.2
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: hypo
+
+# 60u hypo fills
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledBicaridine
+  suffix: Bicaridine
+  name: bicaridine hypospray
+  description: Filled with 60u bicaridine.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledKelotane
+  suffix: Kelotane
+  name: kelotane hypospray
+  description: Filled with 60u kelotane.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Kelotane
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledTricordrazine
+  suffix: Tricordrazine
+  name: tricordrazine hypospray
+  description: Filled with 60u tricordrazine.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Tricordrazine
+          Quantity: 60
+
+#- type: entity
+#  parent: BF14Hypospray
+#  id: BF14HyposprayFilledTramadol
+#  suffix: Tramadol
+#  name: tramadol hypospray
+#  description: Filled with 60u tramadol.
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      hypospray:
+#        maxVol: 60
+#        reagents:
+#        - ReagentId: Tramadol
+#          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledCombat
+  suffix: BKT # BKTT
+  name: combat hypospray
+  description: Filled with equal parts bicaridine, kelotane, and tricordrazine; or BKT. # tricordrazine, and tramadol; or BKTT.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 20
+        - ReagentId: Kelotane
+          Quantity: 20
+        - ReagentId: Tricordrazine
+          Quantity: 20
+#        - ReagentId: Tramadol
+#          Quantity: 15
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledDylovene
+  suffix: Dylovene
+  name: dylovene hypospray
+  description: Filled with 60u dylovene.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledDexalin
+  suffix: Dexalin
+  name: dexalin hypospray
+  description: Filled with 60u dexalin.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Dexalin
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledInaprovaline
+  suffix: Inaprovaline
+  name: inaprovaline hypospray
+  description: Filled with 60u inaprovaline.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Inaprovaline
+          Quantity: 60
+
+#- type: entity
+#  parent: BF14Hypospray
+#  id: BF14HyposprayFilledOxycodone
+#  suffix: Oxycodone
+#  name: oxycodone hypospray
+#  description: Filled with 60u oxycodone.
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      hypospray:
+#        maxVol: 60
+#        reagents:
+#        - ReagentId: Oxycodone
+#          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledMeralyne
+  suffix: Meralyne
+  name: meralyne hypospray
+  description: Filled with 60u meralyne.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Meralyne
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledDermaline
+  suffix: Dermaline
+  name: dermaline hypospray
+  description: Filled with 60u dermaline.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Dermaline
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledAdvanced
+  suffix: MeraDerm
+  name: advanced hypospray
+  description: Filled with 30u meralyne and 30u dermaline.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Meralyne
+          Quantity: 30
+        - ReagentId: Dermaline
+          Quantity: 30
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledSaline
+  suffix: Saline
+  name: saline hypospray
+  description: Filled with 60u saline.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Saline
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledNanoblood
+  suffix: Nanoblood
+  name: nanoblood hypospray
+  description: Filled with 60u nanoblood. Heals approx 33% blood volume per injection. DO NOT APPLY MORE THAN ONCE.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Nanoblood
+          Quantity: 60
+
+- type: entity
+  parent: BF14Hypospray
+  id: BF14HyposprayFilledHypervene
+  suffix: Hypervene
+  name: hypervene hypospray
+  description: Filled with 60u Hypervene. Rapidly purges all chems from the bloodstream; Approx 15u per 3u injection.
+  components:
+  - type: Hypospray
+    transferAmount: 3
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 60
+        reagents:
+        - ReagentId: Hypervene
+          Quantity: 60
+
+# 120u hypo fills
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigBicaridine
+  suffix: Bicaridine
+  name: bicaridine hypospray
+  description: Filled with 120u bicaridine.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 120
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigKelotane
+  suffix: Kelotane
+  name: kelotane hypospray
+  description: Filled with 120u kelotane.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Kelotane
+          Quantity: 120
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigTricordrazine
+  suffix: Tricordrazine
+  name: tricordrazine hypospray
+  description: Filled with 120u tricordrazine.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Tricordrazine
+          Quantity: 120
+
+#- type: entity
+#  parent: BF14HyposprayBig
+#  id: BF14HyposprayFilledBigTramadol
+#  suffix: Tramadol
+#  name: tramadol hypospray
+#  description: Filled with 120u tramadol.
+#  components:
+#  - type: SolutionContainerManager
+#    solutions:
+#      hypospray:
+#        maxVol: 120
+#        reagents:
+#        - ReagentId: Tramadol
+#          Quantity: 120
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigCombat
+  suffix: BKT # BKTT
+  name: combat hypospray
+  description: Filled with equal parts bicaridine, kelotane, and tricordrazine; or BKT. # tricordrazine, and tramadol; or BKTT.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 40
+        - ReagentId: Kelotane
+          Quantity: 40
+        - ReagentId: Tricordrazine
+          Quantity: 40
+#        - ReagentId: Tramadol
+#          Quantity: 30
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigDylovene
+  suffix: Dylovene
+  name: dylovene hypospray
+  description: Filled with 120u dylovene.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 120
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigDexalin
+  suffix: Dexalin
+  name: dexalin hypospray
+  description: Filled with 120u dexalin.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Dexalin
+          Quantity: 120
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigInaprovaline
+  suffix: Inaprovaline
+  name: inaprovaline hypospray
+  description: Filled with 120u inaprovaline.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Inaprovaline
+          Quantity: 120
+
+- type: entity
+  parent: BF14HyposprayBig
+  id: BF14HyposprayFilledBigSaline
+  suffix: Saline
+  name: saline hypospray
+  description: Filled with 120u saline.
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 120
+        reagents:
+        - ReagentId: Saline
+          Quantity: 120
+
+# Medipens/Autoinjectors
+
+- type: entity
+  name: inaprovaline medipen
+  parent: ChemicalMedipen
+  id: InaprovalineMedipen
+  description: A rapid and safe way to stabilize patients in critical condition for one minute without advanced medical knowledge. Bleeding will reduce effectiveness due to loss of reagents.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: salpen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: salpen_empty
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 10
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Inaprovaline
+          Quantity: 6 # about 1 minute of crit stabilisation without bleeding
+        - ReagentId: Iron
+          Quantity: 4
+  - type: Tag # Mono
+    tags: [SurvivalBox]

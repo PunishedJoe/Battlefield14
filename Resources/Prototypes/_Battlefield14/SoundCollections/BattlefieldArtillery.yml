@@ -1,0 +1,5 @@
+- type: soundCollection
+  id: BF_Bofors_Gunshots
+  files:
+  - "/Audio/_Battlefield14/Weapons/BattlefieldArtillery/autocannon1.ogg"
+  - "/Audio/_Battlefield14/Weapons/BattlefieldArtillery/autocannon2.ogg"

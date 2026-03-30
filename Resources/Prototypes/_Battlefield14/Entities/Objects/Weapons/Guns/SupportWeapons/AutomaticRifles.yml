@@ -1,0 +1,123 @@
+# US
+- type: entity
+  name: M27-IAR
+  parent: WeaponRifleUSM16A4
+  id: WeaponRifleUSM27IAR
+  description: The Marine corps own 416, intended to replace the M16A4 and the M249.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M27-IAR.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M16A4worn.rsi # do later
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -35
+  - type: Gun
+    minAngle: 19
+    maxAngle: 50
+    angleIncrease: 0.7
+    angleDecay: 16
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 8
+    projectileSpeed: 50 # twenty inch barrel
+    soundGunshot:
+      collection: BF_M16_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: Appearance
+  - type: ClothingSpeedModifier # this thing is heavier than the M16, plus otherwise it would be objectively better than the M16
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.25
+
+# RU
+
+- type: entity
+  name: RPK-2016
+  parent: BaseWeaponRifle
+  id: WeaponRifleRURPK2016
+  description: A modernised RPK-74, with simply "cooler" furniture and more modern manufacture, but does not exactly translate to performance. 2016 refers to the date of development.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016worn.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -35
+  - type: Gun
+    minAngle: 19
+    maxAngle: 50
+    angleIncrease: 0.7
+    angleDecay: 16
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 7
+    projectileSpeed: 50 # twenty inch barrel
+    soundGunshot:
+      collection: BF_AK_545_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK74blackdrum
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin_drum.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout_drum.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9

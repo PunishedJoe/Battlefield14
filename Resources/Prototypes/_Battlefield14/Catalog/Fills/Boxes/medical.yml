@@ -1,0 +1,35 @@
+- type: entity
+  parent: BoxCardboard
+  id: BoxPartsLimbsCyber
+  name: box of cybernetic limbs
+  description: A box full of cybernetic limbs for prosthesis.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: LeftArmIPC
+      - id: RightArmIPC
+      - id: LeftLegIPC
+      - id: RightLegIPC
+      - id: LeftHandIPC
+      - id: RightHandIPC
+      - id: LeftFootIPC
+      - id: RightFootIPC
+
+- type: entity
+  parent: BoxCardboard
+  id: BoxPartsOrgansSynthetic
+  name: box of cybernetic organs
+  description: A box full of synthetic organs for prosthesis.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: BasicCyberneticEyes
+      - id: OrganSyntheticHeart
+      - id: OrganSyntheticKidneys
+      - id: OrganSyntheticLiver

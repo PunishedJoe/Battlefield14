@@ -1,0 +1,56 @@
+- type: entity
+  id: BF_CartridgePistol9x19
+  name: cartridge (9x19mm Parabellum)
+  parent: BaseCartridge
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolBF9x19
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePistol9x19
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgePistol45ACP
+  name: cartridge (.45 ACP)
+  parent: BaseCartridge
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolBF45ACP
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePistol45ACP
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgePistol357
+  name: cartridge (.357 Magnum)
+  parent: BaseCartridge
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolBF357
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePistol357
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

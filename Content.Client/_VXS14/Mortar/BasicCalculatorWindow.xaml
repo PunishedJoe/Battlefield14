@@ -1,0 +1,47 @@
+<controls:BasicCalculatorWindow
+    xmlns="https://spacestation14.io"
+    xmlns:controls="clr-namespace:Content.Client._VXS14.Mortar">
+    <BoxContainer Orientation="Vertical" SeparationOverride="4" MinSize="220 260">
+        <PanelContainer>
+            <BoxContainer Orientation="Vertical" Margin="6 4" SeparationOverride="2">
+                <Label Name="ExpressionLabel" HorizontalExpand="True" HorizontalAlignment="Right" Text=""/>
+                <Label Name="DisplayLabel" HorizontalExpand="True" HorizontalAlignment="Right" Text="0"/>
+            </BoxContainer>
+        </PanelContainer>
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+            <Button Name="BtnCe" Text="CE" HorizontalExpand="True"/>
+            <Button Name="BtnC" Text="C" HorizontalExpand="True"/>
+            <Button Name="BtnBack" Text="&lt;-" HorizontalExpand="True"/>
+            <Button Name="BtnDiv" Text="/" HorizontalExpand="True"/>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+            <Button Name="Btn7" Text="7" HorizontalExpand="True"/>
+            <Button Name="Btn8" Text="8" HorizontalExpand="True"/>
+            <Button Name="Btn9" Text="9" HorizontalExpand="True"/>
+            <Button Name="BtnMul" Text="*" HorizontalExpand="True"/>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+            <Button Name="Btn4" Text="4" HorizontalExpand="True"/>
+            <Button Name="Btn5" Text="5" HorizontalExpand="True"/>
+            <Button Name="Btn6" Text="6" HorizontalExpand="True"/>
+            <Button Name="BtnSub" Text="-" HorizontalExpand="True"/>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+            <Button Name="Btn1" Text="1" HorizontalExpand="True"/>
+            <Button Name="Btn2" Text="2" HorizontalExpand="True"/>
+            <Button Name="Btn3" Text="3" HorizontalExpand="True"/>
+            <Button Name="BtnAdd" Text="+" HorizontalExpand="True"/>
+        </BoxContainer>
+
+        <BoxContainer Orientation="Horizontal" SeparationOverride="4">
+            <Button Name="BtnSign" Text="+/-" HorizontalExpand="True"/>
+            <Button Name="Btn0" Text="0" HorizontalExpand="True"/>
+            <Button Name="BtnDot" Text="." HorizontalExpand="True"/>
+            <Button Name="BtnEq" Text="=" HorizontalExpand="True"/>
+        </BoxContainer>
+    </BoxContainer>
+</controls:BasicCalculatorWindow>

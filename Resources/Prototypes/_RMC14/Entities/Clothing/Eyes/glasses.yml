@@ -1,0 +1,75 @@
+- type: entity
+  parent: [ ClothingEyesHudSecurity, RMCGlassesTriMaxYellowNohud ] # BF14 RMCSunglassesBig
+  id: RMCGlassesTriMaxYellow
+  name: Ballistic Glasses # BF14 TriMax Polarized Shades
+  description: Sleek, angular shades designed for the modern operator. This pair is installed with a heads-up-display for target identification, a common modification by active-duty soldiers. # BF14
+  suffix: hud
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_yellow_glasses.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_yellow_glasses.rsi
+#BF14  - type: RMCLoreExaminable
+#BF14    content: rmc-lore-examinable-trimax-polarized-shades
+
+- type: entity
+  parent: [ ClothingEyesHudSecurity, RMCGlassesTriMaxBronzeNohud ] # BF14 RMCGlassesTriMaxYellow
+  id: RMCGlassesTriMaxBronze
+  name: Ballistic Glasses # BF14
+  description: Sleek, angular shades designed for the modern operator. This pair is installed with a heads-up-display for target identification, a common modification by active-duty soldiers. # BF14
+  suffix: hud
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
+
+- type: entity
+  parent: [ ClothingEyesHudSecurity, RMCGlassesTriMaxBlackNohud ] # BF14 RMCGlassesTriMaxYellow
+  id: RMCGlassesTriMaxBlack
+  description: Sleek, angular shades designed for the modern operator. This pair is installed with a heads-up-display for target identification, a common modification by active-duty soldiers. # BF14
+  name: Tactical Shades
+  suffix: hud
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi
+
+# no hud trimax'
+
+- type: entity
+  parent: [ ClothingEyesBase, BallisticGlasses ]
+  id: RMCGlassesTriMaxYellowNohud
+  name: Ballistic Glasses
+  description: Sleek, angular shades designed for the modern operator.
+  suffix: no hud
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_yellow_glasses.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_yellow_glasses.rsi
+
+- type: entity
+  parent: [ ClothingEyesBase, BallisticGlasses ]
+  id: RMCGlassesTriMaxBronzeNohud
+  name: Ballistic Glasses
+  description: Sleek, angular shades designed for the modern operator.
+  suffix: no hud
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
+
+- type: entity
+  parent: [ ClothingEyesBase, BallisticGlasses ]
+  id: RMCGlassesTriMaxBlackNohud
+  name: Tactical Shades
+  description: Sleek, angular shades designed for the modern operator.
+  suffix: no hud
+  components:
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi

@@ -3,7 +3,7 @@
   name: trait-prybar-prosthetics-name
   description: trait-prybar-prosthetics-desc
   category: Physical
-  cost: 2
+  cost: 8 # BF14 2 > 8 bionics like this exist but are expensive
   components:
   - type: PrybarProsthetics
 
@@ -59,7 +59,7 @@
   cost: 1
   mutuallyExclusiveTraits:
   - GlassJaw
-  - OsteogenesisImperfecta
+#  - OsteogenesisImperfecta
   speciesBlacklist:
   - IPC
   components:
@@ -112,31 +112,31 @@
     timeMultiplier: 0.5
     identifyHidden: true
 
-- type: trait
-  id: BionicLegs
-  name: trait-bionic-legs-name
-  description: trait-bionic-legs-desc
-  category: Physical
-  cost: 2
-  components:
-  - type: BionicLegs
+#BF14- type: trait
+#BF14  id: BionicLegs
+#BF14  name: trait-bionic-legs-name
+#BF14  description: trait-bionic-legs-desc
+#BF14  category: Physical
+#BF14  cost: 4 # BF14 2 > 4 bionics like this exist but are expensive
+#BF14  components:
+#BF14  - type: BionicLegs
 
-- type: trait
-  id: OsteogenesisImperfecta
-  name: trait-osteogenesis-imperfecta-name
-  description: trait-osteogenesis-imperfecta-desc
-  category: Physical
-  cost: -6
-  mutuallyExclusiveTraits:
-  - Tenacity
-  speciesBlacklist:
-  - IPC
-  blacklist:
-    components:
-    - BorgChassis
-  components:
-  - type: GlassJaw
-    critDecrease: 50
+#- type: trait BF14 we dont need this
+#  id: OsteogenesisImperfecta
+#  name: trait-osteogenesis-imperfecta-name
+#  description: trait-osteogenesis-imperfecta-desc
+#  category: Physical
+#  cost: -6
+#  mutuallyExclusiveTraits:
+#  - Tenacity
+#  speciesBlacklist:
+#  - IPC
+#  blacklist:
+#    components:
+#    - BorgChassis
+#  components:
+#  - type: GlassJaw
+#    critDecrease: 50
 
 - type: trait
   id: Hemophilia
@@ -167,24 +167,24 @@
     - type: Voracious
       consumptionSpeedMultiplier: 2.0
 
-- type: trait
-  id: BionicSpinarette
-  name: trait-bionic-spinarette-name
-  description: trait-bionic-spinarette-desc
-  category: Physical
-  cost: 2
-  speciesBlacklist:
-    - IPC
-    - Arachnid
-  blacklist:
-    components:
-    - BorgChassis
-  components:
-    - type: Sericulture
-      action: ActionSericulture
-      productionLength: 2
-      entityProduced: MaterialWebSilk1
-      hungerCost: 4
+#- type: trait BF14
+#  id: BionicSpinarette
+#  name: trait-bionic-spinarette-name
+#  description: trait-bionic-spinarette-desc
+#  category: Physical
+#  cost: 2
+#  speciesBlacklist:
+#    - IPC
+#    - Arachnid
+#  blacklist:
+#    components:
+#    - BorgChassis
+#  components:
+#    - type: Sericulture
+#      action: ActionSericulture
+#      productionLength: 2
+#      entityProduced: MaterialWebSilk1
+#      hungerCost: 4
 
 - type: trait
   id: Feeble
@@ -259,17 +259,17 @@
   - type: WillToDie
     deadDecrease: 100
 
-- type: trait
-  id: StrikingCalluses
-  name: trait-striking-calluses-name
-  description: trait-striking-calluses-desc
-  category: Physical
-  cost: 2
-  blacklist:
-    components:
-    - BorgChassis
-  components:
-  - type: StrikingCalluses
+#BF14- type: trait
+#BF14  id: StrikingCalluses
+#BF14  name: trait-striking-calluses-name
+#BF14  description: trait-striking-calluses-desc
+#BF14  category: Physical
+#BF14  cost: 2
+#BF14  blacklist:
+#BF14    components:
+#BF14    - BorgChassis
+#BF14  components:
+#BF14  - type: StrikingCalluses
 
 - type: trait
   id: Steadfast
@@ -328,15 +328,15 @@
         flatReductions:
           Radiation: 1
 
-- type: trait
-  id: Ironman
-  name: trait-ironman-name
-  description: trait-ironman-desc
-  category: Physical
-  cost: -5 # This shit was FREE for factions practically
-  components:
-  - type: Ironman
-  traitGear: ShipVoucherFrontierIronMan
+#- type: trait # trait BF14 doesnt fit gameplay
+#  id: Ironman
+#  name: trait-ironman-name
+#  description: trait-ironman-desc
+#  category: Physical
+#  cost: -5 # This shit was FREE for factions practically
+#  components:
+#  - type: Ironman
+#  traitGear: ShipVoucherFrontierIronMan
 
 - type: trait
   id: TemperatureTolerance
@@ -395,7 +395,7 @@
   description: trait-nanite-repair-drones-desc
   category: Physical
   cost: 8
-  speciesBlacklist:
+  speciesBlacklist: # son... - BF14
   - Human
   - Chitinid
   - Oni

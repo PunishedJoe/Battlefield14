@@ -1,0 +1,302 @@
+# US
+- type: entity
+  name: M107
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperUSM107
+  description: A big, beefy, fitty cal anti-materiel rifle.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M107.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M107.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus # needed so min angle doesn't go negative
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    fireRate: 3 # holy shit
+    minAngle: 0
+    maxAngle: 180
+    angleIncrease: 25
+    angleDecay: 30
+    projectileSpeed: 67 # it's a sniper
+    soundGunshot:
+      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperM107
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperM107
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge127mmAP
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge127mmAP
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+
+- type: entity
+  name: Mk-14 EBR
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperUSM14EBR
+  description: The M14 was kindof a flop, it tried to be too many things at once. After it was replaced it had a second life as a designated marksman rifle, even recieving this upgraded chassis.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M14EBR.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: scope
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M14EBR.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus # needed so min angle doesn't go negative
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    fireRate: 4
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 4
+    angleDecay: 13
+    projectileSpeed: 50
+    soundGunshot:
+      collection: BF_M14_Gunshots
+      params:
+        volume: -3
+        variation: 0.125
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_rack.ogg
+      params:
+        volume: -2
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chforward.ogg
+      params:
+        volume: -2
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chback.ogg
+      params:
+        volume: -2
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleM14
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleM14
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+
+# RU
+
+- type: entity
+  name: SV-98
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperRUSV98
+  description: A modern classic, with a green wooden stock and bolt-action. Chambered in 7.62x54mmR.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SV98.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: Gun # TODO make this function like goobstation lever action
+    fireRate: 0.5
+    projectileSpeed: 55 # it's a sniper
+#    damageModifier: 1.5 doesn't work
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/Guns/misc/lever_fire.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleSV98AP
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleSV98
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x54rAP
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x54r
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+
+- type: entity
+  name: SVDS
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperRUSVDS
+  description: The first true designated marksman rifle, as with any soviet bloc weapon it has of course had a world tour. Reccomended firing cadence is once per second.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDS.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDS.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus # needed so min angle doesn't go negative
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    fireRate: 3
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 6.5
+    angleDecay: 13
+    projectileSpeed: 50
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/dmr.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperSVDS
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperSVDS
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x54r
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x54r
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000

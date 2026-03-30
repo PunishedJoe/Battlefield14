@@ -208,7 +208,7 @@
 - type: entity
   parent: NFClothingBackpack # Frontier: ClothingBackpack<NFClothingBackpack
   id: ClothingBackpackMercenary # Frontier - Merc to Mercenary
-  name: mercenary backpack
+  name: ALICE backpack # BF14
   description: A backpack that has been in many dangerous places, a reliable combat backpack.
   components:
     - type: Sprite

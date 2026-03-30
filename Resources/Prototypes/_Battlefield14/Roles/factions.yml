@@ -1,0 +1,33 @@
+# COMMENTED OUT: Unsupported prototype type 'faction'
+# This system is not implemented in the current codebase.
+# Requires: faction prototype type registration
+
+# - type: faction
+#   name: "National Atlantic Treaty Organisation"
+#   id: NATO
+#   buttonColor: "#203564"
+#   description: |
+#     A coalition of European countries and its allies including the United States, the United Kingdom
+#     France, Germany, and Italy, to name a few; united against the still present threat of the Warsaw pact, which
+#     managed to stay together through the collapse of the soviet union, and its ever growing stock of future weapons.
+#   color: "#203564"
+#   weight: 1
+#   enabled: true
+#   icon:
+#     sprite: /Textures/_Battlefield14/faction_icons.rsi
+#     state: nato
+# 
+# - type: faction
+#   name: "Warsaw Pact"
+#   id: PACT
+#   buttonColor: "#a02829"
+#   description: |
+#     Despite the collapse of the soviet union, the arms and space races with america continued as the new federation
+#     was still nostalgic to the old regime, yet embraced democracy and maintaining favorable relations with its former
+#     territories such as Poland and the baltics, although Ukraine stayed distant, not forgiving the Holodomor.
+#   color: "#a02829"
+#   weight: 0
+#   enabled: true
+#   icon:
+#     sprite: /Textures/_Battlefield14/faction_icons.rsi
+#     state: pact

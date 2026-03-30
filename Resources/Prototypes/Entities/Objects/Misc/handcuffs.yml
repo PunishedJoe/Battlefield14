@@ -95,7 +95,7 @@
     size: Tiny
     storedRotation: 0
   - type: Handcuff
-    breakoutTime: 3
+    breakoutTime: 10 # BF14 3 > 10
     cuffedRSI: Objects/Misc/cablecuffs.rsi  # cablecuffs will look fine
     bodyIconState: body-overlay
     breakOnRemove: true

@@ -1,0 +1,155 @@
+# Base capture point
+- type: entity
+  id: BaseCapturePoint
+  name: capture point
+  description: A strategic location that can be captured and controlled by factions.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: generic
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: Appearance
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: PointLight
+    enabled: true
+    radius: 1.5
+    energy: 2.5
+    color: "#43a20d"
+    netsync: false
+  - type: NavMapBeacon
+    defaultText: objective-beacon-general
+    color: "#FFFF00"
+  - type: POICapture
+    poiName: "Control Point Alpha"
+    timeToCapture: 60 # 1 minute to capture
+    gracePeriod: 600 # 10 minutes until open
+    doAfterDelay: 3
+    controllingFaction: null
+    isBeingCaptured: false
+    capturingFaction: null
+    currentCaptureProgress: 0
+
+# Specific Control points for map locations
+- type: entity
+  id: CapturePointEngineering
+  parent: BaseCapturePoint
+  name: engineering control point
+  suffix: 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Engineering Sector"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: objective-beacon-engineering
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointMedical
+  parent: BaseCapturePoint
+  name: medical control point
+  suffix: 180s / 3m
+  components:
+  - type: POICapture
+    poiName: "Medical Bay"
+    timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: objective-beacon-medical
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointBridge
+  parent: BaseCapturePoint
+  name: bridge control point
+  suffix: 180s / 3m
+  components:
+  - type: POICapture
+    poiName: "Bridge"
+    timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: objective-beacon-bridge
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointBridge20Minutes
+  parent: CapturePointBridge
+  suffix: 1200s / 20m
+  components:
+  - type: POICapture
+    timeToCapture: 1200
+
+- type: entity
+  id: CapturePointSecurity
+  parent: BaseCapturePoint
+  name: security control point
+  suffix: 180s / 3m
+  components:
+  - type: POICapture
+    poiName: "Security"
+    timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: objective-beacon-security
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointCargo
+  parent: BaseCapturePoint
+  name: cargo control point
+  suffix: 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Cargo Department"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: objective-beacon-cargo
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointAtmospherics
+  parent: BaseCapturePoint
+  name: atmospherics control point
+  suffix: 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Atmospherics"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: objective-beacon-atmospherics
+    color: "#FFFF00"
+
+- type: entity
+  id: CapturePointResearch
+  parent: BaseCapturePoint
+  name: research control point
+  suffix: 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Research and development"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: objective-beacon-science
+    color: "#FFFF00"

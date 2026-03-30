@@ -1,0 +1,52 @@
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetAltUS
+  name: US over-ear headset
+  components:
+    - type: Headset
+    - type: EncryptionKeyHolder
+      keySlots: 5
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyUS
+          - EncryptionKeyCommon
+    - type: Sprite
+      sprite: _Battlefield14/Clothing/Ears/Headsets/us_alt.rsi
+    - type: Clothing
+      sprite: _Battlefield14/Clothing/Ears/Headsets/us_alt.rsi
+
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetAltRU
+  name: RU over-ear headset
+  components:
+    - type: Headset
+    - type: EncryptionKeyHolder
+      keySlots: 5
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyRU
+          - EncryptionKeyCommon
+    - type: Sprite
+      sprite: _Battlefield14/Clothing/Ears/Headsets/ru_alt.rsi
+    - type: Clothing
+      sprite: _Battlefield14/Clothing/Ears/Headsets/ru_alt.rsi
+
+- type: entity
+  parent: ClothingHeadsetAlt
+  id: ClothingHeadsetAltWPS
+  name: Chevron private security over-ear headset
+  components:
+    - type: EncryptionKeyHolder
+      keySlots: 5
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - EncryptionKeyWPS
+        - EncryptionKeyCommon
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/security.rsi
+    - type: Clothing
+      sprite: Clothing/Ears/Headsets/security.rsi

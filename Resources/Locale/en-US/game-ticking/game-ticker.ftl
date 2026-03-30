@@ -47,3 +47,5 @@ preset-no-one-ready = Can't start {$presetName}. No players are ready.
 game-run-level-PreRoundLobby = Pre-round lobby
 game-run-level-InRound = In round
 game-run-level-PostRound = Post round
+
+shift-time-lock-blocked = it wouldent be wise to do this now.

@@ -1,0 +1,75 @@
+- type: entity
+  parent: BaseItem
+  id: MagazineShotgunUSAS
+  name: "USAS-12 magazine (12 Gauge buckshot)"
+  description: 8 round 12 gauge magazine for the USAS-12 automatic shotgun.
+  components:
+  - type: Tag
+    tags:
+      - Magazine
+      - MagazineShotgunUSAS
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeShotgun12Gauge
+    capacity: 8
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/USAS.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseItem
+  id: MagazineShotgunUSASDrum
+  name: "USAS-12 drum magazine (12 Gauge buckshot)"
+  description: 20 round 12 gauge magazine for the USAS-12 automatic shotgun.
+  components:
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+      - Magazine
+      - MagazineShotgunUSASDrum
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeShotgun12Gauge
+    capacity: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Shotgun/USASdrum.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: MagazineShotgunUSASDrum
+  id: MagazineShotgunUSASDrumFrag
+  name: "USAS-12 drum magazine (12 Gauge frag)"
+  description: 20 round 12 gauge magazine for the USAS-12 automatic shotgun.
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeShotgun12GaugeFrag
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeShotgun12Gauge
+    capacity: 20

@@ -15,6 +15,10 @@
   - type: ItemTax # Mono
     taxAccounts:
       Medical: 0.8
+  - type: Healing
+    damageContainers:
+    - Biological
+    delay: 4
 
 - type: entity
   name: ointment
@@ -194,7 +198,7 @@
     damage:
       groups:
         Brute: -60 # was 10 for each, now 20 for each type in the group, Buffed due to surgery changes (Goobstation)
-    bloodlossModifier: -10 # a suture should stop ongoing bleeding
+    bloodlossModifier: -3.5 #BF14 -10 > -3.5 # a suture should stop ongoing bleeding
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
@@ -272,16 +276,23 @@
     - type: Tag
       tags:
         - SecBeltEquip
+        - Tourniquet
     - type: Sprite
       state: tourniquet
+    - type: Clothing # BF14
+      quickEquip: true
+      slots:
+      - ARMBANDLEFT
+      - ARMBANDRIGHT
     - type: Item
       heldPrefix: tourniquet
+      size: Tiny # BF14
     - type: Healing
       damageContainers:
         - Biological
       damage:
         groups:
-          Brute: 5 # Tourniquets HURT!
+          Brute: -5 # BF14 removed blunt damage because this would just make you keep bleeding
         types:
           Asphyxiation: 5 # Essentially Stopping all blood reaching a part of your body
       bloodlossModifier: -10 # Tourniquets stop bleeding
@@ -319,7 +330,7 @@
       types:
         Slash: -15 # Was 5
         Piercing: -20 # Was 10, Buffed due to limb damage changes (Goobstation)
-    bloodlossModifier: -10
+    bloodlossModifier: -6 #BF14 -10 > -6
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
@@ -401,7 +412,7 @@
 # Pills
 - type: entity
   name: pill
-  suffix: Dexalin 10u
+  suffix: Dexalin 15u # BF14
   parent: Pill
   id: PillDexalin
   components:
@@ -410,31 +421,31 @@
   - type: Sprite
     state: pill16
   - type: Label
-    currentLabel: dexalin 10u
+    currentLabel: dexalin 15u # BF14
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 20
         reagents:
         - ReagentId: Dexalin
-          Quantity: 10
+          Quantity: 15 # BF14
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterDexalin
-  suffix: Dexalin 10u, 7
+  suffix: Dexalin 15u, 15 # BF14
   components:
   - type: Label
-    currentLabel: dexalin 10u
+    currentLabel: dexalin 15u # BF14
   - type: StorageFill
     contents:
     - id: PillDexalin
-      amount: 7
+      amount: 15 # BF14
 
 - type: entity
   name: pill
-  suffix: Dylovene 10u
+  suffix: Dylovene 15u # BF14
   parent: Pill
   id: PillDylovene
   components:
@@ -443,27 +454,27 @@
   - type: Sprite
     state: pill10
   - type: Label
-    currentLabel: dylovene 10u
+    currentLabel: dylovene 15u # BF14
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 20
         reagents:
         - ReagentId: Dylovene
-          Quantity: 10
+          Quantity: 15 # BF14
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterDylovene
-  suffix: Dylovene 10u, 5
+  suffix: Dylovene 15u, 15 # BF14
   components:
   - type: Label
-    currentLabel: dylovene 10u
+    currentLabel: dylovene 15u # BF14
   - type: StorageFill
     contents:
     - id: PillDylovene
-      amount: 5
+      amount: 15 # BF14
 
 - type: entity
   name: pill
@@ -489,14 +500,14 @@
   name: pill canister
   parent: PillCanister
   id: PillCanisterHyronalin
-  suffix: Hyronalin 10u, 5
+  suffix: Hyronalin 10u, 15 # BF14
   components:
   - type: Label
     currentLabel: hyronalin 10u
   - type: StorageFill
     contents:
     - id: PillHyronalin
-      amount: 5
+      amount: 15 # BF14
 
 - type: entity
   name: pill
@@ -522,14 +533,14 @@
   name: pill canister
   parent: PillCanister
   id: PillCanisterPotassiumIodide
-  suffix: Potassium iodide 10u, 5
+  suffix: Potassium iodide 10u, 15 # BF14
   components:
   - type: Label
     currentLabel: potassium iodide 10u
   - type: StorageFill
     contents:
     - id: PillPotassiumIodide
-      amount: 5
+      amount: 15 # BF14
 
 - type: entity
   name: pill
@@ -575,31 +586,31 @@
   name: pill canister
   parent: PillCanister
   id: PillCanisterIron
-  suffix: Iron 10u, 5
+  suffix: Iron 10u, 15 # BF14
   components:
   - type: Label
     currentLabel: iron 10u
   - type: StorageFill
     contents:
     - id: PillIron
-      amount: 5
+      amount: 15 # BF14
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterCopper
-  suffix: Copper 10u, 5
+  suffix: Copper 10u, 15 # BF14
   components:
   - type: Label
     currentLabel: copper 10u
   - type: StorageFill
     contents:
     - id: PillCopper
-      amount: 5
+      amount: 15 # BF14
 
 - type: entity
   name: pill
-  suffix: Kelotane 10u
+  suffix: Kelotane 15u # BF14
   parent: Pill
   id: PillKelotane
   components:
@@ -608,31 +619,31 @@
   - type: Sprite
     state: pill4
   - type: Label
-    currentLabel: kelotane 10u
+    currentLabel: kelotane 15u # BF14
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 20
         reagents:
         - ReagentId: Kelotane
-          Quantity: 10
+          Quantity: 15 # BF14
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterKelotane
-  suffix: Kelotane 10u, 5
+  suffix: Kelotane 15u, 15 # BF14
   components:
   - type: Label
-    currentLabel: kelotane 10u
+    currentLabel: kelotane 15u # BF14
   - type: StorageFill
     contents:
     - id: PillKelotane
-      amount: 5
+      amount: 15 # BF14
 
 - type: entity
   name: pill
-  suffix: Dermaline 10u
+  suffix: Dermaline 7.5u # BF14
   parent: Pill
   id: PillDermaline
   components:
@@ -641,27 +652,27 @@
   - type: Sprite
     state: pill8
   - type: Label
-    currentLabel: dermaline 10u
+    currentLabel: dermaline 7.5u # BF14
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 20
         reagents:
         - ReagentId: Dermaline
-          Quantity: 10
+          Quantity: 7.5 # BF14
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterDermaline
-  suffix: Dermaline 10u, 5
+  suffix: Dermaline 7.5u, 15 # BF14
   components:
   - type: Label
-    currentLabel: dermaline 10u
+    currentLabel: dermaline 7.5u # BF14
   - type: StorageFill
     contents:
     - id: PillDermaline
-      amount: 5
+      amount: 15 # BF14
 
 - type: entity
   name: space mirage
@@ -678,7 +689,7 @@
 
 - type: entity
   name: pill
-  suffix: Tricordrazine 10u
+  suffix: Tricordrazine 15u # BF14
   parent: Pill
   id: PillTricordrazine
   components:
@@ -687,34 +698,31 @@
   - type: Sprite
     state: pill3
   - type: Label
-    currentLabel: tricordrazine 10u
+    currentLabel: tricordrazine 15u # BF14
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 20
         reagents:
         - ReagentId: Tricordrazine
-          Quantity: 10
+          Quantity: 15 # BF14
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterTricordrazine
-  suffix: Tricordrazine 10u, 5
+  suffix: Tricordrazine 15u, 15 # BF14
   components:
   - type: Label
-    currentLabel: tricordrazine 10u
+    currentLabel: tricordrazine 15u # BF14
   - type: StorageFill
     contents:
     - id: PillTricordrazine
-      amount: 5
-  - type: StaticPrice #Mono
-    price: 0
-    vendPrice: 675
+      amount: 15 # BF14
 
 - type: entity
   name: pill
-  suffix: Bicaridine 10u
+  suffix: Bicaridine 15u # BF14
   parent: Pill
   id: PillBicaridine
   components:
@@ -723,27 +731,27 @@
   - type: Sprite
     state: pill5
   - type: Label
-    currentLabel: bicaridine 10u
+    currentLabel: bicaridine 15u # BF14
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 20
         reagents:
         - ReagentId: Bicaridine
-          Quantity: 10
+          Quantity: 15 # BF14
 
 - type: entity
   name: pill canister
   parent: PillCanister
   id: PillCanisterBicaridine
-  suffix: Bicaridine 10u, 5
+  suffix: Bicaridine 10u, 15 # BF14
   components:
   - type: Label
-    currentLabel: bicaridine 10u
+    currentLabel: bicaridine 15u # BF14
   - type: StorageFill
     contents:
     - id: PillBicaridine
-      amount: 5
+      amount: 15 # BF14
 
 - type: entity
   name: pill
@@ -769,14 +777,14 @@
   name: pill canister
   parent: PillCanister
   id: PillCanisterCharcoal
-  suffix: Charcoal 10u, 3
+  suffix: Charcoal 10u, 15 # BF14
   components:
   - type: Label
     currentLabel: charcoal 10u
   - type: StorageFill
     contents:
     - id: PillCharcoal
-      amount: 3
+      amount: 15 # BF14
 
 - type: entity
   name: romerol pill

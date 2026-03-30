@@ -1,0 +1,72 @@
+## Misc, power weapons
+
+- type: entity
+  parent: CrateBaseSecure
+  id: CratePowerWeapon
+  name: power weapon crate
+  description: It's shut tight and heavily reinforced, but someone with high access could probably open it.
+  suffix: power weapon
+  components:
+  - type: Icon
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/sec_gear.rsi
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750000000 # so you cant just magdump it lol you need to unlock it
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: AccessReader
+    access: [ ["NATOCommand"] , ["PACTCommand"] ]
+
+- type: entity
+  id: CratePowerWeaponFilledM107
+  suffix: Filled, M107
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperUSM107
+        - id: BoxMagazineM107
+
+- type: entity
+  id: CratePowerWeaponFilledUSAS12
+  suffix: Filled, USAS-12
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunUSUSAS12Frag
+        - id: MagazineShotgunUSASDrum
+          amount: 2
+        - id: MagazineShotgunUSASDrumFrag
+          amount: 1
+
+- type: entity
+  id: CratePowerWeaponFilledAEK971
+  suffix: Filled, AEK-971
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleRUAEK971
+        - id: BoxMagazineAK74
+
+- type: entity
+  id: CratePowerWeaponFilledXM25
+  suffix: Filled, XM25
+  parent: CratePowerWeapon
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSXM25
+        - id: BoxMagazineXM25Mixed

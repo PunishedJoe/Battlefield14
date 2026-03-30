@@ -1,4 +1,3 @@
 - type: roundAnnouncement
   id: Welcome
-  # sound: /Audio/_NF/Announcements/welcome.ogg # Frontier: SOON
-  sound: /Audio/Announcements/welcome.ogg
+  sound: /Audio/_Battlefield14/Announcements/welcome.ogg # BF14

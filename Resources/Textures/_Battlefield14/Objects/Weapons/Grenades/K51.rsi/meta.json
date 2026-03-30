@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Civ13 at https://github.com/Civ13/Civ13/pull/1969/commits/b2d2c6adb358384a73083d00f946f3fc50bdf144",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "base"
+        },
+        {
+            "name": "primed"
+        }
+    ]
+}

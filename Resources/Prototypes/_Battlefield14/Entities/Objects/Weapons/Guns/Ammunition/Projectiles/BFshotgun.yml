@@ -1,0 +1,122 @@
+- type: entity
+  id: PelletShotgunBF12Gauge
+  name: 12 gauge shotgun pellet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Structural: 2
+    armorPenetration: -0.3
+  - type: StaminaDamageOnCollide
+    damage: 3 # ~33 hits to stun
+
+- type: entity
+  id: SlugShotgunBF12Gauge
+  name: 12 gauge shotgun slug
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 67
+        Structural: 50
+    armorPenetration: -0.2
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~6 hits to stun
+
+- type: entity
+  id: PelletShotgunBF12GaugeBreaching
+  name: 12 gauge breaching pellet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 4
+        Slash: 4
+        Piercing: 4
+        Structural: 100
+    armorPenetration: 0.15
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+  - type: TimedDespawn
+    lifetime: 0.2
+
+- type: entity
+  id: PelletShotgunBF12GaugeFrag
+  name: 12 gauge frag pellet
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 15
+        Heat: 15
+        Structural: 15
+    armorPenetration: -0.15
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 0.5
+    intensitySlope: 0.5
+    maxIntensity: 0.5
+    maxTileBreak: 0
+
+# 4 gauge
+
+- type: entity
+  id: PelletShotgunBF4Gauge
+  name: 4 gauge shotgun pellet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 27
+        Structural: 3
+    armorPenetration: -0.3
+  - type: StaminaDamageOnCollide
+    damage: 9 # ~11-12 hits to stun
+
+- type: entity
+  id: SlugShotgunBF4Gauge
+  name: 4 gauge barricade slug
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 15
+        Piercing: 75
+        Structural: 500 # this is made to take out engine blocks at 100 meters
+    armorPenetration: -0.2
+  - type: StaminaDamageOnCollide
+    damage: 20 # ~5 hits to stun | if this is any higher you will one-shot stun anyone with a plate

@@ -1,0 +1,135 @@
+# US
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCamoUS
+  name: american camo jumpsuit
+  description: FUCK I THINK THAT WAS A CIVILIAN.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
+  - type: Faction
+    factionId: "Nato"
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryGenetics
+  id: ClothingUniformJumpsuitSpaceForceCrewman
+  name: USSF crewman uniform
+  description: A full uniform for crew aboard United States Space Force vessels.
+  components:
+  - type: Faction
+    factionId: "Nato"
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
+  id: ClothingUniformJumpsuitSpaceForceCaptain
+  name: USSF captain uniform
+  description: A full uniform for captains aboard United States Space Force vessels.
+  components:
+  - type: Faction
+    factionId: "Nato"
+
+- type: entity
+  parent: ClothingUniformJumpsuitCombatSuitUrbanWhite
+  id: ClothingUniformJumpsuitCamoUSM81Urban
+  name: M81 urban BDU
+  description: A recolour of M81 woodland to blend in better to urban areas.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
+  - type: Faction
+    factionId: "Nato"
+
+# RU
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCamoRU
+  name: russian camo jumpsuit
+  description: Helo zelenski, its donetsk children.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
+  - type: Faction
+    factionId: "Warpact"
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCamoRUEMR
+  name: russian camo jumpsuit (EMR)
+  description: Helo zelenski, its donetsk children.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
+  - type: Faction
+    factionId: "Warpact"
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryColorGrey
+  id: ClothingUniformJumpsuitVKSCrewman
+  name: VKS crewman uniform
+  description: A full uniform for crew aboard Russian Aerospace Forces vessels.
+  components:
+  - type: Faction
+    factionId: "Warpact"
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryCaptain # TODO better/unique sprites
+  id: ClothingUniformJumpsuitVKSCaptain
+  name: VKS captain uniform
+  description: A full uniform for captains aboard Russian Aerospace Forces vessels.
+  components:
+  - type: Faction
+    factionId: "Warpact"
+
+- type: entity
+  parent: ClothingUniformJumpsuitCombatSuitUrbanWhite
+  id: ClothingUniformJumpsuitCamoRUDigitalRed
+  name: red digital camo BDU
+  suffix: BF14 USE THIS
+  description: A modern symbol of Russian irredentism, known for its widespread use during the 3 hour long battle of Warsaw.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_red.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_red.rsi
+  - type: SuitSensor
+    randomMode: false
+    mode: SensorVitals
+  - type: Faction
+    factionId: "Warpact"
+
+# MISC
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUtilityCrewblack
+  name: black crew utility uniform
+  description: Used on spacecraft/stations with assigned missions.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_crew.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_crew.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUtilityCrewblackSec
+  name: black security utility uniform
+  description: Used on spacecraft/stations with assigned missions.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_sec.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/black_utility_sec.rsi

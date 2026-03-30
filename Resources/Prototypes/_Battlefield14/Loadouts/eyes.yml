@@ -1,0 +1,43 @@
+- type: loadout
+  id: LoadoutEyesGlassesBallisticGogglesTan
+  equipment:
+    eyes: ClothingEyesGogglesTan
+
+- type: loadout
+  id: LoadoutEyesGlassesBallisticGogglesGreen
+  equipment:
+    eyes: ClothingEyesGogglesGreen
+
+
+- type: loadout
+  id: LoadoutEyesGlassesBallisticTriMaxBlack
+  equipment:
+    eyes: RMCGlassesTriMaxBlack
+
+- type: loadout
+  id: LoadoutEyesGlassesBallisticTriMaxBronze
+  equipment:
+    eyes: RMCGlassesTriMaxBronze
+    
+- type: loadout
+  id: LoadoutEyesGlassesBallisticTriMaxYellow
+  equipment:
+    eyes: RMCGlassesTriMaxYellow
+
+
+# no hud trimax'
+- type: loadout
+  id: LoadoutEyesGlassesBallisticTriMaxBlackNohud
+  equipment:
+    eyes: RMCGlassesTriMaxBlackNohud
+
+- type: loadout
+  id: LoadoutEyesGlassesBallisticTriMaxBronzeNohud
+  equipment:
+    eyes: RMCGlassesTriMaxBronzeNohud
+
+        
+- type: loadout
+  id: LoadoutEyesGlassesBallisticTriMaxYellowNohud
+  equipment:
+    eyes: RMCGlassesTriMaxYellowNohud

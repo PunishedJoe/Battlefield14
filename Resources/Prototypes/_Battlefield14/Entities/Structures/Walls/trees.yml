@@ -1,0 +1,99 @@
+- type: entity
+  id: BaseTreeIndestructible
+  description: Yep, it's a tree.
+  abstract: true
+  components:
+  - type: SpriteFade
+  - type: Clickable
+  - type: Sprite
+    noRot: true
+    sprite: Objects/Decoration/Flora/flora_trees.rsi
+    drawdepth: Overdoors
+    offset: 0,0.9
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.4,0.35,0.4"
+        density: 1000
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+
+- type: entity
+  parent: BaseTreeIndestructible
+  id: TreeIndestructible
+  name: tree
+  suffix: indestructible
+  components:
+  - type: Sprite
+    layers:
+    - state: tree01
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        tree01: ""
+        tree02: ""
+        tree03: ""
+        tree04: ""
+        tree05: ""
+        tree06: ""
+
+- type: entity
+  parent: BaseTreeIndestructible
+  id: TreeIndestructibleOpaque
+  name: tree
+  suffix: indestructible
+  components:
+  - type: Sprite
+    layers:
+    - state: tree01
+      map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        tree01: ""
+        tree02: ""
+        tree03: ""
+        tree04: ""
+        tree05: ""
+        tree06: ""
+  - type: Occluder
+
+- type: entity
+  id: BF14IndestructibleTreeSpawner
+  parent: MarkerBase
+  name: indestructible tree spawner
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+  - type: RandomSpawner
+    prototypes:
+    - TreeIndestructible
+    chance: 1
+
+- type: entity
+  id: BF14IndestructibleTreeSpawnerOpaque
+  parent: MarkerBase
+  name: Opaque indestructible tree spawner
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+  - type: RandomSpawner
+    prototypes:
+    - TreeIndestructibleOpaque
+    chance: 1

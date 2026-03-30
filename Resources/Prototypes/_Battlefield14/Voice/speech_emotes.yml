@@ -1,0 +1,85 @@
+# Clean for raw audio
+# Mask for audio with a gas mask filter
+
+- type: emote
+  id: GruntUSMedicClean
+  name: chat-emote-name-grunt-us-medic
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/medic.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-medic"]
+  chatTriggers:
+    - screams for a medic
+    - medic
+    - corpsman
+    - doc
+    - doctor
+
+- type: emote
+  id: GruntUSContactClean
+  name: chat-emote-name-grunt-us-contact
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/contact.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-contact"]
+  chatTriggers:
+    - yells contact
+    - contact
+    - contacts
+    - enemy
+    - enemies
+    - hostile
+    - hostiles
+    - movement
+    - target
+    - targets
+
+- type: emote
+  id: GruntUSChargeClean
+  name: chat-emote-name-grunt-us-charge
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/charge.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-charge"]
+  chatTriggers:
+    - urges you to push forward
+    - charge
+    - push
+    - attack
+    - forward
+
+- type: emote
+  id: GruntUSGrenadeThrowingClean
+  name: chat-emote-name-grunt-us-grenadethrowing
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/grenadeout.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-grenadethrowing"]
+  chatTriggers:
+    - is throwing a grenade
+    - grenade out
+    - nade out
+    - frag out
+
+- type: emote
+  id: GruntUSGrenadeSurprisedClean
+  name: chat-emote-name-grunt-us-grenadesurprised
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/grenadesurprised.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-grenadesurprised"]
+  chatTriggers:
+    - spots a grenade
+    - grenade
+    - nade
+    - frag

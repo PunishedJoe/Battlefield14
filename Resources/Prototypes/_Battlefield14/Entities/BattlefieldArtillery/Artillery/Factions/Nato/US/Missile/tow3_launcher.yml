@@ -1,0 +1,99 @@
+# TOW3 Missile System Launcher
+- type: entity
+  id: WeaponTurretTOW3
+  name: TOW-3 Missile System
+  parent: BattlefieldArtilleryCartridge
+  description: A third generation, wire-guided anti-armor missile system adapted for naval remote launch platforms. Primarily fielded by U.S. vessels and select NATO allies. Highly effective against armored targets at range. Does not rotate.
+  suffix: BF14, NATO, US
+  components:
+  - type: StaticPrice
+    price: 6000
+  - type: Sprite
+    sprite: _Mono/Objects/ShuttleWeapons/vanyk.rsi
+    layers:
+    - state: space_artillery
+  - type: Appearance
+  - type: AmmoCounter
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 0
+    fireRate: 0.5
+    shootThermalSignature: 4000000
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 250
+    powerUsePassive: 600
+    powerUseActive: 0
+  - type: Actions
+  - type: BallisticAmmoProvider
+    infiniteUnspawned: false
+    whitelist:
+      tags:
+      - TOW3Cartridge
+    capacity: 4
+    proto: TOW3Cartridge
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+#  - type: RadarBlip
+#    radarColor: "#FCBA03"
+#    scale: 2
+  - type: ShipGunType
+    shipType: Missile
+  - type: ShipGunClass
+    shipClass: Medium
+
+- type: entity
+  id: TOW3Cartridge
+  name: cartridge (TOW-3)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - TOW3Cartridge
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: BulletTOW3
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 800
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:ExplodeBehavior
+  - type: Explosive
+    explosionType: Default
+    maxIntensity: 100
+    intensitySlope: 3
+    totalIntensity: 5
+  - type: ExplodeOnTrigger
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+

@@ -124,12 +124,14 @@
   components:
   - type: StorageFill
     contents:
-    - id: OxygenTankFilled
-    - id: NitrogenTankFilled
-    - id: UndeterminedVoidsuitParamedic
+    - id: DoubleEmergencyOxygenTankFilled # BF14
+#BF14    - id: NitrogenTankFilled
+    - id: ClothingOuterHardsuitVoidParamed # BF14 | I made voidsuit selectors, and I can remove them -Joe
     - id: ClothingMaskBreathMedical
-    - id: JetpackMiniFilled
-    - id: FlashlightLantern
+    - id: JetpackBlueFilled # BF14
+    - id: ClothingShoesBootsMag # BF14
+    - id: HandheldGPSBasic # BF14
+    - id: HandHeldMassScanner # BF14
 
 - type: entity
   abstract: true

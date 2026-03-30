@@ -866,6 +866,22 @@
     - TsfmcEngineering # Mono
     - GrandVizier
     - PDVCommand # Mono
+    - NATOCommon # BF14 V
+    - NATOCommand
+    - NATOMaintenance
+    - NATOSoldier
+    - NATOArmory
+    - NATOFunds
+    - NATOCrew
+    - NATOCaptain
+    - PACTCommon
+    - PACTCommand
+    - PACTMaintenance
+    - PACTSoldier
+    - PACTArmory
+    - PACTFunds
+    - PACTCrew
+    - PACTCaptain # BF14 ^
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener

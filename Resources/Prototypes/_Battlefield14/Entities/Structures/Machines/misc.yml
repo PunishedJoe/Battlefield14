@@ -1,0 +1,90 @@
+- type: entity
+  id: BaseComputerShuttleGracePeriod
+  name: shuttle console
+  description: Used to pilot a shuttle. Currently on cooldown.
+  suffix: grace period, 600s/10m
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: generic
+    - map: ["computerLayerKeys"]
+      state: generic_keys
+  - type: Appearance
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: ActiveTimerTrigger
+    timeRemaining: 600
+  - type: SpawnOnTrigger
+    proto: ComputerShuttle
+  - type: DeleteOnTrigger
+
+- type: entity
+  id: BlastDoorGracePeriod
+  parent: BaseStructure
+  name: shutter
+  description: One shudders to think about what might be behind this shutter.
+  suffix: grace period, 600s/10m
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Shutters/blastdoor.rsi
+    drawdepth: BlastDoors
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
+        density: 100
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer
+  - type: NavMapDoor
+  - type: Tag
+    tags:
+    - ForceNoFixRotations # Don't want the fixrotations command to target these
+  - type: Appearance
+  - type: Airtight
+  - type: RadiationBlocker
+    resistance: 20
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  - type: InteractionPopup
+    interactSuccessString: comp-window-knock
+    messagePerceivedByOthers: comp-window-knock
+    interactSuccessSound:
+      path: /Audio/Effects/glass_knock.ogg
+  - type: ActiveTimerTrigger
+    timeRemaining: 600
+  - type: DeleteOnTrigger
+  - type: Occluder

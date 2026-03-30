@@ -1,0 +1,446 @@
+## NATO
+# US
+# Weapons
+- type: listing
+  id: UplinkNATOUSM249Para
+  name:  uplink-natous-m249para-name
+  description: uplink-natous-m249para-desc
+  productEntity: CrateSecgearNATOFilledM249Para
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M249Para.rsi, state: icon }
+  cost:
+    NATORequisition: 100 # 16 minutes 40 seconds approx
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSSMAW
+  name:  uplink-natous-SMAWcrate-name
+  description: uplink-natous-SMAWcrate-desc
+  productEntity: CrateSecgearNATOFilledSMAW
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAW.rsi, state: icon }
+  cost:
+    NATORequisition: 80 # 13 minutes 20 seconds approx
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink # USMC, give the regular army and airborne M3 MAAWS
+
+- type: listing
+  id: UplinkNATOUSAT4
+  name:  uplink-natous-AT4crate-name
+  description: uplink-natous-AT4crate-desc
+  productEntity: CrateSecgearNATOFilledAT4
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/AT4.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSSMAWDisposable
+  name:  uplink-natous-SMAWDcrate-name
+  description: uplink-natous-SMAWDcrate-desc
+  productEntity: CrateSecgearNATOFilledSMAWDisposable
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAWD.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSStinger
+  name:  uplink-natous-stingercrate-name
+  description: uplink-natous-stingercrate-desc
+  productEntity: CrateSecgearNATOFilledStinger
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/stinger.rsi, state: icon }
+  cost:
+    NATORequisition: 24 # 4 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM320
+  name:  uplink-natous-m320-name
+  description: uplink-natous-m320-desc
+  productEntity: CrateSecgearNATOFilledM320
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM27IARCrate
+  name:  uplink-natous-m27iarcrate-name
+  description: uplink-natous-m27iarcrate-desc
+  productEntity: CrateSecgearNATOFilledM27IAR
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M27-IAR.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM16A4Crate
+  name:  uplink-natous-m16a4crate-name
+  description: uplink-natous-m16a4crate-desc
+  productEntity: CrateSecgearNATOFilledM16A4
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M16A4.rsi, state: icon }
+  cost:
+    NATORequisition: 6 # 1 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM4A1Crate
+  name:  uplink-natous-m4a1crate-name
+  description: uplink-natous-m4a1crate-desc
+  productEntity: CrateSecgearNATOFilledM4A1
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M4A1.rsi, state: icon }
+  cost:
+    NATORequisition: 12 # 2 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM870Crate
+  name:  uplink-NATOUS-m870crate-name
+  description: uplink-NATOUS-m870crate-desc
+  productEntity: CrateSecgearNATOFilledM870
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M870.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM590Crate
+  name:  uplink-NATOUS-m590crate-name
+  description: uplink-NATOUS-m590crate-desc
+  productEntity: CrateSecgearNATOFilledM590
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Shotguns/Helepolis.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM14EBRCrate
+  name:  uplink-NATOUS-M14EBRcrate-name
+  description: uplink-NATOUS-M14EBRcrate-desc
+  productEntity: CrateSecgearNATOFilledM14EBR
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/M14EBR.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Ammo
+
+- type: listing
+  id: UplinkNATOUSAmmoBox
+  name:  uplink-natous-ammo-box-name
+  description: uplink-natous-ammo-box-desc
+  productEntity: SupplyBoxAmmoUSFilled
+  icon: { sprite: _Battlefield14/Objects/Misc/ammoboxus.rsi, state: icon }
+  cost:
+    NATORequisition: 16 # 2 minutes 40 seconds
+  categories:
+    - UplinkNATOUSAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Armour
+
+- type: listing
+  id: UplinkNATOUSEVAKitCombat
+  name:  uplink-natous-evakit-combat-name
+  description: uplink-natous-evakit-combat-desc
+  productEntity: EVAKitCombatUSMC
+  icon: { sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/americancombatmarine.rsi, state: icon }
+  cost:
+    NATORequisition: 6 # 1 minute
+  categories:
+    - UplinkNATOUSArmour
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Utility
+
+- type: listing
+  id: UplinkNATOUSFUBAR
+  name:  uplink-natous-FUBAR-name
+  description: uplink-natous-FUBAR-desc
+  productEntity: FUBAR
+  icon: { sprite: _NF/Objects/Tools/maintenance-jack.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+## Medical
+#
+#- type: listing
+#  id: UplinkNATOUSCombatMedkit
+#  name:  uplink-natous-medkit-combat-name
+#  description: uplink-natous-medkit-combat-desc
+#  productEntity: MedkitCombatFilled
+#  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+#  cost:
+#    NATORequisition: 15 # 2 minutes 30 seconds
+#  categories:
+#    - UplinkNATOUSMedical
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - AmericanUplink
+
+# Explosives
+
+- type: listing
+  id: UplinkNATOUSBoxGrenadesMK21
+  name:  uplink-natous-mk21-box-name
+  description: uplink-natous-mk21-box-desc
+  productEntity: BoxGrenadesMK21
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSBoxGrenadesM84
+  name:  uplink-natous-m84-box-name
+  description: uplink-natous-m84-box-desc
+  productEntity: BoxGrenadesM84
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi, state: icon }
+  cost:
+    NATORequisition: 9 # 1 minute 30 seconds
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSBoxGrenadesM18
+  name:  uplink-natous-m18-box-name
+  description: uplink-natous-m18-box-desc
+  productEntity: BoxGrenadesM18
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/M18.rsi, state: icon }
+  cost:
+    NATORequisition: 9 # 1 minute 30 seconds
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSMK21Sword
+  name:  uplink-natous-mk21-sword-name
+  description: uplink-natous-mk21-sword-desc
+  productEntity: MK21HandgrenadeSword
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/MK21sword.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM320BoxHE
+  name:  uplink-natous-40x46mm-he-name
+  description: uplink-natous-40x46mm-he-desc
+  productEntity: BoxMagazine40x46HE
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM320BoxFrag
+  name:  uplink-natous-40x46mm-frag-name
+  description: uplink-natous-40x46mm-frag-desc
+  productEntity: BoxMagazine40x46Frag
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM320BoxHEDP
+  name:  uplink-natous-40x46mm-hedp-name
+  description: uplink-natous-40x46mm-hedp-desc
+  productEntity: BoxMagazine40x46HEDP
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: frag }
+  cost:
+    NATORequisition: 30 # 5 minutes
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM320BoxMPAPERS
+  name:  uplink-natous-40x46mm-mpapers-name
+  description: uplink-natous-40x46mm-mpapers-desc
+  productEntity: BoxMagazine40x46mmMPAPERS
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/40x46mm.rsi, state: apers }
+  cost:
+    NATORequisition: 12 # 2 minutes
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM320BoxPlasmaGas
+  name:  uplink-natous-40x46mm-plasma-name
+  description: uplink-natous-40x46mm-plasma-desc
+  productEntity: BoxMagazine40x46PlasmaGas
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: emp }
+  cost:
+    NATORequisition: 60 # 10 minutes
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkNATOUSM320BoxChemicalSmoke
+  name:  uplink-natous-40x46mm-smoke-name
+  description: uplink-natous-40x46mm-smoke-desc
+  productEntity: BoxMagazine40x46ChemicalSmoke
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi, state: blast }
+  cost:
+    NATORequisition: 9 # 1 minute 30 seconds
+  categories:
+    - UplinkNATOUSExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Ship weapons
+
+- type: listing
+  id: UplinkNATOUS25mmAPDS
+  name:  uplink-natous-M242-APDS-name
+  description: uplink-natous-M242-APDS-desc
+  productEntity: Magazine30mmFrag
+  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
+  cost:
+    NATORequisition: 15
+  categories:
+    - UplinkNATOUSShipAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink

@@ -19,6 +19,7 @@ namespace Content.Server.Entry
             "InventorySlots",
             "LightFade",
             "HolidayRsiSwap",
+            "RotationDrawDepth", // RMC14
             "OptionsVisualizer"
         };
     }

@@ -1,0 +1,62 @@
+- type: entity
+  name: Marine combat EVA kit
+  parent: BoxCardboard
+  id: EVAKitCombatUSMC
+  description: A kit containing everything needed to survive and thrive in space. Marine edition.
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+    whitelist:
+      tags:
+        - FitsInVoidsuitKit
+        - Crowbar
+        - Wrench
+        - GPS
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterVoidsuitAmericanCombatMarine
+      - id: ClothingShoesBootsMagAshenFilled
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: HandHeldMassScanner
+      - id: HandheldGPSBasic
+      - id: CrowbarRed
+  - type: Sprite
+    layers:
+      - state: boxwide
+      - state: extendedtank
+
+- type: entity
+  name: Russian combat EVA kit
+  parent: BoxCardboard
+  id: EVAKitCombatRU
+  description: A kit containing everything needed to survive and thrive in space. Ruski edition.
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,6,3
+    whitelist:
+      tags:
+        - FitsInVoidsuitKit
+        - Crowbar
+        - Wrench
+        - GPS
+        - GasTank
+  - type: StorageFill
+    contents:
+      - id: ClothingOuterVoidsuitRussianCombat
+      - id: ClothingShoesBootsMagAshenFilled
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: HandHeldMassScanner
+      - id: HandheldGPSBasic
+      - id: CrowbarRed
+  - type: Sprite
+    layers:
+      - state: boxwide
+      - state: extendedtank

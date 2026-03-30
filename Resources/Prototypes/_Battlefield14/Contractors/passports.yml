@@ -1,0 +1,111 @@
+#- type: entity
+#  name: European passport
+#  parent: BasePassport
+#  id: EuropeanPassport
+#  components:
+#    - type: Sprite
+#      sprite: _EE/Contractors/Passport.rsi
+#      layers:
+#      - state: passport_elyran_open
+#      - state: passport_species_human
+#   # - type: ExtendDescription
+#      descriptionList:
+#      - description: "european_view_european_passport"
+#        fontSize: 12
+#        color: "#2a740a"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - EuropeanUnion
+#      - description: "BF_american_view_european_passport"
+#        fontSize: 12
+#        color: "#1c89b1"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - AmericanBF14
+#      - description: "russian_view_european_passport"
+#        fontSize: 12
+#        color: "#1c89b1"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - Russian
+#
+#- type: entity
+#  name: American passport
+#  parent: BasePassport
+#  id: AmericanPassportBF14
+#  components:
+#    - type: Sprite
+#      sprite: _EE/Contractors/Passport.rsi
+#      layers:
+#      - state: passport_nederlandic_open
+#      - state: passport_species_human
+#   # - type: ExtendDescription
+#      descriptionList:
+#      - description: "BF_american_view_BF_american_passport"
+#        fontSize: 12
+#        color: "#2a740a"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - AmericanBF14
+#      - description: "russian_view_BF_american_passport"
+#        fontSize: 12
+#        color: "#1c89b1"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - Russian
+#      - description: "european_view_BF_american_passport"
+#        fontSize: 12
+#        color: "#1c89b1"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - EuropeanUnion
+#
+#- type: entity
+#  name: Russian passport
+#  parent: BasePassport
+#  id: RussianPassport
+#  components:
+#    - type: Sprite
+#      sprite: _EE/Contractors/Passport.rsi
+#      layers:
+#      - state: passport_adhomai_open
+#      - state: passport_species_human
+#   # - type: ExtendDescription
+#      descriptionList:
+#      - description: "russian_view_russian_passport"
+#        fontSize: 12
+#        color: "#2a740a"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - Russian
+#      - description: "BF_american_view_russian_passport"
+#        fontSize: 12
+#        color: "#1c89b1"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - AmericanBF14
+#      - description: "european_view_russian_passport"
+#        fontSize: 12
+#        color: "#1c89b1"
+#        requireDetailRange: true
+#        requirements:
+#        - !type:CharacterNationalityRequirement
+#          nationalities:
+#          - EuropeanUnion
+#

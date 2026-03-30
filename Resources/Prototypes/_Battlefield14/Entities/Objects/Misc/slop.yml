@@ -1,0 +1,108 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieSteamhappy
+  name: steamhappy plushie
+  description: A cute toy that resembles an emoji used in the steam chatting feature.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/steamhappy.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Extractable
+    grindableSolutionName: steamhappy
+  - type: SolutionContainerManager
+    solutions:
+      steamhappy:
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10
+
+- type: entity
+  parent: BaseItem
+  id: PlushieSteamhappyBombFake
+  name: steamhappy plushie
+  description: A cute toy that resembles an emoji used in the steam chatting feature.
+  suffix: FAKE BOMB, DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/steamhappy.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: OnUseTimerTrigger
+    delay: 1.45
+    beepSound:
+      path: "/Audio/_Battlefield14/Effects/YouAreGoingToDieFast.ogg"
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 3
+  - type: DeleteOnTrigger
+  - type: UseDelay
+    delay: 2.0
+  - type: Extractable
+    grindableSolutionName: steamhappy
+  - type: SolutionContainerManager
+    solutions:
+      steamhappy:
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10
+
+- type: entity
+  parent: BaseItem
+  id: PlushieSteamhappyBomb
+  suffix: BOMB, DO NOT MAP
+  name: steamhappy plushie
+  description: A cute toy that resembles an emoji used in the steam chatting feature.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/steamhappy.rsi
+    state: icon
+  - type: Item
+    size: Normal
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: PowerSink
+    totalIntensity: 600
+    intensitySlope: 4
+    maxIntensity: 150
+    maxTileBreak: 4
+  - type: OnUseTimerTrigger
+    delay: 1.45
+    beepSound:
+      path: "/Audio/_Battlefield14/Effects/YouAreGoingToDieFast.ogg"
+      params:
+        volume: 5
+    initialBeepDelay: 0
+    beepInterval: 3
+  - type: TimerStartOnSignal
+#  - type: EmitSoundOnUse
+#    sound:
+#      path: "/Audio/_Battlefield14/Effects/YouAreGoingToDieFast.ogg"
+  - type: UseDelay
+    delay: 2.0
+  - type: Extractable
+    grindableSolutionName: steamhappy
+  - type: SolutionContainerManager
+    solutions:
+      steamhappy:
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: WhitePhosphorus
+          Quantity: 10

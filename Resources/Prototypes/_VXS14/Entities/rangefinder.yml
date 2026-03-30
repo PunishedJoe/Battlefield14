@@ -1,0 +1,17 @@
+- type: entity
+  name: laser rangefinder
+  parent: Binoculars
+  id: Rangefinder
+  description: Used for long-distance surveillance and rangefinding.
+  components:
+  - type: Sprite
+    sprite: _VXS14/Objects/binoculars.rsi
+    state: advanced
+  - type: Item
+    size: Normal
+  - type: Clothing
+    sprite: _VXS14/Objects/binoculars.rsi
+    quickEquip: false
+    slots:
+    - Neck
+  - type: Rangefinder

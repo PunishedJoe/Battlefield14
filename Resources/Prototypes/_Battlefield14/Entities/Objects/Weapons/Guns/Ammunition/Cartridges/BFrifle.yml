@@ -1,0 +1,180 @@
+- type: entity
+  id: BF_CartridgeRifle556x45
+  name: cartridge (5.56x45mm)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle556x45
+  - type: CartridgeAmmo
+    proto: BulletRifleBF556x45
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle545x39
+  name: cartridge (5.45x39mm)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle545x39
+  - type: CartridgeAmmo
+    proto: BulletRifleBF545x39
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle762x39
+  name: cartridge (7.62x39mm)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle762x39
+  - type: CartridgeAmmo
+    proto: BulletRifleBF762x39
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle762x51
+  name: cartridge (7.62x51mm)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle762x51
+  - type: CartridgeAmmo
+    proto: BulletRifleBF762x51
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle9x39
+  name: cartridge (9x39mm)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle9x39
+  - type: CartridgeAmmo
+    proto: BulletRifleBF9x39
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle762x54r
+  name: cartridge (7.62x54mmR)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle762x54r
+  - type: CartridgeAmmo
+    proto: BulletRifleBF762x54mmR
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle762x54rAP
+  name: cartridge (7.62x54mmR AP)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle762x54r
+  - type: CartridgeAmmo
+    proto: BulletRifleBF762x54mmRAP
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle127x55
+  name: cartridge (12.7x55)
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle127x55
+  - type: CartridgeAmmo
+    proto: BulletRifleBF127x55
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle127x55Duplex
+  name: cartridge (12.7x55) duplex
+  parent: BaseCartridge
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle127x55
+  - type: CartridgeAmmo
+    proto: BulletRifleBF127x55Duplex_Spread
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BulletRifleBF127x55Duplex_Spread
+  categories: [ HideSpawnMenu ]
+  parent: BulletRifleBF127x55Duplex
+  components:
+  - type: ProjectileSpread
+    proto: BulletRifleBF127x55Duplex
+    count: 2
+    spread: 2

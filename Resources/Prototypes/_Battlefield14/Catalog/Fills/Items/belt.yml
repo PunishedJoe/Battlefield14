@@ -1,0 +1,380 @@
+# US
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledSTANAG
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled Stanag
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleSTANAG
+        amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledMP5
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled MP5
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunMP5
+        amount: 8
+
+- type: entity
+  id: ClothingBeltCommandFilledUS
+  parent: ClothingBeltCommand
+  suffix: Filled, US
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolM9
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+      - id: Flash
+      - id: MagazinePistolM9
+        amount: 3
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckshot
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, 12 gauge, Buckshot
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 4
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlug
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, 12 gauge, Buck/Slug
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 3
+      - id: ShellBoxBF12GaugeSlug
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlugBreach
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, 12 gauge, Buck/Slug/Breach
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 2
+      - id: ShellBoxBF12GaugeSlug
+      - id: ShellBoxBF12GaugeBreaching
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledM249
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, M249/M9
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBeltBoxM249
+        amount: 2
+      - id: MagazinePistolM9
+        amount: 2
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingUSFilledSMAW
+  parent: ClothingBeltMilitaryWebbingUS
+  suffix: Filled, SMAW, HEAA/SMAW-NE
+  components:
+  - type: StorageFill
+    contents:
+      - id: CartridgeSMAWHEAA
+      - id: CartridgeSMAWHEDM
+
+# MARSOC
+
+- type: entity
+  id: ClothingBeltWebbingsNormalTanFilled68x52
+  parent: ClothingBeltWebbingsNormalTan
+  suffix: Filled, MARSOC rifleman, 6.8x52mm
+  components:
+  - type: StorageFill
+    contents:
+      - id: AmmoBox68x52mmCaseless
+      - id: Magazine68x52mmCaseless
+        amount: 7
+
+- type: entity
+  id: ClothingBeltWebbingsNormalBlackFilled68x52
+  parent: ClothingBeltWebbingsNormalBlack
+  suffix: Filled, MARSOC rifleman, 6.8x52mm
+  components:
+  - type: StorageFill
+    contents:
+      - id: AmmoBox68x52mmCaseless
+      - id: Magazine68x52mmCaseless
+        amount: 7
+
+- type: entity
+  id: ClothingBeltWebbingsNormalTanFilledMK48
+  parent: ClothingBeltWebbingsNormalTan
+  suffix: Filled, MARSOC autorifleman, MK48
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBeltBoxMK48
+        amount: 2
+      - id: MagazinePistolM9
+        amount: 2
+
+- type: entity
+  id: ClothingBeltWebbingsNormalBlackFilledMK48
+  parent: ClothingBeltWebbingsNormalBlack
+  suffix: Filled, MARSOC autorifleman, MK48
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineBeltBoxMK48
+        amount: 2
+      - id: MagazinePistolM9
+        amount: 2
+
+# RU
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledAK74
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled AK74
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK74
+        amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledAK12
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled AK12
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK12
+        amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledAK74blackdrum
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled 75 round drum
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK74blackdrum
+        amount: 4
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledAKMS
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled AKMS
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAKM
+        amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledVityaz
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled Vityaz
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunVityaz
+        amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledASVAL
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled AS-VAL
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleASVAL
+        amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledASVALShort
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled AS-VAL short
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleASVALShort
+        amount: 8
+
+- type: entity
+  id: ClothingBeltCommandFilledRU
+  parent: ClothingBeltCommand
+  suffix: Filled, RU
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolRevolverRUMP412
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+      - id: Flash
+      - id: SpeedLoader357magnum
+        amount: 3
+
+# MISC
+
+- type: entity
+  id: ClothingBeltStationSecurityFilled
+  parent: ClothingBeltStationSecurity
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolM9
+  - type: StorageFill
+    contents:
+      - id: Stunbaton
+      - id: Handcuffs
+        amount: 2
+      - id: Flash
+      - id: FlashlightSeclite
+      - id: MagazinePistolM9
+        amount: 2
+
+- type: entity
+  id: ClothingBeltMacheteFilled
+  parent: ClothingBeltMachete
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - Machete
+
+- type: entity
+  id: ClothingBeltAssaultFilledTools
+  parent: ClothingBeltAssault
+  suffix: Filled, tools
+  components:
+  - type: StorageFill
+    contents:
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: WelderIndustrial
+      - id: Multitool
+
+- type: entity
+  id: ClothingBeltAssaultFilledToolsRCD
+  parent: ClothingBeltAssault
+  suffix: Filled, tools, RCD
+  components:
+  - type: StorageFill
+    contents:
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: WelderIndustrial
+      - id: Multitool
+      - id: RCD
+
+- type: entity
+  id: ClothingBeltAssaultFilledToolsSRD
+  parent: ClothingBeltAssault
+  suffix: Filled, tools, SRD
+  components:
+  - type: StorageFill
+    contents:
+      - id: Crowbar
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: WelderIndustrial
+      - id: Multitool
+      - id: ShipRepairDevice
+
+- type: entity
+  id: ClothingBeltMedicalEMTFilledBF14Basic
+  parent: ClothingBeltMedicalEMT
+  suffix: Filled, BF14, Basic
+  components:
+  - type: StorageFill
+    contents:
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: AU14HemostaticGauzePacket
+      - id: Brutepack
+      - id: Ointment
+      - id: SyringeSaline
+      - id: SyringeInaprovaline
+      - id: PillCanisterTricordrazine
+      - id: PillCanisterDexalin
+      - id: Tourniquet
+        amount: 2
+      - id: FoodCondimentPacketKaolin
+
+- type: entity
+  id: ClothingBeltMedicalEMTFilledBF14
+  parent: ClothingBeltMedicalEMT
+  suffix: Filled, BF14, Combat medic
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: BF14HyposprayFilledBicaridine
+      - id: BF14HyposprayFilledKelotane
+      - id: BF14HyposprayFilledSaline
+      - id: BF14HyposprayFilledInaprovaline
+      - id: PillCanisterBicaridine
+      - id: PillCanisterKelotane
+      - id: PillCanisterTricordrazine
+#      - id: PillCanisterTramadol
+      - id: PillCanisterDylovene
+      - id: PillCanisterDexalin
+      - id: FoodCondimentPacketKaolin
+
+- type: entity
+  id: ClothingBeltMedicalEMTFilledBF14Pills
+  parent: ClothingBeltMedicalEMT
+  suffix: Filled, BF14, Pills
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: PillCanisterBicaridine
+      - id: PillCanisterKelotane
+      - id: PillCanisterTricordrazine
+#      - id: PillCanisterTramadol
+      - id: PillCanisterDylovene
+      - id: PillCanisterDexalin
+      - id: FoodCondimentPacketKaolin
+
+- type: entity
+  id: ClothingBeltMedicalEMTFilledBF14Hyposprays
+  parent: ClothingBeltMedicalEMT
+  suffix: Filled, BF14, Hyposprays
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedicatedSuture
+      - id: RegenerativeMesh
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: BF14HyposprayFilledBigBicaridine
+      - id: BF14HyposprayFilledBigKelotane
+#      - id: BF14HyposprayFilledBigTramadol
+      - id: BF14HyposprayFilledBigTricordrazine
+      - id: BF14HyposprayFilledBigDylovene
+      - id: BF14HyposprayFilledBigDexalin
+      - id: BF14HyposprayFilledSaline
+      - id: FoodCondimentPacketKaolin

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Bay12 at icons/obj/clothing/obj_accessories.dmi and icons/mob/onmob/onmob_goggle_mod.dmi",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "icon_flipped"
+    },
+    {
+      "name": "goggle"
+    },
+    {
+      "name": "equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "flipped-equipped-HELMET",
+      "directions": 4
+    }
+  ]
+}

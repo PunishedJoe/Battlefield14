@@ -24,11 +24,11 @@
   - type: Item
     size: Normal # Frontier Large<Normal
     shape:
-    - 0,0,2,2
+    - 0,0,1,1 # BF14 3x3 > 2x2
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,2,2
+    - 0,0,3,3
   - type: Sprite
     state: box
   - type: Tag
@@ -201,9 +201,16 @@
   - type: StorageFill
     contents:
       - id: DrinkMREFlask
-      - id: FoodSnackNutribrick
-      - id: FoodSnackMREBrownie
-      - id: FoodCondimentPacketKetchup
+#      - id: FoodSnackNutribrick # BF14 V
+#      - id: FoodSnackMREBrownie
+#      - id: FoodCondimentPacketKetchup
+      - id: FoodSnackNutribrickMRE
+      - id: FoodSnackEnergyMRE
+      - id: FoodMREPSB
+      - id: FoodBanana
+        prob: 0.35
+      - id: RockOrSomething # BF14 ^
+        prob: 0.1
   - type: Sprite
     layers:
       - state: box
@@ -259,7 +266,7 @@
   - type: StorageFill
     contents:
       - id: Flare
-        amount: 6
+        amount: 16 # BF14
   - type: Sprite
     layers:
       - state: box

@@ -1,0 +1,94 @@
+# 14.5mm Kord-N
+- type: Tag
+  id: Magazine127mmKordN
+
+- type: Tag
+  id: Cartridge127mmKordN
+
+# "Volna-N" 23mm Autocannon
+- type: Tag
+  id: Magazine23mmVolnaN
+
+- type: Tag
+  id: Magazine23mmAPT
+
+- type: Tag
+  id: Magazine23mmFrag
+
+- type: Tag
+  id: Cartridge23mmHE
+
+- type: Tag
+  id: Cartridge23mmAPT
+
+- type: Tag
+  id: Cartridge23mmFrag
+
+# A-300 "Grom-N" 30mm Autocannon
+- type: Tag
+  id: Magazine30mmGromN
+
+- type: Tag
+  id: Cartridge30mmAPDS
+
+- type: Tag
+  id: Cartridge30mmAPT
+
+- type: Tag
+  id: Cartridge30mmFrag
+
+- type: Tag
+  id: Cartridge30mmHEI
+
+- type: Tag
+  id: Magazine30mmAPT
+
+- type: Tag
+  id: Magazine30mmFrag
+
+# S-570 "Burevestnik-N" 57mm Heavy Cannon
+- type: Tag
+  id: Magazine57mmBurevestnikN
+
+- type: Tag
+  id: Cartridge57mmBurevestnikN
+
+# V-830 "Vasilek-N" 83mm Mortar
+- type: Tag
+  id: Magazine83mmVasilekN
+
+- type: Tag
+  id: Cartridge83mmMortar
+
+- type: Tag
+  id: Cartridge83mmMortarHEFrag
+
+- type: Tag
+  id: Cartridge83mmMortarIncendiary
+
+- type: Tag
+  id: Cartridge83mmMortarSteelCore
+
+- type: Tag
+  id: Cartridge83mmMortarSmoke
+
+- type: Tag
+  id: Cartridge83mmMortarCSGas
+
+- type: Tag
+  id: Cartridge83mmMortarSarin
+
+# K-1250 "Molot-N" 125mm Heavy Cannon
+- type: Tag
+  id: Magazine125mmMolotN
+
+- type: Tag
+  id: Cartridge125mm
+
+- type: Tag
+  id: Cartridge125mmAPFSDS
+
+# Kornet-N Guided Missile System Launcher
+
+- type: Tag
+  id: KornetNCartridge

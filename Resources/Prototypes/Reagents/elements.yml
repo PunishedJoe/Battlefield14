@@ -167,11 +167,10 @@
       effects:
       - !type:HealthChange
         conditions:
-        - !type:OrganType # Goobstation - Yowie
-          type: Yowie
-          shouldHave: false
+        - !type:ReagentThreshold
+          max: 20 # BF14
         - !type:OrganType
-          type: Arachnid
+          type: Arachnid # Keeping this in because why not
           shouldHave: true
         damage:
           types:
@@ -183,7 +182,7 @@
         - !type:OrganType
           type: Arachnid
           shouldHave: false
-        amount: 0.4
+        amount: 0.6 # BF14 0.4 > 0.6
 
 - type: reagent
   id: Lithium

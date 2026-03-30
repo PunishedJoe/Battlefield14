@@ -77,6 +77,9 @@
   - type: ShipyardConsole
     shipyardChannel: Nfsd
     newAccessLevels: [Captain, Security, Brig]
+  - type: ShipyardListing
+    shuttles:
+    - AAVP8
 
 - type: entity
   id: ComputerShipyardNfsd

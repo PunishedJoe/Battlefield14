@@ -77,6 +77,12 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
             // slightly uneven, doesn't really change much, but it looks better
             var direction = angle.ToVec().Normalized();
             var velocity = _random.NextVector2(component.MinVelocity, component.MaxVelocity);
+            
+            // Move fragment to offset position to prevent all fragments from hitting the same entity
+            var spawnOffset = direction * 0.5f; // Offset by 0.5 meters in the fragment's direction
+            var spawnCoord = new MapCoordinates(grenadeCoord.Position + spawnOffset, grenadeCoord.MapId);
+            _transformSystem.SetMapCoordinates(contentUid, spawnCoord);
+            
             _gun.ShootProjectile(contentUid, direction, velocity, uid, null);
         }
     }

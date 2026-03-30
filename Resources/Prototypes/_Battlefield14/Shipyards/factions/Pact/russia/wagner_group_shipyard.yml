@@ -1,0 +1,31 @@
+- type: entity
+  id: ComputerShipyardWagnerGroup
+  parent: ComputerShipyardBase
+  name: Wagner Group Shipyard
+  description: Used to buy ships from Wagner Group reserves.
+  components:
+  - type: ActivatableUI
+    key: enum.ShipyardConsoleUiKey.Custom
+  - type: UserInterface
+    interfaces:
+      enum.ShipyardConsoleUiKey.Custom:
+        type: ShipyardConsoleBoundUserInterface
+  - type: Sprite
+    sprite: _NF/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_blackmarket
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard
+    - map: ["computerLayerScreen"]
+      state: shipyard_blackmarket
+    - map: ["computerLayerKeys"]
+      state: blackmarket_key
+  - type: ShipyardConsole
+    shipyardChannel: Traffic
+    ignoreBaseSaleRate: true # Fixed 70% sale rate.
+    canTransferDeed: false
+  - type: ShipyardListing
+    shuttles:
+    - KTV1
+

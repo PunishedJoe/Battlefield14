@@ -1,0 +1,119 @@
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaMilitary
+  name: military balaclava
+  description: A synthetic material balaclava, breathable and comfortable for hiding your face from vengeful militia close to your family.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/balaclava.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/balaclava.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+  - type: Item
+    size: Small
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout # Doesnt matter because lizards are disabled but whatever
+    - Hair
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskGasM40
+  name: M40 field protective mask
+  description: Effective against stuff you reaally dont want in your body.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/M40.rsi
+    scale: 0.7, 0.7
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/M40.rsi
+  - type: Item
+    size: Small
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
+    hideOnToggle: true
+
+- type: entity
+  parent: [ ClothingMaskBase , ShowSecurityIcons ]
+  id: ClothingMaskGasM40Green
+  name: M40 field protective mask
+  description: Effective against stuff you reaally dont want in your body, upgraded with built-in night vision and heads-up-display.
+  suffix: HECU, Night vision
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+    scale: 0.7, 0.7
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+  - type: Item
+    size: Small
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
+    hideOnToggle: true
+  - type: NightVision
+    color: "#407614"
+    noise: 0.5 #  base noise
+    strength: 1 # prevents white tiles looking like shit
+    activateSound: /Audio/_Battlefield14/Effects/nightvision.ogg
+    flashDurationMultiplier: 1.5
+    isEquipment: true
+
+- type: entity
+  parent: ClothingMaskGasM40
+  id: ClothingMaskGasM40GreenFake
+  name: M40 field protective mask
+  description: Effective against stuff you reaally dont want in your body.
+  suffix: fake
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+    scale: 0.7, 0.7
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+
+
+- type: entity
+  parent: ClothingMaskGasM40
+  id: ClothingMaskGasM40GreenFakeObvious
+  name: M40 field protective mask
+  description: Wait a minute, these lenses are plastic?
+  suffix: fake, obvious
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+    scale: 0.7, 0.7
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/M40green.rsi
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskGasRussia # yeah no idea what its actually called, the file from c13 was literally just 'russiamask', so im keeping this generic so it can be easily renamed
+  name: GP-21 gas mask # a complete guess based off the shape
+  description: Effective against stuff you reaally dont want in your body.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/russiamask.rsi
+    scale: 0.9, 0.9
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/russiamask.rsi
+  - type: Item
+    size: Small
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
+    hideOnToggle: true

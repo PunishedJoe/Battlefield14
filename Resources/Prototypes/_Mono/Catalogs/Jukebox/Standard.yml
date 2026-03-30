@@ -1,35 +1,35 @@
-- type: jukebox
-  id: across_the_void
-  name: Guillaume David - Across The Void
-  path:
-    path: /Audio/_Mono/Jukebox/across_the_void.ogg
-
-- type: jukebox
-  id: dawsons_christian
-  name: Vic Tyler - Dawson's Christian
-  path:
-    path: /Audio/_Mono/Jukebox/dawsonschristian.ogg
-
-- type: jukebox
-  id: infinite_waters
-  name: The Blasting Company - Infinite Waters
-  path:
-    path: /Audio/_Mono/Jukebox/infinite_waters.ogg
-
-- type: jukebox
-  id: high_barbary
-  name: High Barbary on 90.4FM "The Brig"
-  path:
-    path: /Audio/_Mono/Jukebox/high_barbary.ogg
-
-- type: jukebox
-  id: koganusan
-  name: Simon Swerwer - Koganusan
-  path:
-    path: /Audio/_Mono/Jukebox/koganusan.ogg
-
-- type: jukebox
-  id: out_of_my_mind
-  name: Ray Collins Hot Club & Odd Chap - Out Of My Mind
-  path:
-    path: /Audio/_Mono/Jukebox/out_of_my_mind.ogg
+#BF14 - type: jukebox
+#BF14   id: across_the_void
+#BF14   name: Guillaume David - Across The Void
+#BF14   path:
+#BF14     path: /Audio/_Mono/Jukebox/across_the_void.ogg
+#BF14 
+ - type: jukebox
+   id: dawsons_christian
+   name: Vic Tyler - Dawson's Christian
+   path:
+     path: /Audio/_Mono/Jukebox/dawsonschristian.ogg
+#BF14 
+#BF14 - type: jukebox
+#BF14   id: infinite_waters
+#BF14   name: The Blasting Company - Infinite Waters
+#BF14   path:
+#BF14     path: /Audio/_Mono/Jukebox/infinite_waters.ogg
+#BF14 
+#BF14 - type: jukebox
+#BF14   id: high_barbary
+#BF14   name: High Barbary on 90.4FM "The Brig"
+#BF14   path:
+#BF14     path: /Audio/_Mono/Jukebox/high_barbary.ogg
+#BF14 
+#BF14 - type: jukebox
+#BF14   id: koganusan
+#BF14   name: Simon Swerwer - Koganusan
+#BF14   path:
+#BF14     path: /Audio/_Mono/Jukebox/koganusan.ogg
+#BF14 
+#BF14 - type: jukebox
+#BF14   id: out_of_my_mind
+#BF14   name: Ray Collins Hot Club & Odd Chap - Out Of My Mind
+#BF14   path:
+#BF14     path: /Audio/_Mono/Jukebox/out_of_my_mind.ogg

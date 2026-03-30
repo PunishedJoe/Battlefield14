@@ -1,0 +1,115 @@
+- type: job
+  id: MARSOCSquadLeader
+  name: job-name-marsoc-squadleader
+  description: job-description-marsoc-squadleader
+  playTimeTracker: JobMARSOCSquadLeader
+  weight: 78
+  startingGear: MARSOCSquadLeaderGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSquadleader"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  #   components:
+  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
+  #     # - type: ChatRank
+  #     #   rank: BF-rank-sergeant
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOMedical
+  - NATOSoldier
+  - NATOArmory
+  - NATOFunds
+  - NATOCrew
+  - NATOCaptain
+
+- type: startingGear
+  id: MARSOCSquadLeaderGear
+  equipment:
+    id: MARSOCSquadLeaderPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltWebbingsNormalTanFilled68x52 # Scar H mags
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    head: ClothingHeadHatHelmetUS
+    eyes: ClothingEyesGogglesTan
+    balaclava: ClothingBalaclavaMilitary
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    shoes: ClothingShoesBootsJackFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackTan
+    suitstorage: WeaponRifleUSM30MRC # Scar H
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: Tourniquet
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - ArmorPlateMedium
+    - WeaponShotgunUSM590
+    - ShellBoxBF12GaugeBreaching
+    - BoxMRE
+    - ClothingMaskGasM40Green
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - CrowbarRed
+    - Tourniquet
+    - Zipties
+
+- type: startingGear
+  id: MARSOCSquadLeaderGearEVA
+  equipment:
+    id: MARSOCSquadLeaderPDA
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    belt: ClothingBeltWebbingsNormalBlackFilled68x52 # Scar H mags later
+    jumpsuit: ClothingUniformJumpsuitCamoUS
+    eyes: ClothingEyesGogglesTan
+    balaclava: ClothingBalaclavaMilitary
+    outerClothing: ClothingOuterVoidsuitAmericanCombatMarine
+    shoes: ClothingShoesBootsMagAshenFilled
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackRucksackBlack
+    suitstorage: WeaponRifleUSM30MRC # Scar H later
+    pocket1: PouchMedkitFilledMarsoc
+    pocket2: PouchGrenadesFilledUSMCRifleman
+    leftarmband: ClothingArmbandMassScanner
+    rightarmband: ClothingArmbandThighHolsterFilledUS
+    wallet: ClothingWalletLeatherBlack
+  storage:
+    back:
+    - ArmorPlateMedium
+    - WeaponShotgunUSM590
+    - ShellBoxBF12GaugeBreaching
+    - BoxMRE
+    - ClothingMaskGasM40Green
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - DoubleEmergencyOxygenTankFilled
+    - CrowbarRed
+    - Tourniquet
+    - Zipties
+

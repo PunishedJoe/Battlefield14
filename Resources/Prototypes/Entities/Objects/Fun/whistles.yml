@@ -3,7 +3,7 @@
   parent: BaseItem
   id: BaseWhistle
   name: whistle
-  description: Someone forgot to turn off kettle?
+  description: Did somebody forget to turn off the kettle? # BF14 - Someone forgot to turn off kettle?
   components:
   - type: Item
     sprite: Objects/Fun/whistles.rsi
@@ -20,7 +20,7 @@
     sound:
       collection: BaseWhistle
   - type: Whistle
-    distance: 3
+    distance: 5
 
 - type: entity
   parent: BaseWhistle
@@ -45,7 +45,7 @@
   parent: BaseWhistle
   id: SyndicateWhistle
   name: trench whistle
-  description: A whistle used by Syndicate commanders to draw attention. Avanti!
+  description: An outdated piece of coordination materiel, but everybody knows what it means. Over the top! # BF14 - A whistle used by Syndicate commanders to draw attention. Avanti!
   components:
   - type: Sprite
     state: trench

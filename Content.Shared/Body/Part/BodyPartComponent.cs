@@ -60,7 +60,7 @@ public sealed partial class BodyPartComponent : Component, ISurgeryToolComponent
     /// Whether this body part can be severed or not
     /// </summary>
     [DataField, AutoNetworkedField]
-    public bool CanSever = true;
+    public bool CanSever = false; // BF14 disabled severing
 
     /// <summary>
     ///     Shitmed Change: Whether this body part is enabled or not.

@@ -1,0 +1,40 @@
+## NATO
+# US
+- type: entity
+  id: CrateSecgearNATOFilledMortarM252
+  suffix: Filled, M252 mortar
+  parent: CrateSecgear
+  name: NATO, US,  M252 81mm mortar crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: MortarNATOUS81mmM252Assembly
+        - id: BoxArtilleryutility
+        - id: PaperWrittenManualArtilleryMortar
+        - id: BoxArtilleryShellsMortarM252HEFrag
+          amount: 2
+        - id: BoxArtilleryShellsMortarM252SmokeMixed
+        - id: BoxArtilleryShellsMortarM252Flare
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+## PACT
+# RU
+
+- type: entity
+  id: CrateSecgearPACTFilledMortar2B14
+  suffix: Filled, 2B14 mortar
+  parent: CrateSecgear
+  name: PACT, RU, 2B14 82mm mortar crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: MortarPACTRU82mm2B14Assembly
+        - id: BoxArtilleryutility
+        - id: PaperWrittenManualArtilleryMortar
+        - id: BoxArtilleryShellsMortar2B14LethalMixed
+          amount: 2
+        - id: BoxArtilleryShellsMortar2B14SmokeMixed
+        - id: BoxArtilleryShellsMortar2B14Flare
+  - type: AccessReader
+    access: [["PACTSoldier"]]

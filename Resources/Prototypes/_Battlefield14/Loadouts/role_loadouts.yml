@@ -1,0 +1,175 @@
+### NATO
+
+## US
+
+# USMC
+
+- type: roleLoadout
+  id: JobUSMCSquadLeader
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_GoggleCover
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSMCRifleman
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_GoggleCover
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSMCAutomaticRifleman
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_GoggleCover
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSMCRecon
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSMCMedic
+  groups:
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_GoggleCover
+  - ContractorWallet
+
+# USSF
+
+- type: roleLoadout
+  id: JobUSSFCaptain
+  groups:
+  - BF_CrewGlasses
+  - BF_NATOIFF
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSSFCrewman
+  groups:
+  - BF_CrewGlasses
+  - BF_CombatMasks
+  - BF_NATOIFF
+  - ContractorWallet
+
+## PACT
+
+## RU
+
+# VDV
+
+- type: roleLoadout
+  id: JobVDVSquadLeader
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_GoggleCover
+  - BF_VDVHead
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobVDVRifleman
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_GoggleCover
+  - BF_VDVHead
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobVDVAutomaticRifleman
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_GoggleCover
+  - BF_VDVHead
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobVDVRecon
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_VDVHead
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobVDVMedic
+  groups:
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_GoggleCover
+  - BF_VDVHead
+  - ContractorWallet
+
+# VKS
+
+- type: roleLoadout
+  id: JobVKSCaptain
+  groups:
+  - BF_VDVHead
+  - BF_CrewGlasses
+  - BF_PACTIFF
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobVKSCrewman
+  groups:
+  - BF_CrewGlasses
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - ContractorWallet
+
+### IND
+
+# WPS
+
+- type: roleLoadout
+  id: JobWPSSecurityOfficer
+  groups:
+  - BF_CrewGlasses
+  - BF_CombatMasks
+  - BF_WPSGloves
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobWPSWarden
+  groups:
+  - BF_CrewGlasses
+  - BF_CombatMasks
+  - BF_WPSGloves
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobWPSMarshal
+  groups:
+  - BF_CrewGlasses
+  - BF_CombatMasks
+  - BF_WPSGloves
+  - ContractorWallet

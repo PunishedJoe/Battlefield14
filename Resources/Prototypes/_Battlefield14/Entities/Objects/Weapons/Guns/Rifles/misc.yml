@@ -1,0 +1,139 @@
+# shit i wanted to put here to not clog up the rifles file, which should probably be segregated by nation at some point
+# AKA this is for unique/one off weapons or even power weapons
+
+- type: entity
+  name: M-30 MR-C
+  parent: BaseWeaponRifle
+  id: WeaponRifleUSM30MRC
+  description: Cal 6.8x52, model 30, modular rifle caseless. The culmination of decades of research into caseless ammunition, the first practical caseless rifle.
+  components:
+  - type: Item
+    size: Huge
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/lecter_inhands_32x.rsi
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/lecter.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Mono/Objects/Weapons/Guns/Rifles/lecter_inhands_32x.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -20
+  - type: Gun
+    minAngle: 21
+    maxAngle: 32
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+    selectedMode: FullAuto
+    fireRate: 8
+    projectileSpeed: 45
+    shotsPerBurst: 3
+    burstCooldown: 0.3
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/light_rifle_1.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # It's caseless so it doesn't need a bolt, see G11
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: Magazine68x52mmCaseless # NOT BF14
+        insertSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagIn/m16_magin.ogg
+        ejectSound: /Audio/_Mono/Weapons/Guns/SmallArms/MagOut/skm_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - Magazine68x52mmCaseless # NOT BF14
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: Cartridge68x52mmCaseless
+        priority: 1
+        whitelist:
+          tags:
+            - Cartridge68x52mmCaseless # NOT BF14
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 750
+
+- type: entity
+  name: AEK-971
+  parent: WeaponRifleRUAK74
+  id: WeaponRifleRUAEK971
+  description: A rare and powerful piece, using a balanced recoil system the weapon manages to produce almost zero felt recoil to the shooter.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AEK971.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AEK971.rsi
+  - type: GunWieldBonus
+    minAngle: -21
+    maxAngle: -180
+  - type: Gun
+    minAngle: 21
+    maxAngle: 180
+    angleIncrease: 8
+    angleDecay: 16
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 10 # intended this is a power weapon
+    projectileSpeed: 50 # why not son
+
+- type: entity
+  name: Kord 6p68
+  parent: WeaponRifleRUAEK971
+  id: WeaponRifleRUKord6p68
+  description: A rare and powerful piece, using a balanced recoil system the weapon manages to produce almost zero felt recoil to the shooter. Now in 7.62x39!
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AEK971.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AEK971.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK203
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39

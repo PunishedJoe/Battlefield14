@@ -1,0 +1,145 @@
+# US
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHatHelmetUS
+  name: american camo helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ushelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ushelmet.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetUSRiot
+  name: american camo riot helmet
+  description: This IS for catching shrap and rounds.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ushelmetriot.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ushelmetriot.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: ClothingHeadHatHelmetUSUrban
+  name: M81 urban camo helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ushelmeturban.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ushelmeturban.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+# RU
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetRU
+  name: russian camo helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmet.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetRUEMR
+  name: russian camo helmet (EMR)
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmet.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUSRiot
+  id: ClothingHeadHatHelmetRUEMRRiot
+  name: russian camo riot helmet (EMR)
+  description: This IS for catching shrap and rounds.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
+
+# MISC
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetSecurityBF14
+  name: security helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetsec.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetsec.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetSecurityBF14
+  id: ClothingHeadHatHelmetCommand
+  name: command helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetcom.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/helmetcom.rsi
+
+- type: entity
+  parent: [ ClothingHeadHelmetBasic , ClothingHeadLightBase ]
+  id: ClothingHeadHatHelmetThinker
+  name: thinker helmet
+  description: Ah, the shit pythagoras cares about, truly profound.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/thinker.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/thinker.rsi
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+        offset: "0, 0.12"
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.8
+        Piercing: 0.9
+        Heat: 0.9
+        Shock: 3
+  - type: PointLight
+    enabled: false
+    radius: 3
+    energy: 1
+    color: "#FFC458"
+    mask: null
+    autoRot: true
+    netsync: false

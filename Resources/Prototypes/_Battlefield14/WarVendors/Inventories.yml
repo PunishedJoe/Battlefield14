@@ -1,0 +1,155 @@
+- type: vendingMachineInventory
+  id: NATOUSMCWarInventory
+  startingInventory:
+    EVAKitCombatUSMC: 50
+    WeaponRifleUSM16A4: 50
+    WeaponRifleUSM4A1: 2
+    MagazineRifleSTANAG: 10
+    WeaponSubmachinegunUSMP5: 5
+    WeaponPistolM9: 2
+    MagazinePistolM9: 10
+    RiotShield: 3
+    CombatKnife: 100
+    ClothingBeltMedicalEMTFilledBF14Basic: 4
+    ClothingBeltMilitaryWebbingUS: 50
+    ClothingBeltAssault: 50
+    ClothingBackpackRucksackTan: 50
+    ClothingBackpackRucksackBlack: 50
+    ClothingBackpackSecurity: 50
+    JetpackBlackFilled: 50
+    FoodSnackNutribrick: 100
+    DrinkMREFlask: 100
+    BoxMRE: 50
+    HandHeldMassScanner: 150
+    Crowbar: 150
+    OxygenTankFilled: 150
+    ClothingEyesGogglesTan: 100
+    ClothingHeadHatHelmetUS: 100
+    ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
+    ClothingHeadHelmetSoftsuitNasa: 50
+    ClothingOuterSoftsuitNASA: 50
+
+- type: vendingMachineInventory
+  id: NATOUSMCAmmoInventory
+  startingInventory:
+    MagazineRifleSTANAG: 100
+    BoxMagazineSTANAG: 10
+    ShellBoxBF12GaugeBuckshot: 10
+    MagazineBox556x45Big: 5
+    MagazineBox556x45: 5
+    MagazineSubmachinegunMP5: 100
+    MagazineBox9x19mmBig: 10
+    CrayonBox: 1
+
+- type: vendingMachineInventory
+  id: NATOUSMCGearInventory
+  startingInventory:
+    BreachingCharge: 10 # replace with breaching charges and put C4 in req
+    JetpackBlackFilled: 20
+    USM84FlashBangHandgrenade: 30
+    MK21Handgrenade: 25
+    M67Handgrenade: 5
+    USM18SmokeHandgrenade: 50
+    FUBAR: 1
+    DoubleEmergencyOxygenTankFilled: 100
+    BoxIFFNATOBlue: 10
+    BoxIFFNATOYellow: 10
+    BoxIFFNATOGreen: 10
+    RemoteSignallerM57: 10
+    HandheldStationMapUnpowered: 5
+    ClothingArmbandDumpPouchBlack: 2
+    PouchMags: 5
+    Handcuffs: 5
+    Zipties: 15
+    IPOCK: 10
+    Whistle: 3
+    Boombox: 2
+    ClothingHeadHatHelmetUS: 100
+    ClothingOuterArmorPlateCarrierTan: 5 # FREE PLATES
+    ClothingHeadHelmetSoftsuitNasa: 50
+    ClothingOuterSoftsuitNASA: 50
+
+- type: vendingMachineInventory
+  id: NATOUSMCShipInventory
+  startingInventory:
+    ShipVoucherAAVP8: 8
+
+- type: vendingMachineInventory
+  id: PACTVDVWarInventory
+  startingInventory:
+    EVAKitCombatRU: 50
+    WeaponRifleRUAK12: 50
+    WeaponRifleRUAKS74U: 2
+    WeaponSubmachinegunRUVityaz: 5
+    WeaponPistolMP443: 2
+    MagazinePistolMP443: 10
+    RiotShield: 3
+    CombatKnife: 100
+    ClothingBeltMedicalEMTFilledBF14Basic: 4
+    ClothingBeltMilitaryWebbingRU: 50
+    ClothingBeltAssault: 50
+    ClothingBackpackRucksackTan: 50
+    ClothingBackpackRucksackBlack: 50
+    ClothingBackpackSecurity: 50
+    JetpackBlackFilled: 50
+    FoodSnackNutribrick: 100
+    DrinkMREFlask: 100
+    BoxMRE: 50
+    HandHeldMassScanner: 150
+    Crowbar: 150
+    OxygenTankFilled: 150
+    ClothingEyesGogglesGreen: 100
+    ClothingHeadHatHelmetRUEMR: 100
+    ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES
+    ClothingHeadHelmetSoftsuitVKS: 50
+    ClothingOuterSoftsuitVKS: 50
+
+- type: vendingMachineInventory
+  id: PACTVDVAmmoInventory
+  startingInventory:
+    MagazineRifleAK12: 40
+    MagazineRifleAK74: 60
+    MagazineSubmachinegunVityaz: 100
+    ShellBoxBF12GaugeBuckshot: 10
+    BoxMagazineAK12: 5
+    BoxMagazineAK74: 5
+    MagazineBox545x39Big: 5
+    MagazineBox545x39: 20
+    MagazineBox9x19mmBig: 5
+    BoxMagazineASVALShort: 5
+    BoxMagazineAKM: 2
+    CrayonBox: 1
+
+- type: vendingMachineInventory
+  id: PACTVDVGearInventory
+  startingInventory:
+    BreachingCharge: 10
+    JetpackBlackFilled: 20
+    RUZaryaFlashBangHandgrenade: 30
+    RURGD5Handgrenade: 20
+    RUF1Handgrenade: 5
+    RGOImpactHandgrenade: 5
+    RURDG2SmokeHandgrenade: 50
+    TM62Flatpack: 10
+    BoxChargeFuzeKit: 3
+    SecBreachingHammer: 1
+    DoubleEmergencyOxygenTankFilled: 100
+    BoxIFFPACTWhite: 10
+    BoxIFFPACTRed: 10
+    BoxIFFPACTStGeorge: 10
+    HandheldStationMapUnpowered: 5
+    PouchMags: 5
+    ClothingArmbandDumpPouchBlack: 2
+    Handcuffs: 5
+    Zipties: 15
+    SyndicateWhistle: 3
+    Boombox: 2
+    ClothingHeadHatHelmetRUEMR: 100
+    ClothingOuterArmorPlateCarrierBlack: 5 # FREE PLATES
+    ClothingHeadHelmetSoftsuitVKS: 50
+    ClothingOuterSoftsuitVKS: 50
+
+- type: vendingMachineInventory
+  id: PACTVDVShipInventory
+  startingInventory:
+    ShipVoucherKTV1: 8

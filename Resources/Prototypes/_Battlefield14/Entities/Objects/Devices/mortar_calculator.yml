@@ -1,0 +1,25 @@
+- type: entity
+  id: MortarCalculatorGreen
+  parent: BaseItem
+  name: calculator
+  description: A field calculator for quick math.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Devices/calc.rsi
+    state: green
+  - type: Item
+    size: Small
+  - type: BasicCalculator
+
+- type: entity
+  id: MortarBallisticCalculator
+  parent: BaseItem
+  name: mortar ballistic calculator
+  description: A field calculator for mortar fire correction.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Devices/calc.rsi
+    state: red
+  - type: Item
+    size: Small
+  - type: BasicCalculator

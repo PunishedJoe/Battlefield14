@@ -1,0 +1,143 @@
+# Base
+- type: entity
+  parent: MobHuman
+  id: MobHumanHECUBase
+  name: john HECU
+  suffix: Human, Base, HECU, BF14
+  components:
+  - type: HumanoidAppearance
+    height: 1.0
+    width: 1.0
+  - type: Loadout
+    prototypes: [HECURiflemanGear]
+  - type: GhostRole
+    name: job-name-hecu-rifleman
+    description: job-description-hecu-rifleman
+    rules: ghost-role-information-hecu-rules
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstMilitary
+    - names_last
+  - type: NpcFactionMember
+    factions:
+    - USMC
+  - type: Company
+    companyName: USMC
+  - type: LanguageKnowledge
+    speaks:
+    - English
+    - Sign
+    understands:
+    - English
+    - Sign
+    - TauCetiBasic
+
+## IN-ATMOSPHERE
+
+# Squad Leader
+- type: entity
+  parent: MobHumanHECUBase
+  id: MobHumanHECUSquadLeader
+  name: HECU Squad Leader
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [HECUSquadLeaderGear]
+  - type: GhostRole
+    name: job-name-hecu-squadleader
+    description: job-description-hecu-squadleader
+    rules: ghost-role-information-hecu-rules
+    raffle:
+      settings: short
+  - type: SurgerySpeedModifier
+    speedModifier: 1.5
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstMilitaryLeader
+    - names_last
+
+# Rifleman
+- type: entity
+  parent: MobHumanHECUBase
+  id: MobHumanHECURifleman
+  name: HECU Rifleman
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [HECURiflemanGear]
+  - type: GhostRole
+    name: job-name-hecu-rifleman
+    description: job-description-hecu-rifleman
+    rules: ghost-role-information-hecu-rules
+    raffle:
+      settings: short
+
+## Support/Weapons specialist
+# Shotgunner
+- type: entity
+  parent: MobHumanHECUBase
+  id: MobHumanHECUShotgunner
+  name: HECU Shotgunner
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [HECUSupportGear]
+  - type: GhostRole
+    name: job-name-hecu-shotgunner
+    description: job-description-hecu-shotgunner
+    rules: ghost-role-information-hecu-rules
+    raffle:
+      settings: short
+
+# Machinegunner
+- type: entity
+  parent: MobHumanHECUBase
+  id: MobHumanHECUMachinegunner
+  name: HECU Machinegunner
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [HECUSupportM249Gear]
+  - type: GhostRole
+    name: job-name-hecu-machinegunner
+    description: job-description-hecu-machinegunner
+    rules: ghost-role-information-hecu-rules
+    raffle:
+      settings: short
+
+# anti-tank
+- type: entity
+  parent: MobHumanHECUBase
+  id: MobHumanHECUAntitank
+  name: HECU SMAW Assaultman
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [HECUSupportSMAWGear]
+  - type: GhostRole
+    name: job-name-hecu-antitank
+    description: job-description-hecu-antitank
+    rules: ghost-role-information-hecu-rules
+    raffle:
+      settings: short
+
+## Corpsman
+- type: entity
+  parent: MobHumanHECUBase
+  id: MobHumanHECUMedic
+  name: HECU Corpsman
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [HECUMedicGear]
+  - type: GhostRole
+    name: job-name-hecu-medic
+    description: job-description-hecu-medic
+    rules: ghost-role-information-hecu-rules
+    raffle:
+      settings: short
+  - type: SurgerySpeedModifier
+    speedModifier: 2.25

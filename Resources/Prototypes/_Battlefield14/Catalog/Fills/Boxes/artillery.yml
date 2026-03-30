@@ -1,0 +1,240 @@
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryutility
+  name: box of artillery utilities
+  description: Contains two GPS', one laser rangefinder, one wrench, a calculator, and a folder and pen.
+  components:
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,3
+    whitelist:
+      tags:
+        - Wrench
+        - GPS
+        - Folder
+        - Write
+        - Pen
+        - Paper
+        - Document
+      components:
+        - EyeCursorOffset
+        - BasicCalculator
+        - Paper
+  - type: StorageFill
+    contents:
+      - id: Rangefinder
+      - id: HandheldGPSBasic
+        amount: 2
+      - id: Wrench
+      - id: MortarCalculatorGreen
+      - id: BoxFolderBlack
+      - id: Pen
+  - type: Sprite
+    layers:
+      - state: box_security
+
+### Shells
+## NATO
+# US
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellsMortarM252HEFrag
+  name: box of 81mm HE-EF shells
+  description: Contains six HE-EF 81mm mortar shells compatible with the M252 mortar.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellMortar81M252HEFrag
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellsMortarM252Smoke
+  name: box of 81mm smoke shells
+  description: Contains six 81mm mortar smoke shells compatible with the M252 mortar.
+  suffix: Regular smoke
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellMortar81M252Smoke
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellsMortarM252SmokeMixed
+  name: box of mixed 81mm smoke shells
+  description: Contains three 81mm mortar smoke shells, and three CS-Gas shells compatible with the M252 mortar.
+  suffix: Smoke + CS gas
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellMortar81M252Smoke
+        amount: 3
+      - id: ShellMortar81M252ChemicalSmoke
+        amount: 3
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellsMortarM252Flare
+  name: box of mixed 81mm illumination flare shells
+  description: Contains six 81mm mortar illumination shells, compatible with the M252 mortar.
+  suffix: Illumination
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellMortar81M252Flare
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security
+
+## PACT
+# RU
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellsMortar2B14LethalMixed
+  name: box of 82mm mixed lethal shells
+  description: Contains three HE-Frag and three thermobaric 82mm mortar shells compatible with the 2B14 mortar.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellMortar822B14HEFrag
+        amount: 3
+      - id: ShellMortar822B14Thermobaric
+        amount: 3
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellsMortar2B14Smoke
+  name: box of 82mm smoke shells
+  description: Contains six 82mm mortar smoke shells compatible with the 2B14 mortar.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellMortar822B14Smoke
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellsMortar2B14SmokeMixed
+  name: box of 82mm mixed smoke shells
+  description: Contains three smoke and three cs-gas 82mm mortar shells compatible with the 2B14 mortar.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellMortar822B14Smoke
+        amount: 3
+      - id: ShellMortar822B14ChemicalSmoke
+        amount: 3
+  - type: Sprite
+    layers:
+      - state: box_security
+
+- type: entity
+  parent: BoxMagazine
+  id: BoxArtilleryShellsMortar2B14Flare
+  name: box of 82mm illumination flare shells
+  description: Contains six 82mm mortar illumination shells compatible with the 2B14 mortar.
+  suffix: HE-Frag
+  components:
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,5,3
+    whitelist:
+      tags:
+        - MortarShell
+  - type: StorageFill
+    contents:
+      - id: ShellMortar822B14Flare
+        amount: 6
+  - type: Sprite
+    layers:
+      - state: box_security

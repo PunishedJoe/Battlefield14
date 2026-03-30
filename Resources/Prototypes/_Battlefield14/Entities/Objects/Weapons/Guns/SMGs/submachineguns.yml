@@ -1,0 +1,365 @@
+## NATO
+# US
+
+- type: entity
+  name: MP5
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunUSMP5
+  description: Feather-light recoil, swag, and a high rate of fire; everything you need in a submachine gun, except for a massive flashlight mounted on top.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+  - type: Gun
+    minAngle: 0
+    maxAngle: 10
+    fireRate: 10
+    angleIncrease: 1.5
+    angleDecay: 15
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMP5
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolMP5
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+# DE
+
+- type: entity
+  name: MP7
+  parent: [ BaseWeaponSubMachineGun , BaseGunWieldable ]
+  id: WeaponSubmachinegunDEMP7
+  description: A compact, lightweight, and armour penetrating PDW, or Personal Defence Weapon. It's expensive, but you get what you pay for, if you use it right.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP7.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP7.rsi
+  - type: GunWieldBonus
+    minAngle: -2
+    maxAngle: -10
+  - type: Gun
+    minAngle: 2
+    maxAngle: 15
+    fireRate: 8
+    angleIncrease: 2
+    angleDecay: 15
+    projectileSpeed: 40
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP7_Gunshots
+      params:
+        volume: -2
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_chamber.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMP7
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolMP7
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePDW46x30
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePDW46x30
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+## PACT
+# RU
+
+- type: entity
+  name: PP-19 Vityaz-SN
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunRUVityaz
+  description: Just as reliable as your AK, with an itty bitty round that doesn't bruise your shoulder too much.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityazworn.rsi
+  - type: Gun
+    minAngle: 0
+    maxAngle: 10
+    fireRate: 10
+    angleIncrease: 1.5
+    angleDecay: 15
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: BF_UZI_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/AK_9/uc_ak_chback_9.ogg
+      params:
+        volume: -3
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunVityaz
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolVityaz
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: Vladistokyov
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunRUVlad
+  description: A couple pipes slapped together into a "working" firearm. Despite it's.. lackluster craftsmanship, you don't want to be on the wrong end of this piece.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/vlad.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/vlad.rsi
+  - type: Gun
+    minAngle: 3
+    maxAngle: 30
+    fireRate: 15
+    angleIncrease: 2.2
+    angleDecay: 20
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunVlad
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolVlad
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: SR2MP
+  parent: [ BaseWeaponSubMachineGun , BaseGunWieldable ]
+  id: WeaponSubmachinegunRUSR2MP
+  description: Designed alongside the SR1MP to use the new armour penetrating 9x21 round.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/SR2MP.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/SR2MP.rsi
+  - type: GunWieldBonus
+    minAngle: -2
+    maxAngle: -10
+  - type: Gun
+    minAngle: 2
+    maxAngle: 15
+    fireRate: 8
+    angleIncrease: 2
+    angleDecay: 15
+    projectileSpeed: 40
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP7_Gunshots
+      params:
+        volume: -2
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_chamber.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunSR2MP
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSubmachinegunSR2MP
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePDW9x21
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePDW9x21
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

@@ -264,8 +264,10 @@ public sealed partial class GunSystem : SharedGunSystem
         // Rather than splitting client / server for every ammo provider it's easier
         // to just delete the spawned entities. This is for programmer sanity despite the wasted perf.
         // This also means any ammo specific stuff can be grabbed as necessary.
-        var direction = TransformSystem.ToMapCoordinates(fromCoordinates).Position - TransformSystem.ToMapCoordinates(toCoordinates).Position;
-        var worldAngle = direction.ToAngle().Opposite();
+        var fromMap = TransformSystem.ToMapCoordinates(fromCoordinates);
+        var toMap = TransformSystem.ToMapCoordinates(toCoordinates);
+        var direction = toMap.Position - fromMap.Position;
+        var worldAngle = direction.ToAngle();
 
         foreach (var (ent, shootable) in ammo)
         {

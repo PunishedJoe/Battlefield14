@@ -1,0 +1,41 @@
+- type: entity
+  parent: BaseFoodCondiment
+  id: FoodCondimentPacketKaolin
+  name: Hemostatic powder packet
+  suffix: VXMED
+  description: Hemostatic powder. Do not eat, sprinkle on wound.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Openable
+    sound:
+      collection: packetOpenSounds
+  - type: Spillable
+    solution: food
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30 # BF14 20 > 30
+        reagents:
+        - ReagentId: KaolinVX
+          Quantity: 30 # BF14 20 > 30
+  - type: SolutionTransfer
+    maxTransferAmount: 20
+  - type: Sprite
+    sprite: _VXS14/Objects/Medical/medical.rsi
+    state: caoline
+  - type: Icon
+    state: caoline
+  - type: PhysicalComposition
+    materialComposition:
+      Plastic: 50
+  - type: Tag
+    tags:
+      - Packet
+  - type: Appearance
+  - type: MeleeWeapon
+    soundNoDamage:
+      path: "/Audio/Effects/packetrip.ogg"
+    damage:
+      types:
+        Blunt: 0

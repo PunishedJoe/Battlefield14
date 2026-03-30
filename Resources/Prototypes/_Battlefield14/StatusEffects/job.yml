@@ -1,0 +1,131 @@
+# Basic factions
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconUS
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/job_icons.rsi
+    state: US
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconRU
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/job_icons.rsi
+    state: RU
+
+# Nato classes
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOCaptain
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natocaptain
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOSquadleader
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natosquadleader
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATORifleman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoinfantry
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOSupport
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natosupport
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOMedic
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natomedic
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOEngineer
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoengineer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATORecon
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natorecon
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOSpecialForces
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natospecialforces
+
+ # Pact classes
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTCaptain
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactcaptain
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTSquadleader
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactsquadleader
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTRifleman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactinfantry
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTSupport
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactsupport
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTMedic
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactmedic
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTRecon
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactrecon
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTEngineer
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactengineer
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTSpecialForces
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactspecialforces
