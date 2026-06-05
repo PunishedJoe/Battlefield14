@@ -61,10 +61,21 @@
      path: /Audio/_Battlefield14/Jukebox/somewhereibelong.ogg
 
  - type: jukebox
-   id: acidspit
-   name: Acid Spit - Mega Drive
+   id: faint
+   name: Faint - Linkin park
    path:
+     path: /Audio/_Battlefield14/Jukebox/faint.ogg
+
+ -  id: acidspit
+    name: Acid Spit - Mega Drive
+    path:
      path: /Audio/_Battlefield14/Jukebox/acidspit.ogg
+
+ - type: jukebox
+   id: videostalker
+   name: Video Stalker - Mega Drive
+   path:
+     path: /Audio/_Battlefield14/Jukebox/videostalker.ogg
 
 # Eastern / east associated songs
 
@@ -93,6 +104,12 @@
      path: /Audio/_Battlefield14/Lobby/kombat.ogg
 
  - type: jukebox
+   id: stepmarch
+   name: Step March - Lube
+   path:
+     path: /Audio/_Battlefield14/Jukebox/stepmarch.ogg
+
+ - type: jukebox
    id: STIMFSMCATTALU2YTR # It has no real name, this is the acronym
    name: STIMFSMCATTALU2YTR - Ben_19M # seriously
    path:
@@ -109,6 +126,24 @@
    name: Russian mate - Sektor Gaza
    path:
      path: /Audio/_Battlefield14/Lobby/secondchechenwar.ogg
+
+ - type: jukebox
+   id: nasnedogonyat
+   name: Nas Ne Dogonyat - t.A.T.u.
+   path:
+     path: /Audio/_Battlefield14/Jukebox/nasnedogonyat.ogg
+
+ - type: jukebox
+   id: reconbattalion
+   name: Reconnaisance Battalion
+   path:
+     path: /Audio/_Battlefield14/Jukebox/reconbattalion.ogg
+
+ - type: jukebox
+   id: spacemarinessong
+   name: Space Marines Song - Planet Alcatraz
+   path:
+     path: /Audio/_Battlefield14/Jukebox/spacemarinessong.ogg
 
 # Misc
 

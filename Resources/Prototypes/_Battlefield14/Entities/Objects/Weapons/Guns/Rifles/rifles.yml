@@ -423,14 +423,14 @@
   name: M4 Carbine
   parent: WeaponRifleUSM4A1
   id: WeaponRifleUSM4
-  description: Before the M4 was A1 it had a 3 round burst #A favorite of tacticool larpers and MAC V SOG commandos alike.
+  description: Before the M4 was A1 it had a 3 round burst
   components:
   - type: Item # Controls inhand sprites
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4.rsi
     size: Large
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-    state: icon-full-M4A1
+    state: icon-full-M4
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:

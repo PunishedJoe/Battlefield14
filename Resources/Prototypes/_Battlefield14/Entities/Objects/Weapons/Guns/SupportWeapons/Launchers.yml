@@ -434,12 +434,12 @@
   description: The high tech equivalent of throwing a really long spear at someone, if that person was a helicopter and the spear could heat track it.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/igla.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi
     layers:
       - state: icon
         map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/igla.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Igla.rsi
   - type: Gun
     projectileSpeed: 8
     fireRate: 0.75
