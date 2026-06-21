@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 06/16/2026 04:01:11
-  entityCount: 10370
+  entityCount: 10374
 maps:
 - 2
 grids:
@@ -60952,5 +60952,33 @@ entities:
     components:
     - type: Transform
       pos: 98.40541,-16.313828
+      parent: 1
+- proto: SpawnPointTagillaScav
+  entities:
+  - uid: 15002
+    components:
+    - type: Transform
+      pos: 96.5,-37.5
+      parent: 1
+- proto: StimulantAutoInjector
+  entities:
+  - uid: 15004
+    components:
+    - type: Transform
+      pos: 96.5,-38.5
+      parent: 1
+- proto: ArmorPlateCombined
+  entities:
+  - uid: 15005
+    components:
+    - type: Transform
+      pos: 96.5,-38.5
+      parent: 1
+- proto: BlisterPackSyretteFentanyl
+  entities:
+  - uid: 15007
+    components:
+    - type: Transform
+      pos: 97.5,-38.5
       parent: 1
 ...

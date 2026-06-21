@@ -1,0 +1,42 @@
+- type: job
+  id: RUTagillaScav
+  name: Tagilla
+  description: Get addicted to meth and fent and hit everyone who looks at you wrong with your sledgehammer.
+  playTimeTracker: JobRUTagillaScav
+  weight: 22
+  startingGear: RUTagillaScavGear
+  alwaysUseSpawner: true
+  icon: "JobIconRU"
+  requireAdminNotify: false
+  supervisors: the Scav Boss, or nobody
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  access:
+  - Maintenance
+
+- type: startingGear
+  id: RUTagillaScavGear
+  equipment:
+    ears: ClothingHeadsetAltScav
+    shoes: ClothingShoesColorBlack
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledVDVRifleman
+    gloves: ClothingHandsGlovesTacticalCombatWhite
+    back: ClothingBackpackButtpack
+    jumpsuit: ClothingUniformBlackPants
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    head: ClothingHeadHatWeldingMaskFlameReinforced
+    belt: ClothingBeltWebbingsNormalTanFilledKSK
+    eyes: ClothingEyesGlassesSunglasses
+    suitstorage: WeaponShotgunRUKSK
+  storage:
+    back:
+    - BoxMagazineKSKBuckshot
+    - RSledgehammer
+    - ClothingMaskGasRussia
+    - FlashlightMilitaryAlt

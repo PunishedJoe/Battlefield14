@@ -151,6 +151,19 @@
     randomMode: false
     mode: SensorOff
 
+  # BF14
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformBlackPants
+  name: black field pants
+  description: Black pants.
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/rogue/shirtless.rsi
+  - type: Clothing
+    sprite: _Mono/Clothing/Uniforms/Jumpsuit/rogue/shirtless.rsi
+  # BF14
+
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformRogueJeans

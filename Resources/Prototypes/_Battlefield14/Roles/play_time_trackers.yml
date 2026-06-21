@@ -163,6 +163,9 @@
 - type: playTimeTracker
   id: JobRUScavBoss
 
+- type: playTimeTracker
+  id: JobRUTagillaScav
+
 # Western Private Security
 
 - type: playTimeTracker

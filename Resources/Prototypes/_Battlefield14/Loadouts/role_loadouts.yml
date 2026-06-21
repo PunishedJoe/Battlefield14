@@ -461,6 +461,13 @@
   - BF_MiscItemsIND
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobRUTagillaScav
+  groups:
+  - BF_WPSGloves
+  - BF_MiscItemsIND
+  - ContractorWallet
+
 #region Western Private Security
 
 - type: roleLoadout

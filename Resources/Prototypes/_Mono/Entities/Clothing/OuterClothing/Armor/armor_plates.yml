@@ -77,6 +77,45 @@
             volume: 5
             variation: 0.125
 
+# UHMWPE
+- type: entity
+  parent: BaseItem
+  id: ArmorPlateCombined
+  name: UHMWPE plate
+  description: Ultra-High-Molecular-Weight Polyethylene armor plate. Very tactical cag and durable. # BF14
+  suffix: Tactical
+  components:
+  - type: Sprite
+    sprite: _Mono/Clothing/ArmorPlate/armor_tactical.rsi
+    state: icon
+  - type: Item
+    sprite: _Mono/Clothing/ArmorPlate/armor_tactical.rsi
+    size: Normal
+  - type: ArmorPlateItem
+    maxDurability: 200 # BF14
+    walkSpeedModifier: 0.98 # BF14
+    sprintSpeedModifier: 0.98 # BF14
+    staminaDamageMultiplier: 0.15 # BF14
+    absorptionRatios:
+      Piercing: 0.90
+      Structural: 0.90 # BF14
+  - type: Damageable
+    damageContainer: StructuralInorganic # BF14
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200 # BF14
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior #BF14
+        sound:
+          path: /Audio/Effects/metal_crunch.ogg
+          params:
+            volume: 2.5
+            variation: 0.125
+
 # Plasteel
 - type: entity
   parent: BaseItem
@@ -196,7 +235,7 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-        
+
 # Steel
 - type: entity
   parent: BaseItem
@@ -228,7 +267,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 60 
+        damage: 60
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
