@@ -1,0 +1,41 @@
+- type: entity
+  parent: Clothing
+  id: WA68_ClothingDogtagBase
+  suffix: WorldAblaze1968
+  name: dogtags
+  description: Lorem ipsum
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Other/Dogtags.rsi
+    layers:
+    - state: usa
+  - type: Clothing
+    slots:
+    - idcard
+  - type: Item
+    size: Tiny
+    heldPrefix: default
+    storedRotation: -90
+  - type: IdCard
+  - type: CargoSellBlacklist
+
+########################## Usa
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsa
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+
+########################## Ussr
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssr
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr

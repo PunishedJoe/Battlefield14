@@ -1,0 +1,52 @@
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGenericGeneral
+  name: general pouch
+  description: A pouch designed to hold anything a soilder would want.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+      - state: survival
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,4,1
+    whitelist:
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGenericGrenade
+  name: grenade pouch
+  description: A pouch designed to hold 4 grenades.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+      - state: utility
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,1
+    whitelist:
+      tags:
+      - WA68_GrenadeThrowable
+      - WA68_GrenadeRound
+
+- type: entity # IFAKs werent really a thing in 1968 but it would be fucking cancer if you didnt have one
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGenericIFAK
+  name: first aid pouch
+  description: A firt aid pouch designed to hold the essential medical aid.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+      - state: medkit
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,1
+    whitelist:
+      tags:
+      - WA68_MedicalItemSmall

@@ -1,0 +1,90 @@
+- type: explosion
+  id: WA68_LowYieldExplosion # for frag grenades and landmine explosives
+  damagePerIntensity: #12 player 10 struc
+    types:
+      Heat: 2
+      Blunt: 8
+      Piercing: 2
+      Structural: 10
+  tileBreakChance: [0, 0.1, 0.3]
+  tileBreakIntensity: [5, 10, 15]
+  tileBreakRerollReduction: 20
+  lightColor: Orange
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
+  sound:
+    collection: CivExplosion
+  smallSound:
+     collection: CivExplosionSmall
+  soundFar:
+     collection: CivExplosionDistant
+  smallSoundFar:
+     collection: CivExplosionDistantFar
+
+- type: explosion
+  id: WA68_MediumYieldExplosion # for blast grenades and light artilery and anti tank weaponry
+  damagePerIntensity: #16 player 30 struc
+    types:
+      Heat: 3
+      Blunt: 12
+      Piercing: 2
+      Structural: 30
+  tileBreakChance: [0, 0.2, 0.5]
+  tileBreakIntensity: [2, 4, 12]
+  tileBreakRerollReduction: 20
+  lightColor: Orange
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
+  sound:
+    collection: CivExplosion
+  smallSound:
+     collection: CivExplosionSmall
+  soundFar:
+     collection: CivExplosionDistant
+  smallSoundFar:
+     collection: CivExplosionDistantFar
+
+- type: explosion
+  id: WA68_HighYieldExplosion # for larger explosions such as artilery demo charges
+  damagePerIntensity: # 16 player 60 struc
+    types:
+      Heat: 2
+      Blunt: 12
+      Piercing: 2
+      Structural: 60
+  tileBreakChance: [0.1, 0.4, 0.8]
+  tileBreakIntensity: [0, 3, 8]
+  tileBreakRerollReduction: 20
+  lightColor: Orange
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
+  sound:
+    collection: CivExplosion
+  smallSound:
+     collection: CivExplosionSmall
+  soundFar:
+     collection: CivExplosionDistant
+  smallSoundFar:
+     collection: CivExplosionDistantFar
+
+- type: explosion
+  id: WA68_ThermobaricExplosion # for thermobaric explosives
+  damagePerIntensity: # 16 player 80 struc
+    types:
+      Heat: 8
+      Blunt: 8
+      Structural: 80
+  tileBreakChance: [0.25, 0.55, 1]
+  tileBreakIntensity: [0, 2, 6]
+  tileBreakRerollReduction: 20
+  lightColor: Orange
+  texturePath:  /Textures/Effects/fire.rsi # these cause the "big fireball like" explosions
+  fireStates: 3
+  sound:
+    collection: CivExplosion
+  smallSound:
+     collection: CivExplosionSmall
+  soundFar:
+     collection: CivExplosionDistant
+  smallSoundFar:
+     collection: CivExplosionDistantFar

@@ -1,0 +1,65 @@
+- type: entity
+  name: ampoule
+  parent: BaseItem
+  id: WA68_AmpouleBase
+  abstract: true
+  suffix: WorldAblaze1968
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/ampoule.rsi
+    layers:
+    - state: base
+      map: ["enum.SolutionContainerLayers.fill"]
+  - type: Item
+    size: Tiny
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 25
+  - type: ExaminableSolution
+    solution: pen
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 25
+    onlyAffectsMobs: false
+    injectOnly: true
+    injectSound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/ampoule.ogg
+      params:
+        variation: 0.125
+        volume: -2
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: true
+    emptySpriteName: broken
+  - type: UseDelay
+    delay: 0.2
+  - type: Appearance
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+  - type: TrashOnSolutionEmpty
+    solution: pen
+
+- type: entity
+  description: a ampolue containing ammonia inhalants (smelling salts) overuse may cause chemical burns to a persons airways.
+  parent: WA68_AmpouleBase
+  id: WA68_AmpouleSmellingSalts
+  suffix: WorldAblaze1968
+  components:
+  - type: Label
+    currentLabel: ammonia inhalants
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/ampoule.rsi
+    layers:
+    - state: base
+      map: ["enum.SolutionContainerLayers.Fill"]
+    - state: black
+      map: ["enum.SolutionContainerLayers.Base"]
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 25
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 25

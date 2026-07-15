@@ -1,0 +1,198 @@
+########################## Usa
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: WA68_ClothingBackpackUsaM1961
+  suffix: WorldAblaze1968
+  name: M1961 buttpack
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Back/m1961.rsi
+  - type: Storage # 28 slots total
+    grid:
+    - 0,0,1,2 #1st side pouch
+    - 3,0,6,3 #main pouch
+    - 8,0,9,2 #2nd side pouch
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity ### MADE UP BACKPACK BECAUSE IT SEEMS THERE IS NO M67 SHELL BAG
+  parent: ClothingBackpackSatchel
+  id: WA68_ClothingBackpackUsaM1967RR
+  suffix: WorldAblaze1968
+  name: M1967RR ammo carrier
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Back/m1967rr.rsi
+  - type: Storage # 30 slots total
+    grid:
+    - 0,0,1,4 #1st shell pouch
+    - 3,0,4,4 #2nd shell pouch
+    - 4,6,0,7 #thing pouch
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: WA68_ClothingBackpackRadioUsaANPRC77
+  suffix: WorldAblaze1968
+  name: AN/PRC-77 radio
+  description: Lorem ipsum
+  components:
+  - type: ContainerContainer
+    containers:
+      key_slots: !type:Container
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyUS
+      - EncryptionKeyCommon
+  - type: Headset
+    requiredSlot: back
+  - type: EncryptionKeyHolder
+    keySlots: 1
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Back/anprc77.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    slots:
+    - back
+    sprite: _WorldAblaze1968/Clothing/Usa/Back/anprc77.rsi
+  - type: Storage # 18 slots total
+    grid:
+    - 0,0,0,2 #1st side pouch
+    - 2,0,4,2 #main pouch
+    - 6,0,6,2 #2nd side pouch
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+########################## Ussr
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: WA68__ClothingBackpackUssrRD54
+  suffix: WorldAblaze1968
+  name: RD-54 backpack
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Back/rd54.rsi
+  - type: Storage # 28 slots total
+    grid:
+    - 0,0,1,2 #1st side pouch
+    - 3,0,6,3 #main pouch
+    - 8,0,9,2 #2nd side pouch
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: WA68_ClothingBackpackUssrVeshmeshok
+  suffix: WorldAblaze1968
+  name: Veshmeshok backpack
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Back/veshmeshok.rsi
+  - type: Storage # 28 slots total
+    grid:
+    - 0,0,1,2 #1st side pouch
+    - 3,0,6,3 #main pouch
+    - 8,0,9,2 #2nd side pouch
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: WA68_ClothingBackpackUssr6Sh12
+  suffix: WorldAblaze1968
+  name: 6Sh12 ammo carrier
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Back/6sh12.rsi
+  - type: Storage # 27 slots
+    grid:
+    - 0,0,0,4 #1st warhead pouch
+    - 2,0,2,4 #2nd warhead pouch
+    - 4,0,4,4 #3rd warhead pouch
+    - 0,6,0,9 #1st booster pouch
+    - 2,6,2,9 #2nd booster pouch
+    - 4,6,4,9 #3rd booster pouch
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: WA68_ClothingBackpackUssr6Sh11
+  suffix: WorldAblaze1968
+  name: 6Sh11 ammo carrier
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Back/6sh11.rsi
+  - type: Storage # 24 slots
+    grid:
+    - 0,0,0,3 #1st booster pouch
+    - 2,0,2,4 #1st warhead pouch
+    - 4,0,4,4 #2nd warhead pouch
+    - 6,0,6,3 #2nd booster pouch
+    - 5,6,1,7 #thing pouch
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: WA68_ClothingBackpackRadioUssrR105M
+  suffix: WorldAblaze1968
+  name: R105M radio
+  description: Lorem ipsum
+  components:
+  - type: ContainerContainer
+    containers:
+      key_slots: !type:Container
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyRU
+      - EncryptionKeyCommon
+  - type: Headset
+    requiredSlot: back
+  - type: EncryptionKeyHolder
+    keySlots: 1
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Back/r105m.rsi
+    state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    slots:
+    - back
+    sprite: _WorldAblaze1968/Clothing/Ussr/Back/r105m.rsi
+  - type: Storage # 18 slots total
+    grid:
+    - 0,0,0,2 #1st side pouch
+    - 2,0,5,2 #    main pouch
+    - 7,0,7,2 #2nd side pouch
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier

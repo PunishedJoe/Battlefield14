@@ -1,0 +1,85 @@
+########################## Usa
+
+- type: entity
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: WA68_ClothingBeltMilitaryWebbingUsaM1967
+  suffix: WorldAblaze1968
+  name: M1967 webbing
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Belt/m1967.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Belt/m1967.rsi
+  - type: Item
+    size: Huge
+  - type: ExplosionResistance
+    damageCoefficient: 0
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,5,1
+    storageOpenSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageCloseSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageInsertSound:
+      collection: BF_Magpouch_Insert
+      params:
+        volume: -1
+        variation: 0.125
+    storageRemoveSound:
+      collection: BF_Magpouch_Remove
+      params:
+        volume: -1
+        variation: 0.125
+
+########################## Ussr
+
+- type: entity
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: WA68_ClothingBeltMilitaryWebbingUssrM1955
+  suffix: WorldAblaze1968
+  name: M1955 webbing
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Belt/m1955.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Belt/m1955.rsi
+  - type: Item
+    size: Huge
+  - type: ExplosionResistance
+    damageCoefficient: 0
+  - type: Storage
+    maxItemSize: Normal
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,5,1
+    storageOpenSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageCloseSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageInsertSound:
+      collection: BF_Magpouch_Insert
+      params:
+        volume: -1
+        variation: 0.125
+    storageRemoveSound:
+      collection: BF_Magpouch_Remove
+      params:
+        volume: -1
+        variation: 0.125

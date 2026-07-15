@@ -1,0 +1,202 @@
+########################## West Germany
+
+- type: entity
+  name: G3A3ZF
+  parent: WA68_WeaponWestGerG3A3
+  id: WA68_WeaponWestGerG3A3ZF
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/g3a3zf.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/g3a3zf.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/g3a3zf.rsi
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 6
+    pvsIncrease: 0.7
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts G3 style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Gives a tier 1 zoom when wielded.
+        color: "#42ad54"
+        requireDetailRange: true
+
+########################## Usa
+
+- type: entity
+  name: M21
+  parent: WA68_WeaponUsaM14
+  id: WA68_WeaponUsaM21
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m21.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m21.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m21.rsi
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 8
+    pvsIncrease: 0.8
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts M14 style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Gives tier 2 zoom when wielded.
+        color: "#42ad54"
+        requireDetailRange: true
+
+- type: entity
+  name: M40
+  parent: WA68_WeaponBoltActionSniperBase
+  id: WA68_WeaponUsaM40
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m40.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m40.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m40.rsi
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.9
+  - type: BallisticAmmoProvider
+    capacity: 5
+    proto: WA68_Cartridge762x51mm
+    whitelist:
+      tags:
+      - WA68_Cartridge762x51mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 5-Round internal magazine
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Must be manualy cycled
+        color: "#312994"
+        requireDetailRange: true
+      - description: Gives tier 3 zoom when wielded.
+        color: "#42ad54"
+        requireDetailRange: true
+
+########################## Ussr
+
+- type: entity
+  name: M91/30 PU
+  parent: WA68_WeaponBoltActionSniperBase
+  id: WA68_WeaponUsaMosinM91/30PU
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m91-30pu.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m91-30pu.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m91-30pu.rsi
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.9
+  - type: BallisticAmmoProvider
+    capacity: 5
+    proto: WA68_Cartridge762x54mmR
+    whitelist:
+      tags:
+      - WA68_Cartridge762x54mmR
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/BoltAction/rack2.ogg
+      params:
+        variation: 0.1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 5-Round internal magazine
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Must be manualy cycled
+        color: "#312994"
+        requireDetailRange: true
+      - description: Gives tier 3 zoom when wielded.
+        color: "#42ad54"
+        requireDetailRange: true
+
+- type: entity
+  name: SVD
+  parent: WA68_WeaponSniperBase
+  id: WA68_WeaponUssrSVD
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/svd.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/svd.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/svd.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/svd_close.ogg
+      params:
+        volume: -2
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        insertSound: /Audio/_WorldAblaze1968/Weapons/Interactions/Sniper/load1.ogg
+        ejectSound: /Audio/_WorldAblaze1968/Weapons/Interactions/Sniper/unload1.ogg
+        startingItem: WA68_Magazine6L2
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_Magazine6L2
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x54mmR
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x54mmR
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts SVD style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Gives tier 2 zoom when wielded.
+        color: "#42ad54"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_WeaponUssrSVD
+  id: WA68_WeaponEastGerSWD
+  name: SWD
+  description: Lorem ipsum

@@ -1,0 +1,213 @@
+########################## BULLET
+
+- type: entity
+  id: WA68_Bullet762x51mm
+  name: bullet
+  parent: WA68_BulletBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 28
+    armorPenetration: 0.35
+
+########################## CARTRIDGE
+
+- type: entity
+  id: WA68_Cartridge762x51mm
+  name: 7.62x51mm cartridge
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  parent: WA68_CartridgeBase
+  components:
+  - type: CartridgeAmmo
+    proto: WA68_Bullet762x51mm
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+  - type: Tag
+    tags:
+    - WA68_CartridgeBase
+    - WA68_Cartridge762x51mm
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+########################## MAGS
+
+- type: entity
+  parent: WA68_MagazineBaseMedium
+  id: WA68_MagazineM1410Rnd
+  name: M14 10-Round magazine 7.62x51mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineM14
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge762x51mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge762x51mm
+    capacity: 10
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/m1410rnd.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an M14 style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseMedium
+  id: WA68_MagazineM1420Rnd
+  name: M14 20-Round magazine 7.62x51mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineM14
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge762x51mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge762x51mm
+    capacity: 20
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/m1420rnd.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an M14 style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseMedium
+  id: WA68_MagazineG3
+  name: G3 20-Round magazine 7.62x51mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineG3
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge762x51mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge762x51mm
+    capacity: 20
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an G3 style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseLarge
+  id: WA68_MagazineMG3
+  name: MG3 50-Round drum 7.62x51mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineMG3
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge762x51mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge762x51mm
+    capacity: 50
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an MG3 style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseLarge
+  id: WA68_MagazineM60
+  name: M60 100-Round box 7.62x51mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineM60
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge762x51mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge762x51mm
+    capacity: 100
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/m60.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an M60 style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true

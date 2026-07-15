@@ -1,0 +1,189 @@
+- type: entity
+  id: WA68_SmallFragment
+  suffix: WorldAblaze1968
+  name: fragment
+  parent: WA68_BulletBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 4
+        Piercing: 6
+        Blunt: 2
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+  - type: TimedDespawn
+    lifetime: 0.3
+
+- type: entity
+  id: WA68_SmallDart
+  suffix: WorldAblaze1968
+  name: dart
+  parent: WA68_BulletBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 9
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: dart
+  - type: TimedDespawn
+    lifetime: 0.3
+
+- type: entity
+  id: WA68_ExplosionEffect
+  suffix: WorldAblaze1968
+  name: explosion
+  description: Id keep my distance if i were you.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _RMC14/Effects/explosions.rsi
+    state: grenade
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  parent: GrenadeBase
+  id: WA68_WeaponGrenadeBase
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: OnUseTimerTrigger
+    delay: 5
+  - type: Tag
+    tags:
+      - Grenade
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/f1.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 100
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 1
+    intensitySlope: 1
+    maxIntensity: 1
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+
+- type: entity
+  parent: BaseItem
+  id: WA68_WeaponGrenadeImpactBase
+  abstract: true
+  suffix: WorldAblaze1968
+  components:
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - Grenade
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rkg3em.rsi
+    layers:
+    - state: icon
+    - state: primed
+      visible: false
+      map: ["enum.ToggleVisuals.Layer"]
+  - type: Appearance
+  - type: AnimationPlayer
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg
+    soundDeactivate:
+      path: /Audio/_Battlefield14/Weapons/Grenades/disable1.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Grenade
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9999999 # making it this high so some dickhead doesnt crash the server by setting of 8 grenades at once due to the high fragment count
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: ComponentToggler
+    components:
+    - type: DamageOnLand
+      damage:
+        types:
+          Blunt: 100000000
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 1
+    intensitySlope: 1
+    maxIntensity: 1
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 50
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+
+- type: entity
+  parent: GrenadeBase
+  id: WA68_WeaponGrenadeInertBase
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: OnUseTimerTrigger
+    delay: 5
+  - type: Tag
+    tags:
+      - Grenade
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/f1.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX

@@ -1,0 +1,11 @@
+- type: entity
+  parent: WA68_UnremovableShoesBase
+  id: WA68_ClothingShoesBootsGeneric
+  suffix: WorldAblaze1968
+  name: jackboots
+  description: Lorem Ipsum
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Shoes/Boots/combat.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Shoes/Boots/combat.rsi

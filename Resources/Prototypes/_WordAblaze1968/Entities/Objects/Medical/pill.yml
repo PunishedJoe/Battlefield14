@@ -1,0 +1,138 @@
+- type: entity
+  name: tricordrazine blister pack
+  description: A 6 pill blister pack containing 15u tricordrazine pills.
+  parent: BaseItem
+  id: WA68_PillMedicalBlisterTricordrazine6
+  suffix: WorldAblaze1968
+  components:
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/blueblister.rsi
+    state: pill-6
+  - type: Item
+    size: Tiny
+    sprite: _WorldAblaze1968/Objects/Medical/blueblister.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: PillTricordrazine
+    - id: WA68_PillMedicalBlisterTricordrazine5
+    sound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/blister.ogg
+      params:
+        variation: 0.125
+        volume: -2
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has 6 pills remaining.
+        color: "#6ffc03"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_PillMedicalBlisterTricordrazine6
+  id: WA68_PillMedicalBlisterTricordrazine5
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/blueblister.rsi
+    state: pill-5
+  - type: SpawnItemsOnUse
+    items:
+    - id: PillTricordrazine
+    - id: WA68_PillMedicalBlisterTricordrazine4
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has 5 pills remaining.
+        color: "#6ffc03"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_PillMedicalBlisterTricordrazine6
+  id: WA68_PillMedicalBlisterTricordrazine4
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/blueblister.rsi
+    state: pill-4
+  - type: SpawnItemsOnUse
+    items:
+    - id: PillTricordrazine
+    - id: WA68_PillMedicalBlisterTricordrazine3
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has 4 pills remaining.
+        color: "#6ffc03"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_PillMedicalBlisterTricordrazine6
+  id: WA68_PillMedicalBlisterTricordrazine3
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/blueblister.rsi
+    state: pill-3
+  - type: SpawnItemsOnUse
+    items:
+    - id: PillTricordrazine
+    - id: WA68_PillMedicalBlisterTricordrazine2
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has 3 pills remaining.
+        color: "#6ffc03"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_PillMedicalBlisterTricordrazine6
+  id: WA68_PillMedicalBlisterTricordrazine2
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/blueblister.rsi
+    state: pill-2
+  - type: SpawnItemsOnUse
+    items:
+    - id: PillTricordrazine
+    - id: WA68_PillMedicalBlisterTricordrazine1
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has 2 pills remaining.
+        color: "#6ffc03"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_PillMedicalBlisterTricordrazine6
+  id: WA68_PillMedicalBlisterTricordrazine1
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/blueblister.rsi
+    state: pill-1
+  - type: SpawnItemsOnUse
+    items:
+    - id: PillTricordrazine
+    - id: WA68_PillMedicalBlisterTricordrazine0
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has 1 pills remaining.
+        color: "#6ffc03"
+        requireDetailRange: true
+
+- type: entity
+  name: tricordrazine blister pack
+  description: A empty 6 pill blister pack.
+  parent: BaseItem
+  id: WA68_PillMedicalBlisterTricordrazine0
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/blueblister.rsi
+    state: pill-0
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has 0 pills remaining.
+        color: "#6ffc03"
+        requireDetailRange: true

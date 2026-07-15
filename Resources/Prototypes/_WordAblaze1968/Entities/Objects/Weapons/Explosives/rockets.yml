@@ -1,0 +1,532 @@
+########################## Carl Gustaf
+
+- type: entity
+  id: WA68_Shell84mmRFFV551
+  suffix: WorldAblaze1968
+  name: FFV 551 shell
+  parent: WA68_CartridgeBase
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,4
+  - type: Tag
+    tags:
+    - WA68_Cartridge
+    - WA68_Shell84mmR
+  - type: CartridgeAmmo
+    proto: WA68_ShellProjectile84mmRFFV551Unarmed
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/m371a1.rsi
+    layers:
+    - state: base
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 140 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+  - type: ClothingSpeedModifier # its a big ass 90mm shell
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: WA68_ShellProjectile84mmRFFV551Unarmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: m371a1
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Piercing: 30 # these things embed in people so it would defo hurt
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: WA68_ShellProjectile84mmRFFV551Armed
+    distanceDelay: 4
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 100
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: WA68_ShellProjectile84mmRFFV551Armed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: m371a1
+  - type: Projectile
+    damage:
+      types:
+        Structural: 500 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+    gibsOnHit: true
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_MediumYieldExplosion
+    totalIntensity: 140 # center damage 180
+    intensitySlope: 2.5
+    maxIntensity: 100
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 140
+
+########################## M67
+
+- type: entity
+  id: WA68_Shell90mmBM590
+  suffix: WorldAblaze1968
+  name: M590 shell
+  parent: WA68_CartridgeBase
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,4
+  - type: Tag
+    tags:
+    - WA68_Cartridge
+    - WA68_Shell90mmB
+  - type: CartridgeAmmo
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+    proto: WA68_Shell90mmBM590Spread
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/m590.rsi
+    layers:
+    - state: base
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: ExtendDescription
+    descriptionList:
+      - description: Fires out 35 darts.
+        color: "#a84832"
+        requireDetailRange: true
+  - type: ClothingSpeedModifier # its a big ass 90mm shell
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  id: WA68_Shell90mmBM590Spread
+  categories: [ HideSpawnMenu ]
+  parent: WA68_SmallDart
+  components:
+  - type: ProjectileSpread
+    proto: WA68_SmallDart
+    count: 35
+    spread: 25
+
+- type: entity
+  id: WA68_Shell90mmBM371A1
+  suffix: WorldAblaze1968
+  name: M371A1 shell
+  parent: WA68_CartridgeBase
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,4
+  - type: Tag
+    tags:
+    - WA68_Cartridge
+    - WA68_Shell90mmB
+  - type: CartridgeAmmo
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+    proto: WA68_ShellProjectile90mmBM371AUnarmed
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/m371a1.rsi
+    layers:
+    - state: base
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 110 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+  - type: ClothingSpeedModifier # its a big ass 90mm shell
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: WA68_ShellProjectile90mmBM371AUnarmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: m371a1
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Piercing: 30 # these things embed in people so it would defo hurt
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: WA68_ShellProjectile90mmBM371AArmed
+    distanceDelay: 4
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 100
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: WA68_ShellProjectile90mmBM371AArmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: m371a1
+  - type: Projectile
+    damage:
+      types:
+        Structural: 500 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+    gibsOnHit: true
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_MediumYieldExplosion
+    totalIntensity: 140 # center damage 180
+    intensitySlope: 2.5
+    maxIntensity: 100
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 110
+
+########################## M72 LAW
+
+- type: entity
+  id: WA68_RocketM72Law
+  suffix: WorldAblaze1968
+  parent: BaseCartridgeLauncher
+  components:
+  - type: CartridgeAmmo
+    muzzleFlash: MuzzleFlashEffectBFShotgun
+    proto: WA68_RocketProjectileM72LawUnarmed
+    deleteOnSpawn: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: WA68_RocketProjectileM72LawUnarmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: pg7v
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Piercing: 30 # these things embed in people so it would defo hurt
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: WA68_RocketProjectileM72LawArmed
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: AmbientSound
+    range: 50
+    enabled: true
+    sound:
+      path: /Audio/_WorldAblaze1968/Weapons/Rockets/rocketmotor1.ogg
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: WA68_RocketProjectileM72LawArmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: pg7v
+  - type: Projectile
+    damage:
+      types:
+        Structural: 300 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_MediumYieldExplosion
+    totalIntensity: 120 # center damage 162
+    intensitySlope: 2
+    maxIntensity: 100
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 80
+  - type: AmbientSound
+    range: 50
+    enabled: true
+    sound:
+      path: /Audio/_WorldAblaze1968/Weapons/Rockets/rocketmotor1.ogg
+
+########################## PG7
+
+- type: entity
+  id: WA68_RocketPG7V
+  suffix: WorldAblaze1968
+  name: PG-7V rocket
+  parent: BaseCartridgeLauncher
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    size: Huge
+  - type: Tag
+    tags:
+    - WA68_Cartridge
+    - WA68_RocketPG7
+  - type: CartridgeAmmo
+    proto: WA68_RocketProjectilePG7VUnarmed
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/pg7vrocket.rsi
+    layers:
+    - state: base
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 120 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: It is ARMED and ready to be loaded, must be DISARMED by activating in hand.
+        color: "#24f211"
+        requireDetailRange: true
+  - type: SpawnItemsOnUse
+    items:
+      - id: WA68_RocketPG7PBooster
+      - id: WA68_RocketPG7PWarhead
+    sound:
+      path: /Audio/_Goobstation/Items/weapons/Sniper/pickup2.ogg
+      params:
+        variation: 0.125
+  - type: Construction
+    graph: WA68_RocketPG7VGraph1
+    node: end
+  - type: HeldSpeedModifier
+
+- type: entity
+  id: WA68_RocketPG7PBooster
+  suffix: WorldAblaze1968
+  name: PG-7P booster
+  parent: BaseItem
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+    - WA68_RocketPG7PBooster
+  - type: Item
+    size: Large
+    storedRotation: -90
+    storedSprite:
+      sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/pg7p.rsi
+      state: stored
+    shape:
+    - 0,0,3,0
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/pg7p.rsi
+    layers:
+    - state: base
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is the booster part of a PG-7 rocket, can be combined with compatible PG-7 warheads.
+        color: "#b37d2d"
+        requireDetailRange: true
+  - type: Construction
+    graph: WA68_RocketPG7VGraph1
+    node: start
+
+- type: entity
+  id: WA68_RocketPG7PWarhead
+  suffix: WorldAblaze1968
+  name: PG-7V warhead
+  parent: BaseItem
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+    - WA68_RocketPG7VWarhead
+  - type: Item
+    storedRotation: -90
+    storedSprite:
+      sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/pg7v.rsi
+      state: stored
+    size: Large
+    shape:
+    - 0,0,4,0
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/pg7v.rsi
+    layers:
+    - state: base
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 40 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: It is DISARMED and cannot be loaded, must be ARMED by combining with a PG-7P booster.
+        color: "#f21c11"
+        requireDetailRange: true
+  - type: Construction
+    graph: WA68_RocketPG7VGraph2
+    node: start
+
+- type: constructionGraph
+  id: WA68_RocketPG7VGraph1
+  start: start
+  graph:
+    - node: start
+      entity: WA68_RocketPG7PBooster
+      edges:
+        - to: end
+          completed:
+            - !type:GivePrototype
+              prototype: WA68_RocketPG7V
+            - !type:DeleteEntity {}
+          steps:
+          - tag: WA68_RocketPG7VWarhead
+            doAfter: 2
+    - node: end
+      edges: []
+
+- type: constructionGraph
+  id: WA68_RocketPG7VGraph2
+  start: start
+  graph:
+    - node: start
+      entity: WA68_RocketPG7VWarhead
+      edges:
+        - to: end
+          completed:
+            - !type:GivePrototype
+              prototype: WA68_RocketPG7V
+            - !type:DeleteEntity {}
+          steps:
+          - tag: WA68_RocketPG7PBooster
+            doAfter: 2
+    - node: end
+      edges: []
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: WA68_RocketProjectilePG7VUnarmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: pg7v
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Piercing: 30 # these things embed in people so it would defo hurt
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: WA68_RocketProjectilePG7VArmed
+    distanceDelay: 4
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: AmbientSound
+    range: 50
+    enabled: true
+    sound:
+      path: /Audio/_WorldAblaze1968/Weapons/Rockets/rocketmotor1.ogg
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: WA68_RocketProjectilePG7VArmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: pg7v
+  - type: Projectile
+    damage:
+      types:
+        Structural: 500 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+    gibsOnHit: true
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_MediumYieldExplosion
+    totalIntensity: 140 # center damage 180
+    intensitySlope: 2.5
+    maxIntensity: 100
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 120
+  - type: AmbientSound
+    range: 50
+    enabled: true
+    sound:
+      path: /Audio/_WorldAblaze1968/Weapons/Rockets/rocketmotor1.ogg

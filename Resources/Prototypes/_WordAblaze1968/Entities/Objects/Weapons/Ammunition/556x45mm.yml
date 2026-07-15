@@ -1,0 +1,178 @@
+########################## BULLET
+
+- type: entity
+  id: WA68_Bullet556x45mm
+  name: bullet
+  parent: WA68_BulletBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+    armorPenetration: 0.2
+
+########################## CARTRIDGE
+
+- type: entity
+  id: WA68_Cartridge556x45mm
+  name: 5.56x45mm cartridge
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  parent: WA68_CartridgeBase
+  components:
+  - type: CartridgeAmmo
+    proto: WA68_Bullet556x45mm
+    muzzleFlash: MuzzleFlashEffectBFRifle
+  - type: Tag
+    tags:
+    - WA68_CartridgeBase
+    - WA68_Cartridge545x45mm
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+########################## MAGS
+
+- type: entity
+  parent: WA68_MagazineBaseMedium
+  id: WA68_MagazineSTANAG20Rnd
+  name: STANAG 20-Round magazine 5.56x45mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineSTANAG
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge556x45mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge556x45mm
+    capacity: 20
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/stanag20rnd.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an STANAG style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseMedium
+  id: WA68_MagazineSTANAG30Rnd
+  name: STANAG 30-Round magazine 5.56x45mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineSTANAG
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge556x45mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge556x45mm
+    capacity: 30
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/stanag30rnd.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an STANAG style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseMedium
+  id: WA68_MagazineStoner63
+  name: Stoner 63 30-Round magazine 5.56x45mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineStoner63
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge556x45mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge556x45mm
+    capacity: 30
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an Stoner 63 style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseLarge
+  id: WA68_MagazineM63
+  name: M63 100-Round box 5.56x45mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineM63
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge556x45mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge556x45mm
+    capacity: 100
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an M63 style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true

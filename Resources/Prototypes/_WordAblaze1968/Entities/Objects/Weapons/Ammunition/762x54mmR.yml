@@ -1,0 +1,108 @@
+########################## BULLET
+
+- type: entity
+  id: WA68_Bullet762x54mmR
+  name: bullet
+  parent: WA68_BulletBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 28
+    armorPenetration: 0.35
+
+########################## CARTRIDGE
+
+- type: entity
+  id: WA68_Cartridge762x54mmR
+  name: 7.62x54mmR cartridge
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  parent: WA68_CartridgeBase
+  components:
+  - type: CartridgeAmmo
+    proto: WA68_Bullet762x54mmR
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+  - type: Tag
+    tags:
+    - WA68_CartridgeBase
+    - WA68_Cartridge762x54mmR
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+########################## MAGS
+
+- type: entity
+  parent: WA68_MagazineBaseMedium
+  id: WA68_Magazine6L2
+  name: 6L2 10-Round magazine 7.62x54mmR
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_Magazine6L2
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge762x54mmR
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge762x54mmR
+    capacity: 10
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6l2.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an SVD style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseLarge
+  id: WA68_Magazine6Zh1M
+  name: 6Zh1M 100-Round magazine 7.62x54mmR
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazinePK
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge762x54mmR
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge762x54mmR
+    capacity: 100
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6zh1m.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an PK style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true

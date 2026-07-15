@@ -1,0 +1,54 @@
+########################## Usa
+
+- type: entity
+  parent: ClothingOuterArmorBase
+  id: WA68_ClothingOuterArmorUsaM69
+  suffix: WorldAblaze1968
+  name: M69 flak vest
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Outer/m69.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Outer/m69.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+  - type: StaminaDamageResistance
+    coefficient: 0.8
+  - type: HeldSpeedModifier
+
+########################## Ussr
+
+- type: entity
+  parent: ClothingOuterArmorBase
+  id: WA68_ClothingOuterArmorUssr6B1
+  suffix: WorldAblaze1968
+  name: 6B1 vest
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Outer/6b1.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Outer/6b1.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.75
+        Heat: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+  - type: StaminaDamageResistance
+    coefficient: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier

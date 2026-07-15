@@ -1,0 +1,269 @@
+########################## West Germany
+
+- type: entity
+  name: MG3
+  parent: WA68_WeaponMachinegunBase
+  id: WA68_WeaponUsaMG3
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/mg3.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/mg3.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/mg3.rsi
+  - type: Gun
+    fireRate: 20 # 1200 RPM
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m60_close.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineMG3
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineMG3
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        swap: false
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x51mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x51mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts MG3 style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+########################## Usa
+
+- type: entity
+  name: M60
+  parent: WA68_WeaponMachinegunBase
+  id: WA68_WeaponUsaM60
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/m60.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/m60.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/m60.rsi
+  - type: Gun
+    fireRate: 9.16 # 550 RPM
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m60_close.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineM60
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineM60
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        swap: false
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x51mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x51mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts PK style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: M63
+  parent: WA68_WeaponRifleBase
+  id: WA68_WeaponUsaM63
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/m63.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/m63.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/m63.rsi
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    fireRate: 13.33 # 800 RPM
+    minAngle: 24 # the RPK is kinda odd in the way that its just a bigger AKM but also a LMG
+    maxAngle: 43
+    angleIncrease: 6
+    angleDecay: 90
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/stoner63_close.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineM63
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineM63
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        swap: false
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x51mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x51mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts M63 style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+########################## Ussr
+
+- type: entity
+  name: PK
+  parent: WA68_WeaponMachinegunBase
+  id: WA68_WeaponUssrPK
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/pk.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/pk.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/pk.rsi
+  - type: Gun
+    fireRate: 10.83 # 650 RPM
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/pk_close.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_Magazine6Zh1M
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazinePK
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        swap: false
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x54mmR
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x54mmR
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts PK style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: true
+
+- type: entity
+  name: RPK
+  parent: WA68_WeaponRifleBase
+  id: WA68_WeaponUssrRPK
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/rpk.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/rpk.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/rpk.rsi
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 24 # the RPK is kinda odd in the way that its just a bigger AKM but also a LMG
+    maxAngle: 43
+    angleIncrease: 6
+    angleDecay: 90
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/akm_close.ogg
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/rack2.ogg
+      params:
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_Magazine6P2
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x39mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x39mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts AKM style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.95
+    sprintModifier: 0.9
+
+- type: entity
+  parent: WA68_WeaponUssrRPK
+  id: WA68_WeaponEastGerLMGK
+  name: LMGK
+  description: Lorem ipsum

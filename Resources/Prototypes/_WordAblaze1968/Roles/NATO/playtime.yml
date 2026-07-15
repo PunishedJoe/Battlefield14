@@ -1,0 +1,17 @@
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyCorpsmanTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyMarksmanTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyAutoRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyGrenadierTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmySquadLeaderTime

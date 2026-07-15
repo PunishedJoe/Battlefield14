@@ -1,0 +1,14 @@
+- type: entity
+  id: WA68_BasicMedicalDefib # Defibs like this didnt exist in 1968 but if i didnt add one it would be fucking cancer
+  parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
+  name: portable defiblirator
+  description: A bulky and heavy defiblirator made portable to be used in the field.
+  components:
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,2
+  - type: ToggleCellDraw
+  - type: PowerCellDraw
+    useRate: 100

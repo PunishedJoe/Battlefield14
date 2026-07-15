@@ -1,0 +1,423 @@
+########################## West Germany
+
+- type: entity
+  name: G3A3
+  parent: WA68_WeaponRifleBase
+  id: WA68_WeaponWestGerG3A3
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/g3a3.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/g3a3.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/g3a3.rsi
+  - type: Gun # Full power round so higher angle increase per shot
+    angleIncrease: 9
+    angleDecay: 90
+    fireRate: 10 # 600 RPM
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/g3_close.ogg
+      params:
+        volume: -2.5
+        variation: 0.1
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/close3.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+    soundBoltOpened:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/open3.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/rack3.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineG3
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineG3
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x51mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x51mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts G3 style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+########################## Usa
+
+- type: entity
+  name: M14
+  parent: WA68_WeaponRifleBase
+  id: WA68_WeaponUsaM14
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m14.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m14.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m14.rsi
+  - type: Gun
+    fireRate: 7 # 420 RPM
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m14_close.ogg
+      params:
+        volume: -2
+        variation: 0.1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineM1420Rnd
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineM14
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x51mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x51mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts M14 style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: M16A1
+  parent: WA68_WeaponRifleBase
+  id: WA68_WeaponUsaM16A1
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m16a1.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m16a1.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m16a1.rsi
+  - type: Gun
+    fireRate: 11.67 # 700 RPM
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m16_close.ogg
+      params:
+        volume: -2.5
+        variation: 0.1
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/close3.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+    soundBoltOpened:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/open3.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/rack3.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineSTANAG30Rnd
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineSTANAG
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge556x45mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge556x45mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts STANAG style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: Stoner 63
+  parent: WA68_WeaponRifleBase
+  id: WA68_WeaponUsaStoner63
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/stoner63.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/stoner63.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/stoner63.rsi
+  - type: Gun
+    fireRate: 13.33 # 800 RPM
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/stoner63_close.ogg
+      params:
+        volume: -2
+        variation: 0.1
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/close1.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+    soundBoltOpened:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/open1.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/rack1.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineStoner63
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineStoner63
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge556x45mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge556x45mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts Stoner 63 style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+########################## East Germany
+
+- type: entity
+  name: MPi-KM
+  parent: WA68_WeaponRifleBase
+  id: WA68_WeaponEastGerMPiKM
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akm.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akm.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akm.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/akm_close.ogg
+      params:
+        variation: 0.1
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/rack2.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_Magazine6L10
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x39mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x39mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts AKM style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: MPi-KMS
+  parent: WA68_WeaponUssrAKM
+  id: WA68_WeaponEastGerMPiKMS
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/mpikms.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/mpikms.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/mpikms.rsi
+
+########################## Ussr
+
+- type: entity
+  name: AKM
+  parent: WA68_WeaponRifleBase
+  id: WA68_WeaponUssrAKM
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akm.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akm.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akm.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/akm_close.ogg
+      params:
+        variation: 0.1
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Rifle/rack2.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_Magazine6L10
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge762x39mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge762x39mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts AKM style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: AKMS
+  parent: WA68_WeaponUssrAKM
+  id: WA68_WeaponUssrAKMS
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akms.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akms.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akms.rsi
+
+- type: entity
+  name: AKMSB
+  parent: WA68_WeaponUssrAKM
+  id: WA68_WeaponUssrAKMSB
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akmsb/inworld.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akmsb/onmob.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akmsb/onmob.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/akm_supp.ogg
+      params:
+        volume: -3
+        variation: 0.1

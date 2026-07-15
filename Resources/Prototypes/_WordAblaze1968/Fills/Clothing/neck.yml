@@ -1,0 +1,42 @@
+########################## Corpsman bag
+
+- type: entity
+  id: WA68_ClothingBeltMilitaryMedBagUsaM3FilledGeneric
+  parent: WA68_ClothingBeltMilitaryMedBagUsaM3
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_BasicMedicalFieldSurgeryKit10
+        amount: 1
+      - id: WA68_BasicMedicalBloodBag5
+        amount: 2
+      - id: WA68_BasicMedicalSutureStapler30
+        amount: 1
+      - id: WA68_BasicMedicalBandagePacket
+        amount: 3
+      - id: WA68_BasicMedicalDressingPacket
+        amount: 6
+      - id: WA68_BasicMedicalEsmarch
+        amount: 3
+      - id: WA68_SyretteMedicalCappedCombatMix
+        amount: 3
+- type: entity
+  id: WA68_ClothingBeltMilitaryMedBagUssrCMBFilledGeneric
+  parent: WA68_ClothingBeltMilitaryMedBagUssrCMB
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_BasicMedicalFieldSurgeryKit10
+        amount: 1
+      - id: WA68_BasicMedicalBloodBag5
+        amount: 2
+      - id: WA68_BasicMedicalSutureStapler30
+        amount: 1
+      - id: WA68_BasicMedicalBandagePacket
+        amount: 3
+      - id: WA68_BasicMedicalDressingPacket
+        amount: 6
+      - id: WA68_BasicMedicalEsmarch
+        amount: 3
+      - id: WA68_SyretteMedicalCappedCombatMix
+        amount: 3

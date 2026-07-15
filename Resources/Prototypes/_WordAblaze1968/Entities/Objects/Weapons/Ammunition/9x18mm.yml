@@ -1,0 +1,108 @@
+########################## BULLET
+
+- type: entity
+  id: WA68_Bullet9x18mm
+  name: bullet
+  parent: WA68_BulletBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 16
+    armorPenetration: 0.05
+
+########################## CARTRIDGE
+
+- type: entity
+  id: WA68_Cartridge9x18mm
+  name: 9x18mm cartridge
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  parent: WA68_CartridgeBase
+  components:
+  - type: CartridgeAmmo
+    proto: WA68_Bullet9x18mm
+    muzzleFlash: MuzzleFlashEffectBFPistol
+  - type: Tag
+    tags:
+    - WA68_CartridgeBase
+    - WA68_Cartridge9x18mm
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+########################## MAGS
+
+- type: entity
+  parent: WA68_MagazineBaseSmall
+  id: WA68_MagazinePM
+  name: 56-A-125 8-Round magazine 9x18mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazinePM
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge9x18mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge9x18mm
+    capacity: 8
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an Makarov style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_MagazineBaseSmall
+  id: WA68_MagazineAPS
+  name: 56-A-126 20-Round magazine 9x18mm
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineAPS
+      - WA68_Magazine
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge9x18mm
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge9x18mm
+    capacity: 20
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an Stechkin style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true

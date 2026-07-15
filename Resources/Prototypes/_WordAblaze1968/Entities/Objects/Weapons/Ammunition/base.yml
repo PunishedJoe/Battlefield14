@@ -1,0 +1,194 @@
+########################## CARTRIDGE
+
+- type: entity
+  id: WA68_CartridgeBase
+  suffix: WorldAblaze1968
+  name: cartridge
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    drawdepth: Items
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.05,0.10,0.05"
+        density: 20
+        mask:
+          - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: CartridgeAmmo
+    proto: WA68_BulletBase
+  - type: Tag
+    tags:
+    - Cartridge
+  - type: Item
+    size: Tiny
+  - type: SpaceGarbage
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Weapons/Guns/Casings/casing_fall_2.ogg
+      params:
+        volume: -1
+  - type: StaticPrice
+    price: 1
+
+########################## BULLET
+
+- type: entity
+  id: WA68_BulletBase
+  suffix: WorldAblaze1968
+  name: bullet
+  description: Its a fast moving piece of metal, if youre seeing this youre probably getting shot at, i suggest taking cover or something.
+  abstract: true
+  components:
+  - type: Reflective
+  - type: FlyBySound
+  - type: Clickable
+  - type: Sprite
+    noRot: false
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: bullet
+      shader: unshaded
+  - type: Physics
+    bodyType: Dynamic
+    linearDamping: 0
+    angularDamping: 0
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.3"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+  - type: Projectile
+    impactEffect: BulletImpactEffect
+    damage:
+      types:
+        Piercing: 1
+    armorPenetration: 1
+    soundHit:
+      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
+  - type: TimedDespawn
+    lifetime: 10
+  - type: LagCompensation
+
+########################## 1x1 Mag pistol
+
+- type: entity
+  id: WA68_MagazineBaseSmall
+  suffix: WorldAblaze1968
+  name: magazine
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - WA68_Magazine
+  - type: Item
+    size: Tiny
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge
+    proto: WA68_CartridgeBase
+    capacity: 15
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+########################## 1x2 Mag rifle
+
+- type: entity
+  id: WA68_MagazineBaseMedium
+  suffix: WorldAblaze1968
+  name: magazine
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - WA68_Magazine
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge
+    proto: WA68_CartridgeBase
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+########################## 2x3 Mag machinegun 
+
+- type: entity
+  id: WA68_MagazineBaseLarge
+  suffix: WorldAblaze1968
+  name: magazine
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - WA68_Magazine
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,1
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge
+    proto: WA68_CartridgeBase
+    capacity: 100
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance

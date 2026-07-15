@@ -1,0 +1,68 @@
+- type: entity
+  id: WA68_ClothingPouchBase
+  parent: BasePouch
+  suffix: WorldAblaze1968
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: medium_ammo_mag
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,5,5
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,2,1
+    storageOpenSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -1
+        variation: 0.125
+    storageCloseSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -1
+        variation: 0.125
+    storageInsertSound:
+      collection: BF_Magpouch_Insert
+      params:
+        volume: -1
+        variation: 0.125
+    storageRemoveSound:
+      collection: BF_Magpouch_Remove
+      params:
+        volume: -1
+        variation: 0.125
+
+- type: entity
+  parent: ClothingUniformBase
+  id: WA68_UnremovableUniformBase # you wouldnt want to commit a warcrime by taking off your uniform mid combat to deceive the enemy now would you
+  abstract: true
+  components:
+  - type: SelfUnremovableClothing
+  - type: Clothing
+    stripDelay: 99999999999
+    equipDelay: 99999999999
+    unequipDelay: 99999999999
+  - type: ExtendDescription
+    descriptionList:
+      - description: Cannot be taken off.
+        color: "#fc0377"
+        requireDetailRange: true
+
+- type: entity
+  parent: ClothingShoesBase
+  id: WA68_UnremovableShoesBase # theres no reason for somebody to take their fucking shoes off in a combat scenario
+  abstract: true
+  components:
+  - type: SelfUnremovableClothing
+  - type: Clothing
+    stripDelay: 99999999999
+    unequipDelay: 99999999999
+  - type: ExtendDescription
+    descriptionList:
+      - description: Cannot be taken off.
+        color: "#fc0377"
+        requireDetailRange: true

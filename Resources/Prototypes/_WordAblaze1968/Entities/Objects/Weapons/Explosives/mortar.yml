@@ -1,0 +1,736 @@
+########################## M2 60mm
+
+- type: entity
+  id: WA68_MortarShellM260mmM49A2 # High Explosive Fragmentation
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: M49A2 HE-Frag shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: m49a2
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShellM260mm
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,0 
+  - type: MortarShell
+    delayPerTile: 0.1
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_MortarShellM260mmM49A2Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 60mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Explodes into 50 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.1 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_MortarShellM260mmM49A2Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_MortarShellM260mmM49A2Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_MortarShellM260mmM49A2Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 60 # center damage 90
+    intensitySlope: 2.5
+    maxIntensity: 100
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: WA68_SmallFragment
+    capacity: 50
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+
+- type: entity
+  id: WA68_MortarShellM260mmM302 # White Phosporous Smoke
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: M302 WPS shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: m302
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShellM260mm
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,0
+  - type: MortarShell
+    delayPerTile: 0.1
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_MortarShellM260mmM302Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 60mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits smoke for 30 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.1 sec sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_MortarShellM260mmM302Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_MortarShellM260mmM302Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_MortarShellM260mmM302Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: SmokeOnTrigger
+    duration: 30
+    spreadAmount: 12
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: WA68_WPSmokeClose
+
+########################## M29 81mm
+
+- type: entity
+  id: WA68_MortarShellM2981mmM374A1 # High Explosive Fragmentation
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: M374A1 HE-Frag shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: m374a1
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShellM2981mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_MortarShellM2981mmM374A1Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 81mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Explodes into 95 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_MortarShellM2981mmM374A1Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_MortarShellM2981mmM374A1Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_MortarShellM2981mmM374A1Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 110 # center damage 126
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: WA68_SmallFragment
+    capacity: 95
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+
+- type: entity
+  id: WA68_MortarShellM2981mmM375 # White Phosporous Smoke
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: M375 WPS shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: m375
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShellM2981mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_MortarShellM2981mmM375Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 81mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits smoke for 50 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_MortarShellM2981mmM375Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_MortarShellM2981mmM375Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_MortarShellM2981mmM375Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: SmokeOnTrigger
+    duration: 50
+    spreadAmount: 16
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: WA68_WPSmokeClose
+
+- type: entity
+  id: WA68_MortarShellM2981mmM301A2 # Illumination flare
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: M301A2 Illum shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: m301a2
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShellM2981mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_MortarShellM2981mmM301A2Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 81mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits light for 70 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_MortarShellM2981mmM301A2Projectile
+  name: illumination flare
+  description: Mom said i shouldnt stare at the sun. So now im staring at illumination flares.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: flare
+    noRot: true
+  - type: TimedDespawn
+    lifetime: 70
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        volume: 50
+        loop: true
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_WorldAblaze1968/Misc/flare/pop.ogg
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: PointLight
+    enabled: true
+    color: "#b3afa6"
+    radius: 15.0
+    energy: 9.0
+
+########################## 82-BM-37 82mm
+
+- type: entity
+  id: WA68_MortarShell82BM3782mmO832D # High Explosive Fragmentation
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: O-832D HE-Frag shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: o832d
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShell82BM3782mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_MortarShell82BM3782mmO832DProjectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 82mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Explodes into 95 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  id: WA68_MortarShell82BM3782mmO832DProjectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_MortarShell82BM3782mmO832DImpact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_MortarShell82BM3782mmO832DImpact
+  components:
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 110 # center damage 126
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: WA68_SmallFragment
+    capacity: 95
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+
+- type: entity
+  id: WA68_MortarShell82BM3782mmD832 # White Phosporous Smoke
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: D-832 WPS shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: d832
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShell82BM3782mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_MortarShell82BM3782mmD832Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 82mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits smoke for 50 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_MortarShell82BM3782mmD832Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_MortarShell82BM3782mmD832Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_MortarShell82BM3782mmD832Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: SmokeOnTrigger
+    duration: 50
+    spreadAmount: 16
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: WA68_WPSmokeClose
+
+- type: entity
+  id: WA68_MortarShell82BM3782mmS832 # Illumination flare
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: S-832 Illum shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: s832
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShell82BM3782mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_MortarShell82BM3782mmS832Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 82mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits light for 70 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_MortarShell82BM3782mmS832Projectile
+  name: illumination flare
+  description: Mom said i shouldnt stare at the sun. So now im staring at illumination flares.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: flare
+    noRot: true
+  - type: TimedDespawn
+    lifetime: 70
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        volume: 50
+        loop: true
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_WorldAblaze1968/Misc/flare/pop.ogg
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: PointLight
+    enabled: true
+    color: "#b3afa6"
+    radius: 15.0
+    energy: 9.0
+
+########################## 120-PM-43 120mm
+
+- type: entity
+  id: WA68_Mortarhell120PM43120mmOF843B # High Explosive Fragmentation
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: OF-843B HE-Frag shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: of843b
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShell120PM43120mm
+  - type: Item
+    size: Huge
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg
+    explosionEntity: WA68_Mortarhell120PM43120mmOF843BProjectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 120mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Explodes into 140 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  id: WA68_Mortarhell120PM43120mmOF843BProjectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_Mortarhell120PM43120mmOF843BImpact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_Mortarhell120PM43120mmOF843BImpact
+  components:
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_MediumYieldExplosion
+    totalIntensity: 200 # center damage 243
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: WA68_SmallFragment
+    capacity: 140
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+
+- type: entity
+  id: WA68_Mortarhell120PM43120mmD843 # White Phosporous Smoke
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: D-843 WPS shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: d843
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShell120PM43120mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_Mortarhell120PM43120mmD843Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 82mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits smoke for 100 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_Mortarhell120PM43120mmD843Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_Mortarhell120PM43120mmD843Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_Mortarhell120PM43120mmD843Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: SmokeOnTrigger
+    duration: 100
+    spreadAmount: 19
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: WA68_WPSmokeClose
+
+- type: entity
+  id: WA68_Mortarhell120PM43120mmS843 # Illumination flare
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: S-843 Illum shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/MortarShells.rsi
+    state: s843
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_MortarShell120PM43120mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.05
+    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
+    explosionEntity: WA68_Mortarhell120PM43120mmS843Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 120mm mortar shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits light for 120 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.05 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_Mortarhell120PM43120mmS843Projectile
+  name: illumination flare
+  description: Mom said i shouldnt stare at the sun. So now im staring at illumination flares.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: flare
+    noRot: true
+  - type: TimedDespawn
+    lifetime: 120
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        volume: 50
+        loop: true
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_WorldAblaze1968/Misc/flare/pop.ogg
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: PointLight
+    enabled: true
+    color: "#b3afa6"
+    radius: 15.0
+    energy: 9.0

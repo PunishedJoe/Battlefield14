@@ -1,0 +1,195 @@
+########################## Usa
+
+- type: entity
+  name: M1911
+  parent: WA68_WeaponPistolBase
+  id: WA68_WeaponUsaM1911
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/m1911.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/m1911.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/m1911.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m1911_close.ogg
+      params:
+        volume: -1.5
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineM1911
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineM1911
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge45
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge45
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts M1911 style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+########################## Ussr
+
+- type: entity
+  name: PM
+  parent: WA68_WeaponPistolBase
+  id: WA68_WeaponUssrPM
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/pm.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/pm.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/pm.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/pm_close.ogg
+      params:
+        volume: -1
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazinePM
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazinePM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge9x18mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge9x18mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts Makarov style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: PB
+  parent: WA68_WeaponPistolBase
+  id: WA68_WeaponUssrPB
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/pb.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,0
+    - 0,1,0,1
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/pb.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/pb.rsi
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/pm_supp.ogg
+      params:
+        volume: -3
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazinePM
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazinePM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge9x18mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge9x18mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts Makarov style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: APS
+  parent: WA68_WeaponPistolBase
+  id: WA68_WeaponUssrAPS
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/aps.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/aps.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/aps.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/pm_close.ogg
+      params:
+        volume: -1
+        variation: 0.1
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineAPS
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineAPS
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Cartridge9x18mm
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge9x18mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Accepts Stechkin style magazines.
+        color: "#4f94ad"
+        requireDetailRange: true

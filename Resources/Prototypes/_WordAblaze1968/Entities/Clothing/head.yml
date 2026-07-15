@@ -1,0 +1,131 @@
+########################## Usa
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: WA68_ClothingHeadHelmetUsaM1
+  suffix: WorldAblaze1968
+  name: M1 helmet
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Head/m1.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Head/m1.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 2
+        Slash: 2
+        Piercing: 2
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: WA68_ClothingHeadHelmetUsaM1
+  id: WA68_ClothingHeadHelmetWestGerM1A1
+  name: M1A1 helmet
+  description: Lorem ipsum
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: WA68_ClothingHeadHelmetUsaM1ERDL
+  suffix: WorldAblaze1968
+  name: M1 ERDL helmet
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Head/m1erdl.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Head/m1erdl.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.85
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: ClothingHeadBase
+  id: WA68_ClothingHeadHatUsaPatrolCap
+  suffix: WorldAblaze1968
+  name: patrol cap
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Head/patrolcap.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Head/patrolcap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+
+- type: entity
+  parent: ClothingHeadBase
+  id: WA68_ClothingHeadHatUsaBoonie
+  suffix: WorldAblaze1968
+  name: boonie
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Head/boonie.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Head/boonie.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+
+########################## Ussr
+
+- type: entity
+  parent: ClothingHeadHelmetBasic
+  id: WA68_ClothingHeadHelmetUssrSSh68
+  suffix: WorldAblaze1968
+  name: SSh-68 helmet
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Head/ssh68.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Head/ssh68.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.85
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: ClothingHeadBase
+  id: WA68_ClothingHeadHatUssrM38
+  suffix: WorldAblaze1968
+  name: M38
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Head/m38.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Head/m38.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+
+- type: entity
+  parent: ClothingHeadBase
+  id: WA68_ClothingHeadHatUssrBeretVDV
+  suffix: WorldAblaze1968
+  name: VDV beret
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Head/beretvdv.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Head/beretvdv.rsi
+  - type: Tag
+    tags:
+    - ClothMade
