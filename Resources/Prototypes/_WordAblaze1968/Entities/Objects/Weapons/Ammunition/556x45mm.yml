@@ -11,13 +11,17 @@
       types:
         Piercing: 20
     armorPenetration: 0.2
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: intermediate
 
 ########################## CARTRIDGE
 
 - type: entity
   id: WA68_Cartridge556x45mm
   name: 5.56x45mm cartridge
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A intermediate cartridge used by the western world.
   parent: WA68_CartridgeBase
   components:
   - type: CartridgeAmmo
@@ -26,9 +30,9 @@
   - type: Tag
     tags:
     - WA68_CartridgeBase
-    - WA68_Cartridge545x45mm
+    - WA68_Cartridge556x45mm
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -40,8 +44,8 @@
 - type: entity
   parent: WA68_MagazineBaseMedium
   id: WA68_MagazineSTANAG20Rnd
-  name: STANAG 20-Round magazine 5.56x45mm
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: STANAG 20-Rnd magazine 5.56x45mm
+  description: A 20 round STANAG magazine.
   components:
   - type: Tag
     tags:
@@ -75,8 +79,8 @@
 - type: entity
   parent: WA68_MagazineBaseMedium
   id: WA68_MagazineSTANAG30Rnd
-  name: STANAG 30-Round magazine 5.56x45mm
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: STANAG 30-Rnd magazine 5.56x45mm
+  description: A 30 round STANAG magazine.
   components:
   - type: Tag
     tags:
@@ -110,8 +114,8 @@
 - type: entity
   parent: WA68_MagazineBaseMedium
   id: WA68_MagazineStoner63
-  name: Stoner 63 30-Round magazine 5.56x45mm
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: Stoner 63 30-Rnd magazine 5.56x45mm
+  description: A 30 round Stoner 63 magazine.
   components:
   - type: Tag
     tags:
@@ -145,8 +149,8 @@
 - type: entity
   parent: WA68_MagazineBaseLarge
   id: WA68_MagazineM63
-  name: M63 100-Round box 5.56x45mm
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: M63 100-Rnd box 5.56x45mm
+  description: A 100 round M63 box.
   components:
   - type: Tag
     tags:

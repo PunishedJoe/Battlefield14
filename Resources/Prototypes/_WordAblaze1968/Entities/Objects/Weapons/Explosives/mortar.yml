@@ -133,7 +133,7 @@
   - type: TriggerOnSpawn
   - type: SmokeOnTrigger
     duration: 30
-    spreadAmount: 12
+    spreadAmount: 15
   - type: EmitSoundOnTrigger
     sound:
       collection: WA68_WPSmokeClose
@@ -269,7 +269,7 @@
   - type: TriggerOnSpawn
   - type: SmokeOnTrigger
     duration: 50
-    spreadAmount: 16
+    spreadAmount: 19
   - type: EmitSoundOnTrigger
     sound:
       collection: WA68_WPSmokeClose
@@ -467,7 +467,7 @@
   - type: TriggerOnSpawn
   - type: SmokeOnTrigger
     duration: 50
-    spreadAmount: 16
+    spreadAmount: 19
   - type: EmitSoundOnTrigger
     sound:
       collection: WA68_WPSmokeClose
@@ -666,7 +666,7 @@
   - type: TriggerOnSpawn
   - type: SmokeOnTrigger
     duration: 100
-    spreadAmount: 19
+    spreadAmount: 25
   - type: EmitSoundOnTrigger
     sound:
       collection: WA68_WPSmokeClose

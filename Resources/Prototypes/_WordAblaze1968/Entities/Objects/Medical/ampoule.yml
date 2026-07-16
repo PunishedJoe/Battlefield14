@@ -38,11 +38,28 @@
   - type: Tag
     tags:
     - WA68_MedicalItemSmall
+    - WA68_MedicalItemTiny
   - type: TrashOnSolutionEmpty
     solution: pen
 
 - type: entity
-  description: a ampolue containing ammonia inhalants (smelling salts) overuse may cause chemical burns to a persons airways.
+  name: 6-Pcs ampoule pack
+  description: A small pack thats used to ship ampoules.
+  parent: WA68_SyretteMedicalCase
+  id: WA68_AmpouleMedicalCaseSmellingSalts
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrettebox.rsi
+    state: green
+  - type: StorageFill
+    contents:
+      - id: WA68_AmpouleSmellingSalts
+        amount: 6
+  - type: Label
+    currentLabel: ammonia inhalants
+
+- type: entity
+  description: a glass ampolue. This one containins ammonia inhalants (smelling salts) overuse may cause chemical burns to a persons airways.
   parent: WA68_AmpouleBase
   id: WA68_AmpouleSmellingSalts
   suffix: WorldAblaze1968
@@ -54,12 +71,12 @@
     layers:
     - state: base
       map: ["enum.SolutionContainerLayers.Fill"]
-    - state: black
+    - state: blue
       map: ["enum.SolutionContainerLayers.Base"]
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 25
+        maxVol: 20
         reagents:
-        - ReagentId: Stimulants
-          Quantity: 25
+        - ReagentId: Water
+          Quantity: 20

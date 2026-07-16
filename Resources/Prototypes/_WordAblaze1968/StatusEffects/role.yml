@@ -1,0 +1,83 @@
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoRifleman
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconNatoRifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoSeniorRifleman
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconNatoSeniorRifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoSquadLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconNatoSquadLeader
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoPlatoonLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconNatoPlatoonLeader
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactRifleman
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconPactRifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactSeniorRifleman
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconPactSeniorRifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactSquadLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconPactSquadLeader
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactPlatoonLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconPactPlatoonLeader
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconRifleman
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconRifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconSeniorRifleman
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconSeniorRifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconSquadLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconSquadLeader
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPlatoonLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: JobIconPlatoonLeader

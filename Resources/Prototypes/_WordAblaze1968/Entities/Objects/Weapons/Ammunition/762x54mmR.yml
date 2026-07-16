@@ -9,15 +9,19 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 28
+        Piercing: 26
     armorPenetration: 0.35
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: rifle
 
 ########################## CARTRIDGE
 
 - type: entity
   id: WA68_Cartridge762x54mmR
   name: 7.62x54mmR cartridge
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A rimmed full power cartridge used by the eastern world.
   parent: WA68_CartridgeBase
   components:
   - type: CartridgeAmmo
@@ -28,7 +32,7 @@
     - WA68_CartridgeBase
     - WA68_Cartridge762x54mmR
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/intermediate_steel.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
@@ -38,10 +42,42 @@
 ########################## MAGS
 
 - type: entity
+  parent: BaseItem
+  id: WA68_MagazineClipMosin
+  name: Mosin 5-Rnd stripper clip
+  description: A 5 round Mosin stripper clip.
+  components:
+  - type: Tag
+    tags:
+      - WA68_Magazine
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Loaders/762x54rclip.rsi
+    size: Tiny
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    capacity: 5
+    proto: WA68_Cartridge762x54mmR
+    whitelist:
+      tags:
+        - WA68_Cartridge762x54mmR
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Loaders/762x54rclip.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
   parent: WA68_MagazineBaseMedium
   id: WA68_Magazine6L2
-  name: 6L2 10-Round magazine 7.62x54mmR
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: 6L2 10-Rnd magazine 7.62x54mmR
+  description: A 10 round SVD magazine.
   components:
   - type: Tag
     tags:
@@ -55,7 +91,7 @@
         - WA68_Cartridge762x54mmR
     capacity: 10
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6l2.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6l2.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -75,8 +111,8 @@
 - type: entity
   parent: WA68_MagazineBaseLarge
   id: WA68_Magazine6Zh1M
-  name: 6Zh1M 100-Round magazine 7.62x54mmR
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: 6Zh1M 100-Rnd magazine 7.62x54mmR
+  description: A 100 round PKM box magazine.
   components:
   - type: Tag
     tags:
@@ -90,7 +126,7 @@
         - WA68_Cartridge762x54mmR
     capacity: 100
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6zh1m.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6zh1m.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

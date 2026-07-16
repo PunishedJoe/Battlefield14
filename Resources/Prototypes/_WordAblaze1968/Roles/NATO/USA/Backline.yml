@@ -1,0 +1,53 @@
+- type: job
+  id: WA68_RoleNatoUsaFobPersonnel
+  name: US FOB personnel
+  description: Accidentaly choose this. Commit suicide, respawn as rifleman.
+  playTimeTracker: WA68_RoleNatoUsaFobPersonnelTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaBacklineGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoFobPersonnel"
+  requireAdminNotify: false
+  supervisors: FOB Mayor
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Spc.
+
+- type: job
+  id: WA68_RoleNatoUsaFobMayor
+  name: US FOB Mayor
+  description: Manage the FOB, distribute specialized gear amongst the soilders then do nothing for 30 minutes. 
+  playTimeTracker: WA68_RoleNatoUsaFobMayorTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaBacklineGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoFobMayor"
+  requireAdminNotify: false
+  supervisors: Company commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Cpt.

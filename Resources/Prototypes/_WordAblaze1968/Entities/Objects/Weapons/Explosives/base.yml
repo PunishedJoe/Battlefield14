@@ -61,7 +61,7 @@
     delay: 5
   - type: Tag
     tags:
-      - Grenade
+      - WA68_GrenadeThrowable
   - type: SpawnOnTrigger
     proto: WA68_ExplosionEffect
   - type: Sprite
@@ -88,6 +88,11 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9999999 # making it this high so some dickhead doesnt crash the server by setting of 8 grenades at once due to the high fragment count
 
 - type: entity
   parent: BaseItem
@@ -99,7 +104,7 @@
     size: Small
   - type: Tag
     tags:
-      - Grenade
+      - WA68_GrenadeThrowable
   - type: SpawnOnTrigger
     proto: WA68_ExplosionEffect
   - type: Sprite
@@ -171,7 +176,7 @@
     delay: 5
   - type: Tag
     tags:
-      - Grenade
+      - WA68_GrenadeThrowable
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Explosives/f1.rsi
   - type: ContainerContainer
@@ -187,3 +192,8 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 9999999 # making it this high so some dickhead doesnt crash the server by setting of 8 grenades at once due to the high fragment count

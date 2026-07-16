@@ -15,10 +15,10 @@
     - idcard
   - type: Item
     size: Tiny
-    heldPrefix: default
-    storedRotation: -90
   - type: IdCard
   - type: CargoSellBlacklist
+  - type: Access
+  - type: StationRecordKeyStorage
 
 ########################## Usa
 

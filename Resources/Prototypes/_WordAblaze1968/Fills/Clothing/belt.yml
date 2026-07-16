@@ -1,8 +1,23 @@
+########################## M1911
+
+- type: entity
+  id: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM1911
+  parent: WA68_ClothingBeltMilitaryWebbingUsaM1967
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_MagazineM1911
+        amount: 4
+      - id: WA68_WeaponUsaM1911
+        amount: 1
+
 ########################## STANAG
 
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
   parent: WA68_ClothingBeltMilitaryWebbingUsaM1967
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -12,17 +27,31 @@
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG20Rnd
   parent: WA68_ClothingBeltMilitaryWebbingUsaM1967
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
       - id: WA68_MagazineSTANAG20Rnd
         amount: 6
 
+########################## M40
+
+- type: entity
+  id: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM40
+  parent: WA68_ClothingBeltMilitaryWebbingUsaM1967
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_MagazineClipM40
+        amount: 12
+
 ########################## M14
 
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM1420Rnd
   parent: WA68_ClothingBeltMilitaryWebbingUsaM1967
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -32,6 +61,7 @@
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM1410Rnd
   parent: WA68_ClothingBeltMilitaryWebbingUsaM1967
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -43,17 +73,45 @@
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM60
   parent: WA68_ClothingBeltMilitaryWebbingUsaM1967
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
       - id: WA68_MagazineM60
         amount: 2
 
+########################## PM
+
+- type: entity
+  id: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledPM
+  parent: WA68_ClothingBeltMilitaryWebbingUssrM1955
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_MagazinePM
+        amount: 4
+      - id: WA68_WeaponUssrPM
+        amount: 1
+
+########################## SKS
+
+- type: entity
+  id: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
+  parent: WA68_ClothingBeltMilitaryWebbingUssrM1955
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_MagazineClipSKS
+        amount: 12
+
 ########################## AKM
 
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
   parent: WA68_ClothingBeltMilitaryWebbingUssrM1955
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -63,17 +121,31 @@
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6P2
   parent: WA68_ClothingBeltMilitaryWebbingUssrM1955
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
       - id: WA68_Magazine6P2
         amount: 6
 
+########################## Mosin
+
+- type: entity
+  id: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledMosin
+  parent: WA68_ClothingBeltMilitaryWebbingUssrM1955
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_MagazineClipMosin
+        amount: 12
+
 ########################## SVD
 
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L2
   parent: WA68_ClothingBeltMilitaryWebbingUssrM1955
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -85,6 +157,7 @@
 - type: entity
   id: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6Zh1M
   parent: WA68_ClothingBeltMilitaryWebbingUssrM1955
+  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:

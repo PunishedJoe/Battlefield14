@@ -85,6 +85,77 @@
       collection: PistolsDrop
   - type: Appearance
 
+- type: entity ########################## MAGLESS RIFLES
+  parent: BaseItem
+  id: WA68_WeaponMaglessRifleBase # for rifles with internal mags
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 21
+    maxAngle: 60
+    angleIncrease: 7
+    angleDecay: 90
+    fireRate: 10 # 600 RPM
+    projectileSpeed: 55
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: AltFireMelee
+    attackType: Heavy
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 20
+    angle: 0
+    wideAnimationRotation: 90
+    soundHit:
+      collection: MetalThud
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false
+  - type: Appearance
+
 - type: entity ########################## RIFLES
   parent: BaseItem
   id: WA68_WeaponRifleBase # for rifles duh
@@ -528,8 +599,8 @@
     autoCycle: false
     boltClosed: false
     canRack: false
-    soundBoltClosed: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
-    soundBoltOpened: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+    soundBoltClosed: /Audio/_WorldAblaze1968/Weapons/Interactions/GrenadeLauncher/close1.ogg
+    soundBoltOpened: /Audio/_WorldAblaze1968/Weapons/Interactions/GrenadeLauncher/open1.ogg
     soundRack: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
   - type: EmitSoundOnPickup
     sound:

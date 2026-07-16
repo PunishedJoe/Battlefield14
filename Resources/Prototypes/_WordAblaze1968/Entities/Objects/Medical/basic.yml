@@ -302,7 +302,7 @@
         Cold: -10
         Slash: -10
         Piercing: -10
-    bloodlossModifier: -3
+    bloodlossModifier: -5
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:

@@ -11,13 +11,17 @@
       types:
         Piercing: 16
     armorPenetration: 0.05
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
 
 ########################## CARTRIDGE
 
 - type: entity
   id: WA68_Cartridge9x18mm
   name: 9x18mm cartridge
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A pistol cartridge used by the eastern world.
   parent: WA68_CartridgeBase
   components:
   - type: CartridgeAmmo
@@ -40,8 +44,8 @@
 - type: entity
   parent: WA68_MagazineBaseSmall
   id: WA68_MagazinePM
-  name: 56-A-125 8-Round magazine 9x18mm
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: 56-A-125 8-Rnd magazine 9x18mm
+  description: A 8 round Makarov magazine.
   components:
   - type: Tag
     tags:
@@ -55,7 +59,7 @@
         - WA68_Cartridge9x18mm
     capacity: 8
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -63,7 +67,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 3
+    steps: 8
     zeroVisible: false
   - type: Appearance
   - type: ExtendDescription
@@ -75,8 +79,8 @@
 - type: entity
   parent: WA68_MagazineBaseSmall
   id: WA68_MagazineAPS
-  name: 56-A-126 20-Round magazine 9x18mm
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: 56-A-126 20-Rnd magazine 9x18mm
+  description: A 20 round Stechkin magazine.
   components:
   - type: Tag
     tags:
@@ -90,7 +94,7 @@
         - WA68_Cartridge9x18mm
     capacity: 20
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -98,7 +102,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 3
+    steps: 8
     zeroVisible: false
   - type: Appearance
   - type: ExtendDescription

@@ -11,13 +11,17 @@
       types:
         Piercing: 18
     armorPenetration: 0.05
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
 
 ########################## CARTRIDGE
 
 - type: entity
   id: WA68_Cartridge45
-  name: .45 acp cartridge
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: .45 ACP cartridge
+  description: A pistol cartridge used by the western world
   parent: WA68_CartridgeBase
   components:
   - type: CartridgeAmmo
@@ -40,8 +44,8 @@
 - type: entity
   parent: WA68_MagazineBaseSmall
   id: WA68_MagazineM1911
-  name: M1911 7-Round magazine .45 acp
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  name: M1911 7-Rnd magazine .45 acp
+  description: A 7 round M1911 magazine
   components:
   - type: Tag
     tags:
@@ -55,7 +59,7 @@
         - WA68_Cartridge45
     capacity: 7
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/testmag.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/M1911.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -63,7 +67,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 3
+    steps: 7
     zeroVisible: false
   - type: Appearance
   - type: ExtendDescription

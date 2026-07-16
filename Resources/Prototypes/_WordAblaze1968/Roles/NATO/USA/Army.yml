@@ -1,0 +1,134 @@
+- type: job
+  id: WA68_RoleNatoUsaArmyReserve
+  name: US Army reservist
+  description: When your predecessors fail you get sent into the meatgrinder.
+  playTimeTracker: WA68_RoleNatoUsaArmyReserveTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaArmyReserveGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoRifleman"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Pvt.
+
+- type: job
+  id: WA68_RoleNatoUsaArmyRifleman
+  name: US Army infantryman
+  description: Be the cannon fodder for United States of America.
+  playTimeTracker: WA68_RoleNatoUsaArmyRiflemanTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaArmyRiflemanGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoRifleman"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Pfc.
+
+- type: job
+  id: WA68_RoleNatoUsaArmySeniorRifleman
+  name: US Army senior infantryman
+  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper
+  playTimeTracker: WA68_RoleNatoUsaArmySeniorRiflemanTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaArmyRiflemanGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoSeniorRifleman"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Spc.
+
+- type: job
+  id: WA68_RoleNatoUsaArmySquadLeader
+  name: US Army squad leader
+  description: Try to manage you squad of meatshields. Get blamed for everything.
+  playTimeTracker: WA68_RoleNatoUsaArmySquadLeaderTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaArmyLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoSquadLeader"
+  requireAdminNotify: false
+  supervisors: Platoon commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Sgt.
+
+- type: job
+  id: WA68_RoleNatoUsaArmyPlatoonLeader
+  name: US Army platoon commander
+  description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
+  playTimeTracker: WA68_RoleNatoUsaArmyPlatoonLeaderTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaArmyLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoPlatoonLeader"
+  requireAdminNotify: false
+  supervisors: Company commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Lt.

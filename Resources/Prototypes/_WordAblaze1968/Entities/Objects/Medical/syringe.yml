@@ -1,5 +1,5 @@
 - type: entity
-  name: 6-Pcs. syringe case
+  name: 6-Pcs syringe case
   parent: BaseItem
   description: A small case made to hold and safekeep syringes.
   id: WA68_SyringeMedicalCase
@@ -16,7 +16,7 @@
     - 0,0,5,0
     whitelist:
       tags:
-      - Syringe
+      - WA68_MedicalItemTiny
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Medical/syringebox.rsi
     state: base
@@ -44,8 +44,8 @@
   components:
   - type: Tag
     tags:
-    - Syringe
     - WA68_MedicalItemSmall
+    - WA68_MedicalItemTiny
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Medical/syringe.rsi
     layers:

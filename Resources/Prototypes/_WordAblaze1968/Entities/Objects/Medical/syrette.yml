@@ -1,5 +1,5 @@
 - type: entity
-  name: 6-Pcs. syrette pack
+  name: 6-Pcs syrette pack
   parent: BaseItem
   description: A small pack thats used to ship syrettes.
   abstract: true
@@ -13,13 +13,15 @@
     - 0,0,5,0
     whitelist:
       tags:
-      - Syringe
+      - WA68_MedicalItemTiny
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Medical/syrettebox.rsi
     state: black
   - type: Item
     sprite: _WorldAblaze1968/Objects/Medical/syrettebox.rsi
-    size: Tiny
+    size: Small
+    shape:
+    - 0,0,1,0
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -57,7 +59,7 @@
   - type: Tag
     tags:
     - WA68_MedicalItemSmall
-    - Syringe
+    - WA68_MedicalItemTiny
   - type: Item
     size: Tiny
     sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
@@ -71,7 +73,7 @@
   - type: Tag
     tags:
     - WA68_MedicalItemSmall
-    - Syringe
+    - WA68_MedicalItemTiny
   - type: Item
     size: Tiny
     sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
@@ -85,7 +87,7 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 20
+        maxVol: 10
 
 - type: entity
   parent: WA68_SyretteMedicalCase
@@ -137,10 +139,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 20
+        maxVol: 10
         reagents:
         - ReagentId: Water # TODO TODO TODO TODO TODO
-          Quantity: 20
+          Quantity: 10
 
 - type: entity
   parent: WA68_SyretteMedicalCase
@@ -192,10 +194,10 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 20
+        maxVol: 10
         reagents:
         - ReagentId: Water # TODO TODO TODO TODO TODO
-          Quantity: 20
+          Quantity: 10
 
 - type: entity
   parent: WA68_SyretteMedicalCase
@@ -247,7 +249,7 @@
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 20
+        maxVol: 10
         reagents:
         - ReagentId: Water # TODO TODO TODO TODO TODO
-          Quantity: 20
+          Quantity: 10

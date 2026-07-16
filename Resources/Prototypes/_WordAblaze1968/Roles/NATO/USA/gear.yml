@@ -1,0 +1,99 @@
+- type: startingGear
+  id: WA68_RoleNatoUsaBacklineGear
+  equipment:
+    id: WA68_ClothingDogtagUsa
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaOG107
+    back: WA68_ClothingBackpackUsaM1961
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM1911
+  storage:
+    back:
+    - WA68_Binoculars
+
+- type: startingGear
+  id: WA68_RoleNatoUsaArmyLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUsa
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaOG107
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackRadioUsaANPRC77
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+  storage:
+    back:
+    - WA68_Binoculars
+
+- type: startingGear
+  id: WA68_RoleNatoUsaArmyRiflemanGear
+  equipment:
+    id: WA68_ClothingDogtagUsa
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaOG107
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+
+- type: startingGear
+  id: WA68_RoleNatoUsaArmyReserveGear
+  equipment:
+    id: WA68_ClothingDogtagUsa
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaOG107
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM1420Rnd
+    head: WA68_ClothingHeadHatUsaPatrolCap
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM14
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M26A1_M18
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUsa
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1ERDL
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackRadioUsaANPRC77
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+  storage:
+    back:
+    - WA68_Binoculars
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineRiflemanGear
+  equipment:
+    id: WA68_ClothingDogtagUsa
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1ERDL
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineReserveGear
+  equipment:
+    id: WA68_ClothingDogtagUsa
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM1420Rnd
+    head: WA68_ClothingHeadHatUsaPatrolCap
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM14
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M26A1_M18

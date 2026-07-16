@@ -5,7 +5,10 @@
   id: WA68_GrenadeRound
 
 - type: Tag
-  id: WA68_MedicalItemLarge
+  id: WA68_MedicalItemMedium
+
+- type: Tag
+  id: WA68_MedicalItemTiny
 
 - type: Tag
   id: WA68_MedicalItemSmall

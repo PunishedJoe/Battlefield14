@@ -1,24 +1,8 @@
 - type: entity
   parent: WA68_ClothingPouchBase
-  id: WA68_ClothingPouchGenericGeneral
-  name: general pouch
-  description: A pouch designed to hold anything a soilder would want.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
-    layers:
-      - state: survival
-  - type: Storage
-    maxItemSize: Small
-    grid:
-    - 0,0,4,1
-    whitelist:
-
-- type: entity
-  parent: WA68_ClothingPouchBase
   id: WA68_ClothingPouchGenericGrenade
   name: grenade pouch
-  description: A pouch designed to hold 4 grenades.
+  description: A pouch designed to hold 5 grenades.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
@@ -27,7 +11,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,3,1
+    - 0,0,4,1
     whitelist:
       tags:
       - WA68_GrenadeThrowable

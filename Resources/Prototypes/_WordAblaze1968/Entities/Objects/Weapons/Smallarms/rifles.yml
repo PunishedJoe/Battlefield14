@@ -329,6 +329,41 @@
 ########################## Ussr
 
 - type: entity
+  name: SKS
+  parent: WA68_WeaponMaglessRifleBase
+  id: WA68_WeaponUssrSKS
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/sks.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/sks.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/sks.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/akm_close.ogg
+      params:
+        variation: 0.1
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: WA68_Cartridge762x39mm
+    whitelist:
+      tags:
+      - WA68_Cartridge762x39mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 10-Round internal magazine
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
   name: AKM
   parent: WA68_WeaponRifleBase
   id: WA68_WeaponUssrAKM

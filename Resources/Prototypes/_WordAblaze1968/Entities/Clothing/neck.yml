@@ -19,7 +19,7 @@
     maxItemSize: Large
     defaultStorageOrientation: Vertical
     grid:
-    - 0,0,5,4
+    - 0,0,6,4
     whitelist:
       tags:
       - WA68_MedicalItemSmall

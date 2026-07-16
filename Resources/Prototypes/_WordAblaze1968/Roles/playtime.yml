@@ -1,0 +1,65 @@
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaFobPersonnelTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaFobMayorTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyReserveTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmySeniorRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmySquadLeaderTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyPlatoonleaderTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaMarineReserveTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaMarineRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaMarineSeniorRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaMarineSquadLeaderTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaMarinePlatoonleaderTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrArmyReserveTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrArmyRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrArmySeniorRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrArmySquadLeaderTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrArmyPlatoonleaderTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrAirborneReserveTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrAirborneRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrAirborneSeniorRiflemanTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrAirborneSquadLeaderTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrAirbornePlatoonleaderTime

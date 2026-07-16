@@ -1,0 +1,134 @@
+- type: job
+  id: WA68_RolePactUssrAirborneReserve
+  name: USSR Airborne reservist
+  description: When your predecessors fail you get sent into the meatgrinder.
+  playTimeTracker: WA68_RolePactUssrAirborneReserveTime
+  weight: 77
+  startingGear: WA68_RolePactUssrAirborneReserveGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactRifleman"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Ryt.
+
+- type: job
+  id: WA68_RolePactUssrAirborneRifleman
+  name: USSR Airborne infantryman
+  description: Be the cannon fodder for United States of America.
+  playTimeTracker: WA68_RolePactUssrAirborneRiflemanTime
+  weight: 77
+  startingGear: WA68_RolePactUssrAirborneRiflemanGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactRifleman"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Ryt.
+
+- type: job
+  id: WA68_RolePactUssrAirborneSeniorRifleman
+  name: USSR Airborne senior infantryman
+  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper
+  playTimeTracker: WA68_RolePactUssrAirborneSeniorRiflemanTime
+  weight: 77
+  startingGear: WA68_RolePactUssrAirborneRiflemanGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactSeniorRifleman"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: MSzh.
+
+- type: job
+  id: WA68_RolePactUssrAirborneSquadLeader
+  name: USSR Airborne squad leader
+  description: Try to manage you squad of meatshields. Get blamed for everything.
+  playTimeTracker: WA68_RolePactUssrAirborneSquadLeaderTime
+  weight: 77
+  startingGear: WA68_RolePactUssrAirborneLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactSquadLeader"
+  requireAdminNotify: false
+  supervisors: Platoon commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Szh.
+
+- type: job
+  id: WA68_RolePactUssrAirbornePlatoonLeader
+  name: USSR Airborne platoon commander
+  description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
+  playTimeTracker: WA68_RolePactUssrAirbornePlatoonLeaderTime
+  weight: 77
+  startingGear: WA68_RolePactUssrAirborneLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactPlatoonLeader"
+  requireAdminNotify: false
+  supervisors: Company commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Lyt.

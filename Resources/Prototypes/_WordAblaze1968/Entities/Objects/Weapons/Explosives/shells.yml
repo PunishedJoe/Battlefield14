@@ -1,0 +1,284 @@
+########################## Carl Gustaf
+
+- type: entity
+  id: WA68_Shell84mmRFFV551
+  suffix: WorldAblaze1968
+  name: FFV 551 HEAT shell
+  parent: WA68_CartridgeBase
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,4
+  - type: Tag
+    tags:
+    - WA68_Cartridge
+    - WA68_Shell84mmR
+  - type: CartridgeAmmo
+    proto: WA68_ShellProjectile84mmRFFV551Unarmed
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/m371a1.rsi
+    layers:
+    - state: base
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 140 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+  - type: ClothingSpeedModifier # its a big ass 90mm shell
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: WA68_ShellProjectile84mmRFFV551Unarmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: m371a1
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Piercing: 30 # these things embed in people so it would defo hurt
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: WA68_ShellProjectile84mmRFFV551Armed
+    distanceDelay: 4
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 100
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: WA68_ShellProjectile84mmRFFV551Armed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: m371a1
+  - type: Projectile
+    damage:
+      types:
+        Structural: 500 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+    gibsOnHit: true
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_MediumYieldExplosion
+    totalIntensity: 140 # center damage 180
+    intensitySlope: 2.5
+    maxIntensity: 100
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 140
+
+########################## M67
+
+- type: entity
+  id: WA68_Shell90mmBM371A1
+  suffix: WorldAblaze1968
+  name: M371A1 shell
+  parent: WA68_CartridgeBase
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,1,4
+  - type: Tag
+    tags:
+    - WA68_Cartridge
+    - WA68_Shell90mmB
+  - type: CartridgeAmmo
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+    proto: WA68_ShellProjectile90mmBM371A1Unarmed
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/m371a1.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 110 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+  - type: ClothingSpeedModifier # its a big ass 90mm shell
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: WA68_ShellProjectile90mmBM371A1Unarmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: m371a1
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Piercing: 30 # these things embed in people so it would defo hurt
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: WA68_ShellProjectile90mmBM371A1Armed
+    distanceDelay: 4
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 100
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: WA68_ShellProjectile90mmBM371A1Armed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    layers:
+    - state: m371a1
+  - type: Projectile
+    damage:
+      types:
+        Structural: 500 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+    gibsOnHit: true
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_MediumYieldExplosion
+    totalIntensity: 140 # center damage 180
+    intensitySlope: 2.5
+    maxIntensity: 100
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 110
+
+########################## M79
+
+- type: entity
+  id: WA68_Shell40x46mmRM406
+  suffix: WorldAblaze1968
+  name: M406 HE shell
+  parent: WA68_CartridgeBase
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+    - WA68_Cartridge
+    - WA68_Shell40x46mmR
+    - WA68_GrenadeRound
+  - type: CartridgeAmmo
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+    proto: WA68_Shell40x46mmRM406Unarmed
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 80 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has 4 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: WA68_Shell40x46mmRM406Unarmed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 20
+        Piercing: 30 # these things embed in people so it would defo hurt
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: WA68_Shell40x46mmRM406Armed
+    distanceDelay: 4
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 100
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: WA68_Shell40x46mmRM406Armed
+  name: rocket
+  description: This might gib you so avoid it.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Structural: 500 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+    gibsOnHit: true
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 110 # center damage 126
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: StaminaDamageOnCollide
+    damage: 100
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 80
