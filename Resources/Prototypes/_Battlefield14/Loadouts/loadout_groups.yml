@@ -269,20 +269,6 @@
 #region BACK
 
 - type: loadoutGroup
-  id: BF_BackpacksSmall
-  name: loadout-group-BF14-backpack
-  minLimit: 1
-  loadouts:
-  - LoadoutBackpackButtpack
-
-- type: loadoutGroup
-  id: BF_BackpacksSmallSurplus
-  name: loadout-group-BF14-backpack
-  minLimit: 1
-  loadouts:
-  - LoadoutBackpackButtpackSurplus
-
-- type: loadoutGroup
   id: BF_BackpacksTan
   name: loadout-group-BF14-backpack
   minLimit: 1
