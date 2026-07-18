@@ -397,7 +397,7 @@
   id: BF_Map
   name: loadout-group-BF14-map
   minLimit: 1
-  maxLimit: 2
+  maxLimit: 1
   loadouts:
   - LoadoutArmbandStationMap
   - LoadoutMapSelector
