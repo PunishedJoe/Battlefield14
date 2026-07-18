@@ -6,7 +6,7 @@
   weight: 77
   startingGear: WA68_RoleNatoUsaMarineReserveGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconNatoRifleman"
+  icon: "WA68_JobIconNatoReserve"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -25,10 +25,24 @@
     - type: ChatRank
       rank: Pvt.
 
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineReserveGear
+  equipment:
+    id: WA68_ClothingDogtagUsaMarineReserve
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM1420Rnd
+    head: WA68_ClothingHeadHatUsaPatrolCap
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM14
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M26A1_M18
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+
 - type: job
   id: WA68_RoleNatoUsaMarineRifleman
   name: US Marine infantryman
-  description: Be the cannon fodder for United States of America.
+  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper
   playTimeTracker: WA68_RoleNatoUsaMarineRiflemanTime
   weight: 77
   startingGear: WA68_RoleNatoUsaMarineRiflemanGear
@@ -50,34 +64,22 @@
       - WA68_Nato
       - WA68_Usa
     - type: ChatRank
-      rank: Pfc.
-
-- type: job
-  id: WA68_RoleNatoUsaMarineSeniorRifleman
-  name: US Marine senior infantryman
-  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper
-  playTimeTracker: WA68_RoleNatoUsaMarineSeniorRiflemanTime
-  weight: 77
-  startingGear: WA68_RoleNatoUsaMarineRiflemanGear
-  alwaysUseSpawner: true
-  icon: "WA68_JobIconNatoSeniorRifleman"
-  requireAdminNotify: false
-  supervisors: Squad leader
-  canBeAntag: false
-  special:
-  - !type:AddLanguageSpecial
-    languagesSpoken:
-    - English
-    languagesUnderstood:
-    - English
-  - !type:AddComponentSpecial
-    components:
-    - type: NpcFactionMember
-      factions:
-      - WA68_Nato
-      - WA68_Usa
-    - type: ChatRank
       rank: LCpl.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineRiflemanGear
+  equipment:
+    id: WA68_ClothingDogtagUsaMarineRifleman
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1ERDL
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
 
 - type: job
   id: WA68_RoleNatoUsaMarineSquadLeader
@@ -85,7 +87,7 @@
   description: Try to manage you squad of meatshields. Get blamed for everything.
   playTimeTracker: WA68_RoleNatoUsaMarineSquadLeaderTime
   weight: 77
-  startingGear: WA68_RoleNatoUsaMarineLeaderGear
+  startingGear: WA68_RoleNatoUsaMarineSquadLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconNatoSquadLeader"
   requireAdminNotify: false
@@ -106,13 +108,35 @@
     - type: ChatRank
       rank: Sgt.
 
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineSqaudLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUsaMarineSquadLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1ERDL
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackRadioUsaANPRC77
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledM1911
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911
+
 - type: job
   id: WA68_RoleNatoUsaMarinePlatoonLeader
   name: US Marine platoon commander
   description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
   playTimeTracker: WA68_RoleNatoUsaMarinePlatoonLeaderTime
   weight: 77
-  startingGear: WA68_RoleNatoUsaMarineLeaderGear
+  startingGear: WA68_RoleNatoUsaMarinePlatoonLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconNatoPlatoonLeader"
   requireAdminNotify: false
@@ -132,3 +156,25 @@
       - WA68_Usa
     - type: ChatRank
       rank: Lt.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarinePlatoonLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUsaMarinePlatoonLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1ERDL
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackRadioUsaANPRC77
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledM1911
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911

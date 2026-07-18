@@ -84,6 +84,9 @@
     sound:
       collection: PistolsDrop
   - type: Appearance
+  - type: Tag
+    tags:
+      - WA68_Handgun
 
 - type: entity ########################## MAGLESS RIFLES
   parent: BaseItem

@@ -1,5 +1,23 @@
 - type: entity
   parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGenericPistolMag
+  name: pistol mag pouch
+  description: A pouch designed to hold 5 pistol magazines.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+      - state: large_pistol_mag
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,4,0
+    whitelist:
+      tags:
+      - WA68_MagazineSmall
+
+- type: entity
+  parent: WA68_ClothingPouchBase
   id: WA68_ClothingPouchGenericGrenade
   name: grenade pouch
   description: A pouch designed to hold 5 grenades.
@@ -26,11 +44,11 @@
   - type: Sprite
     sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
     layers:
-      - state: medkit
+      - state: small_firstaid
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,3,1
+    - 0,0,1,2
     whitelist:
       tags:
       - WA68_MedicalItemSmall

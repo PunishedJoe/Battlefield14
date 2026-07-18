@@ -24,18 +24,202 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUsa
+  id: WA68_ClothingDogtagUsaFobPersonnel
   components:
   - type: Sprite
     layers:
     - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaFobPersonnel
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaFobMayor
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaFobMayor
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaArmyReserve
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaArmyReserve
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaArmyRifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaArmyRifleman
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaArmySquadLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaArmySquadLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaArmyPlatoonLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaArmyPlatoonLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaMarineReserve
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaMarineReserve
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaMarineRifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaMarineRifleman
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaMarineSquadLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaMarineSquadLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaMarinePlatoonLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaMarinePlatoonLeader
 
 ########################## Ussr
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUssr
+  id: WA68_ClothingDogtagUssrFobPersonnel
   components:
   - type: Sprite
     layers:
     - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrFobPersonnel
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrFobMayor
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrFobMayor
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrArmyReserve
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrArmyReserve
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrArmyRifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrArmyRifleman
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrArmySquadLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrArmySquadLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrArmyPlatoonLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrArmyPlatoonLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrAirborneReserve
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrAirborneReserve
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrAirborneRifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrAirborneRifleman
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrAirborneSquadLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrAirborneSquadLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrAirbornePlatoonLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrAirbornePlatoonLeader

@@ -92,6 +92,7 @@
   - type: Tag
     tags:
       - WA68_Magazine
+      - WA68_MagazineSmall
   - type: Item
     size: Tiny
   - type: BallisticAmmoProvider
@@ -129,6 +130,7 @@
   - type: Tag
     tags:
       - WA68_Magazine
+      - WA68_MagazineMedium
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
@@ -166,6 +168,7 @@
   - type: Tag
     tags:
       - WA68_Magazine
+      - WA68_MagazineLarge
   - type: Item
     size: Normal
     shape:

@@ -8,6 +8,9 @@
     },
     "states": [
     {
+      "name": "NatoReserve"
+    },
+    {
       "name": "NatoRifleman"
     },
     {
@@ -26,6 +29,9 @@
       "name": "NatoFobMayor"
     },
     {
+      "name": "PactReserve"
+    },
+    {
       "name": "PactRifleman"
     },
     {
@@ -42,6 +48,9 @@
     },
     {
       "name": "PactFobMayor"
+    },
+    {
+      "name": "Reserve"
     },
     {
       "name": "Rifleman"

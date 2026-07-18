@@ -51,6 +51,7 @@
     tags:
       - WA68_MagazinePM
       - WA68_Magazine
+      - WA68_MagazineSmall
   - type: BallisticAmmoProvider
     proto: WA68_Cartridge9x18mm
     mayTransfer: true
@@ -86,6 +87,7 @@
     tags:
       - WA68_MagazineAPS
       - WA68_Magazine
+      - WA68_MagazineSmall
   - type: BallisticAmmoProvider
     proto: WA68_Cartridge9x18mm
     mayTransfer: true

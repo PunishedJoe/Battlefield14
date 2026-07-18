@@ -107,7 +107,22 @@
   id: WA68_MortarShell120PM43120mm
 
 - type: Tag
+  id: WA68_Gasmask
+
+- type: Tag
+  id: WA68_Handgun
+
+- type: Tag
   id: WA68_Magazine
+
+- type: Tag
+  id: WA68_MagazineSmall
+
+- type: Tag
+  id: WA68_MagazineMedium
+
+- type: Tag
+  id: WA68_Magazinelarge
 
 - type: Tag
   id: WA68_Cartridge

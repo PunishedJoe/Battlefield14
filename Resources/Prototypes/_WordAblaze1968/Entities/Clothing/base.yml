@@ -1,4 +1,30 @@
 - type: entity
+  parent: ClothingMaskBase
+  id: WA68_ClothingGasMaskBase
+  abstract: true
+  components:
+  - type: Clothing
+    equipDelay: 1
+    unequipDelay: 1
+  - type: Item
+    size: Small
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    - Hair
+    hideOnToggle: true
+  - type: Tag
+    tags:
+    - WA68_Gasmask
+  - type: IngestionBlocker
+    blockSmokeIngestion: true
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+
+- type: entity
   id: WA68_ClothingPouchBase
   parent: BasePouch
   suffix: WorldAblaze1968

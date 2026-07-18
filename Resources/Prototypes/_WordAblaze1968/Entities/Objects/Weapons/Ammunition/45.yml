@@ -51,6 +51,7 @@
     tags:
       - WA68_MagazineM1911
       - WA68_Magazine
+      - WA68_MagazineSmall
   - type: BallisticAmmoProvider
     proto: WA68_Cartridge45
     mayTransfer: true
