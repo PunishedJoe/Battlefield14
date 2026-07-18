@@ -149,6 +149,8 @@
   - LoadoutUniformJumpsuitTracksuitRed
   - LoadoutUniformJumpsuitTracksuitBlue
   - LoadoutUniformJumpsuitTracksuitBlack
+  - BoxerShorts
+  
   fallbacks:
   - LoadoutUniformJumpsuitPlain
 
@@ -171,6 +173,7 @@
   - LoadoutUniformJumpsuitTracksuitRed
   - LoadoutUniformJumpsuitTracksuitBlue
   - LoadoutUniformJumpsuitTracksuitBlack
+  - BoxerShorts
   fallbacks:
   - LoadoutUniformJumpsuitPlain
 
@@ -238,6 +241,8 @@
   - LoadoutUniformJumpsuitCombatScavBoss
   - LoadoutUniformJumpsuitTracksuitBlackBoss
   - LoadoutUniformJumpsuitTracksuitYellow
+  - LoadoutUniformJumpsuitAfganVet1
+  - LoadoutUniformJumpsuitAfganVet2
   fallbacks:
   - LoadoutUniformJumpsuitCombatScavBoss
 
@@ -253,8 +258,29 @@
   - LoadoutJumpsuitCivilianPatrioticUSA1
   - LoadoutJumpsuitCivilianPatrioticUSA2
   - LoadoutJumpsuitCivilianPatrioticUSA3
-
+  - LoadoutUniformJumpsuitDealer
+  - LawyerClothingUniformJumpsuitLawyerBlack
+  - LawyerClothingUniformJumpsuitLawyerBlue
+  - LawyerClothingUniformJumpsuitLawyerRed
+  - BoxerShorts
+  - LoadoutUniformJumpsuitAfganVet1
+  - LoadoutUniformJumpsuitAfganVet2
+  
 #region BACK
+
+- type: loadoutGroup
+  id: BF_BackpacksSmall
+  name: loadout-group-BF14-backpack
+  minLimit: 1
+  loadouts:
+  - LoadoutBackpackButtpack
+
+- type: loadoutGroup
+  id: BF_BackpacksSmallSurplus
+  name: loadout-group-BF14-backpack
+  minLimit: 1
+  loadouts:
+  - LoadoutBackpackButtpackSurplus
 
 - type: loadoutGroup
   id: BF_BackpacksTan
@@ -286,8 +312,10 @@
   - LoadoutHandsGlovesSoldierCombat
   - LoadoutHandsGlovesSoldierMercCombat
   - LoadoutHandsGlovesSoldierMercFingerless
+  - MercenaryClothingHandsGlovesTacticalCombatTan
+  - MercenaryClothingHandsGlovesTacticalCombatOlive
   - LoadoutHandsGlovesSoldierWristwatch
-
+  
 - type: loadoutGroup
   id: BF_WPSGloves
   name: loadout-group-BF14-soldiergloves
@@ -295,8 +323,14 @@
   loadouts:
   - LoadoutHandsGlovesSoldierBlack
   - LoadoutHandsGlovesSoldierFingerless
+  - MercenaryClothingHandsGlovesTacticalCombatTan
+  - MercenaryClothingHandsGlovesTacticalCombatBlack
+  - MercenaryClothingHandsGlovesTacticalCombatRangerGreen
+  - MercenaryClothingHandsGlovesTacticalCombatOlive
+  - MercenaryClothingHandsGlovesTacticalCombatCoyoteBrown
+  - MercenaryClothingHandsGlovesTacticalCombatWhite
   - LoadoutHandsGlovesSoldierWristwatch
-
+  
 #region FEET
 
 - type: loadoutGroup
@@ -329,6 +363,17 @@
   - LoadoutGunSR1MPVDVSLVET
   - LoadoutGunRUTT33VDVVET
 
+- type: loadoutGroup
+  id: BF_PistolsAll
+  name: loadout-group-BF14-sidearm
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunFiveSevenUSMCSLVET
+  - LoadoutGunUSM1911USMCVET
+  - LoadoutGunSR1MPVDVSLVET
+  - LoadoutGunRUTT33VDVVET
+  
 #region MISC
 
 - type: loadoutGroup
@@ -382,12 +427,12 @@
 - type: loadoutGroup
   id: BF_Map
   name: loadout-group-BF14-map
-  minLimit: 0
-  maxLimit: 1
+  minLimit: 1
+  maxLimit: 2
   loadouts:
-  - LoadoutMapSelector
   - LoadoutArmbandStationMap
-
+  - LoadoutMapSelector
+  
 - type: loadoutGroup
   id: BF_NATOIFFBox
   name: loadout-group-BF14-natoiff-box

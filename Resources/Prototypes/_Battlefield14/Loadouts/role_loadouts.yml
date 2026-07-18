@@ -16,8 +16,7 @@
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
-
+  
 - type: roleLoadout
   id: JobUSMCSquadLeader
   groups:
@@ -30,7 +29,6 @@
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobUSMCRifleman
@@ -43,7 +41,6 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobUSMCAutomaticRifleman
@@ -57,8 +54,7 @@
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobUSMCRecon
   groups:
@@ -69,8 +65,7 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobUSMCMedic
   groups:
@@ -81,8 +76,7 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
-
+ 
 #region USSF
 
 - type: roleLoadout
@@ -93,8 +87,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobUSSFCrewman
   groups:
@@ -104,8 +97,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobUSSFFighterPilot
   groups:
@@ -113,7 +105,6 @@
   - BF_NATOIFF
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
-  - ContractorWallet
 
 #region NG
 
@@ -129,7 +120,6 @@
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobNGSquadLeader
@@ -143,7 +133,6 @@
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobNGRifleman
@@ -156,7 +145,6 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobNGAutomaticRifleman
@@ -170,7 +158,6 @@
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobNGRecon
@@ -182,7 +169,6 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobNGMedic
@@ -194,7 +180,6 @@
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobUSPDChief
@@ -204,7 +189,6 @@
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobUSPDWarden
@@ -214,7 +198,6 @@
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - BF_Map
-  - ContractorWallet
 
 - type: roleLoadout
   id: JobUSPDOfficer
@@ -224,8 +207,6 @@
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - BF_Map
-  - ContractorWallet
-
 
 #region BW
 
@@ -241,8 +222,7 @@
   - BF_MiscItemsNATO
 #  - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobBWSquadLeader
   groups:
@@ -255,8 +235,7 @@
   - BF_MiscItemsNATO
 #  - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobBWRifleman
   groups:
@@ -268,8 +247,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobBWAutomaticRifleman
   groups:
@@ -282,8 +260,7 @@
   - BF_MiscItemsNATO
 #  - BF_PistolsUSMCSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobBWRecon
   groups:
@@ -293,8 +270,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobBWMedic
   groups:
@@ -305,8 +281,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
-  - ContractorWallet
-
+ 
 ## PACT
 
 ## RU
@@ -326,8 +301,7 @@
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobVDVSquadLeader
   groups:
@@ -341,8 +315,7 @@
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobVDVRifleman
   groups:
@@ -355,8 +328,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobVDVAutomaticRifleman
   groups:
@@ -370,8 +342,7 @@
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobVDVRecon
   groups:
@@ -383,8 +354,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobVDVMedic
   groups:
@@ -396,8 +366,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
-  - ContractorWallet
-
+ 
 #region VKS
 
 - type: roleLoadout
@@ -409,8 +378,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobVKSCrewman
   groups:
@@ -420,8 +388,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobVKSFighterPilot
   groups:
@@ -429,34 +396,33 @@
   - BF_PACTIFF
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
-  - ContractorWallet
 
 #region FSB
 
 - type: roleLoadout
   id: JobFSBSquadLeader
   groups:
-  - ContractorWallet # required so you spawn with anything
+   - ContractorWallet # required so you spawn with anything
 
 - type: roleLoadout
   id: JobFSBRifleman
   groups:
-  - ContractorWallet
+   - ContractorWallet
 
 - type: roleLoadout
   id: JobFSBSupport
   groups:
-  - ContractorWallet
+   - ContractorWallet
 
 - type: roleLoadout
   id: JobFSBMedic
   groups:
-  - ContractorWallet
+   - ContractorWallet
 
 - type: roleLoadout
   id: JobFSBRecon
   groups:
-  - ContractorWallet
+   - ContractorWallet
 
 #region OMON
 
@@ -472,8 +438,7 @@
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobOMONSquadLeader
   groups:
@@ -486,8 +451,7 @@
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
   - BF_Map
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobOMONRifleman
   groups:
@@ -499,8 +463,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
-  - ContractorWallet
-
+ 
 ### IND
 
 
@@ -514,8 +477,7 @@
   - BF_WPSGloves
   - BF_BackpacksBlack
   - BF_MiscItemsIND
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobWPSWarden
   groups:
@@ -524,8 +486,7 @@
   - BF_WPSGloves
   - BF_BackpacksBlack
   - BF_MiscItemsIND
-  - ContractorWallet
-
+ 
 - type: roleLoadout
   id: JobWPSMarshal
   groups:
@@ -534,8 +495,7 @@
   - BF_WPSGloves
   - BF_BackpacksBlack
   - BF_MiscItemsIND
-  - ContractorWallet
-
+ 
 #region Scav
 
 - type: roleLoadout
@@ -548,7 +508,7 @@
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
-  - ContractorWallet
+  - BF_BackpacksSmallSurplus
 
 - type: roleLoadout
   id: JobRUScavGuard
@@ -556,7 +516,7 @@
   - BF_CombatMasks
   - BF_WPSGloves
   - BF_MiscItemsIND
-  - ContractorWallet
+  - BF_BackpacksSmallSurplus
 
 - type: roleLoadout
   id: JobRUScavBoss
@@ -568,7 +528,7 @@
   - BF_JumpsuitsBossRU
   - BF_WPSGloves
   - BF_MiscItemsIND
-  - ContractorWallet
+  - BF_BackpacksSmall
 
 #region Civilian
 
@@ -579,8 +539,9 @@
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
-  - ContractorWallet
-
+  - BF_PistolsAll
+  - BF_BackpacksSmall
+  
 - type: roleLoadout
   id: JobCivilianRU
   groups:
@@ -590,16 +551,18 @@
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
-  - ContractorWallet
-
+  - BF_PistolsVDVSL
+  - BF_BackpacksSmall
+ 
 - type: roleLoadout
   id: JobCivilianRUEMT
   groups:
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
-  - ContractorWallet
-
+  - BF_PistolsVDVSL
+  - BF_BackpacksSmall
+ 
 - type: roleLoadout
   id: JobNationalistUA
   groups:
@@ -610,16 +573,16 @@
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
-  - ContractorWallet
-
+  - BF_BackpacksSmallSurplus
+ 
 - type: roleLoadout
   id: JobGypsy
   groups:
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
-  - ContractorWallet
-
+  - BF_BackpacksSmallSurplus
+ 
 #region Misc
 
 - type: roleLoadout

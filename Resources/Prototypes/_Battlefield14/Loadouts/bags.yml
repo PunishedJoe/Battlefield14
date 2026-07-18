@@ -7,3 +7,13 @@
   id: LoadoutBackRucksackBlack
   equipment:
     back: ClothingBackpackRucksackBlack
+    
+- type: loadout
+  id: LoadoutBackpackButtpack
+  equipment:
+    back: ClothingBackpackButtpack
+
+- type: loadout
+  id: LoadoutBackpackButtpackSurplus
+  equipment:
+    back: ClothingBackpackButtpackSurplus
