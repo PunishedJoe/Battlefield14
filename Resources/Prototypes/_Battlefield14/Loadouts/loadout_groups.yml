@@ -149,7 +149,6 @@
   - LoadoutUniformJumpsuitTracksuitRed
   - LoadoutUniformJumpsuitTracksuitBlue
   - LoadoutUniformJumpsuitTracksuitBlack
-  - BoxerShorts
   
   fallbacks:
   - LoadoutUniformJumpsuitPlain
@@ -173,7 +172,6 @@
   - LoadoutUniformJumpsuitTracksuitRed
   - LoadoutUniformJumpsuitTracksuitBlue
   - LoadoutUniformJumpsuitTracksuitBlack
-  - BoxerShorts
   fallbacks:
   - LoadoutUniformJumpsuitPlain
 
@@ -259,12 +257,6 @@
   - LoadoutJumpsuitCivilianPatrioticUSA2
   - LoadoutJumpsuitCivilianPatrioticUSA3
   - LoadoutUniformJumpsuitDealer
-  - LawyerClothingUniformJumpsuitLawyerBlack
-  - LawyerClothingUniformJumpsuitLawyerBlue
-  - LawyerClothingUniformJumpsuitLawyerRed
-  - BoxerShorts
-  - LoadoutUniformJumpsuitAfganVet1
-  - LoadoutUniformJumpsuitAfganVet2
   
 #region BACK
 
