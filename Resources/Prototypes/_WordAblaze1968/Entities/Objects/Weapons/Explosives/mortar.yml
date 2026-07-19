@@ -20,7 +20,10 @@
     - 0,0,2,0 
   - type: MortarShell
     delayPerTile: 0.1
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_MortarShellM260mmM49A2Projectile
     useDirectExplosion: false
@@ -94,7 +97,10 @@
     - 0,0,2,0
   - type: MortarShell
     delayPerTile: 0.1
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_MortarShellM260mmM302Projectile
     useDirectExplosion: false
@@ -158,7 +164,10 @@
     size: Large
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_MortarShellM2981mmM374A1Projectile
     useDirectExplosion: false
@@ -230,7 +239,10 @@
     size: Large
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_MortarShellM2981mmM375Projectile
     useDirectExplosion: false
@@ -292,7 +304,10 @@
     size: Large
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_MortarShellM2981mmM301A2Projectile
     useDirectExplosion: false
@@ -358,7 +373,10 @@
     size: Large
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_MortarShell82BM3782mmO832DProjectile
     useDirectExplosion: false
@@ -375,6 +393,7 @@
         requireDetailRange: true
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: WA68_MortarShell82BM3782mmO832DProjectile
   name: mortar shell
   description: It says gullbile in the sky.
@@ -428,7 +447,10 @@
     size: Large
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_MortarShell82BM3782mmD832Projectile
     useDirectExplosion: false
@@ -490,7 +512,10 @@
     size: Large
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_MortarShell82BM3782mmS832Projectile
     useDirectExplosion: false
@@ -556,7 +581,10 @@
     size: Huge
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg
     explosionEntity: WA68_Mortarhell120PM43120mmOF843BProjectile
     useDirectExplosion: false
@@ -573,6 +601,7 @@
         requireDetailRange: true
 
 - type: entity
+  categories: [ HideSpawnMenu ]
   id: WA68_Mortarhell120PM43120mmOF843BProjectile
   name: mortar shell
   description: It says gullbile in the sky.
@@ -627,7 +656,10 @@
     size: Large
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_Mortarhell120PM43120mmD843Projectile
     useDirectExplosion: false
@@ -689,7 +721,10 @@
     size: Large
   - type: MortarShell
     delayPerTile: 0.05
-    fireSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarFireClose/sound1.ogg
+    fireSound:
+      collection: WA68_MortarFireClose
+      params:
+        variation: 0.1
     preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/MortarIncoming/sound1.ogg
     explosionEntity: WA68_Mortarhell120PM43120mmS843Projectile
     useDirectExplosion: false

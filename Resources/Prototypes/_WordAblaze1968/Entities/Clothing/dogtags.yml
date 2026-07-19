@@ -223,3 +223,43 @@
     - state: ussr
   - type: PresetIdCard
     job: WA68_RolePactUssrAirbornePlatoonLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrNavyReserve
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrNavyReserve
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrNavyRifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrNavyRifleman
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrNavySquadLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrNavySquadLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrNavyPlatoonLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrNavyPlatoonLeader

@@ -13,8 +13,9 @@
       - state: base
     noRot: true
   - type: Mortar
-    baseAccuracy: 0.5
-    accuracyDegradation: 0.05
+    baseAccuracy: 0.8
+    accuracyDegradation: 0.026666
+    maxSpread: 15
     minOffsetX: -70
     maxOffsetX: 70
     minOffsetY: -70
@@ -33,7 +34,7 @@
             - WA68_MortarShellM260mm
   - type: ExtendDescription
     descriptionList:
-      - description: Has a range of 5 - 70 Tiles
+      - description: Has a range of 5 - 70 meters. With a starting spread of 6 meters and reaching a spread of 30 meters at 40 meters.
         color: "#b37d2d"
         requireDetailRange: true
       - description: Uses 60mm mortar shells.
@@ -60,8 +61,8 @@
     sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/m2.rsi
   - type: MultiHandedItem
   - type: ClothingSpeedModifier # this thing weighs around 20 Kg thats around 83.3 Big Macs for you americans
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.85
+    sprintModifier: 0.85
   - type: HeldSpeedModifier
 
 - type: entity
@@ -77,8 +78,9 @@
       - state: base
     noRot: true
   - type: Mortar
-    baseAccuracy: 0.5
-    accuracyDegradation: 0.05
+    baseAccuracy: 0.8
+    accuracyDegradation: 0.00533333333 # gotta be on the dot you know what im sayin
+    maxSpread: 10
     minOffsetX: -170
     maxOffsetX: 170
     minOffsetY: -170
@@ -97,7 +99,7 @@
             - WA68_MortarShellM2981mm
   - type: ExtendDescription
     descriptionList:
-      - description: Has a range of 20 - 170 Tiles
+      - description: Has a range of 20 - 170 meters. With a starting spread of 4 meters and reaching a spread of 20 meters at 150 meters.
         color: "#b37d2d"
         requireDetailRange: true
       - description: Uses 81mm mortar shells.
@@ -141,7 +143,7 @@
     - state: folded
   - type: ExtendDescription
     descriptionList:
-      - description: Has a range of 20 - 170 Tiles
+      - description: Has a range of 20 - 170 meters. With a starting spread of 4 meters and reaching a spread of 20 meters at 150 meters.
         color: "#b37d2d"
         requireDetailRange: true
       - description: Uses 81mm mortar shells.
@@ -198,8 +200,9 @@
       - state: base
     noRot: true
   - type: Mortar
-    baseAccuracy: 0.5
-    accuracyDegradation: 0.05
+    baseAccuracy: 0.8
+    accuracyDegradation: 0.00533333333 # gotta be on the dot you know what im sayin
+    maxSpread: 10
     minOffsetX: -170
     maxOffsetX: 170
     minOffsetY: -170
@@ -218,7 +221,7 @@
             - WA68_MortarShell82BM3782mm
   - type: ExtendDescription
     descriptionList:
-      - description: Has a range of 20 - 170 Tiles
+      - description: Has a range of 20 - 170 meters. With a starting spread of 4 meters and reaching a spread of 20 meters at 150 meters.
         color: "#b37d2d"
         requireDetailRange: true
       - description: Uses 82mm mortar shells.
@@ -263,7 +266,7 @@
     - state: folded
   - type: ExtendDescription
     descriptionList:
-      - description: Has a range of 20 - 170 Tiles
+      - description: Has a range of 20 - 170 meters. With a starting spread of 4 meters and reaching a spread of 20 meters at 150 meters.
         color: "#b37d2d"
         requireDetailRange: true
       - description: Uses 82mm mortar shells.
@@ -318,8 +321,9 @@
       - state: base
     noRot: true
   - type: Mortar
-    baseAccuracy: 0.5
-    accuracyDegradation: 0.05
+    baseAccuracy: 0.8
+    accuracyDegradation: 0.004
+    maxSpread: 15
     minOffsetX: -250
     maxOffsetX: 250
     minOffsetY: -250
@@ -338,7 +342,7 @@
             - WA68_MortarShell120PM43120mm
   - type: ExtendDescription
     descriptionList:
-      - description: Has a range of 50 - 250 Tiles
+      - description: Has a range of 50 - 250 meters. With a starting spread of 6 meters and reaching a spread of 30 meters at 200 meters.
         color: "#b37d2d"
         requireDetailRange: true
       - description: Uses 120mm mortar shells.
@@ -378,7 +382,7 @@
     - state: folded
   - type: ExtendDescription
     descriptionList:
-      - description: Has a range of 50 - 250 Tiles
+      - description: Has a range of 50 - 250 meters. With a starting spread of 5 meters and reaching a spread of 25 meters at 200 meters.
         color: "#b37d2d"
         requireDetailRange: true
       - description: Uses 120mm mortar shells.
