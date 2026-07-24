@@ -19,13 +19,14 @@
     - English
   access:
   - Maintenance
+  - Medical
 
 - type: startingGear
   id: CivilianRUEMTGear
   equipment:
     id: ParamedicIDCard
     belt: ClothingBeltMedicalEMTFilledBF14Basic
-    jumpsuit: ClothingUniformJumpsuitPlain
-    head: ClothingHeadHatParamedicsoft
-    outerClothing: ClothingOuterCoatParamedicWB
+#    jumpsuit: ClothingUniformJumpsuitPlain
+#    head: ClothingHeadHatParamedicsoft
+#    outerClothing: ClothingOuterCoatParamedicWB
 #    shoes: ClothingShoesColorBlack
