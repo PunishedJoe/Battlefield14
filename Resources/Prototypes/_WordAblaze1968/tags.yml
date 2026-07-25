@@ -107,6 +107,12 @@
   id: WA68_MortarShell120PM43120mm
 
 - type: Tag
+  id: WA68_HowitzerShelld20152mm
+
+- type: Tag
+  id: WA68_HowitzerShellm114155mm
+
+- type: Tag
   id: WA68_Gasmask
 
 - type: Tag

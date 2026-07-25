@@ -26,25 +26,25 @@
 - type: soundCollection
   id: WA68_AtriFireClose
   files:
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriFireClose/sound1.ogg"
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriFireClose/sound2.ogg"
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriFireClose/sound3.ogg"
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriFireClose/sound4.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireClose/sound1.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireClose/sound2.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireClose/sound3.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireClose/sound4.ogg"
 
 - type: soundCollection
   id: WA68_AtriFireFar
   files:
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriFireFar/sound1.ogg"
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriFireFar/sound2.ogg"
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriFireFar/sound3.ogg"
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriFireFar/sound4.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireFar/sound1.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireFar/sound2.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireFar/sound3.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiFireFar/sound4.ogg"
 
 - type: soundCollection
   id: WA68_AtriIncoming
   files:
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriIncoming/sound1.ogg"
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriIncoming/sound2.ogg"
-  - "/Audio/_WorldAblaze1968/Weapons/Largearms/AtriIncoming/sound3.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound2.ogg"
+  - "/Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound3.ogg"
 
 - type: soundCollection
   id: WA68_MortarFireClose

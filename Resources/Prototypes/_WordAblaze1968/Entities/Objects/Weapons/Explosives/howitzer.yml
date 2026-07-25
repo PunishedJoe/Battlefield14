@@ -1,0 +1,417 @@
+########################## M114 155mm
+
+- type: entity
+  id: WA68_HowitzerShellm114155mmM107 # High Explosive Fragmentation
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: M107 HE-Frag shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/HowtitzerShells.rsi
+    state: m107
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_HowitzerShellm114155mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.025
+    fireSound:
+      collection: WA68_AtriFireClose
+      params:
+        variation: 0.1
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg
+    explosionEntity: WA68_HowitzerShellm114155mmM107Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 155mm howitzer shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Explodes into 185 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.025 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_HowitzerShellm114155mmM107Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_HowitzerShellm114155mmM107Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_HowitzerShellm114155mmM107Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_HighYieldExplosion
+    totalIntensity: 275 # center damage 243
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: WA68_SmallFragment
+    capacity: 185
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+
+- type: entity
+  id: WA68_HowitzerShellm114155mmM110 # White Phosporous Smoke
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: M110 WPS shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/HowtitzerShells.rsi
+    state: m110
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_HowitzerShellm114155mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.025
+    fireSound:
+      collection: WA68_AtriFireClose
+      params:
+        variation: 0.1
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg
+    explosionEntity: WA68_HowitzerShellm114155mmM110Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 155mm howitzer shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits smoke for 140 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.025 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_HowitzerShellm114155mmM110Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_HowitzerShellm114155mmM110Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_HowitzerShellm114155mmM110Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: SmokeOnTrigger
+    duration: 140
+    spreadAmount: 29
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: WA68_WPSmokeClose
+
+- type: entity
+  id: WA68_HowitzerShellm114155mmM118 # Illumination flare
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: M118 Illum shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/HowtitzerShells.rsi
+    state: m118
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_HowitzerShellm114155mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.025
+    fireSound:
+      collection: WA68_AtriFireClose
+      params:
+        variation: 0.1
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg
+    explosionEntity: WA68_HowitzerShellm114155mmM118Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 155mm howitzer shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits light for 160 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.025 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_HowitzerShellm114155mmM118Projectile
+  name: illumination flare
+  description: Mom said i shouldnt stare at the sun. So now im staring at illumination flares.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: flare
+    noRot: true
+  - type: TimedDespawn
+    lifetime: 160
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        volume: 50
+        loop: true
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_WorldAblaze1968/Misc/flare/pop.ogg
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: PointLight
+    enabled: true
+    color: "#b3afa6"
+    radius: 15.0
+    energy: 9.0
+
+########################## D-20 152mm
+
+- type: entity
+  id: WA68_HowitzerShellD20152mmOF540 # High Explosive Fragmentation
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: OF-540 HE-Frag shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/HowtitzerShells.rsi
+    state: of540
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_HowitzerShelld20152mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.025
+    fireSound:
+      collection: WA68_AtriFireClose
+      params:
+        variation: 0.1
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg
+    explosionEntity: WA68_HowitzerShellD20152mmOF540Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 152mm howitzer shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Explodes into 180 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.025 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_HowitzerShellD20152mmOF540Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_HowitzerShellD20152mmOF540Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_HowitzerShellD20152mmOF540Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_HighYieldExplosion
+    totalIntensity: 275 # center damage 243
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: WA68_SmallFragment
+    capacity: 185
+    randomAngle: true
+    MaxVelocity: 10
+    MinVelocity: 8
+  - type: SpawnOnTrigger
+    proto: WA68_ExplosionEffect
+
+- type: entity
+  id: WA68_HowitzerShellD20152mmD540 # White Phosporous Smoke
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: D-540 WPS shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/HowtitzerShells.rsi
+    state: d540
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_HowitzerShelld20152mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.025
+    fireSound:
+      collection: WA68_AtriFireClose
+      params:
+        variation: 0.1
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg
+    explosionEntity: WA68_HowitzerShellD20152mmdD40Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 152mm howitzer shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits smoke for 140 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.025 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_HowitzerShellD20152mmD540Projectile
+  name: mortar shell
+  description: It says gullbile in the sky.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: shell
+    noRot: true
+  - type: SpawnOnDespawn
+    prototype: WA68_HowitzerShellD20152mmD540Impact
+  - type: TimedDespawn
+    lifetime: 0.6
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseItem
+  id: WA68_HowitzerShellD20152mmD540Impact
+  components:
+  - type: TriggerOnSpawn
+  - type: SmokeOnTrigger
+    duration: 140
+    spreadAmount: 29
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: WA68_WPSmokeClose
+
+- type: entity
+  id: WA68_HowitzerShellD20152mmS540 # Illumination flare
+  parent: DebugMortarShell
+  suffix: WorldAblaze1968
+  name: S-540 Illum shell
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Ammunition/HowtitzerShells.rsi
+    state: s540
+  - type: Tag
+    tags:
+      - MortarShell
+      - WA68_HowitzerShelld20152mm
+  - type: Item
+    size: Large
+  - type: MortarShell
+    delayPerTile: 0.025
+    fireSound:
+      collection: WA68_AtriFireClose
+      params:
+        variation: 0.1
+    preExplosionSound: /Audio/_WorldAblaze1968/Weapons/Largearms/ArtiIncoming/sound1.ogg
+    explosionEntity: WA68_HowitzerShellD20152mmS540Projectile
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Its a 152mm howitzer shell.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Emits light for 160 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a 0.025 sec delay per tile.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  id: WA68_HowitzerShellD20152mmS540Projectile
+  name: illumination flare
+  description: Mom said i shouldnt stare at the sun. So now im staring at illumination flares.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/AtrileryImpact.rsi
+    state: flare
+    noRot: true
+  - type: TimedDespawn
+    lifetime: 160
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        volume: 50
+        loop: true
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_WorldAblaze1968/Misc/flare/pop.ogg
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: PointLight
+    enabled: true
+    color: "#b3afa6"
+    radius: 15.0
+    energy: 9.0

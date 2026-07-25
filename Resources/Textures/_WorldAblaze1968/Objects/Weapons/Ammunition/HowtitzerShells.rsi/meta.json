@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "license": "",
+  "copyright": "Made by WillyBillyGilly for Battlefield14. Do not reuse or edit without permission.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "m107"
+    },
+    {
+      "name": "m118"
+    },
+    {
+      "name": "m110"
+    },
+    {
+      "name": "of540"
+    },
+    {
+      "name": "d540"
+    },
+    {
+      "name": "s540"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

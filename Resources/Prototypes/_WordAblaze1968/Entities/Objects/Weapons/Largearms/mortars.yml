@@ -3,7 +3,7 @@
 - type: entity
   id: WA68_MortarLightUsaM2Unfolded
   parent: BaseStructureDynamic
-  name: M-2 mortar
+  name: M2 mortar
   suffix: WorldAblaze1968
   description: Lorem ipsum
   components:
@@ -13,7 +13,7 @@
       - state: base
     noRot: true
   - type: Mortar
-    baseAccuracy: 0.8
+    baseAccuracy: 0.93333
     accuracyDegradation: 0.026666
     maxSpread: 15
     minOffsetX: -70
@@ -68,7 +68,7 @@
 - type: entity
   id: WA68_MortarMediumUsaM29Unfolded
   parent: BaseStructureDynamic
-  name: M-29 mortar
+  name: M29 mortar
   suffix: WorldAblaze1968
   description: Lorem ipsum
   components:
@@ -78,7 +78,7 @@
       - state: base
     noRot: true
   - type: Mortar
-    baseAccuracy: 0.8
+    baseAccuracy: 0.906666
     accuracyDegradation: 0.00533333333 # gotta be on the dot you know what im sayin
     maxSpread: 10
     minOffsetX: -170
@@ -128,7 +128,7 @@
 - type: entity
   id: WA68_MortarMediumUsaM29Folded
   suffix: WorldAblaze1968
-  name: M-29 mortar
+  name: M29 mortar
   parent: BaseItem
   description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
   components:
@@ -200,7 +200,7 @@
       - state: base
     noRot: true
   - type: Mortar
-    baseAccuracy: 0.8
+    baseAccuracy: 0.906666
     accuracyDegradation: 0.00533333333 # gotta be on the dot you know what im sayin
     maxSpread: 10
     minOffsetX: -170
@@ -321,7 +321,7 @@
       - state: base
     noRot: true
   - type: Mortar
-    baseAccuracy: 0.8
+    baseAccuracy: 1
     accuracyDegradation: 0.004
     maxSpread: 15
     minOffsetX: -250
