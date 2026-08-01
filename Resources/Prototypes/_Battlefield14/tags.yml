@@ -32,7 +32,7 @@
   id: MagazinePistolAPS
 
 - type: Tag
-  id: MagazinePistolPM
+  id: MagazinePistolPM # down to here
 
 - type: Tag
   id: BF_CartridgePistol50AE
@@ -83,6 +83,9 @@
   id: BF_CartridgeRifle762x54r
 
 - type: Tag
+  id: BF_CartridgeRifle792x57
+
+- type: Tag
   id: BF_CartridgeRifle9x39
 
 - type: Tag
@@ -117,6 +120,9 @@
 
 - type: Tag
   id: MagazineSniperIntervention
+
+- type: Tag
+  id: MagazineSniperOSV96
 
 - type: Tag
   id: BreachingCharge
@@ -197,6 +203,9 @@
   id: MagazineBeltBoxMG3
 
 - type: Tag
+  id: MagazineBeltBoxMG42
+
+- type: Tag
   id: MagazineBeltBoxMK48
 
 - type: Tag
@@ -210,6 +219,9 @@
 
 - type: Tag
   id: MagazinePistolFiveSeven
+
+- type: Tag
+  id: MagazinePistolHiPower
 
 - type: Tag
   id: MagazinePistolM9

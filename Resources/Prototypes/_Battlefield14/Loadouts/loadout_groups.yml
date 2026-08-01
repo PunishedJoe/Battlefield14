@@ -8,12 +8,21 @@
   - LoadoutHeadBeretVDV
 
 - type: loadoutGroup
+  id: BF_HeadCivilianUS
+  name: Hats
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutHeadHatBeanieBlack
+
+- type: loadoutGroup
   id: BF_HeadCivilianRU
   name: Hats
   minLimit: 0
   maxLimit: 1
   loadouts:
   - LoadoutHeadHatPompon
+  - LoadoutHeadHatBeanieBlack
   - LoadoutHeadHatUshanka
   - LoadoutHeadHatUshankaTrack
   - LoadoutHeadHatCabbie
@@ -25,6 +34,7 @@
   maxLimit: 1
   loadouts:
   - LoadoutHeadHatPompon
+  - LoadoutHeadHatBeanieBlack
   - LoadoutHeadHatUshanka
   - LoadoutHeadHatUshankaTrack
   - LoadoutHeadHatCabbie
@@ -158,6 +168,21 @@
   - LoadoutOuterCoatCivBlack
   - LoadoutOuterCoatCivRed
   - LoadoutOuterCoatCivUkr
+
+- type: loadoutGroup
+  id: BF_JumpsuitsSuspectUS
+  name: loadout-group-BF14-jumpsuit
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutUniformJumpsuitDealer
+  - LoadoutUniformJumpsuitPlain
+  - LoadoutUniformJumpsuitWorker
+  - LoadoutJumpsuitCivilianPlainGraphicChud
+  - LoadoutJumpsuitCivilianPlainGraphicHate
+  - LoadoutJumpsuitCivilianPatrioticUSA1
+  - LoadoutJumpsuitCivilianPatrioticUSA2
+  - LoadoutJumpsuitCivilianPatrioticUSA3
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianRU
@@ -364,6 +389,18 @@
   - LoadoutShoesColourBlack
   - LoadoutShoesColourBrown
   - LoadoutShoesWorkboots
+
+#region LONGARMS
+
+- type: loadoutGroup
+  id: BF_LongarmsSWAT
+  name: longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunAR15Police
+  - LoadoutGunMP5
+  - LoadoutGunM870
 
 #region SIDEARMS
 

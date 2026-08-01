@@ -244,6 +244,45 @@
     - state: indcaptain
       scale: 1.5,1.5
 
+- type: entity
+  id: SpawnPointUSPDSWATLieutenant
+  parent: SpawnPointJobBase
+  name: USPD SWAT Lieutenant
+  components:
+  - type: SpawnPoint
+    job_id: USPDSWATLieutenant
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indcaptain
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointUSPDSWATSquadLeader
+  parent: SpawnPointJobBase
+  name: USPD SWAT Squad Leader
+  components:
+  - type: SpawnPoint
+    job_id: USPDSWATSquadLeader
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indsquadleader
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointUSPDSWATOfficer
+  parent: SpawnPointJobBase
+  name: USPD SWAT Officer
+  components:
+  - type: SpawnPoint
+    job_id: USPDSWATOfficer
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indinfantry
+      scale: 1.5,1.5
+
 ## DE
 
 #region BW
@@ -642,6 +681,21 @@
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
     - state: indcaptain
+      scale: 1.5,1.5
+
+#region Partisan
+
+- type: entity
+  id: SpawnPointSuspectUS
+  parent: SpawnPointJobBase
+  name: Suspect US
+  components:
+  - type: SpawnPoint
+    job_id: SuspectUS
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: indinfantry
       scale: 1.5,1.5
 
 #region Civilian

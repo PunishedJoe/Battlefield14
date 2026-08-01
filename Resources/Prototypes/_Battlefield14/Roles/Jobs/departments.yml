@@ -50,6 +50,9 @@
   - USPDChief
   - USPDWarden
   - USPDOfficer
+  - USPDSWATLieutenant
+  - USPDSWATSquadLeader
+  - USPDSWATOfficer
 
 #region DE
 
@@ -121,7 +124,7 @@
   - OMONRifleman # Riot Officer
   editorHidden: true
 
-## IND
+#region IND
 
 - type: department
   id: WPS
@@ -149,3 +152,14 @@
   - RUScav
   - RUScavGuard
   - RUScavBoss
+
+#region Partisan NATO (against)
+
+- type: department
+  id: PartisanNATO
+  name: Anti-NATO partisans
+  description: department-NFCivilian-description
+  color: "#9FED58"
+  weight: 2
+  roles:
+  - SuspectUS

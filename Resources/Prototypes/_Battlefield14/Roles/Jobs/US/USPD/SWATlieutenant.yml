@@ -1,0 +1,59 @@
+- type: job
+  id: USPDSWATLieutenant
+  name: job-name-uspd-swat-lieutenant
+  description: jjob-description-uspd-swat-lieutenant
+  playTimeTracker: JobUSPDSWATLieutenant
+  weight: 70
+  startingGear: USPDSWATLieutenantGear
+  alwaysUseSpawner: true
+  icon: "JobIconINDCaptain"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: ChatRank
+      rank: BF-rank-lieutenant
+    - type: NpcFactionMember
+      factions:
+      - USPD
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - NATOCommon
+  - Security
+  - Brig
+  - Armory
+  - HeadOfSecurity
+  - Command
+  - Medical
+  - Cargo
+  - Engineering
+  - Research
+
+- type: startingGear
+  id: USPDSWATLieutenantGear
+  equipment:
+    id: USPDSWATLieutenantPDA
+    head: ClothingHeadHatHelmetSurplus
+    ears: ClothingHeadsetAltWPS
+    belt: ClothingBeltStationSecurityFilledSWAT
+    jumpsuit: ClothingUniformJumpsuitUSPD
+    outerClothing: ClothingOuterArmorWebVestSec
+    shoes: ClothingShoesBootsJackFilled
+    pocket1: FlashbangGrenadeUSM84
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - ClothingMaskGasM40
+    - Tourniquet
+    - EncryptionKeyAlpha
+    - EncryptionKeyCharlie

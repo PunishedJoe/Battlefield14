@@ -9,9 +9,10 @@
   maps:
   - BF14Customs
   - BF14Interchange
-  - BF14Bengalsk
+# - BF14Bengalsk              29.07.2026
 
 - type: gameMapPool
   id: BF14MapPoolCivilUnrest
   maps:
   - BF14GypsyCamp
+  - BF14ShuddihTown

@@ -89,6 +89,15 @@
 - type: playTimeTracker
   id: JobUSPDOfficer
 
+- type: playTimeTracker
+  id: JobUSPDSWATLieutenant
+
+- type: playTimeTracker
+  id: JobUSPDSWATSquadLeader
+
+- type: playTimeTracker
+  id: JobUSPDSWATOfficer
+
 #Region DE
 
 #region BW
@@ -189,6 +198,11 @@
 
 - type: playTimeTracker
   id: JobWPSMarshal
+
+#region Partisan
+
+- type: playTimeTracker
+  id: JobSuspectUS
 
 #region Civilian
 

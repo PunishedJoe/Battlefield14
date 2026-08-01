@@ -196,6 +196,8 @@
   - BF_Map
   - ContractorWallet
 
+#region USPD
+
 - type: roleLoadout
   id: JobUSPDChief
   groups:
@@ -226,6 +228,43 @@
   - BF_Map
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobUSPDSWATLieutenant
+  groups:
+  - BF_LongarmsSWAT
+  - BF_PistolsUSMCSL
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSPDSWATSquadLeader
+  groups:
+  - BF_LongarmsSWAT
+  - BF_PistolsUSMCSL
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSPDSWATOfficer
+  groups:
+  - BF_LongarmsSWAT
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_WPSGloves
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
+  - BF_Map
+  - ContractorWallet
 
 #region BW
 
@@ -571,11 +610,26 @@
   - BF_MiscItemsIND
   - ContractorWallet
 
+#region Partisan
+
+- type: roleLoadout
+  id: JobSuspectUS
+  groups:
+  - BF_HeadCivilianUS
+  - BF_CombatMasks
+  - BF_CrewGlasses
+  - BF_JumpsuitsSuspectUS
+  - BF_WPSGloves
+  - BF_ShoesCivilian
+  - BF_MiscItemsIND
+  - ContractorWallet
+
 #region Civilian
 
 - type: roleLoadout
   id: JobCivilianUS
   groups:
+  - BF_HeadCivilianUS
   - BF_JumpsuitsCivilianUS
   - BF_OuterCivilianUS
   - BF_WPSGloves

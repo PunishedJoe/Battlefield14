@@ -10,7 +10,7 @@ namespace Content.Shared.CCVar;
 public sealed partial class CCVars
 {
     public static readonly CVarDef<float>
-        CEBaseFallingDamage = CVarDef.Create("zlevels.ce_base_falling_damage", 0.75f, CVar.SERVER | CVar.REPLICATED);
+        CEBaseFallingDamage = CVarDef.Create("zlevels.ce_base_falling_damage", 1.5f, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<float>
         CEBaseFallingOtherDamage = CVarDef.Create("zlevels.ce_base_falling_other_damage", 0.4f, CVar.SERVER | CVar.REPLICATED);
@@ -19,7 +19,7 @@ public sealed partial class CCVars
         CEBaseFallingStunTime = CVarDef.Create("zlevels.ce_base_falling_stun_time", 0.1f, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<float>
-        CEBaseFallingOtherStunTime = CVarDef.Create("zlevels.ce_base_falling_other_stun_time", 0.06f, CVar.SERVER | CVar.REPLICATED);
+        CEBaseFallingOtherStunTime = CVarDef.Create("zlevels.ce_base_falling_other_stun_time", 0.00f, CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<int> ZLevelsPhysicsTickRate =
         CVarDef.Create("zlevels.ce_physics.tick_rate", 60, CVar.ARCHIVE);
