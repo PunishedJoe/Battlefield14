@@ -4,7 +4,7 @@
   name: G3A3
   parent: WA68_WeaponRifleBase
   id: WA68_WeaponWestGerG3A3
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: The West German made battle rifle. Not much to be said about it.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/g3a3.rsi
@@ -47,8 +47,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_MagazineG3
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/G3/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/G3/magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -73,7 +73,7 @@
   name: M14
   parent: WA68_WeaponRifleBase
   id: WA68_WeaponUsaM14
-  description: Lorem ipsum
+  description: Before the M16 there was the M14 which wasnt that great, too heavy, high recoil. but still better than the initial M16 rifles.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m14.rsi
@@ -104,8 +104,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_MagazineM1420Rnd
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/G3/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/G3/magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -128,7 +128,7 @@
   name: M16A1
   parent: WA68_WeaponRifleBase
   id: WA68_WeaponUsaM16A1
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: The iconic ''M16'', unlike its predecesor the M16, this one doesnt suck.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m16a1.rsi
@@ -169,8 +169,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_MagazineSTANAG30Rnd
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -234,8 +234,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_MagazineStoner63
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -260,7 +260,7 @@
   name: MPi-KM
   parent: WA68_WeaponRifleBase
   id: WA68_WeaponEastGerMPiKM
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: The East German copy of the AKM rifle.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akm.rsi
@@ -290,6 +290,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_Magazine6L10
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -310,9 +312,9 @@
 
 - type: entity
   name: MPi-KMS
-  parent: WA68_WeaponUssrAKM
+  parent: WA68_WeaponEastGerMPiKM
   id: WA68_WeaponEastGerMPiKMS
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: The East German copy of the AKMS rifle.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/mpikms.rsi
@@ -332,7 +334,7 @@
   name: SKS
   parent: WA68_WeaponMaglessRifleBase
   id: WA68_WeaponUssrSKS
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A semi automatic rifle that was binned right after being adopted due to the AK-47 being adopted just 2 years later. Now mostly only seen in the hands of reserve units.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/sks.rsi
@@ -367,7 +369,7 @@
   name: AKM
   parent: WA68_WeaponRifleBase
   id: WA68_WeaponUssrAKM
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: The iconic ''AKM'' rifle, everybody knows it.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akm.rsi
@@ -397,6 +399,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_Magazine6L10
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -419,7 +423,7 @@
   name: AKMS
   parent: WA68_WeaponUssrAKM
   id: WA68_WeaponUssrAKMS
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A folding stock version of the AKM rifle made for vehicle crews and paratroopers.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akms.rsi
@@ -437,7 +441,7 @@
   name: AKMSB
   parent: WA68_WeaponUssrAKM
   id: WA68_WeaponUssrAKMSB
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A AKMS with a suporessor intended for special ops units such as the Spetsnaz.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/akmsb/inworld.rsi

@@ -9,8 +9,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
-    armorPenetration: 0.2
+        Piercing: 15
+    armorPenetration: 0.5
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:

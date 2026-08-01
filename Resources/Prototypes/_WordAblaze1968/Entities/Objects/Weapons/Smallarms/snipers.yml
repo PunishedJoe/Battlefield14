@@ -4,7 +4,7 @@
   name: G3A3ZF
   parent: WA68_WeaponWestGerG3A3
   id: WA68_WeaponWestGerG3A3ZF
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A accurized G3A3 with a side mounted sight.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/g3a3zf.rsi
@@ -36,7 +36,7 @@
   name: M21
   parent: WA68_WeaponUsaM14
   id: WA68_WeaponUsaM21
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A accurized version of the M14 intended for sniper support.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m21.rsi
@@ -66,7 +66,7 @@
   name: M40
   parent: WA68_WeaponBoltActionSniperBase
   id: WA68_WeaponUsaM40
-  description: Lorem ipsum
+  description: A bolt-action rifle built from the remington M700.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m40.rsi
@@ -105,7 +105,7 @@
   name: M91/30 PU
   parent: WA68_WeaponBoltActionSniperBase
   id: WA68_WeaponUsaMosinM91/30PU
-  description: Lorem ipsum
+  description: A M93/30 mosin nagant with a side mounted 3x zoom sight.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/m91-30pu.rsi
@@ -146,7 +146,7 @@
   name: SVD
   parent: WA68_WeaponSniperBase
   id: WA68_WeaponUssrSVD
-  description: Lorem ipsum
+  description: A designated marksman rifle made to replace the outdated mosin nagant.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Rifles/svd.rsi
@@ -199,4 +199,3 @@
   parent: WA68_WeaponUssrSVD
   id: WA68_WeaponEastGerSWD
   name: SWD
-  description: Lorem ipsum

@@ -8,9 +8,8 @@
   - type: Projectile
     damage:
       types:
-        Slash: 4
-        Piercing: 6
-        Blunt: 2
+        Slash: 2
+        Piercing: 5
     deleteOnCollide: true
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -29,7 +28,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 9
+        Piercing: 7
     deleteOnCollide: true
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi

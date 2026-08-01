@@ -4,7 +4,7 @@
   name: M1911
   parent: WA68_WeaponPistolBase
   id: WA68_WeaponUsaM1911
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: The iconic ''M1911'' pistol, chambered in the god's caliber.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/m1911.rsi
@@ -52,7 +52,7 @@
   name: PM
   parent: WA68_WeaponPistolBase
   id: WA68_WeaponUssrPM
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: The pistol made to replace the TT-33 due to the PM being cheaper to make.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/pm.rsi
@@ -98,7 +98,7 @@
   name: PB
   parent: WA68_WeaponPistolBase
   id: WA68_WeaponUssrPB
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A PM with a integrated suppresor intended for special ops units such as the Spetsnaz.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/pb.rsi
@@ -148,7 +148,7 @@
   name: APS
   parent: WA68_WeaponPistolBase
   id: WA68_WeaponUssrAPS
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A fully automatic pistol intended for vehicle crews.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Pistols/aps.rsi

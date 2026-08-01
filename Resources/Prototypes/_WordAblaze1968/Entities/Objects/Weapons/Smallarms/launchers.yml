@@ -4,7 +4,7 @@
   name: Carl Gustaf m/64
   parent: WA68_WeaponBreakActionBase
   id: WA68_WeaponWestGerCarlGustafM64
-  description: Lorem ipsum.
+  description: A sweedish recoilless rifle.
   components:
   - type: Item
     size: Huge
@@ -43,7 +43,7 @@
   name: M79
   parent: WA68_WeaponBreakActionBase
   id: WA68_WeaponUsaM79
-  description: Lorem ipsum.
+  description: A single shot break action grenade launcher, nicknamed as the ''Thumper''
   components:
   - type: Item
     size: Huge
@@ -92,7 +92,7 @@
   name: M67
   parent: WA68_WeaponBreakActionBase
   id: WA68_WeaponUsaM67
-  description: Lorem ipsum.
+  description: While the eastern world decided to use lighter rocket launchers the west decided to keep using heavy recoilless rifles.
   components:
   - type: Item
     size: Huge
@@ -155,7 +155,7 @@
   name: M72A2 LAW
   parent: WA68_WeaponLauncherUnFoldedBase
   id: WA68_WeaponUsaM72A2UnFolded
-  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  description: A single shot disposable rocket launcher.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m72law/unfolded.rsi
@@ -191,7 +191,7 @@
   name: RPG-7
   parent: WA68_WeaponLauncherBase
   id: WA68_WeaponUssrRPG7
-  description: Lorem ipsum.
+  description: The iconic ''RPG'', its the rocket launcher you think of when somebody says rocket launcher.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/rpg7.rsi

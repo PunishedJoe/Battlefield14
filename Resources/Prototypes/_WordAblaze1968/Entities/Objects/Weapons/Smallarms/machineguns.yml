@@ -4,7 +4,7 @@
   name: MG3
   parent: WA68_WeaponMachinegunBase
   id: WA68_WeaponUsaMG3
-  description: Lorem ipsum
+  description: A MG42 rechambered to use the 7.62x51mm caliber. still has more bark than bite.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/mg3.rsi
@@ -28,6 +28,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_MagazineMG3
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
         priority: 2
         whitelist:
           tags:
@@ -53,7 +55,7 @@
   name: M60
   parent: WA68_WeaponMachinegunBase
   id: WA68_WeaponUsaM60
-  description: Lorem ipsum
+  description: The ''Pig'' a heavy and large machinegun. Mounted on helicopters, boats, tanks and 18 year olds.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/m60.rsi
@@ -98,9 +100,9 @@
 
 - type: entity
   name: M63
-  parent: WA68_WeaponRifleBase
+  parent: WA68_WeaponMachinegunBase
   id: WA68_WeaponUsaM63
-  description: Lorem ipsum
+  description: A machinegun version of the Stoner 63 rifle, loved by the navy seals.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/m63.rsi
@@ -118,10 +120,6 @@
     maxAngle: -30
   - type: Gun
     fireRate: 13.33 # 800 RPM
-    minAngle: 24 # the RPK is kinda odd in the way that its just a bigger AKM but also a LMG
-    maxAngle: 43
-    angleIncrease: 6
-    angleDecay: 90
     soundGunshot:
       path: /Audio/_WorldAblaze1968/Weapons/Gunshots/stoner63_close.ogg
   - type: ChamberMagazineAmmoProvider
@@ -131,6 +129,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_MagazineM63
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
         priority: 2
         whitelist:
           tags:
@@ -156,7 +156,7 @@
   name: PK
   parent: WA68_WeaponMachinegunBase
   id: WA68_WeaponUssrPK
-  description: Lorem ipsum
+  description: A large soviet machinegun, not as iconic as the american M60 but still iconic.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/pk.rsi
@@ -180,6 +180,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_Magazine6Zh1M
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
         priority: 2
         whitelist:
           tags:
@@ -207,7 +209,7 @@
   name: RPK
   parent: WA68_WeaponRifleBase
   id: WA68_WeaponUssrRPK
-  description: Lorem ipsum
+  description: A AKM rifle with a heavier barrel, thicker receiver, different stock, and a bipod.
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/rpk.rsi
@@ -225,7 +227,7 @@
     maxAngle: -30
   - type: Gun
     minAngle: 24 # the RPK is kinda odd in the way that its just a bigger AKM but also a LMG
-    maxAngle: 43
+    maxAngle: 55
     angleIncrease: 6
     angleDecay: 90
     soundGunshot:
@@ -241,6 +243,8 @@
       gun_magazine:
         name: Magazine
         startingItem: WA68_Magazine6P2
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -266,4 +270,3 @@
   parent: WA68_WeaponUssrRPK
   id: WA68_WeaponEastGerLMGK
   name: LMGK
-  description: Lorem ipsum
