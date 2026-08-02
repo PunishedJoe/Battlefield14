@@ -1,0 +1,50 @@
+- type: entity
+  name: backstreet butcher's cleaver
+  parent: BaseKnife
+  id: BackstreetButcherCleaver
+  description: A huge blade used for chopping and chopping up meat. This includes people and mostly people.
+  components:
+  - type: Tag
+    tags:
+    - Knife
+    - Cleaver
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Melee/Knives/cleaver.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -115
+    attackRate: 1.2
+    damage:
+      types:
+        Slash: 40
+  - type: Item
+    size: Normal
+    sprite: _Battlefield14/Objects/Weapons/Melee/Knives/cleaver.rsi
+  - type: Scalpel # Shitmed
+    speed: 0.3
+  - type: BoneSaw # Shitmed: Better than tg 25% because its a cleaver its meant to hack off limbs
+    speed: 0.5
+    
+- type: entity
+  name: backstreet chef's knife
+  parent: BaseKnife
+  id: BackstreetKnife
+  description: A razor sharp knife used for cutting up meat from your fellow men.
+  components:
+  - type: Tag
+    tags:
+    - Knife
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Melee/Knives/chefknife.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1.35
+    damage:
+      types:
+        Slash: 29
+  - type: Item
+    size: Normal
+    sprite: _Battlefield14/Objects/Weapons/Melee/Knives/chefknife.rsi
+  - type: Scalpel # Shitmed
+    speed: 0.3
