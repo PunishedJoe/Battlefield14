@@ -1,5 +1,19 @@
 - type: jobIcon
   parent: JobIcon
+  id: WA68_JobIconNatoFobPersonnel
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: NatoFobPersonnel
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoFobMayor
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: NatoFobMayor
+
+- type: jobIcon
+  parent: JobIcon
   id: WA68_JobIconNatoReserve
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
@@ -7,31 +21,39 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoRifleman
+  id: WA68_JobIconNatoInfantry
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoRifleman
+    state: NatoInfantry
+
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoSeniorRifleman
+  id: WA68_JobIconNatoLeader
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoSeniorRifleman
+    state: NatoLeader
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoSquadLeader
+  id: WA68_JobIconNatoCommander
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoSquadLeader
+    state: NatoCommander
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoPlatoonLeader
+  id: WA68_JobIconPactFobPersonnel
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoPlatoonLeader
+    state: PactFobPersonnel
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactFobMayor
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: PactFobMayor
 
 - type: jobIcon
   parent: JobIcon
@@ -42,31 +64,38 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactRifleman
+  id: WA68_JobIconPactInfantry
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: /actRifleman
+    state: PactInfantry
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactSeniorRifleman
+  id: WA68_JobIconPactLeader
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactSeniorRifleman
+    state: PactLeader
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactSquadLeader
+  id: WA68_JobIconPactCommander
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactSquadLeader
+    state: PactCommander
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactPlatoonLeader
+  id: WA68_JobIconFobPersonnel
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactPlatoonLeader
+    state: FobPersonnel
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconFobMayor
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: FobMayor
 
 - type: jobIcon
   parent: JobIcon
@@ -77,28 +106,21 @@
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconRifleman
+  id: WA68_JobIconInfantry
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: Rifleman
+    state: Infantry
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconSeniorRifleman
+  id: WA68_JobIconLeader
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: SeniorRifleman
+    state: Leader
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconSquadLeader
+  id: WA68_JobIconCommander
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: SquadLeader
-
-- type: jobIcon
-  parent: JobIcon
-  id: WA68_JobIconPlatoonLeader
-  icon:
-    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PlatoonLeader
+    state: Commander

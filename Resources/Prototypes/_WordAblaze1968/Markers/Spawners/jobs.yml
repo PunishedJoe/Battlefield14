@@ -1,5 +1,5 @@
 ########################## Usa
-
+########################## BACKLINE
 - type: entity
   id: WA68_RoleNatoUsaFobPersonnelSpawnPoint
   parent: SpawnPointJobBase
@@ -25,7 +25,7 @@
     layers:
     - state: NatoFobMayor
       scale: 1.5,1.5
-
+########################## ARMY
 - type: entity
   id: WA68_RoleNatoUsaArmyReserveSpawnPoint
   parent: SpawnPointJobBase
@@ -36,20 +36,20 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: NatoRifleman
+    - state: NatoInfantry
       scale: 1.5,1.5
 
 - type: entity
-  id: WA68_RoleNatoUsaArmyRiflemanSpawnPoint
+  id: WA68_RoleNatoUsaArmyInfantrySpawnPoint
   parent: SpawnPointJobBase
   name: WA68 USA Army infantryman
   components:
   - type: SpawnPoint
-    job_id: WA68_RoleNatoUsaArmyRifleman
+    job_id: WA68_RoleNatoUsaArmyInfantry
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: NatoRifleman
+    - state: NatoInfantry
       scale: 1.5,1.5
 
 - type: entity
@@ -62,7 +62,7 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: NatoSquadLeader
+    - state: NatoLeader
       scale: 1.5,1.5
 
 - type: entity
@@ -75,9 +75,9 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: NatoPlatoonLeader
+    - state: NatoCommander
       scale: 1.5,1.5
-
+########################## MARINE
 - type: entity
   id: WA68_RoleNatoUsaMarineReserveSpawnPoint
   parent: SpawnPointJobBase
@@ -88,20 +88,20 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: NatoRifleman
+    - state: NatoInfantry
       scale: 1.5,1.5
 
 - type: entity
-  id: WA68_RoleNatoUsaMarineRiflemanSpawnPoint
+  id: WA68_RoleNatoUsaMarineInfantrySpawnPoint
   parent: SpawnPointJobBase
   name: WA68 USA Marine infantryman
   components:
   - type: SpawnPoint
-    job_id: WA68_RoleNatoUsaMarineRifleman
+    job_id: WA68_RoleNatoUsaMarineInfantry
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: NatoRifleman
+    - state: NatoInfantry
       scale: 1.5,1.5
 
 - type: entity
@@ -114,7 +114,7 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: NatoSquadLeader
+    - state: NatoLeader
       scale: 1.5,1.5
 
 - type: entity
@@ -127,11 +127,11 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: NatoPlatoonLeader
+    - state: NatoCommander
       scale: 1.5,1.5
 
 ########################## Ussr
-
+########################## BACKLINE
 - type: entity
   id: WA68_RolePactUssrFobPersonnelSpawnPoint
   parent: SpawnPointJobBase
@@ -157,7 +157,7 @@
     layers:
     - state: PactFobMayor
       scale: 1.5,1.5
-
+########################## ARMY
 - type: entity
   id: WA68_RolePactUssrArmyReserveSpawnPoint
   parent: SpawnPointJobBase
@@ -168,20 +168,20 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactRifleman
+    - state: PactInfantry
       scale: 1.5,1.5
 
 - type: entity
-  id: WA68_RolePactUssrArmyRiflemanSpawnPoint
+  id: WA68_RolePactUssrArmyInfantrySpawnPoint
   parent: SpawnPointJobBase
   name: WA68 USSR Army infantryman
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrArmyRifleman
+    job_id: WA68_RolePactUssrArmyInfantry
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactRifleman
+    - state: PactInfantry
       scale: 1.5,1.5
 
 - type: entity
@@ -190,11 +190,11 @@
   name: WA68 USSR Army squad leader
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrArmySquadLeader
+    job_id: WA68_RolePactUssrArmyLeader
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactSquadLeader
+    - state: PactLeader
       scale: 1.5,1.5
 
 - type: entity
@@ -203,13 +203,13 @@
   name: WA68 USSR Army platoon leader
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrArmyPlatoonLeader
+    job_id: WA68_RolePactUssrArmyCommander
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactPlatoonLeader
+    - state: PactCommander
       scale: 1.5,1.5
-
+########################## AIRBORNE
 - type: entity
   id: WA68_RolePactUssrAirborneReserveSpawnPoint
   parent: SpawnPointJobBase
@@ -220,20 +220,20 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactRifleman
+    - state: PactInfantry
       scale: 1.5,1.5
 
 - type: entity
-  id: WA68_RolePactUssrAirborneRiflemanSpawnPoint
+  id: WA68_RolePactUssrAirborneInfantrySpawnPoint
   parent: SpawnPointJobBase
   name: WA68 USSR Airborne infantryman
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrAirborneRifleman
+    job_id: WA68_RolePactUssrAirborneInfantry
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactRifleman
+    - state: PactInfantry
       scale: 1.5,1.5
 
 - type: entity
@@ -242,11 +242,11 @@
   name: WA68 USSR Airborne squad leader
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrAirborneSquadLeader
+    job_id: WA68_RolePactUssrAirborneLeader
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactSquadLeader
+    - state: PactLeader
       scale: 1.5,1.5
 
 - type: entity
@@ -255,13 +255,13 @@
   name: WA68 USSR Airborne platoon leader
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrAirbornePlatoonLeader
+    job_id: WA68_RolePactUssrAirborneCommander
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactPlatoonLeader
+    - state: PactCommander
       scale: 1.5,1.5
-
+########################## NAVY
 - type: entity
   id: WA68_RolePactUssrNavyReserveSpawnPoint
   parent: SpawnPointJobBase
@@ -272,20 +272,20 @@
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactRifleman
+    - state: PactInfantry
       scale: 1.5,1.5
 
 - type: entity
-  id: WA68_RolePactUssrNavyRiflemanSpawnPoint
+  id: WA68_RolePactUssrNavyInfantrySpawnPoint
   parent: SpawnPointJobBase
   name: WA68 USSR Navy infantryman
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrNavyRifleman
+    job_id: WA68_RolePactUssrNavyInfantry
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactRifleman
+    - state: PactInfantry
       scale: 1.5,1.5
 
 - type: entity
@@ -294,11 +294,11 @@
   name: WA68 USSR Navy squad leader
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrNavySquadLeader
+    job_id: WA68_RolePactUssrNavyLeader
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactSquadLeader
+    - state: PactLeader
       scale: 1.5,1.5
 
 - type: entity
@@ -307,9 +307,9 @@
   name: WA68 USSR Navy platoon leader
   components:
   - type: SpawnPoint
-    job_id: WA68_RolePactUssrNavyPlatoonLeader
+    job_id: WA68_RolePactUssrNavyCommander
   - type: Sprite
     sprite: _WorldAblaze1968/Interface/role_icons.rsi
     layers:
-    - state: PactPlatoonLeader
+    - state: PactCommander
       scale: 1.5,1.5

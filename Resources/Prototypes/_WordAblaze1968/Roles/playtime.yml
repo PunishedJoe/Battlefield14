@@ -8,10 +8,7 @@
   id: WA68_RoleNatoUsaArmyReserveTime
 
 - type: playTimeTracker
-  id: WA68_RoleNatoUsaArmyRiflemanTime
-
-- type: playTimeTracker
-  id: WA68_RoleNatoUsaArmySeniorRiflemanTime
+  id: WA68_RoleNatoUsaArmyInfantryTime
 
 - type: playTimeTracker
   id: WA68_RoleNatoUsaArmySquadLeaderTime
@@ -23,10 +20,7 @@
   id: WA68_RoleNatoUsaMarineReserveTime
 
 - type: playTimeTracker
-  id: WA68_RoleNatoUsaMarineRiflemanTime
-
-- type: playTimeTracker
-  id: WA68_RoleNatoUsaMarineSeniorRiflemanTime
+  id: WA68_RoleNatoUsaMarineInfantryTime
 
 - type: playTimeTracker
   id: WA68_RoleNatoUsaMarineSquadLeaderTime
@@ -38,10 +32,7 @@
   id: WA68_RolePactUssrArmyReserveTime
 
 - type: playTimeTracker
-  id: WA68_RolePactUssrArmyRiflemanTime
-
-- type: playTimeTracker
-  id: WA68_RolePactUssrArmySeniorRiflemanTime
+  id: WA68_RolePactUssrArmyInfantryTime
 
 - type: playTimeTracker
   id: WA68_RolePactUssrArmySquadLeaderTime
@@ -53,10 +44,7 @@
   id: WA68_RolePactUssrAirborneReserveTime
 
 - type: playTimeTracker
-  id: WA68_RolePactUssrAirborneRiflemanTime
-
-- type: playTimeTracker
-  id: WA68_RolePactUssrAirborneSeniorRiflemanTime
+  id: WA68_RolePactUssrAirborneInfantryTime
 
 - type: playTimeTracker
   id: WA68_RolePactUssrAirborneSquadLeaderTime

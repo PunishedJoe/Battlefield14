@@ -40,14 +40,14 @@
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
-  id: WA68_RolePactUssrNavyRifleman
+  id: WA68_RolePactUssrNavyInfantry
   name: USSR Navy infantryman
-  description: Be the cannon fodder for Union of Soviet Socialist Republics.
-  playTimeTracker: WA68_RolePactUssrNavyRiflemanTime
+  description: Be the cannon fodder for Union of Soviet Socialist Republics. Run off alone into combat thinking youre "him" and die to a sniper.
+  playTimeTracker: WA68_RolePactUssrNavyInfantryTime
   weight: 2
-  startingGear: WA68_RolePactUssrNavyRiflemanGear
+  startingGear: WA68_RolePactUssrNavyInfantryGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactRifleman"
+  icon: "WA68_JobIconPactInfantry"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -67,9 +67,9 @@
       rank: Enf.
 
 - type: startingGear
-  id: WA68_RolePactUssrNavyRiflemanGear
+  id: WA68_RolePactUssrNavyInfantryGear
   equipment:
-    id: WA68_ClothingDogtagUssrNavyRifleman
+    id: WA68_ClothingDogtagUssrNavyInfantry
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
     belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
@@ -88,7 +88,7 @@
   weight: 3
   startingGear: WA68_RolePactUssrNavySquadLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactSquadLeader"
+  icon: "WA68_JobIconPactLeader"
   requireAdminNotify: false
   supervisors: Platoon commander
   canBeAntag: false
@@ -136,7 +136,7 @@
   weight: 4
   startingGear: WA68_RolePactUssrNavyPlatoonLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactPlatoonLeader"
+  icon: "WA68_JobIconPactCommander"
   requireAdminNotify: false
   supervisors: Company commander
   canBeAntag: false

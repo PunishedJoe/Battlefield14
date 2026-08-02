@@ -3,7 +3,7 @@
   id: WA68_ClothingDogtagBase
   suffix: WorldAblaze1968
   name: dogtags
-  description: Lorem ipsum
+  description: A pair of identification dogtags.
   abstract: true
   components:
   - type: Sprite
@@ -54,13 +54,13 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUsaArmyRifleman
+  id: WA68_ClothingDogtagUsaArmyInfantry
   components:
   - type: Sprite
     layers:
     - state: usa
   - type: PresetIdCard
-    job: WA68_RoleNatoUsaArmyRifleman
+    job: WA68_RoleNatoUsaArmyInfantry
 
 - type: entity
   parent: WA68_ClothingDogtagBase
@@ -94,13 +94,13 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUsaMarineRifleman
+  id: WA68_ClothingDogtagUsaMarineInfantry
   components:
   - type: Sprite
     layers:
     - state: usa
   - type: PresetIdCard
-    job: WA68_RoleNatoUsaMarineRifleman
+    job: WA68_RoleNatoUsaMarineInfantry
 
 - type: entity
   parent: WA68_ClothingDogtagBase
@@ -156,13 +156,13 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUssrArmyRifleman
+  id: WA68_ClothingDogtagUssrArmyInfantry
   components:
   - type: Sprite
     layers:
     - state: ussr
   - type: PresetIdCard
-    job: WA68_RolePactUssrArmyRifleman
+    job: WA68_RolePactUssrArmyInfantry
 
 - type: entity
   parent: WA68_ClothingDogtagBase
@@ -196,13 +196,13 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUssrAirborneRifleman
+  id: WA68_ClothingDogtagUssrAirborneInfantry
   components:
   - type: Sprite
     layers:
     - state: ussr
   - type: PresetIdCard
-    job: WA68_RolePactUssrAirborneRifleman
+    job: WA68_RolePactUssrAirborneInfantry
 
 - type: entity
   parent: WA68_ClothingDogtagBase
@@ -236,13 +236,13 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUssrNavyRifleman
+  id: WA68_ClothingDogtagUssrNavyInfantry
   components:
   - type: Sprite
     layers:
     - state: ussr
   - type: PresetIdCard
-    job: WA68_RolePactUssrNavyRifleman
+    job: WA68_RolePactUssrNavyInfantry
 
 - type: entity
   parent: WA68_ClothingDogtagBase

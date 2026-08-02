@@ -40,14 +40,14 @@
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
 
 - type: job
-  id: WA68_RoleNatoUsaArmyRifleman
+  id: WA68_RoleNatoUsaArmyInfantry
   name: US Army infantryman
-  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper
-  playTimeTracker: WA68_RoleNatoUsaArmyRiflemanTime
+  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper.
+  playTimeTracker: WA68_RoleNatoUsaArmyInfantryTime
   weight: 2
-  startingGear: WA68_RoleNatoUsaArmyRiflemanGear
+  startingGear: WA68_RoleNatoUsaArmyInfantryGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconNatoRifleman"
+  icon: "WA68_JobIconNatoInfantry"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -67,9 +67,9 @@
       rank: Pfc.
 
 - type: startingGear
-  id: WA68_RoleNatoUsaArmyRiflemanGear
+  id: WA68_RoleNatoUsaArmyInfantryGear
   equipment:
-    id: WA68_ClothingDogtagUsaArmyRifleman
+    id: WA68_ClothingDogtagUsaArmyInfantry
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUsaOG107
     belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
@@ -89,7 +89,7 @@
   weight: 3
   startingGear: WA68_RoleNatoUsaArmySquadLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconNatoSquadLeader"
+  icon: "WA68_JobIconNatoLeader"
   requireAdminNotify: false
   supervisors: Platoon commander
   canBeAntag: false
@@ -138,7 +138,7 @@
   weight: 4
   startingGear: WA68_RoleNatoUsaArmyPlatoonLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconNatoPlatoonLeader"
+  icon: "WA68_JobIconNatoCommander"
   requireAdminNotify: false
   supervisors: Company commander
   canBeAntag: false

@@ -11,16 +11,13 @@
       "name": "NatoReserve"
     },
     {
-      "name": "NatoRifleman"
+      "name": "NatoInfantry"
     },
     {
-      "name": "NatoSeniorRifleman"
+      "name": "NatoLeader"
     },
     {
-      "name": "NatoSquadLeader"
-    },
-    {
-      "name": "NatoPlatoonLeader"
+      "name": "NatoCommander"
     },
     {
       "name": "NatoFobPersonnel"
@@ -32,16 +29,13 @@
       "name": "PactReserve"
     },
     {
-      "name": "PactRifleman"
+      "name": "PactInfantry"
     },
     {
-      "name": "PactSeniorRifleman"
+      "name": "PactLeader"
     },
     {
-      "name": "PactSquadLeader"
-    },
-    {
-      "name": "PactPlatoonLeader"
+      "name": "PactCommander"
     },
     {
       "name": "PactFobPersonnel"
@@ -53,16 +47,13 @@
       "name": "Reserve"
     },
     {
-      "name": "Rifleman"
+      "name": "Infantry"
     },
     {
-      "name": "SeniorRifleman"
+      "name": "Leader"
     },
     {
-      "name": "SquadLeader"
-    },
-    {
-      "name": "PlatoonLeader"
+      "name": "Commander"
     },
     {
       "name": "FobPersonnel"

@@ -28,7 +28,7 @@
 - type: startingGear
   id: WA68_RolePactUssrBacklineGear
   equipment:
-    id: WA68_ClothingDogtagUsaFobPersonnel
+    id: WA68_ClothingDogtagUssrFobPersonnel
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
     back: WA68_ClothingBackpackUssrVeshmeshok
@@ -67,7 +67,7 @@
 - type: startingGear
   id: WA68_RolePactUssrBacklineLeaderGear
   equipment:
-    id: WA68_ClothingDogtagUsaFobMayor
+    id: WA68_ClothingDogtagUssrFobMayor
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
     back: WA68_ClothingBackpackUssrVeshmeshok
