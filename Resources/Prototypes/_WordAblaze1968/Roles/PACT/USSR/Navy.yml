@@ -3,7 +3,7 @@
   name: USSR Navy reservist
   description: When your predecessors fail you get sent into the meatgrinder.
   playTimeTracker: WA68_RolePactUssrNavyReserveTime
-  weight: 77
+  weight: 1
   startingGear: WA68_RolePactUssrNavyReserveGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactReserve"
@@ -24,16 +24,27 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Ryt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
+
+- type: startingGear
+  id: WA68_RolePactUssrNavyReserveGear
+  equipment:
+    id: WA68_ClothingDogtagUssrNavyReserve
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrKLMK
+    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackUssrVeshmeshok
+    suitstorage: WA68_WeaponUssrSKS
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
   id: WA68_RolePactUssrNavyRifleman
   name: USSR Navy infantryman
   description: Be the cannon fodder for Union of Soviet Socialist Republics.
   playTimeTracker: WA68_RolePactUssrNavyRiflemanTime
-  weight: 77
+  weight: 2
   startingGear: WA68_RolePactUssrNavyRiflemanGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactRifleman"
@@ -53,10 +64,7 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: Efr.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
+      rank: Enf.
 
 - type: startingGear
   id: WA68_RolePactUssrNavyRiflemanGear
@@ -77,7 +85,7 @@
   name: USSR Navy squad leader
   description: Try to manage you squad of meatshields. Get blamed for everything.
   playTimeTracker: WA68_RolePactUssrNavySquadLeaderTime
-  weight: 77
+  weight: 3
   startingGear: WA68_RolePactUssrNavySquadLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactSquadLeader"
@@ -98,9 +106,6 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Szh.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrNavySquadLeaderGear
@@ -128,7 +133,7 @@
   name: USSR Navy platoon commander
   description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
   playTimeTracker: WA68_RolePactUssrNavyPlatoonLeaderTime
-  weight: 77
+  weight: 4
   startingGear: WA68_RolePactUssrNavyPlatoonLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactPlatoonLeader"
@@ -149,9 +154,6 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Lyt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrNavyPlatoonLeaderGear

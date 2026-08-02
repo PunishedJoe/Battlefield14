@@ -3,7 +3,7 @@
   name: USSR Army reservist
   description: When your predecessors fail you get sent into the meatgrinder.
   playTimeTracker: WA68_RolePactUssrArmyReserveTime
-  weight: 77
+  weight: 1
   startingGear: WA68_RolePactUssrArmyReserveGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactReserve"
@@ -24,16 +24,27 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Ryt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
+
+- type: startingGear
+  id: WA68_RolePactUssrArmyReserveGear
+  equipment:
+    id: WA68_ClothingDogtagUssrArmyReserve
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrM1969
+    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackUssrVeshmeshok
+    suitstorage: WA68_WeaponUssrSKS
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
   id: WA68_RolePactUssrArmyRifleman
   name: USSR Army infantryman
   description: Be the cannon fodder for Union of Soviet Socialist Republics.
   playTimeTracker: WA68_RolePactUssrArmyRiflemanTime
-  weight: 77
+  weight: 2
   startingGear: WA68_RolePactUssrArmyRiflemanGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactRifleman"
@@ -54,22 +65,19 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Efr.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
-  id: WA68_RolePactUssrArmyReserveGear
+  id: WA68_RolePactUssrArmyRiflemanGear
   equipment:
-    id: WA68_ClothingDogtagUssrArmyReserve
+    id: WA68_ClothingDogtagUssrArmyRifleman
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
+    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackUssrVeshmeshok
-    suitstorage: WA68_WeaponUssrSKS
+    suitstorage: WA68_WeaponUssrAKM
     pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
@@ -77,7 +85,7 @@
   name: USSR Army squad leader
   description: Try to manage you squad of meatshields. Get blamed for everything.
   playTimeTracker: WA68_RolePactUssrArmySquadLeaderTime
-  weight: 77
+  weight: 3
   startingGear: WA68_RolePactUssrArmySquadLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactSquadLeader"
@@ -98,23 +106,6 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Szh.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
-
-- type: startingGear
-  id: WA68_RolePactUssrArmyRiflemanGear
-  equipment:
-    id: WA68_ClothingDogtagUssrArmyRifleman
-    shoes: WA68_ClothingShoesBootsGeneric
-    jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
-    head: WA68_ClothingHeadHelmetUssrSSh68
-    back: WA68_ClothingBackpackUssrVeshmeshok
-    suitstorage: WA68_WeaponUssrAKM
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
-    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: startingGear
   id: WA68_RolePactUssrArmySquadLeaderGear
@@ -142,7 +133,7 @@
   name: USSR Army platoon commander
   description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
   playTimeTracker: WA68_RolePactUssrArmyPlatoonLeaderTime
-  weight: 77
+  weight: 4
   startingGear: WA68_RolePactUssrArmyPlatoonLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactPlatoonLeader"
@@ -163,9 +154,6 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Lyt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrArmyPlatoonLeaderGear

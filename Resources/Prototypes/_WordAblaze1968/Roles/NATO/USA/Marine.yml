@@ -3,7 +3,7 @@
   name: US Marine reservist
   description: When your predecessors fail you get sent into the meatgrinder.
   playTimeTracker: WA68_RoleNatoUsaMarineReserveTime
-  weight: 77
+  weight: 1
   startingGear: WA68_RoleNatoUsaMarineReserveGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconNatoReserve"
@@ -24,9 +24,6 @@
       - WA68_Usa
     - type: ChatRank
       rank: Pvt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RoleNatoUsaMarineReserveGear
@@ -47,7 +44,7 @@
   name: US Marine infantryman
   description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper
   playTimeTracker: WA68_RoleNatoUsaMarineRiflemanTime
-  weight: 77
+  weight: 2
   startingGear: WA68_RoleNatoUsaMarineRiflemanGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconNatoRifleman"
@@ -68,9 +65,6 @@
       - WA68_Usa
     - type: ChatRank
       rank: LCpl.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RoleNatoUsaMarineRiflemanGear
@@ -92,7 +86,7 @@
   name: US Marine squad leader
   description: Try to manage you squad of meatshields. Get blamed for everything.
   playTimeTracker: WA68_RoleNatoUsaMarineSquadLeaderTime
-  weight: 77
+  weight: 3
   startingGear: WA68_RoleNatoUsaMarineSquadLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconNatoSquadLeader"
@@ -113,12 +107,9 @@
       - WA68_Usa
     - type: ChatRank
       rank: Sgt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
-  id: WA68_RoleNatoUsaMarineSqaudLeaderGear
+  id: WA68_RoleNatoUsaMarineSquadLeaderGear
   equipment:
     id: WA68_ClothingDogtagUsaMarineSquadLeader
     shoes: WA68_ClothingShoesBootsGeneric
@@ -144,7 +135,7 @@
   name: US Marine platoon commander
   description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
   playTimeTracker: WA68_RoleNatoUsaMarinePlatoonLeaderTime
-  weight: 77
+  weight: 4
   startingGear: WA68_RoleNatoUsaMarinePlatoonLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconNatoPlatoonLeader"
@@ -165,9 +156,6 @@
       - WA68_Usa
     - type: ChatRank
       rank: Lt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RoleNatoUsaMarinePlatoonLeaderGear

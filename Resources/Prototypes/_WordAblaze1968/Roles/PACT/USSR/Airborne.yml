@@ -3,7 +3,7 @@
   name: USSR Airborne reservist
   description: When your predecessors fail you get sent into the meatgrinder.
   playTimeTracker: WA68_RolePactUssrAirborneReserveTime
-  weight: 77
+  weight: 1
   startingGear: WA68_RolePactUssrAirborneReserveGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactReserve"
@@ -24,9 +24,6 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Ryt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrAirborneReserveGear
@@ -50,7 +47,7 @@
   name: USSR Airborne infantryman
   description: Be the cannon fodder for Union of Soviet Socialist Republics.
   playTimeTracker: WA68_RolePactUssrAirborneRiflemanTime
-  weight: 77
+  weight: 2
   startingGear: WA68_RolePactUssrAirborneRiflemanGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactRifleman"
@@ -71,9 +68,6 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Ryt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrAirborneRiflemanGear
@@ -97,7 +91,7 @@
   name: USSR Airborne squad leader
   description: Try to manage you squad of meatshields. Get blamed for everything.
   playTimeTracker: WA68_RolePactUssrAirborneSquadLeaderTime
-  weight: 77
+  weight: 3
   startingGear: WA68_RolePactUssrAirborneSquadLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactSquadLeader"
@@ -118,9 +112,6 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Szh.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrAirborneSquadLeaderGear
@@ -149,7 +140,7 @@
   name: USSR Airborne platoon commander
   description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
   playTimeTracker: WA68_RolePactUssrAirbornePlatoonLeaderTime
-  weight: 77
+  weight: 4
   startingGear: WA68_RolePactUssrAirbornePlatoonLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactPlatoonLeader"
@@ -170,9 +161,6 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Lyt.
-  requirements:
-    - !type:SexRequirement
-    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrAirbornePlatoonLeaderGear
