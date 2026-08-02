@@ -264,14 +264,14 @@
 - type: entity
   parent: [ClothingOuterArmorBase, ClothingArmorPlateLight]
   id: ClothingOuterArmorChefApronEmpty
-  name: backstreet chef's apron
-  description: An apron reinforced with kevlar lining with a added plate carrier.
+  name: backstreet chef's jacket
+  description: An jacket reinforced with kevlar lining with a added plate carrier.
   suffix: Empty
   components:
   - type: Sprite
-    sprite: _Battlefield14/Clothing/OuterClothing/Armor/basiccarrier.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/chefapron.rsi
   - type: Clothing
-    sprite: _Battlefield14/Clothing/OuterClothing/Armor/basiccarrier.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/chefapron.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -300,9 +300,9 @@
   suffix: Empty
   components:
   - type: Sprite
-    sprite: _Battlefield14/Clothing/OuterClothing/Armor/basiccarrier.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/butcherapron.rsi
   - type: Clothing
-    sprite: _Battlefield14/Clothing/OuterClothing/Armor/basiccarrier.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/butcherapron.rsi
   - type: Armor
     modifiers:
       coefficients:
