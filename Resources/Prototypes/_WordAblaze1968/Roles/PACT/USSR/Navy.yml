@@ -24,16 +24,19 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Ryt.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: job
-  id: WA68_RolePactUssrNavySeniorRifleman
-  name: USSR Navy senior infantryman
-  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper
-  playTimeTracker: WA68_RolePactUssrNavySeniorRiflemanTime
+  id: WA68_RolePactUssrNavyRifleman
+  name: USSR Navy infantryman
+  description: Be the cannon fodder for Union of Soviet Socialist Republics.
+  playTimeTracker: WA68_RolePactUssrNavyRiflemanTime
   weight: 77
   startingGear: WA68_RolePactUssrNavyRiflemanGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactSeniorRifleman"
+  icon: "WA68_JobIconPactRifleman"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -50,20 +53,23 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: MSzh.
+      rank: Efr.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
-  id: WA68_RolePactUssrNavyReserveGear
+  id: WA68_RolePactUssrNavyRiflemanGear
   equipment:
-    id: WA68_ClothingDogtagUssrNavyReserve
+    id: WA68_ClothingDogtagUssrNavyRifleman
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
+    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackUssrVeshmeshok
-    suitstorage: WA68_WeaponUssrSKS
+    suitstorage: WA68_WeaponUssrAKMS
     pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
@@ -92,20 +98,9 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Szh.
-
-- type: startingGear
-  id: WA68_RolePactUssrNavyRiflemanGear
-  equipment:
-    id: WA68_ClothingDogtagUssrNavyRifleman
-    shoes: WA68_ClothingShoesBootsGeneric
-    jumpsuit: WA68_ClothingUniformUssrKLMK
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
-    head: WA68_ClothingHeadHelmetUssrSSh68
-    back: WA68_ClothingBackpackUssrVeshmeshok
-    suitstorage: WA68_WeaponUssrAKMS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
-    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrNavySquadLeaderGear
@@ -154,6 +149,9 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Lyt.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrNavyPlatoonLeaderGear

@@ -24,6 +24,9 @@
       - WA68_Usa
     - type: ChatRank
       rank: Pvt.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RoleNatoUsaMarineReserveGear
@@ -65,6 +68,9 @@
       - WA68_Usa
     - type: ChatRank
       rank: LCpl.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RoleNatoUsaMarineRiflemanGear
@@ -107,6 +113,9 @@
       - WA68_Usa
     - type: ChatRank
       rank: Sgt.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RoleNatoUsaMarineSqaudLeaderGear
@@ -156,6 +165,9 @@
       - WA68_Usa
     - type: ChatRank
       rank: Lt.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RoleNatoUsaMarinePlatoonLeaderGear

@@ -24,11 +24,14 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Ryt.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: job
   id: WA68_RolePactUssrArmyRifleman
   name: USSR Army infantryman
-  description: Be the cannon fodder for United States of America.
+  description: Be the cannon fodder for Union of Soviet Socialist Republics.
   playTimeTracker: WA68_RolePactUssrArmyRiflemanTime
   weight: 77
   startingGear: WA68_RolePactUssrArmyRiflemanGear
@@ -51,6 +54,9 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Efr.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrArmyReserveGear
@@ -92,6 +98,9 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Szh.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrArmyRiflemanGear
@@ -154,6 +163,9 @@
       - WA68_Ussr
     - type: ChatRank
       rank: Lyt.
+  requirements:
+    - !type:SexRequirement
+    sex: Male
 
 - type: startingGear
   id: WA68_RolePactUssrArmyPlatoonLeaderGear
