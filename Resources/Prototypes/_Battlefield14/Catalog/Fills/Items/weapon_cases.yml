@@ -441,6 +441,17 @@
 
 - type: entity
   parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRUKedr
+  suffix: PP-91 Kedr
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunRUKedr
+    - id: MagazineSubmachinegunKedr
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
   id: BF14WeaponCaseLongRUVlad
   suffix: Vladistokyov
   components:

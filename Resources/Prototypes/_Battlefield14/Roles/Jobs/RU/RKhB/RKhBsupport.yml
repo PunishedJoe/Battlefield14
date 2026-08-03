@@ -1,0 +1,65 @@
+- type: job
+  id: RKhBSupport
+  name: job-name-rkhb-support
+  description: job-description-rkhb-support
+  playTimeTracker: JobRKhBSupport
+  weight: 76
+  startingGear: RKhBSupportGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTSupport"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+    - Ukrainian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: ChatRank
+      rank: BF-rank-corporal
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: RKhBSupportGear
+  equipment:
+    id: RKhBSupportPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilled4GaugeShrap10Slug357Speeloader
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+    mask: ClothingMaskGasRussiaPMK4
+    head: ClothingHeadHatSkullcrusher
+    helmetattachment: ClothingHelmetAttachmentNVGsBasicPACT
+#    eyes: ClothingEyesGogglesGreen
+    outerClothing: ClothingOuterHazmatRussianOZKArmored
+    shoes: ClothingShoesBootsJackFilledRU
+#    back: ClothingBackpackRucksackBlack
+    suitstorage: WeaponShotgunRUKS23M
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledVDVSupport
+  storage:
+    back:
+    - WeaponPistolRevolverRUMP412
+    - SupplyBoxAmmoRUFilled
+    - ArmorPlateMediumPackaged
+    - FlashlightMilitaryAlt
+    - Tourniquet
+    - Zipties
+    - PillHyronalin

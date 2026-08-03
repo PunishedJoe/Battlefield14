@@ -1,0 +1,59 @@
+- type: entity
+  id: BF14AlwaysPoweredAlarmLight1
+  name: alarm
+  description: A alarming sound to alarm you of unseen dangers.
+  suffix: "alarm 1"
+  parent: AlwaysPoweredStrobeLight
+  components:
+  - type: PointLight
+    mask: /Textures/Effects/LightMasks/double_cone.png
+    color: "#b51b10"
+    energy: 5
+    radius: 10
+    softness: 1
+    offset: "0, 0.35"
+  - type: AmbientSound
+    volume: 0
+    range: 10
+    sound:
+      path: "/Audio/_Battlefield14/Misc/alarm/alarm1.ogg"
+
+- type: entity
+  id: BF14AlwaysPoweredAlarmLight2
+  name: alarm
+  description: A alarming sound to alarm you of unseen dangers.
+  suffix: "alarm 2"
+  parent: AlwaysPoweredStrobeLight
+  components:
+  - type: PointLight
+    mask: /Textures/Effects/LightMasks/double_cone.png
+    color: "#b51b10"
+    energy: 5
+    radius: 10
+    softness: 1
+    offset: "0, 0.35"
+  - type: AmbientSound
+    volume: 0
+    range: 10
+    sound:
+      path: "/Audio/_Battlefield14/Misc/alarm/alarm2.ogg"
+
+- type: entity
+  id: BF14AlwaysPoweredAlarmLight3
+  name: alarm
+  description: A alarming sound to alarm you of unseen dangers.
+  suffix: "alarm 3"
+  parent: AlwaysPoweredStrobeLight
+  components:
+  - type: PointLight
+    mask: /Textures/Effects/LightMasks/double_cone.png
+    color: "#b51b10"
+    energy: 5
+    radius: 10
+    softness: 1
+    offset: "0, 0.35"
+  - type: AmbientSound
+    volume: 0
+    range: 10
+    sound:
+      path: "/Audio/_Battlefield14/Misc/alarm/alarm3.ogg"

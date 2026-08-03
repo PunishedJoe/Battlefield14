@@ -1,0 +1,67 @@
+- type: job
+  id: RKhBMedic
+  name: job-name-rkhb-medic
+  description: job-description-rkhb-medic
+  playTimeTracker: JobRKhBMedic
+  weight: 75
+  startingGear: RKhBMedicGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTMedic"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+    - Ukrainian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: ChatRank
+      rank: BF-rank-corporal
+    - type: SurgerySpeedModifier
+      SpeedModifier: 1.65
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - Medical
+  - PACTCommon
+  - PACTMaintenance
+  - PACTMedical
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: RKhBMedicGear
+  equipment:
+    id: RKhBMedicPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMedicalEMTFilledBF14
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+    mask: ClothingMaskGasRussiaPMK4
+    eyes: ClothingEyesHudMedicalBF
+    outerClothing: ClothingOuterHazmatRussianOZKArmored
+    shoes: ClothingShoesBootsJackFilledRU
+#    back: ClothingBackpackRucksackBlack
+    suitstorage: WeaponRifleRUAKS74U
+    pocket1: PouchMagsLargeFilledAK74
+    pocket2: PouchGrenadesFilledVDVRifleman
+  storage:
+    back:
+    - SupplyBoxMedicalFilled
+    - DefibrillatorCompactBF
+    - FlashlightMilitaryAlt
+    - Tourniquet
+    - Zipties
+    - BF14AutoInjectorStormZCapped
+    - MedicationBoxPillsHyronalin

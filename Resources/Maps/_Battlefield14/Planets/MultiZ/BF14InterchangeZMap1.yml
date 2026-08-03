@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/25/2026 03:09:36
+  time: 07/31/2026 22:33:25
   entityCount: 5527
 maps:
 - 141
@@ -350,10 +350,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
-        MetalFoam: []
         Kudzu: []
+        MetalFoam: []
         Puddle: []
+        Smoke: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: BecomesStation
@@ -1889,10 +1889,10 @@ entities:
           version: 7
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
-        MetalFoam: []
         Kudzu: []
+        MetalFoam: []
         Puddle: []
+        Smoke: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -10517,394 +10517,759 @@ entities:
       rot: 3.141592653589793 rad
       pos: 118.5,111.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 1022
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 123.5,111.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 1066
     components:
     - type: Transform
       rot: 4.71238898038469 rad
       pos: 115.5,113.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 1069
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 126.5,113.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2081
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 104.5,107.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2082
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 102.5,109.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2083
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 96.5,109.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2084
     components:
     - type: Transform
       pos: 89.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2085
     components:
     - type: Transform
       pos: 102.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2086
     components:
     - type: Transform
       pos: 128.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2087
     components:
     - type: Transform
       pos: 96.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2096
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 56.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2097
     components:
     - type: Transform
       pos: 121.5,102.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2098
     components:
     - type: Transform
       pos: 122.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2099
     components:
     - type: Transform
       pos: 126.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2101
     components:
     - type: Transform
       pos: 119.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2102
     components:
     - type: Transform
       pos: 117.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2103
     components:
     - type: Transform
       pos: 115.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2104
     components:
     - type: Transform
       pos: 113.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2105
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 152.5,85.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2106
     components:
     - type: Transform
       pos: 124.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2107
     components:
     - type: Transform
       pos: 64.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2108
     components:
     - type: Transform
       pos: 62.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2109
     components:
     - type: Transform
       pos: 53.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2110
     components:
     - type: Transform
       pos: 51.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2111
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 57.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2112
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 112.5,81.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2113
     components:
     - type: Transform
       pos: 49.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2114
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 129.5,81.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2115
     components:
     - type: Transform
       pos: 60.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2116
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 185.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2117
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 184.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2118
     components:
     - type: Transform
       pos: 188.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2119
     components:
     - type: Transform
       pos: 190.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2120
     components:
     - type: Transform
       pos: 192.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2121
     components:
     - type: Transform
       pos: 181.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2122
     components:
     - type: Transform
       pos: 179.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2123
     components:
     - type: Transform
       pos: 177.5,103.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2124
     components:
     - type: Transform
       pos: 156.5,126.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2125
     components:
     - type: Transform
       pos: 161.5,126.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2126
     components:
     - type: Transform
       pos: 168.5,126.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2127
     components:
     - type: Transform
       pos: 138.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2128
     components:
     - type: Transform
       pos: 140.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2129
     components:
     - type: Transform
       pos: 142.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2130
     components:
     - type: Transform
       pos: 144.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2131
     components:
     - type: Transform
       pos: 146.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2132
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 137.5,121.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2133
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 104.5,121.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2134
     components:
     - type: Transform
       pos: 95.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2135
     components:
     - type: Transform
       pos: 97.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2136
     components:
     - type: Transform
       pos: 99.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2137
     components:
     - type: Transform
       pos: 101.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2138
     components:
     - type: Transform
       pos: 103.5,122.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2139
     components:
     - type: Transform
       pos: 89.5,126.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2140
     components:
     - type: Transform
       pos: 85.5,126.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2142
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 68.5,81.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2143
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 68.5,82.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2144
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 89.5,85.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2145
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 137.5,107.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2146
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 139.5,109.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2147
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 145.5,109.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2148
     components:
     - type: Transform
       pos: 145.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2149
     components:
     - type: Transform
       pos: 139.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2150
     components:
     - type: Transform
       pos: 152.5,105.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2241
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 94.5,135.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2272
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 71.5,135.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2312
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 147.5,135.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 2326
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 170.5,135.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 3594
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 82.5,135.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 3599
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 161.5,135.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 4350
     components:
     - type: Transform
       pos: 173.5,132.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 4356
     components:
     - type: Transform
       pos: 172.5,132.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 4873
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 147.5,111.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
 - proto: N14FurnitureCasinoRoulettetable
   entities:
   - uid: 2539

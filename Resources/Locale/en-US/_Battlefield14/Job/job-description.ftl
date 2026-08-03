@@ -43,6 +43,11 @@ job-description-vdv-automatic-rifleman = Lay down suppressing fire and resupply 
 job-description-vdv-medic = Bring back your buds from the brink, go ratatat-tat with your little AK.
 job-description-vdv-recon = Go on the flanks and conduct surprise attacks or relay intel.
 
+job-description-rkhb-squadleader = Coordinate optimal American shooting for your fireteam.
+job-description-rkhb-rifleman = Shoot Americans, but in hazardous conditions.
+job-description-rkhb-support = Use your NVGs and shotgun to clear out dark and cramped areas.
+job-description-rkhb-medic = Bring back your buds from the brink, go ratatat-tat with your little AK.
+
 job-description-vks-captain = Lead your battlegroup, whether that be from the front or your capital ship. Answer directly to President Valdimir Putin.
 job-description-vks-crewman = Maintain whatever capital ship/port you're assigned to.
 job-description-vks-fighter-pilot = Eviscerate infantry, splash bandits, lust over your SU-57 Felon.

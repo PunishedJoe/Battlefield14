@@ -393,6 +393,26 @@
 #region LONGARMS
 
 - type: loadoutGroup
+  id: BF_LongarmsOMONSergeant
+  name: longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunAK74M
+  - LoadoutGunPP91
+  - LoadoutGunKS23M
+
+- type: loadoutGroup
+  id: BF_LongarmsOMON
+  name: longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunAKS74U
+  - LoadoutGunPP91
+  - LoadoutGunRMB93
+
+- type: loadoutGroup
   id: BF_LongarmsSWAT
   name: longarm
   minLimit: 1

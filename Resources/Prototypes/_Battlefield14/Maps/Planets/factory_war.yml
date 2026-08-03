@@ -1,0 +1,47 @@
+- type: gameMap
+  id: BF14FactoryWar
+  mapName: 'Norskatom facility (LowPop)'
+  mapPath: /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar1.yml
+  minPlayers: 1
+  maxPlayers: 20
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14FactoryWar:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Norvinsk, Russia"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Norvinsk, Russia"
+          stationDescription: "Building 2-A of the Norskatom nuclear fuel erichment facility owned by Rosatom located in the Norvinsk economic region"
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs: # HECU has 2 less slots due to better gear
+            HECUSquadLeader: [ 3, 3 ]
+            HECURifleman: [ 3, 3 ]
+            HECUSupport: [ 1, 1 ]
+            HECUMedic: [ 2, 2 ]
+            RKhBSquadLeader: [ 3, 3 ]
+            RKhBRifleman: [ 4, 4 ]
+            RKhBSupport: [ 2, 2 ]
+            RKhBMedic: [ 2, 2 ]
+        - type: CEStationZLevels
+          mapsAbove:
+            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar2.yml 
+            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar3.yml
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar0.yml 
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+
+- type: zMap
+  id: BF14FactoryWarZMap
+  maps:
+    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar0.yml    # Undergound
+    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar1.yml    # Ground floor
+    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar2.yml    # 1st floor
+    - /Maps/_Battlefield14/Planets/MultiZ/BF14FactoryZMapWar3.yml    # 2nd floor
+  components:
+    - type: CEAutoGridGravity

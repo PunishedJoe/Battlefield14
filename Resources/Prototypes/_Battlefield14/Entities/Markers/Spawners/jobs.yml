@@ -203,6 +203,60 @@
     - state: natoallyrecon
       scale: 1.5,1.5
 
+#region HECU
+
+- type: entity
+  id: SpawnPointHECURifleman
+  parent: SpawnPointJobBase
+  name: HECU Rifleman
+  components:
+  - type: SpawnPoint
+    job_id: HECURifleman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natoinfantry
+    scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointHECUMedic
+  parent: SpawnPointJobBase
+  name: Hecu Corpsman
+  components:
+  - type: SpawnPoint
+    job_id: HECUMedic
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natomedic
+    scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointHECUSquadLeader
+  parent: SpawnPointJobBase
+  name: HECU Squad Leader
+  components:
+  - type: SpawnPoint
+    job_id: HECUSquadLeader
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natosquadleader
+    scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointHECUSupport
+  parent: SpawnPointJobBase
+  name: HECU Support
+  components:
+  - type: SpawnPoint
+    job_id: HECUSupport
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natosupport
+    scale: 1.5,1.5
+
 #region USPD
 
 - type: entity
@@ -447,6 +501,60 @@
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
     - state: pactrecon
+      scale: 1.5,1.5
+
+#region RKhB
+
+- type: entity
+  id: SpawnPointRKhBSquadLeader
+  parent: SpawnPointJobBase
+  name: RKhB Squad Leader
+  components:
+  - type: SpawnPoint
+    job_id: RKhBSquadLeader
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactsquadleader
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointRKhBRifleman
+  parent: SpawnPointJobBase
+  name: RKhB Rifleman
+  components:
+  - type: SpawnPoint
+    job_id: RKhBRifleman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactinfantry
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointRKhBSupport
+  parent: SpawnPointJobBase
+  name: RKhB Support
+  components:
+  - type: SpawnPoint
+    job_id: RKhBSupport
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactsupport
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointRKhBMedic
+  parent: SpawnPointJobBase
+  name: RKhB Medic
+  components:
+  - type: SpawnPoint
+    job_id: RKhBMedic
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactmedic
       scale: 1.5,1.5
 
 #region FSB

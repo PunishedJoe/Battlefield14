@@ -20,7 +20,7 @@
         Heat: 0.5
         Shock: 0.5
         Caustic: 0.5
-        Radiation: 0.3
+        Radiation: 0.6
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: StaminaDamageResistance
