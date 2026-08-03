@@ -136,6 +136,20 @@
 - type: playTimeTracker
   id: JobVDVRecon
 
+#region RKhB
+
+- type: playTimeTracker
+  id: JobRKhBSquadLeader
+
+- type: playTimeTracker
+  id: JobRKhBRifleman
+
+- type: playTimeTracker
+  id: JobRKhBSupport
+
+- type: playTimeTracker
+  id: JobRKhBMedic
+
 #region FSB
 
 - type: playTimeTracker

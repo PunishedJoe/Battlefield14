@@ -6,6 +6,10 @@
 department-USMC-name = United States Marine Corps (USMC)
 department-USMC-description = I am a marine on the beach im a killing machine.
 
+# HECU
+department-HECU-name = Hazardous Enviroment Combat Unit (HECU)
+department-HECU-description = Cover up any resonance cascades.
+
 # USSF
 department-USSF-name = United States Space Force (USSF)
 department-USSF-description = I can see my house from here!
@@ -31,6 +35,10 @@ department-BW-description = Third time's the charm.
 ## VDV
 department-VDV-name = Russian Airborne Forces (VDV)
 department-VDV-description = S NEBA PRIVET.
+
+## RKhB
+department-RKhB-name = Radiological, Chemical and Biological Defence (RKhB)
+department-RKhB-description = Fight and die in areas where they can never recover your body.
 
 # VKS
 department-VKS-name = Russian Aerospace Forces (VKS)

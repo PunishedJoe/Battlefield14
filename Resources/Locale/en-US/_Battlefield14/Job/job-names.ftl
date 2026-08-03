@@ -43,6 +43,11 @@ job-name-vdv-automatic-rifleman = VDV Automatic Rifleman
 job-name-vdv-medic = VDV Combat Medic
 job-name-vdv-recon = VDV Recon Scout
 
+job-name-rkhb-squadleader = RKhB Senior Rifleman
+job-name-rkhb-rifleman = RKhB Rifleman
+job-name-rkhb-support = RKhB Support
+job-name-rkhb-medic = RKhB Combat Medic
+
 job-name-vks-captain = VKS General Major
 job-name-vks-crewman = VKS Crewman
 job-name-vks-fighter-pilot = VKS Fighter Pilot

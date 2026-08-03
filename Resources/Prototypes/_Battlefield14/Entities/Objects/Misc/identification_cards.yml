@@ -596,6 +596,64 @@
   - type: PresetIdCard
     job: VDVRecon
 
+#region RKhB
+
+- type: entity
+  parent: IDCardStandard
+  id: RKhBSquadLeaderIDCard
+  name: RKhB ID card
+  suffix: senior rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RKhBSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: RKhBRiflemanIDCard
+  name: RKhB ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RKhBRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: RKhBSupportIDCard
+  name: RKhB ID card
+  suffix: automatic rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RKhBSupport
+
+- type: entity
+  parent: IDCardStandard
+  id: RKhBMedicIDCard
+  name: RKhB ID card
+  suffix: combat medic
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RKhBMedic
+
 #region FSB
 
 - type: entity

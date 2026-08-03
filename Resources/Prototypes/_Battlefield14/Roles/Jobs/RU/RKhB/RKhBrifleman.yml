@@ -1,0 +1,61 @@
+- type: job
+  id: RKhBRifleman
+  name: job-name-rkhb-rifleman
+  description: job-description-rkhb-rifleman
+  playTimeTracker: JobRKhBRifleman
+  weight: 77
+  startingGear: RKhBRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTRifleman"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+    - Ukrainian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: ChatRank
+      rank: BF-rank-private
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: RKhBRiflemanGear
+  equipment:
+    id: RKhBRiflemanPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilledAK74Black
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+    mask: ClothingMaskGasRussiaPMK4
+#    eyes: ClothingEyesGogglesGreen
+    outerClothing: ClothingOuterHazmatRussianOZKArmored
+    shoes: ClothingShoesBootsJackFilledRU
+#    back: ClothingBackpackRucksackBlack
+    suitstorage: WeaponRifleRUAK74M
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledVDVRifleman
+  storage:
+    back:
+    - ArmorPlateMediumPackaged
+    - FlashlightMilitaryAlt
+    - Tourniquet
+    - Zipties
+    - PillHyronalin

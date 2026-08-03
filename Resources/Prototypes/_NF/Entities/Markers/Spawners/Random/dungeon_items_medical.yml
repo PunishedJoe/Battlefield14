@@ -70,22 +70,22 @@
     - MedkitFilled
     - MedkitFilled
     - MedkitFilled
-    - Medkit
+#    - Medkit #BF14
     - MedkitBruteFilled
-    - MedkitBrute
+#    - MedkitBrute #BF14
     - MedkitBurnFilled
-    - MedkitBurn
+#    - MedkitBurn #BF14
     - MedkitToxinFilled
-    - MedkitToxin
+#    - MedkitToxin #BF14
     - MedkitRadiationFilled
-    - MedkitRadiation
+#    - MedkitRadiation #BF14
     chance: 0.75
     offset: 0.0
     rarePrototypes:
-    - MedkitAdvancedFilled
-    - MedkitAdvanced
+#    - MedkitAdvancedFilled # BF14
+#    - MedkitAdvanced # BF14
     - MedkitCombatFilled
-    - MedkitCombat
+#    - MedkitCombat #BF14
     rareChance: 0.01
 
 - type: entity

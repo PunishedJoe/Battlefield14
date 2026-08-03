@@ -247,6 +247,16 @@
         amount: 8
 
 - type: entity
+  id: ClothingBeltMilitaryWebbingRUFilledAK74Black
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled AK74M
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK74Black
+        amount: 8
+
+- type: entity
   id: ClothingBeltMilitaryWebbingRUFilledAK12
   parent: ClothingBeltMilitaryWebbingRU
   suffix: Filled AK12
@@ -265,6 +275,20 @@
     contents:
       - id: MagazineRifleAK12TracerGreen
         amount: 8
+
+- type: entity
+  id: ClothingBeltMilitaryWebbingRUFilled4GaugeShrap10Slug357Speeloader
+  parent: ClothingBeltMilitaryWebbingRU
+  suffix: Filled, 4 gauge, Shrap10/Slug, .357, Speedloader
+  components:
+  - type: StorageFill
+    contents:
+      - id: ShellBoxBF4GaugeShrap10
+        amount: 2
+      - id: ShellBoxBF4GaugeBarricade
+        amount: 1
+      - id: SpeedLoader357magnum
+        amount: 2
 
 - type: entity
   id: ClothingBeltMilitaryWebbingRUFilledAK74blackdrum

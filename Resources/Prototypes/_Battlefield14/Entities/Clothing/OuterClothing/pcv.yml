@@ -104,7 +104,7 @@
         Heat: 0.65
         Shock: 0.20
         Caustic: 0.20
-        Radiation: 0.00
+        Radiation: 0.3 # i know HTDF told me to make it 90% but its not a full seal suit and 90% means you can basicaly ignore radiatin unless youre standing inside the wreck of the chernobyl reactor 4, also gasmask gives 25% rad resist, also 70% is still a lot
   - type: ExplosionResistance
     damageCoefficient: 0.65
 

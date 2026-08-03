@@ -9,6 +9,7 @@
   maps:
   - BF14Customs
   - BF14Interchange
+  - BF14FactoryWar
 # - BF14Bengalsk              29.07.2026
 
 - type: gameMapPool
@@ -16,3 +17,4 @@
   maps:
   - BF14GypsyCamp
   - BF14ShuddihTown
+  - BF14FactoryUnrest

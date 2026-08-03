@@ -25,6 +25,10 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.75
 
 - type: entity
   parent: ClothingBaseGasMask
@@ -71,6 +75,13 @@
 #    flashDurationMultiplier: 1.5
   - type: IngestionBlocker
     blockSmokeIngestion: true
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Radiation: 0.75
 
 - type: entity
   parent: ClothingMaskGasM40
@@ -96,6 +107,17 @@
     scale: 0.9, 0.9
   - type: Clothing
     sprite: _Battlefield14/Clothing/Mask/russiamask.rsi
+
+- type: entity
+  parent: ClothingBaseGasMask
+  id: ClothingMaskGasRussiaPMK4
+  name: PMK-4 gas mask
+  description: Effective against stuff you reaally dont want in your body.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/pmk4.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/pmk4.rsi
 
 - type: entity
   parent: ClothingMaskBase

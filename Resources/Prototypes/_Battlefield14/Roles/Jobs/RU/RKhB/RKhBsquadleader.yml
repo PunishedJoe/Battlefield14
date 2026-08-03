@@ -1,0 +1,66 @@
+- type: job
+  id: RKhBSquadLeader
+  name: job-name-rkhb-squadleader
+  description: job-description-rkhb-squadleader
+  playTimeTracker: JobRKhBSquadLeader
+  weight: 78
+  startingGear: RKhBSquadLeaderGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTSquadleader"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    - Esperanto
+    languagesUnderstood:
+    - Russian
+    - Esperanto
+    - Ukrainian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: ChatRank
+      rank: BF-rank-ru-juniorsergeant
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: RKhBSquadLeaderGear
+  equipment:
+    id: RKhBSquadLeaderPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilledAK74Black
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+    mask: ClothingMaskGasRussiaPMK4
+#    eyes: ClothingEyesGogglesGreen
+    outerClothing: ClothingOuterHazmatRussianOZKArmored
+    shoes: ClothingShoesBootsJackFilledRU
+#    back: ClothingBackpackRucksackBlack
+    suitstorage: WeaponRifleRUAK74M
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledVDVRifleman
+  storage:
+    back:
+    - ArmorPlateMediumPackaged
+    - FlashlightMilitaryAlt
+    - Tourniquet
+    - Zipties
+    - SyndicateWhistle
+    - BoxPinpointerUniversalPACT
+    - PillHyronalin

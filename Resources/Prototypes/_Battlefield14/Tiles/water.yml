@@ -1,0 +1,50 @@
+- type: entity
+  parent: N14FloorWaterSewerDeep
+  id: BF14FloorWaterradioactiveShallow
+  name: shallow water
+  description: A shallow puddle of water contaminated with unknown chemicals.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Tiles/water.rsi
+    drawdepth: HighFloorObjects
+    layers:
+      - state: shallow
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 1
+    sprintSpeedModifier: 1
+  - type: RadiationSource
+    intensity: 0.4
+
+- type: entity
+  parent: N14FloorWaterSewerDeep
+  id: BF14FloorWaterradioactiveMedium
+  name: water
+  description: A knee deep water contaminated with unknown chemicals.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Tiles/water.rsi
+    drawdepth: SmallMobs
+    layers:
+      - state: medium
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.8
+    sprintSpeedModifier: 0.8
+  - type: RadiationSource
+    intensity: 0.6
+
+- type: entity
+  parent: N14FloorWaterSewerDeep
+  id: BF14FloorWaterradioactiveDeep
+  name: deep water
+  description: A waist deep water contaminated with unknown chemicals.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Tiles/water.rsi
+    drawdepth: SmallObjects
+    layers:
+      - state: deep
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.6
+    sprintSpeedModifier: 0.6
+  - type: RadiationSource
+    intensity: 0.7
