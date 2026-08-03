@@ -1,0 +1,26 @@
+- type: job
+  id: ChefBF14
+  name: job-name-ind-chef
+  description: job-description-ind-chef
+  playTimeTracker: JobChefBF14
+  displayWeight: 10
+  startingGear: BF14Chef
+  alwaysUseSpawner: true
+  icon: "JobIconChef"
+#  supervisors: job-supervisors-everyone
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - German    
+    languagesUnderstood:
+    - English
+    - German
+  access:
+  - Maintenance
+  
+- type: startingGear
+  id: BF14Chef
+  equipment:
+    back: ClothingBackpackButtpackSurplus
+    pocket1: PouchFirstAidFilled

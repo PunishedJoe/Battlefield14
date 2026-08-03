@@ -142,6 +142,18 @@
 #region BODY (uniform/armour)
 
 - type: loadoutGroup
+  id: BF_JumpsuitsChef
+  name: Uniform
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutJumpsuitChef1
+  - LoadoutJumpsuitChef2
+  - LoadoutUniformJumpsuitPlain
+  fallbacks:
+  - LoadoutJumpsuitChef1 
+  
+- type: loadoutGroup
   id: BF_JumpsuitsCivilianUS
   name: loadout-group-BF14-jumpsuit
   minLimit: 1
@@ -266,6 +278,17 @@
   - LoadoutOuterArmorPlateCarrierHeavyTrack
   fallbacks:
   - LoadoutOuterArmorPlateCarrierHeavy
+  
+- type: loadoutGroup
+  id: BF_OuterChef
+  name: Apron
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutOuterArmorChefApronKevlar
+  - LoadoutOuterArmorButcherApronKevlar
+  fallbacks:
+  - LoadoutOuterArmorChefApronKevlar
 
 - type: loadoutGroup
   id: BF_HelmetBossRU
@@ -377,6 +400,16 @@
   - LoadoutHandsGlovesSoldierBlack
   - LoadoutHandsGlovesSoldierFingerless
   - LoadoutHandsGlovesSoldierWristwatch
+  
+- type: loadoutGroup
+  id: BF_ChefGloves
+  name: Gloves
+  minLimit: 0
+  loadouts:
+  - LoadoutHandsGlovesSoldierBlack
+  - LoadoutHandsGlovesSoldierFingerless
+  - LoadoutHandsGlovesSoldierWristwatch
+  - LoadoutHandsGlovesLeather
 
 #region FEET
 
@@ -490,6 +523,15 @@
   - LoadoutMapSelector
   - LoadoutArmbandStationMap
 
+- type: loadoutGroup
+  id: BF_KnifeChef
+  name: Knife
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutChefCleaver
+  - LoadoutChefKnife
+ 
 - type: loadoutGroup
   id: BF_NATOIFFBox
   name: loadout-group-BF14-natoiff-box

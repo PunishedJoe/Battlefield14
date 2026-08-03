@@ -16,7 +16,7 @@
     attackRate: 1.2
     damage:
       types:
-        Slash: 40
+        Slash: 36
   - type: Item
     size: Normal
     sprite: _Battlefield14/Objects/Weapons/Melee/Knives/cleaver.rsi
@@ -42,7 +42,7 @@
     attackRate: 1.35
     damage:
       types:
-        Slash: 29
+        Slash: 31
   - type: Item
     size: Normal
     sprite: _Battlefield14/Objects/Weapons/Melee/Knives/chefknife.rsi

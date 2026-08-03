@@ -677,6 +677,17 @@
   - BF_ShoesCivilian
   - BF_MiscItemsIND
   - ContractorWallet
+  
+- type: roleLoadout
+  id: JobChefBF14
+  groups:
+  - BF_JumpsuitsChef
+  - BF_ChefGloves
+  - BF_ShoesCivilian
+  - BF_MiscItemsIND
+  - BF_OuterChef
+  - BF_KnifeChef
+  - ContractorWallet
 
 #region Misc
 

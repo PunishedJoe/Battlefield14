@@ -220,6 +220,9 @@
 
 - type: playTimeTracker
   id: JobGypsy
+  
+- type: playTimeTracker
+  id: JobChefBF14
 
 #region Misc
 

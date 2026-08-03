@@ -88,3 +88,15 @@
   storage:
     back:
     - Camonet15
+    
+- type: loadout
+  id: LoadoutChefKnife
+  storage:
+    back:
+    - BackstreetKnife
+    
+- type: loadout
+  id: LoadoutChefCleaver
+  storage:
+    back:
+    - BackstreetButcherCleaver   

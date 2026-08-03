@@ -61,3 +61,4 @@ job-name-wps-officer = Chevron Security Officer
 
 job-name-ind-civilian = Civilian
 job-name-ind-civilian-paramedic = Paramedic
+job-name-ind-chef = Backstreet Chef
