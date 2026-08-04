@@ -74,7 +74,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     totalIntensity: 30
     intensitySlope: 6
     maxIntensity: 3

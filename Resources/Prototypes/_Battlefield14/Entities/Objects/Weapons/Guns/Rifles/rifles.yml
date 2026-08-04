@@ -311,6 +311,7 @@
     - FullAuto
     selectedMode: FullAuto
   - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/G3/rack.ogg
     soundBoltClosed:

@@ -51,7 +51,7 @@
 #    back: ClothingBackpackRucksackBlack
     suitstorage: WeaponRifleRUAK74M
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledVDVRifleman
+    pocket2: PouchGrenadesFilledRGFRifleman
   storage:
     back:
     - ArmorPlateMediumPackaged

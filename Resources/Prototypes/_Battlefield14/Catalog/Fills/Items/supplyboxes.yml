@@ -30,7 +30,7 @@
       - id: MagazineBox556x45Big
       - id: BoxMagazineSTANAG
       - id: BoxMagazineSTANAGTracerRed
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox762x51Big
 
 - type: entity
   id: SupplyBoxAmmoUSFilledMarsoc
@@ -54,7 +54,7 @@
       - id: MagazineBox556x45Big
       - id: BoxMagazineG36
       - id: BoxMagazineG36TracerRed
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox762x51Big
 
 - type: entity
   id: SupplyBoxAmmoRUFilled
@@ -66,7 +66,7 @@
       - id: MagazineBox545x39Big
       - id: BoxMagazineAK74
       - id: BoxMagazineASVALShort
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox762x39Big
 
 - type: entity
   id: SupplyBoxAmmoRUFilledFSB

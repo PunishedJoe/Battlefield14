@@ -34,6 +34,7 @@
       params:
         volume: -5
   - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
       params:

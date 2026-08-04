@@ -54,9 +54,9 @@
     suitstorage: WeaponShotgunRUKS23M
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledVDVSupport
+    leftarmband: ClothingArmbandThighHolsterFilledRUMP412
   storage:
     back:
-    - WeaponPistolRevolverRUMP412
     - SupplyBoxAmmoRUFilled
     - ArmorPlateMediumPackaged
     - FlashlightMilitaryAlt

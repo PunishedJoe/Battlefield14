@@ -19,3 +19,28 @@
      collection: CivExplosionDistant
   smallSoundFar: 
      collection: CivExplosionDistantFar
+
+- type: explosion
+  id: Thermobaric
+  damagePerIntensity:
+    types:
+      Heat: 7
+      Blunt: 7
+      Structural: 30
+  tileBreakChance: [ 0, 0.5, 1 ]
+  tileBreakIntensity: [ 0, 10, 30 ]
+  tileBreakRerollReduction: 10
+  intensityPerState: 20
+  lightColor: Orange
+  texturePath: /Textures/Effects/fire.rsi
+  fireStates: 6
+  fireStacks: 2
+  throwEntitiesOnExplosion: false
+  sound:
+    collection: CivExplosionGrenade
+  smallSound:
+     collection: CivExplosionGrenade
+  soundFar:
+     collection: CivExplosionDistant
+  smallSoundFar:
+     collection: CivExplosionDistantFar

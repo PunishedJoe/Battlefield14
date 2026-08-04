@@ -28,6 +28,13 @@ public sealed partial class ChamberMagazineAmmoProviderComponent : MagazineAmmoP
     [ViewVariables(VVAccess.ReadWrite), DataField("canRack"), AutoNetworkedField]
     public bool CanRack = true;
 
+    /// <summary>
+    /// If the gun runs out of ammo, does the bolt automatically open/lock back.
+    /// If false the bolt stays closed when empty but can still be opened/closed manually.
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField("autoOpenBoltOnEmpty"), AutoNetworkedField]
+    public bool AutoOpenBoltOnEmpty = true;
+
     [ViewVariables(VVAccess.ReadWrite), DataField("soundBoltClosed"), AutoNetworkedField]
     public SoundSpecifier? BoltClosedSound = new SoundPathSpecifier("/Audio/Weapons/Guns/Bolt/rifle_bolt_closed.ogg");
 

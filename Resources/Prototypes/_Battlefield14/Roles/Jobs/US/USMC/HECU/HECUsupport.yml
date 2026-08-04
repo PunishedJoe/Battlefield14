@@ -56,7 +56,7 @@
     back: ClothingBackpackMercenary
     suitstorage: WeaponShotgunUSSPAS12
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
+    pocket2: PouchGrenadesFilledUSARifleman
     leftarmband: Tourniquet
     wallet: ClothingWalletLeatherBrown
   storage:
@@ -89,7 +89,7 @@
     back: ClothingBackpackMercenary
     suitstorage: WeaponMachineGunUSM249Para
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
+    pocket2: PouchGrenadesFilledUSARifleman
     leftarmband: Tourniquet
     rightarmband: ClothingArmbandThighHolsterFilledUS
     wallet: ClothingWalletLeatherBrown

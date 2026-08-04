@@ -45,7 +45,7 @@
 
 - type: entity
   parent: BF14SignEuropeanSpeed30
-  id: BF14SignEuropeanSpeed30
+  id: BF14SignEuropeanSpeed50
   name: speed limit sign (50)
   components:
   - type: Sprite

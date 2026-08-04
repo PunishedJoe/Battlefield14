@@ -1,0 +1,67 @@
+- type: entity
+  parent: BaseItem
+  id: CMVendUSPDSWATWarVendorLieutenantTablet
+  name: SWAT lieutenant war vendor tablet
+  description: Top notch shit here.
+  suffix: ColMarTech, DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/tablets.rsi
+    layers:
+      - state: tablet
+      - state: generic
+        shader: unshaded
+  - type: UserInterface
+    interfaces:
+      enum.CMAutomatedVendorUI.Key:
+        type: CMAutomatedVendorBui
+  - type: ActivatableUI
+    key: enum.CMAutomatedVendorUI.Key
+  - type: ActivatableUIRequiresAccess
+  - type: CMAutomatedVendor
+    jobs:
+    - USPDSWATLieutenant
+    sections:
+    - name: weaponry
+      entries:
+      - id: BF14WeaponCaseLongUSXM8
+        name: XM8 assault rifle
+        points: 2
+      - id: WeaponGrenadeLauncherUSM320
+        name: M320 grenade launcher
+        points: 2
+    - name: throwables
+      entries:
+      - id: BoxGrenadesM84
+        name: M84 flashbang grenades
+        points: 1
+      - id: BoxGrenadesM58
+        name: CS gas grenades
+        points: 2
+    - name: utility
+      entries:
+      - id: BoxBreachingCharges
+        name: breaching charges
+        points: 2
+      - id: FUBAR
+        name: FUBAR
+        points: 1
+    - name: M320 shells
+      entries:
+      - id: BoxMagazine40x46ChemicalSmoke
+        name: CS gas rounds
+        points: 2
+      - id: BoxMagazine40x46mmIllumination
+        name: illumination rounds
+        points: 1
+#    - name: organisation
+#      entries:
+#      - id: BoxIFFNATOBlue
+#        name: Blue IFF identifiers
+#        amount: 2
+#      - id: BoxIFFNATOYellow
+#        name: Yellow IFF identifiers
+#        amount: 2
+#      - id: BoxIFFNATOGreen
+#        name: Green IFF identifiers
+#        amount: 2

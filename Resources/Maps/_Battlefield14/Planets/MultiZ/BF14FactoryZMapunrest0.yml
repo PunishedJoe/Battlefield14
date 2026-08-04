@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/03/2026 03:28:59
+  time: 08/03/2026 19:45:36
   entityCount: 4236
 maps:
 - 2
@@ -484,9 +484,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Smoke: []
         MetalFoam: []
+        Smoke: []
+        Kudzu: []
         Puddle: []
       updateAccumulator: 0.01571703
     - type: Shuttle
@@ -1103,7 +1103,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: Mapping BF14FactoryWarZMap [0]
+      name: Mapping BF14FactoryUnrestZMap [0]
     - type: Transform
     - type: Map
       mapPaused: True
@@ -1114,9 +1114,9 @@ entities:
       chunks: {}
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Smoke: []
         MetalFoam: []
+        Smoke: []
+        Kudzu: []
         Puddle: []
     - type: GridPathfinding
     - type: Gravity

@@ -290,7 +290,7 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: BF14WeaponCaseLongUSMXM8
+  id: BF14WeaponCaseLongUSXM8
   suffix: XM8
   components:
   - type: StorageFill
@@ -301,7 +301,7 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: BF14WeaponCaseLongUSMXM8Tan
+  id: BF14WeaponCaseLongUSXM8Tan
   suffix: XM8, tan
   components:
   - type: StorageFill

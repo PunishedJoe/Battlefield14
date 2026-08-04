@@ -13,7 +13,7 @@
   - type: DeleteOnTrigger
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: DemolitionCharge
+    explosionType: Default
     totalIntensity: 150
     intensitySlope: 4
     maxIntensity: 10
@@ -132,7 +132,7 @@
   - type: DeleteOnTrigger
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: DemolitionCharge
+    explosionType: Default
     totalIntensity: 150
     intensitySlope: 4
     maxIntensity: 10
@@ -160,7 +160,7 @@
   - type: DeleteOnTrigger
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     maxIntensity: 15
     intensitySlope: 6
     totalIntensity: 200
