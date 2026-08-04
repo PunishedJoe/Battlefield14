@@ -1,0 +1,232 @@
+- type: entity
+  parent: MarkerBase
+  id: WA68_StructureFloraGrassBushSpawnRandomised
+  suffix: WorldAblaze1968
+  name: Grass/Bush/ spawner
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _WorldAblaze1968/Structures/Flora/Enviroment/grass.rsi
+        state: grass_bushes1
+  - type: RandomSpawner
+    prototypes:
+      - WA68_StructureFloraGrassBush1
+      - WA68_StructureFloraGrassBush2
+      - WA68_StructureFloraGrassBush3
+      - WA68_StructureFloraGrassBush4
+      - WA68_StructureFloraGrassBush5
+      - WA68_StructureFloraGrassBush6
+      - WA68_StructureFloraGrassBush7
+      - WA68_StructureFloraGrassBush8
+      - WA68_StructureFloraGrassBush9
+      - WA68_StructureFloraGrassShort1
+      - WA68_StructureFloraGrassShort2
+      - WA68_StructureFloraGrassShort3
+      - WA68_StructureFloraGrassShort4
+      - WA68_StructureFloraGrassShort5
+      - WA68_StructureFloraGrassShort6
+      - WA68_StructureFloraGrassShort7
+      - WA68_StructureFloraGrassShort8
+      - WA68_StructureFloraGrassShort9
+      - WA68_StructureFloraGrassShort10
+      - WA68_StructureFloraGrassShort11
+      - WA68_StructureFloraGrassShort12
+      - WA68_StructureFloraGrassShort13
+      - WA68_StructureFloraGrassShort14
+      - WA68_StructureFloraLargeBush1
+      - WA68_StructureFloraLargeBush2
+      - WA68_StructureFloraLargeBush3
+      - WA68_StructureFloraLargeBush4
+      - WA68_StructureFloraPlantAgaric1
+      - WA68_StructureFloraPlantAgaric2
+      - WA68_StructureFloraPlantAgaric3
+      - WA68_StructureFloraPlantAgaric4
+      - WA68_StructureFloraPlantAgaric5
+      - WA68_StructureFloraPlantAgaric6
+      - WA68_StructureFloraPlantBlood1
+      - WA68_StructureFloraPlantBlood2
+      - WA68_StructureFloraPlantBlood3
+      - WA68_StructureFloraPlantAmantia1
+      - WA68_StructureFloraPlantAmantia2
+      - WA68_StructureFloraPlantAmantia3
+      - WA68_StructureFloraPlantAmantia4
+      - WA68_StructureFloraPlantAmantia5
+      - WA68_StructureFloraPlantSage1
+      - WA68_StructureFloraPlantSage2
+      - WA68_StructureFloraPlantSage3
+      - WA68_StructureFloraPlantDayflin1
+      - WA68_StructureFloraPlantDayflin2
+      - WA68_StructureFloraPlantDayflin3
+      - WA68_StructureFloraPlantDayflin4
+      - WA68_StructureFloraPlantDayflin5
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: WA68_StructureFloraGrassSpawnRandomised
+  suffix: WorldAblaze1968
+  name: Grass spawner
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _WorldAblaze1968/Structures/Flora/Enviroment/grass.rsi
+        state: grass_bushes1
+  - type: RandomSpawner
+    prototypes:
+      - WA68_StructureFloraGrassBush1
+      - WA68_StructureFloraGrassBush2
+      - WA68_StructureFloraGrassBush3
+      - WA68_StructureFloraGrassBush4
+      - WA68_StructureFloraGrassBush5
+      - WA68_StructureFloraGrassBush6
+      - WA68_StructureFloraGrassBush7
+      - WA68_StructureFloraGrassBush8
+      - WA68_StructureFloraGrassBush9
+      - WA68_StructureFloraGrassShort1
+      - WA68_StructureFloraGrassShort2
+      - WA68_StructureFloraGrassShort3
+      - WA68_StructureFloraGrassShort4
+      - WA68_StructureFloraGrassShort5
+      - WA68_StructureFloraGrassShort6
+      - WA68_StructureFloraGrassShort7
+      - WA68_StructureFloraGrassShort8
+      - WA68_StructureFloraGrassShort9
+      - WA68_StructureFloraGrassShort10
+      - WA68_StructureFloraGrassShort11
+      - WA68_StructureFloraGrassShort12
+      - WA68_StructureFloraGrassShort13
+      - WA68_StructureFloraGrassShort14
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: WA68_StructureFloraLargeBushSpawnRandomised
+  suffix: WorldAblaze1968
+  name: Bush spawner
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _WorldAblaze1968/Structures/Flora/Enviroment/grass.rsi
+        state: grass_bushes1
+  - type: RandomSpawner
+    prototypes:
+      - WA68_StructureFloraLargeBush1
+      - WA68_StructureFloraLargeBush2
+      - WA68_StructureFloraLargeBush3
+      - WA68_StructureFloraLargeBush4
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: WA68_StructureFloraRockSpawnRandomised
+  suffix: WorldAblaze1968
+  name: boulder spawner
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _WorldAblaze1968/Structures/Flora/Enviroment/grass.rsi
+        state: grass_bushes1
+  - type: RandomSpawner
+    prototypes:
+      - WA68_StructureFloraRock1
+      - WA68_StructureFloraRock2
+      - WA68_StructureFloraRock3
+      - WA68_StructureFloraRock4
+      - WA68_StructureFloraRock5
+      - WA68_StructureFloraRock6
+      - WA68_StructureFloraRock7
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: WA68_StructureFloraLargeRockSpawnRandomised
+  suffix: WorldAblaze1968
+  name: large boulder spawner
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _WorldAblaze1968/Structures/Flora/Enviroment/grass.rsi
+        state: grass_bushes1
+  - type: RandomSpawner
+    prototypes:
+      - WA68_StructureFloraLargeRockMoss1
+      - WA68_StructureFloraLargeRockMoss2
+      - WA68_StructureFloraLargeRockMoss3
+      - WA68_StructureFloraLargeRockMoss4
+      - WA68_StructureFloraLargeRockMoss5
+      - WA68_StructureFloraLargeRock1
+      - WA68_StructureFloraLargeRock2
+      - WA68_StructureFloraLargeRock3
+      - WA68_StructureFloraLargeRock4
+      - WA68_StructureFloraLargeRock5
+      - WA68_StructureFloraLargeRock6
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: WA68_StructureFloraSpawnRandomised
+  suffix: WorldAblaze1968
+  name:  spawner
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _WorldAblaze1968/Structures/Flora/Enviroment/grass.rsi
+        state: grass_bushes1
+  - type: RandomSpawner
+    prototypes:
+      - WA68_StructureFloraPlantAgaric1
+      - WA68_StructureFloraPlantAgaric2
+      - WA68_StructureFloraPlantAgaric3
+      - WA68_StructureFloraPlantAgaric4
+      - WA68_StructureFloraPlantAgaric5
+      - WA68_StructureFloraPlantAgaric6
+      - WA68_StructureFloraPlantBlood1
+      - WA68_StructureFloraPlantBlood2
+      - WA68_StructureFloraPlantBlood3
+      - WA68_StructureFloraPlantAmantia1
+      - WA68_StructureFloraPlantAmantia2
+      - WA68_StructureFloraPlantAmantia3
+      - WA68_StructureFloraPlantAmantia4
+      - WA68_StructureFloraPlantAmantia5
+      - WA68_StructureFloraPlantSage1
+      - WA68_StructureFloraPlantSage2
+      - WA68_StructureFloraPlantSage3
+      - WA68_StructureFloraPlantDayflin1
+      - WA68_StructureFloraPlantDayflin2
+      - WA68_StructureFloraPlantDayflin3
+      - WA68_StructureFloraPlantDayflin4
+      - WA68_StructureFloraPlantDayflin5
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: WA68_StructureFloraReedSpawnRandomised
+  suffix: WorldAblaze1968
+  name: Reed spawner
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _WorldAblaze1968/Structures/Flora/Enviroment/grass.rsi
+        state: grass_bushes1
+  - type: RandomSpawner
+    prototypes:
+      - WA68_StructureFloraReedBig1
+      - WA68_StructureFloraReedBig2
+      - WA68_StructureFloraReedBig3
+      - WA68_StructureFloraReedBig4
+      - WA68_StructureFloraReedBig5
+      - WA68_StructureFloraReedBig6
+      - WA68_StructureFloraReedBig7
+      - WA68_StructureFloraReedBig8
+      - WA68_StructureFloraReedSmall1
+      - WA68_StructureFloraReedSmall2
+      - WA68_StructureFloraReedSmall3
+      - WA68_StructureFloraReedSmall4
+      - WA68_StructureFloraReedSmall5
+      - WA68_StructureFloraReedSmall6
+      - WA68_StructureFloraReedSmall7
+      - WA68_StructureFloraReedSmall8
+      - WA68_StructureFloraReedSmall9
+      - WA68_StructureFloraReedSmall10
+      - WA68_StructureFloraReedSmall11
+    chance: 1

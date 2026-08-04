@@ -1,0 +1,219 @@
+- type: tile
+  editorHidden: false
+  id: WA68_FloorDirt
+  name: dirt
+  sprite: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/cavedrought.png
+  variants: 16
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/single_edge_SE.png
+    NorthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/single_edge_NE.png
+    NorthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/single_edge_NW.png
+    SouthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/single_edge_SW.png
+    South: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/double_edge_S.png
+    East: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/double_edge_E.png
+    North: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/double_edge_N.png
+    West: /Textures/_WorldAblaze1968/Structures/Tiles/Dirt/double_edge_W.png
+  baseTurf: WA68_FloorDirt
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  editorHidden: false
+  id: WA68_FloorSand
+  name: sand
+  sprite: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/sand.png
+  variants: 5
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 5
+  edgeSprites:
+    SouthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/single_edge_SE.png
+    NorthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/single_edge_NE.png
+    NorthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/single_edge_NW.png
+    SouthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/single_edge_SW.png
+    South: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/double_edge_S.png
+    East: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/double_edge_E.png
+    North: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/double_edge_N.png
+    West: /Textures/_WorldAblaze1968/Structures/Tiles/Sand/double_edge_W.png
+  baseTurf: CP14FloorSand
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepSnow
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: WA68_FloorSnow
+  editorHidden: false
+  name: snow
+  sprite: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/snow.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 1002
+  edgeSprites:
+    SouthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/single_edge_SE.png
+    NorthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/single_edge_NE.png
+    NorthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/single_edge_NW.png
+    SouthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/single_edge_SW.png
+    South: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/double_edge_S.png
+    East: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/double_edge_E.png
+    North: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/double_edge_N.png
+    West: /Textures/_WorldAblaze1968/Structures/Tiles/Snow/double_edge_W.png
+  baseTurf: WA68_FloorDirt
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepSnow
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  editorHidden: false
+  id: WA68_FloorCobblePavement
+  name: pevement
+  sprite: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/cobble.png
+  variants: 5
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 2
+  edgeSprites:
+    SouthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/single_edge_SE.png
+    NorthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/single_edge_NE.png
+    NorthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/single_edge_NW.png
+    SouthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/single_edge_SW.png
+    South: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/double_edge_S.png
+    East: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/double_edge_E.png
+    North: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/double_edge_N.png
+    West: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/double_edge_W.png
+  baseTurf: WA68_FloorDirt
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: WA68_FloorGrass
+  editorHidden: false
+  name: grass
+  sprite: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/grass.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 6
+  edgeSprites:
+    SouthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/single_edge_SE.png
+    NorthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/single_edge_NE.png
+    NorthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/single_edge_NW.png
+    SouthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/single_edge_SW.png
+    South: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/double_edge_S.png
+    East: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/double_edge_E.png
+    North: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/double_edge_N.png
+    West: /Textures/_WorldAblaze1968/Structures/Tiles/Grass/double_edge_W.png
+  baseTurf: WA68_FloorDirt
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: WA68_FloorGrassLight
+  editorHidden: false
+  name: grass
+  sprite: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/grass.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 7
+  edgeSprites:
+    SouthEast: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/single_edge_SE.png
+    NorthEast: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/single_edge_NE.png
+    NorthWest: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/single_edge_NW.png
+    SouthWest: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/single_edge_SW.png
+    South: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/double_edge_S.png
+    East: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/double_edge_E.png
+    North: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/double_edge_N.png
+    West: /Textures/_WorldAblaze1968/Structures/Tiles/GrassLight/double_edge_W.png
+  baseTurf: WA68_FloorDirt
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  heatCapacity: 10000
+  weather: true
+
+- type: tile
+  id: WA68_FloorGrassTall
+  editorHidden: false
+  name: grass
+  sprite: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/grass.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  edgeSpritePriority: 8
+  edgeSprites:
+    SouthEast: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/single_edge_SE.png
+    NorthEast: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/single_edge_NE.png
+    NorthWest: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/single_edge_NW.png
+    SouthWest: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/single_edge_SW.png
+    South: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/double_edge_S.png
+    East: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/double_edge_E.png
+    North: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/double_edge_N.png
+    West: /Textures/_WorldAblaze1968/Structures/Tiles/GrassTall/double_edge_W.png
+  baseTurf: WA68_FloorDirt
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  heatCapacity: 10000
+  weather: true

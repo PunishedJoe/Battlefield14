@@ -1,0 +1,178 @@
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraPlantAgaric1
+  name: mushroom
+  description: What kind of mushrom is this?
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Enviroment/agaric.rsi
+    state: world1
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+
+- type: entity
+  parent: WA68_StructureFloraPlantAgaric1
+  id: WA68_StructureFloraPlantAgaric2
+  components:
+  - type: Sprite
+    state: world2
+
+- type: entity
+  parent: WA68_StructureFloraPlantAgaric1
+  id: WA68_StructureFloraPlantAgaric3
+  components:
+  - type: Sprite
+    state: world3
+
+- type: entity
+  parent: WA68_StructureFloraPlantAgaric1
+  id: WA68_StructureFloraPlantAgaric4
+  components:
+  - type: Sprite
+    state: world4
+
+- type: entity
+  parent: WA68_StructureFloraPlantAgaric1
+  id: WA68_StructureFloraPlantAgaric5
+  components:
+  - type: Sprite
+    state: world5
+
+- type: entity
+  parent: WA68_StructureFloraPlantAgaric1
+  id: WA68_StructureFloraPlantAgaric6
+  components:
+  - type: Sprite
+    state: world6
+
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraPlantBlood1
+  name: flower
+  description: Some sort of red flower, you arent really a botanist so that as much as you know.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Enviroment/blood_flower.rsi
+    state: world1
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+
+- type: entity
+  parent: WA68_StructureFloraPlantBlood1
+  id: WA68_StructureFloraPlantBlood2
+  components:
+  - type: Sprite
+    state: world2
+
+- type: entity
+  parent: WA68_StructureFloraPlantBlood1
+  id: WA68_StructureFloraPlantBlood3
+  components:
+  - type: Sprite
+    state: world3
+
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraPlantAmantia1
+  name: flower
+  description: Some sort of blue flower, you arent really a botanist so that as much as you know.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Enviroment/blue_amanita.rsi
+    state: world1
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+
+- type: entity
+  parent: WA68_StructureFloraPlantAmantia1
+  id: WA68_StructureFloraPlantAmantia2
+  components:
+  - type: Sprite
+    state: world2
+
+- type: entity
+  parent: WA68_StructureFloraPlantAmantia1
+  id: WA68_StructureFloraPlantAmantia3
+  components:
+  - type: Sprite
+    state: world3
+
+- type: entity
+  parent: WA68_StructureFloraPlantAmantia1
+  id: WA68_StructureFloraPlantAmantia4
+  components:
+  - type: Sprite
+    state: world4
+
+- type: entity
+  parent: WA68_StructureFloraPlantAmantia1
+  id: WA68_StructureFloraPlantAmantia5
+  components:
+  - type: Sprite
+    state: world5
+
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraPlantSage1
+  name: flower
+  description: Some sort of purple flower, you arent really a botanist so that as much as you know.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Enviroment/wild_sage.rsi
+    state: world1
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+
+- type: entity
+  parent: WA68_StructureFloraPlantSage1
+  id: WA68_StructureFloraPlantSage2
+  components:
+  - type: Sprite
+    state: world2
+
+- type: entity
+  parent: WA68_StructureFloraPlantSage1
+  id: WA68_StructureFloraPlantSage3
+  components:
+  - type: Sprite
+    state: world3
+
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraPlantDayflin1
+  name: flower
+  description: Some sort of yellow flower, you arent really a botanist so that as much as you know.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Enviroment/yellow_dayflin.rsi
+    state: world1
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+
+- type: entity
+  parent: WA68_StructureFloraPlantDayflin1
+  id: WA68_StructureFloraPlantDayflin2
+  components:
+  - type: Sprite
+    state: world2
+
+- type: entity
+  parent: WA68_StructureFloraPlantDayflin1
+  id: WA68_StructureFloraPlantDayflin3
+  components:
+  - type: Sprite
+    state: world3
+
+- type: entity
+  parent: WA68_StructureFloraPlantDayflin1
+  id: WA68_StructureFloraPlantDayflin4
+  components:
+  - type: Sprite
+    state: world4
+
+- type: entity
+  parent: WA68_StructureFloraPlantDayflin1
+  id: WA68_StructureFloraPlantDayflin5
+  components:
+  - type: Sprite
+    state: world5

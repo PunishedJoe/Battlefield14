@@ -1,0 +1,180 @@
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraRock1
+  name: boulder
+  description: A boulder you can take cover behind.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Rocks/rocks_small.rsi
+    state: rock0
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+  - type: BarricadeBlock
+    bidirectional: false
+    blocking: 100
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/break_stone.ogg
+          params:
+            volume: -6
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Fixtures
+    fixtures:
+      cade:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        density: 500
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - LowImpassable
+        - BulletImpassable
+
+- type: entity
+  parent: WA68_StructureFloraRock1
+  id: WA68_StructureFloraRock2
+  components:
+  - type: Sprite
+    state: rock1
+
+- type: entity
+  parent: WA68_StructureFloraRock1
+  id: WA68_StructureFloraRock3
+  components:
+  - type: Sprite
+    state: rock2
+
+- type: entity
+  parent: WA68_StructureFloraRock1
+  id: WA68_StructureFloraRock4
+  components:
+  - type: Sprite
+    state: rock3
+
+- type: entity
+  parent: WA68_StructureFloraRock1
+  id: WA68_StructureFloraRock5
+  components:
+  - type: Sprite
+    state: rock4
+
+- type: entity
+  parent: WA68_StructureFloraRock1
+  id: WA68_StructureFloraRock6
+  components:
+  - type: Sprite
+    state: rock5
+
+- type: entity
+  parent: WA68_StructureFloraRock1
+  id: WA68_StructureFloraRock7
+  components:
+  - type: Sprite
+    state: rock6
+
+- type: entity
+  parent: BaseStructure
+  id: WA68_StructureFloraLargeRockMoss1
+  name: large boulder
+  categories: [ HideSpawnMenu ]
+  description: A large boulder you can take cover behind.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Rocks/rocks_big.rsi
+    state: moss_rock1
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+  - type: Occluder
+  - type: Fixtures
+    fixtures:
+      cade:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.5
+        density: 500
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRockMoss2
+  components:
+  - type: Sprite
+    state: moss_rock2
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRockMoss3
+  components:
+  - type: Sprite
+    state: moss_rock3
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRockMoss4
+  components:
+  - type: Sprite
+    state: moss_rock4
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRockMoss5
+  components:
+  - type: Sprite
+    state: moss_rock5
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRock1
+  components:
+  - type: Sprite
+    state: rock0
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRock2
+  components:
+  - type: Sprite
+    state: rock1
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRock3
+  components:
+  - type: Sprite
+    state: rock2
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRock4
+  components:
+  - type: Sprite
+    state: rock3
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRock5
+  components:
+  - type: Sprite
+    state: rock4
+
+- type: entity
+  parent: WA68_StructureFloraLargeRockMoss1
+  id: WA68_StructureFloraLargeRock6
+  components:
+  - type: Sprite
+    state: rock5

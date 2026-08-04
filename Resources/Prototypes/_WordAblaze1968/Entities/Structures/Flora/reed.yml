@@ -1,0 +1,137 @@
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraReedBig1
+  name: reeds
+  description: Some reeds, or cattails, youre not really sure.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Enviroment/water_reeds.rsi
+    state: big1
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedBig2
+  components:
+  - type: Sprite
+    state: big2
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedBig3
+  components:
+  - type: Sprite
+    state: big3
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedBig4
+  components:
+  - type: Sprite
+    state: big4
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedBig5
+  components:
+  - type: Sprite
+    state: big5
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedBig6
+  components:
+  - type: Sprite
+    state: big6
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedBig7
+  components:
+  - type: Sprite
+    state: big7
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedBig8
+  components:
+  - type: Sprite
+    state: big8
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall1
+  components:
+  - type: Sprite
+    state: small1
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall2
+  components:
+  - type: Sprite
+    state: small2
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall3
+  components:
+  - type: Sprite
+    state: small3
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall4
+  components:
+  - type: Sprite
+    state: small4
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall5
+  components:
+  - type: Sprite
+    state: small5
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall6
+  components:
+  - type: Sprite
+    state: small6
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall7
+  components:
+  - type: Sprite
+    state: small7
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall8
+  components:
+  - type: Sprite
+    state: small8
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall9
+  components:
+  - type: Sprite
+    state: small9
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall10
+  components:
+  - type: Sprite
+    state: small10
+
+- type: entity
+  parent: WA68_StructureFloraReedBig1
+  id: WA68_StructureFloraReedSmall11
+  components:
+  - type: Sprite
+    state: small11

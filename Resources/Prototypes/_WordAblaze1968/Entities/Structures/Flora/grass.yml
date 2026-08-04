@@ -1,0 +1,165 @@
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraGrassBush1
+  name: grass
+  description: Go touch some grass.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Enviroment/grass.rsi
+    state: grass_bushes1
+    drawdepth: HighFloorObjects
+  - type: SpriteFade
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassBush2
+  components:
+  - type: Sprite
+    state: grass_bushes2
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassBush3
+  components:
+  - type: Sprite
+    state: grass_bushes3
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassBush4
+  components:
+  - type: Sprite
+    state: grass_bushes4
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassBush5
+  components:
+  - type: Sprite
+    state: grass_bushes5
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassBush6
+  components:
+  - type: Sprite
+    state: grass_bushes6
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassBush7
+  components:
+  - type: Sprite
+    state: grass_bushes7
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassBush8
+  components:
+  - type: Sprite
+    state: grass_bushes8
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassBush9
+  components:
+  - type: Sprite
+    state: grass_bushes9
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort1
+  components:
+  - type: Sprite
+    state: grass_short1
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort2
+  components:
+  - type: Sprite
+    state: grass_short2
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort3
+  components:
+  - type: Sprite
+    state: grass_short3
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort4
+  components:
+  - type: Sprite
+    state: grass_short4
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort5
+  components:
+  - type: Sprite
+    state: grass_short5
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort6
+  components:
+  - type: Sprite
+    state: grass_short6
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort7
+  components:
+  - type: Sprite
+    state: grass_short7
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort8
+  components:
+  - type: Sprite
+    state: grass_short8
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort9
+  components:
+  - type: Sprite
+    state: grass_short9
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort10
+  components:
+  - type: Sprite
+    state: grass_short10
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort11
+  components:
+  - type: Sprite
+    state: grass_short11
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort12
+  components:
+  - type: Sprite
+    state: grass_short12
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort13
+  components:
+  - type: Sprite
+    state: grass_short13
+
+- type: entity
+  parent: WA68_StructureFloraGrassBush1
+  id: WA68_StructureFloraGrassShort14
+  components:
+  - type: Sprite
+    state: grass_short14

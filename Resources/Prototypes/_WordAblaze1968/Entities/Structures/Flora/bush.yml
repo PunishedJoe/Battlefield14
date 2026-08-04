@@ -1,0 +1,31 @@
+- type: entity
+  parent: WA68_StructureFloraBase
+  id: WA68_StructureFloraLargeBush1
+  name: mushroom
+  description: A large bush that you can hide in.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Structures/Flora/Enviroment/high_bush.rsi
+    state: grass_high_bush1
+  - type: SpriteFade
+
+- type: entity
+  parent: WA68_StructureFloraLargeBush1
+  id: WA68_StructureFloraLargeBush2
+  components:
+  - type: Sprite
+    state: grass_high_bush2
+
+- type: entity
+  parent: WA68_StructureFloraLargeBush1
+  id: WA68_StructureFloraLargeBush3
+  components:
+  - type: Sprite
+    state: grass_high_bush3
+
+- type: entity
+  parent: WA68_StructureFloraLargeBush1
+  id: WA68_StructureFloraLargeBush4
+  components:
+  - type: Sprite
+    state: grass_high_bush4
