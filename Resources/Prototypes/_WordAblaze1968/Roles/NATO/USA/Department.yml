@@ -1,0 +1,36 @@
+- type: department
+  id: WA_68DepartmentNatoUsaArmy
+  name: US Base Support Unit (Backline)
+  description: Lorem ipsum.
+  color: "#004990"
+  weight: 85
+  roles:
+  - WA68_RoleNatoUsaFobMayor
+  - WA68_RoleNatoUsaFobPersonnel
+  editorHidden: true
+
+- type: department
+  id: WA_68DepartmentNatoUsaArmy
+  name: US Army (Army)
+  description: Lorem ipsum.
+  color: "#004990"
+  weight: 85
+  roles:
+  - WA68_RoleNatoUsaArmyPlatoonLeader
+  - WA68_RoleNatoUsaArmySquadLeader
+  - WA68_RoleNatoUsaArmyInfantry
+  - WA68_RoleNatoUsaArmyReserve
+  editorHidden: true
+
+- type: department
+  id: WA_68DepartmentNatoUsaMarine
+  name: US Marine Corps (Marine)
+  description: Lorem ipsum.
+  color: "#004990"
+  weight: 85
+  roles:
+  - WA68_RoleNatoUsaMarinePlatoonLeader
+  - WA68_RoleNatoUsaMarineSquadLeader
+  - WA68_RoleNatoUsaMarineInfantry
+  - WA68_RoleNatoUsaMarineReserve
+  editorHidden: true

@@ -1,10 +1,10 @@
 - type: job
-  id: WA68_RolePactUssrNavyReserve
-  name: USSR Navy reservist
+  id: WA68_RolePactUssrMarineReserve
+  name: USSR Marine reservist
   description: When your predecessors fail you get sent into the meatgrinder.
-  playTimeTracker: WA68_RolePactUssrNavyReserveTime
+  playTimeTracker: WA68_RolePactUssrMarineReserveTime
   weight: 1
-  startingGear: WA68_RolePactUssrNavyReserveGear
+  startingGear: WA68_RolePactUssrMarineReserveGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactReserve"
   requireAdminNotify: false
@@ -26,9 +26,9 @@
       rank: Ryt.
 
 - type: startingGear
-  id: WA68_RolePactUssrNavyReserveGear
+  id: WA68_RolePactUssrMarineReserveGear
   equipment:
-    id: WA68_ClothingDogtagUssrNavyReserve
+    id: WA68_ClothingDogtagUssrMarineReserve
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
     belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
@@ -40,12 +40,12 @@
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
-  id: WA68_RolePactUssrNavyInfantry
-  name: USSR Navy infantryman
-  description: Be the cannon fodder for Union of Soviet Socialist Republics. Run off alone into combat thinking youre "him" and die to a sniper.
-  playTimeTracker: WA68_RolePactUssrNavyInfantryTime
+  id: WA68_RolePactUssrMarineInfantry
+  name: USSR Marine infantryman
+  description: Be the cannon fodder for Union of Soviet Socialist Republics. Run off alone into combat thinking youre ''him'' and die to a sniper.
+  playTimeTracker: WA68_RolePactUssrMarineInfantryTime
   weight: 2
-  startingGear: WA68_RolePactUssrNavyInfantryGear
+  startingGear: WA68_RolePactUssrMarineInfantryGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactInfantry"
   requireAdminNotify: false
@@ -64,12 +64,12 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: Enf.
+      rank: Ryt.
 
 - type: startingGear
-  id: WA68_RolePactUssrNavyInfantryGear
+  id: WA68_RolePactUssrMarineInfantryGear
   equipment:
-    id: WA68_ClothingDogtagUssrNavyInfantry
+    id: WA68_ClothingDogtagUssrMarineInfantry
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
     belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
@@ -81,12 +81,12 @@
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
-  id: WA68_RolePactUssrNavySquadLeader
-  name: USSR Navy squad leader
+  id: WA68_RolePactUssrMarineSquadLeader
+  name: USSR Marine squad leader
   description: Try to manage you squad of meatshields. Get blamed for everything.
-  playTimeTracker: WA68_RolePactUssrNavySquadLeaderTime
+  playTimeTracker: WA68_RolePactUssrMarineSquadLeaderTime
   weight: 3
-  startingGear: WA68_RolePactUssrNavySquadLeaderGear
+  startingGear: WA68_RolePactUssrMarineSquadLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactLeader"
   requireAdminNotify: false
@@ -108,9 +108,9 @@
       rank: Szh.
 
 - type: startingGear
-  id: WA68_RolePactUssrNavySquadLeaderGear
+  id: WA68_RolePactUssrMarineSquadLeaderGear
   equipment:
-    id: WA68_ClothingDogtagUssrNavySquadLeader
+    id: WA68_ClothingDogtagUssrMarineSquadLeader
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
     belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
@@ -129,12 +129,12 @@
     - WA68_MagazinePM
 
 - type: job
-  id: WA68_RolePactUssrNavyPlatoonLeader
-  name: USSR Navy platoon commander
-  description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
-  playTimeTracker: WA68_RolePactUssrNavyPlatoonLeaderTime
+  id: WA68_RolePactUssrMarinePlatoonLeader
+  name: USSR Marine platoon commander
+  description: Be a ''mission essential'' asset, yell multiple times at your ''special'' force to line up. Handle gear distribution if no FOB mayor shows up.
+  playTimeTracker: WA68_RolePactUssrMarinePlatoonLeaderTime
   weight: 4
-  startingGear: WA68_RolePactUssrNavyPlatoonLeaderGear
+  startingGear: WA68_RolePactUssrMarinePlatoonLeaderGear
   alwaysUseSpawner: true
   icon: "WA68_JobIconPactCommander"
   requireAdminNotify: false
@@ -156,9 +156,9 @@
       rank: Lyt.
 
 - type: startingGear
-  id: WA68_RolePactUssrNavyPlatoonLeaderGear
+  id: WA68_RolePactUssrMarinePlatoonLeaderGear
   equipment:
-    id: WA68_ClothingDogtagUssrNavyPlatoonLeader
+    id: WA68_ClothingDogtagUssrMarinePlatoonLeader
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
     belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10

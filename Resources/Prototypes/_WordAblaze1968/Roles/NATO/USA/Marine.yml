@@ -42,7 +42,7 @@
 - type: job
   id: WA68_RoleNatoUsaMarineInfantry
   name: US Marine infantryman
-  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper.
+  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre ''him'' and die to a sniper.
   playTimeTracker: WA68_RoleNatoUsaMarineInfantryTime
   weight: 2
   startingGear: WA68_RoleNatoUsaMarineInfantryGear
@@ -133,7 +133,7 @@
 - type: job
   id: WA68_RoleNatoUsaMarinePlatoonLeader
   name: US Marine platoon commander
-  description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
+  description: Be a ''mission essential'' asset, yell multiple times at your ''special'' force to line up. Handle gear distribution if no FOB mayor shows up.
   playTimeTracker: WA68_RoleNatoUsaMarinePlatoonLeaderTime
   weight: 4
   startingGear: WA68_RoleNatoUsaMarinePlatoonLeaderGear

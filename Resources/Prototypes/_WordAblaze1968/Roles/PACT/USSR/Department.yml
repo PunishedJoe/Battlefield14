@@ -1,0 +1,49 @@
+- type: department
+  id: WA_68DepartmentPactUssrArmy
+  name: USSR batalyon material'nogo obespecheniya (Backline)
+  description: Lorem ipsum.
+  color: "#ac3232"
+  weight: 85
+  roles:
+  - WA68_RolePactUssrFobMayor
+  - WA68_RolePactUssrFobPersonnel
+  editorHidden: true
+
+- type: department
+  id: WA_68DepartmentPactUssrArmy
+  name: USSR Sukhoputnye Voyska (Army)
+  description: Lorem ipsum.
+  color: "#ac3232"
+  weight: 85
+  roles:
+  - WA68_RolePactUssrArmyPlatoonLeader
+  - WA68_RolePactUssrArmySquadLeader
+  - WA68_RolePactUssrArmyInfantry
+  - WA68_RolePactUssrArmyReserve
+  editorHidden: true
+
+- type: department
+  id: WA_68DepartmentPactUssrMarine
+  name: USSR Morskaya Pekhota (Marine)
+  description: Lorem ipsum.
+  color: "#ac3232"
+  weight: 85
+  roles:
+  - WA68_RolePactUssrMarinePlatoonLeader
+  - WA68_RolePactUssrMarineSquadLeader
+  - WA68_RolePactUssrMarineInfantry
+  - WA68_RolePactUssrMarineReserve
+  editorHidden: true
+
+- type: department
+  id: WA_68DepartmentPactUssrAirborne
+  name: USSR Vozdushno-desantnye voyska (Airborne)
+  description: Lorem ipsum.
+  color: "#ac3232"
+  weight: 85
+  roles:
+  - WA68_RolePactUssrAirbornePlatoonLeader
+  - WA68_RolePactUssrAirborneSquadLeader
+  - WA68_RolePactUssrAirborneInfantry
+  - WA68_RolePactUssrAirborneReserve
+  editorHidden: true
