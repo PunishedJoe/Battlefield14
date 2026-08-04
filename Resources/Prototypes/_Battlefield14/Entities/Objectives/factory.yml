@@ -5,7 +5,7 @@
   suffix: Factory, 120s / 2m
   components:
   - type: POICapture
-    poiName: "Factory control room"
+    poiName: "Control room"
     timeToCapture: 120
   - type: NavMapBeacon
     defaultText: "Control room"
@@ -20,7 +20,7 @@
   suffix: Factory, 120s / 2m
   components:
   - type: POICapture
-    poiName: "Factory 3rd floor office"
+    poiName: "3rd floor office"
     timeToCapture: 120
   - type: NavMapBeacon
     defaultText: "3rd floor office"
@@ -35,10 +35,10 @@
   suffix: Factory, 120s / 2m
   components:
   - type: POICapture
-    poiName: "Factory destroyed office"
+    poiName: "Destroyed office"
     timeToCapture: 120
   - type: NavMapBeacon
-    defaultText: "3rd floor office"
+    defaultText: "Destroyed office"
     color: "#FFFF00"
   - type: WarpPoint
     location: "Destroyed office capture point"
@@ -46,17 +46,17 @@
 - type: entity
   id: CapturePointFactoryStorage
   parent: BaseCapturePoint
-  name: Storage control point
+  name: Underground storage control point
   suffix: Factory, 120s / 2m
   components:
   - type: POICapture
-    poiName: "Factory storage"
+    poiName: "Undergound storage"
     timeToCapture: 120
   - type: NavMapBeacon
     defaultText: "storage"
     color: "#FFFF00"
   - type: WarpPoint
-    location: "storage capture point"
+    location: "Underground storage capture point"
 
 - type: entity
   id: CapturePointFactorySilo
@@ -65,10 +65,10 @@
   suffix: Factory, 120s / 2m
   components:
   - type: POICapture
-    poiName: "Factory silos"
+    poiName: "Silos"
     timeToCapture: 120
   - type: NavMapBeacon
-    defaultText: "storage"
+    defaultText: "silo"
     color: "#FFFF00"
   - type: WarpPoint
     location: "Silos capture point"
@@ -83,7 +83,7 @@
     poiName: "Enrichment unit"
     timeToCapture: 120
   - type: NavMapBeacon
-    defaultText: "storage"
+    defaultText: "Enrichment unit"
     color: "#FFFF00"
   - type: WarpPoint
     location: "Enrichment unit capture point"
@@ -98,7 +98,7 @@
     poiName: "Bridge"
     timeToCapture: 120
   - type: NavMapBeacon
-    defaultText: "storage"
+    defaultText: "Bridge"
     color: "#FFFF00"
   - type: WarpPoint
     location: "Bridge capture point"

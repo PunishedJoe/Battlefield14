@@ -704,6 +704,17 @@ entities:
     - type: GridTree
     - type: Broadphase
     - type: OccluderTree
+    - type: MapLight
+      ambientLightColor: '#D8B059FF'
+    - type: Roof
+      data: {}
+    - type: LightCycle
+      maxLevel: '#D8B059FF'
+      minLevel: '#D8B059FF'
+      minLightLevel: 0.5
+      maxLightLevel: 0.5
+#      offset: 1684.4149495
+      originalColor: '#D8B059FF'
     - type: MapAtmosphere
       space: False
       mixture:

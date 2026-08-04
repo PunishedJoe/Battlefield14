@@ -94,12 +94,14 @@
 - type: roleLoadout
   id: JobHECURifleman
   groups:
+  - BF_CombatMasks
   - BF_MiscItemsNATO
   - BF_Map
 
 - type: roleLoadout
   id: JobHECUMedic
   groups:
+  - BF_CombatMasks
   - BF_MiscItemsNATO
   - BF_Map
 

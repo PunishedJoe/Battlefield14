@@ -12,9 +12,11 @@
         - id: BoxArtilleryutility
         - id: PaperWrittenManualArtilleryMortar
         - id: BoxArtilleryShellsMortarM252HEFrag
-          amount: 2
+          amount: 4
         - id: BoxArtilleryShellsMortarM252SmokeMixed
+          amount: 2
         - id: BoxArtilleryShellsMortarM252Flare
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -33,8 +35,10 @@
         - id: BoxArtilleryutility
         - id: PaperWrittenManualArtilleryMortar
         - id: BoxArtilleryShellsMortar2B14LethalMixed
-          amount: 2
+          amount: 4
         - id: BoxArtilleryShellsMortar2B14SmokeMixed
+          amount: 2
         - id: BoxArtilleryShellsMortar2B14Flare
+          amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]

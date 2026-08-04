@@ -280,6 +280,18 @@
 
 - type: entity
   parent: PouchGrenades
+  id: PouchGrenadesFilledRGFRifleman
+  suffix: Filled, RGF Rifleman
+  components:
+  - type: StorageFill
+    contents:
+    - id: OffensiveGrenadeRURGD5
+      amount: 3
+    - id: SmokeGrenadeRURDG
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
   id: PouchGrenadesFilledVDVRifleman
   suffix: Filled, VDV Rifleman
   components:

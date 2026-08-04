@@ -13,6 +13,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Robust.Shared.Utility;
 
 namespace Content.Server._CE.ZLevels.Core;
 
@@ -49,6 +50,8 @@ public sealed partial class CEZLevelsSystem
         var query = EntityQueryEnumerator<CEZLevelViewerComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var viewer, out var xform))
         {
+            UpdateEyeActionIcon((uid, viewer));
+
             foreach (var eye in viewer.Eyes)
             {
                 _transform.SetWorldPosition(eye, _transform.GetWorldPosition(xform));
@@ -56,9 +59,27 @@ public sealed partial class CEZLevelsSystem
         }
     }
 
+    private void UpdateEyeActionIcon(Entity<CEZLevelViewerComponent> ent)
+    {
+        if (ent.Comp.ActionEntity is not { } actionUid)
+            return;
+
+        if (!TryComp<InstantActionComponent>(actionUid, out var action))
+            return;
+
+        var state = CanLookUpZLevel(ent) ? "eye_active" : "eye";
+
+        if (action.Icon is SpriteSpecifier.Rsi { RsiState: var current } && current == state)
+            return;
+
+        action.Icon = new SpriteSpecifier.Rsi(new ResPath("_CE/Actions/zLevels.rsi"), state);
+        Dirty(actionUid, action);
+    }
+
     private void OnViewerInit(Entity<CEZLevelViewerComponent> ent, ref MapInitEvent args)
     {
         _actions.AddAction(ent, ref ent.Comp.ActionEntity, ent.Comp.ActionId);
+        UpdateEyeActionIcon(ent);
         _meta.AddFlag(ent, MetaDataFlags.ExtraTransformEvents);
     }
 
@@ -97,6 +118,8 @@ public sealed partial class CEZLevelsSystem
             QueueDel(eye);
         }
         eyes.Clear();
+
+        UpdateEyeActionIcon(ent);
 
         if (!TryComp<ActorComponent>(ent, out var actor))
             return;

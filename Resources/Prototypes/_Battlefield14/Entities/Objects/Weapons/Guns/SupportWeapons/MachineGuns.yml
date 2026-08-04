@@ -40,7 +40,8 @@
         volume: -5
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null
+    boltClosed: false
+    autoOpenBoltOnEmpty: false
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_rack.ogg
   - type: ItemSlots
@@ -134,7 +135,6 @@
         volume: -5
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/M60/rack.ogg
   - type: ItemSlots
@@ -186,15 +186,6 @@
   description: Special forces didn't think the M249 was enough and asked for the same thing but in 7.62x51. Terrifying.
   suffix: DO NOT MAP # this is basically just the M249 para in 7.62x51, should not be obtainable by normal means, in other cases use the M240B
   components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MK48.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MK48worn.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
@@ -219,7 +210,6 @@
         volume: -5
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_rack.ogg
   - type: ItemSlots
@@ -303,7 +293,8 @@
         volume: -3
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null
+    boltClosed: false
+    autoOpenBoltOnEmpty: false
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_rack.ogg
   - type: ItemSlots
@@ -398,7 +389,8 @@
         volume: -3
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null
+    boltClosed: false
+    autoOpenBoltOnEmpty: false
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_rack.ogg
   - type: ItemSlots
@@ -490,7 +482,8 @@
         volume: -3
         variation: 0.125
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null
+    boltClosed: false
+    autoOpenBoltOnEmpty: false
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_rack.ogg
   - type: ItemSlots

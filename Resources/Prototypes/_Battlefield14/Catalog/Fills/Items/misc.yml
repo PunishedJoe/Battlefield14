@@ -65,6 +65,16 @@
       - WeaponPistolRUSR1MP
 
 - type: entity
+  id: ClothingArmbandThighHolsterFilledRUMP412
+  parent: ClothingArmbandThighHolster
+  suffix: Filled, RU, MP412 REX
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolRevolverRUMP412
+
+- type: entity
   id: ClothingArmbandSheathKnifePolymerFilled
   parent: ClothingArmbandSheathKnifePolymer
   suffix: Filled

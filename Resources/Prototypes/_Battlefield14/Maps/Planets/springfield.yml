@@ -40,6 +40,7 @@
           mapsAbove:
             - /Maps/_Battlefield14/Planets/MultiZ/BF14SpringfieldZMap2.yml
           mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
             - /Maps/_Battlefield14/Planets/MultiZ/BF14SpringfieldZMap0.yml
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity

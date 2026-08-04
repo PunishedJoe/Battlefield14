@@ -51,6 +51,20 @@ public abstract partial class CESharedZLevelsSystem
         DirtyField(entity, entity.Comp, nameof(CEZLevelViewerComponent.LookUp));
     }
 
+    /// <summary>
+    /// Checks whether the entity can currently look up a z-level from above: the z-level above exists and is not hidden by an opaque ceiling.
+    /// </summary>
+    [PublicAPI]
+    public bool CanLookUpZLevel(EntityUid ent, Entity<CEZMapComponent?>? currentMapUid = null)
+    {
+        currentMapUid ??= Transform(ent).MapUid;
+
+        if (currentMapUid is null || !TryMapUp(currentMapUid.Value, out _))
+            return false;
+
+        return !HasOpaqueAbove(ent, currentMapUid);
+    }
+
     public bool HasOpaqueAbove(EntityUid ent, Entity<CEZMapComponent?>? currentMapUid = null)
     {
         currentMapUid ??= Transform(ent).MapUid;

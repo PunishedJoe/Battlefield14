@@ -108,7 +108,7 @@
     minVelocity: 8
     maxVelocity: 15
   - type: Explosive
-    explosionType: Default
+    explosionType: Thermobaric
     totalIntensity: 90
     intensitySlope: 5
     maxIntensity: 4
@@ -351,7 +351,7 @@
         Slash: 120
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     totalIntensity: 90
     intensitySlope: 4
     maxIntensity: 4
@@ -659,10 +659,10 @@
     proto: InstantEffectGravityWellThermobaric
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
-    totalIntensity: 100
+    explosionType: Thermobaric
+    totalIntensity: 75
     intensitySlope: 6
-    maxIntensity: 5
+    maxIntensity: 6
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket

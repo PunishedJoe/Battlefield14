@@ -57,7 +57,7 @@
     back: ClothingBackpackMercenary
     suitstorage: WeaponRifleUSCAR15
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
+    pocket2: PouchGrenadesFilledUSARifleman
     leftarmband: Tourniquet
     wallet: ClothingWalletLeatherBrown
   storage:
