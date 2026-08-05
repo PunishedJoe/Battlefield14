@@ -1,6 +1,7 @@
 - type: entity
   parent: WA68_StructureFloraBase
   id: WA68_StructureFloraLargeBush1
+  categories: [ HideSpawnMenu ]
   name: mushroom
   description: A large bush that you can hide in.
   components:
@@ -12,6 +13,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeBush1
   id: WA68_StructureFloraLargeBush2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: grass_high_bush2
@@ -19,6 +21,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeBush1
   id: WA68_StructureFloraLargeBush3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: grass_high_bush3
@@ -26,6 +29,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeBush1
   id: WA68_StructureFloraLargeBush4
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: grass_high_bush4

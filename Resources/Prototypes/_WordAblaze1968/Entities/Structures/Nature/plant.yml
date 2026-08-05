@@ -1,6 +1,7 @@
 - type: entity
   parent: WA68_StructureFloraBase
   id: WA68_StructureFloraPlantAgaric1
+  categories: [ HideSpawnMenu ]
   name: mushroom
   description: What kind of mushrom is this?
   components:
@@ -13,6 +14,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAgaric1
   id: WA68_StructureFloraPlantAgaric2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world2
@@ -20,6 +22,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAgaric1
   id: WA68_StructureFloraPlantAgaric3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world3
@@ -27,6 +30,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAgaric1
   id: WA68_StructureFloraPlantAgaric4
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world4
@@ -34,6 +38,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAgaric1
   id: WA68_StructureFloraPlantAgaric5
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world5
@@ -41,6 +46,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAgaric1
   id: WA68_StructureFloraPlantAgaric6
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world6
@@ -48,6 +54,7 @@
 - type: entity
   parent: WA68_StructureFloraBase
   id: WA68_StructureFloraPlantBlood1
+  categories: [ HideSpawnMenu ]
   name: flower
   description: Some sort of red flower, you arent really a botanist so that as much as you know.
   components:
@@ -60,6 +67,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantBlood1
   id: WA68_StructureFloraPlantBlood2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world2
@@ -67,6 +75,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantBlood1
   id: WA68_StructureFloraPlantBlood3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world3
@@ -74,6 +83,7 @@
 - type: entity
   parent: WA68_StructureFloraBase
   id: WA68_StructureFloraPlantAmantia1
+  categories: [ HideSpawnMenu ]
   name: flower
   description: Some sort of blue flower, you arent really a botanist so that as much as you know.
   components:
@@ -86,6 +96,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAmantia1
   id: WA68_StructureFloraPlantAmantia2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world2
@@ -93,6 +104,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAmantia1
   id: WA68_StructureFloraPlantAmantia3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world3
@@ -100,6 +112,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAmantia1
   id: WA68_StructureFloraPlantAmantia4
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world4
@@ -107,6 +120,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantAmantia1
   id: WA68_StructureFloraPlantAmantia5
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world5
@@ -114,6 +128,7 @@
 - type: entity
   parent: WA68_StructureFloraBase
   id: WA68_StructureFloraPlantSage1
+  categories: [ HideSpawnMenu ]
   name: flower
   description: Some sort of purple flower, you arent really a botanist so that as much as you know.
   components:
@@ -126,6 +141,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantSage1
   id: WA68_StructureFloraPlantSage2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world2
@@ -133,6 +149,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantSage1
   id: WA68_StructureFloraPlantSage3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world3
@@ -140,6 +157,7 @@
 - type: entity
   parent: WA68_StructureFloraBase
   id: WA68_StructureFloraPlantDayflin1
+  categories: [ HideSpawnMenu ]
   name: flower
   description: Some sort of yellow flower, you arent really a botanist so that as much as you know.
   components:
@@ -152,6 +170,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantDayflin1
   id: WA68_StructureFloraPlantDayflin2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world2
@@ -159,6 +178,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantDayflin1
   id: WA68_StructureFloraPlantDayflin3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world3
@@ -166,6 +186,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantDayflin1
   id: WA68_StructureFloraPlantDayflin4
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world4
@@ -173,6 +194,7 @@
 - type: entity
   parent: WA68_StructureFloraPlantDayflin1
   id: WA68_StructureFloraPlantDayflin5
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: world5

@@ -2,7 +2,7 @@
   parent: MarkerBase
   id: WA68_StructureFloraGrassBushSpawnRandomised
   suffix: WorldAblaze1968
-  name: Grass/Bush/ spawner
+  name: Grass/Bush/Plant spawner
   components:
   - type: Sprite
     layers:
@@ -120,7 +120,7 @@
   parent: MarkerBase
   id: WA68_StructureFloraRockSpawnRandomised
   suffix: WorldAblaze1968
-  name: boulder spawner
+  name: Boulder spawner
   components:
   - type: Sprite
     layers:
@@ -141,7 +141,7 @@
   parent: MarkerBase
   id: WA68_StructureFloraLargeRockSpawnRandomised
   suffix: WorldAblaze1968
-  name: large boulder spawner
+  name: Large boulder spawner
   components:
   - type: Sprite
     layers:
@@ -166,7 +166,7 @@
   parent: MarkerBase
   id: WA68_StructureFloraSpawnRandomised
   suffix: WorldAblaze1968
-  name:  spawner
+  name: Plant spawner
   components:
   - type: Sprite
     layers:

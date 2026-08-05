@@ -2,6 +2,7 @@
   parent: WA68_StructureFloraBase
   id: WA68_StructureFloraRock1
   name: boulder
+  categories: [ HideSpawnMenu ]
   description: A boulder you can take cover behind.
   components:
   - type: Sprite
@@ -45,6 +46,7 @@
 - type: entity
   parent: WA68_StructureFloraRock1
   id: WA68_StructureFloraRock2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock1
@@ -52,6 +54,7 @@
 - type: entity
   parent: WA68_StructureFloraRock1
   id: WA68_StructureFloraRock3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock2
@@ -59,6 +62,7 @@
 - type: entity
   parent: WA68_StructureFloraRock1
   id: WA68_StructureFloraRock4
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock3
@@ -66,6 +70,7 @@
 - type: entity
   parent: WA68_StructureFloraRock1
   id: WA68_StructureFloraRock5
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock4
@@ -73,6 +78,7 @@
 - type: entity
   parent: WA68_StructureFloraRock1
   id: WA68_StructureFloraRock6
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock5
@@ -80,6 +86,7 @@
 - type: entity
   parent: WA68_StructureFloraRock1
   id: WA68_StructureFloraRock7
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock6
@@ -112,6 +119,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRockMoss2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: moss_rock2
@@ -119,6 +127,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRockMoss3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: moss_rock3
@@ -126,6 +135,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRockMoss4
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: moss_rock4
@@ -133,6 +143,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRockMoss5
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: moss_rock5
@@ -140,6 +151,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRock1
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock0
@@ -147,6 +159,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRock2
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock1
@@ -154,6 +167,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRock3
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock2
@@ -161,6 +175,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRock4
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock3
@@ -168,6 +183,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRock5
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock4
@@ -175,6 +191,7 @@
 - type: entity
   parent: WA68_StructureFloraLargeRockMoss1
   id: WA68_StructureFloraLargeRock6
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: rock5

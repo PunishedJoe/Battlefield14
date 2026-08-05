@@ -279,7 +279,6 @@
     slots:
     - Back
     - suitStorage
-    unequipDelay: 1
   - type: GunWieldBonus
     minAngle: -20
     maxAngle: -30
@@ -363,7 +362,6 @@
     slots:
     - Back
     - suitStorage
-    unequipDelay: 1
   - type: GunWieldBonus
     minAngle: -20
     maxAngle: -30
