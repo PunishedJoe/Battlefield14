@@ -1,0 +1,65 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Made by JoeHammad",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+    {
+      "name": "NatoReserve"
+    },
+    {
+      "name": "NatoInfantry"
+    },
+    {
+      "name": "NatoLeader"
+    },
+    {
+      "name": "NatoCommander"
+    },
+    {
+      "name": "NatoFobPersonnel"
+    },
+    {
+      "name": "NatoFobMayor"
+    },
+    {
+      "name": "PactReserve"
+    },
+    {
+      "name": "PactInfantry"
+    },
+    {
+      "name": "PactLeader"
+    },
+    {
+      "name": "PactCommander"
+    },
+    {
+      "name": "PactFobPersonnel"
+    },
+    {
+      "name": "PactFobMayor"
+    },
+    {
+      "name": "Reserve"
+    },
+    {
+      "name": "Infantry"
+    },
+    {
+      "name": "Leader"
+    },
+    {
+      "name": "Commander"
+    },
+    {
+      "name": "FobPersonnel"
+    },
+    {
+      "name": "FobMayor"
+    }
+  ]
+}

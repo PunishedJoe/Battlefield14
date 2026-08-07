@@ -1,0 +1,25 @@
+########################## Usa
+
+- type: entity
+  parent: WA68_ClothingGasMaskBase
+  id: WA68_ClothingGasMaskUsaM17
+  name: M17 gasmask
+  description: A gasmask made to protect you from chemical and radiological hazards.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Mask/m17.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Mask/m17.rsi
+
+########################## Ussr
+
+- type: entity
+  parent: WA68_ClothingGasMaskBase
+  id: WA68_ClothingGasMaskUssrShM41M
+  name: ShM-41M gasmask
+  description: A gasmask made to protect you from chemical and radiological hazards.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Mask/ShM41M.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Mask/ShM41M.rsi

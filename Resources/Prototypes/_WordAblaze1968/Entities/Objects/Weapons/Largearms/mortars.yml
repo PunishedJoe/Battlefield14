@@ -1,0 +1,434 @@
+########################## Usa
+
+- type: entity
+  id: WA68_MortarLightUsaM2Unfolded
+  parent: BaseStructureDynamic
+  name: M2 mortar
+  suffix: WorldAblaze1968
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/m2.rsi
+    layers:
+      - state: base
+    noRot: true
+  - type: Mortar
+    baseAccuracy: 0.93333
+    accuracyDegradation: 0.026666
+    maxSpread: 15
+    minOffsetX: -70
+    maxOffsetX: 70
+    minOffsetY: -70
+    maxOffsetY: 70
+    minSafeDistance: 5
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_MortarShellM260mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 5 - 70 meters. With a starting spread of 6 meters and reaching a spread of 30 meters at 40 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 60mm mortar shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a LIGHT mortar and doesnt need to be folded to be picked up.
+        color: "#24f211"
+        requireDetailRange: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 600
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - TableLayer
+  - type: InteractionOutline
+  - type: Item
+    size: Huge
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/m2.rsi
+  - type: MultiHandedItem
+  - type: ClothingSpeedModifier # this thing weighs around 20 Kg thats around 83.3 Big Macs for you americans
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+
+- type: entity
+  id: WA68_MortarMediumUsaM29Unfolded
+  parent: BaseStructureDynamic
+  name: M29 mortar
+  suffix: WorldAblaze1968
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/m29.rsi
+    layers:
+      - state: base
+    noRot: true
+  - type: Mortar
+    baseAccuracy: 0.906666
+    accuracyDegradation: 0.00533333333 # gotta be on the dot you know what im sayin
+    maxSpread: 10
+    minOffsetX: -170
+    maxOffsetX: 170
+    minOffsetY: -170
+    maxOffsetY: 170
+    minSafeDistance: 20
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_MortarShellM2981mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 20 - 170 meters. With a starting spread of 4 meters and reaching a spread of 20 meters at 150 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 81mm mortar shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a MEDIUM mortar and needs to be folded with mortar tools to be picked up.
+        color: "#24f211"
+        requireDetailRange: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1200
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - TableLayer
+  - type: InteractionOutline
+  - type: Construction
+    graph: WA68_MortarMediumUsaM29Graph
+    node: unfolded
+
+- type: entity
+  id: WA68_MortarMediumUsaM29Folded
+  suffix: WorldAblaze1968
+  name: M29 mortar
+  parent: BaseItem
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/m29.rsi
+    layers:
+      - state: folded
+    size: Huge
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/m29.rsi
+    layers:
+    - state: folded
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 20 - 170 meters. With a starting spread of 4 meters and reaching a spread of 20 meters at 150 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 81mm mortar shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a MEDIUM mortar and needs to be unfolded with mortar tools to be fired.
+        color: "#f21c11"
+        requireDetailRange: true
+  - type: Construction
+    graph: WA68_MortarMediumUsaM29Graph
+    node: folded
+  - type: ClothingSpeedModifier # its a heavy chunk of steel something around ~60 kg
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: HeldSpeedModifier
+
+- type: constructionGraph
+  id: WA68_MortarMediumUsaM29Graph
+  start: folded
+  graph:
+    - node: folded
+      entity: WA68_MortarMediumUsaM29Folded
+      edges:
+        - to: unfolded
+          completed: # kids this is something we call in the industry "shitcode"
+            - !type:GivePrototype
+              prototype: WA68_MortarTools
+          steps:
+          - tag: WA68_MortarToolsTag
+            doAfter: 2
+    - node: unfolded
+      entity: WA68_MortarMediumUsaM29Unfolded
+      edges:
+        - to: folded
+          completed: # kids this is something we call in the industry "shitcode"
+            - !type:GivePrototype
+              prototype: WA68_MortarTools
+          steps:
+          - tag: WA68_MortarToolsTag
+            doAfter: 2
+
+########################## Ussr
+
+- type: entity
+  id: WA68_MortarMediumUssr82BM37Unfolded
+  parent: BaseStructureDynamic
+  name: 82-BM-37 mortar
+  suffix: WorldAblaze1968
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/82bm37.rsi
+    layers:
+      - state: base
+    noRot: true
+  - type: Mortar
+    baseAccuracy: 0.906666
+    accuracyDegradation: 0.00533333333 # gotta be on the dot you know what im sayin
+    maxSpread: 10
+    minOffsetX: -170
+    maxOffsetX: 170
+    minOffsetY: -170
+    maxOffsetY: 170
+    minSafeDistance: 20
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_MortarShell82BM3782mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 20 - 170 meters. With a starting spread of 4 meters and reaching a spread of 20 meters at 150 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 82mm mortar shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a MEDIUM mortar and needs to be folded with mortar tools to be picked up.
+        color: "#24f211"
+        requireDetailRange: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1200
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - TableLayer
+  - type: InteractionOutline
+  - type: Construction
+    graph: WA68_MortarMediumUssr82BM37Graph
+    node: unfolded
+  - type: MultiHandedItem
+
+- type: entity
+  id: WA68_MortarMediumUssr82BM37Folded
+  suffix: WorldAblaze1968
+  name: 82-BM-37 mortar
+  parent: BaseItem
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/82bm37.rsi
+    layers:
+      - state: folded
+    size: Huge
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/82bm37.rsi
+    layers:
+    - state: folded
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 20 - 170 meters. With a starting spread of 4 meters and reaching a spread of 20 meters at 150 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 82mm mortar shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a MEDIUM mortar and needs to be unfolded with mortar tools to be fired.
+        color: "#f21c11"
+        requireDetailRange: true
+  - type: Construction
+    graph: WA68_MortarMediumUssr82BM37Graph
+    node: folded
+  - type: ClothingSpeedModifier # its a heavy chunk of steel something around ~60 kg
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: HeldSpeedModifier
+
+- type: constructionGraph
+  id: WA68_MortarMediumUssr82BM37Graph
+  start: folded
+  graph:
+    - node: folded
+      entity: WA68_MortarMediumUssr82BM37Folded
+      edges:
+        - to: unfolded
+          completed: # kids this is something we call in the industry "shitcode"
+            - !type:GivePrototype
+              prototype: WA68_MortarTools
+          steps:
+          - tag: WA68_MortarToolsTag
+            doAfter: 2
+    - node: unfolded
+      entity: WA68_MortarMediumUssr82BM37Unfolded
+      edges:
+        - to: folded
+          completed: # kids this is something we call in the industry "shitcode"
+            - !type:GivePrototype
+              prototype: WA68_MortarTools
+          steps:
+          - tag: WA68_MortarToolsTag
+            doAfter: 2
+
+- type: entity
+  id: WA68_MortarHeavyUssr120PM43Unfolded
+  parent: BaseStructureDynamic
+  name: 120-PM-43 mortar
+  suffix: WorldAblaze1968
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/120pm43.rsi
+    layers:
+      - state: base
+    noRot: true
+  - type: Mortar
+    baseAccuracy: 1
+    accuracyDegradation: 0.004
+    maxSpread: 15
+    minOffsetX: -250
+    maxOffsetX: 250
+    minOffsetY: -250
+    maxOffsetY: 250
+    minSafeDistance: 50
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_MortarShell120PM43120mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 50 - 250 meters. With a starting spread of 6 meters and reaching a spread of 30 meters at 200 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 120mm mortar shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a HEAVY mortar and needs to be folded with mortar tools to be moved.
+        color: "#24f211"
+        requireDetailRange: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 3000
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - TableLayer
+  - type: InteractionOutline
+  - type: Construction
+    graph: WA68_MortarHeavyUssr120PM43Graph
+    node: unfolded
+  - type: MultiHandedItem
+
+- type: entity
+  id: WA68_MortarHeavyUssr120PM43Folded
+  suffix: WorldAblaze1968
+  name: 120-PM-43 mortar
+  parent: BaseStructureDynamic
+  description: Lorem Ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Mortars/120pm43.rsi
+    layers:
+    - state: folded
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 50 - 250 meters. With a starting spread of 5 meters and reaching a spread of 25 meters at 200 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 120mm mortar shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a HEAVY mortar and needs to be unfolded with mortar tools to be fired.
+        color: "#f21c11"
+        requireDetailRange: true
+  - type: Construction
+    graph: WA68_MortarHeavyUssr120PM43Graph
+    node: folded
+  - type: Fixtures # you dont carry this one in your hands because it weighs around 250 kg
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 500
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - TableLayer
+  - type: InteractionOutline
+
+- type: constructionGraph
+  id: WA68_MortarHeavyUssr120PM43Graph
+  start: folded
+  graph:
+    - node: folded
+      entity: WA68_MortarHeavyUssr120PM43Folded
+      edges:
+        - to: unfolded
+          completed: # kids this is something we call in the industry "shitcode"
+            - !type:GivePrototype
+              prototype: WA68_MortarTools
+          steps:
+          - tag: WA68_MortarToolsTag
+            doAfter: 2
+    - node: unfolded
+      entity: WA68_MortarHeavyUssr120PM43Unfolded
+      edges:
+        - to: folded
+          completed: # kids this is something we call in the industry "shitcode"
+            - !type:GivePrototype
+              prototype: WA68_MortarTools
+          steps:
+          - tag: WA68_MortarToolsTag
+            doAfter: 2

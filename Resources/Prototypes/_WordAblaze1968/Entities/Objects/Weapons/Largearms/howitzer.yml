@@ -1,0 +1,117 @@
+########################## Usa
+
+- type: entity
+  id: WA68_HowtizerUsaM114
+  parent: BaseStructureDynamic
+  name: M114 Howitzer
+  suffix: WorldAblaze1968
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Howitzers/m114.rsi
+    layers:
+      - state: base
+    noRot: true
+  - type: Mortar
+    baseAccuracy: 1.056
+    accuracyDegradation: 0.0032
+    maxSpread: 20
+    minOffsetX: -350
+    maxOffsetX: 350
+    minOffsetY: -350
+    maxOffsetY: 350
+    minSafeDistance: 80
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_HowitzerShellm114155mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 80 - 350 meters. With a starting spread of 6 meters and reaching a spread of 40 meters at 250 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 155mm howitzer shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a howitzer and cannot be moved
+        color: "#24f211"
+        requireDetailRange: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 3000
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - TableLayer
+  - type: InteractionOutline
+
+########################## Ussr
+
+- type: entity
+  id: WA68_HowtizerUssrD20
+  parent: BaseStructureDynamic
+  name: D-20 Howitzer
+  suffix: WorldAblaze1968
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Largearms/Howitzers/d20.rsi
+    layers:
+      - state: base
+    noRot: true
+  - type: Mortar
+    baseAccuracy: 1.056
+    accuracyDegradation: 0.0032
+    maxSpread: 20
+    minOffsetX: -350
+    maxOffsetX: 350
+    minOffsetY: -350
+    maxOffsetY: 350
+    minSafeDistance: 80
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_HowitzerShelld20152mm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a range of 80 - 350 meters. With a starting spread of 6 meters and reaching a spread of 40 meters at 250 meters.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: Uses 152mm howitzer shells.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It a howitzer and cannot be moved
+        color: "#24f211"
+        requireDetailRange: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 3000
+        restitution: 0.0
+        mask:
+        - MobMask
+        layer:
+        - TableLayer
+  - type: InteractionOutline

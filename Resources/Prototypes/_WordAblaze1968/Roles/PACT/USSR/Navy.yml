@@ -1,0 +1,177 @@
+- type: job
+  id: WA68_RolePactUssrNavyReserve
+  name: USSR Navy reservist
+  description: When your predecessors fail you get sent into the meatgrinder.
+  playTimeTracker: WA68_RolePactUssrNavyReserveTime
+  weight: 1
+  startingGear: WA68_RolePactUssrNavyReserveGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactReserve"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Ryt.
+
+- type: startingGear
+  id: WA68_RolePactUssrNavyReserveGear
+  equipment:
+    id: WA68_ClothingDogtagUssrNavyReserve
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrKLMK
+    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackUssrVeshmeshok
+    suitstorage: WA68_WeaponUssrSKS
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+
+- type: job
+  id: WA68_RolePactUssrNavyInfantry
+  name: USSR Navy infantryman
+  description: Be the cannon fodder for Union of Soviet Socialist Republics. Run off alone into combat thinking youre "him" and die to a sniper.
+  playTimeTracker: WA68_RolePactUssrNavyInfantryTime
+  weight: 2
+  startingGear: WA68_RolePactUssrNavyInfantryGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactInfantry"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Enf.
+
+- type: startingGear
+  id: WA68_RolePactUssrNavyInfantryGear
+  equipment:
+    id: WA68_ClothingDogtagUssrNavyInfantry
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrKLMK
+    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackUssrVeshmeshok
+    suitstorage: WA68_WeaponUssrAKMS
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+
+- type: job
+  id: WA68_RolePactUssrNavySquadLeader
+  name: USSR Navy squad leader
+  description: Try to manage you squad of meatshields. Get blamed for everything.
+  playTimeTracker: WA68_RolePactUssrNavySquadLeaderTime
+  weight: 3
+  startingGear: WA68_RolePactUssrNavySquadLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactLeader"
+  requireAdminNotify: false
+  supervisors: Platoon commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Szh.
+
+- type: startingGear
+  id: WA68_RolePactUssrNavySquadLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUssrNavySquadLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrKLMK
+    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackRadioUssrR105M
+    suitstorage: WA68_WeaponUssrAKMS
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+
+- type: job
+  id: WA68_RolePactUssrNavyPlatoonLeader
+  name: USSR Navy platoon commander
+  description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
+  playTimeTracker: WA68_RolePactUssrNavyPlatoonLeaderTime
+  weight: 4
+  startingGear: WA68_RolePactUssrNavyPlatoonLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactCommander"
+  requireAdminNotify: false
+  supervisors: Company commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Lyt.
+
+- type: startingGear
+  id: WA68_RolePactUssrNavyPlatoonLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUssrNavyPlatoonLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrKLMK
+    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackRadioUssrR105M
+    suitstorage: WA68_WeaponUssrAKMS
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+    - WA68_MagazinePM

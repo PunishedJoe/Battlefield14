@@ -1,0 +1,180 @@
+- type: job
+  id: WA68_RoleNatoUsaMarineReserve
+  name: US Marine reservist
+  description: When your predecessors fail you get sent into the meatgrinder.
+  playTimeTracker: WA68_RoleNatoUsaMarineReserveTime
+  weight: 1
+  startingGear: WA68_RoleNatoUsaMarineReserveGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoReserve"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Pvt.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineReserveGear
+  equipment:
+    id: WA68_ClothingDogtagUsaMarineReserve
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledM1420Rnd
+    head: WA68_ClothingHeadHatUsaPatrolCap
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM14
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M26A1_M18
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+
+- type: job
+  id: WA68_RoleNatoUsaMarineInfantry
+  name: US Marine infantryman
+  description: Be the cannon fodder for United States of America. Run off alone into combat thinking youre "him" and die to a sniper.
+  playTimeTracker: WA68_RoleNatoUsaMarineInfantryTime
+  weight: 2
+  startingGear: WA68_RoleNatoUsaMarineInfantryGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoInfantry"
+  requireAdminNotify: false
+  supervisors: Squad leader
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: LCpl.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineInfantryGear
+  equipment:
+    id: WA68_ClothingDogtagUsaMarineInfantry
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1ERDL
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+
+- type: job
+  id: WA68_RoleNatoUsaMarineSquadLeader
+  name: US Marine squad leader
+  description: Try to manage you squad of meatshields. Get blamed for everything.
+  playTimeTracker: WA68_RoleNatoUsaMarineSquadLeaderTime
+  weight: 3
+  startingGear: WA68_RoleNatoUsaMarineSquadLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoLeader"
+  requireAdminNotify: false
+  supervisors: Platoon commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Sgt.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarineSquadLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUsaMarineSquadLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1ERDL
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackRadioUsaANPRC77
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledM1911
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911
+
+- type: job
+  id: WA68_RoleNatoUsaMarinePlatoonLeader
+  name: US Marine platoon commander
+  description: Be a "mission essential" asset, yell multiple times at your "special" force to line up. Handle gear distribution if no FOB mayor shows up.
+  playTimeTracker: WA68_RoleNatoUsaMarinePlatoonLeaderTime
+  weight: 4
+  startingGear: WA68_RoleNatoUsaMarinePlatoonLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoCommander"
+  requireAdminNotify: false
+  supervisors: Company commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Lt.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaMarinePlatoonLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUsaMarinePlatoonLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaERDL
+    belt: WA68_ClothingBeltMilitaryWebbingUsaM1967FilledSTANAG30Rnd
+    head: WA68_ClothingHeadHelmetUsaM1ERDL
+    outerClothing: WA68_ClothingOuterArmorUsaM69
+    back: WA68_ClothingBackpackRadioUsaANPRC77
+    suitstorage: WA68_WeaponUsaM16A1
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledM1911
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911

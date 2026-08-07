@@ -1,0 +1,137 @@
+- type: Tag
+  id: WA68_GrenadeThrowable
+
+- type: Tag
+  id: WA68_GrenadeRound
+
+- type: Tag
+  id: WA68_MedicalItemMedium
+
+- type: Tag
+  id: WA68_MedicalItemTiny
+
+- type: Tag
+  id: WA68_MedicalItemSmall
+
+- type: Tag
+  id: WA68_Cartridge9x18mm
+
+- type: Tag
+  id: WA68_MagazinePM
+
+- type: Tag
+  id: WA68_MagazineAPS
+
+- type: Tag
+  id: WA68_Cartridge9x19mm
+
+- type: Tag
+  id: WA68_Cartridge45mm
+
+- type: Tag
+  id: WA68_MagazineM1911
+
+- type: Tag
+  id: WA68_Cartridge556x45mm
+
+- type: Tag
+  id: WA68_MagazineSTANAG
+
+- type: Tag
+  id: WA68_MagazineStoner63
+
+- type: Tag
+  id: WA68_MagazineMark23Mod0
+
+- type: Tag
+  id: WA68_Cartridge762x39mm
+
+- type: Tag
+  id: WA68_MagazineAKM
+
+- type: Tag
+  id: WA68_Cartridge762x51mm
+
+- type: Tag
+  id: WA68_MagazineM14
+
+- type: Tag
+  id: WA68_MagazineG3
+
+- type: Tag
+  id: WA68_MagazineMG3
+
+- type: Tag
+  id: WA68_MagazineM60
+
+- type: Tag
+  id: WA68_Cartridge762x54mmR
+
+- type: Tag
+  id: WA68_Magazine6L2
+
+- type: Tag
+  id: WA68_MagazinePK
+
+- type: Tag
+  id: WA68_Shell40x46mmR
+
+- type: Tag
+  id: WA68_RocketPG7
+
+- type: Tag
+  id: WA68_RocketPG7PBooster
+
+- type: Tag
+  id: WA68_RocketPG7VWarhead
+
+- type: Tag
+  id: WA68_RocketPzF44
+
+- type: Tag
+  id: WA68_Shell84mmR
+
+- type: Tag
+  id: WA68_Shell90mmB
+
+- type: Tag
+  id: WA68_MortarShellM260mm
+
+- type: Tag
+  id: WA68_MortarShellM2981mm
+
+- type: Tag
+  id: WA68_MortarShell82BM3782mm
+
+- type: Tag
+  id: WA68_MortarShell120PM43120mm
+
+- type: Tag
+  id: WA68_HowitzerShelld20152mm
+
+- type: Tag
+  id: WA68_HowitzerShellm114155mm
+
+- type: Tag
+  id: WA68_Gasmask
+
+- type: Tag
+  id: WA68_Handgun
+
+- type: Tag
+  id: WA68_Magazine
+
+- type: Tag
+  id: WA68_MagazineSmall
+
+- type: Tag
+  id: WA68_MagazineMedium
+
+- type: Tag
+  id: WA68_Magazinelarge
+
+- type: Tag
+  id: WA68_Cartridge
+
+- type: Tag
+  id: WA68_MortarToolsTag

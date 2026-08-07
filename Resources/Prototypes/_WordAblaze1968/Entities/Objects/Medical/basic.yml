@@ -1,0 +1,500 @@
+- type: entity
+  parent: BaseItem
+  id: WA68_BasicMedicalBase
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Healing
+    delay: 3
+
+- type: entity
+  name: blood bag # also not realistic, realisticaly they would carry plasma or whatever the fuck "serum albumin" is
+  description: A plastic bag full of universal O- blood, used for treating hypovolemia.
+  parent: WA68_BasicMedicalBase
+  id: WA68_BasicMedicalBloodBag1
+  components:
+  - type: Tag
+    tags:
+    - WA68_MedicalItemMedium
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/bloodbag.rsi
+    state: blood-4
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Bloodloss: -5
+    ModifyBloodLevel: 90
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: WA68_BasicMedicalBloodBagStack
+    count: 1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 3 second use time
+        color: "#6ffc03"
+        requireDetailRange: true
+      - description: Increases blood volume by around ~30%.
+        color: "#32a852"
+        requireDetailRange: true
+      - description: Has a maximum stack size of 5.
+        color: "#fc4503"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_BasicMedicalBloodBag1
+  id: WA68_BasicMedicalBloodBag5
+  components:
+  - type: Stack
+    stackType: WA68_BasicMedicalBloodBagStack
+    count: 5
+
+- type: stack
+  id: WA68_BasicMedicalBloodBagStack
+  name: blood bag
+  icon: { sprite: "_WorldAblaze1968/Objects/Medical/bloodbag.rsi", state: blood-4 }
+  spawn: WA68_BasicMedicalDressing1
+  maxCount: 5
+
+- type: entity
+  parent: WA68_BasicMedicalBase
+  id: WA68_BasicMedicalEsmarch
+  name: esmarch
+  description: A thick strip of rubber thats used to stop arterial bleeds by cutting off blood flow.
+  components:
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/esmarch.rsi
+    state: base
+  - type: Clothing
+    quickEquip: true
+    slots:
+    - ARMBANDLEFT
+    - ARMBANDRIGHT
+  - type: Item
+    size: Tiny
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      groups:
+        Brute: -5
+    bloodlossModifier: -20
+    delay: 1
+    healingEndSound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/esmarch.ogg
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 1 second use time
+        color: "#6ffc03"
+        requireDetailRange: true
+      - description: Treats 5 brute.
+        color: "#32a852"
+        requireDetailRange: true
+
+- type: entity
+  name: medical dressing packet
+  description: A sealed packet of 5 medical dressings.
+  parent: BaseItem
+  id: WA68_BasicMedicalDressingPacket
+  suffix: WorldAblaze1968
+  components:
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/dressing.rsi
+    state: packet
+  - type: Item
+    size: Tiny
+    sprite: _WorldAblaze1968/Objects/Medical/dressing.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: WA68_BasicMedicalDressingTrash
+    - id: WA68_BasicMedicalDressing5
+    sound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/packetopen.ogg
+      params:
+        variation: 0.125
+        volume: -2
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 3 second use time
+        color: "#6ffc03"
+        requireDetailRange: true
+      - description: Treats 20 pierce, 20 slash, 10 blunt and 10 burn.
+        color: "#32a852"
+        requireDetailRange: true
+      - description: Has a maximum stack size of 5.
+        color: "#fc4503"
+        requireDetailRange: true
+
+- type: entity
+  name: medical dressing packet
+  description: A empty medical dressing packet
+  parent: BaseItem
+  id: WA68_BasicMedicalDressingTrash
+  suffix: WorldAblaze1968
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/dressing.rsi
+    state: trash
+  - type: Item
+    size: Tiny
+
+- type: entity
+  name: medical dressing
+  description: A sterile pad used absorb fluids and promote healing, Doesnt do much against bleeding though.
+  parent: WA68_BasicMedicalBase
+  id: WA68_BasicMedicalDressing1
+  components:
+  - type: Tag
+    tags:
+      - WA68_MedicalItemSmall
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/dressing.rsi
+    state: base
+  - type: Item
+    size: Tiny
+    sprite: _WorldAblaze1968/Objects/Medical/dressing.rsi
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Piercing: -20
+        Slash: -20
+        Heat: -10
+        Cold: -10
+        Blunt: -10
+    bloodlossModifier: -1
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/bandage.ogg
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: WA68_BasicMedicalDressingStack
+    count: 1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 3 second use time
+        color: "#6ffc03"
+        requireDetailRange: true
+      - description: Treats 20 pierce, 20 slash, 10 blunt and 10 burn.
+        color: "#32a852"
+        requireDetailRange: true
+      - description: Has a maximum stack size of 5.
+        color: "#fc4503"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_BasicMedicalDressing1
+  id: WA68_BasicMedicalDressing5
+  components:
+  - type: Stack
+    stackType: WA68_BasicMedicalDressingStack
+    count: 5
+
+- type: stack
+  id: WA68_BasicMedicalDressingStack
+  name: medical dressing
+  icon: { sprite: "_WorldAblaze1968/Objects/Medical/dressing.rsi", state: base }
+  spawn: WA68_BasicMedicalDressing1
+  maxCount: 5
+
+- type: entity
+  name: bandage packet
+  description: A sealed packet of bandage roll.
+  parent: BaseItem
+  id: WA68_BasicMedicalBandagePacket
+  suffix: WorldAblaze1968
+  components:
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/bandage.rsi
+    state: packet
+  - type: Item
+    size: Small
+    sprite: _WorldAblaze1968/Objects/Medical/bandage.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: WA68_BasicMedicalBandageTrash
+    - id: WA68_BasicMedicalBandage10
+    sound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/packetopen.ogg
+      params:
+        variation: 0.125
+        volume: -2
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 3 second use time
+        color: "#6ffc03"
+        requireDetailRange: true
+      - description: Treats 20 blunt, 10 pierce, 10 slash and 10 burn.
+        color: "#32a852"
+        requireDetailRange: true
+      - description: Has a maximum stack size of 10.
+        color: "#fc4503"
+        requireDetailRange: true
+
+- type: entity
+  name: bandage packet
+  description: A empty bandage packet
+  parent: BaseItem
+  id: WA68_BasicMedicalBandageTrash
+  suffix: WorldAblaze1968
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/bandage.rsi
+    state: trash
+  - type: Item
+    size: Tiny
+
+- type: entity
+  name: bandage
+  description: Mostly sterile pieces of cloth used to quench bleeding, stabilize broken bones and wounds.
+  parent: WA68_BasicMedicalBase
+  id: WA68_BasicMedicalBandage1
+  components:
+  - type: Tag
+    tags:
+      - WA68_MedicalItemSmall
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/bandage.rsi
+    state: base
+  - type: Item
+    size: Small
+    sprite: _WorldAblaze1968/Objects/Medical/bandage.rsi
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Blunt: -20
+        Heat: -10
+        Cold: -10
+        Slash: -10
+        Piercing: -10
+    bloodlossModifier: -5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    healingEndSound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/bandage.ogg
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Stack
+    stackType: WA68_BasicMedicalBandageStack
+    count: 1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 3 second use time
+        color: "#6ffc03"
+        requireDetailRange: true
+      - description: Treats 20 blunt, 10 pierce, 10 slash and 10 burn.
+        color: "#32a852"
+        requireDetailRange: true
+      - description: Has a maximum stack size of 10.
+        color: "#fc4503"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_BasicMedicalBandage1
+  id: WA68_BasicMedicalBandage10
+  components:
+  - type: Stack
+    stackType: WA68_BasicMedicalBandageStack
+    count: 10
+
+- type: stack
+  id: WA68_BasicMedicalBandageStack
+  name: bandage
+  icon: { sprite: "_WorldAblaze1968/Objects/Medical/bandage.rsi", state: base }
+  spawn: WA68_BasicMedicalBandage1
+  maxCount: 10
+
+- type: entity
+  name: suture stapler
+  description: Just like a normal stapler but instead of stapling paper you staple your self back together.
+  parent: WA68_BasicMedicalBase
+  id: WA68_BasicMedicalSutureStapler1
+  components:
+  - type: Tag
+    tags:
+      - WA68_MedicalItemSmall
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/stapler.rsi
+    state: base
+  - type: Item
+    size: Small
+    sprite: _WorldAblaze1968/Objects/Medical/stapler.rsi
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Blunt: -5
+        Slash: -10
+        Piercing: -10
+    bloodlossModifier: -1
+    healingEndSound:
+      collection: WA68_MedStaple
+      params:
+        volume: 1.0
+        variation: 0.125
+    delay: 1
+  - type: Stack
+    stackType: WA68_BasicMedicalSutureStaplerStack
+    count: 1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 1 second use time
+        color: "#6ffc03"
+        requireDetailRange: true
+      - description: Treats 10 pierce, 10 slash and 5 blunt.
+        color: "#32a852"
+        requireDetailRange: true
+      - description: Has a maximum stack size of 30.
+        color: "#fc4503"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_BasicMedicalSutureStapler1
+  id: WA68_BasicMedicalSutureStapler30
+  components:
+  - type: Stack
+    stackType: WA68_BasicMedicalSutureStaplerStack
+    count: 30
+
+- type: stack
+  id: WA68_BasicMedicalSutureStaplerStack
+  name: suture stapler
+  icon: { sprite: "_WorldAblaze1968/Objects/Medical/stapler.rsi", state: base }
+  spawn: WA68_BasicMedicalSutureStapler1
+  maxCount: 30
+
+- type: entity
+  name: Medical notebook
+  description: A small notepad with medical information carried by corpsmen to quickly identify wounds and record injuries.
+  parent: BaseItem
+  id: WA68_BasicMedicalNotepad
+  suffix: WorldAblaze1968
+  components:
+  - type: Item
+    size: Small
+  - type: ActivatableUI
+    key: enum.HealthAnalyzerUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.HealthAnalyzerUiKey.Key:
+        type: HealthAnalyzerBoundUserInterface
+  - type: ItemToggle
+    onUse: false
+  - type: HealthAnalyzer
+    scanningEndSound:
+      path: /Audio/_Goobstation/Items/handling/book_pickup.ogg
+      params:
+        volume: 1.0
+        variation: 0.125
+  - type: Tag
+    tags:
+      - WA68_MedicalItemSmall
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/notebook.rsi
+    state: base
+  - type: Appearance
+
+- type: entity
+  name: field surgery kit
+  description: A field surgery kit used to heal major wounds, take a long time to use.
+  parent: WA68_BasicMedicalBase
+  id: WA68_BasicMedicalFieldSurgeryKit1
+  components:
+  - type: Tag
+    tags:
+      - WA68_MedicalItemMedium
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/surgerykit.rsi
+    state: base
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,1
+    sprite: _WorldAblaze1968/Objects/Medical/surgerykit.rsi
+  - type: Healing
+    damageContainers:
+    - Biological
+    damage:
+      types:
+        Slash: -125
+        Piercing: -125
+        Blunt: -100
+        Heat: -75
+        Cold: -75
+        Caustic: -50
+    bloodlossModifier: -10
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+      params:
+        volume: 1.0
+        variation: 0.125
+    delay: 15
+  - type: Stack
+    stackType: WA68_BasicMedicalFieldSurgeryKitStack
+    count: 1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 15 second use time
+        color: "#6ffc03"
+        requireDetailRange: true
+      - description: Treats 125 pierce, 125 slash, 100 blunt, 75 burn and 50 caustic.
+        color: "#32a852"
+        requireDetailRange: true
+      - description: Has a maximum stack size of 10.
+        color: "#fc4503"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_BasicMedicalFieldSurgeryKit1
+  id: WA68_BasicMedicalFieldSurgeryKit10
+  components:
+  - type: Stack
+    stackType: WA68_BasicMedicalFieldSurgeryKitStack
+    count: 10
+
+- type: stack
+  id: WA68_BasicMedicalFieldSurgeryKitStack
+  name: field surgery kit
+  icon: { sprite: "_WorldAblaze1968/Objects/Medical/surgerykit.rsi", state: base }
+  spawn: WA68_BasicMedicalFieldSurgeryKit1
+  maxCount: 10

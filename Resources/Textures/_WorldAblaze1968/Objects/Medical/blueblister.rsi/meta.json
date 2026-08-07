@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "license": "",
+  "copyright": "Made by WillyBillyGilly for Battlefield14. Do not reuse or edit without permission.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "pill-6"
+    },
+    {
+      "name": "pill-5"
+    },
+    {
+      "name": "pill-4"
+    },
+    {
+      "name": "pill-3"
+    },
+    {
+      "name": "pill-2"
+    },
+    {
+      "name": "pill-1"
+    },
+    {
+      "name": "pill-0"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

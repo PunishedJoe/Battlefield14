@@ -1,0 +1,78 @@
+########################## BULLET
+
+- type: entity
+  id: WA68_Bullet45
+  name: bullet
+  parent: WA68_BulletBase
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 13
+    armorPenetration: 0.35
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: small
+
+########################## CARTRIDGE
+
+- type: entity
+  id: WA68_Cartridge45
+  name: .45 ACP cartridge
+  description: A pistol cartridge used by the western world
+  parent: WA68_CartridgeBase
+  components:
+  - type: CartridgeAmmo
+    proto: WA68_Bullet45
+    muzzleFlash: MuzzleFlashEffectBFPistol
+  - type: Tag
+    tags:
+    - WA68_CartridgeBase
+    - WA68_Cartridge45
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+########################## MAGS
+
+- type: entity
+  parent: WA68_MagazineBaseSmall
+  id: WA68_MagazineM1911
+  name: M1911 7-Rnd magazine .45 acp
+  description: A 7 round M1911 magazine
+  components:
+  - type: Tag
+    tags:
+      - WA68_MagazineM1911
+      - WA68_Magazine
+      - WA68_MagazineSmall
+  - type: BallisticAmmoProvider
+    proto: WA68_Cartridge45
+    mayTransfer: true
+    whitelist:
+      tags:
+        - WA68_Cartridge45
+    capacity: 7
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/M1911.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 7
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has an PM style locking system.
+        color: "#4f94ad"
+        requireDetailRange: true

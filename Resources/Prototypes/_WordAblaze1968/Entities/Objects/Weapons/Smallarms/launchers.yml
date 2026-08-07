@@ -1,0 +1,241 @@
+########################## West Germany
+
+- type: entity
+  name: Carl Gustaf m/64
+  parent: WA68_WeaponBreakActionBase
+  id: WA68_WeaponWestGerCarlGustafM64
+  description: A sweedish recoilless rifle.
+  components:
+  - type: Item
+    size: Huge
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/carlgustaf64.rsi
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/carlgustaf64.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/carlgustaf64.rsi
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_Shell84mmRFFV551
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Shell84mmR
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m67_close.ogg
+      params:
+        volume: 2
+        variation: 0.1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Uses shells with a 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+########################## Usa
+
+- type: entity
+  name: M79
+  parent: WA68_WeaponBreakActionBase
+  id: WA68_WeaponUsaM79
+  description: A single shot break action grenade launcher, nicknamed as the ''Thumper''
+  components:
+  - type: Item
+    size: Huge
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m79.rsi
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m79.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m79.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+      suitstorage2:
+      - state: equipped-BACKPACK
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        insertSound: /Audio/_WorldAblaze1968/Weapons/Interactions/GrenadeLauncher/load1.ogg
+        startingItem: WA68_Shell40x46mmRM406
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Shell40x46mmR
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m79_close.ogg
+      params:
+        volume: 2
+        variation: 0.1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Uses shells with a 4 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  name: M67
+  parent: WA68_WeaponBreakActionBase
+  id: WA68_WeaponUsaM67
+  description: While the eastern world decided to use lighter rocket launchers the west decided to keep using heavy recoilless rifles.
+  components:
+  - type: Item
+    size: Huge
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m67.rsi
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m67.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m67.rsi
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        insertSound: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/shell_load1.ogg
+        startingItem: WA68_Shell90mmBM371A1
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Shell90mmB
+  - type: Gun
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m67_close.ogg
+      params:
+        volume: 2
+        variation: 0.1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Uses shells with a 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_WeaponLauncherFoldedBase
+  id: WA68_WeaponUsaM72A2Folded
+  name: M72A2 LAW
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m72law/folded.rsi
+    layers:
+      - state: base
+  - type: SpawnItemsOnUse
+    items:
+    - id: WA68_WeaponUsaM72A2UnFolded
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 60 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Uses rockets with a 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: It is FOLDED and cannot fire, must be unfolded by using in hand. Once unfolded it cannot be refolded or stored in aux or suit slot.
+        color: "#f21c11"
+        requireDetailRange: false
+
+- type: entity
+  name: M72A2 LAW
+  parent: WA68_WeaponLauncherUnFoldedBase
+  id: WA68_WeaponUsaM72A2UnFolded
+  description: A single shot disposable rocket launcher.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m72law/unfolded.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/m72law/unfolded.rsi
+  - type: BasicEntityAmmoProvider
+    proto: WA68_RocketM72Law
+    capacity: 1
+  - type: Gun
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/rpg7_close.ogg
+      params:
+        variation: 0.1
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 70 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Uses rockets with a 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true
+      - description: It is UNFOLDED and ready to fire. It can no be folded or stored in aux or suit slot.
+        color: "#24f211"
+        requireDetailRange: false
+
+########################## Ussr
+
+- type: entity
+  name: RPG-7
+  parent: WA68_WeaponLauncherBase
+  id: WA68_WeaponUssrRPG7
+  description: The iconic ''RPG'', its the rocket launcher you think of when somebody says rocket launcher.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/rpg7.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/rpg7.rsi
+    slots:
+    - Back
+    - suitStorage
+  - type: Gun
+    projectileSpeed: 55 # 55 because its rocket powered
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/rpg7_close.ogg
+      params:
+        variation: 0.1
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+        - WA68_RocketPG7
+    proto: WA68_RocketPG7V
+    capacity: 1
+    soundInsert:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/rocket_load1.ogg
+      params:
+        variation: 0.1
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/rocket_unload1.ogg
+      params:
+        variation: 0.1
+  - type: GunRequiresWield
+  - type: Wieldable
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Uses rockets with a 6 tile arming distance.
+        color: "#b37d2d"
+        requireDetailRange: true

@@ -1,0 +1,111 @@
+- type: entity
+  name: reagent bottle
+  parent: BaseItem
+  id: WA68_ContainerReagentBottle
+  suffix: WorldAblaze1968
+  description: A small reagent bottle with a quark top to allow syringes to draw chemicals.
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/bottle.rsi
+    layers:
+      - state: white
+      - state: fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 4
+    fillBaseName: fill
+  - type: Drink
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+  - type: MixableSolution
+    solution: drink
+  - type: RefillableSolution
+    solution: drink
+  - type: DrainableSolution
+    solution: drink
+  - type: ExaminableSolution
+    solution: drink
+  - type: DrawableSolution
+    solution: drink
+  - type: SolutionTransfer
+    maxTransferAmount: 50
+    canChangeTransferAmount: true
+  - type: SolutionItemStatus
+    solution: drink
+  - type: UserInterface
+    interfaces:
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
+  - type: Item
+    size: Tiny
+    sprite: _WorldAblaze1968/Objects/Medical/bottle.rsi
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+
+- type: entity
+  id: WA68_ContainerReagentBottleTricordrazine
+  parent: WA68_ContainerReagentBottle
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/bottle.rsi
+    layers:
+      - state: red
+      - state: fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Label
+    currentLabel: Tricordrazine
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Tricordrazine
+          Quantity: 50
+
+- type: entity
+  id: WA68_ContainerReagentBottleDylovene
+  parent: WA68_ContainerReagentBottle
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/bottle.rsi
+    layers:
+      - state: green
+      - state: fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Label
+    currentLabel: Dylovene
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Dylovene
+          Quantity: 50
+
+- type: entity
+  id: WA68_ContainerReagentBottleEpinephrine
+  parent: WA68_ContainerReagentBottle
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/bottle.rsi
+    layers:
+      - state: blue
+      - state: fill1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+  - type: Label
+    currentLabel: Epinephrine
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 50
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 50

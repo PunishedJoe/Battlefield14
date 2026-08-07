@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "license": "",
+  "copyright": "Made by WillyBillyGilly for Battlefield14. Do not reuse or edit without permission.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon",
+      "directions": 4
+    },
+    {
+      "name": "base",
+      "directions": 4
+    },
+    {
+      "name": "folded"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

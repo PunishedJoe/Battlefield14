@@ -1,0 +1,80 @@
+- type: job
+  id: WA68_RolePactUssrFobPersonnel
+  name: USSR FOB personnel
+  description: Accidentaly choose this. Commit suicide, respawn as rifleman.
+  playTimeTracker: WA68_RolePactUssrFobPersonnelTime
+  weight: 77
+  startingGear: WA68_RolePactUssrBacklineGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactFobPersonnel"
+  requireAdminNotify: false
+  supervisors: FOB Mayor
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Efr.
+
+- type: startingGear
+  id: WA68_RolePactUssrBacklineGear
+  equipment:
+    id: WA68_ClothingDogtagUssrFobPersonnel
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrM1969
+    back: WA68_ClothingBackpackUssrVeshmeshok
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericPistolMagFilledPM
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+
+- type: job
+  id: WA68_RolePactUssrFobMayor
+  name: USSR FOB Mayor
+  description: Manage the FOB, distribute specialized gear amongst the soilders then do nothing for 30 minutes. 
+  playTimeTracker: WA68_RolePactUssrFobMayorTime
+  weight: 77
+  startingGear: WA68_RolePactUssrBacklineLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactFobMayor"
+  requireAdminNotify: false
+  supervisors: Company commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Kap.
+
+- type: startingGear
+  id: WA68_RolePactUssrBacklineLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUssrFobMayor
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrM1969
+    back: WA68_ClothingBackpackUssrVeshmeshok
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericPistolMagFilledPM
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  storage:
+    back:
+    - WA68_Binoculars

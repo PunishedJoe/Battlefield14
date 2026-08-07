@@ -1,0 +1,57 @@
+########################## Corpsman bag
+
+- type: entity
+  id: WA68_ClothingBeltMilitaryMedBagUsaM3FilledGeneric
+  parent: WA68_ClothingBeltMilitaryMedBagUsaM3
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_SyretteMedicalCasePropital
+        amount: 1
+      - id: WA68_SyretteMedicalCaseMorphine
+        amount: 1
+      - id: WA68_SyretteMedicalCaseCombatMix
+        amount: 1
+      - id: WA68_AmpouleMedicalCaseSmellingSalts
+        amount: 1
+      - id: WA68_BasicMedicalFieldSurgeryKit10
+        amount: 1
+      - id: WA68_BasicMedicalBloodBag5
+        amount: 1
+      - id: WA68_BasicMedicalNotepad
+        amount: 1
+      - id: WA68_BasicMedicalSutureStapler30
+        amount: 1
+      - id: WA68_BasicMedicalBandagePacket
+        amount: 4
+      - id: WA68_BasicMedicalDressingPacket
+        amount: 7
+
+- type: entity
+  id: WA68_ClothingBeltMilitaryMedBagUssrCMBFilledGeneric
+  parent: WA68_ClothingBeltMilitaryMedBagUssrCMB
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_SyretteMedicalCasePropital
+        amount: 1
+      - id: WA68_SyretteMedicalCaseMorphine
+        amount: 1
+      - id: WA68_SyretteMedicalCaseCombatMix
+        amount: 1
+      - id: WA68_AmpouleMedicalCaseSmellingSalts
+        amount: 1
+      - id: WA68_BasicMedicalFieldSurgeryKit10
+        amount: 1
+      - id: WA68_BasicMedicalBloodBag5
+        amount: 1
+      - id: WA68_BasicMedicalNotepad
+        amount: 1
+      - id: WA68_BasicMedicalSutureStapler30
+        amount: 1
+      - id: WA68_BasicMedicalBandagePacket
+        amount: 4
+      - id: WA68_BasicMedicalDressingPacket
+        amount: 7

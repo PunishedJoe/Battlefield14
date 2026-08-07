@@ -1,0 +1,98 @@
+########################## Pistol Mag pouch
+
+- type: entity
+  id: WA68_ClothingPouchGenericPistolMagFilledM1911
+  parent: WA68_ClothingPouchGenericPistolMag
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_MagazineM1911
+        amount: 5
+
+- type: entity
+  id: WA68_ClothingPouchGenericPistolMagFilledPM
+  parent: WA68_ClothingPouchGenericPistolMag
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_MagazinePM
+        amount: 5
+
+########################## Grenade pouch
+
+- type: entity
+  id: WA68_ClothingPouchGenericGrenadeFilled_M406
+  parent: WA68_ClothingPouchGenericGrenade
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_Shell40x46mmRM406
+        amount: 5
+
+- type: entity
+  id: WA68_ClothingPouchGenericGrenadeFilled_M26A1_M18
+  parent: WA68_ClothingPouchGenericGrenade
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_WeaponGrenadeUsaM26A1
+        amount: 3
+      - id: WA68_WeaponGrenadeUsaM18
+        amount: 2
+
+- type: entity
+  id: WA68_ClothingPouchGenericGrenadeFilled_M67_M18
+  parent: WA68_ClothingPouchGenericGrenade
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_WeaponGrenadeUsaM67
+        amount: 3
+      - id: WA68_WeaponGrenadeUsaM18
+        amount: 2
+
+- type: entity
+  id: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
+  parent: WA68_ClothingPouchGenericGrenade
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_WeaponGrenadeUssrF1
+        amount: 3
+      - id: WA68_WeaponGrenadeUssrRDG2
+        amount: 2
+
+- type: entity
+  id: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
+  parent: WA68_ClothingPouchGenericGrenade
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_WeaponGrenadeUssrRGD5
+        amount: 3
+      - id: WA68_WeaponGrenadeUssrRDG2
+        amount: 2
+
+########################## IFAK pouch
+
+- type: entity
+  id: WA68_ClothingPouchGenericIFAKFilledGeneric
+  parent: WA68_ClothingPouchGenericIFAK
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_BasicMedicalBandagePacket
+        amount: 1
+      - id: WA68_BasicMedicalDressingPacket
+        amount: 2
+      - id: WA68_BasicMedicalEsmarch
+        amount: 1
+      - id: WA68_SyretteMedicalCappedCombatMix
+        amount: 1

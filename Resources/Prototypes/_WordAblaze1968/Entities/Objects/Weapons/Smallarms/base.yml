@@ -1,0 +1,816 @@
+- type: entity ########################## PISTOLS
+  parent: BaseItem
+  id: WA68_WeaponPistolBase # for pistols duh
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testmag.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+  - type: Gun
+    minAngle: 1
+    maxAngle: 22
+    angleIncrease: 6
+    angleDecay: 90
+    fireRate: 7 # 420 RPM
+    damageModifier: 0.9 # slightly worse DMG because shorter barrel or something
+    projectileSpeed: 40
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Pistol/rack1.ogg
+      params:
+        variation: 0.1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineBaseSmall
+        insertSound:
+          path: /Audio/_WorldAblaze1968/Weapons/Interactions/Pistol/magin1.ogg
+          params:
+            variation: 0.1
+        ejectSound:
+          path: /Audio/_WorldAblaze1968/Weapons/Interactions/Pistol/magout1.ogg
+          params:
+            variation: 0.1
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineBase
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_CartridgeBase
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: EmitSoundOnPickup
+    sound:
+      collection: PistolsPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: PistolsDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: PistolsDrop
+  - type: Appearance
+  - type: Tag
+    tags:
+      - WA68_Handgun
+
+- type: entity ########################## MAGLESS RIFLES
+  parent: BaseItem
+  id: WA68_WeaponMaglessRifleBase # for rifles with internal mags
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 21
+    maxAngle: 60
+    angleIncrease: 7
+    angleDecay: 90
+    fireRate: 10 # 600 RPM
+    projectileSpeed: 55
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: AltFireMelee
+    attackType: Heavy
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 20
+    angle: 0
+    wideAnimationRotation: 90
+    soundHit:
+      collection: MetalThud
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false
+  - type: Appearance
+
+- type: entity ########################## RIFLES
+  parent: BaseItem
+  id: WA68_WeaponRifleBase # for rifles duh
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 21
+    maxAngle: 60
+    angleIncrease: 7
+    angleDecay: 90
+    fireRate: 10 # 600 RPM
+    projectileSpeed: 55
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineBaseMedium
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineBase
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_CartridgeBase
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: AltFireMelee
+    attackType: Heavy
+  - type: MeleeWeapon
+    damage:
+      types:
+       Blunt: 20
+    angle: 0
+    wideAnimationRotation: 90
+    soundHit:
+      collection: MetalThud
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false
+  - type: Appearance
+
+- type: entity ########################## BOLT ACTION SNIPERS
+  parent: BaseItem
+  id: WA68_WeaponBoltActionSniperBase # for bolties
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    unequipDelay: 1
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 21 # accurte but gets inaccurate quickly
+    maxAngle: 65
+    angleIncrease: 20
+    angleDecay: 90
+    damageModifier: 2
+    fireRate: 1 # 60 RPM
+    projectileSpeed: 65
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: BallisticAmmoProvider
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/BoltAction/rack1.ogg
+      params:
+        variation: 0.1
+    autoCycle: false
+    capacity: 5
+    proto: WA68_CartridgeBase
+    whitelist:
+      tags:
+      - WA68_Cartridge
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 8
+    pvsIncrease: 0.8
+  - type: GunRequiresWield
+  - type: Appearance
+  - type: WieldDelay
+    baseDelay: 1
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false
+
+- type: entity ########################## SNIPERS
+  parent: BaseItem
+  id: WA68_WeaponSniperBase # for snipers and dmrs
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    unequipDelay: 1
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    minAngle: 21 # accurte but gets inaccurate quickly
+    maxAngle: 65
+    angleIncrease: 20
+    angleDecay: 90
+    fireRate: 7 # 420 RPM
+    projectileSpeed: 65
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+      params:
+        variation: 0.1
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Sniper/rack1.ogg
+      params:
+        variation: 0.1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineBaseMedium
+        insertSound: /Audio/_WorldAblaze1968/Weapons/Interactions/Sniper/load1.ogg
+        ejectSound: /Audio/_WorldAblaze1968/Weapons/Interactions/Sniper/unload1.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineBase
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_CartridgeBase
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 8 # proper snipers get a bit more ~12
+    pvsIncrease: 0.8
+  - type: GunRequiresWield
+  - type: Appearance
+  - type: WieldDelay
+    baseDelay: 1
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false
+
+- type: entity ########################## MACHINEGUNS
+  parent: BaseItem
+  id: WA68_WeaponMachinegunBase # for machineguns duh
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    unequipDelay: 1
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: Gun
+    soundEmpty:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Machinegun/empty1.ogg
+      params:
+        variation: 0.1
+    minAngle: 26 # never too accurte but also never too inaccurate
+    maxAngle: 55
+    angleIncrease: 4
+    angleDecay: 90
+    damageModifier: 0.85 # lower DMG because dunno game whatyamacallit
+    fireRate: 10 # 600 RPM
+    projectileSpeed: 55
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Machinegun/rack1.ogg
+      params:
+        volume: 5
+        variation: 0.1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: WA68_MagazineBaseLarge
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxinsert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M249/uc_m249_boxremove.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - WA68_MagazineBase
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        swap: false
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_CartridgeBase
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.75
+  - type: GunRequiresWield
+  - type: Appearance
+  - type: WieldDelay
+    baseDelay: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false
+
+- type: entity ########################## BREAK ACTION
+  parent: [WeaponFlareGun, BaseItem]
+  id: WA68_WeaponBreakActionBase # for weapons such as the M67 recoilless rifle and M79 grenade launcher
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    unequipDelay: 1
+  - type: Gun
+    soundEmpty:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/empty1.ogg
+      params:
+        variation: 0.1
+    fireRate: 0.5 # 30 RPM
+    projectileSpeed: 40
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: WA68_CartridgeBase
+        priority: 1
+        whitelist:
+          tags:
+            - WA68_Cartridge
+  - type: ContainerContainer
+    containers:
+      gun_chamber: !type:ContainerSlot
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    boltClosed: false
+    canRack: false
+    soundBoltClosed: /Audio/_WorldAblaze1968/Weapons/Interactions/GrenadeLauncher/close1.ogg
+    soundBoltOpened: /Audio/_WorldAblaze1968/Weapons/Interactions/GrenadeLauncher/open1.ogg
+    soundRack: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.75
+  - type: GunRequiresWield 
+  - type: Appearance
+  - type: WieldDelay
+    baseDelay: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false
+
+- type: entity ########################## LAUNCHERS
+  parent: BaseItem
+  id: WA68_WeaponLauncherBase # for rocket launchers
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    size: Huge
+  - type: BallisticAmmoProvider
+    soundInsert:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/rocket_load1.ogg
+      params:
+        variation: 0.1
+    soundRack:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/rocket_unload1.ogg
+      params:
+        variation: 0.1
+  - type: Gun
+    soundEmpty:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/empty1.ogg
+      params:
+        variation: 0.1
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/rpg7_close.ogg
+      params:
+        variation: 0.1
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    unequipDelay: 1
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.85
+    sprintModifier: 0.75
+  - type: GunRequiresWield
+  - type: Appearance
+  - type: WieldDelay
+    baseDelay: 1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false
+
+- type: entity ########################## DISPOSABLE LAUNCHERS
+  parent: BaseItem
+  id: WA68_WeaponLauncherFoldedBase # for folded disposable RPGs
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+  - type: Clothing
+    quickEquip: false
+    unequipDelay: 1
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+      suitstorage2:
+      - state: equipped-BACKPACK
+      suitstorage:
+      - state: equipped-SUITSTORAGE
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+    - id: WA68_WeaponLauncherUnFoldedBase
+    sound:
+      path: /Audio/_Goobstation/Items/weapons/Sniper/pickup2.ogg
+      params:
+        variation: 0.125
+  - type: ExtendDescription
+    descriptionList:
+      - description: Use to unfold. Once unfolded cannot be refolded or stored in aux slot.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: Appearance
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseWeaponLauncher
+  id: WA68_WeaponLauncherUnFoldedBase # for unfolded disposable RPGs
+  suffix: WorldAblaze1968
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    quickEquip: false
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/testgun.rsi
+    unequipDelay: 1
+    clothingVisuals:
+      back:
+      - state: equipped-BACKPACK
+  - type: Item
+    size: Huge
+  - type: Appearance
+  - type: Gun
+    soundEmpty:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/empty1.ogg
+      params:
+        variation: 0.1
+    projectileSpeed: 40
+    fireRate: 0.5 # 30 RPS
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rpgfire.ogg
+      params:
+        variation: 0.1
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: BasicEntityAmmoProvider
+    proto: WA68_BulletBase
+    capacity: 1
+  - type: WieldDelay
+    baseDelay: 1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+  - type: Wieldable
+    wieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/wield.ogg
+      params:
+        variation: 0.1
+    unwieldSound:
+      path: /Audio/_WorldAblaze1968/Weapons/Interactions/unwield.ogg
+      params:
+        variation: 0.1
+    unwieldOnUse: false

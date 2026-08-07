@@ -1,0 +1,56 @@
+- type: entity
+  suffix: WorldAblaze1968
+  name: binoculars
+  parent: BaseItem
+  id: WA68_Binoculars
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/binoculars.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    state: icon
+  - type: Item
+    size: Normal
+  - type: Wieldable
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 12
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Clothing
+    slots:
+    - Neck
+    - suitStorage
+    - SUITSTORAGE2
+
+- type: entity
+  suffix: WorldAblaze1968
+  name: mortar tools
+  parent: BaseItem
+  id: WA68_MortarTools
+  description: Lorem ipsum # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+  components:
+  - type: Sprite
+    sprite: _Impstation/Objects/Tools/Toolboxes/toolbox_red.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    state: icon
+  - type: Item
+    sprite: _Impstation/Objects/Tools/Toolboxes/toolbox_red.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    size: Large
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/toolbox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
+  - type: ExtendDescription
+    descriptionList:
+      - description: Used to fold/unfold up medium and heavy mortars.
+        color: "#b37d2d"
+        requireDetailRange: true
+  - type: Tag
+    tags:
+    - WA68_MortarToolsTag

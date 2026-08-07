@@ -1,0 +1,323 @@
+########################## Usa
+
+- type: entity
+  parent: WA68_WeaponGrenadeBase
+  id: WA68_WeaponGrenadeUsaM67
+  name: M67 frag grenade
+  description: Lorem ipsum
+  components:
+  - type: OnUseTimerTrigger
+    delay: 5
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m67.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 115
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 110 # center damage 126
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 115 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_WeaponGrenadeBase
+  id: WA68_WeaponGrenadeUsaMK3A2
+  name: Mk3A2 blast grenade
+  description: Lorem ipsum
+  components:
+  - type: DeleteOnTrigger
+  - type: OnUseTimerTrigger
+    delay: 5
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/mk3a2.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 25
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 110 # center damage 126
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 25 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_WeaponGrenadeBase
+  id: WA68_WeaponGrenadeUsaM26A1
+  name: M26A1 frag grenade
+  description: Lorem ipsum
+  components:
+  - type: OnUseTimerTrigger
+    delay: 4
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m26a1.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 90
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 110 # center damage 126
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 90 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_WeaponGrenadeUsaM26A1
+  id: WA68_WeaponGrenadeWestGerDM41
+  name: DM41 frag grenade
+  description: Lorem ipsum
+
+
+- type: entity
+  parent: WA68_WeaponGrenadeInertBase
+  id: WA68_WeaponGrenadeUsaM18
+  name: M18 smoke grenade
+  description: Lorem ipsum
+  components:
+  - type: DeleteOnTrigger
+  - type: OnUseTimerTrigger
+    delay: 2.5
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m18.rsi
+  - type: SmokeOnTrigger
+    duration: 50
+    spreadAmount: 15
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: SmokeGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Emits smoke for 50 seconds.
+        color: "#a84832"
+        requireDetailRange: true
+
+########################## Ussr
+
+- type: entity
+  parent: WA68_WeaponGrenadeImpactBase
+  id: WA68_WeaponGrenadeImpactUssrRKG3EM
+  name: RKG-3EM AT grenade
+  description: Lorem ipsum
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,0,2 # real one is quite big since its a anti tank grenade
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rkg3em.rsi
+    layers:
+    - state: icon
+    - state: primed
+      visible: false
+      map: ["enum.ToggleVisuals.Layer"]
+  - type: Appearance
+  - type: AnimationPlayer
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg
+    soundDeactivate:
+      path: /Audio/_Battlefield14/Weapons/Grenades/disable1.ogg
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_MediumYieldExplosion
+    totalIntensity: 70 # center damage 225
+    intensitySlope: 5
+    maxIntensity: 100
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 25
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 25 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+      - description: Has a impact fuse. Activate to hand to arm, activate again to disarm.
+        color: "#b37d2d"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_WeaponGrenadeBase
+  id: WA68_WeaponGrenadeUssrF1
+  name: F-1 frag grenade
+  description: Lorem ipsum
+  components:
+  - type: OnUseTimerTrigger
+    delay: 3.5
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/f1.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 75
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 110 # center damage 126
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 75 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_WeaponGrenadeBase
+  id: WA68_WeaponGrenadeUssrRGD5
+  name: RGD-5 frag grenade
+  description: Lorem ipsum
+  components:
+  - type: OnUseTimerTrigger
+    delay: 3.5
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rgd5.rsi
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: WA68_SmallFragment
+    capacity: 95
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: WA68_LowYieldExplosion
+    totalIntensity: 110 # center damage 126
+    intensitySlope: 3
+    maxIntensity: 100
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Explodes into 95 fragments.
+        color: "#a84832"
+        requireDetailRange: true
+
+- type: entity
+  parent: WA68_WeaponGrenadeInertBase
+  id: WA68_WeaponGrenadeUssrRDG2
+  name: RDG-2 smoke grenade
+  description: Lorem ipsum
+  components:
+  - type: OnUseTimerTrigger
+    delay: 2.5
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rdg2.rsi
+  - type: SmokeOnTrigger
+    duration: 50
+    spreadAmount: 15
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger3.ogg"
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: SmokeGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Emits smoke for 50 seconds.
+        color: "#a84832"
+        requireDetailRange: true

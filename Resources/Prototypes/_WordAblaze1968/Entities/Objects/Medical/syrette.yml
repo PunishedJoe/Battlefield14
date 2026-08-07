@@ -1,0 +1,255 @@
+- type: entity
+  name: 6-Pcs syrette pack
+  parent: BaseItem
+  description: A small pack thats used to ship syrettes.
+  abstract: true
+  id: WA68_SyretteMedicalCase
+  suffix: WorldAblaze1968
+  components:
+  - type: Storage
+    maxItemSize: Tiny
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,5,0
+    whitelist:
+      tags:
+      - WA68_MedicalItemTiny
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrettebox.rsi
+    state: black
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Medical/syrettebox.rsi
+    size: Small
+    shape:
+    - 0,0,1,0
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: Tag
+    tags:
+    - WA68_MedicalItemMedium
+
+- type: entity
+  name: syrette cap
+  description: Its a little protective cap off a syrette that stops you from accidentaly stabbing your self.
+  parent: BaseItem
+  id: WA68_SyretteMedicalTrash
+  suffix: WorldAblaze1968
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+    state: tip
+  - type: Item
+    size: Tiny
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+
+- type: entity
+  name: syrette
+  abstract: true
+  parent: BaseItem
+  id: WA68_SyretteMedicalCappedBase
+  suffix: WorldAblaze1968
+  components:
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+    - WA68_MedicalItemTiny
+  - type: Item
+    size: Tiny
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+
+- type: entity
+  name: syrette
+  parent: BaseItem
+  id: WA68_SyretteMedicalBase
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+    - WA68_MedicalItemTiny
+  - type: Item
+    size: Tiny
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+  - type: ExaminableSolution
+    solution: pen
+  - type: Hypospray
+    solutionName: pen
+    transferAmount: 5
+    onlyAffectsMobs: false
+    injectOnly: true
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+
+- type: entity
+  parent: WA68_SyretteMedicalCase
+  id: WA68_SyretteMedicalCasePropital
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrettebox.rsi
+    state: yellow
+  - type: StorageFill
+    contents:
+      - id: WA68_SyretteMedicalCappedPropital
+        amount: 6
+  - type: Label
+    currentLabel: propital
+
+- type: entity
+  description: A cheap, mass produced single use syrette. This one contains propital a potent tissue regeneration supportive chemical.
+  parent: WA68_SyretteMedicalCappedBase
+  id: WA68_SyretteMedicalCappedPropital
+  components:
+  - type: Label
+    currentLabel: propital
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+    layers:
+    - state: yellow
+    - state: tip
+  - type: SpawnItemsOnUse
+    items:
+    - id: WA68_SyretteMedicalTrash
+    - id: WA68_SyretteMedicalPropital
+    sound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/syrette.ogg
+      params:
+        variation: 0.125
+        volume: -2
+
+- type: entity
+  description: A cheap, mass produced single use syrette. This one contains propital a potent tissue regeneration supportive chemical.
+  parent: WA68_SyretteMedicalBase
+  id: WA68_SyretteMedicalPropital
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Label
+    currentLabel: propital
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+    state: yellow
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Water # TODO TODO TODO TODO TODO
+          Quantity: 10
+
+- type: entity
+  parent: WA68_SyretteMedicalCase
+  id: WA68_SyretteMedicalCaseMorphine
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrettebox.rsi
+    state: red
+  - type: StorageFill
+    contents:
+      - id: WA68_SyretteMedicalCappedMorphine
+        amount: 6
+  - type: Label
+    currentLabel: morphine tartrate
+
+- type: entity
+  description: A cheap, mass produced single use syrette. This one contains morphine a potent opioid painkiller.
+  parent: WA68_SyretteMedicalCappedBase
+  id: WA68_SyretteMedicalCappedMorphine
+  components:
+  - type: Label
+    currentLabel: morphine tartrate
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+    layers:
+    - state: red
+    - state: tip
+  - type: SpawnItemsOnUse
+    items:
+    - id: WA68_SyretteMedicalTrash
+    - id: WA68_SyretteMedicalMorphine
+    sound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/syrette.ogg
+      params:
+        variation: 0.125
+        volume: -2
+
+- type: entity
+  description: A cheap, mass produced single use syrette. This one contains morphine a potent opioid painkiller.
+  parent: WA68_SyretteMedicalBase
+  id: WA68_SyretteMedicalMorphine
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Label
+    currentLabel: morphine tartrate
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+    state: red
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Water # TODO TODO TODO TODO TODO
+          Quantity: 10
+
+- type: entity
+  parent: WA68_SyretteMedicalCase
+  id: WA68_SyretteMedicalCaseCombatMix
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrettebox.rsi
+    state: black
+  - type: StorageFill
+    contents:
+      - id: WA68_SyretteMedicalCappedCombatMix
+        amount: 6
+  - type: Label
+    currentLabel: combat mix
+
+- type: entity
+  description: A cheap, mass produced single use syrette. This one contains mix of chemicals to keep a soilder up and fighting.
+  parent: WA68_SyretteMedicalCappedBase
+  id: WA68_SyretteMedicalCappedCombatMix
+  components:
+  - type: Label
+    currentLabel: combat mix
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+    layers:
+    - state: black
+    - state: tip
+  - type: SpawnItemsOnUse
+    items:
+    - id: WA68_SyretteMedicalTrash
+    - id: WA68_SyretteMedicalCombatMix
+    sound:
+      path: /Audio/_WorldAblaze1968/Misc/medical/syrette.ogg
+      params:
+        variation: 0.125
+        volume: -2
+
+- type: entity
+  description: A cheap, mass produced single use syrette. This one contains mix of chemicals to keep a soilder up and fighting.
+  parent: WA68_SyretteMedicalBase
+  id: WA68_SyretteMedicalCombatMix
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Label
+    currentLabel: combat mix
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syrette.rsi
+    state: black
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 10
+        reagents:
+        - ReagentId: Water # TODO TODO TODO TODO TODO
+          Quantity: 10

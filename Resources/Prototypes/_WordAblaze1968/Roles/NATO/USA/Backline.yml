@@ -1,0 +1,80 @@
+- type: job
+  id: WA68_RoleNatoUsaFobPersonnel
+  name: US FOB personnel
+  description: Accidentaly choose this. Commit suicide, respawn as rifleman.
+  playTimeTracker: WA68_RoleNatoUsaFobPersonnelTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaBacklineGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoFobPersonnel"
+  requireAdminNotify: false
+  supervisors: FOB Mayor
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Spc.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaBacklineGear
+  equipment:
+    id: WA68_ClothingDogtagUsaFobPersonnel
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaOG107
+    back: WA68_ClothingBackpackUsaM1961
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericPistolMagFilledM1911
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledM1911
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+
+- type: job
+  id: WA68_RoleNatoUsaFobMayor
+  name: US FOB Mayor
+  description: Manage the FOB, distribute specialized gear amongst the soilders then do nothing for 30 minutes. 
+  playTimeTracker: WA68_RoleNatoUsaFobMayorTime
+  weight: 77
+  startingGear: WA68_RoleNatoUsaBacklineLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoFobMayor"
+  requireAdminNotify: false
+  supervisors: Company commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Cpt.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaBacklineLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUsaFobMayor
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaOG107
+    back: WA68_ClothingBackpackUsaM1961
+    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
+    pocket2: WA68_ClothingPouchGenericPistolMagFilledM1911
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledM1911
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+  storage:
+    back:
+    - WA68_Binoculars

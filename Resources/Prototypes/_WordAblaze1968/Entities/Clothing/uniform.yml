@@ -1,0 +1,63 @@
+########################## Usa
+
+- type: entity
+  parent: WA68_UnremovableUniformBase
+  id: WA68_ClothingUniformUsaTigerstripe
+  suffix: WorldAblaze1968
+  name: Tigerstripe uniform
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Uniform/tigerstripe.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Uniform/tigerstripe.rsi
+
+- type: entity
+  parent: WA68_UnremovableUniformBase
+  id: WA68_ClothingUniformUsaERDL
+  suffix: WorldAblaze1968
+  name: ERDL uniform
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Uniform/erdl.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Uniform/erdl.rsi
+
+- type: entity
+  parent: WA68_UnremovableUniformBase
+  id: WA68_ClothingUniformUsaOG107
+  suffix: WorldAblaze1968
+  name: OG-107 uniform
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Uniform/og107.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Uniform/og107.rsi
+
+########################## Ussr
+
+- type: entity
+  parent: WA68_UnremovableUniformBase
+  id: WA68_ClothingUniformUssrM1969
+  suffix: WorldAblaze1968
+  name: M1969 uniform
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Uniform/m1969.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Uniform/m1969.rsi
+
+- type: entity
+  parent: WA68_UnremovableUniformBase
+  id: WA68_ClothingUniformUssrKLMK
+  suffix: WorldAblaze1968
+  name: KLMK uniform
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Uniform/klmk.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Uniform/klmk.rsi

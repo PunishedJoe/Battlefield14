@@ -1,0 +1,43 @@
+########################## Pistols
+
+- type: entity
+  id: WA68_ClothingArmbandGenericHolsterFilledPM
+  parent: WA68_ClothingArmbandGenericHolster
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WA68_WeaponUssrPM
+
+- type: entity
+  id: WA68_ClothingArmbandGenericHolsterFilledM1911
+  parent: WA68_ClothingArmbandGenericHolster
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WA68_WeaponUsaM1911
+
+########################## Gasmask
+
+- type: entity
+  id: WA68_ClothingArmbandGenericGasmaskFilledM17
+  parent: WA68_ClothingArmbandGenericGasmask
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WA68_ClothingGasMaskUsaM17
+
+- type: entity
+  id: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  parent: WA68_ClothingArmbandGenericGasmask
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WA68_ClothingGasMaskUssrShM41M

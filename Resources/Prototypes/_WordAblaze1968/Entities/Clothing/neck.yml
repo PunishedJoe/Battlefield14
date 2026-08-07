@@ -1,0 +1,119 @@
+########################## Usa
+
+- type: entity
+  parent: [ClothingNeckBase, ContentsExplosionResistanceBase]
+  id: WA68_ClothingBeltMilitaryMedBagUsaM3
+  suffix: WorldAblaze1968
+  name: M3 medical bag
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Neck/m3.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Neck/m3.rsi
+  - type: Item
+    size: Huge
+  - type: ExplosionResistance
+    damageCoefficient: 0
+  - type: Storage
+    maxItemSize: Large
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,6,4
+    whitelist:
+      tags:
+      - WA68_MedicalItemSmall
+      - WA68_MedicalItemMedium
+    storageOpenSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageCloseSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageInsertSound:
+      collection: BF_Magpouch_Insert
+      params:
+        volume: -1
+        variation: 0.125
+    storageRemoveSound:
+      collection: BF_Magpouch_Remove
+      params:
+        volume: -1
+        variation: 0.125
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ExtendDescription
+    descriptionList:
+      - description: Capable of only holding medical items.
+        color: "#fc0377"
+        requireDetailRange: true
+
+########################## Ussr
+
+- type: entity
+  parent: [ClothingNeckBase, ContentsExplosionResistanceBase]
+  id: WA68_ClothingBeltMilitaryMedBagUssrCMB
+  suffix: WorldAblaze1968
+  name: CMB medical bag
+  description: Lorem ipsum
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Ussr/Neck/cmb.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Ussr/Neck/cmb.rsi
+  - type: Item
+    size: Huge
+  - type: ExplosionResistance
+    damageCoefficient: 0
+  - type: Storage
+    maxItemSize: Huge
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,5,4
+    whitelist:
+      tags:
+      - WA68_MedicalItemSmall
+      - WA68_MedicalItemMedium
+    storageOpenSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageCloseSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageInsertSound:
+      collection: BF_Magpouch_Insert
+      params:
+        volume: -1
+        variation: 0.125
+    storageRemoveSound:
+      collection: BF_Magpouch_Remove
+      params:
+        volume: -1
+        variation: 0.125
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ExtendDescription
+    descriptionList:
+      - description: Capable of only holding medical items.
+        color: "#fc0377"
+        requireDetailRange: true

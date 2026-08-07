@@ -1,0 +1,78 @@
+- type: entity
+  name: 6-Pcs syringe case
+  parent: BaseItem
+  description: A small case made to hold and safekeep syringes.
+  id: WA68_SyringeMedicalCase
+  suffix: WorldAblaze1968
+  components:
+  - type: StorageFill
+    contents:
+      - id: WA68_SyringeMedicalBase
+        amount: 6
+  - type: Storage
+    maxItemSize: Tiny
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,5,0
+    whitelist:
+      tags:
+      - WA68_MedicalItemTiny
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syringebox.rsi
+    state: base
+  - type: Item
+    sprite: _WorldAblaze1968/Objects/Medical/syringebox.rsi
+    size: Tiny
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: Tag
+    tags:
+    - WA68_MedicalItemMedium
+
+- type: entity
+  name: syringe
+  parent: BaseItem
+  description: Used to inject chemicals into the blood stream.
+  id: WA68_SyringeMedicalBase
+  suffix: WorldAblaze1968
+  components:
+  - type: Tag
+    tags:
+    - WA68_MedicalItemSmall
+    - WA68_MedicalItemTiny
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Medical/syringe.rsi
+    layers:
+      - state: fluid1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: true
+      - state: syringe1
+        map: ["enum.SolutionContainerLayers.Base"]
+  - type: Icon
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+    state: syringe1
+  - type: Item
+    size: Tiny
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+  - type: Injector
+    injectOnly: false
+  - type: ExaminableSolution
+    solution: injector
+  - type: Spillable
+    solution: injector
+  - type: TrashOnSolutionEmpty
+    solution: injector
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fluid

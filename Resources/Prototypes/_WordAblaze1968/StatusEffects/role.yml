@@ -1,0 +1,126 @@
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoFobPersonnel
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: NatoFobPersonnel
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoFobMayor
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: NatoFobMayor
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoReserve
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: NatoReserve
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoInfantry
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: NatoInfantry
+
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: NatoLeader
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconNatoCommander
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: NatoCommander
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactFobPersonnel
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: PactFobPersonnel
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactFobMayor
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: PactFobMayor
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactReserve
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: PactReserve
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactInfantry
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: PactInfantry
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: PactLeader
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconPactCommander
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: PactCommander
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconFobPersonnel
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: FobPersonnel
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconFobMayor
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: FobMayor
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconReserve
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: Reserve
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconInfantry
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: Infantry
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconLeader
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: Leader
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconCommander
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: Commander
