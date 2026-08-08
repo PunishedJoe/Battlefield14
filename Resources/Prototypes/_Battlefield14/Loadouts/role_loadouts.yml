@@ -679,7 +679,7 @@
   - ContractorWallet
   
 - type: roleLoadout
-  id: JobChefBF14
+  id: JobCivilianChefDE
   groups:
   - BF_JumpsuitsChef
   - BF_ChefGloves

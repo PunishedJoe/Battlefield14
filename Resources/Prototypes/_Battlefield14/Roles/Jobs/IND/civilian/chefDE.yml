@@ -1,10 +1,10 @@
 - type: job
-  id: ChefBF14
+  id: CivilianChefDE
   name: job-name-ind-chef
   description: job-description-ind-chef
-  playTimeTracker: JobChefBF14
+  playTimeTracker: JobCivilianChefDE
   displayWeight: 10
-  startingGear: BF14Chef
+  startingGear: CivilianChefDE
   alwaysUseSpawner: true
   icon: "JobIconChef"
 #  supervisors: job-supervisors-everyone
@@ -20,7 +20,7 @@
   - Maintenance
   
 - type: startingGear
-  id: BF14Chef
+  id: CivilianChefDE
   equipment:
     back: ClothingBackpackButtpackSurplus
     pocket1: PouchFirstAidFilled

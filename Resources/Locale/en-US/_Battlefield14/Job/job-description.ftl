@@ -61,4 +61,4 @@ job-description-wps-officer = Keep the peace, keep the area safe, make money.
 
 job-description-ind-civilian = Live your life and look after numero uno.
 job-description-ind-civilian-paramedic = Save the life of those who cannot save themselves.
-job-description-ind-chef = Kill people, eat people.
+job-description-ind-chef = Prepare some delicious meals with meat locally sourced from the locals.
