@@ -240,8 +240,8 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    totalIntensity: 35
-    intensitySlope: 4
+    totalIntensity: 25
+    intensitySlope: 5
     maxIntensity: 2
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
