@@ -116,15 +116,21 @@
 
  - type: jukebox
    id: dontfearthereaper
-   name: Blue Oyster Cult - Don't Fear the Reaper
+   name: Don't Fear the Reaper - Blue Oyster Cult
    path:
     path: /Audio/_Battlefield14/Jukebox/dontfearthereaper_mono.ogg
 
  - type: jukebox
    id: killchain
-   name: Bolt Thrower - The Killchain
+   name: The Killchain - Bolt Thrower
    path:
     path: /Audio/_Battlefield14/Jukebox/killchain.ogg
+
+ - type: jukebox
+   id: einszweipolizei
+   name: Eins Zwei Polizei - Mo-Do
+   path:
+    path: /Audio/_Battlefield14/Lobby/einszweipolizei.ogg
 
 #region Eastern / east associated songs
 
