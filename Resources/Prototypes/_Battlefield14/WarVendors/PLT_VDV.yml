@@ -56,6 +56,11 @@
       - id: CrateSecgearPACTFilledIgla
         name: Igla MANPADS
         points: 1
+    - name: ammunition
+      entries:
+      - id: BF14WeaponCaseHeavyRPG7
+        name: mixed RPG-7 rockets
+        points: 2
     - name: organisation
       entries:
       - id: BoxIFFPACTWhite

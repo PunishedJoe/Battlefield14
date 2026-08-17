@@ -35,11 +35,11 @@
       - id: BoxGrenadesM58
         name: CS gas grenades
         points: 1
-    - name: anti-vessel solution
+    - name: ammunition
       entries:
-      - id: CrateSecgearNATOFilledStinger # fliegerfaust
-        name: Stinger MANPADS
-        points: 1
+      - id: BF14WeaponCaseHeavyPZF3Mixed
+        name: mixed PZF3 rockets
+        points: 2
     - name: organisation
       entries:
       - id: BoxIFFNATOBlue

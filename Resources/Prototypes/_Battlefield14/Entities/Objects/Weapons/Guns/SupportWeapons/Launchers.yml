@@ -303,7 +303,7 @@
       path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket3.ogg
   - type: ExtendDescription
     descriptionList:
-      - description: Has a minimum arming distance of 6 tiles.
+      - description: This weapon can be stored on your auxillary suit storage slot, and has a minimum arming distance of 6 tiles.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -390,6 +390,11 @@
   - type: BasicEntityAmmoProvider
     proto: BulletRocketStingerMANPADSMissile
     capacity: 1
+  - type: ExtendDescription
+    descriptionList:
+      - description: This weapon can be stored on your auxillary suit storage slot.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 #region DE
 
@@ -444,6 +449,60 @@
   - type: ExtendDescription
     descriptionList:
       - description: This weapon can be stored on your auxillary suit storage slot.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+#region SE
+
+- type: entity
+  name: Carl Gustav M2 recoilless rifle
+  parent: [ WeaponFlareGun , BaseGunWieldable, WeaponHandlingLauncher ]
+  id: WeaponLauncherSECarlGustavM2
+  description: The original M2 export version of the Carl Gustav recoilless rifle, circa 1964.
+  components:
+  - type: Item
+    size: Huge
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/carlgustav64.rsi
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/carlgustav64.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Launchers/carlgustav64.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/_WorldAblaze1968/Weapons/Gunshots/m67_close.ogg
+  - type: ItemSlots
+    slots:
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeCarlGustavHEDP502
+        insertSound: /Audio/_WorldAblaze1968/Weapons/Interactions/Heavy/shell_load1.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
+        priority: 1
+        whitelist:
+          tags:
+          - CartridgeCarlGustav
+  - type: GunRequiresWield
+  - type: AmmoCounter
+  - type: Appearance
+  - type: EyeCursorOffset
+  - type: CursorOffsetRequiresWield
+    maxOffset: 5
+    pvsIncrease: 0.35
+  - type: ExtendDescription
+    descriptionList:
+      - description: This weapon can be stored on your auxillary suit storage slot, and has a minimum arming distance of 6 tiles.
         color: "#4f94ad"
         requireDetailRange: true
 

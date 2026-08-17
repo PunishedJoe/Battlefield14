@@ -50,6 +50,23 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledCarlGustavM2
+  suffix: Filled, M2 Carl Gustav
+  parent: CrateSecgear
+  name: Carl Gustav M2 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherSECarlGustavM2
+          amount: 2
+        - id: CartridgeCarlGustavHEDP502
+          amount: 4
+        - id: CartridgeCarlGustavHE441D
+          amount: 4
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledAT4
   suffix: Filled, AT4
   parent: CrateSecgear

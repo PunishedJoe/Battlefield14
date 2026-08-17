@@ -67,7 +67,7 @@
   - type: RandomSpawner
     offset: 0
     prototypes:
-      - CrateSecgearNATOFilledSMAW # carl gustav
+      - CrateSecgearNATOFilledCarlGustavM2
       - CrateSecgearNATOFilledM72LAW
       - CrateSecgearNATOFilledM72LAWThermobaric
       - CrateSecgearNATOFilledM202FLASH

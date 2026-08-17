@@ -655,3 +655,73 @@
     - id: BF14WeaponMachineGunBrigadorBonesaw
     - id: MagazineBeltBoxBonesaw
       amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCarlGustavADM401
+  suffix: ADM401 x3
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeCarlGustavADM401
+      amount: 3
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavyCarlGustavADM401
+  suffix: ADM401 x6
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeCarlGustavADM401
+      amount: 6
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavyCarlGustavMixed
+  suffix: Carl Gustav, mixed
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeCarlGustavHEDP502
+      amount: 2
+    - id: CartridgeCarlGustavHE441D
+      amount: 2
+    - id: CartridgeCarlGustavHEDP502
+    - id: CartridgeCarlGustavHE441D
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavySMAWMixed
+  suffix: SMAW, mixed
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeSMAWHEAA
+      amount: 3
+    - id: CartridgeSMAWNE
+      amount: 3
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavyPZF3Mixed
+  suffix: PZF3, mixed
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgePZF3HEAT
+      amount: 3
+    - id: CartridgePZF3HE
+      amount: 3
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavyRPG7
+  suffix: RPG7, mixed
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeRPG7HEAT
+      amount: 3
+    - id: CartridgeRPG7Frag
+      amount: 3
