@@ -24,8 +24,9 @@
     sections:
     - name: anti-armour solution
       entries:
-#      - id: CrateSecgearNATOFilledSMAW
-#        name: Mk 153 SMAW
+      - id: CrateSecgearNATOFilledCarlGustavM2
+        name: Carl Gustav M2
+        points: 2
       - id: CrateSecgearNATOFilledM72LAW
         name: M72 LAW (M72A7)
         points: 1
@@ -45,6 +46,14 @@
         points: 1
       - id: BoxArtilleryShellHowitzerM777WhitePhosphorus
         name: white phosphorus 155mm artillery shells
+        points: 1
+    - name: ammunition
+      entries:
+      - id: BF14WeaponCaseHeavyCarlGustavMixed
+        name: mixed 84mm carl gustav shells
+        points: 2
+      - id: BF14WeaponCaseLongCarlGustavADM401
+        name: 84mm ADM401 shell x3
         points: 1
     - name: organisation
       entries:

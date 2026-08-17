@@ -51,6 +51,11 @@
       - id: BoxArtilleryShellsMortar2B14Minelaying
         name: PFM-1 mine-laying mortar rounds (82mm)
         points: 1
+    - name: ammunition
+      entries:
+      - id: BF14WeaponCaseHeavyRPG7
+        name: mixed RPG-7 rockets
+        points: 2
     - name: organisation
       entries:
       - id: BoxIFFPACTWhite

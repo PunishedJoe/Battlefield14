@@ -49,6 +49,11 @@
       - id: CrateSecgearNATOFilledStinger
         name: Stinger MANPADS
         points: 1
+    - name: ammunition
+      entries:
+      - id: BF14WeaponCaseHeavySMAWMixed
+        name: mixed SMAW shells
+        points: 2
     - name: organisation
       entries:
       - id: BoxIFFNATOBlue
