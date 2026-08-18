@@ -1,7 +1,7 @@
 {
     "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from the public Certain Fury repository at https://github.com/CFury84/PublicScal-I-Am-Feeling-Certainly-Furious",
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Made by WillyBillyGilly for the BF14 project",
     "size": {
         "x": 32,
         "y": 32
@@ -12,19 +12,6 @@
         },
         {
             "name": "base"
-        },
-        {
-            "name": "primed",
-            "delays": [
-                [
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2
-                ]
-            ]
         }
     ]
 }
