@@ -64,6 +64,12 @@
   name: buddy bipod
   artist: Bundeswehr
 
+- type: lobbyBackground
+  id: BackgroundDingDongDitch
+  background: /Textures/_Battlefield14/LobbyScreens/dingdongditch.png
+  name: ding dong ditch
+  artist: WillyBillyGilly
+
 #- type: lobbyBackground # IDF, not yet
 #  id: BackgroundWestBank
 #  background: /Textures/_Battlefield14/LobbyScreens/westbank.jpg
