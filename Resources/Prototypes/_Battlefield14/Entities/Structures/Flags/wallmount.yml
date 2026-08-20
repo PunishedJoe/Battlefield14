@@ -41,6 +41,46 @@
         color: "#4f94ad"
         requireDetailRange: true
 
+#region NATO
+
+- type: entity
+  parent: BF_BaseFlag
+  id: NATOFlag
+  name: NATO flag
+  description: Coalition is awesome!
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: nato
+  - type: DisassembleOnAltVerb
+    prototype: NATOFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: NATOFlagFolded
+  parent: BF_BaseFlagFolded
+  name: NATO flag
+  description: Coalition is awesome!
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#004282"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#004282"
+      right:
+      - state: inhand-right
+        color: "#004282"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: NATOFlag
+    doAfter: 3
+    removeOnInteract: true
+
 - type: entity
   parent: BF_BaseFlag
   id: USMCFlag
@@ -81,13 +121,167 @@
 
 - type: entity
   parent: BF_BaseFlag
+  id: USAFlag
+  name: united states flag
+  description: OOOH FUCKING RAH MOTHERFUCKER.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: usa
+  - type: DisassembleOnAltVerb
+    prototype: USAFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: USAFlagFolded
+  parent: BF_BaseFlagFolded
+  name: united states flag
+  description: OOOH FUCKING RAH MOTHERFUCKER.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#e5e5e5"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#e5e5e5"
+      right:
+      - state: inhand-right
+        color: "#e5e5e5"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: USAFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BF_BaseFlag
+  id: GermanFlag
+  name: deutschsland flag
+  description: It's Germany.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: westger
+  - type: DisassembleOnAltVerb
+    prototype: GermanFlagFolded
+    doAfter: 3
+
+- type: entity
+  parent: BF_BaseFlagFolded
+  id: GermanFlagFolded
+  name: deutschsland flag
+  description: It's Germany.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#121212"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#121212"
+      right:
+      - state: inhand-right
+        color: "#121212"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: GermanFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BF_BaseFlag
+  id: IsraelFlag
+  name: israel flag
+  description: Your greatest ally.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: israel
+  - type: DisassembleOnAltVerb
+    prototype: IsraelFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: IsraelFlagFolded
+  parent: BF_BaseFlagFolded
+  name: israel flag
+  description: Your greatest ally.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#e5e5e5"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#e5e5e5"
+      right:
+      - state: inhand-right
+        color: "#e5e5e5"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: IsraelFlag
+    doAfter: 3
+    removeOnInteract: true
+
+#region PACT
+
+- type: entity
+  parent: BF_BaseFlag
+  id: PACTFlag
+  name: PACT flag
+  description: Irridentism is awesome!
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: pact
+  - type: DisassembleOnAltVerb
+    prototype: PACTFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: PACTFlagFolded
+  parent: BF_BaseFlagFolded
+  name: PACT flag
+  description: Irridentism is awesome!
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#b70f0f"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#b70f0f"
+      right:
+      - state: inhand-right
+        color: "#b70f0f"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: PACTFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BF_BaseFlag
   id: RusfedFlag
   name: russian federation flag
   description: Irridentism is awesome!
   components:
   - type: Sprite
-    sprite: _Battlefield14/Structures/Flags/wallmount.rsi
-    state: rusfedflag
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: russia
   - type: DisassembleOnAltVerb
     prototype: RusfedFlagFolded
     doAfter: 3
@@ -116,6 +310,48 @@
     prototype: RusfedFlag
     doAfter: 3
     removeOnInteract: true
+
+#region Other countries
+
+- type: entity
+  parent: BF_BaseFlag
+  id: BrazilFlag
+  name: brazil flag
+  description: We are White we SWEAR.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: brazil
+  - type: DisassembleOnAltVerb
+    prototype: BrazilFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: BrazilFlagFolded
+  parent: BF_BaseFlagFolded
+  name: brazil flag
+  description: We are White we SWEAR.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#008834"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#008834"
+      right:
+      - state: inhand-right
+        color: "#008834"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: BrazilFlag
+    doAfter: 3
+    removeOnInteract: true
+
+#region MISC
 
 - type: entity
   parent: BF_BaseFlag
@@ -176,5 +412,119 @@
   components:
   - type: SpawnAfterInteract
     prototype: SansFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BF_BaseFlag
+  id: ChudFlag
+  name: chud flag
+  description: A flag bearing a drawing of patrick crusius.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: chud
+  - type: DisassembleOnAltVerb
+    prototype: ChudFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: ChudFlagFolded
+  parent: BF_BaseFlagFolded
+  name: chud flag
+  description: A flag bearing a drawing of patrick crusius.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#e5e5e5"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#e5e5e5"
+      right:
+      - state: inhand-right
+        color: "#e5e5e5"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: ChudFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BF_BaseFlag
+  id: GemFlag
+  name: gem flag
+  description: Issagem...
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: gem
+  - type: DisassembleOnAltVerb
+    prototype: GemFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: GemFlagFolded
+  parent: BF_BaseFlagFolded
+  name: gem flag
+  description: Issagem...
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#121212"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#121212"
+      right:
+      - state: inhand-right
+        color: "#121212"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: GemFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BF_BaseFlag
+  id: UNFlag
+  name: UN flag
+  description: Coalition is awesome!
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: un
+  - type: DisassembleOnAltVerb
+    prototype: UNFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: UNFlagFolded
+  parent: BF_BaseFlagFolded
+  name: UN flag
+  description: Coalition is awesome!
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#008ec5"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#008ec5"
+      right:
+      - state: inhand-right
+        color: "#008ec5"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: UNFlag
     doAfter: 3
     removeOnInteract: true
