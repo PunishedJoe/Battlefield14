@@ -16,6 +16,9 @@
     maxFillLevels: 1
     changeColor: false
     emptySpriteName: biofoam_empty
+  - type: Hypospray
+    transferAmount: 20
+    injectSound: /Audio/_Battlefield14/Effects/biofoam.ogg
   - type: SolutionContainerManager
     solutions:
       pen:
