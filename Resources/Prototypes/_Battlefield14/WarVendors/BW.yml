@@ -101,7 +101,7 @@
         amount: 50
     - name: Misc
       entries:
-      - id: USMCFlagFolded # german flag
+      - id: GermanFlagFolded
         amount: 3
 
 #region gear
