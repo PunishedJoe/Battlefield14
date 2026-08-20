@@ -155,13 +155,8 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
-  - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -28
   - type: Gun
-    minAngle: 26
-    maxAngle: 42
-    angleIncrease: 1.25
+    angleIncrease: 1.5
     projectileSpeed: 40 # Shorter barrel
     fireRate: 6
     availableModes:

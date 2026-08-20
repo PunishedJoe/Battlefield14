@@ -52,6 +52,8 @@
       collection: GruntUSGrenadeThrowingClean # BF14
     GruntUSGrenadeSurprisedClean: # BF14
       collection: GruntUSGrenadeSurprisedClean # BF14
+    Doctos: #BF14
+      collection: Doctos
 
 - type: emoteSounds
   id: FemaleHuman

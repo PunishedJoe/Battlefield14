@@ -52,6 +52,24 @@
 #  name: street war
 #  artist: Belwoods and JoeHammad
 
+- type: lobbyBackground
+  id: BackgroundGermanExercise
+  background: /Textures/_Battlefield14/LobbyScreens/germanexercise.jpg
+  name: German exercise
+  artist: GSG9
+
+- type: lobbyBackground
+  id: BackgroundBuddymount
+  background: /Textures/_Battlefield14/LobbyScreens/buddymount.png
+  name: buddy bipod
+  artist: Bundeswehr
+
+- type: lobbyBackground
+  id: BackgroundDingDongDitch
+  background: /Textures/_Battlefield14/LobbyScreens/dingdongditch.png
+  name: ding dong ditch
+  artist: WillyBillyGilly
+
 #- type: lobbyBackground # IDF, not yet
 #  id: BackgroundWestBank
 #  background: /Textures/_Battlefield14/LobbyScreens/westbank.jpg

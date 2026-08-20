@@ -91,11 +91,11 @@
 
 - type: entity
   name: XM8
-  parent: WeaponRifleDEG36
+  parent: WeaponRifleDEG36K
   id: WeaponRifleUSXM8
   description: The 5.56 rifle portion of the OICW, removed and made its own standalone rifle. Would later be developed into the G36 series of rifles.
   components:
-  - type: Item # Controls inhand sprites
+  - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/XM8.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/XM8.rsi
@@ -109,10 +109,6 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/XM8.rsi
-  - type: WieldedCrosshair
-    rsi:
-      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
-      state: acog
 
 - type: entity
   name: XM8
@@ -214,7 +210,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
   - type: GunWieldBonus
     minAngle: -18
-    maxAngle: -40
+    maxAngle: -45
   - type: Gun
     fireRate: 5
     minAngle: 20
@@ -297,7 +293,7 @@
     - 0,0,5,2
   - type: GunWieldBonus
     minAngle: -18
-    maxAngle: -40
+    maxAngle: -45
   - type: Gun
     fireRate: 5
     minAngle: 20

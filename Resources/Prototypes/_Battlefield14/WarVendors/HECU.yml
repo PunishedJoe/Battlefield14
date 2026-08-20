@@ -68,6 +68,10 @@
         amount: 20
       - id: WeaponSubmachinegunUSMP5
         amount: 5
+      - id: WeaponSniperUSM40A5
+        amount: 1
+      - id: MagazineSniperM40A5
+        amount: 5
       - id: WeaponPistolM9
         amount: 2
     - name: Utility

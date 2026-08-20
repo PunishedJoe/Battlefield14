@@ -53,6 +53,9 @@
       - Bottle
       - Syringe
       - ChemDispensable
+      - Syrette # BF14
+      - MedicationBox # BF14
+      - BlisterPack # BF14
   - type: ActivatableUI
     key: enum.SmartFridgeUiKey.Key
   - type: ActivatableUIRequiresPower

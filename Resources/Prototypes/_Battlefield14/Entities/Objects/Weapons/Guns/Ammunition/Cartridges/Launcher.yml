@@ -1,4 +1,4 @@
-##region US
+#region US
 # SMAW
 
 - type: entity
@@ -67,7 +67,71 @@
   - type: Appearance
   - type: SpentAmmoVisuals
 
-##region DE
+# Carl Gustav
+
+- type: entity
+  id: CartridgeCarlGustavHEDP502
+  name: 84mm HEDP 502 shell
+  parent: BaseCartridgeLauncher
+  description: High explosive dual purpose, pierces and does damage on the inside, like HEAT.
+  components:
+  - type: Item
+    size: Large
+    storedRotation: -90
+  - type: Tag
+    tags:
+    - CartridgeLauncher
+    - CartridgeCarlGustav
+  - type: CartridgeAmmo
+    proto: BulletRocket84mmHEATArmingDistance
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/84x245mmR.rsi
+    layers:
+    - state: HEDP502
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+    state: "base"
+
+- type: entity
+  id: CartridgeCarlGustavHE441D
+  name: 84mm HE441D shell
+  parent: CartridgeCarlGustavHEDP502
+  description: It goes boom.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletCarlGustavHE441DArmingDistance
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/84x245mmR.rsi
+    layers:
+    - state: HE441D
+      map: ["enum.AmmoVisualLayers.Base"]
+
+- type: entity
+  id: CartridgeCarlGustavADM401
+  name: 84mm ADM401 shell
+  parent: CartridgeCarlGustavHEDP502
+  description: Turns your recoilless rifle into a shotgun. Fires 25 flechettes
+  components:
+  - type: CartridgeAmmo
+    proto: PelletCarlGustavASM401_Spread
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/84x245mmR.rsi
+    layers:
+    - state: ADM401
+      map: ["enum.AmmoVisualLayers.Base"]
+
+- type: entity
+  id: PelletCarlGustavASM401_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletCarlGustavASM401
+  components:
+  - type: ProjectileSpread
+    proto: PelletCarlGustavASM401
+    count: 25
+    spread: 10
+
+#region DE
 # PZF-3
 
 - type: entity
@@ -114,7 +178,7 @@
   - type: Appearance
   - type: SpentAmmoVisuals
 
-## RU
+#region RU
 # RPG-7
 
 - type: entity

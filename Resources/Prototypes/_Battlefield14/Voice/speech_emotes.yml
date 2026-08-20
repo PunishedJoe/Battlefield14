@@ -18,6 +18,18 @@
     - doctor
 
 - type: emote
+  id: Doctos
+  name: chat-emote-name-doctos
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/medic.png
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-doctos"]
+  chatTriggers:
+    - doctos
+
+- type: emote
   id: GruntUSContactClean
   name: chat-emote-name-grunt-us-contact
   category: Vocal

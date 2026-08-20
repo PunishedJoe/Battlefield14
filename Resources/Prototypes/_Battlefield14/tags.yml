@@ -113,6 +113,9 @@
   id: BlisterPack
 
 - type: Tag
+  id: CartridgeCarlGustav
+
+- type: Tag
   id: CartridgeSMAW
 
 - type: Tag

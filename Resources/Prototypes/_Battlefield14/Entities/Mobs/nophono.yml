@@ -9,10 +9,11 @@
     - TauCetiBasic
     understands:
     - TauCetiBasic
-    - Russian
-    - English
     - Sign
+    - English
     - German
+    - Russian
+    - Ukrainian
     - Mexican
     - Esperanto
   - type: Sprite
@@ -102,7 +103,7 @@
   - type: ActionGrant
     actions:
     - ActionBlink
-    - ActionSmiteNoReq
+    - ActionLiquidPhono
     - ActionKnock
   - type: ZombieImmune
   - type: NightVision # Gen 3 wide-quadtube

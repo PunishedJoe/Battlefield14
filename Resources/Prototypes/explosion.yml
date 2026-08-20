@@ -12,8 +12,8 @@
   tileBreakIntensity: [0, 10, 30]
   tileBreakRerollReduction: 20
   lightColor: Orange
-  texturePath: /Textures/Effects/fire.rsi
-  fireStates: 3
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
   sound: # BF14
     collection: CivExplosion
   smallSound:
@@ -35,8 +35,8 @@
   tileBreakIntensity: [ 0, 10, 30 ]
   tileBreakRerollReduction: 20
   lightColor: Orange
-  texturePath: /Textures/Effects/fire.rsi
-  fireStates: 3
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
   sound: # BF14
     collection: CivExplosion
   smallSound:
@@ -59,8 +59,8 @@
   tileBreakRerollReduction: 30
   intensityPerState: 20
   lightColor: Orange
-  texturePath: /Textures/Effects/fire.rsi
-  fireStates: 6
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
   sound: # BF14
     collection: CivExplosion
   smallSound:
@@ -109,8 +109,8 @@
   tileBreakIntensity: [0, 10, 30]
   tileBreakRerollReduction: 20
   lightColor: Orange
-  texturePath: /Textures/Effects/fire.rsi
-  fireStates: 3
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
   sound: # BF14
     collection: CivExplosion
   smallSound:
@@ -133,8 +133,8 @@
   tileBreakRerollReduction: 3
   intensityPerState: 20
   lightColor: Orange
-  texturePath: /Textures/Effects/fire.rsi
-  fireStates: 6
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
 
 - type: explosion
   id: HardBomb
@@ -149,8 +149,8 @@
   tileBreakRerollReduction: 10
   intensityPerState: 20
   lightColor: Orange
-  texturePath: /Textures/Effects/fire.rsi
-  fireStates: 6
+  texturePath: /Textures/_RMC14/Effects/fog.rsi
+  fireStates: 1
   sound: # BF14
     collection: CivExplosion
   smallSound:
@@ -170,7 +170,7 @@
   lightColor: Orange
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 6
-  fireStacks: 2
+  fireStacks: 1
   throwEntitiesOnExplosion: false # BF14, for thermobarics
   sound:
     collection: CivExplosionGrenade
