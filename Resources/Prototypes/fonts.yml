@@ -50,3 +50,8 @@
 - type: font
   id: Helvetica
   path:  /Fonts/OCR-A-Extended.ttf
+
+# Ziggerfield 14
+- type: font
+  id: OCR-A-Extended
+  path: /Fonts/OCR-A-Extended.ttf
