@@ -416,7 +416,7 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolM9
+      - WeaponPistolATGlock17
   - type: StorageFill
     contents:
       - id: Stunbaton
