@@ -1,0 +1,5 @@
+- type: hudTheme
+  id: BF14WarfighterTheme
+  name: ui-options-hud-theme-warfighter
+  path: /Textures/_Battlefield14/Interface/Warfighter/
+  order: -1
