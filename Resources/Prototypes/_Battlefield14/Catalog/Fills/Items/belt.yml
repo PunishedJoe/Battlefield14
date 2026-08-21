@@ -424,7 +424,7 @@
         amount: 2
       - id: Flash
       - id: FlashlightSeclite
-      - id: MagazinePistolM9
+      - id: MagazinePistolGlock17
         amount: 2
 
 - type: entity

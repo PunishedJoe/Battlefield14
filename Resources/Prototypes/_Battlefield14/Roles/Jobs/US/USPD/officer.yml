@@ -47,6 +47,7 @@
     outerClothing: ClothingOuterArmorWebVestSec
     shoes: ClothingShoesBootsJackFilled
 #    back: ClothingBackpackSecurity
+    pocket1: WeaponPistolATGlock17
     pocket2: PouchFirstAidFilled
   storage:
     back:
