@@ -51,7 +51,7 @@
   id: Helvetica
   path:  /Fonts/OCR-A-Extended.ttf
 
-# Ziggerfield 14
+# Batltlefield 14
 - type: font
-  id: OCR-A-Extended
+  id: OCRAExtended
   path: /Fonts/OCR-A-Extended.ttf
