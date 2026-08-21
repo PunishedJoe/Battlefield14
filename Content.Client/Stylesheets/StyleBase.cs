@@ -67,6 +67,16 @@ namespace Content.Client.Stylesheets
                 },
                 12
             );
+
+            var OCRAExtended12 = resCache.GetFont
+            (
+                new []
+                {
+                    "/Fonts/OCR-A-Extended.ttf",
+
+                },
+                12
+            );
             var textureCloseButton = resCache.GetTexture("/Textures/Interface/Nano/cross.svg.png");
 
             // Button styles.
@@ -163,7 +173,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(null, null, null, null),
                     new[]
                     {
-                        new StyleProperty("font", notoSans12),
+                        new StyleProperty("font", OCRAExtended12),
                     }),
 
                 // Default font.
@@ -171,7 +181,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(null, new[] {StyleClassItalic}, null, null),
                     new[]
                     {
-                        new StyleProperty("font", notoSans12Italic),
+                        new StyleProperty("font", OCRAExtended12),
                     }),
 
                 // Window close button base texture.
