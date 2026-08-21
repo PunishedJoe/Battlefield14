@@ -70,6 +70,12 @@
   name: ding dong ditch
   artist: WillyBillyGilly
 
+- type: lobbyBackground
+  id: BackgroundInterchange
+  background: /Textures/_Battlefield14/LobbyScreens/interchange_troubles.jpg
+  name: Interchange Troubles
+  artist: Belwoods
+
 #- type: lobbyBackground # IDF, not yet
 #  id: BackgroundWestBank
 #  background: /Textures/_Battlefield14/LobbyScreens/westbank.jpg
