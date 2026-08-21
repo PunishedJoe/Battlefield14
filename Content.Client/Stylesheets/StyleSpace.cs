@@ -47,6 +47,24 @@ namespace Content.Client.Stylesheets
                 16
             );
 
+            var OCRAExtended10 = resCache.GetFont
+            (
+                new []
+                {
+                    "Fonts/OCR-A-Extended.ttf"
+                },
+                10
+            );
+
+            var OCRAExtended16 = resCache.GetFont
+            (
+                new []
+                {
+                    "Fonts/OCR-A-Extended.ttf"
+                },
+                16
+            );
+
             var progressBarBackground = new StyleBoxFlat
             {
                 BackgroundColor = new Color(0.25f, 0.25f, 0.25f)
@@ -72,11 +90,11 @@ namespace Content.Client.Stylesheets
             Stylesheet = new Stylesheet(BaseRules.Concat(new StyleRule[]
             {
                 Element<Label>().Class(StyleClassLabelHeading)
-                    .Prop(Label.StylePropertyFont, notoSansBold16)
+                    .Prop(Label.StylePropertyFont, OCRAExtended16)
                     .Prop(Label.StylePropertyFontColor, SpaceRed),
 
                 Element<Label>().Class(StyleClassLabelSubText)
-                    .Prop(Label.StylePropertyFont, notoSans10)
+                    .Prop(Label.StylePropertyFont, OCRAExtended10)
                     .Prop(Label.StylePropertyFontColor, Color.DarkGray),
 
                 Element<PanelContainer>().Class(ClassHighDivider)
