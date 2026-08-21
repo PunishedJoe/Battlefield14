@@ -51,7 +51,7 @@ namespace Content.Client.Stylesheets
             (
                 new []
                 {
-                    "Fonts/OCR-A-Extended.ttf"
+                    "/Fonts/OCR-A-Extended.ttf"
                 },
                 10
             );
@@ -60,7 +60,7 @@ namespace Content.Client.Stylesheets
             (
                 new []
                 {
-                    "Fonts/OCR-A-Extended.ttf"
+                    "/Fonts/OCR-A-Extended.ttf"
                 },
                 16
             );
