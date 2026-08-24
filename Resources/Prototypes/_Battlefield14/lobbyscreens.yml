@@ -76,6 +76,24 @@
   name: Interchange Troubles
   artist: Belwoods
 
+- type: lobbyBackground
+  id: BackgroundMobiks
+  background: /Textures/_Battlefield14/LobbyScreens/mobiks.png
+  name: build to survive mobiks
+  artist: WillyBillyGilly
+
+- type: lobbyBackground
+  id: BackgroundMyGang
+  background: /Textures/_Battlefield14/LobbyScreens/mygang.png
+  name: my gang
+  artist: WillyBillyGilly
+
+- type: lobbyBackground
+  id: BackgroundBoxArt
+  background: /Textures/_Battlefield14/LobbyScreens/boxart.png
+  name: box art
+  artist: WillyBillyGilly
+
 #- type: lobbyBackground # IDF, not yet
 #  id: BackgroundWestBank
 #  background: /Textures/_Battlefield14/LobbyScreens/westbank.jpg

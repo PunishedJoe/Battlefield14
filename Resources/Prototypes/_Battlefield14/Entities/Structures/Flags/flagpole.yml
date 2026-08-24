@@ -55,7 +55,7 @@
 
 - type: entity
   id: GermanFlagPole
-  name: deutchsland flag
+  name: deutschsland flag
   description: A flag pole, bearing the flag of germany.
   parent: WhiteFlagPole
   components:
@@ -90,7 +90,7 @@
   - type: Sprite
     sprite: _Battlefield14/Structures/Flags/flagpoles.rsi
     layers:
-      - state: britishflag
+      - state: heerflag
         offset: 0.25, 1
     drawdepth: OverMobs
     noRot: true
@@ -111,7 +111,7 @@
 
 - type: entity
   id: DDRFlagPole
-  name: ost deutchsland flag
+  name: ost deutschland flag
   description: A flag pole, bearing the flag of east germany.
   parent: WhiteFlagPole
   components:

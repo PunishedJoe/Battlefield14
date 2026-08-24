@@ -127,6 +127,8 @@
 - type: entity
   id: DiskCaseFilledRandomMusicProp
   parent: DiskCase
+  name: CD case
+  description: A case for storing a CD.
   suffix: Filled, random music album prop
   components:
   - type: StorageFill

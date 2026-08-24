@@ -160,7 +160,7 @@
 - type: entity
   parent: BF_BaseFlag
   id: GermanFlag
-  name: deutschsland flag
+  name: deutschland flag
   description: It's Germany.
   components:
   - type: Sprite
@@ -173,7 +173,7 @@
 - type: entity
   parent: BF_BaseFlagFolded
   id: GermanFlagFolded
-  name: deutschsland flag
+  name: deutschland flag
   description: It's Germany.
   components:
   - type: Sprite
