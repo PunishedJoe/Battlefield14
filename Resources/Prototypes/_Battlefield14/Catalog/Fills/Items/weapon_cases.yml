@@ -332,6 +332,16 @@
     - id: WeaponMachineGunUSM240B
     - id: MagazineBeltBoxM240
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSM60
+  suffix: M60
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponMachineGunUSM60
+    - id: MagazineBeltBoxM60
+
 #region AMRs, US
 
 - type: entity
