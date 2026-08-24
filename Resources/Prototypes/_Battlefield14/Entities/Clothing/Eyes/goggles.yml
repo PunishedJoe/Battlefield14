@@ -5,7 +5,7 @@
   - type: Reflect # Ballistic glasses are any glasses that have a small chance to deflect projectiles | doesn't seem to work though
     reflectProb: 0.01
     spread: 270
-#    innate: true
+    innate: true
     reflects:
     - Energy
     - NonEnergy
@@ -46,3 +46,15 @@
     sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesgreen.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesgreen.rsi
+
+- type: entity
+  parent: [ClothingEyesBase , BallisticGlasses]
+  id: ClothingEyesGlassesSafetyGoggles
+  name: safety goggles
+  description: Might stop an angle grinder blade.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Eyes/Glasses/pilot.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Eyes/Glasses/pilot.rsi
+  - type: VisionCorrection

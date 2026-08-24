@@ -52,9 +52,9 @@
       types:
         Blunt: 5 # getting shutters closed on you probably doesn't hurt that much
     openSound:
-      path: /Audio/Machines/shutter.ogg
+      path: /Audio/_HaloSSE/Machines/shutters_open.ogg
     closeSound:
-      path: /Audio/Machines/shutter.ogg
+      path: /Audio/_HaloSSE/Machines/shutters_close.ogg
   - type: Weldable
     time: 3
   - type: Appearance

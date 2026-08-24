@@ -435,7 +435,7 @@
   id: USPDSWATOfficerPDA
   name: SWAT PDA
   description: Filled with bodycam footage.
-  suffix: SWAY officer
+  suffix: SWAT officer
   components:
   - type: Pda
     id: USPDSWATOfficerIDCard
