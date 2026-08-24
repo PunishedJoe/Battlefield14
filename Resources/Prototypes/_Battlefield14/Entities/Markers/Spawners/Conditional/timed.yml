@@ -129,6 +129,7 @@
       prototypes:
         - BF14WeaponCaseLongUSM249Para
         - BF14WeaponCaseLongUSM240B
+        - BF14WeaponCaseLongUSM60
         - BF14WeaponCaseLongDEMG3
         - BF14WeaponCaseLongRUPKM
         - BF14WeaponCaseLongRURP46
@@ -276,6 +277,7 @@
       prototypes:
         - BF14WeaponCaseLongUSM249Para
         - BF14WeaponCaseLongUSM240B
+        - BF14WeaponCaseLongUSM60
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1

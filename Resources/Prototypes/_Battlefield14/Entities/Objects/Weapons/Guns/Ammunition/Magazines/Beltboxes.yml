@@ -92,6 +92,20 @@
         requireDetailRange: true
 
 - type: entity
+  parent: MagazineBeltBoxM240
+  id: MagazineBeltBoxM60
+  name: "M60 belt box (7.62x51mm)"
+  components:
+  - type: Tag
+    tags:
+      - MagazineBeltBoxM60
+  - type: ExtendDescription
+    descriptionList:
+      - description: Uses an M60 pattern attatchment system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
   parent: BaseItem
   id: MagazineBeltBoxMG3Short
   name: "MG3 drum (7.62x51mm)"

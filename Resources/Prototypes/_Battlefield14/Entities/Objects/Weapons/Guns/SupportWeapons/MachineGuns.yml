@@ -247,6 +247,73 @@
         color: "#4f94ad"
         requireDetailRange: true
 
+- type: entity
+  name: M60
+  parent: WeaponMachineGunUSM240B
+  id: WeaponMachineGunUSM60
+  description: The original all american GPMG.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M60.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M60.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -35
+  - type: Gun
+    minAngle: 19 # Wielded = 0
+    maxAngle: 55 # wielded = 20
+    angleIncrease: 1
+    angleDecay: 12
+    availableModes:
+    - FullAuto
+    - Burst
+    selectedMode: FullAuto
+    fireRate: 5
+    projectileSpeed: 50 # full length barrel
+    shotsPerBurst: 5 # Fictional, to help with conserving ammo
+    burstCooldown: 0.5
+    soundGunshot:
+      collection: BF_M60_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M60/rack.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineBeltBoxM60
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M60/boxinsert.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M60/boxremove.ogg
+        swap: false
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineBeltBoxM60
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51TracerRed
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes M60 pattern belt boxes.
+        color: "#4f94ad"
+        requireDetailRange: true
+
 #region DE
 
 - type: entity

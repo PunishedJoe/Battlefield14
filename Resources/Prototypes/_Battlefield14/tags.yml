@@ -197,6 +197,9 @@
   id: MagazineBeltBoxM249
 
 - type: Tag
+  id: MagazineBeltBoxM60
+
+- type: Tag
   id: MagazineRifleM30MRC
 
 - type: Tag
