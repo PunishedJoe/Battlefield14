@@ -1,7 +1,7 @@
 - type: entity
   parent: ActionSmiteNoReq
   id: ActionLiquidPhono
-  name: Liquid Phono
+  name: Liquidphono
   description: Instantly gibs a target.
   components:
   - type: EntityTargetAction
@@ -19,3 +19,66 @@
       state: gib
     event: !type:SmiteSpellEvent
       speech: action-speech-spell-liquidphono
+
+- type: entity
+  id: ActionCyborgRocket
+  name: Shoulder-mounted rocket
+  description: Fires an explosive rock towards the clicked location.
+  components:
+  - type: Magic
+  - type: WorldTargetAction
+    useDelay: 15
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    raiseOnUser: true
+    range: 60
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket3.ogg
+    icon:
+      sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+      state: FFAR
+    event: !type:ProjectileSpellEvent
+      prototype: BulletRocketS8
+      speech: action-speech-spell-cyborgmissile
+
+- type: entity
+  id: ActionCyborgGrenadeLauncher
+  name: Shoulder-mounted grenade launcher
+  description: Fires a HEDP grenade towards the clicked location.
+  components:
+  - type: Magic
+  - type: WorldTargetAction
+    useDelay: 10
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    raiseOnUser: true
+    range: 60
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
+    icon:
+      sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
+      state: base
+    event: !type:ProjectileSpellEvent
+      prototype: Bullet40x46mmHEDP
+      speech: action-speech-spell-cyborgmissile
+
+- type: entity
+  id: ActionCyborgMissile
+  name: Shoulder-mounted missile
+  description: Fires an explosive anti-air missile towards the clicked location.
+  components:
+  - type: Magic
+  - type: WorldTargetAction
+    useDelay: 10
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    raiseOnUser: true
+    range: 60
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Battlefield14/Weapons/FighterWeapons/rocket1.ogg
+    icon:
+      sprite: _Battlefield14/Objects/Weapons/Guns/fighterweapon_projectiles.rsi
+      state: aim9
+    event: !type:ProjectileSpellEvent
+      prototype: FighterMissileAim9xs
+      speech: action-speech-spell-cyborgmissile
