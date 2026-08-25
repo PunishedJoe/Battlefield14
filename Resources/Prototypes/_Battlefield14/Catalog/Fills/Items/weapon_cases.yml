@@ -401,6 +401,41 @@
     - id: MagazineRifleG3
       amount: 5
 
+#region Rifles, BE
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBESCARL
+  suffix: SCAR-L
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBESCARL
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBESCARH
+  suffix: SCAR-H
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBESCARH
+    - id: MagazineRifleSCARH
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBEF2000
+  suffix: F2000
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBEF2000
+    - id: MagazineRifleSTANAG
+      amount: 5
+
 #region Machine guns, DE
 
 - type: entity
@@ -629,7 +664,7 @@
     - id: MagazineBeltRP46
       amount: 2
 
-#region AMRs, US
+#region AMRs, RU
 
 - type: entity
   parent: WeaponCaseLong

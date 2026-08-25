@@ -271,6 +271,66 @@
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
       state: eotech
 
+- type: entity
+  name: F2000
+  parent: WeaponRifleBESCARL
+  id: WeaponRifleBEF2000
+  description: A bullpup rifle often compared to fish because of its strange shape.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -27
+  - type: Gun
+    minAngle: 26
+    maxAngle: 40
+    angleIncrease: 1
+    angleDecay: 10
+    projectileSpeed: 50 # bullpup so long barrel
+    soundGunshot:
+      collection: BF_SCARL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/rack.ogg
+      params:
+        volume: -2
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/boltcatch.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/chpull.ogg
+      params:
+        volume: -5
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: eotech
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: LaserPointer # the hidden..
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes STANAG magazines. It has a laser sight attached which improves recoil recovery.
+        color: "#4f94ad"
+        requireDetailRange: true
+
 #region Germany
 
 - type: entity
