@@ -219,3 +219,153 @@
       - description: Takes AKM pattern magazines.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  name: OSIPR
+  parent: BaseItem
+  id: WeaponRifleCMB
+  description: Overwatch Standard Issue Pulse Rifle.
+  suffix: ar2
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR2_alt.rsi
+    state: icon
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR2_alt.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR2_alt.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Item
+    size: Huge
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -20
+  - type: Gun
+    minAngle: 21
+    maxAngle: 35
+    angleIncrease: 1.5
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+    selectedMode: FullAuto
+    fireRate: 6
+    projectileSpeed: 45
+    shotsPerBurst: 3
+    burstCooldown: 0.3
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/guns/pulse/ar2_shot.ogg
+      params:
+        variation: 0.1
+    soundEmpty: /Audio/_Battlefield14/Weapons/guns/pulse/empty.ogg
+  - type: PowerCellSlot
+    cellSlotId: gun_magazine
+  - type: MagazineAmmoProvider
+    autoEject: true
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: PulsePlug
+        insertSound: /Audio/_Battlefield14/Weapons/guns/pulse/mag_in.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/guns/pulse/mag_out.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - PulsePlug
+        whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: OSIPR-IAR
+  parent: BaseWeaponRifle
+  id: WeaponRifleCMBLMG
+  description: Now THIS is an AR3.
+  suffix: ar3
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR2.rsi
+    state: icon
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR2.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR2.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -14
+    maxAngle: -10
+  - type: Gun
+    minAngle: 16
+    maxAngle: 40
+    angleIncrease: 4
+    angleDecay: 60
+    projectileSpeed: 50
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/guns/pulse/ar2_shot.ogg
+    soundEmpty: /Audio/_Battlefield14/Weapons/guns/pulse/empty.ogg
+    fireRate: 7.5
+  - type: ChamberMagazineAmmoProvider
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/guns/pulse/bolt_in.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/guns/pulse/bolt_out.ogg
+      params:
+        volume: -5
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineBeltBoxAr2
+        insertSound: /Audio/_Battlefield14/Weapons/guns/pulse/mag_in.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/guns/pulse/mag_out.ogg
+        priority: 2
+        swap: false
+        whitelist:
+          tags:
+            - MagazineBeltBoxAr2
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePulseLinked
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePulseLinked
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: true
+  - type: Appearance

@@ -40,3 +40,21 @@
     soundHit:
       path: /Audio/_Battlefield14/Weapons/Misc/LaserGun_Hit.ogg
     forceSound: true
+
+- type: entity
+  id: BulletRifleBFPulse
+  name: pulse
+  parent: BaseBulletIntermediate
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: pulse
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+        Structural: 3
+  - type: StaminaDamageOnCollide
+    damage: 8 # ~13 hits to stun
