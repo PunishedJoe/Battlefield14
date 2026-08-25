@@ -49,7 +49,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: ExtendDescription
     descriptionList:
-      - description: Uses a MAG 58 pattern attatchment system.
+      - description: Uses a MAG 58 pattern attachment system.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -87,7 +87,7 @@
   - type: Appearance
   - type: ExtendDescription
     descriptionList:
-      - description: Uses a maximi pattern attatchment system.
+      - description: Uses a maximi pattern attachment system.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -101,7 +101,7 @@
       - MagazineBeltBoxM60
   - type: ExtendDescription
     descriptionList:
-      - description: Uses an M60 pattern attatchment system.
+      - description: Uses an M60 pattern attachment system.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -246,5 +246,38 @@
   - type: MagazineVisuals
     magState: mag
     steps: 14
+    zeroVisible: false
+  - type: Appearance
+
+#region misc
+
+- type: entity
+  parent: BaseItem
+  id: MagazineBeltBoxAr2
+  name: "OSIPR-IAR belt box"
+  description: A big box that has a belt in it.
+  components:
+  - type: Tag
+    tags:
+      - MagazineBeltBoxAr2
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePulseLinked
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePulseLinked
+    capacity: 80
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/ar2.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
     zeroVisible: false
   - type: Appearance

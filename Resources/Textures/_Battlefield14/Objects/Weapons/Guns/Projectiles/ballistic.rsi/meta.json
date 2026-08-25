@@ -27,6 +27,9 @@
         },
         {
             "name": "bigsabot"
+        },
+        {
+            "name": "pulse"
         }
     ]
 }

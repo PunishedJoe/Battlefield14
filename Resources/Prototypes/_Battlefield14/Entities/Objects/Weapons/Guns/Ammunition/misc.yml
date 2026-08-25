@@ -1,0 +1,56 @@
+- type: entity
+  parent: BaseItem
+  id: PulsePlug
+  name: pulse plug
+  components:
+  - type: Item
+    size: Tiny
+  - type: PowerCell
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pulseplug_alt.rsi
+    layers:
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
+      state: base
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+      state: o2
+      shader: unshaded
+  - type: Appearance
+#  - type: PowerCellVisuals
+  - type: Battery
+    maxCharge: 1500
+    startingCharge: 1500
+    pricePerJoule: 0.15
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRifleBFPulse
+    fireCost: 50
+  - type: PowerCellVisuals
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 80
+      Gold: 40
+      Glass: 40
+      Plasma: 40
+    chemicalComposition:
+      Zinc: 7.5
+  - type: Tag
+    tags:
+    - PulsePlug
+
+- type: entity
+  id: BF_CartridgePulseLinked
+  name: linked pulse plug
+  parent: BaseCartridgeRifle
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePulseLinked
+  - type: CartridgeAmmo
+    proto: BulletRifleBFPulse
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pulseplug.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals

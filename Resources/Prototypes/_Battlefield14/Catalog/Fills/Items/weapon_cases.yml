@@ -677,29 +677,7 @@
     - id: MagazineSniperOSV96
       amount: 6
 
-#region Oddballs
-
-- type: entity
-  parent: WeaponCaseLong
-  id: BF14WeaponCaseLongUNSCMA5B
-  suffix: MA5B
-  components:
-  - type: StorageFill
-    contents:
-    - id: WeaponRifleUNSCMA5B
-    - id: MagazineRifleMA5B
-      amount: 5
-
-- type: entity
-  parent: WeaponCaseLong
-  id: BF14WeaponCaseLongBrigadorBonesaw
-  suffix: Bonesaw
-  components:
-  - type: StorageFill
-    contents:
-    - id: BF14WeaponMachineGunBrigadorBonesaw
-    - id: MagazineBeltBoxBonesaw
-      amount: 2
+#region Ammo
 
 - type: entity
   parent: WeaponCaseLong
@@ -770,3 +748,50 @@
       amount: 3
     - id: CartridgeRPG7Frag
       amount: 3
+
+
+#region Oddballs
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUNSCMA5B
+  suffix: MA5B
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleUNSCMA5B
+    - id: MagazineRifleMA5B
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBrigadorBonesaw
+  suffix: Bonesaw
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14WeaponMachineGunBrigadorBonesaw
+    - id: MagazineBeltBoxBonesaw
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCMBOSIPR
+  suffix: OSIPR
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleCMB
+    - id: PulsePlug
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCMBOSIPRLMG
+  suffix: OSIPR-IAR
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleCMBLMG
+    - id: MagazineBeltBoxAr2
+      amount: 2
