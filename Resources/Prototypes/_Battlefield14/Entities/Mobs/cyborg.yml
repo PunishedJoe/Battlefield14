@@ -70,7 +70,7 @@
         Brute: -12
   - type: Butcherable
     spawned:
-    - id: BookNophono
+    - id: MedicationBoxSyrettesFentanyl
       amount: 1
   - type: Bloodstream
     bloodMaxVolume: 3000
@@ -83,12 +83,11 @@
         Bloodloss: -1
   - type: MeleeWeapon
     soundHit:
-      collection: Punch
+      path: /Audio/Weapons/block_metal1.ogg
     damage:
       types:
-        Asphyxiation: 25
-        Bloodloss: 15
-        Structural: 35
+        Blunt: 40
+        Structural: 30
     animation: WeaponArcFist
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
@@ -108,6 +107,13 @@
     soundGunshot: /Audio/_Goobstation/Weapons/Guns/Gunshots/laser_lmg.ogg
   - type: Puller
     needsHands: false
+  - type: Inventory
+    templateId: nophono
+  - type: InventorySlots
+  - type: Hands
+  - type: Body
+    prototype: Aghost
+    thermalVisibility: false
   - type: ComplexInteraction
   - type: ActionGrant
     actions:
