@@ -272,6 +272,7 @@
     cellSlotId: gun_magazine
   - type: MagazineAmmoProvider
     autoEject: true
+    soundAutoEject: /Audio/_Battlefield14/Weapons/guns/pulse/bolt_out.ogg
   - type: ItemSlots
     slots:
       gun_magazine:

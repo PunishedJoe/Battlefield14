@@ -1,0 +1,180 @@
+- type: entity
+  name: Droyd
+  parent: [ BaseMob, MobDamageable, MobCombat ]
+  id: BF14MobCyborg
+  description: DROYD. ONLINE.
+  components:
+  - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
+    speaks:
+    - English
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+    - Sign
+    - English
+    - German
+    - Russian
+    - Ukrainian
+    - Mexican
+    - Esperanto
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: cyborg
+      sprite: _Battlefield14/Mobs/cyborg.rsi
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.3
+        density: 200
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: ContainerContainer
+  - type: MovementAlwaysTouching
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 4.5
+    weightlessAcceleration: 2
+    weightlessFriction: 2
+    baseWeightlessModifier: 2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+#      1000:
+      3000: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cyborg
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      1000: 0.85
+      2000: 0.7
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 3000
+    damage:
+      types:
+        Heat: -12
+      groups:
+        Brute: -12
+  - type: Butcherable
+    spawned:
+    - id: MedicationBoxSyrettesFentanyl
+      amount: 1
+  - type: Bloodstream
+    bloodMaxVolume: 3000
+    maxBleedAmount: 0
+    bloodlossDamage:
+      types:
+        Bloodloss: 0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss: -1
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Weapons/block_metal1.ogg
+    damage:
+      types:
+        Blunt: 40
+        Structural: 30
+    animation: WeaponArcFist
+  - type: HitscanBatteryAmmoProvider
+    proto: RedLaser
+    fireCost: 50
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 150
+  - type: Gun
+    fireRate: 6
+    useKey: false
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+    soundGunshot: /Audio/_Goobstation/Weapons/Guns/Gunshots/laser_lmg.ogg
+  - type: Puller
+    needsHands: false
+  - type: Inventory
+    templateId: nophono
+  - type: InventorySlots
+  - type: Hands
+  - type: Body
+    prototype: Aghost
+    thermalVisibility: false
+  - type: ComplexInteraction
+  - type: ActionGrant
+    actions:
+    - ActionGravityJump
+    - ActionCyborgRocket
+    - ActionCyborgGrenadeLauncher
+    - ActionCyborgMissile
+  - type: JumpAbility
+    jumpDistance: 2.75
+    jumpSound: /Audio/Effects/Footsteps/suitstep2.ogg
+  - type: ZombieImmune
+  - type: NightVision # Gen 3 wide-quadtube
+    relayOverlay: false
+    goggleEffect: true
+    viewCircleRadius: 450
+    viewCircleCount: 4
+    viewCircleSpacing: 280
+    action: ActionToggleNightVision
+    phosphorColor: "#679baf"
+    lightingColor: "#FFFFFF32"
+  - type: EmitSoundOnSpawn
+    sound: 
+      path: /Audio/_Battlefield14/Misc/cyborg/droyd_online.ogg
+      params:
+#        volume: -5
+        range: 30
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    inHandsOnly: false
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: "Droyd"
+    description: "Find fentanyl"
+    rules: "you're Droyd, do whatever the fuck you want"
+    raffle:
+      settings: short
+  - type: Insulated
+  - type: Grammar
+    attributes:
+      proper: true
+  - type: CanEscapeInventory # Carrying system from nyanotrasen.
+  - type: Tag
+    tags:
+    - CanPilot
+    - FootstepSound
+#BF14    - DoorBumpOpener
+    - Humanoid # Mono
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: BF_Footsteps_Voidsuit
+      params:
+        variation: 0.07
