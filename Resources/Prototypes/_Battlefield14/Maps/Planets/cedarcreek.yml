@@ -1,0 +1,50 @@
+- type: gameMap
+  id: BF14CedarCreek
+  mapName: 'Cedar Creek'
+  mapPath: /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap1.yml 
+  minPlayers: 8
+  maxPlayers: 30
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14ShuddihTown:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Cedar Creek, Bavaria"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Cedar Creek, Bavaria"
+          stationDescription: "A town in Germany with a nuclear power plant."
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            BWLieutenant: [ 1, 1 ]
+            BWSquadLeader: [ 3, 3 ]
+            BWRifleman: [ 12, 12 ]
+            BWAutomaticRifleman: [ 1, 1 ]
+            BWMedic: [ 3, 3 ]
+            BWRecon: [ 3, 3 ]
+            RGFLieutenant: [ 1, 1 ]
+            RGFSquadLeader: [ 3, 3 ]
+            RGFRifleman: [ 10, 10 ]
+            RGFAutomaticRifleman: [ 3, 3 ]
+            RGFMedic: [ 3, 3 ]
+            RGFRecon: [ 3, 3 ]
+        - type: CEStationZLevels
+          mapsAbove:
+            - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/F2.yml 
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
+            - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap0.yml
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+
+- type: zMap
+  id: BF14CedarCreekZMap
+  maps:
+    - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap0.yml    # Level 0
+    - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap1.yml    # Level 1
+    - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap1.yml    # Level 2
+  components:
+    - type: CEAutoGridGravity
