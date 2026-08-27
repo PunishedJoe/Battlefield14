@@ -241,7 +241,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
 
     private void OnPryTimeModifier(EntityUid uid, DoorComponent door, ref GetPryTimeModifierEvent args)
     {
-        args.BaseTime = door.PryTime;
+        args.BaseTime = (float) door.PryTime.TotalSeconds;
     }
 
     private void OnBeforePry(EntityUid uid, DoorComponent door, ref BeforePryEvent args)
@@ -258,12 +258,12 @@ public abstract partial class SharedDoorSystem : EntitySystem
         if (door.State == DoorState.Closed)
         {
             _adminLog.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(args.User)} pried {ToPrettyString(uid)} open");
-            StartOpening(uid, door, args.User, true);
+            StartOpening(uid, door, args.User, true, playSounds: door.PlaySoundsWhenPrying /* KS14: PlaySoundsWhenPrying */);
         }
         else if (door.State == DoorState.Open)
         {
             _adminLog.Add(LogType.Action, LogImpact.Medium, $"{ToPrettyString(args.User)} pried {ToPrettyString(uid)} closed");
-            StartClosing(uid, door, args.User, true);
+            StartClosing(uid, door, args.User, true, playSounds: door.PlaySoundsWhenPrying /* KS14: PlaySoundsWhenPrying */);
         }
     }
 
@@ -379,7 +379,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
     /// <param name="user"> The user (if any) opening the door</param>
     /// <param name="predicted">Whether the interaction would have been
     /// predicted. See comments in the PlaySound method on the Server system for details</param>
-    public void StartOpening(EntityUid uid, DoorComponent? door = null, EntityUid? user = null, bool predicted = false)
+    public void StartOpening(EntityUid uid, DoorComponent? door = null, EntityUid? user = null, bool predicted = false, bool playSounds = true /* KS14 */)
     {
         if (!Resolve(uid, ref door))
             return;
@@ -389,10 +389,14 @@ public abstract partial class SharedDoorSystem : EntitySystem
         if (!SetState(uid, DoorState.Opening, door))
             return;
 
-        if (predicted)
-            Audio.PlayPredicted(door.OpenSound, uid, user, AudioParams.Default.WithVolume(-5));
-        else if (_net.IsServer)
-            Audio.PlayPvs(door.OpenSound, uid, AudioParams.Default.WithVolume(-5));
+        // KS14: wrapped in `playSounds`
+        if (playSounds)
+        {
+            if (predicted)
+                Audio.PlayPredicted(door.OpenSound, uid, user, AudioParams.Default.WithVolume(-5));
+            else if (_net.IsServer)
+                Audio.PlayPvs(door.OpenSound, uid, AudioParams.Default.WithVolume(-5));
+        }
 
         if (lastState == DoorState.Emagging && TryComp<DoorBoltComponent>(uid, out var doorBoltComponent))
             SetBoltsDown((uid, doorBoltComponent), !doorBoltComponent.BoltsDown, user, true);
@@ -474,7 +478,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
         return !ev.PerformCollisionCheck || !GetColliding(uid).Any();
     }
 
-    public void StartClosing(EntityUid uid, DoorComponent? door = null, EntityUid? user = null, bool predicted = false)
+    public void StartClosing(EntityUid uid, DoorComponent? door = null, EntityUid? user = null, bool predicted = false, bool playSounds = true /* KS14 */)
     {
         if (!Resolve(uid, ref door))
             return;
@@ -482,10 +486,14 @@ public abstract partial class SharedDoorSystem : EntitySystem
         if (!SetState(uid, DoorState.Closing, door))
             return;
 
-        if (predicted)
-            Audio.PlayPredicted(door.CloseSound, uid, user, AudioParams.Default.WithVolume(-5));
-        else if (_net.IsServer)
-            Audio.PlayPvs(door.CloseSound, uid, AudioParams.Default.WithVolume(-5));
+        // KS14: wrapped in `playSounds`
+        if (playSounds)
+        {
+            if (predicted)
+                Audio.PlayPredicted(door.CloseSound, uid, user, AudioParams.Default.WithVolume(-5));
+            else if (_net.IsServer)
+                Audio.PlayPvs(door.CloseSound, uid, AudioParams.Default.WithVolume(-5));
+        }
     }
 
     /// <summary>
