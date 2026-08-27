@@ -45,6 +45,6 @@
   maps:
     - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap0.yml    # Level 0
     - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap1.yml    # Level 1
-    - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap1.yml    # Level 2
+    - /Maps/_Battlefield14/Planets/MultiZ/CedarCreek/BF14CedarCreekZMap2.yml    # Level 2
   components:
     - type: CEAutoGridGravity

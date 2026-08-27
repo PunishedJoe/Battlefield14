@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/27/2026 12:31:06
-  entityCount: 20340
+  time: 08/27/2026 13:51:23
+  entityCount: 20352
 maps:
 - 9697
 grids:
@@ -262,7 +262,7 @@ entities:
           version: 7
         10,18:
           ind: 10,18
-          tiles: WgAAAAAAAFoAAAAAAABaAAAAAAAAOwAAAAAAADsAAAAAAACNAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAFoAAAAAAABaAAAAAAAAWgAAAAAAADsAAAAAAAA7AAAAAAAAjQAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAABaAAAAAAAAWgAAAAAAAFoAAAAAAAA7AAAAAAAAOwAAAAAAAI0AAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAWgAAAAAAAFoAAAAAAABaAAAAAAAAOwAAAAAAADsAAAAAAACNAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAFoAAAAAAABaAAAAAAAAWgAAAAAAADsAAAAAAAA7AAAAAAAAjQAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAABaAAAAAAAAWgAAAAAAAFoAAAAAAAA7AAAAAAAAOwAAAAAAAI0AAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAWgAAAAAAAFoAAAAAAABaAAAAAAAAOwAAAAAAADsAAAAAAACNAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAFoAAAAAAABaAAAAAAAAWgAAAAAAADsAAAAAAAA7AAAAAAAAjQAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAAA7AAAAAAAAOwAAAAAAADsAAAAAAAA7AAAAAAAAOwAAAAAAAI0AAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAggAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAIIAAAAAAACCAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAggAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAIIAAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAAQAAAAAAAAEAAAAAAACCAAAAAAAACAAAAAAAAAgAAAAAAACCAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAAEAAAAAAAABAAAAAAAAggAAAAAAAAgAAAAAAAAIAAAAAAAAggAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAAQAAAAAAAAEAAAAAAACCAAAAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAA==
+          tiles: WgAAAAAAAFoAAAAAAABaAAAAAAAAOwAAAAAAADsAAAAAAACNAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAFoAAAAAAABaAAAAAAAAWgAAAAAAADsAAAAAAAA7AAAAAAAAjQAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAABaAAAAAAAAWgAAAAAAAFoAAAAAAAA7AAAAAAAAOwAAAAAAAI0AAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAWgAAAAAAAFoAAAAAAABaAAAAAAAAOwAAAAAAADsAAAAAAACNAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAFoAAAAAAABaAAAAAAAAWgAAAAAAADsAAAAAAAA7AAAAAAAAjQAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAABaAAAAAAAAWgAAAAAAAFoAAAAAAAA7AAAAAAAAOwAAAAAAAI0AAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAWgAAAAAAAFoAAAAAAABaAAAAAAAAOwAAAAAAADsAAAAAAACNAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAFoAAAAAAABaAAAAAAAAWgAAAAAAADsAAAAAAAA7AAAAAAAAjQAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAAA7AAAAAAAAOwAAAAAAADsAAAAAAAA7AAAAAAAAOwAAAAAAAI0AAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAggAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAIIAAAAAAACCAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAggAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAIIAAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAAQAAAAAAAAEAAAAAAACCAAAAAAAACAAAAAAAAAgAAAAAAACCAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAAEAAAAAAAABAAAAAAAAggAAAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAAEMAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAAQwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAABDAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEMAAAAAAACLAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAAQAAAAAAAAEAAAAAAACCAAAAAAAAAAAAAAAAAAAAAAAAAACCAAAAAAAAQwAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAABDAAAAAAAAiwAAAAAAAIsAAAAAAACLAAAAAAAAiwAAAAAAAA==
           version: 7
         10,19:
           ind: 10,19
@@ -1525,10 +1525,10 @@ entities:
     - type: GridPathfinding
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
         Puddle: []
         MetalFoam: []
         Smoke: []
+        Kudzu: []
     - type: GravityShake
       shakeTimes: 10
     - type: GasTileOverlay
@@ -1541,7 +1541,7 @@ entities:
   - uid: 9697
     components:
     - type: MetaData
-      name: Mapping BF14CedarCreekZMap [0]
+      name: Mapping BF14CedarCreekZMap [1]
     - type: Transform
     - type: Map
       mapPaused: True
@@ -8190,6 +8190,41 @@ entities:
     components:
     - type: Transform
       pos: 59.5,279.5
+      parent: 1
+  - uid: 12872
+    components:
+    - type: Transform
+      pos: 129.5,293.5
+      parent: 1
+  - uid: 12873
+    components:
+    - type: Transform
+      pos: 126.5,293.5
+      parent: 1
+  - uid: 12875
+    components:
+    - type: Transform
+      pos: 125.5,293.5
+      parent: 1
+  - uid: 14316
+    components:
+    - type: Transform
+      pos: 127.5,293.5
+      parent: 1
+  - uid: 14318
+    components:
+    - type: Transform
+      pos: 128.5,293.5
+      parent: 1
+  - uid: 14321
+    components:
+    - type: Transform
+      pos: 130.5,293.5
+      parent: 1
+  - uid: 14322
+    components:
+    - type: Transform
+      pos: 131.5,293.5
       parent: 1
 - proto: CableMV
   entities:
@@ -28471,7 +28506,7 @@ entities:
       pos: 98.5,92.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -28874,7 +28909,7 @@ entities:
       pos: 112.5,80.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -28911,7 +28946,7 @@ entities:
       pos: 112.5,59.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -29145,7 +29180,7 @@ entities:
       pos: 98.5,71.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -29234,7 +29269,7 @@ entities:
       pos: 48.5,59.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -29468,7 +29503,7 @@ entities:
       pos: 34.5,71.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -29548,7 +29583,7 @@ entities:
       pos: 48.5,80.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -29782,7 +29817,7 @@ entities:
       pos: 34.5,92.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -29860,7 +29895,7 @@ entities:
       pos: 36.5,206.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -30094,7 +30129,7 @@ entities:
       pos: 22.5,218.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -30173,7 +30208,7 @@ entities:
       pos: 71.5,206.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -30407,7 +30442,7 @@ entities:
       pos: 57.5,218.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -9961.644
+      secondsUntilStateChange: -12216.15
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -35801,12 +35836,6 @@ entities:
     - type: Transform
       pos: 159.5,301.5
       parent: 1
-  - uid: 12872
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 163.5,300.5
-      parent: 1
   - uid: 12877
     components:
     - type: Transform
@@ -36184,6 +36213,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 44.5,65.5
+      parent: 1
+  - uid: 14320
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 164.5,298.5
       parent: 1
   - uid: 18394
     components:
@@ -38910,6 +38945,18 @@ entities:
     - type: Transform
       pos: 128.5,283.5
       parent: 1
+  - uid: 14317
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 163.5,300.5
+      parent: 1
+  - uid: 14319
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 164.5,300.5
+      parent: 1
   - uid: 18429
     components:
     - type: Transform
@@ -39859,6 +39906,17 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 93.5,177.5
+      parent: 1
+  - uid: 14314
+    components:
+    - type: Transform
+      pos: 163.5,299.5
+      parent: 1
+  - uid: 14315
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 164.5,299.5
       parent: 1
 - proto: RailingRound
   entities:
@@ -64546,23 +64604,11 @@ entities:
       parent: 1
 - proto: Stairs
   entities:
-  - uid: 12873
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 163.5,301.5
-      parent: 1
   - uid: 12874
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 163.5,300.5
-      parent: 1
-  - uid: 12875
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 164.5,301.5
       parent: 1
   - uid: 12876
     components:
@@ -64620,6 +64666,24 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 128.5,283.5
+      parent: 1
+  - uid: 14311
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 108.5,291.5
+      parent: 1
+  - uid: 14312
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 108.5,292.5
+      parent: 1
+  - uid: 14313
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 108.5,290.5
       parent: 1
 - proto: StairsHighGround
   entities:
