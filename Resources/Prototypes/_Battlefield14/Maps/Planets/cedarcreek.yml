@@ -7,7 +7,7 @@
   randomRotation: false
   maxRandomOffset: 0
   stations:
-    BF14ShuddihTown:
+    BF14CedarCreek:
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
