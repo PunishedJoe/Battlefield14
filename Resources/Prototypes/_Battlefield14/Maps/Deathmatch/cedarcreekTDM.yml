@@ -1,0 +1,37 @@
+- type: gameMap
+  id: BF14CedarCreekTDM
+  mapName: 'Cedar Creek (TDM)'
+  mapPath: /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap1.yml
+  minPlayers: 1
+  maxPlayers: 20
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14CedarCreekTDM:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Cedar Creek, Bavaria"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Cedar Creek, Bavaria"
+          stationDescription: "A hospital in Bavaria."
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            TDMRed: [ 10, 10 ]
+            TDMBlue: [ 10, 10 ]
+        - type: CEStationZLevels
+          mapsAbove:
+            - /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap2.yml 
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+
+- type: zMap
+  id: BF14CedarCreekTDMZMap
+  maps:
+    - /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap0.yml    # Level 0
+    - /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap1.yml    # Level 1
+    - /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap2.yml    # Level 2
+  components:
+    - type: CEAutoGridGravity
