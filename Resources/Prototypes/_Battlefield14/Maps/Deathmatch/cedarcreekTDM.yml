@@ -1,7 +1,7 @@
 - type: gameMap
   id: BF14CedarCreekTDM
   mapName: 'Cedar Creek (TDM)'
-  mapPath: /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap1.yml
+  mapPath: /Maps/_Battlefield14/Deathmatch/cedarcreek.yml
   minPlayers: 1
   maxPlayers: 20
   randomRotation: false
@@ -21,17 +21,5 @@
           availableJobs:
             TDMRed: [ 10, 10 ]
             TDMBlue: [ 10, 10 ]
-        - type: CEStationZLevels
-          mapsAbove:
-            - /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap2.yml 
-          zLevelsComponentOverrides:
-            - type: CEAutoGridGravity
-
-- type: zMap
-  id: BF14CedarCreekTDMZMap
-  maps:
-    - /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap0.yml    # Level 0
-    - /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap1.yml    # Level 1
-    - /Maps/_Battlefield14/Deathmatch/MultiZ/CedarCreekTDM/BF14CedarCreekTDMZMap2.yml    # Level 2
-  components:
-    - type: CEAutoGridGravity
+        - type: StationBiome
+          biome: Grasslands
