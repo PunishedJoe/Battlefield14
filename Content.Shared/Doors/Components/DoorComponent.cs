@@ -164,7 +164,7 @@ public sealed partial class DoorComponent : Component
     /// The sprite states used for the door while it's open.
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
-    public List<(Enum, string)> OpenSpriteStates = default!;
+    public List<(DoorVisualLayers, string)> OpenSpriteStates = default!;
 
     /// <summary>
     /// The sprite state used for the door when it's closed.
@@ -177,7 +177,7 @@ public sealed partial class DoorComponent : Component
     /// The sprite states used for the door while it's closed.
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
-    public List<(Enum, string)> ClosedSpriteStates = default!;
+    public List<(DoorVisualLayers, string)> ClosedSpriteStates = default!;
 
     /// <summary>
     /// The sprite state used for the door when it's opening.
@@ -275,8 +275,8 @@ public sealed partial class DoorComponent : Component
     /// <summary>
     /// Default time that the door should take to pry open.
     /// </summary>
-    [DataField]
-    public TimeSpan PryTime = TimeSpan.FromSeconds(1.5f);
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public float PryTime = 1.5f;
 
     [DataField]
     public bool ChangeAirtight = true;
