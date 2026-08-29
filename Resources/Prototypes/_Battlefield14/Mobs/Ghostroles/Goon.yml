@@ -1,7 +1,7 @@
 - type: entity
-  parent: MobHumanFSBBase
+  parent: BF14MobHumanFSBBase
   id: BF14MobGoon
-  name: Goon
+  name: goon
   suffix: BF14
   components:
   - type: Loadout
@@ -14,7 +14,45 @@
       settings: short
 
 - type: entity
-  name: Hardmode scav
+  parent: BF14MobHumanHECUBase
+  id: BF14MobTDMBlue
+  name: blue goon
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [BF14TDMGearBlue]
+  - type: RandomMetadata
+    nameSegments:
+    - names_tdm_goon_first
+    - "Reds"
+  - type: GhostRole
+    name: job-name-goon
+    description: job-description-tdm-goon-blue
+    rules: ghost-role-information-tdm-goon-blue-rules
+    raffle:
+      settings: short
+
+- type: entity
+  parent: BF14MobHumanHECUBase
+  id: BF14MobTDMRed
+  name: red goon
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [BF14TDMGearRed]
+  - type: RandomMetadata
+    nameSegments:
+    - names_tdm_goon_first
+    - "Blues"
+  - type: GhostRole
+    name: job-name-goon
+    description: job-description-tdm-goon-red
+    rules: ghost-role-information-tdm-goon-red-rules
+    raffle:
+      settings: short
+
+- type: entity
+  name: hardmode scav
   parent: MobHuman
   id: BF14MobScavHardmode
   suffix: BF14

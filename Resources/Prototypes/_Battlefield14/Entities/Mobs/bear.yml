@@ -1,9 +1,9 @@
 - type: entity
   name: bear5
   parent: [ BaseMob, MobCombat, MobDamageable ]
-  id: Bear5
+  id: BF14MobBear5
   description: You wouldnt want to know.....
-  suffix: hostile
+  suffix: Admeme
   components:
   - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
     speaks:

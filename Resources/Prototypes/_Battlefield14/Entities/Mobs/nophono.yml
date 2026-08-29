@@ -1,7 +1,7 @@
 - type: entity
   name: nophono
   parent: [ BaseMob, MobDamageable, MobCombat, InventoryBase ]
-  id: Nophono
+  id: BF14MobNophono
   description: He cares.
   components:
   - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
