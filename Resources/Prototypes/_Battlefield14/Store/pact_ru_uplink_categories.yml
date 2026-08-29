@@ -137,7 +137,7 @@
   productEntity: CrateSecgearPACTFilledPKM
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/PKM.rsi, state: icon }
   cost:
-    PACTRequisition: 100 # 16 minutes 40 seconds approx
+    PACTRequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -153,7 +153,7 @@
   productEntity: CrateSecgearPACTFilledRPG7
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG7.rsi, state: icon }
   cost:
-    PACTRequisition: 80 # 13 minutes 20 seconds approx
+    PACTRequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkPACTRUWeapons
   conditions:

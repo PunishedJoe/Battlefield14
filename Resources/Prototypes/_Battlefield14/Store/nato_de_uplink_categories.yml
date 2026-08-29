@@ -6,7 +6,7 @@
   productEntity: CrateSecgearNATOFilledMG36
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36.rsi, state: icon }
   cost:
-    NATORequisition: 60 # 10 minutes approx
+    NATORequisition: 30 # 5 minutes approx
   categories:
     - UplinkNATODEWeapons
   conditions:
@@ -22,7 +22,7 @@
   productEntity: CrateSecgearNATOFilledPZF3
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Panzerfaust3.rsi, state: icon }
   cost:
-    NATORequisition: 80 # 13 minutes 20 seconds approx
+    NATORequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkNATODEWeapons
   conditions:
@@ -38,7 +38,7 @@
   productEntity: CrateSecgearNATOFilledMG3
   icon: { sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/mg3.rsi, state: icon }
   cost:
-    NATORequisition: 100 # 16 minutes 40 seconds approx
+    NATORequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkNATODEWeapons
   conditions:

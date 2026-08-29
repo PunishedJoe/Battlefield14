@@ -8,7 +8,7 @@
   productEntity: CrateSecgearNATOFilledM249Para
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M249Para.rsi, state: icon }
   cost:
-    NATORequisition: 100 # 16 minutes 40 seconds approx
+    NATORequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkNATOUSWeapons
   conditions:
@@ -24,7 +24,7 @@
   productEntity: CrateSecgearNATOFilledM240B
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/M240B.rsi, state: icon }
   cost:
-    NATORequisition: 100 # 16 minutes 40 seconds approx
+    NATORequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkNATOUSWeapons
   conditions:
@@ -40,7 +40,7 @@
   productEntity: CrateSecgearNATOFilledSMAW
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/SMAW.rsi, state: icon }
   cost:
-    NATORequisition: 80 # 13 minutes 20 seconds approx
+    NATORequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkNATOUSWeapons
   conditions:
