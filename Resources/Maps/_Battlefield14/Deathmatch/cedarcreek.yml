@@ -3405,14 +3405,14 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 100.5,111.5
       parent: 1
-- proto: BF14WeaponCaseLongRUPKM
+- proto: BF14WeaponCaseLongUSM240B
   entities:
   - uid: 933
     components:
     - type: Transform
       pos: 48.5,14.5
       parent: 1
-- proto: BF14WeaponCaseLongUSM240B
+- proto: BF14WeaponCaseLongRUPKM
   entities:
   - uid: 6784
     components:

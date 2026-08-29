@@ -13,6 +13,17 @@
     pocket2: PouchFirstAidFilled
 
 - type: startingGear
+  id: BF14GoonGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCombatSuitDigitalBlack
+    ears: ClothingHeadsetGrey
+    balaclava: ClothingBalaclavaSkiMaskMouthBlack
+    outerClothing: ClothingOuterArmorWebVestSec
+    belt: ClothingBeltStationSecurityFilled
+    shoes: ClothingShoesBootsJackFilled
+    pocket2: PouchFirstAidFilled
+
+- type: startingGear
   id: BF14TDMGearBlue
   equipment:
     id: USMCRiflemanIDCard

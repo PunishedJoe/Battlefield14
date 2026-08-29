@@ -41,7 +41,7 @@
   - !type:GroupLoadoutEffect
     proto: BF_VDV_SL_VET
   inhand:
-  - BF14WeaponCaseShortSR1MP
+  - BF14WeaponCaseShortRUSR1MP
 
 - type: loadout
   id: LoadoutGunRUTT33VDVVET
