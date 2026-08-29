@@ -1,9 +1,10 @@
 # Base
 - type: entity
   parent: MobHuman
-  id: MobHumanHECUBase
+  id: BF14MobHumanHECUBase
   name: john HECU
   suffix: Human, Base, HECU, BF14
+  abstract: true
   components:
   - type: HumanoidAppearance
     height: 1.0
@@ -39,8 +40,8 @@
 
 # Squad Leader
 - type: entity
-  parent: MobHumanHECUBase
-  id: MobHumanHECUSquadLeader
+  parent: BF14MobHumanHECUBase
+  id: BF14MobHumanHECUSquadLeader
   name: HECU Squad Leader
   suffix: BF14
   components:
@@ -61,8 +62,8 @@
 
 # Rifleman
 - type: entity
-  parent: MobHumanHECUBase
-  id: MobHumanHECURifleman
+  parent: BF14MobHumanHECUBase
+  id: BF14MobHumanHECURifleman
   name: HECU Rifleman
   suffix: BF14
   components:
@@ -78,8 +79,8 @@
 ## Support/Weapons specialist
 # Shotgunner
 - type: entity
-  parent: MobHumanHECUBase
-  id: MobHumanHECUShotgunner
+  parent: BF14MobHumanHECUBase
+  id: BF14MobHumanHECUShotgunner
   name: HECU Shotgunner
   suffix: BF14
   components:
@@ -94,8 +95,8 @@
 
 # Machinegunner
 - type: entity
-  parent: MobHumanHECUBase
-  id: MobHumanHECUMachinegunner
+  parent: BF14MobHumanHECUBase
+  id: BF14MobHumanHECUMachinegunner
   name: HECU Machinegunner
   suffix: BF14
   components:
@@ -110,8 +111,8 @@
 
 # anti-tank
 - type: entity
-  parent: MobHumanHECUBase
-  id: MobHumanHECUAntitank
+  parent: BF14MobHumanHECUBase
+  id: BF14MobHumanHECUAntitank
   name: HECU SMAW Assaultman
   suffix: BF14
   components:
@@ -126,8 +127,8 @@
 
 ## Corpsman
 - type: entity
-  parent: MobHumanHECUBase
-  id: MobHumanHECUMedic
+  parent: BF14MobHumanHECUBase
+  id: BF14MobHumanHECUMedic
   name: HECU Corpsman
   suffix: BF14
   components:

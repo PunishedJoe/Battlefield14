@@ -1,9 +1,10 @@
 # Base
 - type: entity
   parent: MobHuman
-  id: MobHumanMarsocBaseBF14
+  id: BF14MobHumanMarsocBase
   name: john marsoc
   suffix: Human, Base, Marsoc, BF14
+  abstract: true
   components:
   - type: HumanoidAppearance
     height: 1.0
@@ -43,8 +44,8 @@
 
 # Fireteam Leader
 - type: entity
-  parent: MobHumanMarsocBaseBF14
-  id: MobHumanMarsocBF14SquadLeader
+  parent: BF14MobHumanMarsocBase
+  id: BF14MobHumanMarsocSquadLeader
   name: MARSOC Fireteam Leader
   suffix: BF14
   components:
@@ -59,8 +60,8 @@
 
 # Rifleman
 - type: entity
-  parent: MobHumanMarsocBaseBF14
-  id: MobHumanMarsocBF14Rifleman
+  parent: BF14MobHumanMarsocBase
+  id: BF14MobHumanMarsocRifleman
   name: MARSOC Rifleman
   suffix: BF14
   components:
@@ -75,8 +76,8 @@
 
 # Automatic Rifleman
 - type: entity
-  parent: MobHumanMarsocBaseBF14
-  id: MobHumanMarsocBF14AutomaticRifleman
+  parent: BF14MobHumanMarsocBase
+  id: BF14MobHumanMarsocAutomaticRifleman
   name: MARSOC Automatic Rifleman
   suffix: BF14
   components:
@@ -91,8 +92,8 @@
 
 # Corpsman
 - type: entity
-  parent: MobHumanMarsocBaseBF14
-  id: MobHumanMarsocBF14Medic
+  parent: BF14MobHumanMarsocBase
+  id: BF14MobHumanMarsocMedic
   name: MARSOC Corpsman
   suffix: BF14
   components:
@@ -111,8 +112,8 @@
 
 # Fireteam Leader
 - type: entity
-  parent: MobHumanMarsocBaseBF14
-  id: MobHumanMarsocBF14SquadLeaderEVA
+  parent: BF14MobHumanMarsocBase
+  id: BF14MobHumanMarsocSquadLeaderEVA
   name: MARSOC Fireteam Leader
   suffix: BF14, EVA
   components:
@@ -127,8 +128,8 @@
 
 # Rifleman
 - type: entity
-  parent: MobHumanMarsocBaseBF14
-  id: MobHumanMarsocBF14RiflemanEVA
+  parent: BF14MobHumanMarsocBase
+  id: BF14MobHumanMarsocRiflemanEVA
   name: MARSOC Rifleman
   suffix: BF14, EVA
   components:
@@ -143,8 +144,8 @@
 
 # Automatic Rifleman
 - type: entity
-  parent: MobHumanMarsocBaseBF14
-  id: MobHumanMarsocBF14AutomaticRiflemanEVA
+  parent: BF14MobHumanMarsocBase
+  id: BF14MobHumanMarsocAutomaticRiflemanEVA
   name: MARSOC Automatic Rifleman
   suffix: BF14, EVA
   components:
@@ -159,8 +160,8 @@
 
 # Corpsman
 - type: entity
-  parent: MobHumanMarsocBaseBF14
-  id: MobHumanMarsocBF14MedicEVA
+  parent: BF14MobHumanMarsocBase
+  id: BF14MobHumanMarsocMedicEVA
   name: MARSOC Corpsman
   suffix: BF14, EVA
   components:

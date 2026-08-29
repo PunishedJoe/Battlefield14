@@ -1,9 +1,10 @@
 # Base
 - type: entity
   parent: MobHuman
-  id: MobHumanFSBBase
+  id: BF14MobHumanFSBBase
   name: vlad FSB
   suffix: Human, Base, FSB, BF14
+  abstract: true
   components:
   - type: HumanoidAppearance
     height: 1.0
@@ -45,8 +46,8 @@
 
 # Fireteam Leader
 - type: entity
-  parent: MobHumanFSBBase
-  id: MobHumanFSBSquadLeader
+  parent: BF14MobHumanFSBBase
+  id: BF14MobHumanFSBSquadLeader
   name: FSB Team Leader
   suffix: BF14
   components:
@@ -61,8 +62,8 @@
 
 # Rifleman
 - type: entity
-  parent: MobHumanFSBBase
-  id: MobHumanFSBRifleman
+  parent: BF14MobHumanFSBBase
+  id: BF14MobHumanFSBRifleman
   name: FSB Rifleman
   suffix: BF14
   components:
@@ -77,8 +78,8 @@
 
 # Support
 - type: entity
-  parent: MobHumanFSBBase
-  id: MobHumanFSBSupport
+  parent: BF14MobHumanFSBBase
+  id: BF14MobHumanFSBSupport
   name: FSB Support
   suffix: BF14
   components:
@@ -93,8 +94,8 @@
 
 # Combat Medic
 - type: entity
-  parent: MobHumanFSBBase
-  id: MobHumanFSBMedic
+  parent: BF14MobHumanFSBBase
+  id: BF14MobHumanFSBMedic
   name: FSB Combat Medic
   suffix: BF14
   components:
@@ -111,8 +112,8 @@
 
 # Recon
 - type: entity
-  parent: MobHumanFSBBase
-  id: MobHumanFSBRecon
+  parent: BF14MobHumanFSBBase
+  id: BF14MobHumanFSBRecon
   name: FSB Recon
   suffix: BF14
   components:
@@ -129,8 +130,8 @@
 
 # Fireteam Leader
 - type: entity
-  parent: MobHumanFSBSquadLeader
-  id: MobHumanFSBSquadLeaderEVA
+  parent: BF14MobHumanFSBSquadLeader
+  id: BF14MobHumanFSBSquadLeaderEVA
   name: FSB Team Leader
   suffix: BF14, EVA
   components:
@@ -139,8 +140,8 @@
 
 # Rifleman
 - type: entity
-  parent:  MobHumanFSBRifleman
-  id: MobHumanFSBRiflemanEVA
+  parent:  BF14MobHumanFSBRifleman
+  id: BF14MobHumanFSBRiflemanEVA
   name: FSB Rifleman
   suffix: BF14, EVA
   components:
@@ -149,8 +150,8 @@
 
 # Support
 - type: entity
-  parent: MobHumanFSBSupport
-  id: MobHumanFSBSupportEVA
+  parent: BF14MobHumanFSBSupport
+  id: BF14MobHumanFSBSupportEVA
   name: FSB Support
   suffix: BF14, EVA
   components:
@@ -159,8 +160,8 @@
 
 # Combat Medic
 - type: entity
-  parent: MobHumanFSBMedic
-  id: MobHumanFSBMedicEVA
+  parent: BF14MobHumanFSBMedic
+  id: BF14MobHumanFSBMedicEVA
   name: FSB Combat Medic
   suffix: BF14, EVA
   components:
@@ -169,8 +170,8 @@
 
 # Recon
 - type: entity
-  parent: MobHumanFSBRecon
-  id: MobHumanFSBReconEVA
+  parent: BF14MobHumanFSBRecon
+  id: BF14MobHumanFSBReconEVA
   name: FSB Recon
   suffix: BF14, EVA
   components:
