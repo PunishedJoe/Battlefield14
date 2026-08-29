@@ -78,7 +78,10 @@ public sealed class FoldableSystem : EntitySystem
         component.IsFolded = folded;
         Dirty(uid, component);
         _appearance.SetData(uid, FoldedVisuals.State, folded);
-        _buckle.StrapSetEnabled(uid, !component.IsFolded);
+
+        // RMC14
+        if (component.EnableStrapOnUnfold)
+            _buckle.StrapSetEnabled(uid, !component.IsFolded);
 
         var ev = new FoldedEvent(folded);
         RaiseLocalEvent(uid, ref ev);
@@ -102,6 +105,10 @@ public sealed class FoldableSystem : EntitySystem
 
         // Can't un-fold in any container unless enabled (locker, hands, inventory, whatever).
         if (_container.IsEntityInContainer(uid) && !fold.CanFoldInsideContainer)
+            return false;
+
+        // RMC14
+        if (fold.IsLocked)
             return false;
 
         var ev = new FoldAttemptEvent();
@@ -129,6 +136,10 @@ public sealed class FoldableSystem : EntitySystem
     private void AddFoldVerb(EntityUid uid, FoldableComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
         if (!args.CanAccess || !args.CanInteract || args.Hands == null || !CanToggleFold(uid, component))
+            return;
+
+        // RMC14
+        if (component.IsLocked)
             return;
 
         AlternativeVerb verb = new()

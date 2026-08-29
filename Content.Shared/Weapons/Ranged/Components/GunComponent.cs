@@ -340,6 +340,14 @@ public sealed partial class GunComponent : Component
     /// </summary>
     [DataField]
     public float ExecutionModifier = 9.0f;
+
+    // RMC14
+    /// <summary>
+    /// Offsets the spawn location of the projectile.
+    /// </summary>
+    /// <example>[0, -1] means the projectile spawns 1 tile in front of the shooter</example>
+    [DataField]
+    public Vector2 ShootOriginOffset = Vector2.Zero;
 }
 
 [Flags]

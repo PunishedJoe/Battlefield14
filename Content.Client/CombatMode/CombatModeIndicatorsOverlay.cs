@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Client._RMC14.Emplacements;
 using Content.Client.Hands.Systems;
 using Content.Shared._RMC14.CombatMode; // Mono
 using Content.Shared.Weapons.Ranged.Components;
@@ -29,6 +30,7 @@ public sealed class CombatModeIndicatorsOverlay : Overlay
     private readonly HandsSystem _hands = default!;
     private readonly RMCCombatModeSystem _rmcCombatMode; // Mono
     private readonly SpriteSystem _sprite; // Mono
+    private readonly RMCWeaponControllerSystem _rmcWeaponController; // Mono
 
     private readonly Texture _gunSight;
     private readonly Texture _gunBoltSight;
@@ -59,6 +61,7 @@ public sealed class CombatModeIndicatorsOverlay : Overlay
 
         _rmcCombatMode = entMan.System<RMCCombatModeSystem>(); // Mono
         _sprite = entMan.System<SpriteSystem>(); // Mono
+        _rmcWeaponController = entMan.System<RMCWeaponControllerSystem>(); // Mono
     }
 
     protected override bool BeforeDraw(in OverlayDrawArgs args)
@@ -90,7 +93,11 @@ public sealed class CombatModeIndicatorsOverlay : Overlay
         var sight = isHandGunItem ? (isGunBolted ? _gunSight : _gunBoltSight) : _meleeSight;
 
         // Mono Start
-        if (handEntity != null && _rmcCombatMode.GetCrosshair(handEntity.Value) is { } crosshair)
+        var crosshairEntity = handEntity;
+        if (_rmcWeaponController.TryGetControllingWeapon(out var weapon))
+            crosshairEntity = weapon;
+
+        if (crosshairEntity != null && _rmcCombatMode.GetCrosshair(crosshairEntity.Value) is { } crosshair)
         {
             sight = _sprite.Frame0(crosshair);
             var sightSize = sight.Size * limitedScale;

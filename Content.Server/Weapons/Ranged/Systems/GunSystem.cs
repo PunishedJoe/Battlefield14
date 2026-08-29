@@ -315,7 +315,7 @@ public sealed partial class GunSystem : SharedGunSystem
 
     protected override void Popup(string message, EntityUid? uid, EntityUid? user) { }
 
-    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null)
+    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null, Vector2 offset = default, Vector2 originOffset = default)
     {
         var filter = Robust.Shared.Player.Filter.Pvs(gunUid, 0.6f, EntityManager); // Mono - default -> 0.6f
 
