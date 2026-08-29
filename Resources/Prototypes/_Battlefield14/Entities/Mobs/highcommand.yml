@@ -1,9 +1,9 @@
 - type: entity
   name: AlpharingTheHydra
   parent: [ BaseMob, MobCombat, MobDamageable ]
-  id: HighCommand
+  id: BF14MobHighCommand
   description: When you embarrass yourself in front of high command...
-  suffix: hostile
+  suffix: Admeme
   components:
   - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
     speaks:
