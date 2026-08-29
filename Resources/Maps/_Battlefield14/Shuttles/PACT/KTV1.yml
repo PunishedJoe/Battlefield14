@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/10/2026 17:47:22
-  entityCount: 177
+  time: 08/29/2026 10:41:00
+  entityCount: 175
 maps: []
 grids:
 - 1
@@ -56,9 +56,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
-        Smoke: []
         Kudzu: []
+        Smoke: []
+        Puddle: []
         MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -794,12 +794,10 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 102
           - 101
           - 100
-          - 103
-          - 104
           - 105
+          - 104
 - proto: ComputerGunneryConsole
   entities:
   - uid: 77
@@ -930,39 +928,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: Magazine23mmFrag
-  entities:
-  - uid: 103
-    components:
-    - type: Transform
-      parent: 99
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: MagazinePistolMP443
-  entities:
-  - uid: 100
-    components:
-    - type: Transform
-      parent: 99
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-    - type: InsideEntityStorage
-  - uid: 101
-    components:
-    - type: Transform
-      parent: 99
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-    - type: InsideEntityStorage
 - proto: PaperOffice
   entities:
   - uid: 167
@@ -1075,6 +1040,15 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,6.5
       parent: 1
+- proto: ShipRepairKitFilled
+  entities:
+  - uid: 101
+    components:
+    - type: Transform
+      parent: 99
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SignalButtonDirectional
   entities:
   - uid: 164
@@ -1351,9 +1325,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5,2.5
       parent: 1
-- proto: WeaponPistolMP443
+- proto: WeaponShotgunRURMB93
   entities:
-  - uid: 102
+  - uid: 100
     components:
     - type: Transform
       parent: 99

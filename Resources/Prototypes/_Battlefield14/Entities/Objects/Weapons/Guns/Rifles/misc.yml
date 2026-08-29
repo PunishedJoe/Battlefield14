@@ -264,22 +264,22 @@
     shotsPerBurst: 3
     burstCooldown: 0.3
     soundGunshot:
-      path: /Audio/_Battlefield14/Weapons/Guns/Pulse/ar2_shot.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/pulse/ar2_shot.ogg
       params:
         variation: 0.1
-    soundEmpty: /Audio/_Battlefield14/Weapons/Guns/Pulse/empty.ogg
+    soundEmpty: /Audio/_Battlefield14/Weapons/Guns/pulse/empty.ogg
   - type: PowerCellSlot
     cellSlotId: gun_magazine
   - type: MagazineAmmoProvider
     autoEject: true
-    soundAutoEject: /Audio/_Battlefield14/Weapons/Guns/Pulse/bolt_out.ogg
+    soundAutoEject: /Audio/_Battlefield14/Weapons/Guns/pulse/bolt_out.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: PulsePlug
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/Pulse/mag_in.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Pulse/mag_out.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/pulse/mag_in.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/pulse/mag_out.ogg
         priority: 2
         whitelist:
           tags:
@@ -333,16 +333,16 @@
     - FullAuto
     selectedMode: FullAuto
     soundGunshot:
-      path: /Audio/_Battlefield14/Weapons/Guns/Pulse/ar2_shot.ogg
-    soundEmpty: /Audio/_Battlefield14/Weapons/Guns/Pulse/empty.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/pulse/ar2_shot.ogg
+    soundEmpty: /Audio/_Battlefield14/Weapons/Guns/pulse/empty.ogg
     fireRate: 7.5
   - type: ChamberMagazineAmmoProvider
     soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/Pulse/bolt_in.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/pulse/bolt_in.ogg
       params:
         volume: -5
     soundBoltOpened:
-      path: /Audio/_Battlefield14/Weapons/Guns/Pulse/bolt_out.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/pulse/bolt_out.ogg
       params:
         volume: -5
   - type: ItemSlots
@@ -350,8 +350,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineBeltBoxAr2
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/Pulse/mag_in.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Pulse/mag_out.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/pulse/mag_in.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/pulse/mag_out.ogg
         priority: 2
         swap: false
         whitelist:
