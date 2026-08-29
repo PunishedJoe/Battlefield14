@@ -47,13 +47,13 @@
           tags:
             - BF_CartridgeRifle556x45
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -35
+    minAngle: 0
+    maxAngle: 0
   - type: Gun
-    minAngle: 19 # wielded = 0
-    maxAngle: 50 # wielded = 15
-    angleIncrease: 0.7
-    angleDecay: 16
+    minAngle: 6
+    maxAngle: 15
+    angleIncrease: 0.5
+    angleDecay: 12
     availableModes:
     - SemiAuto
     - FullAuto
@@ -163,13 +163,13 @@
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -35
+    minAngle: 0
+    maxAngle: 0
   - type: Gun
-    minAngle: 19
-    maxAngle: 50
-    angleIncrease: 1
-    angleDecay: 16
+    minAngle: 6
+    maxAngle: 15
+    angleIncrease: 0.5
+    angleDecay: 12
     availableModes:
     - SemiAuto
     - FullAuto
@@ -254,13 +254,13 @@
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -35
+    minAngle: 0
+    maxAngle: 0
   - type: Gun
-    minAngle: 19
-    maxAngle: 50
-    angleIncrease: 1
-    angleDecay: 16
+    minAngle: 6
+    maxAngle: 15
+    angleIncrease: 0.5
+    angleDecay: 12
     availableModes:
     - SemiAuto
     - FullAuto

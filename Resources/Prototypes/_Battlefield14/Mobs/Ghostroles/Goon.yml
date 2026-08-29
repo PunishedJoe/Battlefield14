@@ -1,0 +1,40 @@
+- type: entity
+  parent: MobHumanFSBBase
+  id: BF14MobGoon
+  name: Goon
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [BF14GoonGear]
+  - type: GhostRole
+    name: job-name-goon
+    description: job-description-goon
+    rules: ghost-role-information-goon-rules
+    raffle:
+      settings: short
+
+- type: entity
+  name: Hardmode scav
+  parent: MobHuman
+  id: BF14MobScavHardmode
+  suffix: BF14
+  components:
+  - type: RandomMetadata
+    nameSegments:
+    - names_first_male
+    - names_last
+  - type: GhostRole
+    name: job-name-scav-hardmode
+    description: job-description-scav-hardmode
+    rules: ghost-role-information-scav-hardmode-rules
+    raffle:
+      settings: short
+  - type: LanguageKnowledge
+    speaks:
+    - Russian
+    - Sign
+    understands:
+    - Russian
+    - Ukrainian
+    - Sign
+    - TauCetiBasic
