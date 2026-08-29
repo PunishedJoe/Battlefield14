@@ -14,4 +14,10 @@ public sealed partial class WeaponControllerComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public NetEntity? ControlledWeapon;
+
+    /// <summary>
+    ///     The mount entity the controlled weapon is attached to.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public NetEntity? Mount;
 }

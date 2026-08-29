@@ -1,10 +1,12 @@
 using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
 using Content.Shared._RMC14.Folded;
 using Content.Shared._RMC14.Weapons.Ranged.Overheat;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
 using Content.Shared.Buckle;
 using Content.Shared.Buckle.Components;
+using Content.Shared.Camera;
 using Content.Shared.CombatMode;
 using Content.Shared.Construction.Components;
 using Content.Shared.Containers.ItemSlots;
@@ -18,6 +20,7 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Item;
+using Content.Shared.Movement.Systems;
 using Content.Shared.Physics;
 using Content.Shared.Popups;
 using Content.Shared.Tools.Systems;
@@ -45,6 +48,7 @@ public abstract class SharedWeaponMountSystem : EntitySystem
     [Dependency] private readonly CollisionWakeSystem _collisionWake = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
     [Dependency] private readonly SharedCombatModeSystem _combatMode = default!;
+    [Dependency] private readonly SharedContentEyeSystem _contentEye = default!;
     [Dependency] private readonly DamageableSystem _damage = default!;
     [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
     [Dependency] private readonly FoldableSystem _foldable = default!;
@@ -86,6 +90,7 @@ public abstract class SharedWeaponMountSystem : EntitySystem
         // Relayed events
         SubscribeLocalEvent<WeaponMountComponent, MountableWeaponRelayedEvent<OverheatedEvent>>(OnWeaponOverheated);
         SubscribeLocalEvent<WeaponMountComponent, MountableWeaponRelayedEvent<HeatGainedEvent>>(OnWeaponHeatGained);
+        SubscribeLocalEvent<WeaponControllerComponent, GetEyeOffsetEvent>(OnGetEyeOffset);
 
         // Mount Assembly/Disassembly
         SubscribeLocalEvent<WeaponMountComponent, AttachToMountDoAfterEvent>(OnAttachToMount);
@@ -436,7 +441,10 @@ public abstract class SharedWeaponMountSystem : EntitySystem
 
         var weaponController = EnsureComp<WeaponControllerComponent>(args.Buckle);
         weaponController.ControlledWeapon = GetNetEntity(ent.Comp.MountedEntity.Value);
+        weaponController.Mount = GetNetEntity(ent);
         Dirty(args.Buckle, weaponController);
+
+        _contentEye.SetZoom(args.Buckle, ent.Comp.Zoom, ignoreLimits: true);
 
         _actions.AddAction(args.Buckle, ref ent.Comp.DismountActionEntity, ent.Comp.DismountAction, args.Buckle);
     }
@@ -446,7 +454,22 @@ public abstract class SharedWeaponMountSystem : EntitySystem
         ent.Comp.User = null;
         RemComp<WeaponControllerComponent>(args.Buckle);
 
+        _contentEye.ResetZoom(args.Buckle);
+
         _actions.RemoveAction(ent.Comp.DismountActionEntity);
+    }
+
+    private void OnGetEyeOffset(Entity<WeaponControllerComponent> ent, ref GetEyeOffsetEvent args)
+    {
+        if (ent.Comp.Mount == null)
+            return;
+
+        var mount = GetEntity(ent.Comp.Mount.Value);
+        if (!TryComp(mount, out WeaponMountComponent? mountComp) || mountComp.ZoomDistance <= 0)
+            return;
+
+        var direction = _transform.GetWorldRotation(mount).GetCardinalDir().ToVec();
+        args.Offset += direction * mountComp.ZoomDistance;
     }
 
     private void OnExamine(Entity<WeaponMountComponent> ent, ref ExaminedEvent args)

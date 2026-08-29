@@ -1,3 +1,4 @@
+using System.Numerics;
 using Content.Shared.Item;
 using Content.Shared.Tools;
 using Content.Shared.Whitelist;
@@ -126,6 +127,18 @@ public sealed partial class WeaponMountComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public bool Broken;
+
+    /// <summary>
+    ///     The zoom level applied to the user's view while they are mounted.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public Vector2 Zoom = new (2, 2);
+
+    /// <summary>
+    ///     The distance, in tiles, the user's view is offset in the mount's facing direction while mounted.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public float ZoomDistance = 2;
 
     [DataField]
     public SoundSpecifier? UndeploySound = new SoundPathSpecifier("/Audio/Items/screwdriver.ogg");
