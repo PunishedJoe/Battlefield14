@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/10/2026 17:47:50
-  entityCount: 144
+  time: 08/29/2026 10:35:16
+  entityCount: 142
 maps: []
 grids:
 - 1
@@ -56,9 +56,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
-        Smoke: []
         Kudzu: []
+        Smoke: []
+        Puddle: []
         MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -579,12 +579,9 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 134
           - 133
           - 132
           - 129
-          - 130
-          - 131
 - proto: ComputerGunneryConsole
   entities:
   - uid: 57
@@ -680,39 +677,6 @@ entities:
       parent: 128
     - type: Physics
       canCollide: False
-    - type: InsideEntityStorage
-- proto: Magazine40x53mmMK20
-  entities:
-  - uid: 134
-    components:
-    - type: Transform
-      parent: 128
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: MagazinePistolM9
-  entities:
-  - uid: 130
-    components:
-    - type: Transform
-      parent: 128
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
-    - type: InsideEntityStorage
-  - uid: 131
-    components:
-    - type: Transform
-      parent: 128
-    - type: Physics
-      canCollide: False
-    - type: ContainerContainer
-      containers:
-        ballistic-ammo: !type:Container
-          ents: []
     - type: InsideEntityStorage
 - proto: PortableGeneratorPacmanShuttle
   entities:
@@ -824,6 +788,23 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 2.5,5.5
+      parent: 1
+- proto: ShipRepairKitFilled
+  entities:
+  - uid: 129
+    components:
+    - type: Transform
+      parent: 128
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ShotGunCabinetUSFilledM870
+  entities:
+  - uid: 130
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,3.5
       parent: 1
 - proto: SmallGyroscope
   entities:
@@ -1099,15 +1080,6 @@ entities:
     - type: Transform
       pos: -1.5,-5.5
       parent: 1
-- proto: WeaponPistolM9
-  entities:
-  - uid: 129
-    components:
-    - type: Transform
-      parent: 128
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: WeaponTurretM5Browning
   entities:
   - uid: 79
