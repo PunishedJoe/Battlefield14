@@ -309,7 +309,7 @@
     contents:
     - id: OffensiveGrenadeRURGD5
       amount: 2
-    - id: ImpactGrenadeRURGO
+    - id: ImpactGrenadeRURGN
     - id: SmokeGrenadeRURDG
       amount: 3
 

@@ -41,6 +41,10 @@
     - Esperanto
     - Sign
     - TauCetiBasic
+  - type: CombatMode
+    disarmFailChance: 0.45
+  - type: Stamina
+    baseCritThreshold: 120
 
 ## IN-ATMOSPHERE
 
