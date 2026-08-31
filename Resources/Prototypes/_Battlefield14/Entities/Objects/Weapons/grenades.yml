@@ -22,7 +22,7 @@
     explosionType: HandGrenade
     totalIntensity: 30
     intensitySlope: 4
-    maxIntensity: 3
+    maxIntensity: 6
     maxTileBreak: 0
   - type: TimerTriggerVisuals
     primingSound:
