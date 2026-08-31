@@ -97,7 +97,12 @@
         requireDetailRange: true
   - type: JumpAbility # BF14
     jumpDistance: 2.75
-    jumpSound: /Audio/Effects/Footsteps/suitstep2.ogg
+    jumpSound:
+      path: /Audio/Weapons/punchmiss.ogg
+      params:
+        pitch: 1.33
+        volume: -5
+        variation: 0.05
   - type: ActionGrant # BF14
     actions:
     - ActionGravityJump 

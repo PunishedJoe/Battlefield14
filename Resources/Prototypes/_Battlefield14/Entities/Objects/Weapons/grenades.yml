@@ -1,10 +1,7 @@
-#region US
-
 - type: entity
-  name: M67 grenade
-  description: The classic GI hand grenade post vietnam.
   parent: GrenadeBase
-  id: DefensiveGrenadeUSM67
+  id: BF14BaseGrenadeDefensive
+  abstract: true
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
@@ -14,20 +11,18 @@
   - type: Tag
     tags:
       - Grenade
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeM67Fragment
-    capacity: 30
+    capacity: 60
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade
-    totalIntensity: 50
+    totalIntensity: 30
     intensitySlope: 4
-    maxIntensity: 6
+    maxIntensity: 3
     maxTileBreak: 0
   - type: TimerTriggerVisuals
     primingSound:
@@ -47,35 +42,9 @@
         requireDetailRange: true
 
 - type: entity
-  id: BulletGrenadeM67Fragment
-  name: M67 grenade fragment
-  parent: BaseBulletTrigger
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Slash: 8
-        Piercing: 8
-  - type: StaminaDamageOnCollide
-    damage: 4 # ~25 hits to stun
-    deleteOnCollide: true
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
-    layers:
-    - state: shard
-  - type: TimedDespawn
-    lifetime: 1
-  - type: PointLight
-    radius: 1
-    color: orange
-    energy: 0.2
-
-- type: entity
-  name: MK21 stackable offensive grenade
-  description: USMC standard issue blast grenade.
   parent: GrenadeBase
-  id: OffensiveGrenadeUSMK21
+  id: BF14BaseGrenadeOffensive
+  abstract: true
   components:
   - type: OnUseTimerTrigger
     delay: 3.5
@@ -85,9 +54,6 @@
   - type: Tag
     tags:
       - Grenade
-      - OffensiveGrenadeUSMK21
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade
@@ -105,6 +71,135 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 3-5 seconds. You can stack another grenade onto this one.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: Material
+  - type: Construction
+    graph: MK21StackTwo
+    node: start
+    deconstructionTarget: start
+
+- type: entity
+  parent: GrenadeBase
+  id: BF14BaseGrenadeSmoke
+  abstract: true
+  components:
+  - type: OnUseTimerTrigger
+    delay: 2.5
+  - type: Tag
+    tags:
+      - Grenade
+  - type: SmokeOnTrigger
+    duration: 30
+    spreadAmount: 15
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
+  - type: DeleteOnTrigger
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: SmokeGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Smoke lasts 30 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: M84 flashbang
+  description: Think fast.
+  parent: GrenadeBase
+  id: BF14BaseGrenadeFlashbang
+  components:
+  - type: OnUseTimerTrigger
+    delay: 2
+  - type: RandomTimerTrigger
+    min: 2
+    max: 4
+  - type: Tag
+    tags:
+      - Grenade
+      - GrenadeFlashBang
+  - type: FlashOnTrigger
+    range: 5
+  - type: SpawnOnTrigger
+    proto: GrenadeFlashEffect
+  - type: TimerTriggerVisuals
+    primingSound:
+      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/flashbang.ogg
+  - type: DeleteOnTrigger
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FlashGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 2-4 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+#region US
+
+- type: entity
+  name: M67 grenade
+  description: The classic GI hand grenade post vietnam.
+  parent: BF14BaseGrenadeDefensive
+  id: DefensiveGrenadeUSM67
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+
+- type: entity
+  id: BulletGrenadeM67Fragment
+  name: M67 grenade fragment
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Slash: 8
+        Piercing: 8
+  - type: StaminaDamageOnCollide
+    damage: 5 # ~20 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+  - type: TimedDespawn
+    lifetime: 1
+  - type: PointLight
+    radius: 1
+    color: orange
+    energy: 0.2
+
+- type: entity
+  name: MK21 stackable offensive grenade
+  description: USMC standard issue blast grenade.
+  parent: BF14BaseGrenadeOffensive
+  id: OffensiveGrenadeUSMK21
+  components:
+  - type: Tag
+    tags:
+      - Grenade
+      - OffensiveGrenadeUSMK21
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi
   - type: ExtendDescription
     descriptionList:
       - description: Has a random timer between 3-5 seconds. You can stack another grenade onto this one.
@@ -228,77 +323,20 @@
 - type: entity
   name: M18 smoke grenade
   description: A simple grey smoke grenade, canned smoke for your convenience. At least, you think it’s canned smoke, you’re not entirely sure how these things actually work.
-  parent: GrenadeBase
+  parent: BF14BaseGrenadeSmoke
   id: SmokeGrenadeUSM18
   components:
-  - type: OnUseTimerTrigger
-    delay: 2.5
-  - type: Tag
-    tags:
-      - Grenade
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m18.rsi
-  - type: SmokeOnTrigger
-    duration: 30
-    spreadAmount: 15
-  - type: TimerTriggerVisuals
-    primingSound:
-      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
-  - type: SoundOnTrigger
-    sound: /Audio/_Battlefield14/Weapons/Grenades/smoke10s.ogg
-  - type: DeleteOnTrigger
-  - type: EmitSoundOnPickup
-    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
-  - type: EmitSoundOnDrop
-    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
-  - type: EmitSoundOnLand
-    sound:
-      collection: SmokeGrenadeSFX
-  - type: ExtendDescription
-    descriptionList:
-      - description: Smoke lasts 30 seconds.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   name: M84 flashbang
   description: Think fast.
-  parent: GrenadeBase
+  parent: BF14BaseGrenadeFlashbang
   id: FlashbangGrenadeUSM84
   components:
-  - type: OnUseTimerTrigger
-    delay: 2
-  - type: RandomTimerTrigger
-    min: 2
-    max: 4
-  - type: Tag
-    tags:
-      - Grenade
-      - GrenadeFlashBang
-  - type: FlashOnTrigger
-    range: 5
-  - type: SpawnOnTrigger
-    proto: GrenadeFlashEffect
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi
-  - type: TimerTriggerVisuals
-    primingSound:
-      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
-  - type: SoundOnTrigger
-    sound: /Audio/_Battlefield14/Weapons/Grenades/flashbang.ogg
-  - type: DeleteOnTrigger
-  - type: EmitSoundOnPickup
-    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
-  - type: EmitSoundOnDrop
-    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
-  - type: EmitSoundOnLand
-    sound:
-      collection: FlashGrenadeSFX
-  - type: ExtendDescription
-    descriptionList:
-      - description: Has a random timer between 2-4 seconds.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   name: M58 CS gas grenade
@@ -384,36 +422,20 @@
 - type: entity
   name: DM51 defensive grenade
   description: A DM51 grenade with the frag sleeve installed.
-  parent: DefensiveGrenadeUSM67
+  parent: BF14BaseGrenadeDefensive
   id: DefensiveGrenadeDEDM51
   components:
-  - type: Tag
-    tags:
-      - Grenade
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/DM51frag.rsi
 
 - type: entity
   name: DM51 offensive grenade
   description: Bundeswehr standard issue blast grenade, frag sleeve removed.
-  parent: OffensiveGrenadeRURGD5
+  parent: BF14BaseGrenadeOffensive
   id: OffensiveGrenadeDEDM51
   components:
-  - type: Tag
-    tags:
-      - Grenade
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/DM51.rsi
-  - type: TimerTriggerVisuals
-    primingSound:
-      path: "/Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg"
-  - type: EmitSoundOnPickup
-    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
-  - type: EmitSoundOnDrop
-    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
-  - type: EmitSoundOnLand
-    sound:
-      collection: FragGrenadeSFX
 
 - type: entity
   name: DM45 smoke grenade
@@ -428,26 +450,11 @@
 - type: entity
   name: RGD-5 grenade
   description: An undying classic from the soviet union.
-  parent: GrenadeBase
+  parent: BF14BaseGrenadeOffensive
   id: OffensiveGrenadeRURGD5
   components:
-  - type: OnUseTimerTrigger
-    delay: 3.5
-  - type: RandomTimerTrigger
-    min: 3
-    max: 5
-  - type: Tag
-    tags:
-      - Grenade
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: HandGrenade
-    maxIntensity: 10
-    intensitySlope: 4
-    totalIntensity: 100
-    canCreateVacuum: false
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
@@ -458,41 +465,18 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
-  - type: ExtendDescription
-    descriptionList:
-      - description: Has a random timer between 3-5 seconds.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   name: F-1 grenade
   description: An undying classic from the soviet union.
-  parent: GrenadeBase
+  parent: BF14BaseGrenadeDefensive
   id: DefensiveGrenadeRUF1
   components:
-  - type: OnUseTimerTrigger
-    delay: 3.5
-  - type: RandomTimerTrigger
-    min: 3
-    max: 5
-  - type: Tag
-    tags:
-      - Grenade
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/f1.rsi
-  - type: ContainerContainer
-    containers:
-      cluster-payload: !type:Container
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeF1Fragment
-    capacity: 30
-  - type: ExplodeOnTrigger
-  - type: Explosive
-    explosionType: HandGrenade
-    totalIntensity: 50
-    intensitySlope: 4
-    maxIntensity: 6
-    maxTileBreak: 0
+    capacity: 60
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
@@ -503,11 +487,6 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
-  - type: ExtendDescription
-    descriptionList:
-      - description: Has a random timer between 3-5 seconds, produces shrapnel.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   id: BulletGrenadeF1Fragment
@@ -521,7 +500,7 @@
         Slash: 8
         Piercing: 8
   - type: StaminaDamageOnCollide
-    damage: 4 # ~25 hits to stun
+    damage: 5 # ~20 hits to stun
     deleteOnCollide: true
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -591,12 +570,6 @@
     intensitySlope: 2
     totalIntensity: 30
     canCreateVacuum: false
-  - type: ContainerContainer
-    containers:
-      cluster-payload: !type:Container
-  - type: ProjectileGrenade
-    fillPrototype: BulletGrenadeF1Fragment
-    capacity: 30
   - type: EmitSoundOnPickup
     sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
   - type: EmitSoundOnDrop
@@ -606,6 +579,23 @@
       collection: FragGrenadeSFX
   - type: ExtendDescription
     descriptionList:
+      - description: Activate to pull the pin, arming the contact fuze, activate again to disarm. Will bounce off walls. Useless without gravity.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: RGN defensive impact grenade
+  parent: ImpactGrenadeRURGO
+  id: ImpactGrenadeRURGN
+  components:
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: BulletGrenadeF1Fragment
+    capacity: 45
+  - type: ExtendDescription
+    descriptionList:
       - description: Activate to pull the pin, arming the contact fuze, activate again to disarm, produces shrapnel. Will bounce off walls. Useless without gravity.
         color: "#4f94ad"
         requireDetailRange: true
@@ -613,19 +603,11 @@
 - type: entity
   name: RDG-2 smoke grenade
   description: A simple grey smoke grenade, canned smoke for your convenience. At least, you think it’s canned smoke, you’re not entirely sure how these things actually work.
-  parent: GrenadeBase
+  parent: BF14BaseGrenadeSmoke
   id: SmokeGrenadeRURDG
   components:
-  - type: OnUseTimerTrigger
-    delay: 2.5
-  - type: Tag
-    tags:
-      - Grenade
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/rdg2.rsi
-  - type: SmokeOnTrigger
-    duration: 30
-    spreadAmount: 15
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger3.ogg"
@@ -639,31 +621,13 @@
   - type: EmitSoundOnLand
     sound:
       collection: SmokeGrenadeSFX
-  - type: ExtendDescription
-    descriptionList:
-      - description: Smoke lasts 30 seconds.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   name: zarya flashbang
   description: Think fast.
-  parent: GrenadeBase
+  parent: BF14BaseGrenadeFlashbang
   id: FlashbangGrenadeRUZarya
   components:
-  - type: OnUseTimerTrigger
-    delay: 2
-  - type: RandomTimerTrigger
-    min: 2
-    max: 4
-  - type: Tag
-    tags:
-      - Grenade
-      - GrenadeFlashBang
-  - type: FlashOnTrigger
-    range: 5
-  - type: SpawnOnTrigger
-    proto: GrenadeFlashEffect
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/zarya.rsi
   - type: TimerTriggerVisuals
@@ -679,15 +643,10 @@
   - type: EmitSoundOnLand
     sound:
       collection: FlashGrenadeSFX
-  - type: ExtendDescription
-    descriptionList:
-      - description: Has a random timer between 2-4 seconds.
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   name: K-51 CS gas grenade
-  description: These little things earned their reputation in Grozny, being thrown into buildings to bring out militiamen.
+  description: These little things earned their reputation in Grozny, being thrown into buildings to bring out militiamen. # BF14 lore
   parent: GrenadeBase
   id: SmokeCSGrenadeRUK51
   components:
@@ -769,22 +728,11 @@
 - type: entity
   name: improvised soft drink grenade
   description: A russian fuse stuffed into a plastic soft drink bottle full of ball bearings.
-  parent: GrenadeBase
+  parent: BF14BaseGrenadeDefensive
   id: DefensiveGrenadeINDFanta
   components:
-  - type: OnUseTimerTrigger
-    delay: 3.5
-  - type: RandomTimerTrigger
-    min: 3
-    max: 5
-  - type: Tag
-    tags:
-      - Grenade
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/fanta.rsi
-  - type: ContainerContainer
-    containers:
-      cluster-payload: !type:Container
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeBallBearing
     capacity: 40
@@ -805,12 +753,6 @@
   - type: EmitSoundOnLand
     sound:
       collection: FragGrenadeSFX
-  - type: ExtendDescription
-    descriptionList:
-      - description: Has a random timer between 3-5 seconds, produces shrapnel.
-        fontSize: 12
-        color: "#4f94ad"
-        requireDetailRange: true
 
 - type: entity
   id: BulletGrenadeBallBearing
