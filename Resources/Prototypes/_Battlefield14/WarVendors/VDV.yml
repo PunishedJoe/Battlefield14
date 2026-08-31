@@ -166,7 +166,9 @@
       - id: DefensiveGrenadeRUF1
         amount: 5
       - id: ImpactGrenadeRURGO
-        amount: 5
+        amount: 3
+      - id: ImpactGrenadeRURGN
+        amount: 2
       - id: FlashbangGrenadeRUZarya
         amount: 20
       - id: SmokeGrenadeRURDG
