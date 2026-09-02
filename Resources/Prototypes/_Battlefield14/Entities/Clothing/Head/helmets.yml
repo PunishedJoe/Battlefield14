@@ -1,24 +1,7 @@
-- type: entity
-  parent: ClothingHeadHelmetBasic
-  id: BF14ClothingHeadHelmetBasic
-  abstract: true
-  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
-  components:
-  - type: Item
-    size: Normal
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-  - type: ExplosionResistance
-    damageCoefficient: 0.9
-
 #region US
 
 - type: entity
-  parent: BF14ClothingHeadHelmetBasic
+  parent: ClothingHeadHelmetBasic
   id: ClothingHeadHatHelmetUS
   name: american camo helmet
   description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
@@ -29,15 +12,15 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/ushelmet.rsi
   - type: Armor
     modifiers:
-#      coefficients:
-#        Blunt: 0.9
-#        Slash: 0.9
-#        Piercing: 0.9
-#        Heat: 0.9
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+#      flatReductions:
+#        Blunt: 2
+#        Slash: 2
+#        Piercing: 2
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
@@ -79,9 +62,9 @@
         Piercing: 0.9
         Heat: 0.9
       flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
+        Blunt: 1
+        Slash: 1
+        Piercing: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
@@ -121,7 +104,7 @@
 #region DE
 
 - type: entity
-  parent: BF14ClothingHeadHelmetBasic
+  parent: ClothingHeadHelmetBasic
   id: ClothingHeadHatHelmetDEM92
   name: M92 combat helmet (flecktarn)
   components:
@@ -214,12 +197,12 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68.rsi
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 1
-        Slash: 1
-        Piercing: 1
+#  - type: Armor
+#    modifiers:
+#      flatReductions:
+#        Blunt: 1
+#        Slash: 1
+#        Piercing: 1
 
 - type: entity
   parent: ClothingHeadHatHelmetRUSSh68
@@ -309,8 +292,8 @@
   - type: Armor
     modifiers:
       flatReductions:
-        Blunt: 1
-        Slash: 1
+        Blunt: 2
+#        Slash: 1
 
 - type: entity
   parent: ClothingHeadHatHelmetUS

@@ -6,6 +6,8 @@
   id: ClothingHeadHelmetBase
   abstract: true
   components:
+  - type: Item
+    size: Normal # BF14
   - type: Armor #Values seem to let the user survive one extra hit if attacked consistently.
     modifiers:
       coefficients:
