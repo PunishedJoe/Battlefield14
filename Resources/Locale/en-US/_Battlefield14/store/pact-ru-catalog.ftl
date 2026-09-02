@@ -89,8 +89,14 @@ uplink-PACTRU-evakit-combat-desc = Contains a 'Goida' combat voidsuit, tactical 
 uplink-PACTRU-rgd5-box-name = RGD-5 Grenade box
 uplink-PACTRU-rgd5-box-desc = Contains 8 RGD-5 high explosive grenades.
 
+uplink-PACTRU-rg60tb-box-name = RG-60TB grenade box
+uplink-PACTRU-rg60tb-box-desc = Contains 8 RG-60TB thermobaric grenades.
+
 uplink-PACTRU-rgo-box-name = RGO Grenade box
 uplink-PACTRU-rgo-box-desc = Contains 8 RGO offensive high explosive impact grenades.
+
+uplink-PACTRU-rg60tbo1-box-name = RG-60TBO1 grenade box
+uplink-PACTRU-rg60tbo1-box-desc = Contains 8 RG-60TBO1 thermobaric impact grenades.
 
 uplink-PACTRU-zarya-box-name = Zarya Flashbang Grenade box
 uplink-PACTRU-zarya-box-desc = Contains 8 'zarya' flashbang grenades.

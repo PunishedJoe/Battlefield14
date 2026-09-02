@@ -28,7 +28,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 20 # BF14 10 > 20
+        damage: 50 # BF14 10 > 50
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior

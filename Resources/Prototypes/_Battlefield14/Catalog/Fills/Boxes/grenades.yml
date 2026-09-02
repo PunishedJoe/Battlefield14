@@ -5,6 +5,24 @@
 #Handthrown
 
 - type: entity
+  name: box of M67 fragmentation grenades
+  parent: BoxMagazine
+  id: BoxGrenadesM67
+  description: A box full of M67 high explosive fragmentation grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: DefensiveGrenadeUSM67
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
   name: box of MK21 HE grenades
   parent: BoxMagazine
   id: BoxGrenadesMK21
@@ -16,6 +34,24 @@
   - type: StorageFill
     contents:
       - id: OffensiveGrenadeUSMK21
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of M111 blast grenades
+  parent: BoxMagazine
+  id: BoxGrenadesM111
+  description: A box full of high explosive M111 grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: OffensiveGrenadeUSM111
         amount: 8
   - type: Sprite
     layers:
@@ -305,6 +341,60 @@
   - type: StorageFill
     contents:
       - id: OffensiveGrenadeRURGD5
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of F-1 frag grenades
+  parent: BoxMagazine
+  id: BoxGrenadesF1
+  description: A box full of russian F-1 high explosive fragmentation grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: DefensiveGrenadeRUF1
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of RG-60TB thermobaric grenades
+  parent: BoxMagazine
+  id: BoxGrenadesRG60TB
+  description: A box full of RG-60TB thermobaric grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: OffensiveGrenadeRURG60TB
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
+  name: box of RG-60TBO1 thermobaric grenades
+  parent: BoxMagazine
+  id: BoxGrenadesRG60TBO1
+  description: A box full of RG-60TB thermobaric impact grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: ImpactGrenadeRURG60TBO1
         amount: 8
   - type: Sprite
     layers:

@@ -112,6 +112,8 @@
         amount: 1
       - id: MagazineSniperSVD
         amount: 3
+      - id: ImpactGrenadeRURGO
+        amount: 2
 
 #region gear
 
@@ -157,11 +159,11 @@
     - name: Grenades
       entries:
       - id: OffensiveGrenadeRURGD5
-        amount: 10
-      - id: DefensiveGrenadeRUF1
         amount: 8
-      - id: ImpactGrenadeRURGO
-        amount: 2
+      - id: DefensiveGrenadeRUF1
+        amount: 7
+      - id: OffensiveGrenadeRURG60TB
+        amount: 5
       - id: FlashbangGrenadeRUZarya
         amount: 20
       - id: SmokeGrenadeRURDG

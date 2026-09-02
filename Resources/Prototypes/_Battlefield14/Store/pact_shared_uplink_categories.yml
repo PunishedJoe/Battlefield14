@@ -269,7 +269,7 @@
   productEntity: MedkitCombatFilled
   icon: { sprite: _Battlefield14/Objects/Specific/Medical/firstaidkits.rsi, state: bezerk }
   cost:
-    NATORequisition: 10 # 1 minute 40 seconds
+    PACTRequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkPACTRUMedical
   conditions:

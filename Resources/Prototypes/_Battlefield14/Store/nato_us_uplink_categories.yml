@@ -354,7 +354,7 @@
   name: uplink-natous-mk21-box-name
   description: uplink-natous-mk21-box-desc
   productEntity: BoxGrenadesMK21
-  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi, state: base }
   cost:
     NATORequisition: 18 # 3 minutes
   categories:
