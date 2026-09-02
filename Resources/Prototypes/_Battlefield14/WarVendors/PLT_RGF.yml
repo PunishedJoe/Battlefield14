@@ -48,6 +48,12 @@
       - id: BoxGrenadesK51
         name: CS gas grenades
         points: 1
+      - id: BoxGrenadesRG60TB
+        name: RG-60TB thermobaric grenades
+        points: 1
+      - id: BoxGrenadesRG60TBO1
+        name: RG-60TBO1 thermobaric impact grenades
+        points: 1
       - id: BoxArtilleryShellsMortar2B14Minelaying
         name: PFM-1 mine-laying mortar rounds (82mm)
         points: 1
