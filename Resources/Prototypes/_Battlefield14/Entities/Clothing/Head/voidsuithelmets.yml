@@ -22,13 +22,16 @@
   - type: Armor
     modifiers:
       coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
         Heat: 0.9
         Radiation: 0.9
         Caustic: 0.9
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
+#      flatReductions:
+#        Blunt: 2
+#        Slash: 2
+#        Piercing: 2
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: ExtendDescription
@@ -71,3 +74,16 @@
     sprite: _Battlefield14/Clothing/Head/Voidsuithelmets/russiancombatheavy.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Head/Voidsuithelmets/russiancombatheavy.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+      flatReductions:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
