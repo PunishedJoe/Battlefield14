@@ -4,25 +4,25 @@
   id: PirateMercenaryClothingUniformJumpsuitMercenary
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMercenary
+    jumpsuit: JumpsuitMercenary
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpskirtMercenary
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtMercenary
+    jumpsuit: JumpskirtMercenary
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpsuitPrivateSec
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitPrivateSec
+    jumpsuit: JumpsuitPrivateSec
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpskirtPrivateSec
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtPrivateSec
+    jumpsuit: JumpskirtPrivateSec
 
 # T3 "Military"
 - type: loadout
@@ -32,7 +32,7 @@
     proto: ContractorT3
   price: 650
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryTurtleneckMercenary
+    jumpsuit: JumpsuitMilitaryTurtleneckMercenary
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpsuitMilitaryTurtleneckMercenaryMedic
@@ -41,7 +41,7 @@
     proto: ContractorT3
   price: 650
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryTurtleneckMercenaryMedic
+    jumpsuit: JumpsuitMilitaryTurtleneckMercenaryMedic
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpsuitMilitaryTurtleneckMercenaryCaptain
@@ -50,7 +50,7 @@
     proto: ContractorT3
   price: 650
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryTurtleneckMercenaryCaptain
+    jumpsuit: JumpsuitMilitaryTurtleneckMercenaryCaptain
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpsuitMilitaryTurtleneckBlueMercenary
@@ -59,7 +59,7 @@
     proto: ContractorT3
   price: 650
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryTurtleneckBlueMercenary
+    jumpsuit: JumpsuitMilitaryTurtleneckBlueMercenary
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryMedic
@@ -68,7 +68,7 @@
     proto: ContractorT3
   price: 650
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryMedic
+    jumpsuit: JumpsuitMilitaryTurtleneckBlueMercenaryMedic
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryCaptain
@@ -77,7 +77,7 @@
     proto: ContractorT3
   price: 650
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryTurtleneckBlueMercenaryCaptain
+    jumpsuit: JumpsuitMilitaryTurtleneckBlueMercenaryCaptain
 
 - type: loadout
   id: PirateMercenaryClothingUniformJumpsuitMilitaryPilot
@@ -86,7 +86,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryPilot
+    jumpsuit: JumpsuitMilitaryPilot
 
 # Pilot
 
@@ -94,7 +94,7 @@
   id: PiratePilotClothingUniformJumpsuitPilot
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitPilot
+    jumpsuit: JumpsuitPilot
 
 # T3 "Military"
 - type: loadout
@@ -104,7 +104,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryPilot
+    jumpsuit: JumpsuitMilitaryPilot
 
 # Contractor
 
@@ -112,223 +112,223 @@
   id: PirateContractorClothingUniformJumpsuitAtmos
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitAtmos
+    jumpsuit: JumpsuitAtmos
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtAtmos
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtAtmos
+    jumpsuit: JumpskirtAtmos
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitBartender
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitBartender
+    jumpsuit: JumpsuitBartender
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtBartender
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtBartender
+    jumpsuit: JumpskirtBartender
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitCargo
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCargo
+    jumpsuit: JumpsuitCargo
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCargo
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCargo
+    jumpsuit: JumpskirtCargo
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitSalvageSpecialist
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitSalvageSpecialist
+    jumpsuit: JumpsuitSalvageSpecialist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitChef
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitChef
+    jumpsuit: JumpsuitChef
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtChef
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtChef
+    jumpsuit: JumpskirtChef
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitEngineering
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitEngineering
+    jumpsuit: JumpsuitEngineering
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtEngineering
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtEngineering
+    jumpsuit: JumpskirtEngineering
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitHydroponics
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitHydroponics
+    jumpsuit: JumpsuitHydroponics
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtHydroponics
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtHydroponics
+    jumpsuit: JumpskirtHydroponics
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMedicalDoctor
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMedicalDoctor
+    jumpsuit: JumpsuitMedicalDoctor
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtMedicalDoctor
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtMedicalDoctor
+    jumpsuit: JumpskirtMedicalDoctor
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitScientist
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitScientist
+    jumpsuit: JumpsuitScientist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtScientist
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtScientist
+    jumpsuit: JumpskirtScientist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorGrey
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorGrey
+    jumpsuit: JumpsuitColorGrey
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorGrey
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorGrey
+    jumpsuit: JumpskirtColorGrey
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorWhite
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorWhite
+    jumpsuit: JumpsuitColorWhite
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorWhite
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorWhite
+    jumpsuit: JumpskirtColorWhite
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorBlack
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorBlack
+    jumpsuit: JumpsuitColorBlack
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorBlack
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorBlack
+    jumpsuit: JumpskirtColorBlack
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorBlue
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorBlue
+    jumpsuit: JumpsuitColorBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorBlue
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorBlue
+    jumpsuit: JumpskirtColorBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorYellow
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorYellow
+    jumpsuit: JumpsuitColorYellow
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorYellow
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorYellow
+    jumpsuit: JumpskirtColorYellow
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorGreen
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorGreen
+    jumpsuit: JumpsuitColorGreen
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorGreen
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorGreen
+    jumpsuit: JumpskirtColorGreen
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorOrange
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorOrange
+    jumpsuit: JumpsuitColorOrange
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorOrange
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorOrange
+    jumpsuit: JumpskirtColorOrange
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorRed
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorRed
+    jumpsuit: JumpsuitColorRed
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorRed
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorRed
+    jumpsuit: JumpskirtColorRed
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorPurple
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorPurple
+    jumpsuit: JumpsuitColorPurple
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorPurple
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorPurple
+    jumpsuit: JumpskirtColorPurple
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorPink
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorPink
+    jumpsuit: JumpsuitColorPink
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorPink
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorPink
+    jumpsuit: JumpskirtColorPink
 
 #T1
 - type: loadout
@@ -338,7 +338,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorDarkBlue
+    jumpsuit: JumpsuitColorDarkBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorDarkBlue
@@ -347,7 +347,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorDarkBlue
+    jumpsuit: JumpskirtColorDarkBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorDarkGreen
@@ -356,7 +356,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorDarkGreen
+    jumpsuit: JumpsuitColorDarkGreen
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorDarkGreen
@@ -365,7 +365,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorDarkGreen
+    jumpsuit: JumpskirtColorDarkGreen
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitColorTeal
@@ -374,7 +374,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitColorTeal
+    jumpsuit: JumpsuitColorTeal
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtColorTeal
@@ -383,7 +383,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtColorTeal
+    jumpsuit: JumpskirtColorTeal
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitHawaiBlack
@@ -392,7 +392,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitHawaiBlack
+    jumpsuit: JumpsuitHawaiBlack
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitHawaiBlue
@@ -401,7 +401,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitHawaiBlue
+    jumpsuit: JumpsuitHawaiBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitHawaiRed
@@ -410,7 +410,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitHawaiRed
+    jumpsuit: JumpsuitHawaiRed
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitHawaiYellow
@@ -419,7 +419,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitHawaiYellow
+    jumpsuit: JumpsuitHawaiYellow
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitFlannel
@@ -428,7 +428,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitFlannel
+    jumpsuit: JumpsuitFlannel
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitCasualBlue
@@ -437,7 +437,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCasualBlue
+    jumpsuit: JumpsuitCasualBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCasualBlue
@@ -446,7 +446,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCasualBlue
+    jumpsuit: JumpskirtCasualBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitCasualPurple
@@ -455,7 +455,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCasualPurple
+    jumpsuit: JumpsuitCasualPurple
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCasualPurple
@@ -464,7 +464,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCasualPurple
+    jumpsuit: JumpskirtCasualPurple
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitCasualRed
@@ -473,7 +473,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCasualRed
+    jumpsuit: JumpsuitCasualRed
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCasualRed
@@ -482,7 +482,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCasualRed
+    jumpsuit: JumpskirtCasualRed
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitBartenderPurple
@@ -491,7 +491,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitBartenderPurple
+    jumpsuit: JumpsuitBartenderPurple
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitEngineeringHazard
@@ -500,7 +500,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitEngineeringHazard
+    jumpsuit: JumpsuitEngineeringHazard
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitAtmosCasual
@@ -509,7 +509,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitAtmosCasual
+    jumpsuit: JumpsuitAtmosCasual
 
 - type: loadout
   id: PirateContractorClothingUniformOveralls
@@ -518,7 +518,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformOveralls
+    jumpsuit: Overalls
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitChaplain
@@ -527,7 +527,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitChaplain
+    jumpsuit: JumpsuitChaplain
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtChaplain
@@ -536,7 +536,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtChaplain
+    jumpsuit: JumpskirtChaplain
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitCurator
@@ -545,7 +545,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCurator
+    jumpsuit: JumpsuitCurator
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCurator
@@ -554,7 +554,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCurator
+    jumpsuit: JumpskirtCurator
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitLibrarian
@@ -563,7 +563,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitLibrarian
+    jumpsuit: JumpsuitLibrarian
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtLibrarian
@@ -572,7 +572,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtLibrarian
+    jumpsuit: JumpskirtLibrarian
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitReporter
@@ -581,7 +581,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitReporter
+    jumpsuit: JumpsuitReporter
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitBH
@@ -590,7 +590,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitBH
+    jumpsuit: JumpsuitBH
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtBH
@@ -599,7 +599,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtBH
+    jumpsuit: JumpskirtBH
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitBHGrey
@@ -608,7 +608,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitBHGrey
+    jumpsuit: JumpsuitBHGrey
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtBHGrey
@@ -617,7 +617,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtBHGrey
+    jumpsuit: JumpskirtBHGrey
 
 - type: loadout
   id: PirateContractorUniformScrubsColorGreen
@@ -653,7 +653,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitParamedic
+    jumpsuit: JumpsuitParamedic
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtParamedic
@@ -662,7 +662,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtParamedic
+    jumpsuit: JumpskirtParamedic
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitVirology
@@ -671,7 +671,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitVirology
+    jumpsuit: JumpsuitVirology
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtVirology
@@ -680,7 +680,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtVirology
+    jumpsuit: JumpskirtVirology
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitChemistry
@@ -689,7 +689,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitChemistry
+    jumpsuit: JumpsuitChemistry
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtChemistry
@@ -698,7 +698,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtChemistry
+    jumpsuit: JumpskirtChemistry
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitGenetics
@@ -707,7 +707,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitGenetics
+    jumpsuit: JumpsuitGenetics
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtGenetics
@@ -716,7 +716,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtGenetics
+    jumpsuit: JumpskirtGenetics
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitPsychologist
@@ -725,7 +725,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitPsychologist
+    jumpsuit: JumpsuitPsychologist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtPsychologist
@@ -734,7 +734,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtPsychologist
+    jumpsuit: JumpskirtPsychologist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitScientistFormal
@@ -743,7 +743,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitScientistFormal
+    jumpsuit: JumpsuitScientistFormal
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitRoboticist
@@ -752,7 +752,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitRoboticist
+    jumpsuit: JumpsuitRoboticist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtRoboticist
@@ -761,7 +761,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtRoboticist
+    jumpsuit: JumpskirtRoboticist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitLawyerBlue
@@ -770,7 +770,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitLawyerBlue
+    jumpsuit: JumpsuitLawyerBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtLawyerBlue
@@ -779,7 +779,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtLawyerBlue
+    jumpsuit: JumpskirtLawyerBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitLawyerPurple
@@ -788,7 +788,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitLawyerPurple
+    jumpsuit: JumpsuitLawyerPurple
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtLawyerPurple
@@ -797,7 +797,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtLawyerPurple
+    jumpsuit: JumpskirtLawyerPurple
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitLawyerRed
@@ -806,7 +806,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitLawyerRed
+    jumpsuit: JumpsuitLawyerRed
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtLawyerRed
@@ -815,7 +815,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtLawyerRed
+    jumpsuit: JumpskirtLawyerRed
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitLawyerBlack
@@ -824,7 +824,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitLawyerBlack
+    jumpsuit: JumpsuitLawyerBlack
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtLawyerBlack
@@ -833,7 +833,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtLawyerBlack
+    jumpsuit: JumpskirtLawyerBlack
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitLawyerGood
@@ -842,7 +842,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitLawyerGood
+    jumpsuit: JumpsuitLawyerGood
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtLawyerGood
@@ -851,7 +851,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtLawyerGood
+    jumpsuit: JumpskirtLawyerGood
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtBlackElegantDress
@@ -861,7 +861,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtBlackElegantDress
+    jumpsuit: JumpskirtBlackElegantDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtRedElegantDress
@@ -871,7 +871,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtRedElegantDress
+    jumpsuit: JumpskirtRedElegantDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtGreenElegantDress
@@ -881,7 +881,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtGreenElegantDress
+    jumpsuit: JumpskirtGreenElegantDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtBlueElegantDress
@@ -891,7 +891,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtBlueElegantDress
+    jumpsuit: JumpskirtBlueElegantDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtPurpleElegantDress
@@ -901,7 +901,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtPurpleElegantDress
+    jumpsuit: JumpskirtPurpleElegantDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCyanStripedDress
@@ -911,7 +911,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCyanStripedDress
+    jumpsuit: JumpskirtCyanStripedDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtRedStripedDress
@@ -921,7 +921,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtRedStripedDress
+    jumpsuit: JumpskirtRedStripedDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtGreenStripedDress
@@ -931,7 +931,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtGreenStripedDress
+    jumpsuit: JumpskirtGreenStripedDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtPinkStripedDress
@@ -941,7 +941,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtPinkStripedDress
+    jumpsuit: JumpskirtPinkStripedDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtOrangeStripedDress
@@ -951,7 +951,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtOrangeStripedDress
+    jumpsuit: JumpskirtOrangeStripedDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtPurpleTurtleneckDress
@@ -961,7 +961,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtPurpleTurtleneckDress
+    jumpsuit: JumpskirtPurpleTurtleneckDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtRedTurtleneckDress
@@ -971,7 +971,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtRedTurtleneckDress
+    jumpsuit: JumpskirtRedTurtleneckDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtGreenTurtleneckDress
@@ -981,7 +981,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtGreenTurtleneckDress
+    jumpsuit: JumpskirtGreenTurtleneckDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtBlueTurtleneckDress
@@ -991,7 +991,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtBlueTurtleneckDress
+    jumpsuit: JumpskirtBlueTurtleneckDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtYellowTurtleneckDress
@@ -1001,7 +1001,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtYellowTurtleneckDress
+    jumpsuit: JumpskirtYellowTurtleneckDress
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtYellowOldDress
@@ -1011,7 +1011,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtYellowOldDress
+    jumpsuit: JumpskirtYellowOldDress
 
 # Punk stuff
 - type: loadout
@@ -1022,7 +1022,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomPunkCroptop
+    jumpsuit: RandomPunkCroptop
 
 - type: loadout
   id: PirateContractorClothingUniformRandomPunkTanktop
@@ -1032,7 +1032,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomPunkTanktop
+    jumpsuit: RandomPunkTanktop
 
 - type: loadout
   id: PirateContractorClothingUniformRandomArmlessNoSkirt
@@ -1042,7 +1042,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomArmlessNoSkirt
+    jumpsuit: RandomArmlessNoSkirt
 
 - type: loadout
   id: PirateContractorClothingUniformRandomPunkCroptopShorts
@@ -1052,7 +1052,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomPunkCroptopShorts
+    jumpsuit: RandomPunkCroptopShorts
 
 - type: loadout
   id: PirateContractorClothingUniformRandomPunkTanktopShorts
@@ -1062,7 +1062,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomPunkTanktopShorts
+    jumpsuit: RandomPunkTanktopShorts
 
 - type: loadout
   id: PirateContractorClothingUniformRandomArmless
@@ -1072,7 +1072,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomArmless
+    jumpsuit: RandomArmless
 
 - type: loadout
   id: PirateContractorClothingUniformRandomStandard
@@ -1082,7 +1082,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomStandard
+    jumpsuit: RandomStandard
 
 - type: loadout
   id: PirateContractorClothingUniformRandomShorts
@@ -1095,7 +1095,7 @@
     proto: NotFemaleNF
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomShorts
+    jumpsuit: RandomShorts
 
 - type: loadout
   id: PirateContractorClothingUniformRandomShirt
@@ -1105,7 +1105,7 @@
     proto: ContractorT1
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformRandomShirt
+    jumpsuit: RandomShirt
 
 - type: loadout
   id: PirateContractorClothingSkirtUniformRandomArmless
@@ -1168,7 +1168,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMonasticRobeDark
+    jumpsuit: JumpsuitMonasticRobeDark
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMonasticRobeLight
@@ -1177,7 +1177,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMonasticRobeLight
+    jumpsuit: JumpsuitMonasticRobeLight
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitChaplainPilgrimVest
@@ -1186,7 +1186,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitChaplainPilgrimVest
+    jumpsuit: JumpsuitChaplainPilgrimVest
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitQMTurtleneck
@@ -1195,7 +1195,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitQMTurtleneck
+    jumpsuit: JumpsuitQMTurtleneck
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtQMTurtleneck
@@ -1204,7 +1204,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtQMTurtleneck
+    jumpsuit: JumpskirtQMTurtleneck
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitSeniorPhysician
@@ -1213,7 +1213,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitSeniorPhysician
+    jumpsuit: JumpsuitSeniorPhysician
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtSeniorPhysician
@@ -1222,7 +1222,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtSeniorPhysician
+    jumpsuit: JumpskirtSeniorPhysician
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitCMO
@@ -1231,7 +1231,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCMO
+    jumpsuit: JumpsuitCMO
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCMO
@@ -1240,7 +1240,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCMO
+    jumpsuit: JumpskirtCMO
 
 - type: loadout
   id: PirateContractorClothingUniformTurtleneckCMO
@@ -1249,7 +1249,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCMOTurtle
+    jumpsuit: JumpsuitCMOTurtle
 
 - type: loadout
   id: PirateContractorClothingUniformTurtleskirtCMO
@@ -1258,7 +1258,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCMOTurtle
+    jumpsuit: JumpskirtCMOTurtle
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitSeniorResearcher
@@ -1267,7 +1267,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitSeniorResearcher
+    jumpsuit: JumpsuitSeniorResearcher
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtSeniorResearcher
@@ -1276,7 +1276,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtSeniorResearcher
+    jumpsuit: JumpskirtSeniorResearcher
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitResearchDirector
@@ -1285,7 +1285,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitResearchDirector
+    jumpsuit: JumpsuitResearchDirector
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtResearchDirector
@@ -1294,7 +1294,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtResearchDirector
+    jumpsuit: JumpskirtResearchDirector
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitSeniorEngineer
@@ -1303,7 +1303,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitSeniorEngineer
+    jumpsuit: JumpsuitSeniorEngineer
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtSeniorEngineer
@@ -1312,7 +1312,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtSeniorEngineer
+    jumpsuit: JumpskirtSeniorEngineer
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitChiefEngineerNT
@@ -1321,7 +1321,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitChiefEngineerNT
+    jumpsuit: JumpsuitChiefEngineerNT
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitChiefEngineer
@@ -1330,7 +1330,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitChiefEngineer
+    jumpsuit: JumpsuitChiefEngineer
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtChiefEngineer
@@ -1339,7 +1339,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtChiefEngineer
+    jumpsuit: JumpskirtChiefEngineer
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitChiefEngineerTurtle
@@ -1348,7 +1348,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitChiefEngineerTurtle
+    jumpsuit: JumpsuitChiefEngineerTurtle
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtChiefEngineerTurtle
@@ -1357,7 +1357,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtChiefEngineerTurtle
+    jumpsuit: JumpskirtChiefEngineerTurtle
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitJester
@@ -1366,7 +1366,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitJester
+    jumpsuit: JumpsuitJester
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitJesterAlt
@@ -1375,7 +1375,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitJesterAlt
+    jumpsuit: JumpsuitJesterAlt
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitKilt
@@ -1384,7 +1384,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitKilt
+    jumpsuit: JumpsuitKilt
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitDameDane
@@ -1393,7 +1393,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitDameDane
+    jumpsuit: JumpsuitDameDane
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitKimono
@@ -1402,7 +1402,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitKimono
+    jumpsuit: JumpsuitKimono
 
 - type: loadout
   id: PirateContractorClothingKimonoPink
@@ -1432,7 +1432,7 @@
     proto: NotFemaleNF
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitGladiator
+    jumpsuit: JumpsuitGladiator
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtPerformer
@@ -1441,7 +1441,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtPerformer
+    jumpsuit: JumpskirtPerformer
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtJanimaid
@@ -1450,7 +1450,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtJanimaid
+    jumpsuit: JumpskirtJanimaid
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitSafari
@@ -1459,7 +1459,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitSafari
+    jumpsuit: JumpsuitSafari
 
 - type: loadout
   id: PirateContractorUniformShortsRed
@@ -1489,7 +1489,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitClown
+    jumpsuit: JumpsuitClown
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMime
@@ -1498,7 +1498,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMime
+    jumpsuit: JumpsuitMime
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtMime
@@ -1507,7 +1507,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtMime
+    jumpsuit: JumpskirtMime
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitTshirtJeans
@@ -1516,7 +1516,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitTshirtJeans
+    jumpsuit: JumpsuitTshirtJeans
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitTshirtJeansGray
@@ -1525,7 +1525,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitTshirtJeansGray
+    jumpsuit: JumpsuitTshirtJeansGray
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitTshirtJeansPeach
@@ -1534,7 +1534,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitTshirtJeansPeach
+    jumpsuit: JumpsuitTshirtJeansPeach
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitCaptain
@@ -1543,7 +1543,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCaptain
+    jumpsuit: JumpsuitCaptain
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCaptain
@@ -1552,7 +1552,7 @@
     proto: ContractorT2
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCaptain
+    jumpsuit: JumpskirtCaptain
 
 # T3
 - type: loadout
@@ -1562,7 +1562,7 @@
     proto: ContractorT3
   price: 1500
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitCapFormal
+    jumpsuit: JumpsuitCapFormal
 
 - type: loadout
   id: PirateContractorClothingUniformJumpskirtCapFormalDress
@@ -1571,7 +1571,7 @@
     proto: ContractorT3
   price: 1500
   equipment:
-    jumpsuit: PirateClothingUniformJumpskirtCapFormalDress
+    jumpsuit: JumpskirtCapFormalDress
 
 # T3 "Military"
 - type: loadout
@@ -1581,7 +1581,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryContractor
+    jumpsuit: JumpsuitMilitaryContractor
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryContractorTac
@@ -1590,7 +1590,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryContractorTac
+    jumpsuit: JumpsuitMilitaryContractorTac
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryCaptain
@@ -1599,7 +1599,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryCaptain
+    jumpsuit: JumpsuitMilitaryCaptain
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryAtmospherics
@@ -1608,7 +1608,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryAtmospherics
+    jumpsuit: JumpsuitMilitaryAtmospherics
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryEngineering
@@ -1617,7 +1617,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryEngineering
+    jumpsuit: JumpsuitMilitaryEngineering
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryEngineeringChief
@@ -1626,7 +1626,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryEngineeringChief
+    jumpsuit: JumpsuitMilitaryEngineeringChief
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitarySalvageSpecialist
@@ -1635,7 +1635,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitarySalvageSpecialist
+    jumpsuit: JumpsuitMilitarySalvageSpecialist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryCargo
@@ -1644,7 +1644,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryCargo
+    jumpsuit: JumpsuitMilitaryCargo
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryQM
@@ -1653,7 +1653,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryQM
+    jumpsuit: JumpsuitMilitaryQM
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryParamedic
@@ -1662,7 +1662,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryParamedic
+    jumpsuit: JumpsuitMilitaryParamedic
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryMedicalDoctor
@@ -1671,7 +1671,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryMedicalDoctor
+    jumpsuit: JumpsuitMilitaryMedicalDoctor
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryChemistry
@@ -1680,7 +1680,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryChemistry
+    jumpsuit: JumpsuitMilitaryChemistry
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryVirology
@@ -1689,7 +1689,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryVirology
+    jumpsuit: JumpsuitMilitaryVirology
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryGenetics
@@ -1698,7 +1698,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryGenetics
+    jumpsuit: JumpsuitMilitaryGenetics
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryCMO
@@ -1707,7 +1707,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryCMO
+    jumpsuit: JumpsuitMilitaryCMO
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryScientist
@@ -1716,7 +1716,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryScientist
+    jumpsuit: JumpsuitMilitaryScientist
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryResearchDirector
@@ -1725,7 +1725,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryResearchDirector
+    jumpsuit: JumpsuitMilitaryResearchDirector
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryService
@@ -1734,7 +1734,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryService
+    jumpsuit: JumpsuitMilitaryService
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryHydroponics
@@ -1743,7 +1743,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryHydroponics
+    jumpsuit: JumpsuitMilitaryHydroponics
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorGrey
@@ -1752,7 +1752,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorGrey
+    jumpsuit: JumpsuitMilitaryColorGrey
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorBlack
@@ -1761,7 +1761,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorBlack
+    jumpsuit: JumpsuitMilitaryColorBlack
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorBlue
@@ -1770,7 +1770,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorBlue
+    jumpsuit: JumpsuitMilitaryColorBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorDarkBlue
@@ -1779,7 +1779,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorDarkBlue
+    jumpsuit: JumpsuitMilitaryColorDarkBlue
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorTeal
@@ -1788,7 +1788,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorTeal
+    jumpsuit: JumpsuitMilitaryColorTeal
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorGreen
@@ -1797,7 +1797,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorGreen
+    jumpsuit: JumpsuitMilitaryColorGreen
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorDarkGreen
@@ -1806,7 +1806,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorDarkGreen
+    jumpsuit: JumpsuitMilitaryColorDarkGreen
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorOrange
@@ -1815,7 +1815,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorOrange
+    jumpsuit: JumpsuitMilitaryColorOrange
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorPink
@@ -1824,7 +1824,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorPink
+    jumpsuit: JumpsuitMilitaryColorPink
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorRed
@@ -1833,7 +1833,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorRed
+    jumpsuit: JumpsuitMilitaryColorRed
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorYellow
@@ -1842,7 +1842,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorYellow
+    jumpsuit: JumpsuitMilitaryColorYellow
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorPurple
@@ -1851,7 +1851,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorPurple
+    jumpsuit: JumpsuitMilitaryColorPurple
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorLightBrown
@@ -1860,7 +1860,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorLightBrown
+    jumpsuit: JumpsuitMilitaryColorLightBrown
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorBrown
@@ -1869,7 +1869,7 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorBrown
+    jumpsuit: JumpsuitMilitaryColorBrown
 
 - type: loadout
   id: PirateContractorClothingUniformJumpsuitMilitaryColorMaroon
@@ -1878,4 +1878,4 @@
     proto: ContractorT3
   price: 0
   equipment:
-    jumpsuit: PirateClothingUniformJumpsuitMilitaryColorMaroon
+    jumpsuit: JumpsuitMilitaryColorMaroon
