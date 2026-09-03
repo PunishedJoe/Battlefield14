@@ -1,0 +1,44 @@
+- type: gameMap
+  id: BF14Waco
+  mapName: 'Waco'
+  mapPath: /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap0.yml
+  minPlayers: 1
+  maxPlayers: 50
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Waco:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Waco, Texas"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Texas, United States"
+          stationDescription: "A compound in Waco. Texas"
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            SuspectUS: [ 20, 20 ]
+            USPDSWATLieutenant: [ 1, 1 ]
+            USPDSWATSquadLeader: [ 2, 2 ]
+            USPDSWATOfficer: [ 6, 6 ]
+        - type: CEStationZLevels
+          mapsAbove:
+            - /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap1.yml
+            - /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap2.yml
+            - /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap3.yml
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+
+- type: zMap
+  id: BF14WacoZMap
+  maps:
+    - /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap0.yml    # Level 0
+    - /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap1.yml    # Level 1 
+    - /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap2.yml    # Level 2 
+    - /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap3.yml    # Level 3 
+  components:
+    - type: CEAutoGridGravity

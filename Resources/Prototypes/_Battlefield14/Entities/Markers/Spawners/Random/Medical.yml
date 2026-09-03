@@ -1,5 +1,5 @@
 - type: entity
-  name: Random Pill Box Spawner
+  name: random medication box spawner
   id: BF14RandomSpawnerMedicationBox
   parent: MarkerBase
   placement:
@@ -37,7 +37,7 @@
       - MedicationBoxSyrettesArithrazine
 
 - type: entity
-  name: Random Pill Box Spawner
+  name: random pill box spawner
   id: BF14RandomSpawnerPillBox
   parent: MarkerBase
   placement:
@@ -65,7 +65,7 @@
       - MedicationBoxPillsHyronalin
 
 - type: entity
-  name: Random Syrette Box Spawner
+  name: random syrette box spawner
   id: BF14RandomSpawnerSyretteBox
   parent: MarkerBase
   placement:

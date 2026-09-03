@@ -178,11 +178,8 @@
       - WeaponRifleUSAR15
       - WeaponSubmachinegunUSMP5
       - WeaponSubmachinegunUSMAC10
-      - WeaponSubmachinegunUSMAC10Supp
       - WeaponShotgunUSM590
       - WeaponShotgunUSM870
-      - WeaponRifleUSM16A1
-      - WeaponRifleUSM14
       - WeaponSniperUSM40A1
       - BF14KnifeFlipTaticool
     chance: 1
@@ -199,15 +196,12 @@
   - type: RandomSpawner
     offset: 0.3
     prototypes:
-      - WeaponRifleUSM4A1
-      - WeaponRifleUSM4A1ACOG
+      - WeaponRifleUSM16A1
       - WeaponRifleUSM16A2
-      - WeaponRifleUSM16A4
       - WeaponShotgunUSM870
       - WeaponRifleUSM14
-      - WeaponSniperUSM14EBR
+      - WeaponSubmachinegunUSMAC10Supp
       - WeaponSniperUSM40A1
-      - WeaponSniperUSM40A5
     chance: 1
 
 ## AMMO
@@ -228,6 +222,7 @@
       - MagazinePistolM9
       - MagazinePistolM1911
       - MagazinePistolGlock17
+      - MagazineRifleSTANAGShort
       - ShellBoxBF12GaugeBuckshot
       - SmokeGrenadeUSM18
     chance: 1
@@ -251,12 +246,11 @@
       - ShellBoxBF12GaugeBuckshot
       - MagazineRifleM14
       - MagazineRifleSTANAG
-      - MagazineSniperM40A5
       - MagazineSubmachinegunMP5
       - MagazineSubmachinegunMAC10
       - SmokeGrenadeUSM18
-      - DefensiveGrenadeUSM67
       - FlashbangGrenadeUSM84
+      - DefensiveGrenadeUSM67
     chance: 1
 
 - type: entity
@@ -278,10 +272,11 @@
       - MagazineSniperM40A5
       - MagazineSubmachinegunMP5
       - MagazineSubmachinegunMAC10
-      - FlashbangGrenadeUSM84
       - SmokeGrenadeUSM18
-      - OffensiveGrenadeUSMK21
+      - FlashbangGrenadeUSM84
+      - OffensiveGrenadeUSMK3A2
     chance: 1
+
 #region RUSSIAN LOOT
 ## Weapons
 
@@ -473,6 +468,7 @@
      - ClothingOuterArmorSurplusVestEmpty
      - ClothingOuterArmorBasicPlateCarrierEmpty
      - ClothingBeltMilitaryWebbingRU
+     - ClothingBeltMilitaryWebbingSmallPouchesOlive
      - ClothingBeltMilitaryWebbingIkea
      - ClothingOuterArmorPlateCarrierCivillian
      - ClothingOuterArmorSurplusVestUNEmpty
@@ -507,4 +503,101 @@
      - ClothingBackpackRucksackTan
      - ClothingHeadHatHelmetUN
      - ClothingHeadHatHelmetSurplus
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomClothingMapLowTierUNI
+  name: Low tier universal clothing
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/plain.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - ClothingUniformJumpsuitPlain
+      - ClothingUniformJumpsuitWorker
+      - ClothingUniformJumpsuitClerk
+      - ClothingUniformJumpsuitDealer
+      - ClothingUniformJumpsuitHunter
+      - ClothingUniformJumpsuitHawaiBlack
+      - ClothingUniformJumpsuitHawaiBlue
+      - ClothingUniformJumpsuitPatrioticUSA1
+      - ClothingUniformJumpsuitGorka
+      - ClothingHeadHatBeanieBlack
+      - ClothingHeadHatPompon
+      - ClothingMaskNeckGaiter
+      - BF14ClothingOuterCoatCivGreen
+      - BF14ClothingOuterCoatCivBlack
+      - BF14ClothingOuterCoatCivRed
+      - BF14ClothingOuterCoatCivUkr
+      - ClothingOuterCoatBomber
+      - ClothingOuterCoatJacketLettermanBrown
+      - ClothingOuterBlackTrenchcoat
+      - ClothingHandsGlovesColorBlack
+      - ClothingHandsGlovesFingerless
+      - ClothingShoesColorBlack
+      - ClothingShoesColorBrown
+      - ClothingShoesBootsJack
+      - ClothingShoesBootsLaceup
+      - ClothingShoesBootsWork
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomClothingMapMidTierUNI
+  name: Mid tier universal clothing
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/hunting.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - ClothingUniformJumpsuitPlain
+      - ClothingUniformJumpsuitWorker
+      - ClothingUniformJumpsuitDealer
+      - ClothingUniformJumpsuitHunter
+      - ClothingUniformJumpsuitPatrioticUSA1
+      - ClothingUniformJumpsuitGorka
+      - ClothingHeadHatBeanieBlack
+      - ClothingMaskNeckGaiter
+      - ClothingBalaclavaMilitary
+      - ClothingBalaclavaMilitarySkull
+      - ClothingOuterArmorPlateCarrierCivillian
+      - ClothingHandsGlovesColorBlack
+      - ClothingBackpackButtpack
+      - ClothingBackpackButtpackSurplus
+      - ClothingBeltMilitaryWebbingIkea
+      - ClothingBeltMilitaryWebbingSmallPouchesOlive
+      - ClothingShoesColorBlack
+      - ClothingShoesBootsJack
+      - ClothingShoesBootsWork
+    chance: 1
+
+- type: entity
+  parent: MarkerBase
+  id: RandomClothingMapLowTierIndustrial
+  name: Low tier industrial clothing
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/worker.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0.3
+    prototypes:
+      - ClothingUniformJumpsuitWorker
+      - ClothingUniformJumpsuitEngineer
+      - ClothingUniformJumpsuitMechanic
+      - ClothingHeadHatBeanieBlack
+      - ClothingHeadHatHelmetHardhat
+      - ClothingEyesGlassesSafetyGoggles
+      - ClothingOuterWorkJacket
+      - ClothingOuterWorkerHighViz
+      - ClothingHandsGlovesColorBlack
+      - ClothingShoesBootsWork
     chance: 1
