@@ -6,8 +6,8 @@
   loadouts:
   - PirateJumpsuit
   - PirateJumpskirt
-  - PirateClothingUniformJumpsuitPirateSlops
-  - PirateClothingUniformJumpsuitPirateLuffy
+  - JumpsuitPirateSlops
+  - JumpsuitPirateLuffy
   subgroups: # mono
   - PirateMercenaryJumpsuit
 

@@ -11,13 +11,13 @@
     jumpsuit: ClothingUniformJumpskirtColorLightBrown
 
 - type: loadout
-  id: PirateClothingUniformJumpsuitPirateSlops
+  id: JumpsuitPirateSlops
   price: 0
   equipment:
     jumpsuit: ClothingUniformJumpsuitPirateSlops
 
 - type: loadout
-  id: PirateClothingUniformJumpsuitPirateLuffy
+  id: JumpsuitPirateLuffy
   price: 0
   equipment:
     jumpsuit: ClothingUniformJumpsuitPirateLuffy
