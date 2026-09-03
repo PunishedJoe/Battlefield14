@@ -63,3 +63,36 @@
     sprite: _Battlefield14/Clothing/OuterClothing/Coats/frjacket.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/OuterClothing/Coats/frjacket.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterWorkJacket
+  name: work jacket
+  description: A work jacket worn by blue collar workers.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Misc/worker.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Misc/worker.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterBlackTrenchcoat
+  name: trench coat
+  description: "It has a tag on the inside, with 'Not Important' written on it"
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Misc/trenchcoat.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Misc/trenchcoat.rsi
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingOuterWorkerHighViz
+  name: high-viz vest
+  description: A high visibility vest worn by blue collar workers.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Misc/highviz.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Misc/highviz.rsi
