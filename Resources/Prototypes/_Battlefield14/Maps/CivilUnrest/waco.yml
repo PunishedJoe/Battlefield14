@@ -2,7 +2,7 @@
   id: BF14Waco
   mapName: 'Waco'
   mapPath: /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap0.yml
-  minPlayers: 1
+  minPlayers: 10
   maxPlayers: 50
   randomRotation: false
   maxRandomOffset: 0
