@@ -169,7 +169,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterSuitRad
+      - id: ClothingOuterSuitHazmat # BF14
         amount: 2
       - id: GeigerCounter
         amount: 2

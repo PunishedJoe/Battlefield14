@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/19/2026 06:19:51
-  entityCount: 153
+  time: 08/29/2026 10:37:31
+  entityCount: 158
 maps: []
 grids:
 - 1
@@ -64,9 +64,9 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Kudzu: []
-        MetalFoam: []
-        Puddle: []
         Smoke: []
+        Puddle: []
+        MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -121,7 +121,8 @@ entities:
           0,-2:
             0: 20480
           -1,-1:
-            0: 52360
+            2: 1024
+            0: 51336
             1: 2
           -1,-2:
             0: 16384
@@ -150,6 +151,25 @@ entities:
           moles:
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.66546
+          - 81.50341
           - 0
           - 0
           - 0
@@ -662,8 +682,8 @@ entities:
         immutable: False
         temperature: 293.14917
         moles:
-        - 1.7245356
-        - 6.4875383
+        - 1.8839531
+        - 7.0872526
         - 0
         - 0
         - 0
@@ -684,12 +704,13 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 77
-          - 96
-          - 136
-          - 137
-          - 139
           - 140
+          - 77
+          - 56
+          - 136
+          - 139
+          - 137
+          - 96
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -895,6 +916,15 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-1.5
       parent: 1
+- proto: ShipRepairKitFilled
+  entities:
+  - uid: 56
+    components:
+    - type: Transform
+      parent: 76
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SignalButtonDirectional
   entities:
   - uid: 123
@@ -969,11 +999,33 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,-4.5
       parent: 1
+  - uid: 57
+    components:
+    - type: Transform
+      pos: -2.5,2.5
+      parent: 1
+  - uid: 97
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -2.5,-3.5
+      parent: 1
+  - uid: 98
+    components:
+    - type: Transform
+      pos: 3.5,2.5
+      parent: 1
   - uid: 99
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 2.5,-4.5
+      parent: 1
+  - uid: 101
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 3.5,-3.5
       parent: 1
   - uid: 103
     components:

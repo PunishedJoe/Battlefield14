@@ -4,7 +4,7 @@
   description: job-description-hecu-rifleman
   playTimeTracker: JobHECURifleman
   weight: 77
-  startingGear: USMCRiflemanGear
+  startingGear: HECURiflemanGear
   alwaysUseSpawner: true
   icon: "JobIconNATORifleman"
   requireAdminNotify: false
@@ -38,6 +38,7 @@
   - NATOMaintenance
   - NATOSoldier
   - NATOArmory
+  - PillHyronalin
 
 - type: startingGear
   id: HECURiflemanGear
@@ -55,9 +56,8 @@
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackMercenary
     suitstorage: WeaponRifleUSCAR15
-    suitstorage2: WeaponGrenadeLauncherUSM320HE
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
+    pocket2: PouchGrenadesFilledUSARifleman
     leftarmband: Tourniquet
     wallet: ClothingWalletLeatherBrown
   storage:
@@ -66,8 +66,5 @@
     - BoxMRE
     - CrowbarRed
     - PowerCellPCV
-    - Cartridge40x46mmHE
-    - Cartridge40x46mmHE
-    - Cartridge40x46mmHE
     - Tourniquet
     - Zipties

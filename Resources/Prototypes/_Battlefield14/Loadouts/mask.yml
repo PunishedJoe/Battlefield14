@@ -7,3 +7,8 @@
   id: LoadoutMaskBF14MilitaryBalaclava
   equipment:
     balaclava: ClothingBalaclavaMilitary
+
+- type: loadout
+  id: LoadoutMaskBF14MilitaryBalaclavaSkull
+  equipment:
+    balaclava: ClothingBalaclavaMilitarySkull

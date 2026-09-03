@@ -435,7 +435,7 @@
   id: USPDSWATOfficerPDA
   name: SWAT PDA
   description: Filled with bodycam footage.
-  suffix: SWAY officer
+  suffix: SWAT officer
   components:
   - type: Pda
     id: USPDSWATOfficerIDCard
@@ -544,6 +544,99 @@
 
 ## RU
 
+#region RGF
+
+- type: entity
+  parent: BasePDA
+  id: RGFLieutenantPDA
+  name: RGF PDA
+  description: Filled with drone footage.
+  suffix: lieutenant
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RGFLieutenantIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: RGFSquadLeaderPDA
+  name: RGF PDA
+  description: Filled with drone footage.
+  suffix: senior rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RGFSquadLeaderIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: RGFRiflemanPDA
+  name: RGF PDA
+  description: Filled with drone footage.
+  suffix: rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RGFRiflemanIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: RGFAutomaticRiflemanPDA
+  name: RGF PDA
+  description: Filled with drone footage.
+  suffix: automatic rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RGFAutomaticRiflemanIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: RGFMedicPDA
+  name: RGF PDA
+  description: What's that guy with the sledgehammer doing?.
+  suffix: combat medic
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RGFMedicIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: RGFRiflemanPDA
+  id: RGFReconPDA
+  name: RGF PDA
+  description: Filled with drone footage.
+  suffix: recon scout
+  components:
+  - type: Pda
+    id: RGFReconIDCard
+    state: pda-ru
+
 #region VDV
 
 - type: entity
@@ -636,6 +729,122 @@
   - type: Pda
     id: VDVReconIDCard
     state: pda-ru
+
+#region RKhB
+
+- type: entity
+  parent: BasePDA
+  id: RKhBSquadLeaderPDA
+  name: RKhB PDA
+  description: Filled with drone footage.
+  suffix: senior rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RKhBSquadLeaderIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: RKhBRiflemanPDA
+  name: RKhB PDA
+  description: Filled with drone footage.
+  suffix: rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RKhBRiflemanIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: RKhBSupportPDA
+  name: RKhB PDA
+  description: Filled with drone footage.
+  suffix: automatic rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RKhBSupportIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: RKhBMedicPDA
+  name: RKhB PDA
+  description: What's that guy with the sledgehammer doing?.
+  suffix: combat medic
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RKhBMedicIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+#region OMON
+
+- type: entity
+  parent: BasePDA
+  id: OMONLieutenantPDA
+  name: OMON PDA
+  description: Filled with drone footage.
+  suffix: lieutenant
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: OMONLieutenantIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: OMONSquadLeaderPDA
+  name: OMON PDA
+  description: Filled with drone footage.
+  suffix: senior rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: OMONSquadLeaderIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
+  id: OMONRiflemanPDA
+  name: OMON PDA
+  description: Filled with drone footage.
+  suffix: rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: OMONRiflemanIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
 
 #region FSB
 

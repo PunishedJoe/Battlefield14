@@ -10,7 +10,7 @@
   - type: Sprite
     drawdepth: Items
     sprite: _Battlefield14/Objects/Weapons/Landmines/TM62.rsi
-    state: icon
+    state: base
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -128,10 +128,9 @@
         color: green
         requireDetailRange: true
 
-
 - type: entity
   name: PFM-1
-  description: An anti-personnel mine, based off the german bouncing betty. Shares a designation with the rifle you're holding in your hands.
+  description: An anti-personnel land mine, placed in batches by mortars or other scattering systems.
   parent: BaseLandMine
   id: LandMinePFM1
   suffix: Armed, Placed
@@ -157,7 +156,7 @@
     ports:
       - Trigger
   - type: ActiveTimerTrigger
-    timeRemaining: 144000
+    timeRemaining: 144000 # 40 hours
   - type: ExtendDescription
     descriptionList:
       - description: It is ARMED. Use a multitool to link it to a device. Self destructs after 40 hours.
@@ -168,7 +167,7 @@
   parent: BaseItem
   id: LandMinePFM1Item
   name: PFM-1
-  description: An anti-personnel mine, based off the german bouncing betty. Shares a designation with the rifle you're holding in your hands.
+  description: An anti-personnel land mine, placed in batches by mortars or other scattering systems.
   suffix: Disarmed, Decomposes
   components:
   - type: Sprite

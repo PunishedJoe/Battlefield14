@@ -45,9 +45,9 @@
     id: USMCSquadLeaderPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAGTracerRed
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUS
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+    head: ClothingHeadHatHelmetUSACH
+    outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilledUSMC
     suitstorage: WeaponRifleUSM4A1
     pocket1: PouchFirstAidFilled

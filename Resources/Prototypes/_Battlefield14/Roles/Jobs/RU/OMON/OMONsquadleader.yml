@@ -45,11 +45,12 @@
 - type: startingGear
   id: OMONSquadLeaderGear
   equipment:
-    id: VDVSquadLeaderPDA # TODO
+    id: OMONSquadLeaderPDA
     ears: ClothingHeadsetAltRUCommand
-    belt: ClothingBeltMilitaryWebbingRU
+    head: ClothingHeadHatHelmetRU6b47
     jumpsuit: ClothingUniformJumpsuitRUOMON
     outerClothing: ClothingOuterArmorWebVestSec
+    belt: ClothingBeltMilitaryWebbingSmallPouchesOlive
     shoes: ClothingShoesBootsJackFilledRU
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledVDVScout

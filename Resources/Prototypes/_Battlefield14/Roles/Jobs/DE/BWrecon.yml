@@ -41,13 +41,12 @@
   equipment:
     id: BWReconPDA
     ears: ClothingHeadsetAltDE
-    belt: ClothingBeltMilitaryWebbingDEFilledG36
+    belt: ClothingBeltMilitaryWebbingDEFilledG28
     jumpsuit: ClothingUniformJumpsuitCamoDEFlecktarn
     head: ClothingHeadHatHelmetDEM92
-    helmetattachment: ClothingHelmetAttachmentNVGsBasicNATO
     outerClothing: ClothingOuterArmorPlateCarrierMOBAST
     shoes: ClothingShoesBootsJackFilledBW
-    suitstorage: WeaponRifleDEG36CSupp
+    suitstorage: WeaponSniperDEG28
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledBWScout
   storage:

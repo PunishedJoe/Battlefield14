@@ -52,3 +52,18 @@
   license: "Custom"
   copyright: "flip-flap by X-CEED"
   source: "https://www.youtube.com/watch?v=o6K1z2neEdo"
+
+- files: ["shomerhomot.ogg"]
+  license: "Custom"
+  copyright: "Lehakat Pikkud haMerkaz - Shomer haHomot"
+  source: "https://www.youtube.com/watch?v=ys05lBFth3I"
+
+- files: ["bojnacavoglave.ogg"]
+  license: "Custom"
+  copyright: "Bojna Cavoglave by Marko Perkovic Thompson"
+  source: "https://www.youtube.com/watch?v=pfUCdsLgr4Y"
+
+- files: ["dontfearthereaper.ogg"]
+  license: "Custom"
+  copyright: "Blue Oyster Cult"
+  source: "https://www.youtube.com/watch?v=Dy4HA3vUv2c"

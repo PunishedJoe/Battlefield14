@@ -7731,343 +7731,286 @@ entities:
 - proto: RMCFogWallPermanent
   entities:
   - uid: 1267
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-9.5
       parent: 1
   - uid: 1268
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-8.5
       parent: 1
   - uid: 1269
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-7.5
       parent: 1
   - uid: 1270
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-6.5
       parent: 1
   - uid: 1271
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-5.5
       parent: 1
   - uid: 1272
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-4.5
       parent: 1
   - uid: 1273
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-3.5
       parent: 1
   - uid: 1274
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-2.5
       parent: 1
   - uid: 1275
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-1.5
       parent: 1
   - uid: 1276
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-0.5
       parent: 1
   - uid: 1277
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,0.5
       parent: 1
   - uid: 1278
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,1.5
       parent: 1
   - uid: 1279
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,2.5
       parent: 1
   - uid: 1280
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,3.5
       parent: 1
   - uid: 1281
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,4.5
       parent: 1
   - uid: 1282
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,5.5
       parent: 1
   - uid: 1283
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,6.5
       parent: 1
   - uid: 1284
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,7.5
       parent: 1
   - uid: 1285
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,8.5
       parent: 1
   - uid: 1286
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,9.5
       parent: 1
   - uid: 1287
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,10.5
       parent: 1
   - uid: 1288
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,11.5
       parent: 1
   - uid: 1289
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,12.5
       parent: 1
   - uid: 1290
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,13.5
       parent: 1
   - uid: 1291
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,14.5
       parent: 1
   - uid: 1292
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,14.5
       parent: 1
   - uid: 1293
-    mapInit: true
     components:
     - type: Transform
       pos: -29.5,14.5
       parent: 1
   - uid: 1294
-    mapInit: true
     components:
     - type: Transform
       pos: -28.5,14.5
       parent: 1
   - uid: 1295
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,14.5
       parent: 1
   - uid: 1296
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,32.5
       parent: 1
   - uid: 1297
-    mapInit: true
     components:
     - type: Transform
       pos: -28.5,32.5
       parent: 1
   - uid: 1298
-    mapInit: true
     components:
     - type: Transform
       pos: -29.5,32.5
       parent: 1
   - uid: 1299
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,32.5
       parent: 1
   - uid: 1300
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,31.5
       parent: 1
   - uid: 1301
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,30.5
       parent: 1
   - uid: 1302
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,29.5
       parent: 1
   - uid: 1303
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,28.5
       parent: 1
   - uid: 1304
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,27.5
       parent: 1
   - uid: 1305
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,26.5
       parent: 1
   - uid: 1306
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,25.5
       parent: 1
   - uid: 1307
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,24.5
       parent: 1
   - uid: 1308
-    mapInit: true
     components:
     - type: Transform
       pos: -29.5,24.5
       parent: 1
   - uid: 1309
-    mapInit: true
     components:
     - type: Transform
       pos: -28.5,24.5
       parent: 1
   - uid: 1310
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,24.5
       parent: 1
   - uid: 1311
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,23.5
       parent: 1
   - uid: 1312
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,22.5
       parent: 1
   - uid: 1313
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,21.5
       parent: 1
   - uid: 1314
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,20.5
       parent: 1
   - uid: 1315
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,19.5
       parent: 1
   - uid: 1316
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,18.5
       parent: 1
   - uid: 1317
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,17.5
       parent: 1
   - uid: 1318
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,16.5
       parent: 1
   - uid: 1319
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,15.5
       parent: 1
   - uid: 1355
-    mapInit: true
     components:
     - type: Transform
       pos: -11.5,36.5
       parent: 1
   - uid: 1356
-    mapInit: true
     components:
     - type: Transform
       pos: -12.5,36.5
       parent: 1
   - uid: 1357
-    mapInit: true
     components:
     - type: Transform
       pos: -13.5,36.5
       parent: 1
   - uid: 1358
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8077,7 +8020,6 @@ entities:
       sleepTime: 877.5964
       bodyType: Dynamic
   - uid: 1359
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8087,7 +8029,6 @@ entities:
       sleepTime: 877.5964
       bodyType: Dynamic
   - uid: 1360
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8097,7 +8038,6 @@ entities:
       sleepTime: 877.5964
       bodyType: Dynamic
   - uid: 1361
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8107,31 +8047,26 @@ entities:
       sleepTime: 877.5964
       bodyType: Dynamic
   - uid: 1362
-    mapInit: true
     components:
     - type: Transform
       pos: -18.5,36.5
       parent: 1
   - uid: 1363
-    mapInit: true
     components:
     - type: Transform
       pos: -19.5,36.5
       parent: 1
   - uid: 1364
-    mapInit: true
     components:
     - type: Transform
       pos: -20.5,36.5
       parent: 1
   - uid: 1365
-    mapInit: true
     components:
     - type: Transform
       pos: -21.5,36.5
       parent: 1
   - uid: 1366
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8141,7 +8076,6 @@ entities:
       sleepTime: 877.5964
       bodyType: Dynamic
   - uid: 1367
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8151,7 +8085,6 @@ entities:
       sleepTime: 877.5964
       bodyType: Dynamic
   - uid: 1368
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8161,7 +8094,6 @@ entities:
       sleepTime: 877.5964
       bodyType: Dynamic
   - uid: 1369
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8171,199 +8103,166 @@ entities:
       sleepTime: 877.5964
       bodyType: Dynamic
   - uid: 1370
-    mapInit: true
     components:
     - type: Transform
       pos: -26.5,36.5
       parent: 1
   - uid: 1371
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,36.5
       parent: 1
   - uid: 1372
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,35.5
       parent: 1
   - uid: 1373
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,34.5
       parent: 1
   - uid: 1374
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,33.5
       parent: 1
   - uid: 1682
-    mapInit: true
     components:
     - type: Transform
       pos: -11.5,40.5
       parent: 1
   - uid: 1683
-    mapInit: true
     components:
     - type: Transform
       pos: -11.5,39.5
       parent: 1
   - uid: 1684
-    mapInit: true
     components:
     - type: Transform
       pos: -11.5,38.5
       parent: 1
   - uid: 1685
-    mapInit: true
     components:
     - type: Transform
       pos: -11.5,37.5
       parent: 1
   - uid: 1686
-    mapInit: true
     components:
     - type: Transform
       pos: -10.5,40.5
       parent: 1
   - uid: 1687
-    mapInit: true
     components:
     - type: Transform
       pos: -9.5,40.5
       parent: 1
   - uid: 1688
-    mapInit: true
     components:
     - type: Transform
       pos: -8.5,40.5
       parent: 1
   - uid: 1689
-    mapInit: true
     components:
     - type: Transform
       pos: -7.5,40.5
       parent: 1
   - uid: 1690
-    mapInit: true
     components:
     - type: Transform
       pos: -6.5,40.5
       parent: 1
   - uid: 1691
-    mapInit: true
     components:
     - type: Transform
       pos: -5.5,40.5
       parent: 1
   - uid: 1692
-    mapInit: true
     components:
     - type: Transform
       pos: -4.5,40.5
       parent: 1
   - uid: 1693
-    mapInit: true
     components:
     - type: Transform
       pos: -3.5,40.5
       parent: 1
   - uid: 1694
-    mapInit: true
     components:
     - type: Transform
       pos: -2.5,40.5
       parent: 1
   - uid: 1695
-    mapInit: true
     components:
     - type: Transform
       pos: -1.5,40.5
       parent: 1
   - uid: 1696
-    mapInit: true
     components:
     - type: Transform
       pos: -0.5,40.5
       parent: 1
   - uid: 1697
-    mapInit: true
     components:
     - type: Transform
       pos: 0.5,40.5
       parent: 1
   - uid: 1698
-    mapInit: true
     components:
     - type: Transform
       pos: 1.5,40.5
       parent: 1
   - uid: 1699
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,40.5
       parent: 1
   - uid: 1700
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,39.5
       parent: 1
   - uid: 1701
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,38.5
       parent: 1
   - uid: 1702
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,37.5
       parent: 1
   - uid: 1703
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,36.5
       parent: 1
   - uid: 1704
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,35.5
       parent: 1
   - uid: 1705
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,34.5
       parent: 1
   - uid: 1706
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,33.5
       parent: 1
   - uid: 1707
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,32.5
       parent: 1
   - uid: 1708
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,31.5
       parent: 1
   - uid: 2049
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8372,7 +8271,6 @@ entities:
     - type: Physics
       bodyType: Dynamic
   - uid: 2050
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8381,7 +8279,6 @@ entities:
     - type: Physics
       bodyType: Dynamic
   - uid: 2051
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8390,7 +8287,6 @@ entities:
     - type: Physics
       bodyType: Dynamic
   - uid: 2052
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8399,7 +8295,6 @@ entities:
     - type: Physics
       bodyType: Dynamic
   - uid: 2053
-    mapInit: true
     components:
     - type: Transform
       anchored: False
@@ -8408,1315 +8303,1096 @@ entities:
     - type: Physics
       bodyType: Dynamic
   - uid: 2054
-    mapInit: true
     components:
     - type: Transform
       pos: 3.5,31.5
       parent: 1
   - uid: 2055
-    mapInit: true
     components:
     - type: Transform
       pos: 4.5,31.5
       parent: 1
   - uid: 2056
-    mapInit: true
     components:
     - type: Transform
       pos: 5.5,31.5
       parent: 1
   - uid: 2057
-    mapInit: true
     components:
     - type: Transform
       pos: 6.5,31.5
       parent: 1
   - uid: 2058
-    mapInit: true
     components:
     - type: Transform
       pos: 7.5,31.5
       parent: 1
   - uid: 2059
-    mapInit: true
     components:
     - type: Transform
       pos: 8.5,31.5
       parent: 1
   - uid: 2060
-    mapInit: true
     components:
     - type: Transform
       pos: 9.5,31.5
       parent: 1
   - uid: 2061
-    mapInit: true
     components:
     - type: Transform
       pos: 10.5,31.5
       parent: 1
   - uid: 2062
-    mapInit: true
     components:
     - type: Transform
       pos: 11.5,31.5
       parent: 1
   - uid: 2063
-    mapInit: true
     components:
     - type: Transform
       pos: 12.5,31.5
       parent: 1
   - uid: 2064
-    mapInit: true
     components:
     - type: Transform
       pos: 13.5,31.5
       parent: 1
   - uid: 2065
-    mapInit: true
     components:
     - type: Transform
       pos: 14.5,31.5
       parent: 1
   - uid: 2066
-    mapInit: true
     components:
     - type: Transform
       pos: 15.5,31.5
       parent: 1
   - uid: 2067
-    mapInit: true
     components:
     - type: Transform
       pos: 16.5,31.5
       parent: 1
   - uid: 2068
-    mapInit: true
     components:
     - type: Transform
       pos: 17.5,31.5
       parent: 1
   - uid: 2069
-    mapInit: true
     components:
     - type: Transform
       pos: 17.5,30.5
       parent: 1
   - uid: 2070
-    mapInit: true
     components:
     - type: Transform
       pos: 17.5,29.5
       parent: 1
   - uid: 2071
-    mapInit: true
     components:
     - type: Transform
       pos: 17.5,28.5
       parent: 1
   - uid: 2072
-    mapInit: true
     components:
     - type: Transform
       pos: 17.5,27.5
       parent: 1
   - uid: 2073
-    mapInit: true
     components:
     - type: Transform
       pos: 17.5,26.5
       parent: 1
   - uid: 2074
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,26.5
       parent: 1
   - uid: 2075
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,27.5
       parent: 1
   - uid: 2076
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,28.5
       parent: 1
   - uid: 2077
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,29.5
       parent: 1
   - uid: 2078
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,30.5
       parent: 1
   - uid: 2079
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,31.5
       parent: 1
   - uid: 2080
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,32.5
       parent: 1
   - uid: 2081
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,33.5
       parent: 1
   - uid: 2082
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,34.5
       parent: 1
   - uid: 2083
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,35.5
       parent: 1
   - uid: 2084
-    mapInit: true
     components:
     - type: Transform
       pos: 22.5,35.5
       parent: 1
   - uid: 2085
-    mapInit: true
     components:
     - type: Transform
       pos: 23.5,35.5
       parent: 1
   - uid: 2086
-    mapInit: true
     components:
     - type: Transform
       pos: 24.5,35.5
       parent: 1
   - uid: 2087
-    mapInit: true
     components:
     - type: Transform
       pos: 25.5,35.5
       parent: 1
   - uid: 2088
-    mapInit: true
     components:
     - type: Transform
       pos: 26.5,35.5
       parent: 1
   - uid: 2089
-    mapInit: true
     components:
     - type: Transform
       pos: 27.5,35.5
       parent: 1
   - uid: 2090
-    mapInit: true
     components:
     - type: Transform
       pos: 28.5,35.5
       parent: 1
   - uid: 2091
-    mapInit: true
     components:
     - type: Transform
       pos: 29.5,35.5
       parent: 1
   - uid: 2092
-    mapInit: true
     components:
     - type: Transform
       pos: 30.5,35.5
       parent: 1
   - uid: 2093
-    mapInit: true
     components:
     - type: Transform
       pos: 31.5,35.5
       parent: 1
   - uid: 2094
-    mapInit: true
     components:
     - type: Transform
       pos: 32.5,35.5
       parent: 1
   - uid: 2095
-    mapInit: true
     components:
     - type: Transform
       pos: 33.5,35.5
       parent: 1
   - uid: 2096
-    mapInit: true
     components:
     - type: Transform
       pos: 34.5,35.5
       parent: 1
   - uid: 2097
-    mapInit: true
     components:
     - type: Transform
       pos: 35.5,35.5
       parent: 1
   - uid: 2098
-    mapInit: true
     components:
     - type: Transform
       pos: 36.5,35.5
       parent: 1
   - uid: 2099
-    mapInit: true
     components:
     - type: Transform
       pos: 37.5,35.5
       parent: 1
   - uid: 2100
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,35.5
       parent: 1
   - uid: 2101
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,34.5
       parent: 1
   - uid: 2102
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,33.5
       parent: 1
   - uid: 2103
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,32.5
       parent: 1
   - uid: 2104
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,31.5
       parent: 1
   - uid: 2105
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,30.5
       parent: 1
   - uid: 2106
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,29.5
       parent: 1
   - uid: 2107
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,28.5
       parent: 1
   - uid: 2108
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,27.5
       parent: 1
   - uid: 2109
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,26.5
       parent: 1
   - uid: 2110
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,25.5
       parent: 1
   - uid: 2111
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,24.5
       parent: 1
   - uid: 2112
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,23.5
       parent: 1
   - uid: 2113
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,22.5
       parent: 1
   - uid: 2114
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,21.5
       parent: 1
   - uid: 2119
-    mapInit: true
     components:
     - type: Transform
       pos: 39.5,21.5
       parent: 1
   - uid: 2120
-    mapInit: true
     components:
     - type: Transform
       pos: 40.5,21.5
       parent: 1
   - uid: 2121
-    mapInit: true
     components:
     - type: Transform
       pos: 41.5,21.5
       parent: 1
   - uid: 2122
-    mapInit: true
     components:
     - type: Transform
       pos: 41.5,20.5
       parent: 1
   - uid: 2123
-    mapInit: true
     components:
     - type: Transform
       pos: 42.5,20.5
       parent: 1
   - uid: 2124
-    mapInit: true
     components:
     - type: Transform
       pos: 42.5,19.5
       parent: 1
   - uid: 2125
-    mapInit: true
     components:
     - type: Transform
       pos: 42.5,18.5
       parent: 1
   - uid: 2126
-    mapInit: true
     components:
     - type: Transform
       pos: 43.5,18.5
       parent: 1
   - uid: 2127
-    mapInit: true
     components:
     - type: Transform
       pos: 44.5,18.5
       parent: 1
   - uid: 2128
-    mapInit: true
     components:
     - type: Transform
       pos: 45.5,18.5
       parent: 1
   - uid: 2129
-    mapInit: true
     components:
     - type: Transform
       pos: 46.5,18.5
       parent: 1
   - uid: 2130
-    mapInit: true
     components:
     - type: Transform
       pos: 47.5,18.5
       parent: 1
   - uid: 2132
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-10.5
       parent: 1
   - uid: 2133
-    mapInit: true
     components:
     - type: Transform
       pos: -30.5,-10.5
       parent: 1
   - uid: 2134
-    mapInit: true
     components:
     - type: Transform
       pos: -29.5,-10.5
       parent: 1
   - uid: 2135
-    mapInit: true
     components:
     - type: Transform
       pos: -28.5,-10.5
       parent: 1
   - uid: 2136
-    mapInit: true
     components:
     - type: Transform
       pos: -27.5,-10.5
       parent: 1
   - uid: 2137
-    mapInit: true
     components:
     - type: Transform
       pos: -26.5,-10.5
       parent: 1
   - uid: 2138
-    mapInit: true
     components:
     - type: Transform
       pos: -25.5,-10.5
       parent: 1
   - uid: 2139
-    mapInit: true
     components:
     - type: Transform
       pos: -24.5,-10.5
       parent: 1
   - uid: 2140
-    mapInit: true
     components:
     - type: Transform
       pos: -23.5,-10.5
       parent: 1
   - uid: 2141
-    mapInit: true
     components:
     - type: Transform
       pos: -22.5,-10.5
       parent: 1
   - uid: 2142
-    mapInit: true
     components:
     - type: Transform
       pos: -21.5,-10.5
       parent: 1
   - uid: 2143
-    mapInit: true
     components:
     - type: Transform
       pos: -20.5,-10.5
       parent: 1
   - uid: 2144
-    mapInit: true
     components:
     - type: Transform
       pos: -19.5,-10.5
       parent: 1
   - uid: 2145
-    mapInit: true
     components:
     - type: Transform
       pos: -18.5,-10.5
       parent: 1
   - uid: 2146
-    mapInit: true
     components:
     - type: Transform
       pos: -17.5,-10.5
       parent: 1
   - uid: 2147
-    mapInit: true
     components:
     - type: Transform
       pos: -16.5,-10.5
       parent: 1
   - uid: 2148
-    mapInit: true
     components:
     - type: Transform
       pos: -15.5,-10.5
       parent: 1
   - uid: 2149
-    mapInit: true
     components:
     - type: Transform
       pos: -14.5,-10.5
       parent: 1
   - uid: 2150
-    mapInit: true
     components:
     - type: Transform
       pos: -13.5,-10.5
       parent: 1
   - uid: 2151
-    mapInit: true
     components:
     - type: Transform
       pos: -12.5,-10.5
       parent: 1
   - uid: 2152
-    mapInit: true
     components:
     - type: Transform
       pos: -11.5,-10.5
       parent: 1
   - uid: 2153
-    mapInit: true
     components:
     - type: Transform
       pos: -10.5,-10.5
       parent: 1
   - uid: 2154
-    mapInit: true
     components:
     - type: Transform
       pos: -9.5,-10.5
       parent: 1
   - uid: 2155
-    mapInit: true
     components:
     - type: Transform
       pos: -8.5,-10.5
       parent: 1
   - uid: 2156
-    mapInit: true
     components:
     - type: Transform
       pos: -7.5,-10.5
       parent: 1
   - uid: 2157
-    mapInit: true
     components:
     - type: Transform
       pos: -6.5,-10.5
       parent: 1
   - uid: 2158
-    mapInit: true
     components:
     - type: Transform
       pos: -5.5,-10.5
       parent: 1
   - uid: 2159
-    mapInit: true
     components:
     - type: Transform
       pos: -4.5,-10.5
       parent: 1
   - uid: 2160
-    mapInit: true
     components:
     - type: Transform
       pos: -3.5,-10.5
       parent: 1
   - uid: 2161
-    mapInit: true
     components:
     - type: Transform
       pos: -2.5,-10.5
       parent: 1
   - uid: 2162
-    mapInit: true
     components:
     - type: Transform
       pos: -1.5,-10.5
       parent: 1
   - uid: 2163
-    mapInit: true
     components:
     - type: Transform
       pos: -0.5,-10.5
       parent: 1
   - uid: 2164
-    mapInit: true
     components:
     - type: Transform
       pos: 0.5,-10.5
       parent: 1
   - uid: 2165
-    mapInit: true
     components:
     - type: Transform
       pos: 1.5,-10.5
       parent: 1
   - uid: 2166
-    mapInit: true
     components:
     - type: Transform
       pos: 2.5,-10.5
       parent: 1
   - uid: 2167
-    mapInit: true
     components:
     - type: Transform
       pos: 3.5,-10.5
       parent: 1
   - uid: 2168
-    mapInit: true
     components:
     - type: Transform
       pos: 4.5,-10.5
       parent: 1
   - uid: 2169
-    mapInit: true
     components:
     - type: Transform
       pos: 5.5,-10.5
       parent: 1
   - uid: 2170
-    mapInit: true
     components:
     - type: Transform
       pos: 6.5,-10.5
       parent: 1
   - uid: 2171
-    mapInit: true
     components:
     - type: Transform
       pos: 7.5,-10.5
       parent: 1
   - uid: 2172
-    mapInit: true
     components:
     - type: Transform
       pos: 8.5,-10.5
       parent: 1
   - uid: 2173
-    mapInit: true
     components:
     - type: Transform
       pos: 9.5,-10.5
       parent: 1
   - uid: 2174
-    mapInit: true
     components:
     - type: Transform
       pos: 10.5,-10.5
       parent: 1
   - uid: 2175
-    mapInit: true
     components:
     - type: Transform
       pos: 11.5,-10.5
       parent: 1
   - uid: 2176
-    mapInit: true
     components:
     - type: Transform
       pos: 12.5,-10.5
       parent: 1
   - uid: 2177
-    mapInit: true
     components:
     - type: Transform
       pos: 13.5,-10.5
       parent: 1
   - uid: 2178
-    mapInit: true
     components:
     - type: Transform
       pos: 14.5,-10.5
       parent: 1
   - uid: 2179
-    mapInit: true
     components:
     - type: Transform
       pos: 15.5,-10.5
       parent: 1
   - uid: 2180
-    mapInit: true
     components:
     - type: Transform
       pos: 16.5,-10.5
       parent: 1
   - uid: 2181
-    mapInit: true
     components:
     - type: Transform
       pos: 17.5,-10.5
       parent: 1
   - uid: 2182
-    mapInit: true
     components:
     - type: Transform
       pos: 18.5,-10.5
       parent: 1
   - uid: 2183
-    mapInit: true
     components:
     - type: Transform
       pos: 19.5,-10.5
       parent: 1
   - uid: 2184
-    mapInit: true
     components:
     - type: Transform
       pos: 20.5,-10.5
       parent: 1
   - uid: 2185
-    mapInit: true
     components:
     - type: Transform
       pos: 21.5,-10.5
       parent: 1
   - uid: 2186
-    mapInit: true
     components:
     - type: Transform
       pos: 22.5,-10.5
       parent: 1
   - uid: 2187
-    mapInit: true
     components:
     - type: Transform
       pos: 23.5,-10.5
       parent: 1
   - uid: 2188
-    mapInit: true
     components:
     - type: Transform
       pos: 24.5,-10.5
       parent: 1
   - uid: 2189
-    mapInit: true
     components:
     - type: Transform
       pos: 25.5,-10.5
       parent: 1
   - uid: 2190
-    mapInit: true
     components:
     - type: Transform
       pos: 26.5,-10.5
       parent: 1
   - uid: 2191
-    mapInit: true
     components:
     - type: Transform
       pos: 27.5,-10.5
       parent: 1
   - uid: 2192
-    mapInit: true
     components:
     - type: Transform
       pos: 28.5,-10.5
       parent: 1
   - uid: 2193
-    mapInit: true
     components:
     - type: Transform
       pos: 29.5,-10.5
       parent: 1
   - uid: 2194
-    mapInit: true
     components:
     - type: Transform
       pos: 30.5,-10.5
       parent: 1
   - uid: 2195
-    mapInit: true
     components:
     - type: Transform
       pos: 31.5,-10.5
       parent: 1
   - uid: 2196
-    mapInit: true
     components:
     - type: Transform
       pos: 32.5,-10.5
       parent: 1
   - uid: 2197
-    mapInit: true
     components:
     - type: Transform
       pos: 33.5,-10.5
       parent: 1
   - uid: 2198
-    mapInit: true
     components:
     - type: Transform
       pos: 34.5,-10.5
       parent: 1
   - uid: 2199
-    mapInit: true
     components:
     - type: Transform
       pos: 35.5,-10.5
       parent: 1
   - uid: 2200
-    mapInit: true
     components:
     - type: Transform
       pos: 36.5,-10.5
       parent: 1
   - uid: 2201
-    mapInit: true
     components:
     - type: Transform
       pos: 37.5,-10.5
       parent: 1
   - uid: 2202
-    mapInit: true
     components:
     - type: Transform
       pos: 38.5,-10.5
       parent: 1
   - uid: 2203
-    mapInit: true
     components:
     - type: Transform
       pos: 39.5,-10.5
       parent: 1
   - uid: 2204
-    mapInit: true
     components:
     - type: Transform
       pos: 40.5,-10.5
       parent: 1
   - uid: 2205
-    mapInit: true
     components:
     - type: Transform
       pos: 41.5,-10.5
       parent: 1
   - uid: 2206
-    mapInit: true
     components:
     - type: Transform
       pos: 42.5,-10.5
       parent: 1
   - uid: 2207
-    mapInit: true
     components:
     - type: Transform
       pos: 43.5,-10.5
       parent: 1
   - uid: 2208
-    mapInit: true
     components:
     - type: Transform
       pos: 44.5,-10.5
       parent: 1
   - uid: 2209
-    mapInit: true
     components:
     - type: Transform
       pos: 45.5,-10.5
       parent: 1
   - uid: 2210
-    mapInit: true
     components:
     - type: Transform
       pos: 46.5,-10.5
       parent: 1
   - uid: 2211
-    mapInit: true
     components:
     - type: Transform
       pos: 47.5,-10.5
       parent: 1
   - uid: 2212
-    mapInit: true
     components:
     - type: Transform
       pos: 48.5,-10.5
       parent: 1
   - uid: 2213
-    mapInit: true
     components:
     - type: Transform
       pos: 49.5,-10.5
       parent: 1
   - uid: 2214
-    mapInit: true
     components:
     - type: Transform
       pos: 50.5,-10.5
       parent: 1
   - uid: 2215
-    mapInit: true
     components:
     - type: Transform
       pos: 51.5,-10.5
       parent: 1
   - uid: 2216
-    mapInit: true
     components:
     - type: Transform
       pos: 52.5,-10.5
       parent: 1
   - uid: 2217
-    mapInit: true
     components:
     - type: Transform
       pos: 53.5,-10.5
       parent: 1
   - uid: 2218
-    mapInit: true
     components:
     - type: Transform
       pos: 54.5,-10.5
       parent: 1
   - uid: 2219
-    mapInit: true
     components:
     - type: Transform
       pos: 55.5,-10.5
       parent: 1
   - uid: 2220
-    mapInit: true
     components:
     - type: Transform
       pos: 56.5,-10.5
       parent: 1
   - uid: 2221
-    mapInit: true
     components:
     - type: Transform
       pos: 57.5,-10.5
       parent: 1
   - uid: 2222
-    mapInit: true
     components:
     - type: Transform
       pos: 58.5,-10.5
       parent: 1
   - uid: 2223
-    mapInit: true
     components:
     - type: Transform
       pos: 59.5,-10.5
       parent: 1
   - uid: 2224
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,-10.5
       parent: 1
   - uid: 2225
-    mapInit: true
     components:
     - type: Transform
       pos: 61.5,-10.5
       parent: 1
   - uid: 2226
-    mapInit: true
     components:
     - type: Transform
       pos: 62.5,-10.5
       parent: 1
   - uid: 2227
-    mapInit: true
     components:
     - type: Transform
       pos: 63.5,-10.5
       parent: 1
   - uid: 2228
-    mapInit: true
     components:
     - type: Transform
       pos: 64.5,-10.5
       parent: 1
   - uid: 2229
-    mapInit: true
     components:
     - type: Transform
       pos: 65.5,-10.5
       parent: 1
   - uid: 2230
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-10.5
       parent: 1
   - uid: 2231
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-9.5
       parent: 1
   - uid: 2232
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-8.5
       parent: 1
   - uid: 2233
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-7.5
       parent: 1
   - uid: 2234
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-6.5
       parent: 1
   - uid: 2235
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-5.5
       parent: 1
   - uid: 2236
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-4.5
       parent: 1
   - uid: 2237
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-3.5
       parent: 1
   - uid: 2238
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-2.5
       parent: 1
   - uid: 2321
-    mapInit: true
     components:
     - type: Transform
       pos: 66.5,-1.5
       parent: 1
   - uid: 2322
-    mapInit: true
     components:
     - type: Transform
       pos: 65.5,-1.5
       parent: 1
   - uid: 2323
-    mapInit: true
     components:
     - type: Transform
       pos: 64.5,-1.5
       parent: 1
   - uid: 2324
-    mapInit: true
     components:
     - type: Transform
       pos: 63.5,-1.5
       parent: 1
   - uid: 2325
-    mapInit: true
     components:
     - type: Transform
       pos: 62.5,-1.5
       parent: 1
   - uid: 2326
-    mapInit: true
     components:
     - type: Transform
       pos: 61.5,-1.5
       parent: 1
   - uid: 2327
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,-1.5
       parent: 1
   - uid: 2328
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,-0.5
       parent: 1
   - uid: 2329
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,0.5
       parent: 1
   - uid: 2330
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,1.5
       parent: 1
   - uid: 2331
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,2.5
       parent: 1
   - uid: 2332
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,3.5
       parent: 1
   - uid: 2333
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,4.5
       parent: 1
   - uid: 2334
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,5.5
       parent: 1
   - uid: 2335
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,6.5
       parent: 1
   - uid: 2336
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,7.5
       parent: 1
   - uid: 2337
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,8.5
       parent: 1
   - uid: 2338
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,9.5
       parent: 1
   - uid: 2339
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,10.5
       parent: 1
   - uid: 2340
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,11.5
       parent: 1
   - uid: 2341
-    mapInit: true
     components:
     - type: Transform
       pos: 60.5,12.5
       parent: 1
   - uid: 2342
-    mapInit: true
     components:
     - type: Transform
       pos: 59.5,12.5
       parent: 1
   - uid: 2343
-    mapInit: true
     components:
     - type: Transform
       pos: 58.5,12.5
       parent: 1
   - uid: 2344
-    mapInit: true
     components:
     - type: Transform
       pos: 57.5,12.5
       parent: 1
   - uid: 2345
-    mapInit: true
     components:
     - type: Transform
       pos: 56.5,12.5
       parent: 1
   - uid: 2346
-    mapInit: true
     components:
     - type: Transform
       pos: 55.5,12.5
       parent: 1
   - uid: 2347
-    mapInit: true
     components:
     - type: Transform
       pos: 54.5,12.5
       parent: 1
   - uid: 2348
-    mapInit: true
     components:
     - type: Transform
       pos: 53.5,12.5
       parent: 1
   - uid: 2349
-    mapInit: true
     components:
     - type: Transform
       pos: 52.5,12.5
       parent: 1
   - uid: 2350
-    mapInit: true
     components:
     - type: Transform
       pos: 51.5,12.5
       parent: 1
   - uid: 2351
-    mapInit: true
     components:
     - type: Transform
       pos: 50.5,12.5
       parent: 1
   - uid: 2352
-    mapInit: true
     components:
     - type: Transform
       pos: 50.5,13.5
       parent: 1
   - uid: 2353
-    mapInit: true
     components:
     - type: Transform
       pos: 49.5,13.5
       parent: 1
   - uid: 2354
-    mapInit: true
     components:
     - type: Transform
       pos: 48.5,13.5
       parent: 1
   - uid: 2355
-    mapInit: true
     components:
     - type: Transform
       pos: 48.5,18.5
       parent: 1
   - uid: 2356
-    mapInit: true
     components:
     - type: Transform
       pos: 48.5,17.5
       parent: 1
   - uid: 2357
-    mapInit: true
     components:
     - type: Transform
       pos: 48.5,16.5
       parent: 1
   - uid: 2358
-    mapInit: true
     components:
     - type: Transform
       pos: 48.5,15.5
       parent: 1
   - uid: 2359
-    mapInit: true
     components:
     - type: Transform
       pos: 48.5,14.5
@@ -9987,7 +9663,6 @@ entities:
       pos: -10.5,27.5
       parent: 1
   - uid: 1266
-    mapInit: true
     components:
     - type: Transform
       pos: -31.5,-1.5

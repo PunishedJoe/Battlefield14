@@ -1,0 +1,262 @@
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendPACTRGFWarVendor
+  name: RGF war vendor
+  description: Please sir, may I have a little more?
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: AccessReader
+    access: [["PACTCommon"]]
+  - type: CMAutomatedVendor
+    access:
+    - "PACTCommon"
+    sections:
+    - name: Armour
+      choices: { BF14Armour: 1 }
+      entries:
+      - id: ClothingOuterArmorPlateCarrier6B45
+        name: plate carrier
+      - id: ArmorPlateMediumPackaged
+        recommended: true
+    - name: 'Personal Medicine'
+      choices: { BF14PersonalMedicine: 1 }
+      entries:
+      - id: MedicationBoxPillsBicaridine
+        name: bicaridine pills
+        recommended: true
+      - id: MedicationBoxSyrettesBicaridine
+        name: bicaridine syrettes
+      - id: MedicationBoxPillsKelotane
+        name: kelotane pills
+      - id: MedicationBoxSyrettesKelotane
+        name: kelotane syrettes
+      - id: MedicationBoxSyrettesTricordrazine
+        name: tricordrazine syrettes
+      - id: BlisterPackSyretteMeralyne
+        name: meralyne syrettes
+      - id: BlisterPackSyretteDermaline
+        name: dermaline syrettes
+      - id: BlisterPackSyretteFentanyl
+        name: fentanyl syrettes
+      - id: FoodCondimentPacketKaolin
+        name: kaolin powder packet
+      - id: DefibrillatorDisposable
+        name: disposable defibrillator
+    - name: Backpack/belt
+      choices: { BF14Storage: 2 }
+      entries:
+      - id: ClothingBackpackRucksackTan
+        replaceSlot: back
+        name: tan rucksack
+      - id: ClothingBackpackRucksackBlack
+        replaceSlot: back
+        name: black rucksack
+        recommended: true
+      - id: ClothingBeltMilitaryWebbingRU
+        replaceSlot: belt
+        name: belt rig
+      - id: ClothingBeltAssault
+        replaceSlot: belt
+        name: assault belt
+      - id: ClothingBeltMedicalEMTFilledBF14Basic
+        replaceSlot: belt
+        name: basic medical belt
+        amount: 4
+    - name: Weapons
+      entries:
+      - id: WeaponRifleRUAK74M
+        amount: 50
+      - id: WeaponRifleRUAK203
+        amount: 5
+      - id: WeaponRifleRUAKS74U
+        amount: 5
+      - id: WeaponSubmachinegunRUVityaz
+        amount: 5
+      - id: WeaponPistolMP443
+        amount: 2
+    - name: Utility
+      entries:
+      - id: RiotBulletShield
+        amount: 3
+      - id: CombatKnife
+        amount: 10
+      - id: JetpackBlackFilled
+        amount: 10
+      - id: HandHeldMassScanner
+        amount: 50
+      - id: Crowbar
+        amount: 50
+    - name: Sustainment
+      entries:
+      - id: BoxMRE
+        amount: 50
+      - id: FoodSnackNutribrick
+        amount: 50
+      - id: DrinkMREFlask
+        amount: 50
+      - id: OxygenTankFilled
+        amount: 50
+    - name: Misc
+      entries:
+      - id: RusfedFlagFolded
+        amount: 3
+      - id: WeaponSniperRUSVDObrez
+        amount: 1
+      - id: MagazineSniperSVD
+        amount: 3
+      - id: ImpactGrenadeRURGO
+        amount: 2
+
+#region gear
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendPACTRGFWarVendorGear
+  name: RGF gear vendor
+  description: SLEDGEHAMMERRR.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: AccessReader
+    access: [["PACTCommon"]]
+  - type: CMAutomatedVendor
+    access:
+    - "PACTCommon"
+    sections:
+    - name: Identification
+      entries:
+      - id: BoxIFFPACTWhite
+        amount: 10
+      - id: BoxIFFPACTRed
+        amount: 10
+      - id: BoxIFFPACTStGeorge
+        amount: 10
+    - name: Breaching
+      entries:
+      - id: BreachingCharge
+        amount: 10
+      - id: SecBreachingHammer
+        amount: 1
+      - id: BoxChargeFuzeKit
+        amount: 5
+      - id: BF14ExtendableLadderItem
+        amount: 5
+    - name: Grenades
+      entries:
+      - id: OffensiveGrenadeRURGD5
+        amount: 8
+      - id: DefensiveGrenadeRUF1
+        amount: 7
+      - id: OffensiveGrenadeRURG60TB
+        amount: 5
+      - id: FlashbangGrenadeRUZarya
+        amount: 20
+      - id: SmokeGrenadeRURDG
+        amount: 20
+      - id: TM62Item
+        amount: 10
+    - name: Storage
+      entries:
+      - id: PouchMags
+        amount: 5
+      - id: PouchFlaresFilledGlowsticksRed
+        amount: 5
+      - id: ClothingArmbandDumpPouchBlack
+        amount: 2
+    - name: Utility
+      entries:
+      - id: BarbedWire10
+        amount: 1
+      - id: BoxSandbagEmpty
+        amount: 5
+      - id: EntrenchingTool
+        amount: 2
+      - id: Multitool
+        amount: 3
+      - id: HandheldStationMapUnpowered
+        amount: 5
+      - id: Zipties
+        amount: 15
+      - id: Handcuffs
+        amount: 5
+      - id: SyndicateWhistle
+        amount: 3
+      - id: Boombox
+        amount: 2
+
+#region ammo
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendPACTRGFWarVendorAmmo
+  name: RGF ammo vendor
+  description: Bang Bang Bang!
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: AccessReader
+    access: [["PACTCommon"]]
+  - type: CMAutomatedVendor
+    access:
+    - "PACTCommon"
+    sections:
+    - name: Magazine boxes
+      entries:
+      - id: BoxMagazineAK74BlackTracerGreen
+        amount: 2
+      - id: BoxMagazineAK74Black
+        amount: 3
+      - id: BoxMagazineVityaz
+        amount: 5
+      - id: BoxMagazineAK203
+        amount: 2
+      - id: BoxMagazineAKM
+        amount: 3
+      - id: BoxFlare
+        amount: 4
+    - name: Loose rounds
+      entries:
+      - id: MagazineBox545x39Big
+        amount: 2
+      - id: MagazineBox545x39
+        amount: 5
+      - id: MagazineBox762x39Big
+        amount: 2
+      - id: MagazineBox762x39
+        amount: 5
+      - id: MagazineBox762x54r
+        amount: 4
+      - id: MagazineBox762x54rBig
+        amount: 2
+      - id: MagazineBox9x19mmBig
+        amount: 5
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 10
+    - name: Misc
+      entries:
+      - id: MagazinePistolMP443
+        amount: 10
+      - id: CrayonBox
+        amount: 1

@@ -510,6 +510,92 @@
 
 ## RU
 
+#region RGF
+
+- type: entity
+  parent: IDCardStandard
+  id: RGFLieutenantIDCard
+  name: RGF ID card
+  suffix: lieutenant
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RGFLieutenant
+
+- type: entity
+  parent: IDCardStandard
+  id: RGFSquadLeaderIDCard
+  name: RGF ID card
+  suffix: senior rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RGFSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: RGFRiflemanIDCard
+  name: RGF ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RGFRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: RGFAutomaticRiflemanIDCard
+  name: RGF ID card
+  suffix: automatic rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RGFAutomaticRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: RGFMedicIDCard
+  name: RGF ID card
+  suffix: combat medic
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RGFMedic
+
+- type: entity
+  parent: IDCardStandard
+  id: RGFReconIDCard
+  name: RGF ID card
+  suffix: recon scout
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RGFRecon
+
 #region VDV
 
 - type: entity
@@ -595,6 +681,108 @@
     heldPrefix: silver
   - type: PresetIdCard
     job: VDVRecon
+
+#region RKhB
+
+- type: entity
+  parent: IDCardStandard
+  id: RKhBSquadLeaderIDCard
+  name: RKhB ID card
+  suffix: senior rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RKhBSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: RKhBRiflemanIDCard
+  name: RKhB ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RKhBRifleman
+
+- type: entity
+  parent: IDCardStandard
+  id: RKhBSupportIDCard
+  name: RKhB ID card
+  suffix: automatic rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RKhBSupport
+
+- type: entity
+  parent: IDCardStandard
+  id: RKhBMedicIDCard
+  name: RKhB ID card
+  suffix: combat medic
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RKhBMedic
+
+#region OMON
+
+- type: entity
+  parent: IDCardStandard
+  id: OMONLieutenantIDCard
+  name: OMON ID card
+  suffix: lieutenant
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: OMONLieutenant
+
+- type: entity
+  parent: IDCardStandard
+  id: OMONSquadLeaderIDCard
+  name: OMON ID card
+  suffix: senior rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: OMONSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: OMONRiflemanIDCard
+  name: OMON ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: OMONRifleman
 
 #region FSB
 

@@ -1,0 +1,116 @@
+#region Weapons
+- type: listing
+  id: UplinkNATODEMG36
+  name: uplink-natode-mg36-name
+  description: uplink-natode-mg36-desc
+  productEntity: CrateSecgearNATOFilledMG36
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36.rsi, state: icon }
+  cost:
+    NATORequisition: 30 # 5 minutes approx
+  categories:
+    - UplinkNATODEWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+- type: listing
+  id: UplinkNATODEPZF3
+  name: uplink-natode-pzf3-name
+  description: uplink-natode-pzf3-desc
+  productEntity: CrateSecgearNATOFilledPZF3
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/Panzerfaust3.rsi, state: icon }
+  cost:
+    NATORequisition: 50 # 8 minutes 20 seconds approx
+  categories:
+    - UplinkNATODEWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+- type: listing
+  id: UplinkNATODEMG3
+  name: uplink-natode-mg3-name
+  description: uplink-natode-mg3-desc
+  productEntity: CrateSecgearNATOFilledMG3
+  icon: { sprite: _WorldAblaze1968/Objects/Weapons/Smallarms/Machineguns/mg3.rsi, state: icon }
+  cost:
+    NATORequisition: 50 # 8 minutes 20 seconds approx
+  categories:
+    - UplinkNATODEWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+- type: listing
+  id: UplinkNATODEG36
+  name: uplink-natode-g36-name
+  description: uplink-natode-g36-desc
+  productEntity: CrateSecgearNATOFilledG36
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36.rsi, state: icon }
+  cost:
+    NATORequisition: 10 # 10 minute 40 seconds approx
+  categories:
+    - UplinkNATODEWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+#region Ammo
+
+- type: listing
+  id: UplinkNATODEAmmoBox
+  name: uplink-natous-ammo-box-name
+  description: uplink-natous-ammo-box-desc
+  productEntity: SupplyBoxAmmoUSFilledDE
+  icon: { sprite: _Battlefield14/Objects/Misc/ammoboxus.rsi, state: icon }
+  cost:
+    NATORequisition: 16 # 2 minutes 40 seconds
+  categories:
+    - UplinkNATODEAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+#region Explosives
+
+- type: listing
+  id: UplinkNATODEBoxGrenadesDM51
+  name: uplink-natode-dm51-box-name
+  description: uplink-natode-dm51-box-desc
+  productEntity: BoxGrenadesDM51Mixed
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/DM51.rsi, state: icon }
+  cost:
+    NATORequisition: 9 # 1 minute 30 seconds
+  categories:
+    - UplinkNATODEExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+- type: listing
+  id: UplinkNATODEBoxGrenadesDM45
+  name: uplink-natode-dm45-box-name
+  description: uplink-natode-dm45-box-desc
+  productEntity: BoxGrenadesDM45
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/DM45.rsi, state: icon }
+  cost:
+    NATORequisition: 6 # 1 minute
+  categories:
+    - UplinkNATODEExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink

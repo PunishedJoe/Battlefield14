@@ -48,7 +48,7 @@
     - Cartridge
     - BF_CartridgePistol762x25
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/7.62x25.rsi
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]

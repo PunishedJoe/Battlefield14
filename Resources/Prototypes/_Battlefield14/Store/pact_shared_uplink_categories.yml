@@ -267,9 +267,9 @@
   name: uplink-PACT-medkit-combat-name
   description: uplink-PACT-medkit-combat-desc
   productEntity: MedkitCombatFilled
-  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  icon: { sprite: _Battlefield14/Objects/Specific/Medical/firstaidkits.rsi, state: bezerk }
   cost:
-    NATORequisition: 10 # 1 minute 40 seconds
+    PACTRequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkPACTRUMedical
   conditions:
@@ -283,7 +283,7 @@
   name: uplink-PACT-medkit-advanced-name
   description: uplink-PACT-medkit-advanced-desc
   productEntity: MedkitAdvancedFilled
-  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: advkit }
+  icon: { sprite: _Battlefield14/Objects/Specific/Medical/firstaidkits.rsi, state: advfirstaid }
   cost:
     PACTRequisition: 15 # 2 minutes 30 seconds
   categories:

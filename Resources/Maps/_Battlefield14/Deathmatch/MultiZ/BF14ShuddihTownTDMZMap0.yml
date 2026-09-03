@@ -49534,7 +49534,7 @@ entities:
     - type: Transform
       pos: -6.170559,30.616531
       parent: 2
-- proto: BF14WeaponCaseLongUSMXM8
+- proto: BF14WeaponCaseLongUSXM8
   entities:
   - uid: 61
     components:

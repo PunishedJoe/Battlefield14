@@ -95,6 +95,53 @@
 
 - type: entity
   parent: MagazineRifleAK74
+  id: MagazineRifleRPK74
+  name: RPK-74 magazine
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 45
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6p2.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: MagazineRifleRPK74
+  id: MagazineRifleRPK74TracerGreen
+  name: "RPK-74 magazine (5.45x39mm green tracer)"
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle545x39TracerGreen
+
+- type: entity
+  parent: MagazineRifleRPK74
+  id: MagazineRifleRPK74Black
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6l26.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: MagazineRifleRPK74TracerGreen
+  id: MagazineRifleRPK74BlackTracerGreen
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6l26.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: MagazineRifleAK74
   id: MagazineRifleAK74blackdrum
   name: "AK-74 pattern 75 round drum magazine (5.45x39mm)"
   description: 75 rounds for your 74.

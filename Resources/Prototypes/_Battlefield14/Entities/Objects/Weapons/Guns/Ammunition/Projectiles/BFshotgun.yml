@@ -15,6 +15,11 @@
         Slash: 6
         Structural: 2
     armorPenetration: -0.3
+  - type: ProjectileDamageFalloff
+    falloffStart: 4
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: true
   - type: StaminaDamageOnCollide
     damage: 3 # ~33 hits to stun
 
@@ -106,6 +111,11 @@
         Slash: 10
         Structural: 5
     armorPenetration: -0.1
+  - type: ProjectileDamageFalloff
+    falloffStart: 6
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.50
+    stepByTile: true
   - type: StaminaDamageOnCollide
     damage: 9 # ~11-12 hits to stun
 

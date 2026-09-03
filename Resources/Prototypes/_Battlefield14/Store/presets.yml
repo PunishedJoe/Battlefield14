@@ -19,6 +19,26 @@
       NATORequisition: 0
 
 - type: entity
+  id: StorePresetNATODEBWUplink #german, bundeswehr
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-nato-uplink
+    categories:
+    - UplinkNATODEWeapons
+    - UplinkNATODEAmmo
+    - UplinkNATODEArmour
+    - UplinkNATODEUtility
+    - UplinkNATODEMedical
+    - UplinkNATODEExplosives
+    - UplinkNATODEShipAmmo
+    - UplinkNATODEShips
+    currencyWhitelist:
+    - NATORequisition
+    balance:
+      NATORequisition: 0
+
+- type: entity
   id: StorePresetPACTRUUplink
   abstract: true
   components:

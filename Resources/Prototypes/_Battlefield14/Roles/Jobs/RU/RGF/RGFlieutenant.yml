@@ -1,0 +1,69 @@
+- type: job
+  id: RGFLieutenant
+  name: job-name-rgf-lieutenant
+  description: job-description-rgf-lieutenant
+  playTimeTracker: JobRGFLieutenant
+  weight: 78
+  startingGear: RGFLieutenantGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTCaptain"
+  requireAdminNotify: true
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    - Esperanto
+    languagesUnderstood:
+    - Russian
+    - Ukrainian
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: ChatRank
+      rank: BF-rank-lieutenant
+    - type: CMVendorUser
+      id: RGFLieutenant
+      points: 4
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: RGFLieutenantGear
+  equipment:
+    id: RGFLieutenantPDA
+    ears: ClothingHeadsetAltRUCommand
+    belt: ClothingBeltMilitaryWebbingRUFilledAK12TracerGreen
+    jumpsuit: ClothingUniformJumpsuitRUGorka
+    head: ClothingHeadHatHelmetRU6b47
+    outerClothing: ClothingOuterArmorPlateCarrier6B45
+    shoes: ClothingShoesBootsJackFilledRU
+    suitstorage: WeaponRifleRUAK12Magnified
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledRGFRifleman
+    rightarmband: ClothingArmbandThighHolsterFilledRU
+  storage:
+    back:
+    - ArmorPlateMediumPackaged
+    - MagazinePistolMP443
+    - MagazinePistolMP443
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussiaPMK4
+    - Tourniquet
+    - Zipties
+    - CMVendRGFWarVendorLieutenantTablet

@@ -12338,7 +12338,7 @@ entities:
 
 
         (GENERATOR NOT INCLUDED)
-- proto: PirateClothingUniformJumpskirtPrivateSec
+- proto: JumpskirtPrivateSec
   entities:
   - uid: 1159
     components:
@@ -12347,7 +12347,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: PirateClothingUniformJumpsuitPrivateSec
+- proto: JumpsuitPrivateSec
   entities:
   - uid: 65
     components:

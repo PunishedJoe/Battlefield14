@@ -290,7 +290,7 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: BF14WeaponCaseLongUSMXM8
+  id: BF14WeaponCaseLongUSXM8
   suffix: XM8
   components:
   - type: StorageFill
@@ -301,7 +301,7 @@
 
 - type: entity
   parent: WeaponCaseLong
-  id: BF14WeaponCaseLongUSMXM8Tan
+  id: BF14WeaponCaseLongUSXM8Tan
   suffix: XM8, tan
   components:
   - type: StorageFill
@@ -331,6 +331,16 @@
     contents:
     - id: WeaponMachineGunUSM240B
     - id: MagazineBeltBoxM240
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSM60
+  suffix: M60
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponMachineGunUSM60
+    - id: MagazineBeltBoxM60
 
 #region AMRs, US
 
@@ -391,7 +401,42 @@
     - id: MagazineRifleG3
       amount: 5
 
-#region Machine guns, US
+#region Rifles, BE
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBESCARL
+  suffix: SCAR-L
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBESCARL
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBESCARH
+  suffix: SCAR-H
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBESCARH
+    - id: MagazineRifleSCARH
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBEF2000
+  suffix: F2000
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBEF2000
+    - id: MagazineRifleSTANAG
+      amount: 5
+
+#region Machine guns, DE
 
 - type: entity
   parent: WeaponCaseLong
@@ -403,6 +448,16 @@
     - id: WeaponMachineGunDEMG3
     - id: MagazineBeltBoxMG3Short
       amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEMG36
+  suffix: MG36
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEMG36
+    - id: MagazineRifleG36DoubleDrumTracerRed
 
 #region SMGs, RU
 
@@ -437,6 +492,17 @@
     contents:
     - id: WeaponSubmachinegunRUVityaz
     - id: MagazineSubmachinegunVityaz
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRUKedr
+  suffix: PP-91 Kedr
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunRUKedr
+    - id: MagazineSubmachinegunKedr
       amount: 5
 
 - type: entity
@@ -557,6 +623,28 @@
 
 - type: entity
   parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRURPK74
+  suffix: RPK-74
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleRURPK74
+    - id: MagazineRifleRPK74TracerGreen
+      amount: 6
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRURPK74M
+  suffix: RPK-74M
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleRURPK74M
+    - id: MagazineRifleRPK74BlackTracerGreen
+      amount: 6
+
+- type: entity
+  parent: WeaponCaseLong
   id: BF14WeaponCaseLongRUPKM
   suffix: PKM
   components:
@@ -576,7 +664,7 @@
     - id: MagazineBeltRP46
       amount: 2
 
-#region AMRs, US
+#region AMRs, RU
 
 - type: entity
   parent: WeaponCaseLong
@@ -588,6 +676,79 @@
     - id: WeaponSniperRUOSV96
     - id: MagazineSniperOSV96
       amount: 6
+
+#region Ammo
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCarlGustavADM401
+  suffix: ADM401 x3
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeCarlGustavADM401
+      amount: 3
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavyCarlGustavADM401
+  suffix: ADM401 x6
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeCarlGustavADM401
+      amount: 6
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavyCarlGustavMixed
+  suffix: Carl Gustav, mixed
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeCarlGustavHEDP502
+      amount: 2
+    - id: CartridgeCarlGustavHE441D
+      amount: 2
+    - id: CartridgeCarlGustavHEDP502
+    - id: CartridgeCarlGustavHE441D
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavySMAWMixed
+  suffix: SMAW, mixed
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeSMAWHEAA
+      amount: 3
+    - id: CartridgeSMAWNE
+      amount: 3
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavyPZF3Mixed
+  suffix: PZF3, mixed
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgePZF3HEAT
+      amount: 3
+    - id: CartridgePZF3HE
+      amount: 3
+
+- type: entity
+  parent: WeaponCaseHeavy
+  id: BF14WeaponCaseHeavyRPG7
+  suffix: RPG7, mixed
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeRPG7HEAT
+      amount: 3
+    - id: CartridgeRPG7Frag
+      amount: 3
+
 
 #region Oddballs
 
@@ -611,4 +772,26 @@
     contents:
     - id: BF14WeaponMachineGunBrigadorBonesaw
     - id: MagazineBeltBoxBonesaw
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCMBOSIPR
+  suffix: OSIPR
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleCMB
+    - id: PulsePlug
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCMBOSIPRLMG
+  suffix: OSIPR-IAR
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleCMBLMG
+    - id: MagazineBeltBoxAr2
       amount: 2

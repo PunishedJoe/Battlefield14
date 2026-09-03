@@ -1,6 +1,6 @@
 - type: gameMap
   id: BF14Bengalsk
-  mapName: 'Bengalsk water treatment'
+  mapName: 'Bengalsk'
   mapPath: /Maps/_Battlefield14/Planets/bengalsk.yml
   minPlayers: 1
   maxPlayers: 50
@@ -25,12 +25,12 @@
             USMCAutomaticRifleman: [ 1, 1 ]
             USMCMedic: [ 3, 3 ]
             USMCRecon: [ 3, 3 ]
-            VDVLieutenant: [ 1, 1 ]
-            VDVSquadLeader: [ 3, 3 ]
-            VDVRifleman: [ 6, 6 ]
-            VDVAutomaticRifleman: [ 3, 3 ]
-            VDVMedic: [ 3, 3 ]
-            VDVRecon: [ 3, 3 ]
+            RGFLieutenant: [ 1, 1 ]
+            RGFSquadLeader: [ 3, 3 ]
+            RGFRifleman: [ 8, 8 ]
+            RGFAutomaticRifleman: [ 1, 1 ]
+            RGFMedic: [ 3, 3 ]
+            RGFRecon: [ 3, 3 ]
             CivilianRUEMT: [ 1, 1 ]
         - type: StationBiome
           biome: Snow

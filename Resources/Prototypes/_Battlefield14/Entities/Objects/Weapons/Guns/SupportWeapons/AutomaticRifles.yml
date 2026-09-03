@@ -47,13 +47,13 @@
           tags:
             - BF_CartridgeRifle556x45
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -35
+    minAngle: 0
+    maxAngle: 0
   - type: Gun
-    minAngle: 19 # wielded = 0
-    maxAngle: 50 # wielded = 15
-    angleIncrease: 0.7
-    angleDecay: 16
+    minAngle: 6
+    maxAngle: 15
+    angleIncrease: 0.5
+    angleDecay: 12
     availableModes:
     - SemiAuto
     - FullAuto
@@ -163,13 +163,13 @@
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -35
+    minAngle: 0
+    maxAngle: 0
   - type: Gun
-    minAngle: 19
-    maxAngle: 50
-    angleIncrease: 1
-    angleDecay: 16
+    minAngle: 6
+    maxAngle: 15
+    angleIncrease: 0.5
+    angleDecay: 12
     availableModes:
     - SemiAuto
     - FullAuto
@@ -224,3 +224,132 @@
       - description: Takes AK-74 pattern magazines.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  name: RPK-74
+  parent: WeaponRifleRUAK74
+  id: WeaponRifleRURPK74
+  description: An AK-74 with a heavier barrel and front trunnion, plus a bipod. For laying down hate soviet style.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK74.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-rpk74
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-rpk74
+      - state: grip-ak74
+      - state: handguard-ak74
+      - state: barrel-rpk74
+      - state: ironsight-ak74
+      - state: mag-rpk74-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK74.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    minAngle: 6
+    maxAngle: 15
+    angleIncrease: 0.5
+    angleDecay: 12
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 7
+    projectileSpeed: 50 # twenty inch barrel
+    soundGunshot:
+      collection: BF_AK_545_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleRPK74TracerGreen
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39TracerGreen
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+  - type: MagazineVisuals
+    magState: mag-rpk74
+    steps: 1
+    zeroVisible: true
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+
+- type: entity
+  name: RPK-74M
+  parent: WeaponRifleRURPK74
+  id: WeaponRifleRURPK74M
+  description: A modernised RPK-74, with darker furniture and more modern manufacture.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK74M.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-rpk74m
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-rpk74black
+      - state: grip-ak74black
+      - state: handguard-ak74black
+      - state: barrel-rpk74
+      - state: ironsight-ak74
+      - state: mag-rpk74black-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK74M.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleRPK74BlackTracerGreen
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39TracerGreen
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+  - type: MagazineVisuals
+    magState: mag-rpk74black
+    steps: 1
+    zeroVisible: true

@@ -46,10 +46,10 @@
     id: USMCMedicPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMedicalEMTFilledBF14
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUS
     eyes: ClothingEyesHudMedicalBF
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+    head: ClothingHeadHatHelmetUSACH
+    outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilledUSMC
     gloves: ClothingHandsGlovesLatex
     suitstorage: WeaponRifleUSM4

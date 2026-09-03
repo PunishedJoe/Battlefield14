@@ -1,5 +1,5 @@
 bf14-tips-dataset-1 = Grenade pouches and medical belts have 100% explosion resistance, their contents are safe, but your bag does not.
-bf14-tips-dataset-2 = Combat voidsuits have built-in oxygen tanks and jetpacks, you can breathe off your suit or use it to move short distances..
+bf14-tips-dataset-2 = Combat voidsuits have built-in oxygen tanks and jetpacks, you can breathe off your suit or use it to move short distances.
 bf14-tips-dataset-3 = Nobody has flash protection.
 bf14-tips-dataset-4 = Jetpacks emit a heat signature while on.
 bf14-tips-dataset-5 = Only tourniquets stop bleeding instantly.
@@ -26,3 +26,6 @@ bf14-tips-dataset-25 = If you squeeze up to someone (friendly or enemy) you will
 bf14-tips-dataset-26 = Plates are the difference between bleeding out and walking away without a scratch.
 bf14-tips-dataset-27 = Spreading out equipment across your squad is better than hoarding it all and dying.
 bf14-tips-dataset-28 = Support weapons win fights and it's not even close.
+bf14-tips-dataset-29 = When assaulting a building, try to clear out as much of you can from outside, through windows and such
+bf14-tips-dataset-30 = You can revive someone without a defib by taking their outer clothing off and right clicking to start CPR, which will also heal airloss if crit.
+bf14-tips-dataset-31 = If you need to clear a large room you can toss in a bag full of grenades and then set the bag off with a another grenade to cause a massive explosion.

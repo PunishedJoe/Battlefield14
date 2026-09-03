@@ -16,11 +16,23 @@
   - USMCRecon
 
 - type: department
+  id: HECU
+  name: department-HECU-name
+  description: department-HECU-description
+  color: "#203564"
+  weight: 84
+  roles:
+  - HECUSquadLeader
+  - HECURifleman
+  - HECUSupport
+  - HECUMedic
+
+- type: department
   id: USSF
   name: department-USSF-name
   description: department-USSF-description
   color: "#203564"
-  weight: 84
+  weight: 83
   roles:
   - USSFCaptain
   - USSFCrewman
@@ -31,7 +43,7 @@
   name: department-NG-name
   description: department-NG-description
   color: "#203564"
-  weight: 83
+  weight: 82
   roles:
   - NGLieutenant
   - NGSquadLeader
@@ -74,6 +86,20 @@
 #region RU
 
 - type: department
+  id: RGF
+  name: department-RGF-name
+  description: department-RGF-description
+  color: "#a02829"
+  weight: 66
+  roles:
+  - RGFLieutenant
+  - RGFSquadLeader
+  - RGFRifleman
+  - RGFAutomaticRifleman
+  - RGFMedic
+  - RGFRecon
+
+- type: department
   id: VDV
   name: department-VDV-name
   description: department-VDV-description
@@ -86,6 +112,18 @@
   - VDVAutomaticRifleman
   - VDVMedic
   - VDVRecon
+
+- type: department
+  id: RKhB
+  name: department-RKhB-name
+  description: department-RKhB-description
+  color: "#a02829"
+  weight: 64
+  roles:
+  - RKhBSquadLeader
+  - RKhBRifleman
+  - RKhBSupport
+  - RKhBMedic
 
 - type: department
   id: FSB
@@ -122,7 +160,6 @@
   - OMONLieutenant # Unit Commander
   - OMONSquadLeader # Sergeant
   - OMONRifleman # Riot Officer
-  editorHidden: true
 
 #region IND
 

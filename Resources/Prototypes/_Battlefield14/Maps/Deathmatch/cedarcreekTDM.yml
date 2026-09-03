@@ -1,0 +1,25 @@
+- type: gameMap
+  id: BF14CedarCreekTDM
+  mapName: 'Cedar Creek (TDM)'
+  mapPath: /Maps/_Battlefield14/Deathmatch/cedarcreek.yml
+  minPlayers: 1
+  maxPlayers: 20
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14CedarCreekTDM:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Cedar Creek, Bavaria"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Cedar Creek, Bavaria"
+          stationDescription: "A hospital in Bavaria."
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            TDMRed: [ 10, 10 ]
+            TDMBlue: [ 10, 10 ]
+        - type: StationBiome
+          biome: Grasslands

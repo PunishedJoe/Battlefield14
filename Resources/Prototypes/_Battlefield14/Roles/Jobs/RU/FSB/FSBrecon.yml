@@ -46,12 +46,12 @@
     id: FSBReconPDA
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
-    head: ClothingHeadHatHelmetRUEMR # can't wear the NVGs without this
+    jumpsuit: ClothingUniformJumpsuitRUGorka
+    head: ClothingHeadHatHelmetRU6b47Alt
     helmetattachment: ClothingHelmetAttachmentNVGsBasicPACT
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
-    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJack
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackRucksackBlack
@@ -80,7 +80,7 @@
     id: FSBReconPDA
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
+    jumpsuit: ClothingUniformJumpsuitRUGorka
     head: ClothingHeadHatSkullcrusher
     helmetattachment: ClothingHelmetAttachmentNVGsBasicPACT
     balaclava: ClothingBalaclavaMilitary

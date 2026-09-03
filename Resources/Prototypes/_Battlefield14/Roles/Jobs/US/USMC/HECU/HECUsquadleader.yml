@@ -56,9 +56,8 @@
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackMercenary
     suitstorage: WeaponRifleUSCAR15
-    suitstorage2: WeaponGrenadeLauncherUSM320HE
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
+    pocket2: PouchGrenadesFilledUSARifleman
     rightarmband: ClothingArmbandThighHolsterFilledUS
     leftarmband: Tourniquet
     wallet: ClothingWalletLeatherBrown
@@ -71,7 +70,6 @@
     - MagazinePistolM9
     - PowerCellPCV
     - ClothingMaskGasM40
-    - Cartridge40x46mmHE
-    - Cartridge40x46mmHE
     - Tourniquet
     - Zipties
+    - PillHyronalin

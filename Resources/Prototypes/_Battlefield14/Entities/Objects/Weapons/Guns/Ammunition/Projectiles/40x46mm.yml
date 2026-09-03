@@ -136,8 +136,8 @@
     damage:
       types:
         Structural: 10
-        Slash: 12
-        Piercing: 12
+        Slash: 10
+        Piercing: 10
     deleteOnCollide: true
   - type: StaminaDamageOnCollide
     damage: 8 # ~12.5 hits to stun
@@ -194,7 +194,8 @@
     damage:
       types:
         Structural: 12
-        Piercing: 18
+        Slash: 5
+        Piercing: 13
   - type: StaminaDamageOnCollide
     damage: 4 # ~25 hits to stun
     deleteOnCollide: true

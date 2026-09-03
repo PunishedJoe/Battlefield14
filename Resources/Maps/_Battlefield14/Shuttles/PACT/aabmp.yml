@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/11/2026 04:36:20
-  entityCount: 195
+  time: 08/29/2026 10:43:44
+  entityCount: 196
 maps: []
 grids:
 - 1
@@ -61,10 +61,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
         Kudzu: []
-        MetalFoam: []
+        Smoke: []
         Puddle: []
+        MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -147,7 +147,7 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.14963
+          temperature: 293.14954
           moles:
           - 13.233623
           - 49.783638
@@ -594,6 +594,49 @@ entities:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+- proto: ClosetWall
+  entities:
+  - uid: 2
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 2.5,-0.5
+      parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.1484
+        moles:
+        - 1.1507498
+        - 4.329012
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 178
+          - 182
+          - 181
+          - 184
+          - 180
+          - 183
+          - 179
 - proto: ComputerGunneryConsole
   entities:
   - uid: 48
@@ -638,51 +681,6 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: CrateAmmoGeneric
-  entities:
-  - uid: 178
-    components:
-    - type: Transform
-      pos: 1.5,-0.5
-      parent: 1
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14847
-        moles:
-        - 1.1507498
-        - 4.329012
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 184
-          - 183
-          - 182
-          - 181
-          - 180
-          - 179
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: DarkCatwalkMono
   entities:
   - uid: 141
@@ -828,14 +826,14 @@ entities:
   - uid: 183
     components:
     - type: Transform
-      parent: 178
+      parent: 2
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
   - uid: 184
     components:
     - type: Transform
-      parent: 178
+      parent: 2
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -844,28 +842,28 @@ entities:
   - uid: 179
     components:
     - type: Transform
-      parent: 178
+      parent: 2
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
   - uid: 180
     components:
     - type: Transform
-      parent: 178
+      parent: 2
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
   - uid: 181
     components:
     - type: Transform
-      parent: 178
+      parent: 2
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
   - uid: 182
     components:
     - type: Transform
-      parent: 178
+      parent: 2
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -1044,6 +1042,15 @@ entities:
     - type: Transform
       pos: 2.5,-6.5
       parent: 1
+- proto: ShipRepairKitFilled
+  entities:
+  - uid: 178
+    components:
+    - type: Transform
+      parent: 2
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SmallGyroscope
   entities:
   - uid: 185

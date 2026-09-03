@@ -44,11 +44,9 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK12
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
-    head: ClothingHeadHatHelmetRUEMR
-#    eyes: ClothingEyesGogglesGreen
-    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    head: ClothingHeadHatHelmetRU6b47
+    outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJackFilledRU
-#    back: ClothingBackpackRucksackBlack
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUAK12
     pocket1: PouchFirstAidFilled
@@ -57,6 +55,6 @@
     back:
     - ArmorPlateMediumPackaged
     - FlashlightMilitaryAlt
-    - ClothingMaskGasRussia
+    - ClothingMaskGasRussiaPMK4
     - Tourniquet
     - Zipties

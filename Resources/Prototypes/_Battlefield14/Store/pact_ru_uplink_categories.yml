@@ -71,7 +71,7 @@
   name: uplink-PACTRU-SVDScrate-name
   description: uplink-PACTRU-SVDScrate-desc
   productEntity: CrateSecgearPACTFilledSVDS
-  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVDS.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/SVD.rsi, state: icon-svds }
   cost:
     PACTRequisition: 10 # 1 minute 40 seconds
   categories:
@@ -137,7 +137,7 @@
   productEntity: CrateSecgearPACTFilledPKM
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/PKM.rsi, state: icon }
   cost:
-    PACTRequisition: 100 # 16 minutes 40 seconds approx
+    PACTRequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -153,7 +153,7 @@
   productEntity: CrateSecgearPACTFilledRPG7
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPG7.rsi, state: icon }
   cost:
-    PACTRequisition: 80 # 13 minutes 20 seconds approx
+    PACTRequisition: 50 # 8 minutes 20 seconds approx
   categories:
     - UplinkPACTRUWeapons
   conditions:
@@ -385,7 +385,23 @@
   name: uplink-PACTRU-rgd5-box-name
   description: uplink-PACTRU-rgd5-box-desc
   productEntity: BoxGrenadesRGD5
-  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi, state: base }
+  cost:
+    PACTRequisition: 18 # 3 minutes
+  categories:
+    - UplinkPACTRUExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUBoxGrenadesRG60TB
+  name: uplink-PACTRU-rg60tb-box-name
+  description: uplink-PACTRU-rg60tb-box-desc
+  productEntity: BoxGrenadesRG60TB
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rg60tb.rsi, state: base }
   cost:
     PACTRequisition: 18 # 3 minutes
   categories:
@@ -401,7 +417,23 @@
   name: uplink-PACTRU-rgo-box-name
   description: uplink-PACTRU-rgo-box-desc
   productEntity: BoxGrenadesRGO
-  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rgo.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rgo.rsi, state: base }
+  cost:
+    PACTRequisition: 30 # 5 minutes
+  categories:
+    - UplinkPACTRUExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRUBoxGrenadesRG60TBO1
+  name: uplink-PACTRU-rg60tbo1-box-name
+  description: uplink-PACTRU-rg60tbo1-box-desc
+  productEntity: BoxGrenadesRG60TBO1
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/rg60tbo1.rsi, state: base }
   cost:
     PACTRequisition: 30 # 5 minutes
   categories:

@@ -41,7 +41,7 @@
   - !type:GroupLoadoutEffect
     proto: BF_VDV_SL_VET
   inhand:
-  - BF14WeaponCaseShortSR1MP
+  - BF14WeaponCaseShortRUSR1MP
 
 - type: loadout
   id: LoadoutGunRUTT33VDVVET
@@ -71,3 +71,35 @@
   name: M870 gun case
   inhand:
   - BF14WeaponCaseLongUSM870
+
+#region OMON
+
+- type: loadout
+  id: LoadoutGunAKS74U
+  name: AKS-74U gun case
+  inhand:
+  - BF14WeaponCaseLongRUAKS74U
+
+- type: loadout
+  id: LoadoutGunPP91
+  name: PP-91 Kedr gun case
+  inhand:
+  - BF14WeaponCaseLongRUKedr
+
+- type: loadout
+  id: LoadoutGunRMB93
+  name: RMB-93 gun case
+  inhand:
+  - BF14WeaponCaseLongRURMB93
+
+- type: loadout
+  id: LoadoutGunAK74M
+  name: AK-74M gun case
+  inhand:
+  - BF14WeaponCaseLongRUAK74M
+
+- type: loadout
+  id: LoadoutGunKS23M
+  name: KS-23M gun case
+  inhand:
+  - BF14WeaponCaseLongRUKS23M

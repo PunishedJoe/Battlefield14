@@ -1,7 +1,7 @@
 - type: job
   id: HECUMedic
-  name: job-name-usmc-medic
-  description: job-description-usmc-medic
+  name: job-name-hecu-medic
+  description: job-description-hecu-medic
   playTimeTracker: JobHECUMedic
   weight: 75
   startingGear: HECUMedicGear
@@ -65,10 +65,10 @@
     back:
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
-    - BoxMRE
     - MedkitAdvancedFilled
     - CrowbarRed
     - ClothingMaskGasM40
     - PillCanisterHyronalin
     - Tourniquet
     - Zipties
+    - BiofoamCanisterRedDARPA

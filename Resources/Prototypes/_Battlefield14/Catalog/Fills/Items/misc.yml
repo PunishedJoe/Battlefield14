@@ -65,6 +65,16 @@
       - WeaponPistolRUSR1MP
 
 - type: entity
+  id: ClothingArmbandThighHolsterFilledRUMP412
+  parent: ClothingArmbandThighHolster
+  suffix: Filled, RU, MP412 REX
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolRevolverRUMP412
+
+- type: entity
   id: ClothingArmbandSheathKnifePolymerFilled
   parent: ClothingArmbandSheathKnifePolymer
   suffix: Filled
@@ -117,8 +127,24 @@
 - type: entity
   id: DiskCaseFilledRandomMusicProp
   parent: DiskCase
+  name: CD case
+  description: A case for storing a CD.
   suffix: Filled, random music album prop
   components:
   - type: StorageFill
     contents:
     - id: BF14MusicDiskRandomProp
+
+- type: entity
+  id: ShipRepairKitFilled
+  parent: ShipRepairKit
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: ShipRepairDevice
+    - id: ShipRepairDeviceAmmo
+    - id: Crowbar
+    - id: Wrench
+    - id: WelderMini
+    - id: Flare

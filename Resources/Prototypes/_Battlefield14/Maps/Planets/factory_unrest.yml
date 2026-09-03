@@ -1,0 +1,43 @@
+- type: gameMap
+  id: BF14FactoryUnrest
+  mapName: 'Norskatom facility'
+  mapPath: /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest1.yml
+  minPlayers: 8
+  maxPlayers: 50
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14FactoryUnrest:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Norvinsk, Russia"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Norvinsk, Russia"
+          stationDescription: "Building 2-A of the Norskatom nuclear fuel erichment facility owned by Rosatom located in the Norvinsk region"
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            RUScav: [ 15, 15 ]
+            OMONLieutenant: [ 1, 1 ]
+            OMONSquadLeader: [ 2, 2 ]
+            OMONRifleman: [ 6, 6 ]
+        - type: CEStationZLevels
+          mapsAbove:
+            - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest2.yml 
+            - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest3.yml
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest0.yml 
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+
+- type: zMap
+  id: BF14FactoryUnrestZMap
+  maps:
+    - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest0.yml    # Undergound
+    - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest1.yml    # Ground floor
+    - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest2.yml    # 1st floor
+    - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest3.yml    # 2nd floor
+  components:
+    - type: CEAutoGridGravity

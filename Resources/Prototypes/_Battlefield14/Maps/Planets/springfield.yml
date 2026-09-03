@@ -1,7 +1,7 @@
 - type: gameMap
   id: BF14Springfield
   mapName: 'Springfield'
-  mapPath: /Maps/_Battlefield14/Planets/MultiZ/BF14SpringfieldZMap1.yml
+  mapPath: /Maps/_Battlefield14/Planets/MultiZ/Springfield/BF14SpringfieldZMap1.yml
   minPlayers: 1
   maxPlayers: 50
   randomRotation: false
@@ -38,17 +38,18 @@
             CivilianRUEMT: [ 1, 1 ]
         - type: CEStationZLevels
           mapsAbove:
-            - /Maps/_Battlefield14/Planets/MultiZ/BF14SpringfieldZMap2.yml
+            - /Maps/_Battlefield14/Planets/MultiZ/Springfield/BF14SpringfieldZMap2.yml
           mapsBelow:
-            - /Maps/_Battlefield14/Planets/MultiZ/BF14SpringfieldZMap0.yml
+            - /Maps/_Battlefield14/Planets/caves.yml
+            - /Maps/_Battlefield14/Planets/MultiZ/Springfield/BF14SpringfieldZMap0.yml
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity
 
 - type: zMap
   id: BF14SpringfieldZMap
   maps:
-    - /Maps/_Battlefield14/Planets/MultiZ/BF14SpringfieldZMap0.yml    # Level 0
-    - /Maps/_Battlefield14/Planets/MultiZ/BF14SpringfieldZMap1.yml    # Level 1
-    - /Maps/_Battlefield14/Planets/MultiZ/BF14SpringfieldZMap2.yml    # Level 2
+    - /Maps/_Battlefield14/Planets/MultiZ/Springfield/BF14SpringfieldZMap0.yml    # Level 0
+    - /Maps/_Battlefield14/Planets/MultiZ/Springfield/BF14SpringfieldZMap1.yml    # Level 1
+    - /Maps/_Battlefield14/Planets/MultiZ/Springfield/BF14SpringfieldZMap2.yml    # Level 2
   components:
     - type: CEAutoGridGravity

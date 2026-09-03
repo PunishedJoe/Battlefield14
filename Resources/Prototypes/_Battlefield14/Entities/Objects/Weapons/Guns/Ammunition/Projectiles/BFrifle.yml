@@ -60,7 +60,7 @@
     damage:
       types:
         Piercing: 30
-        Structural: 10
+        Structural: 5
     armorPenetration: 0.3
 
 - type: entity
@@ -78,7 +78,7 @@
     damage:
       types:
         Piercing: 30
-        Structural: 5
+        Structural: 3
   - type: StaminaDamageOnCollide
     damage: 7 # ~15 hits to stun
 
@@ -92,8 +92,8 @@
     damage:
       types:
         Piercing: 40
-        Structural: 10
-    armorPenetration: 0.3
+        Structural: 5
+    armorPenetration: 0.15
   - type: StaminaDamageOnCollide
     damage: 10 # ~10 hits to stun
 

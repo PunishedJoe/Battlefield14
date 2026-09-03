@@ -32,6 +32,39 @@
   id: UplinkNATOUSShips
   name: store-category-bf-ships
 
+# German
+- type: storeCategory
+  id: UplinkNATODEWeapons
+  name: store-category-bf-weapons
+
+- type: storeCategory
+  id: UplinkNATODEAmmo
+  name: store-category-bf-ammo
+
+- type: storeCategory
+  id: UplinkNATODEArmour
+  name: store-category-bf-armour
+
+- type: storeCategory
+  id: UplinkNATODEUtility
+  name: store-category-bf-utility
+
+- type: storeCategory
+  id: UplinkNATODEMedical
+  name: store-category-bf-medical
+
+- type: storeCategory
+  id: UplinkNATODEExplosives
+  name: store-category-bf-explosives
+
+- type: storeCategory
+  id: UplinkNATODEShipAmmo
+  name: store-category-bf-shipammo
+
+- type: storeCategory
+  id: UplinkNATODEShips
+  name: store-category-bf-ships
+
 ## PACT
 # Russian
 

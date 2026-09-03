@@ -1,9 +1,11 @@
 using System.Linq;
 using System.Numerics;
+using Content.Server._Battlefield14.Projectiles;
 using Content.Server._Mono.FireControl;
 using Content.Server.Cargo.Systems;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Weapons.Ranged.Components;
+using Content.Shared._Battlefield14.Projectiles.Components;
 using Content.Shared._Mono;
 using Content.Shared._RMC14.Weapons.Ranged.Prediction;
 using Content.Shared.Damage;
@@ -44,6 +46,7 @@ public sealed partial class GunSystem : SharedGunSystem
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly RequireProjectileTargetSystem _requireProjectileTarget = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
+    [Dependency] private readonly CEZProjectileSystem _cezProjectile = default!;
 
     private const float DamagePitchVariation = 0.05f;
 
@@ -111,6 +114,11 @@ public sealed partial class GunSystem : SharedGunSystem
         var shotProjectiles = new List<EntityUid>(ammo.Count);
 
         var offset = -1f; // Mono
+
+        // BF14 - allow shots to travel between z-levels through floor/ceiling openings.
+        var zOffset = 0;
+        var zTransitionPoint = Vector2.Zero;
+
         foreach (var (ent, shootable) in ammo)
         {
             offset = offset == -1f ? 0f : offset + 1f / ammo.Count;
@@ -119,6 +127,8 @@ public sealed partial class GunSystem : SharedGunSystem
             // Update shot based on the recoil
             toMap = fromMap.Position + angle.ToVec() * mapDirection.Length();
             mapDirection = toMap - fromMap.Position;
+
+            _cezProjectile.TryGetZShot(user, gun.Target, fromMap, toMap, out zOffset, out zTransitionPoint);
 
             // pneumatic cannon doesn't shoot bullets it just throws them, ignore ammo handling
             if (throwItems && ent != null)
@@ -203,19 +213,19 @@ public sealed partial class GunSystem : SharedGunSystem
                 var angles = LinearSpread(mapAngle - spreadEvent.Spread / 2,
                     mapAngle + spreadEvent.Spread / 2, ammoSpreadComp.Count);
 
-                ShootOrThrow(ammoEnt, angles[0].ToVec(), gunVelocity, gun, gunUid, user, offset);
+                ShootOrThrow(ammoEnt, angles[0].ToVec(), gunVelocity, gun, gunUid, user, offset, zOffset, zTransitionPoint);
                 shotProjectiles.Add(ammoEnt);
 
                 for (var i = 1; i < ammoSpreadComp.Count; i++)
                 {
                     var newuid = Spawn(ammoSpreadComp.Proto, fromEnt);
-                    ShootOrThrow(newuid, angles[i].ToVec(), gunVelocity, gun, gunUid, user, offset);
+                    ShootOrThrow(newuid, angles[i].ToVec(), gunVelocity, gun, gunUid, user, offset, zOffset, zTransitionPoint);
                     shotProjectiles.Add(newuid);
                 }
             }
             else
             {
-                ShootOrThrow(ammoEnt, mapDirection, gunVelocity, gun, gunUid, user, offset);
+                ShootOrThrow(ammoEnt, mapDirection, gunVelocity, gun, gunUid, user, offset, zOffset, zTransitionPoint);
                 shotProjectiles.Add(ammoEnt);
             }
 
@@ -225,7 +235,7 @@ public sealed partial class GunSystem : SharedGunSystem
     }
 
     private void ShootOrThrow(EntityUid uid, Vector2 mapDirection, Vector2 gunVelocity, GunComponent gun, EntityUid gunUid, EntityUid? user,
-                              float offset = 0f) // Mono - add offset
+                              float offset = 0f, int zOffset = 0, Vector2 zTransitionPoint = default) // BF14 - add offset / z-level travel
     {
         if (gun.Target is { } target && !TerminatingOrDeleted(target))
         {
@@ -256,6 +266,16 @@ public sealed partial class GunSystem : SharedGunSystem
         if (HasComp<FireControllableComponent>(gunUid))
         {
             EnsureComp<ProjectileGridPhaseComponent>(uid);
+        }
+
+        // BF14 - mark the projectile to travel between z-levels mid-flight.
+        if (zOffset != 0)
+        {
+            var zComp = EnsureComp<CEZProjectileComponent>(uid);
+            zComp.ZOffset = zOffset;
+            zComp.SpawnPoint = _transform.GetWorldPosition(uid);
+            zComp.TransitionPoint = zTransitionPoint;
+            Dirty(uid, zComp);
         }
     }
 

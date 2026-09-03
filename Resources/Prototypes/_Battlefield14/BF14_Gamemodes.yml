@@ -53,7 +53,7 @@
   showInVote: true
   supportedMaps: BF14MapPoolCivilUnrest
   description: Maps involving civilians in combat.
-  maxPlayers: 25
+  maxPlayers: 30
   rules:
   - TenMinuteRestart
 

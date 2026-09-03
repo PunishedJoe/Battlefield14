@@ -10,11 +10,13 @@
     NATORequisition: 6 # 1 minute
   categories:
     - UplinkNATOUSAmmo
+    - UplinkNATODEAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOAmmoBox556
@@ -26,11 +28,13 @@
     NATORequisition: 2 # 20 seconds
   categories:
     - UplinkNATOUSAmmo
+    - UplinkNATODEAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOAmmoBox762Big
@@ -42,11 +46,13 @@
     NATORequisition: 8 # 1 minute 20 seconds
   categories:
     - UplinkNATOUSAmmo
+    - UplinkNATODEAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOAmmoBox9mmBig
@@ -58,11 +64,13 @@
     NATORequisition: 4 # 40 seconds
   categories:
     - UplinkNATOUSAmmo
+    - UplinkNATODEAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOMagazineBoxSTANAG
@@ -74,11 +82,13 @@
     NATORequisition: 4 # 40 seconds
   categories:
     - UplinkNATOUSAmmo
+    - UplinkNATODEAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOAmmoBox12gBuckshot
@@ -90,11 +100,13 @@
     NATORequisition: 1 # 10 seconds
   categories:
     - UplinkNATOUSAmmo
+    - UplinkNATODEAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOAmmoBox12gSlug
@@ -106,11 +118,13 @@
     NATORequisition: 1 # 10 seconds
   categories:
     - UplinkNATOUSAmmo
+    - UplinkNATODEAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOAmmoBox12gBreaching
@@ -122,11 +136,13 @@
     NATORequisition: 1 # 10 seconds
   categories:
     - UplinkNATOUSAmmo
+    - UplinkNATODEAmmo
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 #region Armour
 
@@ -140,11 +156,13 @@
     NATORequisition: 1 # 10 seconds
   categories:
     - UplinkNATOUSArmour
+    - UplinkNATODEArmour
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOArmorPlateMedium
@@ -156,11 +174,13 @@
     NATORequisition: 3 # 30 seconds
   categories:
     - UplinkNATOUSArmour
+    - UplinkNATODEArmour
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 #region Utility
 
@@ -174,11 +194,13 @@
     NATORequisition: 3 # 30 seconds
   categories:
     - UplinkNATOUSUtility
+    - UplinkNATODEUtility
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOThighHolster
@@ -190,11 +212,13 @@
     NATORequisition: 3 # 30 seconds
   categories:
     - UplinkNATOUSUtility
+    - UplinkNATODEUtility
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOKnifeSheath
@@ -206,11 +230,13 @@
     NATORequisition: 1 # 10 seconds
   categories:
     - UplinkNATOUSUtility
+    - UplinkNATODEUtility
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOWristScanner
@@ -222,11 +248,13 @@
     NATORequisition: 3 # 30 seconds
   categories:
     - UplinkNATOUSUtility
+    - UplinkNATODEUtility
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOBarbwire
@@ -238,11 +266,13 @@
     NATORequisition: 3 # 30 seconds
   categories:
     - UplinkNATOUSUtility
+    - UplinkNATODEUtility
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 #region Medical
 
@@ -251,32 +281,36 @@
   name: uplink-nato-medkit-combat-name
   description: uplink-nato-medkit-combat-desc
   productEntity: MedkitCombatFilled
-  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  icon: { sprite: _Battlefield14/Objects/Specific/Medical/firstaidkits.rsi, state: bezerk }
   cost:
     NATORequisition: 10 # 1 minute 40 seconds
   categories:
     - UplinkNATOUSMedical
+    - UplinkNATODEMedical
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOMedkitAdvanced
   name: uplink-NATO-medkit-advanced-name
   description: uplink-NATO-medkit-advanced-desc
   productEntity: MedkitAdvancedFilled
-  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: advkit }
+  icon: { sprite: _Battlefield14/Objects/Specific/Medical/firstaidkits.rsi, state: advfirstaid }
   cost:
     NATORequisition: 15 # 2 minutes 30 seconds
   categories:
     - UplinkNATOUSMedical
+    - UplinkNATODEMedical
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOPartsLimbsCyberBox
@@ -288,11 +322,13 @@
     NATORequisition: 15 # 2 minutes 30 seconds
   categories:
     - UplinkNATOUSMedical
+    - UplinkNATODEMedical
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
         tags:
           - AmericanUplink
+          - BundeswehrUplink
 
 - type: listing
   id: UplinkNATOPartsOrgansSynthCrate
@@ -309,53 +345,4 @@
       whitelist:
         tags:
           - AmericanUplink
-
-#region Ship vouchers
-
-- type: listing
-  id: UplinkNATOUSMGBradley
-  name: uplink-natous-bradley-mg-name
-  description: uplink-natous-bradley-mg-desc
-  productEntity: ShipVoucherBradleyMG
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
-  cost:
-    NATORequisition: 30
-  categories:
-    - UplinkNATOUSShips
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - AmericanUplink
-
-- type: listing
-  id: UplinkNATOUSAABradley
-  name: uplink-natous-bradley-aa-name
-  description: uplink-natous-bradley-aa-desc
-  productEntity: ShipVoucherBradleyAA
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
-  cost:
-    NATORequisition: 50
-  categories:
-    - UplinkNATOUSShips
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - AmericanUplink
-
-- type: listing
-  id: UplinkNATOUSBradley
-  name: uplink-natous-bradley-tow-name
-  description: uplink-natous-bradley-tow-desc
-  productEntity: ShipVoucherBradleyTow
-  icon: { sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/generic_shipgun_box.rsi, state: base }
-  cost:
-    NATORequisition: 80
-  categories:
-    - UplinkNATOUSShips
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - AmericanUplink
+          - BundeswehrUplink

@@ -53,11 +53,11 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMedicalEMTFilledBF14Hyposprays
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUS
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+    head: ClothingHeadHatHelmetUSACH
     eyes: ClothingEyesHudMedicalBF
     balaclava: ClothingBalaclavaMilitary
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilled
     gloves: ClothingHandsGlovesLatex
     back: ClothingBackpackRucksackTan
@@ -87,7 +87,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMedicalEMTFilledBF14Hyposprays
-    jumpsuit: ClothingUniformJumpsuitCamoUS
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
     eyes: ClothingEyesHudMedicalBF
     balaclava: ClothingBalaclavaMilitary
     outerClothing: ClothingOuterVoidsuitAmericanCombatMarine

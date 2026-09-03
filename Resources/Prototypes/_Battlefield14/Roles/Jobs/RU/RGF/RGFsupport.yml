@@ -1,0 +1,65 @@
+- type: job
+  id: RGFAutomaticRifleman
+  name: job-name-rgf-automatic-rifleman
+  description: job-description-vdv-automatic-rifleman
+  playTimeTracker: JobRGFAutomaticRifleman
+  weight: 76
+  startingGear: RGFAutomaticRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTSupport"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+    - Ukrainian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: ChatRank
+      rank: BF-rank-corporal
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: RGFAutomaticRiflemanGear
+  equipment:
+    id: RGFAutomaticRiflemanPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRU
+    jumpsuit: ClothingUniformJumpsuitRUGorka
+    head: ClothingHeadHatHelmetRU6b47Riot
+    outerClothing: ClothingOuterArmorPlateCarrier6B45Heavy
+    shoes: ClothingShoesBootsJackFilledRU
+    suitstorage: WeaponMachineGunRUPKP
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledVDVSupport
+    rightarmband: ClothingArmbandThighHolsterFilledRU
+  storage:
+    back:
+    - SupplyBoxAmmoRUFilled
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussiaPMK4
+    - Tourniquet
+    - Zipties
+    belt:
+    - MagazineBeltBoxPKM
+    - MagazinePistolMP443
+    - MagazinePistolMP443
+    - MagazineBeltBoxPKM

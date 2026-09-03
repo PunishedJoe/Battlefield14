@@ -62,6 +62,83 @@
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
+  id: BulletCarlGustavHE441DArmingDistance
+  name: 84mm HE441D projectile
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 100
+        Blunt: 50
+    deleteOnCollide: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletCarlGustavHE441D
+    distanceDelay: 6
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 50
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBulletTrigger
+  id: BulletCarlGustavHE441D
+  name: 84mm HE441D projectile
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: frag
+  - type: Projectile
+    damage:
+      types:
+        Structural: 1000
+        Blunt: 250
+  - type: ExplodeOnTrigger
+  - type: HeFragProjectile
+    fillPrototype: BulletGrenadeM67Fragment
+    capacity: 30
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+  - type: Explosive
+    explosionType: Default
+    totalIntensity: 100
+    intensitySlope: 5
+    maxIntensity: 6
+    maxTileBreak: 0
+  - type: StaminaDamageOnCollide
+    damage: 200 # It's a fucking rocket
+
+- type: entity
+  id: PelletCarlGustavASM401
+  name: ASM401 flechette
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: sabot
+    scale: 0.7, 0,7
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 8
+        Slash: 8
+    armorPenetration: 0.2
+  - type: StaminaDamageOnCollide
+    damage: 5 # ~20 hits to stun
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
   id: BulletRocket83mmNEArmingDistance
   name: 83mm Novel Explosive projectile
   components:
@@ -103,15 +180,15 @@
   - type: ExplodeOnTrigger
   - type: HeFragProjectile
     fillPrototype: BulletGrenadeM67Fragment
-    capacity: 20
+    capacity: 30
     randomAngle: true
     minVelocity: 8
     maxVelocity: 15
   - type: Explosive
-    explosionType: Default
+    explosionType: Thermobaric
     totalIntensity: 90
     intensitySlope: 5
-    maxIntensity: 4
+    maxIntensity: 6
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
@@ -240,8 +317,8 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: FireBomb
-    totalIntensity: 35
-    intensitySlope: 4
+    totalIntensity: 25
+    intensitySlope: 5
     maxIntensity: 2
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
@@ -351,7 +428,7 @@
         Slash: 120
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     totalIntensity: 90
     intensitySlope: 4
     maxIntensity: 4
@@ -510,16 +587,16 @@
         Blunt: 200
   - type: HeFragProjectile
     fillPrototype: BulletRPG7OG7VFragment
-    capacity: 40
+    capacity: 90
     randomAngle: true
-    minVelocity: 8
+    minVelocity: 10
     maxVelocity: 15
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 90
+    totalIntensity: 50
     intensitySlope: 5
-    maxIntensity: 4
+    maxIntensity: 2
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket
@@ -659,10 +736,10 @@
     proto: InstantEffectGravityWellThermobaric
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
-    totalIntensity: 100
-    intensitySlope: 6
-    maxIntensity: 5
+    explosionType: Thermobaric
+    totalIntensity: 90
+    intensitySlope: 5
+    maxIntensity: 6
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 200 # It's a fucking rocket

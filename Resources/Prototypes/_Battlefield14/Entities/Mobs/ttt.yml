@@ -1,9 +1,9 @@
 - type: entity
   name: TTT
   parent: [ BaseMob, MobCombat, MobDamageable ]
-  id: TTT
+  id: BF14MobTTT
   description: Oh OH OH! thats Tung Tung Tung Sahur!
-  suffix: hostile
+  suffix: Admeme
   components:
   - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
     speaks:
@@ -67,7 +67,7 @@
     sound: 
       path: /Audio/_Battlefield14/Misc/ttt/spawn.ogg
       params:
-        range: 5000
+        range: 50
   - type: DamageStateVisuals
     states:
       Alive:

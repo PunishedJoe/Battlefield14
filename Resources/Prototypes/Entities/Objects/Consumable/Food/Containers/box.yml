@@ -126,6 +126,7 @@
     whitelist:
       tags:
       - Egg
+      - Grenade # BF14
   - type: Item
     sprite: Objects/Consumable/Food/egg.rsi
     size: Small

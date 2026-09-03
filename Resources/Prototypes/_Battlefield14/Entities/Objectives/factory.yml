@@ -1,0 +1,104 @@
+- type: entity
+  id: CapturePointFactoryControlRoom
+  parent: BaseCapturePoint
+  name: Control room control point
+  suffix: Factory, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Control room"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Control room"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Control room capture point"
+
+- type: entity
+  id: CapturePointFactoryOffice
+  parent: BaseCapturePoint
+  name: Office control point
+  suffix: Factory, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "3rd floor office"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "3rd floor office"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "3rd floor office capture point"
+
+- type: entity
+  id: CapturePointFactoryDestroyedOffice
+  parent: BaseCapturePoint
+  name: Destroyed office control point
+  suffix: Factory, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Destroyed office"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Destroyed office"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Destroyed office capture point"
+
+- type: entity
+  id: CapturePointFactoryStorage
+  parent: BaseCapturePoint
+  name: Underground storage control point
+  suffix: Factory, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Undergound storage"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "storage"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Underground storage capture point"
+
+- type: entity
+  id: CapturePointFactorySilo
+  parent: BaseCapturePoint
+  name: Silo control point
+  suffix: Factory, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Silos"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "silo"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Silos capture point"
+
+- type: entity
+  id: CapturePointFactoryEnrichment
+  parent: BaseCapturePoint
+  name: Enrichment unit control point
+  suffix: Factory, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Enrichment unit"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Enrichment unit"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Enrichment unit capture point"
+
+- type: entity
+  id: CapturePointFactoryBridge
+  parent: BaseCapturePoint
+  name: Bridge control point
+  suffix: Factory, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Bridge"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Bridge"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Bridge capture point"

@@ -155,13 +155,8 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
-  - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -28
   - type: Gun
-    minAngle: 26
-    maxAngle: 42
-    angleIncrease: 1.25
+    angleIncrease: 1.5
     projectileSpeed: 40 # Shorter barrel
     fireRate: 6
     availableModes:
@@ -407,6 +402,25 @@
       params:
         volume: -10
         variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleRPK74
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
   - type: MagazineVisuals
     magState: mag-cag
   - type: CursorOffsetRequiresWield

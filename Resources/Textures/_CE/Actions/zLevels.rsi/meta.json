@@ -5,13 +5,16 @@
         "y": 32
     },
     "license": "CC-BY-SA-4.0",
-    "copyright": "Created by TheShuEd",
+    "copyright": "Created by TheShuEd, eye_active redacted for BF14",
     "states": [
         {
             "name": "down"
         },
         {
             "name": "eye"
+        },
+        {
+            "name": "eye_active"
         },
         {
             "name": "up"

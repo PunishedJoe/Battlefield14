@@ -20,7 +20,7 @@
         Heat: 0.5
         Shock: 0.5
         Caustic: 0.5
-        Radiation: 0.3
+        Radiation: 0.6
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: StaminaDamageResistance
@@ -43,7 +43,7 @@
 - type: entity
   parent: [ ClothingOuterHardsuitBase , BaseIntegratedManeuveringThrusters , ClothingArmorPlateMedium ]
   id: ClothingOuterVoidsuitAmericanCombatMarine
-  name: Marine 'Devil Dog' Combat Voidsuit
+  name: Marine 'Devil Dog' combat voidsuit
   description: A combat voidsuit of American design, for their marine corps, with darker colours to blend into the backdrop of space.
   components:
   - type: Sprite
@@ -94,7 +94,7 @@
 - type: entity
   parent: BaseClothingOuterVoidsuitCombat
   id: ClothingOuterVoidsuitGermanCombat
-  name: German 'Panzermensch' Combat Voidsuit
+  name: German 'Panzermensch' combat voidsuit
   description: A combat voidsuit of German design, designed for the fallschirmjagers to blend into central/eastern europe in the case of an orbital insertion.
   components:
   - type: Sprite
@@ -114,7 +114,7 @@
 - type: entity
   parent: [ ClothingOuterHardsuitBase , BaseIntegratedManeuveringThrusters , ClothingArmorPlateMedium ]
   id: ClothingOuterVoidsuitRussianCombat
-  name: Russian 'Goida' Combat Voidsuit
+  name: Russian 'Goida' combat voidsuit
   description: A combat voidsuit of Russian design, for their frontline soldiers in the final frontier.
   components:
   - type: Sprite
@@ -163,14 +163,14 @@
 
 - type: entity
   parent: [ ClothingOuterHardsuitBase , ClothingArmorPlateMedium ]
-  id: ClothingOuterVoidsuitRussianCombatJuggernaut
-  name: Russian 'Slon' Juggernaut Voidsuit
+  id: ClothingOuterVoidsuitRussianCombatHeavy
+  name: Russian 'Slon' heavy combat voidsuit
   description: Slon, meaning elephant, is essentially what you become wearing this thing, a big bad angry elephant; recommended with a light machinegun.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/russiancombat.rsi # No sprites for this yet, it's admeme anyway
+    sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/russiancombatheavy.rsi
   - type: Clothing
-    sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/russiancombat.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Voidsuits/russiancombatheavy.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.5
     lowPressureMultiplier: 1000
@@ -194,7 +194,7 @@
     blockUnequipWhenAttached: false
     replaceCurrentClothing: true
     clothingPrototypes:
-      head: ClothingHeadHelmetVoidsuitRussianCombat # change later
+      head: ClothingHeadHelmetVoidsuitRussianCombatHeavy
       helmetcover: ClothingHeadHelmetCoverBlock
 #      helmetattachment: ClothingHeadHelmetAttachmentBlock
   - type: StaticPrice

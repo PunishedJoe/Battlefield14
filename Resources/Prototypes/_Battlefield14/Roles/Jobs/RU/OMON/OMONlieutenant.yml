@@ -43,15 +43,15 @@
 - type: startingGear
   id: OMONLieutenantGear
   equipment:
-    id: VDVSquadLeaderPDA # TODO
+    id: OMONLieutenantPDA
     ears: ClothingHeadsetAltRUCommand
-    belt: ClothingBeltCommandFilledRU
+    head: ClothingHeadHatHelmetRU6b47
     jumpsuit: ClothingUniformJumpsuitRUOMON
     outerClothing: ClothingOuterArmorWebVestSec
+    belt: ClothingBeltCommandFilledRU
     shoes: ClothingShoesBootsJackFilledRU
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledVDVScout
-    rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:
     back:
     - ArmorPlateLight

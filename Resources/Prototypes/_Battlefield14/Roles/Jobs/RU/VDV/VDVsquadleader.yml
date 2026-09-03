@@ -47,11 +47,9 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK12TracerGreen
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
-    head: ClothingHeadHatHelmetRUEMR
-#    eyes: ClothingEyesGogglesGreen
-    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    head: ClothingHeadHatHelmetRU6b47
+    outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJackFilledRU
-#    back: ClothingBackpackRucksackBlack
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUAK12Magnified
     pocket1: PouchFirstAidFilled
@@ -64,7 +62,7 @@
     - MagazinePistolMP443
     - MagazinePistolMP443
     - FlashlightMilitaryAlt
-    - ClothingMaskGasRussia
+    - ClothingMaskGasRussiaPMK4
     - SyndicateWhistle
     - Tourniquet
     - Zipties

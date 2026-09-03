@@ -113,6 +113,9 @@
   id: BlisterPack
 
 - type: Tag
+  id: CartridgeCarlGustav
+
+- type: Tag
   id: CartridgeSMAW
 
 - type: Tag
@@ -173,6 +176,9 @@
   id: MagazineRifleG36
 
 - type: Tag
+  id: MagazineRifleHK417
+
+- type: Tag
   id: MagazineRifleSTANAG
 
 - type: Tag
@@ -189,6 +195,9 @@
 
 - type: Tag
   id: MagazineBeltBoxM249
+
+- type: Tag
+  id: MagazineBeltBoxM60
 
 - type: Tag
   id: MagazineRifleM30MRC
@@ -215,7 +224,7 @@
   id: MagazineSniperM107
 
 - type: Tag
-  id: MagazineSniperSVDS
+  id: MagazineSniperSVD
 
 - type: Tag
   id: MagazinePistolFiveSeven
@@ -302,22 +311,34 @@
   id: PACTRequisition
 
 - type: Tag
-  id: RussianUplink
+  id: AmericanUplink
 
 - type: Tag
-  id: AmericanUplink
+  id: BundeswehrUplink
+
+- type: Tag
+  id: RussianUplink
 
 - type: Tag
   id: PistolMagazine # for all kinds of pistol magazines, this is used for pistol magazine pouches
 
 - type: Tag
-  id: Tourniquet
-
-- type: Tag
   id: PCVCell
 
 - type: Tag
+  id: PulsePlug
+
+- type: Tag
+  id: BF_CartridgePulseLinked
+
+- type: Tag
+  id: MagazineBeltBoxAr2
+
+- type: Tag
   id: SandbagFillable
+
+- type: Tag
+  id: Tourniquet
 
 - type: Tag
   id: Magazine # generic tag for all magazine types

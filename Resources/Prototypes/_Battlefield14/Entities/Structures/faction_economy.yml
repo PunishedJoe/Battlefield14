@@ -63,8 +63,6 @@
     - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
-#    - state: panel
-#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: UserInterface
     interfaces:
       enum.StoreUiKey.Key:
@@ -74,6 +72,30 @@
   - type: Tag
     tags:
     - AmericanUplink
+
+- type: entity
+  parent: [ BaseMachine , StorePresetNATODEBWUplink ]
+  id: NATODEBWUplinkMachine
+  name: Bundeswehr requisition uplink
+  description: Insert your requisition chips here to purchase faction equipment.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Tag
+    tags:
+    - BundeswehrUplink
 
 - type: entity
   parent: [ BaseMachine , StorePresetPACTRUUplink ]
@@ -89,8 +111,6 @@
     - state: "normal-unshaded"
       map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
-#    - state: panel
-#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: UserInterface
     interfaces:
       enum.StoreUiKey.Key:
@@ -134,6 +154,42 @@
   parent: BaseNATOUSUplink
   id: BaseNATOUSUplinkDebug
   suffix: NATO US, DEBUG
+  components:
+  - type: Store
+    balance:
+      NATORequisition: 99999
+
+# DE
+
+- type: entity
+  parent: [ BaseItem, StorePresetNATODEBWUplink ]
+  id: BaseNATODEBWUplink
+  name: Bundeswehr requisitions uplink
+  description: NATO requisitions uplink, Bundeswehr edition
+  suffix: Empty
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: old-radio
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Tag
+    tags:
+    - BundeswehrUplink
+
+- type: entity
+  parent: BaseNATODEBWUplink
+  id: BaseNATODEBWUplinkDebug
+  suffix: NATO Bundeswehr, DEBUG
   components:
   - type: Store
     balance:

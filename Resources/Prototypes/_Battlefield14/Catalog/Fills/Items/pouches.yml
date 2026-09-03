@@ -129,6 +129,16 @@
       amount: 4
 
 - type: entity
+  parent: PouchMagsLarge
+  id: PouchMagsLargeFilledAK74Black
+  suffix: Filled, AK74, black
+  components:
+  - type: StorageFill
+    contents:
+    - id: MagazineRifleAK74Black
+      amount: 4
+
+- type: entity
   parent: PouchMagsPistol
   id: PouchMagsPistolFilledUSP45
   suffix: Filled, USP45
@@ -280,6 +290,18 @@
 
 - type: entity
   parent: PouchGrenades
+  id: PouchGrenadesFilledRGFRifleman
+  suffix: Filled, RGF Rifleman
+  components:
+  - type: StorageFill
+    contents:
+    - id: OffensiveGrenadeRURGD5
+      amount: 3
+    - id: SmokeGrenadeRURDG
+      amount: 3
+
+- type: entity
+  parent: PouchGrenades
   id: PouchGrenadesFilledVDVRifleman
   suffix: Filled, VDV Rifleman
   components:
@@ -287,7 +309,7 @@
     contents:
     - id: OffensiveGrenadeRURGD5
       amount: 2
-    - id: ImpactGrenadeRURGO
+    - id: ImpactGrenadeRURGN
     - id: SmokeGrenadeRURDG
       amount: 3
 

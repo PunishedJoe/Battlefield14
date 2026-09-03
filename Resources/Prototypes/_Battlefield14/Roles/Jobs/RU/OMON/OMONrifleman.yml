@@ -42,11 +42,12 @@
 - type: startingGear
   id: OMONRiflemanGear
   equipment:
-    id: VDVRiflemanPDA # TODO
+    id: OMONRiflemanPDA
     ears: ClothingHeadsetAltRU
-    belt: ClothingBeltMilitaryWebbingRU
+    head: ClothingHeadHatHelmetRU6b47
     jumpsuit: ClothingUniformJumpsuitRUOMON
     outerClothing: ClothingOuterArmorWebVestSec
+    belt: ClothingBeltMilitaryWebbingSmallPouchesOlive
     shoes: ClothingShoesBootsJackFilledRU
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledVDVScout

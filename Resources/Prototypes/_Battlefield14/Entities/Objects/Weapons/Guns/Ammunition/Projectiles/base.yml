@@ -13,6 +13,11 @@
     damage:
       types:
         Piercing: 20
+  - type: ProjectileDamageFalloff
+    falloffStart: 8
+    falloffPerTile: 0.1
+    minimumMultiplier: 0.75
+    stepByTile: true
   - type: StaminaDamageOnCollide
     damage: 5 # 20 hits to stun lol
   - type: Ammo
@@ -34,6 +39,11 @@
       types:
         Piercing: 20
     armorPenetration: 0.3
+  - type: ProjectileDamageFalloff
+    falloffStart: 8
+    falloffPerTile: 0.1
+    minimumMultiplier: 0.85
+    stepByTile: true
   - type: StaminaDamageOnCollide
     damage: 4 # 25 hits to stun lol
   - type: ArmorPiercing
@@ -56,7 +66,7 @@
     damage:
       types:
         Piercing: 25
-    armorPenetration: 0.1
+#    armorPenetration: 0.1
   - type: StaminaDamageOnCollide
     damage: 7 # ~15 hits to stun
   - type: ArmorPiercing

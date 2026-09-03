@@ -52,11 +52,11 @@
     ears: ClothingHeadsetAltUSCommand
     neck: FlashlightMilitaryUS
     belt: ClothingBeltWebbingsNormalTanFilledSCARH
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUS
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+    head: ClothingHeadHatHelmetUSACH
     eyes: ClothingEyesGogglesTan
     balaclava: ClothingBalaclavaMilitary
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilled
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackRucksackTan
@@ -86,7 +86,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltWebbingsNormalBlackFilledSCARH
-    jumpsuit: ClothingUniformJumpsuitCamoUS
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
     eyes: ClothingEyesGogglesTan
     balaclava: ClothingBalaclavaMilitary
     outerClothing: ClothingOuterVoidsuitAmericanCombatMarine

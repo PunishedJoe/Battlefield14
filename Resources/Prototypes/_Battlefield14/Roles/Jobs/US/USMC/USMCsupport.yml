@@ -42,12 +42,10 @@
     id: USMCAutomaticRiflemanPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMilitaryWebbingUSFilledM249
-    jumpsuit: ClothingUniformJumpsuitCamoUS
-    head: ClothingHeadHatHelmetUSRiot
-#    eyes: ClothingEyesGogglesTan
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+    head: ClothingHeadHatHelmetUSRiotACH
+    outerClothing: ClothingOuterArmorPlateCarrierIOTVExtended
     shoes: ClothingShoesBootsJackFilledUSMC
-#    back: ClothingBackpackRucksackTan
     suitstorage: WeaponMachineGunUSM249Para
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCSupport

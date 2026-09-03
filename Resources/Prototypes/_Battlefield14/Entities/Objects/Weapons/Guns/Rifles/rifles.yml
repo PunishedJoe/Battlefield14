@@ -91,11 +91,11 @@
 
 - type: entity
   name: XM8
-  parent: WeaponRifleDEG36
+  parent: WeaponRifleDEG36K
   id: WeaponRifleUSXM8
   description: The 5.56 rifle portion of the OICW, removed and made its own standalone rifle. Would later be developed into the G36 series of rifles.
   components:
-  - type: Item # Controls inhand sprites
+  - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/XM8.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/XM8.rsi
@@ -109,10 +109,6 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/XM8.rsi
-  - type: WieldedCrosshair
-    rsi:
-      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
-      state: acog
 
 - type: entity
   name: XM8
@@ -213,14 +209,14 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
   - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -27
+    minAngle: -18
+    maxAngle: -45
   - type: Gun
-    minAngle: 26
-    maxAngle: 40
-    angleIncrease: 1
-    projectileSpeed: 45
     fireRate: 5
+    minAngle: 20
+    maxAngle: 60
+    angleIncrease: 1.5
+    projectileSpeed: 45
     soundGunshot:
       collection: BF_SCARH_Gunshots
       params:
@@ -275,7 +271,149 @@
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
       state: eotech
 
+- type: entity
+  name: F2000
+  parent: WeaponRifleBESCARL
+  id: WeaponRifleBEF2000
+  description: A bullpup rifle often compared to fish because of its strange shape.
+  components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -27
+  - type: Gun
+    minAngle: 26
+    maxAngle: 40
+    angleIncrease: 1
+    angleDecay: 10
+    projectileSpeed: 50 # bullpup so long barrel
+    soundGunshot:
+      collection: BF_SCARL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/rack.ogg
+      params:
+        volume: -2
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/boltcatch.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/SCAR/chpull.ogg
+      params:
+        volume: -5
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: eotech
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: LaserPointer # the hidden..
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes STANAG magazines. It has a laser sight attached which improves recoil recovery.
+        color: "#4f94ad"
+        requireDetailRange: true
+
 #region Germany
+
+- type: entity
+  name: G27K
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponRifleDEG27K
+  description: A full auto 417 with a factory short barrel for dirty work up close.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G27K.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G27K.rsi
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus
+    minAngle: -18
+    maxAngle: -45
+  - type: Gun
+    fireRate: 5
+    minAngle: 20
+    maxAngle: 60
+    angleIncrease: 1.5
+    angleDecay: 4
+    projectileSpeed: 50
+    soundGunshot:
+      collection: BF_M14_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+    selectedMode: FullAuto
+    availableModes:
+      - SemiAuto
+      - FullAuto
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_rack.ogg
+      params:
+        volume: -5
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chforward.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chback.ogg
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleG28
+        insertSound:
+          path:  /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magin.ogg
+          params:
+            volume: -6
+        ejectSound:
+          path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_magout.ogg
+          params:
+            volume: -6
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleHK417
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
 
 - type: entity
   name: G3A3
@@ -311,6 +449,7 @@
     - FullAuto
     selectedMode: FullAuto
   - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/G3/rack.ogg
     soundBoltClosed:

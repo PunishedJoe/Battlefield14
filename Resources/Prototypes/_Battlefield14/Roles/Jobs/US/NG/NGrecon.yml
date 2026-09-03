@@ -46,7 +46,7 @@
     head: ClothingHeadHatHelmetUSUrban
     helmetattachment: ClothingHelmetAttachmentNVGsBasicNATO
 #    eyes: ClothingEyesGogglesTan
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilledUSMC
 #    back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSM14

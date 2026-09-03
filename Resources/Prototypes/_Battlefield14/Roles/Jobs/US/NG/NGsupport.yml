@@ -41,14 +41,12 @@
   equipment:
     id: NGAutomaticRiflemanPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMilitaryWebbingUSFilledM249
+    belt: ClothingBeltMilitaryWebbingUS
     jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
     head: ClothingHeadHatHelmetUSUrbanRiot
-#    eyes: ClothingEyesGogglesTan
-    outerClothing: ClothingOuterArmorPlateCarrierTan
+    outerClothing: ClothingOuterArmorPlateCarrierIOTVExtended
     shoes: ClothingShoesBootsJackFilledUSMC
-#    back: ClothingBackpackRucksackTan
-    suitstorage: WeaponMachineGunUSM249Para
+    suitstorage: WeaponMachineGunUSM60
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSASupport
     rightarmband: ClothingArmbandThighHolsterFilledUS
@@ -59,3 +57,8 @@
     - ClothingMaskGasM40
     - Tourniquet
     - Zipties
+    belt:
+    - MagazineBeltBoxM60
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - MagazineBeltBoxM60

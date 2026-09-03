@@ -41,6 +41,18 @@
 
 - type: entity
   parent: BaseGracePeriodAnnouncerSpawner
+  id: GracePeriodAnnouncerSpawner2
+  name: grace period announcer spawner
+  suffix: 2 minutes
+  components:
+  - type: ActiveTimerTrigger
+    timeRemaining: 120
+  - type: SpawnOnTrigger
+    proto: BaseGracePeriodAnnouncer
+  - type: DeleteOnTrigger
+
+- type: entity
+  parent: BaseGracePeriodAnnouncerSpawner
   id: GracePeriodAnnouncerSpawner5
   name: grace period announcer spawner
   suffix: 5 minutes
@@ -50,6 +62,15 @@
   - type: SpawnOnTrigger
     proto: BaseGracePeriodAnnouncer
   - type: DeleteOnTrigger
+
+- type: entity
+  parent: GracePeriodAnnouncerSpawner5
+  id: GracePeriodAnnouncerSpawner5OMON
+  name: grace period announcer spawner
+  suffix: 5 minutes, OMON
+  components:
+  - type: SpawnOnTrigger
+    proto: BaseGracePeriodAnnouncerOMON
 
 - type: entity
   parent: GracePeriodAnnouncerSpawner5
@@ -109,6 +130,21 @@
   - type: DeleteOnTrigger
   - type: AnnounceOnSpawn
     message: "The area is now an active warzone."
+    sender: "Combat Area"
+    sound:
+      path: /Audio/Announcements/bloblarm.ogg
+#    color: "#BE8700"
+
+- type: entity
+  parent: BaseGracePeriodAnnouncer
+  id: BaseGracePeriodAnnouncerOMON
+  name: OMON grace period announcer
+  suffix: DO NOT MAP
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: AnnounceOnSpawn
+    message: "OMON team is moving in."
     sender: "Combat Area"
     sound:
       path: /Audio/Announcements/bloblarm.ogg

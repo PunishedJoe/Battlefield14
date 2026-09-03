@@ -1,0 +1,59 @@
+- type: job
+  id: RGFRifleman
+  name: job-name-rgf-rifleman
+  description: job-description-rgf-rifleman
+  playTimeTracker: JobRGFRifleman
+  weight: 77
+  startingGear: RGFRiflemanGear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTRifleman"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+    - Ukrainian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+    - type: ChatRank
+      rank: BF-rank-private
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTMaintenance
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: RGFRiflemanGear
+  equipment:
+    id: RGFRiflemanPDA
+    ears: ClothingHeadsetAltRU
+    belt: ClothingBeltMilitaryWebbingRUFilledAK74Black
+    jumpsuit: ClothingUniformJumpsuitRUGorka
+    head: ClothingHeadHatHelmetRU6b47
+    outerClothing: ClothingOuterArmorPlateCarrier6B45
+    shoes: ClothingShoesBootsJackFilledRU
+    suitstorage: WeaponRifleRUAK74M
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledRGFRifleman
+  storage:
+    back:
+    - ArmorPlateMediumPackaged
+    - FlashlightMilitaryAlt
+    - ClothingMaskGasRussiaPMK4
+    - Tourniquet
+    - Zipties

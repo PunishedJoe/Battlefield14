@@ -47,12 +47,12 @@
   equipment:
     id: BWSquadLeaderPDA
     ears: ClothingHeadsetAltDECommand
-    belt: ClothingBeltMilitaryWebbingDEFilledG36TracerRed
+    belt: ClothingBeltMilitaryWebbingDEFilledG28
     jumpsuit: ClothingUniformJumpsuitCamoDEFlecktarn
     head: ClothingHeadHatHelmetDEM92
     outerClothing: ClothingOuterArmorPlateCarrierMOBAST
     shoes: ClothingShoesBootsJackFilledBW
-    suitstorage: WeaponRifleDEG36 # G27K
+    suitstorage: WeaponRifleDEG27K
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledBWRifleman
     rightarmband: ClothingArmbandThighHolsterFilledDEP8A1

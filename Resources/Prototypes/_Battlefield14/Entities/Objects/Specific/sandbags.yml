@@ -32,7 +32,7 @@
   id: SandbagFull
   name: sandbags
   description: Full sandbags, can be used to create highly bullet-resistant barricades.
-  suffix: Full
+  suffix: 1
   components:
   - type: Item
     sprite: _RMC14/Objects/Misc/sandbags.rsi

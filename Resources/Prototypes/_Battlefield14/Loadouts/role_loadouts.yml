@@ -83,6 +83,34 @@
   - BF_Map
   - ContractorWallet
 
+#region HECU
+
+- type: roleLoadout
+  id: JobHECUSquadLeader
+  groups:
+  - BF_MiscItemsNATO
+  - BF_Map
+
+- type: roleLoadout
+  id: JobHECURifleman
+  groups:
+  - BF_CombatMasks
+  - BF_MiscItemsNATO
+  - BF_Map
+
+- type: roleLoadout
+  id: JobHECUMedic
+  groups:
+  - BF_CombatMasks
+  - BF_MiscItemsNATO
+  - BF_Map
+
+- type: roleLoadout
+  id: JobHECUSupport
+  groups:
+  - BF_MiscItemsNATO
+  - BF_Map
+
 #region USSF
 
 - type: roleLoadout
@@ -351,6 +379,87 @@
 
 ## RU
 
+#region RGF
+
+- type: roleLoadout
+  id: JobRGFLieutenant
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_PistolsRGFSL
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobRGFSquadLeader
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_PistolsRGFSL
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobRGFRifleman
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobRGFAutomaticRifleman
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_PistolsVDVSL
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobRGFMedic
+  groups:
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobRGFRecon
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_Map
+  - ContractorWallet
+
 #region VDV
 
 - type: roleLoadout
@@ -413,6 +522,19 @@
   - ContractorWallet
 
 - type: roleLoadout
+  id: JobVDVMedic
+  groups:
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_PACTIFF
+  - BF_HelmetAttachmentPACT
+  - BF_VDVHead
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
   id: JobVDVRecon
   groups:
   - BF_SoldierGlassesGreen
@@ -425,17 +547,42 @@
   - BF_Map
   - ContractorWallet
 
+#region RKhB
+
 - type: roleLoadout
-  id: JobVDVMedic
+  id: JobRKhBSquadLeader
   groups:
+  - BF_SoldierGlassesGreen
   - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_PACTIFF
-  - BF_HelmetAttachmentPACT
-  - BF_VDVHead
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
-  - BF_Map
+  - BF_PistolsVDVSL
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobRKhBRifleman
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobRKhBSupport
+  groups:
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobRKhBMedic
+  groups:
+  - BF_CombatMasks
+  - BF_BackpacksBlack
+  - BF_MiscItemsPACT
   - ContractorWallet
 
 #region VKS
@@ -503,6 +650,7 @@
 - type: roleLoadout
   id: JobOMONLieutenant
   groups:
+  - BF_LongarmsOMONSergeant
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_SoldierGloves
@@ -517,6 +665,7 @@
 - type: roleLoadout
   id: JobOMONSquadLeader
   groups:
+  - BF_LongarmsOMONSergeant
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_SoldierGloves
@@ -531,6 +680,7 @@
 - type: roleLoadout
   id: JobOMONRifleman
   groups:
+  - BF_LongarmsOMON
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_SoldierGloves

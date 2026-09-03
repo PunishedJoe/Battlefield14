@@ -43,9 +43,9 @@
   - type: Projectile
     damage:
       types:
-        Structural: 5
-        Slash: 8
-        Piercing: 8
+        Structural: 7
+        Slash: 9
+        Piercing: 9
   - type: StaminaDamageOnCollide
     damage: 5 # ~20 hits to stun
     deleteOnCollide: true
@@ -74,7 +74,7 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     totalIntensity: 30
     intensitySlope: 6
     maxIntensity: 3

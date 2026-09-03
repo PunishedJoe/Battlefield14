@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/10/2026 18:40:36
-  entityCount: 182
+  time: 08/29/2026 10:42:06
+  entityCount: 183
 maps: []
 grids:
 - 1
@@ -61,10 +61,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
-        Smoke: []
-        MetalFoam: []
         Kudzu: []
+        Smoke: []
+        Puddle: []
+        MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -147,7 +147,7 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 293.1495
+          temperature: 293.1494
           moles:
           - 12.1749325
           - 45.800945
@@ -594,6 +594,47 @@ entities:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+- proto: ClosetWall
+  entities:
+  - uid: 176
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 2.5,-0.5
+      parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.1482
+        moles:
+        - 1.0586898
+        - 3.982691
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 179
+          - 180
+          - 183
+          - 178
+          - 177
 - proto: ComputerGunneryConsole
   entities:
   - uid: 48
@@ -638,49 +679,6 @@ entities:
       powerLoad: 5
     - type: Battery
       startingCharge: 0
-- proto: CrateAmmoGeneric
-  entities:
-  - uid: 176
-    components:
-    - type: Transform
-      pos: 1.5,-0.5
-      parent: 1
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14825
-        moles:
-        - 1.0586898
-        - 3.982691
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-        - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 177
-          - 178
-          - 179
-          - 180
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: DarkCatwalkMono
   entities:
   - uid: 141
@@ -962,6 +960,15 @@ entities:
     - type: Transform
       pos: 1.5,-0.5
       parent: 1
+- proto: ShipRepairKitFilled
+  entities:
+  - uid: 183
+    components:
+    - type: Transform
+      parent: 176
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SmallGyroscope
   entities:
   - uid: 182

@@ -48,12 +48,11 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMedicalEMTFilledBF14 # ClothingBeltMilitaryWebbingRUFilledVityaz
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
-    head: ClothingHeadHatHelmetRUEMR
+    head: ClothingHeadHatHelmetRU6b47
     eyes: ClothingEyesHudMedicalBF
-    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJackFilledRU
     gloves: ClothingHandsGlovesLatex
-#    back: ClothingBackpackRucksackBlack
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUAKS74U
     pocket1: PouchMagsLargeFilledAK74
@@ -65,7 +64,7 @@
     - SupplyBoxMedicalFilled
     - DefibrillatorCompactBF
     - FlashlightMilitaryAlt
-    - ClothingMaskGasRussia
+    - ClothingMaskGasRussiaPMK4
     - Tourniquet
     - Zipties
     - BF14AutoInjectorStormZCapped

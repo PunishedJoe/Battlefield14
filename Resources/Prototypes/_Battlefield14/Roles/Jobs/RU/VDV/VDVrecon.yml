@@ -44,12 +44,10 @@
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledASVALShort
     jumpsuit: ClothingUniformJumpsuitCamoRUEMR
-    head: ClothingHeadHatHelmetRUEMR
+    head: ClothingHeadHatHelmetRU6b47Alt
     helmetattachment: ClothingHelmetAttachmentNVGsBasicPACT
-#    eyes: ClothingEyesGogglesGreen
-    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJackFilledRU
-    back: ClothingBackpackRucksackBlack
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUASVAL
     pocket1: PouchFirstAidFilled
@@ -57,7 +55,7 @@
   storage:
     back:
     - FlashlightMilitaryAlt
-    - ClothingMaskGasRussia
+    - ClothingMaskGasRussiaPMK4
     - Rangefinder
     - Tourniquet
     - Zipties

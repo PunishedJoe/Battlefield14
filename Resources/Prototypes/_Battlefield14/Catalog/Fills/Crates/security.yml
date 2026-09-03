@@ -50,6 +50,23 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledCarlGustavM2
+  suffix: Filled, M2 Carl Gustav
+  parent: CrateSecgear
+  name: Carl Gustav M2 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponLauncherSECarlGustavM2
+          amount: 2
+        - id: CartridgeCarlGustavHEDP502
+          amount: 4
+        - id: CartridgeCarlGustavHE441D
+          amount: 4
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledAT4
   suffix: Filled, AT4
   parent: CrateSecgear
@@ -331,6 +348,21 @@
 #region DE
 
 - type: entity
+  id: CrateSecgearNATOFilledG36
+  suffix: Filled, G36
+  parent: CrateSecgear
+  name: G36 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleDEG36
+          amount: 5
+        - id: BoxMagazineG36
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledMG3
   suffix: Filled, MG3
   parent: CrateSecgear
@@ -342,6 +374,21 @@
           amount: 2
         - id: MagazineBeltBoxMG3Short
           amount: 8
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledMG36
+  suffix: Filled, MG36
+  parent: CrateSecgear
+  name: MG36 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponRifleDEMG36
+          amount: 3
+        - id: MagazineRifleG36DoubleDrumTracerRed
+          amount: 6
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -430,6 +477,32 @@
     access: [["PACTSoldier"]]
 
 - type: entity
+  id: CrateSecgearPACTFilledRPK74
+  suffix: Filled, RPK-74
+  parent: CrateSecgear
+  name: RPK-74 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: BF14WeaponCaseLongRURPK74
+          amount: 3
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPK74M
+  suffix: Filled, RPK-74M
+  parent: CrateSecgear
+  name: RPK-74M crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: BF14WeaponCaseLongRURPK74M
+          amount: 3
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
   id: CrateSecgearPACTFilledSV98
   suffix: Filled, SV-98
   parent: CrateSecgear
@@ -454,7 +527,7 @@
     contents:
         - id: WeaponSniperRUSVDS
           amount: 2
-        - id: BoxMagazineSVDS
+        - id: BoxMagazineSVD
           amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]

@@ -7,8 +7,8 @@
   - type: Item
     size: Small
   - type: Sticky
-    stickDelay: 2
-    unstickDelay: 2
+    stickDelay: 1 # BF14
+    unstickDelay: 3 # BF14
     stickPopupStart: comp-sticky-start-stick-bomb
     stickPopupSuccess: comp-sticky-success-stick-bomb
     unstickPopupStart: comp-sticky-start-unstick-bomb
@@ -22,7 +22,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200 # BF14 50 > 300
+        damage: 200 # BF14 50 > 200
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]

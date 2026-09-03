@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 04/19/2026 06:19:31
-  entityCount: 157
+  time: 08/29/2026 10:38:33
+  entityCount: 158
 maps: []
 grids:
 - 1
@@ -60,9 +60,9 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Kudzu: []
-        MetalFoam: []
-        Puddle: []
         Smoke: []
+        Puddle: []
+        MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -683,14 +683,15 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 75
+          - 56
           - 76
-          - 77
-          - 96
-          - 97
-          - 98
-          - 99
           - 100
+          - 99
+          - 98
+          - 97
+          - 96
+          - 77
+          - 75
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -970,6 +971,15 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-1.5
       parent: 1
+- proto: ShipRepairKitFilled
+  entities:
+  - uid: 56
+    components:
+    - type: Transform
+      parent: 74
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SignalButtonDirectional
   entities:
   - uid: 123

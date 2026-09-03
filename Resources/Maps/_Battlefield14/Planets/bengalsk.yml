@@ -46210,21 +46210,21 @@ entities:
     - type: Transform
       pos: 26.5,42.5
       parent: 1
-- proto: CMVendPACTVDVWarVendor
+- proto: CMVendPACTRGFWarVendor
   entities:
   - uid: 862
     components:
     - type: Transform
       pos: 328.5,72.5
       parent: 1
-- proto: CMVendPACTVDVWarVendorAmmo
+- proto: CMVendPACTRGFWarVendorAmmo
   entities:
   - uid: 852
     components:
     - type: Transform
       pos: 328.5,71.5
       parent: 1
-- proto: CMVendPACTVDVWarVendorGear
+- proto: CMVendPACTRGFWarVendorGear
   entities:
   - uid: 853
     components:
@@ -93150,7 +93150,7 @@ entities:
     - type: Transform
       pos: 37.5,54.5
       parent: 1
-- proto: SpawnPointVDVAutomaticRifleman
+- proto: SpawnPointRGFAutomaticRifleman
   entities:
   - uid: 6189
     components:
@@ -93162,14 +93162,14 @@ entities:
     - type: Transform
       pos: 323.5,50.5
       parent: 1
-- proto: SpawnPointVDVLieutenant
+- proto: SpawnPointRGFLieutenant
   entities:
   - uid: 1773
     components:
     - type: Transform
       pos: 326.5,54.5
       parent: 1
-- proto: SpawnPointVDVMedic
+- proto: SpawnPointRGFMedic
   entities:
   - uid: 6188
     components:
@@ -93181,7 +93181,7 @@ entities:
     - type: Transform
       pos: 325.5,50.5
       parent: 1
-- proto: SpawnPointVDVRecon
+- proto: SpawnPointRGFRecon
   entities:
   - uid: 6200
     components:
@@ -93193,7 +93193,7 @@ entities:
     - type: Transform
       pos: 328.5,50.5
       parent: 1
-- proto: SpawnPointVDVRifleman
+- proto: SpawnPointRGFRifleman
   entities:
   - uid: 876
     components:
@@ -93231,7 +93231,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 329.5,51.5
       parent: 1
-- proto: SpawnPointVDVSquadLeader
+- proto: SpawnPointRGFSquadLeader
   entities:
   - uid: 6197
     components:
@@ -114647,7 +114647,7 @@ entities:
     - type: Transform
       pos: 37.5,91.5
       parent: 1
-- proto: WeaponCaseShortRUTT33
+- proto: BF14WeaponCaseShortRUTT33
   entities:
   - uid: 6406
     components:

@@ -207,6 +207,13 @@ namespace Content.Client.Stylesheets
             var notoSansBold18 = resCache.NotoStack(variation: "Bold", size: 18);
             var notoSansBold20 = resCache.NotoStack(variation: "Bold", size: 20);
             var notoSansMono = resCache.NotoStack2ElectricBoogaloo("/EngineFonts/NotoSans/NotoSansMono-Regular.ttf", size: 12); // Goobstation - ZH text support
+            var OCRAExtended8 = resCache.GetFont("/Fonts/OCR-A-Extended.ttf", size: 8); // Battlefield 14 Edit
+            var OCRAExtended10 = resCache.GetFont("/Fonts/OCR-A-Extended.ttf", size: 10); // Battlefield 14 Edit
+            var OCRAExtended12 = resCache.GetFont("/Fonts/OCR-A-Extended.ttf", size: 12); // Battlefield 14 Edit
+            var OCRAExtended13 = resCache.GetFont("/Fonts/OCR-A-Extended.ttf", size: 13); // Battlefield 14 Edit
+            var OCRAExtended14 = resCache.GetFont("/Fonts/OCR-A-Extended.ttf", size: 14); // Battlefield 14 Edit
+            var OCRAExtended16 = resCache.GetFont("/Fonts/OCR-A-Extended.ttf", size: 16); // Battlefield 14 Edit
+            var OCRAExtended20 = resCache.GetFont("/Fonts/OCR-A-Extended.ttf", size: 20); // Battlefield 14 Edit I LOVEEEEEEEEEE THE BIBISI
             var windowHeaderTex = resCache.GetTexture("/Textures/Interface/Nano/window_header.png");
             var windowHeader = new StyleBoxTexture
             {
@@ -568,14 +575,14 @@ namespace Content.Client.Stylesheets
             Stylesheet = new Stylesheet(BaseRules.Concat(new[]
             {
                 Element().Class("monospace")
-                    .Prop("font", notoSansMono),
+                    .Prop("font", OCRAExtended12),
                 // Window title.
                 new StyleRule(
                     new SelectorElement(typeof(Label), new[] {DefaultWindow.StyleClassWindowTitle}, null, null),
                     new[]
                     {
                         new StyleProperty(Label.StylePropertyFontColor, NanoGold),
-                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold14),
+                        new StyleProperty(Label.StylePropertyFont, OCRAExtended14),
                     }),
                 // Alert (white) window title.
                 new StyleRule(
@@ -583,7 +590,7 @@ namespace Content.Client.Stylesheets
                     new[]
                     {
                         new StyleProperty(Label.StylePropertyFontColor, Color.White),
-                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold14),
+                        new StyleProperty(Label.StylePropertyFont, OCRAExtended14),
                     }),
                 // Window background.
                 new StyleRule(
@@ -732,7 +739,7 @@ namespace Content.Client.Stylesheets
                 // ItemStatus for hands
                 Element()
                     .Class(StyleClassItemStatusNotHeld)
-                    .Prop("font", notoSansItalic10)
+                    .Prop("font", OCRAExtended12)
                     .Prop("font-color", ItemStatusNotHeldColor)
                     .Prop(nameof(Control.Margin), new Thickness(4, 0, 0, 2)),
 
@@ -767,16 +774,16 @@ namespace Content.Client.Stylesheets
 
                 // Context Menu Labels
                 Element<RichTextLabel>().Class(InteractionVerb.DefaultTextStyleClass)
-                    .Prop(Label.StylePropertyFont, notoSansBoldItalic12),
+                    .Prop(Label.StylePropertyFont, OCRAExtended12),
 
                 Element<RichTextLabel>().Class(ActivationVerb.DefaultTextStyleClass)
-                    .Prop(Label.StylePropertyFont, notoSansBold12),
+                    .Prop(Label.StylePropertyFont, OCRAExtended12),
 
                 Element<RichTextLabel>().Class(AlternativeVerb.DefaultTextStyleClass)
-                    .Prop(Label.StylePropertyFont, notoSansItalic12),
+                    .Prop(Label.StylePropertyFont, OCRAExtended12),
 
                 Element<RichTextLabel>().Class(Verb.DefaultTextStyleClass)
-                    .Prop(Label.StylePropertyFont, notoSans12),
+                    .Prop(Label.StylePropertyFont, OCRAExtended12),
 
                 Element<TextureRect>().Class(ContextMenuElement.StyleClassContextMenuExpansionTexture)
                     .Prop(TextureRect.StylePropertyTexture, contextMenuExpansionTexture),
@@ -879,7 +886,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(Label), null, null, null)),
                     new[]
                     {
-                        new StyleProperty("font", notoSansBold16),
+                        new StyleProperty("font", OCRAExtended16),
                     }),
 
                 // Main menu: also make those buttons slightly more separated.
@@ -994,7 +1001,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(RichTextLabel), new[] {"bubbleContent"}, null, null)),
                     new[]
                 {
-                    new StyleProperty("font", notoSansItalic12),
+                    new StyleProperty("font", OCRAExtended12), // Battlefield 14 Edit
                 }),
 
                 new StyleRule(new SelectorChild(
@@ -1002,62 +1009,62 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(RichTextLabel), null, null, null)),
                     new[]
                 {
-                    new StyleProperty("font", notoSansItalic12),
+                    new StyleProperty("font", OCRAExtended12), // Battlefield 14 Edit
                 }),
 
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassLabelKeyText}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFont, notoSansBold12),
+                    new StyleProperty(Label.StylePropertyFont, OCRAExtended12),
                     new StyleProperty( Control.StylePropertyModulateSelf, NanoGold)
                 }),
 
                 // alert tooltip
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipAlertTitle}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSansBold18)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipAlertDescription}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans16)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipAlertCooldown}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans16)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
 
                 // action tooltip
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionTitle}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSansBold16)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionDescription}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans15)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionCooldown}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans15)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionRequirements}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans15)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassTooltipActionCharges}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans15)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
 
                 // small number for the entity counter in the entity menu
                 new StyleRule(new SelectorElement(typeof(Label), new[] {ContextMenuElement.StyleClassEntityMenuIconLabel}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSans10),
+                    new StyleProperty("font", OCRAExtended12),
                     new StyleProperty(Label.StylePropertyAlignMode, Label.AlignMode.Right),
                 }),
 
                 // hotbar slot
                 new StyleRule(new SelectorElement(typeof(RichTextLabel), new[] {StyleClassHotbarSlotNumber}, null, null), new[]
                 {
-                    new StyleProperty("font", notoSansDisplayBold16)
+                    new StyleProperty("font", OCRAExtended16)
                 }),
 
                 // Entity tooltip
@@ -1126,14 +1133,14 @@ namespace Content.Client.Stylesheets
                 new StyleRule(
                     new SelectorElement(typeof(Label), new[] {Placeholder.StyleClassPlaceholderText}, null, null), new[]
                     {
-                        new StyleProperty(Label.StylePropertyFont, notoSans16),
+                        new StyleProperty(Label.StylePropertyFont, OCRAExtended16),
                         new StyleProperty(Label.StylePropertyFontColor, new Color(103, 103, 103, 128)),
                     }),
 
                 // Big Label
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelHeading}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFont, notoSansBold16),
+                    new StyleProperty(Label.StylePropertyFont, OCRAExtended16),
                     new StyleProperty(Label.StylePropertyFontColor, NanoGold),
                 }),
 
@@ -1141,28 +1148,28 @@ namespace Content.Client.Stylesheets
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelHeadingBigger}, null, null),
                     new[]
                     {
-                        new StyleProperty(Label.StylePropertyFont, notoSansBold20),
+                        new StyleProperty(Label.StylePropertyFont, OCRAExtended20),
                         new StyleProperty(Label.StylePropertyFontColor, NanoGold),
                     }),
 
                 // Small Label
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelSubText}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFont, notoSans10),
+                    new StyleProperty(Label.StylePropertyFont, OCRAExtended10),
                     new StyleProperty(Label.StylePropertyFontColor, Color.DarkGray),
                 }),
 
                 // Label Key
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelKeyText}, null, null), new[]
                 {
-                    new StyleProperty(Label.StylePropertyFont, notoSansBold12),
+                    new StyleProperty(Label.StylePropertyFont, OCRAExtended12),
                     new StyleProperty(Label.StylePropertyFontColor, NanoGold)
                 }),
 
                 new StyleRule(new SelectorElement(typeof(Label), new[] {StyleClassLabelSecondaryColor}, null, null),
                     new[]
                     {
-                        new StyleProperty(Label.StylePropertyFont, notoSans12),
+                        new StyleProperty(Label.StylePropertyFont, OCRAExtended12),
                         new StyleProperty(Label.StylePropertyFontColor, Color.DarkGray),
                     }),
 
@@ -1172,7 +1179,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(Label), null, null, null)),
                     new[]
                     {
-                        new StyleProperty("font", notoSans16)
+                        new StyleProperty("font", OCRAExtended16)
                     }),
 
                 //APC and SMES power state label colors
@@ -1262,7 +1269,7 @@ namespace Content.Client.Stylesheets
                     new SelectorElement(typeof(Label), new[] {MenuButton.StyleClassLabelTopButton}, null, null),
                     new[]
                     {
-                        new StyleProperty(Label.StylePropertyFont, notoSansDisplayBold14),
+                        new StyleProperty(Label.StylePropertyFont, OCRAExtended14),
                     }),
 
                 // NanoHeading
@@ -1287,12 +1294,12 @@ namespace Content.Client.Stylesheets
                 // StyleClassItemStatus
                 new StyleRule(SelectorElement.Class(StyleClassItemStatus), new[]
                 {
-                    new StyleProperty("font", notoSans10),
+                    new StyleProperty("font", OCRAExtended10),
                 }),
 
                 Element()
                     .Class(StyleClassItemStatusNotHeld)
-                    .Prop("font", notoSansItalic10)
+                    .Prop("font", OCRAExtended10)
                     .Prop("font-color", ItemStatusNotHeldColor),
 
                 Element<RichTextLabel>()
@@ -1409,10 +1416,10 @@ namespace Content.Client.Stylesheets
 
                 // Labels ---
                 Element<Label>().Class(StyleClassLabelBig)
-                    .Prop(Label.StylePropertyFont, notoSans16),
+                    .Prop(Label.StylePropertyFont, OCRAExtended16),
 
                 Element<Label>().Class(StyleClassLabelSmall)
-                 .Prop(Label.StylePropertyFont, notoSans10),
+                 .Prop(Label.StylePropertyFont, OCRAExtended10),
                 // ---
 
                 // Different Background shapes ---
@@ -1440,7 +1447,7 @@ namespace Content.Client.Stylesheets
 
                 // Window Headers
                 Element<Label>().Class("FancyWindowTitle")
-                    .Prop("font", boxFont13)
+                    .Prop("font", OCRAExtended13)
                     .Prop("font-color", NanoGold),
 
                 Element<PanelContainer>().Class("WindowHeadingBackground")
@@ -1480,7 +1487,7 @@ namespace Content.Client.Stylesheets
                     .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#757575")),
 
                 Element<Label>().Class("WindowFooterText")
-                    .Prop(Label.StylePropertyFont, notoSans8)
+                    .Prop(Label.StylePropertyFont, OCRAExtended8)
                     .Prop(Label.StylePropertyFontColor, Color.FromHex("#757575")),
 
                 // X Texture button ---
@@ -1507,11 +1514,11 @@ namespace Content.Client.Stylesheets
                 Element<PanelContainer>().Class("PaperDefaultBorder")
                     .Prop(PanelContainer.StylePropertyPanel, paperBackground),
                 Element<RichTextLabel>().Class("PaperWrittenText")
-                    .Prop(Label.StylePropertyFont, notoSans12)
+                    .Prop(Label.StylePropertyFont, OCRAExtended12)
                     .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#111111")),
 
                 Element<RichTextLabel>().Class("LabelSubText")
-                    .Prop(Label.StylePropertyFont, notoSans10)
+                    .Prop(Label.StylePropertyFont, OCRAExtended10)
                     .Prop(Label.StylePropertyFontColor, Color.DarkGray),
 
                 Element<LineEdit>().Class("PaperLineEdit")
@@ -1559,7 +1566,7 @@ namespace Content.Client.Stylesheets
 
                 Child().Parent(Element<Button>().Class("ButtonSmall"))
                     .Child(Element<Label>())
-                    .Prop(Label.StylePropertyFont, notoSans8),
+                    .Prop(Label.StylePropertyFont, OCRAExtended8),
                 // ---
 
                 Element<Label>().Class("StatusFieldTitle")
@@ -1643,11 +1650,11 @@ namespace Content.Client.Stylesheets
 
                 //PDA - Text
                 Element<Label>().Class("PdaContentFooterText")
-                    .Prop(Label.StylePropertyFont, notoSans10)
+                    .Prop(Label.StylePropertyFont, OCRAExtended10)
                     .Prop(Label.StylePropertyFontColor, Color.FromHex("#757575")),
 
                 Element<Label>().Class("PdaWindowFooterText")
-                    .Prop(Label.StylePropertyFont, notoSans10)
+                    .Prop(Label.StylePropertyFont, OCRAExtended10)
                     .Prop(Label.StylePropertyFontColor, Color.FromHex("#333d3b")),
 
                 // Fancy Tree

@@ -1705,7 +1705,7 @@
   - 1.0
   - 1.0
   - 1.0
-  baseTurf: Space
+  baseTurf: FloorCave #BF14 Space | for planet stuff
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid

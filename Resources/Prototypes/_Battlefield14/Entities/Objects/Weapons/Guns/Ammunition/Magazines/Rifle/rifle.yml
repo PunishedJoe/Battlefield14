@@ -61,6 +61,41 @@
 
 - type: entity
   parent: BaseMagazineRifle
+  id: MagazineRifleG28
+  name: "G28 magazine (7.62x51mm)"
+  description: A 417 style magazine with a tan baseplate.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleHK417
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x51
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x51
+    capacity: 20
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G28.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a 417 pattern locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: MagazineRifleG28
   id: MagazineRifleG3
   name: "G3 magazine (7.62x51mm)"
   description: It's a magazine.
@@ -107,7 +142,7 @@
         - BF_CartridgeRifle556x45
     capacity: 30
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G36.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G36clear.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -115,8 +150,8 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 3
-    zeroVisible: false
+    steps: 9
+    zeroVisible: true
   - type: Appearance
   - type: ExtendDescription
     descriptionList:
@@ -154,6 +189,10 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle556x45
     mayTransfer: true

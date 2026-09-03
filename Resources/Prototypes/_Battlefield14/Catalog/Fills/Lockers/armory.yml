@@ -98,7 +98,7 @@
     contents:
         - id: WeaponSniperRUSVDS
           amount: 2
-        - id: BoxMagazineSVDS
+        - id: BoxMagazineSVD
           amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]

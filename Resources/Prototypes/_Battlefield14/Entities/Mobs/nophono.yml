@@ -1,7 +1,7 @@
 - type: entity
   name: nophono
   parent: [ BaseMob, MobDamageable, MobCombat, InventoryBase ]
-  id: Nophono
+  id: BF14MobNophono
   description: He cares.
   components:
   - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
@@ -9,10 +9,11 @@
     - TauCetiBasic
     understands:
     - TauCetiBasic
-    - Russian
-    - English
     - Sign
+    - English
     - German
+    - Russian
+    - Ukrainian
     - Mexican
     - Esperanto
   - type: Sprite
@@ -102,7 +103,7 @@
   - type: ActionGrant
     actions:
     - ActionBlink
-    - ActionSmiteNoReq
+    - ActionLiquidPhono
     - ActionKnock
   - type: ZombieImmune
   - type: NightVision # Gen 3 wide-quadtube

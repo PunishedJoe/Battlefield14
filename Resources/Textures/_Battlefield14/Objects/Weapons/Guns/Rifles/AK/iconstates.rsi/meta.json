@@ -11,6 +11,12 @@
             "name": "icon-ak74"
         },
         {
+            "name": "icon-rpk74"
+        },
+        {
+            "name": "icon-rpk74m"
+        },
+        {
             "name": "icon-ak12"
         },
         {
@@ -36,6 +42,12 @@
         },
         {
             "name": "mag-ak74-0"
+        },
+        {
+            "name": "mag-rpk74-0"
+        },
+        {
+            "name": "mag-rpk74black-0"
         },
         {
             "name": "mag-ak12-0"
@@ -66,6 +78,12 @@
         },
         {
             "name": "stock-ak74black"
+        },
+        {
+            "name": "stock-rpk74"
+        },
+        {
+            "name": "stock-rpk74black"
         },
         {
             "name": "stock-ak12"
@@ -102,6 +120,9 @@
         },
         {
             "name": "barrel-ak74"
+        },
+        {
+            "name": "barrel-rpk74"
         },
         {
             "name": "barrel-ak12"

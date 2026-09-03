@@ -1,0 +1,94 @@
+- type: entity
+  name: random medication box spawner
+  id: BF14RandomSpawnerMedicationBox
+  parent: MarkerBase
+  placement:
+    mode: PlaceFree
+  components:
+  - type: Transform
+    anchored: false
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+      - state: base
+      - state: overlay_stripe_lightblue
+      - state: overlay_ampuole_red
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - MedicationBoxPillsTricordrazine
+      - MedicationBoxPillsBicaridine
+      - MedicationBoxPillsKelotane
+      - MedicationBoxPillsDylovene
+      - MedicationBoxPillsDexalin
+      - MedicationBoxPillsIron
+      - MedicationBoxPillsMeralyne
+      - MedicationBoxPillsDermaline
+      - MedicationBoxPillsHyronalin
+      - MedicationBoxSyrettesBicaridine
+      - MedicationBoxSyrettesKelotane
+      - MedicationBoxSyrettesTricordrazine
+      - MedicationBoxSyrettesInaprovaline
+      - MedicationBoxSyrettesDexalin
+      - MedicationBoxSyrettesMeralyne
+      - MedicationBoxSyrettesDermaline
+      - MedicationBoxSyrettesEpinephrine
+      - MedicationBoxSyrettesSaline
+      - MedicationBoxSyrettesArithrazine
+
+- type: entity
+  name: random pill box spawner
+  id: BF14RandomSpawnerPillBox
+  parent: MarkerBase
+  placement:
+    mode: PlaceFree
+  components:
+  - type: Transform
+    anchored: false
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+      - state: base
+      - state: overlay_stripe_lightblue
+      - state: overlay_pills_grey
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - MedicationBoxPillsTricordrazine
+      - MedicationBoxPillsBicaridine
+      - MedicationBoxPillsKelotane
+      - MedicationBoxPillsDylovene
+      - MedicationBoxPillsDexalin
+      - MedicationBoxPillsIron
+      - MedicationBoxPillsMeralyne
+      - MedicationBoxPillsDermaline
+      - MedicationBoxPillsHyronalin
+
+- type: entity
+  name: random syrette box spawner
+  id: BF14RandomSpawnerSyretteBox
+  parent: MarkerBase
+  placement:
+    mode: PlaceFree
+  components:
+  - type: Transform
+    anchored: false
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+      - state: base
+      - state: overlay_stripe_lightblue
+      - state: overlay_ampuole
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - MedicationBoxSyrettesBicaridine
+      - MedicationBoxSyrettesKelotane
+      - MedicationBoxSyrettesTricordrazine
+      - MedicationBoxSyrettesInaprovaline
+      - MedicationBoxSyrettesDexalin
+      - MedicationBoxSyrettesMeralyne
+      - MedicationBoxSyrettesDermaline
+      - MedicationBoxSyrettesEpinephrine
+      - MedicationBoxSyrettesSaline
+      - MedicationBoxSyrettesArithrazine

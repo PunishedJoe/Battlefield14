@@ -46,12 +46,12 @@
     id: FSBSupportPDA
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
-    head: ClothingHeadHatHelmetRUEMR
+    jumpsuit: ClothingUniformJumpsuitRUGorka
+    head: ClothingHeadHatHelmetRU6b47Alt
     helmetattachment: ClothingHelmetAttachmentNVGsBasicPACT
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
-    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    outerClothing: ClothingOuterArmorPlateCarrier6B45Heavy
     shoes: ClothingShoesBootsJack
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackRucksackBlack
@@ -78,7 +78,7 @@
     id: FSBSupportPDA
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR # Gorka
+    jumpsuit: ClothingUniformJumpsuitRUGorka
     head: ClothingHeadHatSkullcrusher
     helmetattachment: ClothingHelmetAttachmentNVGsBasic # TODO replace with BF14 version
     balaclava: ClothingBalaclavaMilitary

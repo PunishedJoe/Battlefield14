@@ -1,0 +1,67 @@
+- type: entity
+  parent: BaseItem
+  id: CMVendUSMCWarVendorLieutenantTablet
+  name: USMC lieutenant war vendor tablet
+  description: Top notch shit here.
+  suffix: ColMarTech, DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/tablets.rsi
+    layers:
+      - state: tablet
+      - state: generic
+        shader: unshaded
+  - type: UserInterface
+    interfaces:
+      enum.CMAutomatedVendorUI.Key:
+        type: CMAutomatedVendorBui
+  - type: ActivatableUI
+    key: enum.CMAutomatedVendorUI.Key
+  - type: ActivatableUIRequiresAccess
+  - type: CMAutomatedVendor
+    jobs:
+    - USMCLieutenant
+    sections:
+    - name: anti-armour solution
+      entries:
+      - id: CrateSecgearNATOFilledSMAW
+        name: Mk 153 SMAW
+        points: 2
+      - id: CrateSecgearNATOFilledAT4
+        name: M163 AT4
+        points: 1
+      - id: BF14WeaponCaseLongUSM107
+        name: M107 anti-materiel rifle
+        points: 1
+    - name: anti-personnel solution
+      entries:
+      - id: CrateSecgearNATOFilledSMAWDisposable
+        name: SMAW-D
+        points: 2
+      - id: BoxGrenadesM34
+        name: White phosphorus grenades
+        points: 2
+      - id: BoxGrenadesM58
+        name: CS gas grenades
+        points: 1
+    - name: anti-vessel solution
+      entries:
+      - id: CrateSecgearNATOFilledStinger
+        name: Stinger MANPADS
+        points: 1
+    - name: ammunition
+      entries:
+      - id: BF14WeaponCaseHeavySMAWMixed
+        name: mixed SMAW shells
+        points: 2
+    - name: organisation
+      entries:
+      - id: BoxIFFNATOBlue
+        name: Blue IFF identifiers
+        amount: 2
+      - id: BoxIFFNATOYellow
+        name: Yellow IFF identifiers
+        amount: 2
+      - id: BoxIFFNATOGreen
+        name: Green IFF identifiers
+        amount: 2

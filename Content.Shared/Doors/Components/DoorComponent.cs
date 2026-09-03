@@ -295,7 +295,10 @@ public sealed partial class DoorComponent : Component
     public int OpenDrawDepth = (int) DrawDepth.DrawDepth.Doors;
 
     [DataField(customTypeSerializer: typeof(ConstantSerializer<DrawDepthTag>))]
-    public int ClosedDrawDepth = (int) DrawDepth.DrawDepth.Doors;
+    public int ClosedDrawDepth = (int)DrawDepth.DrawDepth.Doors;
+
+    [DataField]
+    public bool PlaySoundsWhenPrying = true;
 }
 
 [Serializable, NetSerializable]
@@ -319,6 +322,8 @@ public enum DoorVisuals : byte
     ClosedLights,
     BaseRSI,
 }
+        // KS14
+
 
 public enum DoorVisualLayers : byte
 {

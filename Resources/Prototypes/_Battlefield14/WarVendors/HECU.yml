@@ -1,0 +1,98 @@
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendNATOHECUWarVendor
+  name: HECU war vendor
+  description: Army leftover weaponry from a vending machine.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+#      shader: unshaded
+#    - state: panel
+#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: CMAutomatedVendor
+    access:
+    - "NATOCommon"
+    sections:
+    - name: Armour
+      choices: { BF14Armour: 2 }
+      entries:
+      - id: ClothingOuterArmorPCV
+        name: powered combat vest
+      - id: PowerCellPCV
+        recommended: true
+    - name: 'Personal Medicine'
+      choices: { BF14PersonalMedicine: 1 }
+      entries:
+      - id: MedicationBoxPillsBicaridine
+        name: bicaridine pills
+        recommended: true
+      - id: MedicationBoxSyrettesBicaridine
+        name: bicaridine syrettes
+      - id: MedicationBoxPillsKelotane
+        name: kelotane pills
+      - id: MedicationBoxSyrettesKelotane
+        name: kelotane syrettes
+      - id: MedicationBoxSyrettesTricordrazine
+        name: tricordrazine syrettes
+      - id: BlisterPackSyretteMeralyne
+        name: meralyne syrettes
+      - id: BlisterPackSyretteDermaline
+        name: dermaline syrettes
+      - id: FoodCondimentPacketKaolin
+        name: kaolin powder packet
+      - id: DefibrillatorDisposable
+        name: disposable defibrillator
+    - name: Backpack/belt
+      choices: { BF14Storage: 2 }
+      entries:
+      - id: ClothingBackpackMercenary
+        replaceSlot: back
+        name: ALICE backpack
+      - id: ClothingBeltMilitaryWebbingUS
+        replaceSlot: belt
+        name: ALICE belt rig
+      - id: ClothingBeltMedicalEMTFilledBF14Basic
+        replaceSlot: belt
+        name: basic medical belt
+        amount: 4
+    - name: Weapons
+      entries:
+      - id: WeaponRifleUSM16A2
+        amount: 20
+      - id: WeaponSubmachinegunUSMP5
+        amount: 5
+      - id: WeaponSniperUSM40A5
+        amount: 1
+      - id: MagazineSniperM40A5
+        amount: 5
+      - id: WeaponPistolM9
+        amount: 2
+    - name: Utility
+      entries:
+      - id: RiotBulletShield
+        amount: 3
+      - id: CombatKnife
+        amount: 10
+      - id: Crowbar
+        amount: 50
+    - name: Sustainment
+      entries:
+      - id: BoxMRE
+        amount: 50
+      - id: FoodSnackNutribrick
+        amount: 50
+      - id: DrinkMREFlask
+        amount: 50
+    - name: Misc
+      entries:
+      - id: USMCFlagFolded
+        amount: 3
+      - id: ShellBoxBF12GaugeBreaching
+        amount: 1

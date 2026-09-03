@@ -60,7 +60,7 @@ public partial class BaseShuttleControl : MapGridControl
         Maps = EntManager.System<SharedMapSystem>();
         _lookup = EntManager.System<EntityLookupSystem>(); // Mono
         _xformQuery = EntManager.GetEntityQuery<TransformComponent>(); // Mono
-        Font = new VectorFont(IoCManager.Resolve<IResourceCache>().GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 12);
+        Font = new VectorFont(IoCManager.Resolve<IResourceCache>().GetResource<FontResource>("/Fonts/OCR-A-Extended.ttf"), 12);
 
         _drawJob = new GridDrawJob()
         {

@@ -1,0 +1,41 @@
+- type: entity
+  parent: BaseStructureDynamic
+  id: BF14NuclearFuelRodsHazard
+  name: nuclear fuel bundle
+  description: A bundle of fuel rods reactor, you probably shouldnt stand near it.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: InteractionOutline
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _Battlefield14/Structures/hazards.rsi
+    layers:
+      - state: fuel
+  - type: RadiationSource
+    intensity: 0.7
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1500
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: BF14NuclearFuelRodsHazard
+  id: BF14NuclearFuelRodsDamagedHazard
+  suffix: damaged
+  components:
+  - type: RadiationSource
+    intensity: 3
+  - type: ExtendDescription
+    descriptionList:
+      - description: Upon a closer examination the zirconium cladding appears to be damaged.
+        color: "#ff0000"
+        requireDetailRange: true

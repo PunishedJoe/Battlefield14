@@ -316,14 +316,14 @@
         amount: 8
 
 - type: entity
-  name: box of SVDS magazines
+  name: box of SVD magazines
   parent: BoxMagazine
-  id: BoxMagazineSVDS
+  id: BoxMagazineSVD
   description: A box full of 7.62x54mmR SVDS compatible magazines.
   components:
   - type: StorageFill
     contents:
-      - id: MagazineSniperSVDS
+      - id: MagazineSniperSVD
         amount: 8
 
 - type: entity

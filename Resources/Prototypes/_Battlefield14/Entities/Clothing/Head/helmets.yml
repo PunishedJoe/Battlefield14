@@ -1,18 +1,3 @@
-- type: entity
-  parent: ClothingHeadHelmetBasic
-  id: BF14ClothingHeadHelmetBasic
-  abstract: true
-  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
-  components:
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
-  - type: ExplosionResistance
-    damageCoefficient: 0.9
-
 #region US
 
 - type: entity
@@ -27,17 +12,37 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/ushelmet.rsi
   - type: Armor
     modifiers:
-#      coefficients:
-#        Blunt: 0.9
-#        Slash: 0.9
-#        Piercing: 0.9
-#        Heat: 0.9
-      flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+#      flatReductions:
+#        Blunt: 2
+#        Slash: 2
+#        Piercing: 2
   - type: ExplosionResistance
     damageCoefficient: 0.9
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetUSACH
+  name: ACH helmet
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ACH.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ACH.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUSACH
+  id: ClothingHeadHatHelmetUSACHWoodland
+  name: ACH helmet (MARPAT woodland)
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ACHWoodland.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ACHWoodland.rsi
 
 - type: entity
   parent: ClothingHeadHatHelmetUS
@@ -57,11 +62,22 @@
         Piercing: 0.9
         Heat: 0.9
       flatReductions:
-        Blunt: 2
-        Slash: 2
-        Piercing: 2
+        Blunt: 1
+        Slash: 1
+        Piercing: 0.5
   - type: ExplosionResistance
     damageCoefficient: 0.9
+
+- type: entity
+  parent: ClothingHeadHatHelmetUSRiot
+  id: ClothingHeadHatHelmetUSRiotACH
+  name: ACH riot helmet
+  description: This IS for catching shrap and rounds.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ACHRiot.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ACHRiot.rsi
 
 - type: entity
   parent: ClothingHeadHatHelmetUS
@@ -88,7 +104,7 @@
 #region DE
 
 - type: entity
-  parent: BF14ClothingHeadHelmetBasic
+  parent: ClothingHeadHelmetBasic
   id: ClothingHeadHatHelmetDEM92
   name: M92 combat helmet (flecktarn)
   components:
@@ -98,6 +114,106 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/dehelmetM92.rsi
 
 #region RU
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetRU
+  name: russian camo helmet
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmet.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetRUEMR
+  name: russian camo helmet (EMR)
+  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmet.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUSRiot
+  id: ClothingHeadHatHelmetRUEMRRiot
+  name: russian camo riot helmet (EMR)
+  description: This IS for catching shrap and rounds.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetRU
+  id: ClothingHeadHatHelmetRU6b47
+  name: 6b47 helmet
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/6b47.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/6b47.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetRU6b47
+  id: ClothingHeadHatHelmetRU6b47Alt
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/6b47alt.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/6b47alt.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUSRiot
+  id: ClothingHeadHatHelmetRU6b47Riot
+  name: 6b47 riot helmet
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/6b47Riot.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/6b47Riot.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetRU6b47Riot
+  id: ClothingHeadHatHelmetRU6b47RiotAlt
+  name: 6b47 riot helmet
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/6b47altRiot.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/6b47altRiot.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetRUSSh68
+  name: SSh-68 helmet
+  description: A very old SSh-68 helmet, commonly nicknamed "penis helmet" due to its shape.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68.rsi
+#  - type: Armor
+#    modifiers:
+#      flatReductions:
+#        Blunt: 1
+#        Slash: 1
+#        Piercing: 1
+
+- type: entity
+  parent: ClothingHeadHatHelmetRUSSh68
+  id: ClothingHeadHatHelmetRUSSh68Track
+  name: SSh-68 helmet
+  description: A very old SSh-68 helmet, commonly nicknamed "penis helmet" due to its shape. This one has ben pained black with 2 white stripes.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68track.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68track.rsi
 
 - type: entity
   parent: ClothingHeadHatHelmetUSRiot
@@ -139,67 +255,6 @@
   - type: Clothing
     sprite: _Battlefield14/Clothing/Head/Helmets/rutrackaltyn.rsi
 
-- type: entity
-  parent: ClothingHeadHatHelmetUS
-  id: ClothingHeadHatHelmetRU
-  name: russian camo helmet
-  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmet.rsi
-  - type: Clothing
-    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmet.rsi
-
-- type: entity
-  parent: ClothingHeadHatHelmetUS
-  id: ClothingHeadHatHelmetRUEMR
-  name: russian camo helmet (EMR)
-  description: This isnt for catching shrap or rounds, its made to keep your grey matter from grossing out your buddies.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmet.rsi
-  - type: Clothing
-    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmet.rsi
-
-- type: entity
-  parent: ClothingHeadHatHelmetUSRiot
-  id: ClothingHeadHatHelmetRUEMRRiot
-  name: russian camo riot helmet (EMR)
-  description: This IS for catching shrap and rounds.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
-  - type: Clothing
-    sprite: _Battlefield14/Clothing/Head/Helmets/emrhelmetriot.rsi
-
-- type: entity
-  parent: ClothingHeadHatHelmetUS
-  id: ClothingHeadHatHelmetRUSSh68
-  name: SSh-68 helmet
-  description: A very old SSh-68 helmet, commonly nicknamed "penis helmet" due to its shape.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68.rsi
-  - type: Clothing
-    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68.rsi
-  - type: Armor
-    modifiers:
-      flatReductions:
-        Blunt: 1
-        Slash: 1
-        Piercing: 1
-
-- type: entity
-  parent: ClothingHeadHatHelmetRUSSh68
-  id: ClothingHeadHatHelmetRUSSh68Track
-  name: SSh-68 helmet
-  description: A very old SSh-68 helmet, commonly nicknamed "penis helmet" due to its shape. This one has ben pained black with 2 white stripes.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68track.rsi
-  - type: Clothing
-    sprite: _Battlefield14/Clothing/Head/Helmets/ruhelmetssh68track.rsi
-
 #region MISC
 
 - type: entity
@@ -237,8 +292,8 @@
   - type: Armor
     modifiers:
       flatReductions:
-        Blunt: 1
-        Slash: 1
+        Blunt: 2
+#        Slash: 1
 
 - type: entity
   parent: ClothingHeadHatHelmetUS

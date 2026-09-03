@@ -13,7 +13,7 @@
   - type: DeleteOnTrigger
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: DemolitionCharge
+    explosionType: Default
     totalIntensity: 150
     intensitySlope: 4
     maxIntensity: 10
@@ -23,7 +23,7 @@
       cluster-payload: !type:Container
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: BulletGrenadeM67Fragment
+    fillPrototype: Bullet40x46mmFragFragment
     capacity: 60
     randomAngle: true
     MaxVelocity: 10
@@ -132,7 +132,7 @@
   - type: DeleteOnTrigger
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: DemolitionCharge
+    explosionType: Default
     totalIntensity: 150
     intensitySlope: 4
     maxIntensity: 10
@@ -142,7 +142,7 @@
       cluster-payload: !type:Container
   - type: ProjectileGrenade
     triggerKey: trigger
-    fillPrototype: BulletGrenadeF1Fragment
+    fillPrototype: Bullet40x46mmFragFragment
     capacity: 60
     randomAngle: true
     MaxVelocity: 10
@@ -160,7 +160,7 @@
   - type: DeleteOnTrigger
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: FireBomb
+    explosionType: Thermobaric
     maxIntensity: 15
     intensitySlope: 6
     totalIntensity: 200

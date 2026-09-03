@@ -1,0 +1,75 @@
+- type: entity
+  parent: BaseItem
+  id: CMVendRGFWarVendorLieutenantTablet
+  name: RGF lieutenant war vendor tablet
+  description: Top notch shit here.
+  suffix: ColMarTech, DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/tablets.rsi
+    layers:
+      - state: tablet
+      - state: generic
+        shader: unshaded
+  - type: UserInterface
+    interfaces:
+      enum.CMAutomatedVendorUI.Key:
+        type: CMAutomatedVendorBui
+  - type: ActivatableUI
+    key: enum.CMAutomatedVendorUI.Key
+  - type: ActivatableUIRequiresAccess
+  - type: CMAutomatedVendor
+    jobs:
+    - RGFLieutenant
+    sections:
+    - name: anti-armour solution
+      entries:
+      - id: CrateSecgearPACTFilledRPG7
+        name: RPG-7V2
+        points: 2
+      - id: CrateSecgearPACTFilledRPG30
+        name: RPG-30
+        points: 1
+      - id: BF14WeaponCaseLongRUOSV96
+        name: OSV-96 anti-materiel rifle
+        points: 1
+    - name: anti-personnel solution
+      entries:
+      - id: CrateSecgearPACTFilledRPG26Thermobaric
+        name: RShG-2
+        points: 2
+      - id: BoxGrenadesK52
+        name: Sarin gas grenades
+        points: 2
+      - id: CrateSecgearPACTFilledRPK74M
+        name: RPK-74M x3
+        points: 1
+        amount: 1
+      - id: BoxGrenadesK51
+        name: CS gas grenades
+        points: 1
+      - id: BoxGrenadesRG60TB
+        name: RG-60TB thermobaric grenades
+        points: 1
+      - id: BoxGrenadesRG60TBO1
+        name: RG-60TBO1 thermobaric impact grenades
+        points: 1
+      - id: BoxArtilleryShellsMortar2B14Minelaying
+        name: PFM-1 mine-laying mortar rounds (82mm)
+        points: 1
+    - name: ammunition
+      entries:
+      - id: BF14WeaponCaseHeavyRPG7
+        name: mixed RPG-7 rockets
+        points: 2
+    - name: organisation
+      entries:
+      - id: BoxIFFPACTWhite
+        name: White IFF identifiers
+        amount: 2
+      - id: BoxIFFPACTRed
+        name: Red IFF identifiers
+        amount: 2
+      - id: BoxIFFPACTStGeorge
+        name: St. George IFF identifiers
+        amount: 2
