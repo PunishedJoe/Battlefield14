@@ -286,10 +286,10 @@
   minLimit: 1
   maxLimit: 1
   loadouts:
-  - LoadoutOuterArmorChefApronKevlar
-  - LoadoutOuterArmorButcherApronKevlar
+  - LoadoutOuterArmorChefApron
+  - LoadoutOuterArmorButcherApron
   fallbacks:
-  - LoadoutOuterArmorChefApronKevlar
+  - LoadoutOuterArmorChefApron
 
 - type: loadoutGroup
   id: BF_HelmetBossRU

@@ -302,10 +302,10 @@
   - type: HeldSpeedModifier
 
 - type: entity
-  parent: [ClothingOuterArmorBase, ClothingArmorPlateLight]
-  id: ClothingOuterArmorChefApronEmpty
+  parent: [ClothingOuterArmorBase]
+  id: ClothingOuterArmorChefApron
   name: backstreet chef's jacket
-  description: An jacket reinforced with kevlar lining with a added plate carrier.
+  description: An jacket reinforced with kevlar lining.
   suffix: Empty
   components:
   - type: Sprite
@@ -316,27 +316,20 @@
     modifiers:
       coefficients:
         Blunt: 0.9
-        Slash: 0.85
+        Slash: 0.7
         Piercing: 0.8
         Heat: 0.9
         Caustic: 0.9
-  - type: ExplosionResistance
-    damageCoefficient: 0.9
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.98
   - type: HeldSpeedModifier
   
 - type: entity
-  parent: [ClothingOuterArmorChefApronEmpty, ClothingArmorPlateLight]
-  id: ClothingOuterArmorChefApronKevlar
-  suffix: Kevlar insert
-  
-- type: entity
-  parent: [ClothingOuterArmorBase, ClothingArmorPlateMedium]
-  id: ClothingOuterArmorButcherApronEmpty
+  parent: [ClothingOuterArmorBase]
+  id: ClothingOuterArmorButcherApron
   name: backstreet butcher's apron
-  description: A beefy leather apron that was reinforced with kevlar and milled steel with a added plate carrier.
+  description: A beefy leather apron that was reinforced with kevlar and milled steel.
   suffix: Empty
   components:
   - type: Sprite
@@ -348,7 +341,7 @@
       coefficients:
         Blunt: 0.8
         Slash: 0.5
-        Piercing: 0.45
+        Piercing: 0.7
         Heat: 0.5
         Caustic: 0.9
   - type: ExplosionResistance
@@ -357,8 +350,3 @@
     walkModifier: 0.95
     sprintModifier: 0.8
   - type: HeldSpeedModifier
-  
-- type: entity
-  parent: [ClothingOuterArmorButcherApronEmpty, ClothingArmorPlateMedium]
-  id: ClothingOuterArmorButcherApronKevlar
-  suffix: Ceramic plate

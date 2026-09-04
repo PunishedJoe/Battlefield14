@@ -1,50 +1,55 @@
 - type: entity
   name: backstreet butcher's cleaver
-  parent: BaseKnife
+  parent: BaseSword
   id: BackstreetButcherCleaver
   description: A huge blade used for chopping and chopping up meat. This includes people and mostly people.
   components:
   - type: Tag
     tags:
-    - Knife
-    - Cleaver
+    - Machete
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Melee/Knives/cleaver.rsi
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -115
-    attackRate: 1.15
     damage:
       types:
-        Slash: 45
-  - type: Item
-    size: Normal
-    sprite: _Battlefield14/Objects/Weapons/Melee/Knives/cleaver.rsi
-  - type: Scalpel # Shitmed
-    speed: 0.3
-  - type: BoneSaw # Shitmed: Better than tg 25% because its a cleaver its meant to hack off limbs
-    speed: 0.5
-    
+        Slash: 40
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: DisarmMalus
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    - belt
+  - type: Prying
+  - type: UseDelay
+    delay: 1.5
+
 - type: entity
   name: backstreet chef's knife
-  parent: BaseKnife
+  parent: FHKnifeBase
   id: BackstreetKnife
   description: A razor sharp knife used for cutting up meat from your fellow men.
   components:
-  - type: Tag
-    tags:
-    - Knife
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Melee/Knives/chefknife.rsi
     state: icon
+    attackRate: 1.35 #stinky, but it makes it a sidegrade to the cleaver instead of a downgrade
+    
+- type: entity
+  name: The Chef's True Knife
+  parent: BackstreetKnife
+  id: BackstreetKnifeAdmeme
+  description: "Now, you look useful."
+  components:
   - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 1.4
+    attackRate: 20.0
+    heavyStaminaCost: 0
+    autoAttack: true
     damage:
       types:
-        Slash: 30
-  - type: Item
-    size: Small
-    sprite: _Battlefield14/Objects/Weapons/Melee/Knives/chefknife.rsi
-  - type: Scalpel # Shitmed
-    speed: 0.3
+        Slash: 10
+        Structural: 50

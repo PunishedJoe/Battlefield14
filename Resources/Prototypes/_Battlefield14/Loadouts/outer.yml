@@ -63,11 +63,11 @@
     outerClothing: ClothingOuterArmorPlateCarrierHeavyTrack
     
 - type: loadout
-  id: LoadoutOuterArmorChefApronKevlar
+  id: LoadoutOuterArmorChefApron
   equipment:
-    outerClothing: ClothingOuterArmorChefApronKevlar
+    outerClothing: ClothingOuterArmorChefApron
     
 - type: loadout
-  id: LoadoutOuterArmorButcherApronKevlar
+  id: LoadoutOuterArmorButcherApron
   equipment:
-    outerClothing: ClothingOuterArmorButcherApronKevlar
+    outerClothing: ClothingOuterArmorButcherApron
