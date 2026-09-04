@@ -53,6 +53,8 @@
         name: fentanyl syrettes
       - id: FoodCondimentPacketKaolin
         name: kaolin powder packet
+      - id: Pervitin
+        name: pervitin pills
       - id: DefibrillatorDisposable
         name: disposable defibrillator
     - name: Backpack/belt

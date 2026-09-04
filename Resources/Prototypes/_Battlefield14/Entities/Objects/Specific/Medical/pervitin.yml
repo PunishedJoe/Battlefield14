@@ -1,0 +1,45 @@
+- type: entity
+  name: pervitin
+  id: PervitinEmpty
+  suffix: empty
+  parent: [BaseStorageItem, RecyclableItemPlasticTiny]
+  description: Military-grade methamphetamine given to finnish soldiers during the Winter War. Highly addictive and dangerous, now issued to Warsaw Pact soldiers to enhance performance in the field.
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/pervitin.rsi
+    layers:
+    - state: icon
+  - type: Tag
+    tags:
+      - PillCanister
+  - type: Storage
+    grid:
+    - 0,0,1,2
+    quickInsert: true
+    areaInsert: true
+    areaInsertRadius: 1
+    storageInsertSound: /Audio/Effects/pill_insert.ogg
+    storageRemoveSound: /Audio/Effects/pill_remove.ogg
+    whitelist:
+      tags:
+      - Pill
+  - type: Appearance
+  - type: Dumpable
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_Goobstation/Items/handling/pillbottle_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_Goobstation/Items/handling/pillbottle_drop.ogg
+
+- type: entity
+  parent: Pervitin
+  id: Pervitin
+  suffix: Desoxyephedrine 5u, 6
+  components:
+  - type: StorageFill
+    contents:
+    - id: PillDesoxyephedrine
+      amount: 6
