@@ -11,6 +11,7 @@
         - id: MortarNATOUS81mmM252Assembly
         - id: BoxArtilleryutility
         - id: PaperWrittenManualArtilleryMortar
+        - id: BF14UndeterminedMap
         - id: BoxArtilleryShellsMortarM252HEFrag
           amount: 4
         - id: BoxArtilleryShellsMortarM252SmokeMixed
@@ -34,6 +35,7 @@
         - id: MortarPACTRU82mm2B14Assembly
         - id: BoxArtilleryutility
         - id: PaperWrittenManualArtilleryMortar
+        - id: BF14UndeterminedMap
         - id: BoxArtilleryShellsMortar2B14LethalMixed
           amount: 4
         - id: BoxArtilleryShellsMortar2B14SmokeMixed

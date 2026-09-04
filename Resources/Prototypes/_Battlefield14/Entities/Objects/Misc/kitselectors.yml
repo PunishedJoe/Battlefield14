@@ -4,6 +4,8 @@
   description: A ground map you haven't decided on yet.
   parent: BaseItem
   components:
+  - type: Item
+    size: Tiny
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
     layers:

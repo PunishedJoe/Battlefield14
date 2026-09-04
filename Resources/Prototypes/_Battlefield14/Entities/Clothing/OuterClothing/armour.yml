@@ -115,6 +115,18 @@
   - type: HeldSpeedModifier
 
 - type: entity
+  parent: ClothingOuterArmorPlateCarrierCivillian # nice typo
+  id: ClothingOuterArmorKevlarVest
+  name: kevlar vest
+  description: An early bulletproof vest, basicaly useless as it cannot take plates. But hey atleast its light.
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/basiccarrier.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/basiccarrier.rsi
+
+- type: entity
   parent: ClothingOuterArmorBase
   id: ClothingOuterArmorPlateCarrierHeavy
   name: heavy ballistic vest
