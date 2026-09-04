@@ -409,6 +409,21 @@
   - type: AccessReader
     access: [["NATOSoldier"]]
 
+- type: entity
+  id: CrateSecgearNATOFilledG28
+  suffix: Filled, G28
+  parent: CrateSecgear
+  name: G28 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperDEG28
+          amount: 2
+        - id: BoxMagazineG28
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
 ## PACT
 #region RU
 

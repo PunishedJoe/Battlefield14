@@ -49365,7 +49365,7 @@ entities:
     - type: Transform
       pos: 37.5,195.5
       parent: 1
-- proto: RandomWeaponNATOUSSniper
+- proto: CrateSecgearNATOFilledG28
   entities:
   - uid: 6318
     components:
