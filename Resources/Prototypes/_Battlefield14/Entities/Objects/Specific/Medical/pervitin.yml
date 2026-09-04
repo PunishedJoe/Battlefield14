@@ -26,10 +26,6 @@
       tags:
       - Pill
     hideStackVisualsWhenClosed: false
-  - type: ItemCounter
-    count:
-      tags: [Pill]
-    composite: true
   - type: Appearance
   - type: Dumpable
   - type: EmitSoundOnPickup
