@@ -35,7 +35,7 @@
       path: /Audio/_Goobstation/Items/handling/pillbottle_drop.ogg
 
 - type: entity
-  parent: Pervitin
+  parent: PervitinEmpty
   id: Pervitin
   suffix: Desoxyephedrine 5u, 6
   components:
