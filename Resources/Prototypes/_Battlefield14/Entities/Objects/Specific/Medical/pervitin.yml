@@ -25,7 +25,6 @@
     whitelist:
       tags:
       - Pill
-    hideStackVisualsWhenClosed: false
   - type: Appearance
   - type: Dumpable
   - type: EmitSoundOnPickup
