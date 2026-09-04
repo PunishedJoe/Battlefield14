@@ -1,6 +1,6 @@
 - type: entity
   name: pervitin
-  id: Pervitin
+  id: PervitinEmpty
   parent: [BaseStorageItem, RecyclableItemPlasticTiny]
   description: Military-grade methamphetamine given to finnish soldiers during the Winter War. Highly addictive and dangerous, now issued to Warsaw Pact soldiers to enhance performance in the field.
   components:
@@ -41,7 +41,7 @@
 
 - type: entity
   parent: Pervitin
-  id: PervitinMeth
+  id: Pervitin
   suffix: Desoxyephedrine 5u, 6
   components:
   - type: StorageFill
