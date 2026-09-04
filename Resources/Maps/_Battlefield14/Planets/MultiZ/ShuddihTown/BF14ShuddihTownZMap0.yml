@@ -50606,7 +50606,7 @@ entities:
       parent: 2
     - type: Physics
       canCollide: False
-- proto: BF14WeaponCaseLongUSMP5
+- proto: BF14WeaponCaseLongDEMP5A5
   entities:
   - uid: 84
     components:

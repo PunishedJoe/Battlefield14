@@ -102,7 +102,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: WeaponSubmachinegunUSMP5
+    - id: WeaponSubmachinegunDEMP5A5
       amount: 5
     - id: BoxMagazineMP5
       amount: 3
