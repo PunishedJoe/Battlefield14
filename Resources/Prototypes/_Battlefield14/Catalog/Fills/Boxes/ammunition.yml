@@ -158,6 +158,20 @@
 #region DE
 
 - type: entity
+  name: box of G28 magazines
+  parent: BoxMagazine
+  id: BoxMagazineG28
+  description: A box full of 7.62x51 G8 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleG28
+        amount: 8
+
+- type: entity
   name: box of G36 magazines
   parent: BoxMagazine
   id: BoxMagazineG36

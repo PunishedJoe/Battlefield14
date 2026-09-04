@@ -225333,7 +225333,7 @@ entities:
       parent: 24983
     - type: Physics
       canCollide: False
-- proto: WeaponSubmachinegunUSMP5
+- proto: WeaponSubmachinegunDEMP5A5
   entities:
   - uid: 24777
     components:

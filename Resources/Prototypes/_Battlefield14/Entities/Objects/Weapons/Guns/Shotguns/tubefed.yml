@@ -43,6 +43,7 @@
   parent: BaseWeaponShotgun
   id: WeaponShotgunUSM590
   description: A popular civilian hunting shotgun, chopped down to breach doors more handily. Direct combat use ill-advised.
+  suffix: Breaching
   components:
   - type: Item
     size: Normal
@@ -94,6 +95,14 @@
       - description: This weapon can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  parent: WeaponShotgunUSM590
+  id: WeaponShotgunUSM590Buckshot
+  suffix: Buckshot
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeShotgun12GaugeBuckshot
 
 - type: entity
   name: RMB-93

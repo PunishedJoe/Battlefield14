@@ -18,6 +18,8 @@
   mapName: NFDev
   mapPath: /Maps/_Mono/Test/dev_map.yml # Mono
   minPlayers: 0
+  randomRotation: false # BF14
+  maxRandomOffset: 0 # BF14
   stations:
     NFDev:
       stationProto: StandardFrontierStation
