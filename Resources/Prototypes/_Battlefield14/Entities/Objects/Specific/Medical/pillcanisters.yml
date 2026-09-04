@@ -33,7 +33,7 @@
 
 - type: entity
   name: pill
-  suffix: Desoxyephedrine 5u # BF14
+  suffix: Desoxyephedrine 5u
   parent: Pill
   id: PillDesoxyephedrine
   components:
@@ -42,14 +42,14 @@
   - type: Sprite
     state: pill16
   - type: Label
-    currentLabel: desoxyephedrine 5u # BF14
+    currentLabel: desoxyephedrine 5u 
   - type: SolutionContainerManager
     solutions:
       food:
         maxVol: 20
         reagents:
         - ReagentId: Desoxyephedrine
-          Quantity: 5 # BF14
+          Quantity: 5 
 
 - type: entity
   name: pill
