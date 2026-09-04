@@ -1,17 +1,17 @@
 {
     "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Do not re-use these sprites without permission from WillyBillyGilly.",
     "size": {
         "x": 32,
         "y": 32
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from civ13 at https://github.com/Civ13/Civ13/blob/c1d4512d573f18d9e9fee5c227b8aaff93806ac3/icons/obj/gun.dmi, modified by JoeHammad",
     "states": [
         {
-            "name": "base"
+            "name": "icon"
         },
         {
-            "name": "icon"
+            "name": "base"
         },
         {
             "name": "mag-1"
