@@ -1,0 +1,55 @@
+- type: entity
+  name: backstreet butcher's cleaver
+  parent: BaseSword
+  id: BackstreetButcherCleaver
+  description: A huge blade used for chopping and chopping up meat. This includes people and mostly people.
+  components:
+  - type: Tag
+    tags:
+    - Machete
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Melee/Knives/cleaver.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -115
+    damage:
+      types:
+        Slash: 40
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: DisarmMalus
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    - belt
+  - type: Prying
+  - type: UseDelay
+    delay: 1.5
+
+- type: entity
+  name: backstreet chef's knife
+  parent: FHKnifeBase
+  id: BackstreetKnife
+  description: A razor sharp knife used for cutting up meat from your fellow men.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Melee/Knives/chefknife.rsi
+    state: icon
+    attackRate: 1.35 #stinky, but it makes it a sidegrade to the cleaver instead of a downgrade
+    
+- type: entity
+  name: The Chef's True Knife
+  parent: BackstreetKnife
+  id: BackstreetKnifeAdmeme
+  description: "Now, you look useful."
+  components:
+  - type: MeleeWeapon
+    attackRate: 20.0
+    heavyStaminaCost: 0
+    autoAttack: true
+    damage:
+      types:
+        Slash: 10
+        Structural: 50
