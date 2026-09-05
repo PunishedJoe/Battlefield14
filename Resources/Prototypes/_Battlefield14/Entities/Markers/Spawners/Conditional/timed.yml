@@ -42,7 +42,8 @@
       prototypes:
         - BF14WeaponCaseLongUSMAC10
         - BF14WeaponCaseLongUSMAC10Supp
-        - BF14WeaponCaseLongUSMP5
+        - BF14WeaponCaseLongDEMP5A5
+        - BF14WeaponCaseLongDEMP5SD6
         - BF14WeaponCaseLongDEMP7
         - BF14WeaponCaseLongRUSR2MP
         - BF14WeaponCaseLongRUPPsh41
@@ -161,7 +162,7 @@
     - type: Timer
     - type: TimedSpawner
       prototypes:
-        - BF14WeaponCaseLongUSMP5
+        - BF14WeaponCaseLongDEMP5A5
         - BF14WeaponCaseLongDEMP7
       chance: 1
       intervalSeconds: 60

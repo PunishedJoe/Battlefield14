@@ -57,9 +57,9 @@
     pryPowered: true
   - type: UseDelay
     delay: 1
-  - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+#  - type: ClothingSpeedModifier
+#    walkModifier: 0.9
+#    sprintModifier: 0.9
   - type: ExtendDescription
     descriptionList:
       - description: This weapon can be stored on your auxillary suit storage slot.

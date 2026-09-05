@@ -157,6 +157,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+    state: base
 
 - type: entity
   id: BulletGrenadeM67Fragment
@@ -195,6 +198,9 @@
       - OffensiveGrenadeUSMK21
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/MK21.rsi
+    state: base
   - type: ExtendDescription
     descriptionList:
       - description: Has a random timer between 3-5 seconds. You can stack another grenade onto this one.
@@ -307,6 +313,9 @@
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Explosives/mk3a2.rsi
+  - type: Icon
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/mk3a2.rsi
+    state: base
 
 - type: entity
   name: M111 offensive grenade
@@ -316,6 +325,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/M111.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/M111.rsi
+    state: base
 
 - type: entity
   name: M18 smoke grenade
@@ -424,6 +436,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/DM51frag.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/DM51frag.rsi
+    state: base
 
 - type: entity
   name: DM51 offensive grenade
@@ -433,6 +448,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/DM51.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/DM51.rsi
+    state: base
 
 - type: entity
   name: DM45 smoke grenade
@@ -452,6 +470,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
+    state: base
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
@@ -471,6 +492,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/RG60TB.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/RG60TB.rsi
+    state: base
   - type: Explosive
     explosionType: Thermobaric
     maxIntensity: 10
@@ -486,6 +510,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/f1.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/f1.rsi
+    state: base
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeF1Fragment
     capacity: 60
@@ -620,6 +647,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/RG60TBO1.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/RG60TBO1.rsi
+    state: base
   - type: Explosive
     explosionType: Thermobaric
     maxIntensity: 8
@@ -762,7 +792,7 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/fanta.rsi
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeBallBearing
-    capacity: 40
+    capacity: 60
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade

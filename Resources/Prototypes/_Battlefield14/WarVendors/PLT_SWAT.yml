@@ -44,7 +44,8 @@
         name: breaching charges
         points: 2
       - id: FUBAR
-        name: FUBAR
+        points: 1
+      - id: Boltcutters
         points: 1
     - name: M320 shells
       entries:
@@ -54,14 +55,11 @@
       - id: BoxMagazine40x46mmIllumination
         name: illumination rounds
         points: 1
-#    - name: organisation
-#      entries:
-#      - id: BoxIFFNATOBlue
-#        name: Blue IFF identifiers
-#        amount: 2
-#      - id: BoxIFFNATOYellow
-#        name: Yellow IFF identifiers
-#        amount: 2
-#      - id: BoxIFFNATOGreen
-#        name: Green IFF identifiers
-#        amount: 2
+    - name: organisation
+      entries:
+      - id: BoxIFFNATOBlue
+        name: Blue IFF identifiers
+        amount: 2
+      - id: BoxIFFNATOGreen
+        name: Green IFF identifiers
+        amount: 2

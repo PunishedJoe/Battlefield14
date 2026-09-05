@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/03/2026 10:21:36
-  entityCount: 2910
+  time: 09/05/2026 04:47:05
+  entityCount: 2947
 maps:
 - 14
 grids:
@@ -212,9 +212,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
         Smoke: []
         Puddle: []
+        MetalFoam: []
         Kudzu: []
       updateAccumulator: 0.12344074
     - type: Shuttle
@@ -44792,10 +44792,10 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 275.99527
+          temperature: 275.9952
           moles:
-          - 18.285095
-          - 68.78679
+          - 16.822289
+          - 63.283844
           - 0
           - 0
           - 0
@@ -44811,10 +44811,10 @@ entities:
           - 0
           - 0
         - volume: 2500
-          temperature: 276.074
+          temperature: 276.07394
           moles:
-          - 19.575218
-          - 73.6401
+          - 18.009201
+          - 67.74889
           - 0
           - 0
           - 0
@@ -128562,6 +128562,18 @@ entities:
     - type: Transform
       pos: 41.5,12.5
       parent: 1
+- proto: BarbedWire10
+  entities:
+  - uid: 1151
+    components:
+    - type: Transform
+      pos: 55.357643,39.341072
+      parent: 1
+  - uid: 2931
+    components:
+    - type: Transform
+      pos: 55.651176,39.24316
+      parent: 1
 - proto: BarbwireFloor
   entities:
   - uid: 39
@@ -131633,11 +131645,6 @@ entities:
       parent: 1
 - proto: BF14IndestructibleTreeSpawner
   entities:
-  - uid: 1502
-    components:
-    - type: Transform
-      pos: 57.5,-34.5
-      parent: 1
   - uid: 1830
     components:
     - type: Transform
@@ -133163,11 +133170,6 @@ entities:
     - type: Transform
       pos: 38.5,-33.5
       parent: 1
-  - uid: 2140
-    components:
-    - type: Transform
-      pos: 51.5,-34.5
-      parent: 1
   - uid: 2141
     components:
     - type: Transform
@@ -133260,6 +133262,16 @@ entities:
       parent: 1
 - proto: BF14IndestructibleTreeSpawnerOpaque
   entities:
+  - uid: 1121
+    components:
+    - type: Transform
+      pos: 57.5,-34.5
+      parent: 1
+  - uid: 1136
+    components:
+    - type: Transform
+      pos: 51.5,-34.5
+      parent: 1
   - uid: 1487
     components:
     - type: Transform
@@ -135056,12 +135068,49 @@ entities:
     - type: Transform
       pos: 56.5,34.5
       parent: 1
+  - uid: 2915
+    components:
+    - type: Transform
+      pos: 53.5,44.5
+      parent: 1
+  - uid: 2916
+    components:
+    - type: Transform
+      pos: 54.5,44.5
+      parent: 1
+  - uid: 2917
+    components:
+    - type: Transform
+      pos: 55.5,44.5
+      parent: 1
+  - uid: 2918
+    components:
+    - type: Transform
+      pos: 56.5,44.5
+      parent: 1
+  - uid: 2919
+    components:
+    - type: Transform
+      pos: 57.5,44.5
+      parent: 1
+  - uid: 2920
+    components:
+    - type: Transform
+      pos: 58.5,44.5
+      parent: 1
 - proto: Binoculars
   entities:
   - uid: 2229
     components:
     - type: Transform
       pos: 36.782543,-20.782784
+      parent: 1
+- proto: BoxBreachingCharges
+  entities:
+  - uid: 1145
+    components:
+    - type: Transform
+      pos: 42.402367,-26.14529
       parent: 1
 - proto: BoxMRE
   entities:
@@ -135095,26 +135144,15 @@ entities:
     - type: Transform
       pos: 17.47506,20.7179
       parent: 1
-- proto: BreachingCharge
+- proto: Bucket
   entities:
-  - uid: 2250
+  - uid: 1149
     components:
     - type: Transform
-      pos: 42.180344,-26.185493
-      parent: 1
-    - type: DeviceLinkSink
-      ports:
-      - Timer
-      - Trigger
-  - uid: 2251
-    components:
-    - type: Transform
-      pos: 42.44597,-26.169857
-      parent: 1
-    - type: DeviceLinkSink
-      ports:
-      - Timer
-      - Trigger
+      parent: 783
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: CableApcExtension
   entities:
   - uid: 2514
@@ -138374,10 +138412,91 @@ entities:
     - type: Transform
       pos: 45.5,32.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 276.07315
+        moles:
+        - 1.5660174
+        - 5.8912077
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 1148
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
   - uid: 783
     components:
     - type: Transform
       pos: 44.5,32.5
+      parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 275.99435
+        moles:
+        - 1.4628075
+        - 5.502943
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 1149
+          - 1150
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+- proto: ClothingHandsGlovesBoxingBlue
+  entities:
+  - uid: 2946
+    components:
+    - type: Transform
+      pos: 48.659714,44.54844
+      parent: 1
+- proto: ClothingHandsGlovesBoxingRed
+  entities:
+  - uid: 2947
+    components:
+    - type: Transform
+      pos: 48.904327,44.328133
       parent: 1
 - proto: CrateMaterialsBasicFilled
   entities:
@@ -138419,13 +138538,6 @@ entities:
     components:
     - type: Transform
       pos: 43.5,-30.5
-      parent: 1
-- proto: CrateSecgearFilledBarbwire
-  entities:
-  - uid: 1136
-    components:
-    - type: Transform
-      pos: 55.5,39.5
       parent: 1
 - proto: CurtainsRedOpen
   entities:
@@ -138523,6 +138635,23 @@ entities:
     - type: Transform
       pos: 42.5,5.5
       parent: 1
+- proto: EntrenchingTool
+  entities:
+  - uid: 2932
+    components:
+    - type: Transform
+      pos: 54.45023,39.238358
+      parent: 1
+    - type: Prying
+      enabled: True
+    - type: Tool
+      qualities:
+      - Digging
+      - Prying
+      - Hammering
+      - Cutting
+      - Slicing
+      - Sawing
 - proto: FenceWoodHighCorner
   entities:
   - uid: 1013
@@ -139088,13 +139217,6 @@ entities:
     - type: Transform
       pos: 39.338337,14.766607
       parent: 1
-- proto: FUBAR
-  entities:
-  - uid: 2249
-    components:
-    - type: Transform
-      pos: 42.44597,-26.216766
-      parent: 1
 - proto: GracePeriodAnnouncerSpawner5SWAT
   entities:
   - uid: 2212
@@ -139421,6 +139543,18 @@ entities:
     - type: Transform
       pos: 14.5,14.5
       parent: 1
+- proto: MagazineRifleM14
+  entities:
+  - uid: 2935
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 36.820923,-21.737934
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+          ents: []
 - proto: MagazineRifleSTANAG
   entities:
   - uid: 1131
@@ -139457,6 +139591,13 @@ entities:
       parent: 1
 - proto: MedkitFilled
   entities:
+  - uid: 1148
+    components:
+    - type: Transform
+      parent: 782
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 2247
     components:
     - type: Transform
@@ -139491,6 +139632,13 @@ entities:
     - type: Transform
       pos: 53.5,10.5
       parent: 1
+  - uid: 1150
+    components:
+    - type: Transform
+      parent: 783
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: N14CrateTrashcart
   entities:
   - uid: 1001
@@ -139935,42 +140083,36 @@ entities:
       parent: 1
 - proto: N14FitnessWeightLifter
   entities:
-  - uid: 1145
+  - uid: 2249
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 42.5,44.5
-      parent: 1
-  - uid: 1147
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 41.5,44.5
       parent: 1
-  - uid: 1148
+  - uid: 2911
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 43.5,44.5
+      parent: 1
+  - uid: 2912
+    components:
+    - type: Transform
+      pos: 42.5,44.5
       parent: 1
 - proto: N14FitnessWeightsBench1
   entities:
-  - uid: 1149
+  - uid: 2140
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 45.5,44.5
       parent: 1
-  - uid: 1150
+  - uid: 2250
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 46.5,44.5
       parent: 1
-  - uid: 1151
+  - uid: 2251
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
       pos: 47.5,44.5
       parent: 1
 - proto: N14RugMatRubber1
@@ -140429,6 +140571,11 @@ entities:
     - type: Transform
       pos: 53.5,10.5
       parent: 1
+  - uid: 2927
+    components:
+    - type: Transform
+      pos: 48.5,29.5
+      parent: 1
 - proto: Rack
   entities:
   - uid: 989
@@ -140617,6 +140764,11 @@ entities:
     - type: Transform
       pos: 15.5,20.5
       parent: 1
+  - uid: 2940
+    components:
+    - type: Transform
+      pos: 17.5,14.5
+      parent: 1
 - proto: RandomAmmoMapMidTierNATO
   entities:
   - uid: 2260
@@ -140677,6 +140829,11 @@ entities:
     components:
     - type: Transform
       pos: 33.5,7.5
+      parent: 1
+  - uid: 2944
+    components:
+    - type: Transform
+      pos: 45.5,29.5
       parent: 1
 - proto: RandomClothingMapLowTierIndustrial
   entities:
@@ -140844,6 +141001,55 @@ entities:
     - type: Transform
       pos: 11.5,12.5
       parent: 1
+- proto: RandomGearMapLowTierUNI
+  entities:
+  - uid: 2925
+    components:
+    - type: Transform
+      pos: 53.5,44.5
+      parent: 1
+  - uid: 2926
+    components:
+    - type: Transform
+      pos: 58.5,44.5
+      parent: 1
+- proto: RandomGearMapMidTierUNI
+  entities:
+  - uid: 2914
+    components:
+    - type: Transform
+      pos: 35.5,14.5
+      parent: 1
+  - uid: 2921
+    components:
+    - type: Transform
+      pos: 57.5,44.5
+      parent: 1
+  - uid: 2922
+    components:
+    - type: Transform
+      pos: 56.5,44.5
+      parent: 1
+  - uid: 2923
+    components:
+    - type: Transform
+      pos: 55.5,44.5
+      parent: 1
+  - uid: 2924
+    components:
+    - type: Transform
+      pos: 54.5,44.5
+      parent: 1
+  - uid: 2928
+    components:
+    - type: Transform
+      pos: 8.5,5.5
+      parent: 1
+  - uid: 2929
+    components:
+    - type: Transform
+      pos: 22.5,5.5
+      parent: 1
 - proto: RandomWeaponMapHighTierUS
   entities:
   - uid: 1139
@@ -140851,17 +141057,59 @@ entities:
     - type: Transform
       pos: 54.5,42.5
       parent: 1
-- proto: RandomWeaponMapLowTierUS
+- proto: RandomWeaponMapLowTierRU
   entities:
-  - uid: 1121
+  - uid: 2936
     components:
     - type: Transform
-      pos: 42.5,37.5
+      pos: 52.5,6.5
       parent: 1
+  - uid: 2942
+    components:
+    - type: Transform
+      pos: 6.5,14.5
+      parent: 1
+- proto: RandomWeaponMapLowTierUS
+  entities:
   - uid: 1123
     components:
     - type: Transform
       pos: 42.5,35.5
+      parent: 1
+  - uid: 1502
+    components:
+    - type: Transform
+      pos: 52.5,10.5
+      parent: 1
+  - uid: 2933
+    components:
+    - type: Transform
+      pos: 3.5,7.5
+      parent: 1
+  - uid: 2937
+    components:
+    - type: Transform
+      pos: 33.5,12.5
+      parent: 1
+  - uid: 2938
+    components:
+    - type: Transform
+      pos: 16.5,20.5
+      parent: 1
+  - uid: 2939
+    components:
+    - type: Transform
+      pos: 31.5,21.5
+      parent: 1
+  - uid: 2941
+    components:
+    - type: Transform
+      pos: 14.5,5.5
+      parent: 1
+  - uid: 2943
+    components:
+    - type: Transform
+      pos: 48.5,29.5
       parent: 1
 - proto: RandomWeaponMapMidTierUS
   entities:
@@ -140956,6 +141204,13 @@ entities:
     components:
     - type: Transform
       pos: 54.549065,39.186275
+      parent: 1
+- proto: SecBreachingHammer
+  entities:
+  - uid: 1147
+    components:
+    - type: Transform
+      pos: 42.365673,-26.230965
       parent: 1
 - proto: ShelfStore
   entities:
@@ -141424,6 +141679,11 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 43.0673,-25.250408
       parent: 1
+  - uid: 2930
+    components:
+    - type: Transform
+      pos: 36.78423,-21.737934
+      parent: 1
 - proto: TableWood
   entities:
   - uid: 708
@@ -141601,6 +141861,11 @@ entities:
     components:
     - type: Transform
       pos: 52.5,6.5
+      parent: 1
+  - uid: 2945
+    components:
+    - type: Transform
+      pos: 44.5,27.5
       parent: 1
 - proto: TargetHuman
   entities:
@@ -143659,6 +143924,20 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 38.5,13.5
+      parent: 1
+- proto: WeaponRifleUSAR15
+  entities:
+  - uid: 2913
+    components:
+    - type: Transform
+      pos: 42.549442,37.405254
+      parent: 1
+- proto: WeaponRifleUSM14
+  entities:
+  - uid: 2934
+    components:
+    - type: Transform
+      pos: 36.78423,-21.566586
       parent: 1
 - proto: Window
   entities:

@@ -27,7 +27,7 @@
   id: BF14TDMGearBlue
   equipment:
     id: USMCRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlue
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
     head: ClothingHeadHatHelmetSecurityBF14
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
@@ -60,7 +60,7 @@
   id: BF14TDMGearRed
   equipment:
     id: VDVRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorRed
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
     head: ClothingHeadHatHelmetSecurityBF14
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltRU

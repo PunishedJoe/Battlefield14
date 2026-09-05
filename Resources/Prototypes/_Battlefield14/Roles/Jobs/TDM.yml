@@ -19,9 +19,11 @@
   special:
   - !type:AddLanguageSpecial
     languagesSpoken:
-    - English
+    - Blue
+    - Esperanto
     languagesUnderstood:
-    - English
+    - Blue
+    - Esperanto
   access:
   - Maintenance
 
@@ -46,8 +48,10 @@
   special:
   - !type:AddLanguageSpecial
     languagesSpoken:
-    - English
+    - Red
+    - Esperanto
     languagesUnderstood:
-    - English
+    - Red
+    - Esperanto
   access:
   - Maintenance

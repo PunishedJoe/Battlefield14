@@ -259,3 +259,21 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/navycombat.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/navycombat.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryColorBlue
+  id: ClothingUniformJumpsuitMilitaryColorBlueTDM
+  name: blue goon uniform
+  description: unremovable identification suit
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryColorRed
+  id: ClothingUniformJumpsuitMilitaryColorRedTDM
+  description: unremovable identification suit
+  name: red goon uniform
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable
