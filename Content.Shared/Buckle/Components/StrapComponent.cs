@@ -78,7 +78,7 @@ public sealed partial class StrapComponent : Component
     /// ID of the alert to show when buckled
     /// </summary>
     [DataField]
-    public ProtoId<AlertPrototype> BuckledAlertType = "Buckled";
+    public ProtoId<AlertPrototype>? BuckledAlertType = "Buckled"; // RMC14 made nullable to allow not showing any alert
 
     /// <summary>
     /// How long it takes to buckle someone else into a chair

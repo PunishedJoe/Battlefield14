@@ -132,7 +132,7 @@ public sealed partial class GunSystem : SharedGunSystem
             }
         }
 
-        CreateEffect(gunUid, args, holder);
+        CreateEffect(gunUid, args, holder, args.Offset, args.OriginOffset); // RMC14
     }
 
     private void OnHitscan(HitscanEvent ev)
@@ -337,7 +337,7 @@ public sealed partial class GunSystem : SharedGunSystem
         PopupSystem.PopupEntity(message, uid.Value, user.Value);
     }
 
-    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null)
+    protected override void CreateEffect(EntityUid gunUid, MuzzleFlashEvent message, EntityUid? user = null, Vector2 offset = default, Vector2 originOffset = default)
     {
         if (!Timing.IsFirstTimePredicted)
             return;
@@ -377,7 +377,8 @@ public sealed partial class GunSystem : SharedGunSystem
         {
             var track = EnsureComp<TrackUserComponent>(ent);
             track.User = user;
-            track.Offset = Vector2.UnitX / 2f;
+            track.Offset = offset; // RMC14
+            track.OriginOffset = originOffset; // RMC14
         }
 
         var lifetime = 0.4f;
