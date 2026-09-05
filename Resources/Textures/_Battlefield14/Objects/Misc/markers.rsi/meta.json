@@ -8,6 +8,12 @@
   },
   "states": [
     {
+      "name": "lowclothing"
+    },
+    {
+      "name": "lowclothingindustrial"
+    },
+    {
       "name": "lowgunus"
     },
     {
@@ -26,10 +32,22 @@
       "name": "highammous"
     },
     {
+      "name": "lowgunde"
+    },
+    {
       "name": "lowgunru"
     },
     {
       "name": "midgunru"
+    },
+    {
+      "name": "midgunde"
+    },
+    {
+      "name": "midclothing"
+    },
+    {
+      "name": "highgunde"
     },
     {
       "name": "highgunru"
