@@ -139,7 +139,7 @@
       entries:
       - id: BreachingCharge
         amount: 10
-      - id: FUBAR # something DE specific
+      - id: BreachingSaw
         amount: 1
       - id: RemoteSignallerM57
         amount: 10

@@ -44,7 +44,8 @@
         name: breaching charges
         points: 2
       - id: FUBAR
-        name: FUBAR
+        points: 1
+      - id: Boltcutters
         points: 1
     - name: M320 shells
       entries:
