@@ -61,9 +61,9 @@
     boundingBox: -0.4, -0.3, 0.4, 0.4
 
 - type: entity
-  parent: BaseStructure
+  parent: Rack
   id: BFShelfWood
-  name: shelf
+  name: wooden shelf
   description: A shelf for storing things on.
   components:
   - type: MeleeSound
@@ -87,10 +87,9 @@
         density: 140
         mask:
         - TableMask
-        - LowImpassable
-        - HighImpassable
         layer:
-        - MachineLayer
+        - TableLayer
+        - LowImpassable
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood
