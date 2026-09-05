@@ -430,7 +430,6 @@
         - ReagentId: Dexalin
           Quantity: 15 # BF14
 
-
 - type: entity
   name: pill canister
   parent: PillCanister
