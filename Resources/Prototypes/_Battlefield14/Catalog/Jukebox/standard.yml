@@ -132,6 +132,24 @@
    path:
     path: /Audio/_Battlefield14/Lobby/einszweipolizei.ogg
 
+ - type: jukebox
+   id: bundeswehr
+   name: Du Musst Zur Bundeswehr - Fee
+   path:
+    path: /Audio/_Battlefield14/Lobby/bundeswehr.ogg
+
+ - type: jukebox
+   id: platzmachen
+   name: Platzmachen - Wulfband
+   path:
+    path: /Audio/_Battlefield14/Jukebox/platzmachen.ogg
+
+ - type: jukebox
+   id: diaryofjane
+   name: The Diary of Jane - Breaking Benjamin
+   path:
+    path: /Audio/_Battlefield14/Jukebox/diaryofjane.ogg
+
 #region Eastern / east associated songs
 
  - type: jukebox

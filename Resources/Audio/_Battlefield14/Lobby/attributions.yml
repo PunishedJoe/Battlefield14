@@ -67,3 +67,8 @@
   license: "Custom"
   copyright: "Blue Oyster Cult"
   source: "https://www.youtube.com/watch?v=Dy4HA3vUv2c"
+
+- files: ["bundeswehr.ogg"]
+  license: "Custom"
+  copyright: "Fee"
+  source: "https://www.youtube.com/watch?v=n4R3g_EScic"
