@@ -3,9 +3,9 @@
   alias:
   - USMCvsVDV
   name: Station control, USMC vs VDV
-  showInVote: true
+  showInVote: false
   description: Larp and frag.
-  minPlayers: 10
+  minPlayers: 20
   rules:
   - NFAdventure
 
@@ -17,7 +17,7 @@
   showInVote: true
   supportedMaps: BF14MapPoolCarrierVCarrier
   description: Carriers fight eachother.
-  minPlayers: 10
+  minPlayers: 15
   rules:
   - NFAdventure
 
@@ -29,7 +29,7 @@
   showInVote: true # objectives not working yet, could poison the view of the map into a mindless TDM
   supportedMaps: BF14MapPoolEarthUSA
   description: Larp and frag.
-  minPlayers: 8
+  minPlayers: 15
   rules:
   - NFAdventure
 
@@ -41,7 +41,7 @@
   showInVote: true # objectives not working yet, could poison the view of the map into a mindless TDM
   supportedMaps: BF14MapPoolEarthRussia
   description: Larp and frag. Russian edition.
-  minPlayers: 8
+  minPlayers: 15
   rules:
   - NFAdventure
 
@@ -58,7 +58,7 @@
   - TenMinuteRestart
 
 - type: gamePreset
-  id: BF14_TDM
+  id: BF14_TDM # respawns
   alias:
     - teamdeathmatch
     - tdm
@@ -71,7 +71,7 @@
     - TeamDeathMatch
 
 - type: gamePreset
-  id: BF14_TDMHardcore
+  id: BF14_TDMHardcore # no respawns
   alias:
     - hardcoreteamdeathmatch
     - teamdeathmatchhardcore

@@ -22,7 +22,7 @@
             SuspectUS: [ 20, 21 ]
             USPDSWATLieutenant: [ 1, 1 ]
             USPDSWATSquadLeader: [ 2, 2 ]
-            USPDSWATOfficer: [ 6, 6 ]
+            USPDSWATOfficer: [ 2, 4 ]
         - type: CEStationZLevels
           mapsAbove:
             - /Maps/_Battlefield14/CivilUnrest/MultiZ/Waco/BF14WacoZMap1.yml

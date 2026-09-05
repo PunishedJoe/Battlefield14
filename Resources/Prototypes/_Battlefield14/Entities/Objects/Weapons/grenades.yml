@@ -792,7 +792,7 @@
     sprite: _Battlefield14/Objects/Weapons/Grenades/fanta.rsi
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeBallBearing
-    capacity: 40
+    capacity: 60
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade

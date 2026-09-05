@@ -25,6 +25,16 @@
     nameSegments:
     - names_tdm_goon_first
     - "Reds"
+  - type: LanguageKnowledge
+    speaks:
+    - Blue
+    - Esperanto
+    - Sign
+    understands:
+    - Blue
+    - Esperanto
+    - Sign
+    - TauCetiBasic
   - type: GhostRole
     name: job-name-goon-tdm-blue
     description: job-description-tdm-goon-blue
@@ -44,6 +54,16 @@
     nameSegments:
     - names_tdm_goon_first
     - "Blues"
+  - type: LanguageKnowledge
+    speaks:
+    - Red
+    - Esperanto
+    - Sign
+    understands:
+    - Red
+    - Esperanto
+    - Sign
+    - TauCetiBasic
   - type: GhostRole
     name: job-name-goon-tdm-red
     description: job-description-tdm-goon-red
@@ -57,6 +77,7 @@
   id: BF14MobScavHardmode
   suffix: BF14
   components:
+  - type: GhostTakeoverAvailable
   - type: RandomMetadata
     nameSegments:
     - names_first_male

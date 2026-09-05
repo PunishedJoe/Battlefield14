@@ -25,8 +25,9 @@
 - type: startingGear
   id: SuspectUSGear
   equipment:
-    belt: WeaponPistolDEUSP45
     neck: ClothingNeckIFFtapeRed
+    ears: ClothingHeadsetAltScav
+    belt: WeaponPistolDEUSP45
     outerClothing: ClothingOuterArmorPlateCarrierCivillian
     back: ClothingBackpackButtpack
     leftarmband: Tourniquet

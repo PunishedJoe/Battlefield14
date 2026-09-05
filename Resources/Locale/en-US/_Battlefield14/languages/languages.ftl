@@ -24,3 +24,11 @@ chat-language-Mexican-name = Mexican
 language-Esperanto-name = Esperanto
 language-Esperanto-description = A conlang that was designed to be easily learned to make foreign policy a smoother process.
 chat-language-Esperanto-name = Esperanto
+
+language-Blue-name = Blueish
+language-Blue-description = The language of the Blue people.
+chat-language-Blue-name = Blueish
+
+language-Red-name = Redistani
+language-Red-description = The language of the Redistani people.
+chat-language-Red-name = Redistani
