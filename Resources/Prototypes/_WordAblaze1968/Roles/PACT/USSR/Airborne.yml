@@ -6,7 +6,7 @@
   weight: 1
   startingGear: WA68_RolePactUssrAirborneReserveGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactReserve"
+  icon: "WA68_JobIconPactRank0"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -23,7 +23,7 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: Ryt.
+      rank: Ryad.
 
 - type: startingGear
   id: WA68_RolePactUssrAirborneReserveGear
@@ -31,12 +31,9 @@
     id: WA68_ClothingDogtagUssrAirborneReserve
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68__ClothingBackpackUssrRD54
     suitstorage: WA68_WeaponUssrSKS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
   storage:
     back:
@@ -46,11 +43,11 @@
   id: WA68_RolePactUssrAirborneInfantry
   name: USSR Airborne infantryman
   description: Be the cannon fodder for Union of Soviet Socialist Republics. Run off alone into combat thinking youre ''him'' and die to a sniper.
-  playTimeTracker: WA68_RolePactUssrAirborneInfantryTime
+  playTimeTracker: WA68_RolePactUssrAirborneInfantRyadime
   weight: 2
   startingGear: WA68_RolePactUssrAirborneInfantryGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactInfantry"
+  icon: "WA68_JobIconPactRank2"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -67,7 +64,7 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: Ryt.
+      rank: Ryad.
 
 - type: startingGear
   id: WA68_RolePactUssrAirborneInfantryGear
@@ -75,12 +72,9 @@
     id: WA68_ClothingDogtagUssrAirborneInfantry
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68__ClothingBackpackUssrRD54
     suitstorage: WA68_WeaponUssrAKMS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
   storage:
     back:
@@ -89,14 +83,14 @@
 - type: job
   id: WA68_RolePactUssrAirborneSquadLeader
   name: USSR Airborne squad leader
-  description: Try to manage you squad of meatshields. Get blamed for everything.
+  description: Try to manage you squad of meatshields. Get blamed for eveRyadhing.
   playTimeTracker: WA68_RolePactUssrAirborneSquadLeaderTime
   weight: 3
   startingGear: WA68_RolePactUssrAirborneSquadLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactLeader"
+  icon: "WA68_JobIconPactRank3"
   requireAdminNotify: false
-  supervisors: Platoon commander
+  supervisors: Company commander
   canBeAntag: false
   special:
   - !type:AddLanguageSpecial
@@ -119,12 +113,9 @@
     id: WA68_ClothingDogtagUssrAirborneSquadLeader
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackRadioUssrR105M
     suitstorage: WA68_WeaponUssrAKMS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
     rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
   storage:
@@ -138,12 +129,12 @@
 - type: job
   id: WA68_RolePactUssrAirbornePlatoonLeader
   name: USSR Airborne platoon commander
-  description: Be a ''mission essential'' asset, yell multiple times at your ''special'' force to line up. Handle gear distribution if no FOB mayor shows up.
+  description: Be a ''mission essential'' asset, yell multiple times at your ''special'' force to line up.
   playTimeTracker: WA68_RolePactUssrAirbornePlatoonLeaderTime
   weight: 4
   startingGear: WA68_RolePactUssrAirbornePlatoonLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactCommander"
+  icon: "WA68_JobIconPactRank4"
   requireAdminNotify: false
   supervisors: Company commander
   canBeAntag: false
@@ -168,12 +159,55 @@
     id: WA68_ClothingDogtagUssrAirbornePlatoonLeader
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackRadioUssrR105M
     suitstorage: WA68_WeaponUssrAKMS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_ClothingHeadHatUssrBeretVDV
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+
+- type: job
+  id: WA68_RolePactUssrAirborneCompanyLeader
+  name: USSR Airborne company commander
+  description: Be a ''mission essential'' asset, yell at your platoon commanders to stop dying to 1 guy, shift blame onto your subordinates.
+  playTimeTracker: WA68_RolePactUssrAirborneCompanyLeaderTime
+  weight: 5
+  startingGear: WA68_RolePactUssrAirborneCompanyLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactRank5"
+  requireAdminNotify: false
+  supervisors: Battalion commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Kap.
+
+- type: startingGear
+  id: WA68_RolePactUssrAirborneCompanyLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUssrAirborneCompanyLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrM1969
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackRadioUssrR105M
+    suitstorage: WA68_WeaponUssrAKMS
     rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
   storage:

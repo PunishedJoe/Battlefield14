@@ -1,13 +1,13 @@
 - type: department
   id: WA_68DepartmentNatoUsaBackline
-  name: US Base Support Unit (Backline)
+  name: US Field Artillery (Artillery)
   description: Lorem ipsum.
   color: "#004990"
   weight: 85
   roles:
-  - WA68_RoleNatoUsaFobMayor
-  - WA68_RoleNatoUsaFobPersonnel
-  editorHidden: true
+  - WA68_RoleNatoUsaArtilleryCannoneer
+  - WA68_RoleNatoUsaArtillerySectionChief
+  editorHidden: false
 
 - type: department
   id: WA_68DepartmentNatoUsaArmy
@@ -16,11 +16,12 @@
   color: "#004990"
   weight: 85
   roles:
+  - WA68_RoleNatoUsaArmyCompanyLeader
   - WA68_RoleNatoUsaArmyPlatoonLeader
   - WA68_RoleNatoUsaArmySquadLeader
   - WA68_RoleNatoUsaArmyInfantry
   - WA68_RoleNatoUsaArmyReserve
-  editorHidden: true
+  editorHidden: false
 
 - type: department
   id: WA_68DepartmentNatoUsaMarine
@@ -29,8 +30,9 @@
   color: "#004990"
   weight: 85
   roles:
+  - WA68_RoleNatoUsaMarineCompanyLeader
   - WA68_RoleNatoUsaMarinePlatoonLeader
   - WA68_RoleNatoUsaMarineSquadLeader
   - WA68_RoleNatoUsaMarineInfantry
   - WA68_RoleNatoUsaMarineReserve
-  editorHidden: true
+  editorHidden: false

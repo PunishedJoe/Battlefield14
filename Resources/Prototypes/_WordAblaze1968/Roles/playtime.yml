@@ -1,8 +1,11 @@
-- type: playTimeTracker
-  id: WA68_RoleNatoUsaFobPersonnelTime
+########################## USA
 
 - type: playTimeTracker
-  id: WA68_RoleNatoUsaFobMayorTime
+  id: WA68_RolePactUssrArtilleryCannoneerTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrArtilleryChiefTime
+
 
 - type: playTimeTracker
   id: WA68_RoleNatoUsaArmyReserveTime
@@ -17,6 +20,9 @@
   id: WA68_RoleNatoUsaArmyPlatoonleaderTime
 
 - type: playTimeTracker
+  id: WA68_RoleNatoUsaArmyCompanyleaderTime
+
+- type: playTimeTracker
   id: WA68_RoleNatoUsaMarineReserveTime
 
 - type: playTimeTracker
@@ -27,6 +33,17 @@
 
 - type: playTimeTracker
   id: WA68_RoleNatoUsaMarinePlatoonleaderTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaMarineCompanyleaderTime
+
+########################## USSR
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArtilleryCannoneerTime
+
+- type: playTimeTracker
+  id: WA68_RoleNatoUsaArtilleryChiefTime
 
 - type: playTimeTracker
   id: WA68_RolePactUssrArmyReserveTime
@@ -41,6 +58,9 @@
   id: WA68_RolePactUssrArmyPlatoonleaderTime
 
 - type: playTimeTracker
+  id: WA68_RolePactUssrArmyCompanyleaderTime
+
+- type: playTimeTracker
   id: WA68_RolePactUssrAirborneReserveTime
 
 - type: playTimeTracker
@@ -51,3 +71,21 @@
 
 - type: playTimeTracker
   id: WA68_RolePactUssrAirbornePlatoonleaderTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrAirborneCompanyleaderTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrMarineReserveTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrMarineInfantryTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrMarineSquadLeaderTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrMarinePlatoonleaderTime
+
+- type: playTimeTracker
+  id: WA68_RolePactUssrMarineCompanyleaderTime

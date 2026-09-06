@@ -6,7 +6,7 @@
   weight: 1
   startingGear: WA68_RolePactUssrArmyReserveGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactReserve"
+  icon: "WA68_JobIconPactRank0"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -23,7 +23,7 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: Ryt.
+      rank: Ryad.
 
 - type: startingGear
   id: WA68_RolePactUssrArmyReserveGear
@@ -31,23 +31,20 @@
     id: WA68_ClothingDogtagUssrArmyReserve
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackUssrVeshmeshok
     suitstorage: WA68_WeaponUssrSKS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
   id: WA68_RolePactUssrArmyInfantry
   name: USSR Army infantryman
   description: Be the cannon fodder for Union of Soviet Socialist Republics. Run off alone into combat thinking youre ''him'' and die to a sniper.
-  playTimeTracker: WA68_RolePactUssrArmyInfantryTime
+  playTimeTracker: WA68_RolePactUssrArmyInfantRyadime
   weight: 2
   startingGear: WA68_RolePactUssrArmyInfantryGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactInfantry"
+  icon: "WA68_JobIconPactRank2"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -64,7 +61,7 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: Ryt.
+      rank: Ryad.
 
 - type: startingGear
   id: WA68_RolePactUssrArmyInfantryGear
@@ -72,25 +69,22 @@
     id: WA68_ClothingDogtagUssrArmyInfantry
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackUssrVeshmeshok
     suitstorage: WA68_WeaponUssrAKM
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
   id: WA68_RolePactUssrArmySquadLeader
   name: USSR Army squad leader
-  description: Try to manage you squad of meatshields. Get blamed for everything.
+  description: Try to manage you squad of meatshields. Get blamed for eveRyadhing.
   playTimeTracker: WA68_RolePactUssrArmySquadLeaderTime
   weight: 3
   startingGear: WA68_RolePactUssrArmySquadLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactLeader"
+  icon: "WA68_JobIconPactRank3"
   requireAdminNotify: false
-  supervisors: Platoon commander
+  supervisors: Company commander
   canBeAntag: false
   special:
   - !type:AddLanguageSpecial
@@ -113,12 +107,9 @@
     id: WA68_ClothingDogtagUssrArmySquadLeader
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackRadioUssrR105M
     suitstorage: WA68_WeaponUssrAKM
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
     rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
   storage:
@@ -131,12 +122,12 @@
 - type: job
   id: WA68_RolePactUssrArmyPlatoonLeader
   name: USSR Army platoon commander
-  description: Be a ''mission essential'' asset, yell multiple times at your ''special'' force to line up. Handle gear distribution if no FOB mayor shows up.
+  description: Be a ''mission essential'' asset, yell multiple times at your ''special'' force to line up.
   playTimeTracker: WA68_RolePactUssrArmyPlatoonLeaderTime
   weight: 4
   startingGear: WA68_RolePactUssrArmyPlatoonLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactCommander"
+  icon: "WA68_JobIconPactRank4"
   requireAdminNotify: false
   supervisors: Company commander
   canBeAntag: false
@@ -161,12 +152,54 @@
     id: WA68_ClothingDogtagUssrArmyPlatoonLeader
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrM1969
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackRadioUssrR105M
     suitstorage: WA68_WeaponUssrAKM
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+
+- type: job
+  id: WA68_RolePactUssrArmyCompanyLeader
+  name: USSR Army company commander
+  description: Be a ''mission essential'' asset, yell at your platoon commanders to stop dying to 1 guy, shift blame onto your subordinates.
+  playTimeTracker: WA68_RolePactUssrArmyCompanyLeaderTime
+  weight: 5
+  startingGear: WA68_RolePactUssrArmyCompanyLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactRank5"
+  requireAdminNotify: false
+  supervisors: Battalion commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Kap.
+
+- type: startingGear
+  id: WA68_RolePactUssrArmyCompanyLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUssrArmyCompanyLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrM1969
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackRadioUssrR105M
+    suitstorage: WA68_WeaponUssrAKM
     rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
   storage:

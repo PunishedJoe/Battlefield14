@@ -6,7 +6,7 @@
   weight: 1
   startingGear: WA68_RolePactUssrMarineReserveGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactReserve"
+  icon: "WA68_JobIconPactRank0"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -23,7 +23,7 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: Ryt.
+      rank: Ryad.
 
 - type: startingGear
   id: WA68_RolePactUssrMarineReserveGear
@@ -31,12 +31,9 @@
     id: WA68_ClothingDogtagUssrMarineReserve
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955FilledSKS
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackUssrVeshmeshok
     suitstorage: WA68_WeaponUssrSKS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_F1_RDG2
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
@@ -47,7 +44,7 @@
   weight: 2
   startingGear: WA68_RolePactUssrMarineInfantryGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactInfantry"
+  icon: "WA68_JobIconPactRank1"
   requireAdminNotify: false
   supervisors: Squad leader
   canBeAntag: false
@@ -64,7 +61,7 @@
       - WA68_Pact
       - WA68_Ussr
     - type: ChatRank
-      rank: Ryt.
+      rank: Ryad.
 
 - type: startingGear
   id: WA68_RolePactUssrMarineInfantryGear
@@ -72,12 +69,9 @@
     id: WA68_ClothingDogtagUssrMarineInfantry
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackUssrVeshmeshok
     suitstorage: WA68_WeaponUssrAKMS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
 
 - type: job
@@ -88,9 +82,9 @@
   weight: 3
   startingGear: WA68_RolePactUssrMarineSquadLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactLeader"
+  icon: "WA68_JobIconPactRank3"
   requireAdminNotify: false
-  supervisors: Platoon commander
+  supervisors: Company commander
   canBeAntag: false
   special:
   - !type:AddLanguageSpecial
@@ -113,12 +107,9 @@
     id: WA68_ClothingDogtagUssrMarineSquadLeader
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackRadioUssrR105M
     suitstorage: WA68_WeaponUssrAKMS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
     rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
   storage:
@@ -131,12 +122,12 @@
 - type: job
   id: WA68_RolePactUssrMarinePlatoonLeader
   name: USSR Marine platoon commander
-  description: Be a ''mission essential'' asset, yell multiple times at your ''special'' force to line up. Handle gear distribution if no FOB mayor shows up.
+  description: Be a ''mission essential'' asset, yell multiple times at your ''special'' force to line up.
   playTimeTracker: WA68_RolePactUssrMarinePlatoonLeaderTime
   weight: 4
   startingGear: WA68_RolePactUssrMarinePlatoonLeaderGear
   alwaysUseSpawner: true
-  icon: "WA68_JobIconPactCommander"
+  icon: "WA68_JobIconPactRank4"
   requireAdminNotify: false
   supervisors: Company commander
   canBeAntag: false
@@ -161,12 +152,54 @@
     id: WA68_ClothingDogtagUssrMarinePlatoonLeader
     shoes: WA68_ClothingShoesBootsGeneric
     jumpsuit: WA68_ClothingUniformUssrKLMK
-    belt: WA68_ClothingBeltMilitaryWebbingUssrM1955Filled6L10
     head: WA68_ClothingHeadHelmetUssrSSh68
     back: WA68_ClothingBackpackRadioUssrR105M
     suitstorage: WA68_WeaponUssrAKMS
-    pocket1: WA68_ClothingPouchGenericIFAKFilledGeneric
-    pocket2: WA68_ClothingPouchGenericGrenadeFilled_RGD5_RDG2
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+
+- type: job
+  id: WA68_RolePactUssrMarineCompanyLeader
+  name: USSR Marine company commander
+  description: Be a ''mission essential'' asset, yell at your platoon commanders to stop dying to 1 guy, shift blame onto your subordinates.
+  playTimeTracker: WA68_RolePactUssrMarineCompanyLeaderTime
+  weight: 5
+  startingGear: WA68_RolePactUssrMarineCompanyLeaderGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactRank5"
+  requireAdminNotify: false
+  supervisors: Battalion commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Kap.
+
+- type: startingGear
+  id: WA68_RolePactUssrMarineCompanyLeaderGear
+  equipment:
+    id: WA68_ClothingDogtagUssrMarineCompanyLeader
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrKLMK
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackRadioUssrR105M
+    suitstorage: WA68_WeaponUssrAKMS
     rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
     leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
   storage:

@@ -51,6 +51,49 @@
     lifetime: 0.6
 
 - type: entity
+  id: WA68_WeaponExplosiveLandmineBase
+  abstract: true
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Pullable
+  - type: MovedByPressure
+  - type: Physics
+    bodyType: Static
+    fixedRotation: true
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+          - LowImpassable
+  - type: Sprite
+    drawdepth: Items
+    sprite: Objects/Misc/landmine.rsi
+    state: landmine
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200 # BF14
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: LandMine
+    sound:
+        path: /Audio/Effects/beep_landmine.ogg
+        params:
+            maxDistance: 10
+
+
+- type: entity
   parent: GrenadeBase
   id: WA68_WeaponGrenadeBase
   suffix: WorldAblaze1968

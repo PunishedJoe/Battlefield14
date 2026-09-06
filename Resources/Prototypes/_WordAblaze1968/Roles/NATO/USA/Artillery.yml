@@ -1,0 +1,85 @@
+- type: job
+  id: WA68_RoleNatoUsaArtilleryCannoneer
+  name: Usa Artillery cannoneer
+  description: Man the large Artillery and provide indirrect fire support to frontline troops.
+  playTimeTracker: WA68_RoleNatoUsaArtilleryCannoneerTime
+  weight: 1
+  startingGear: WA68_RoleNatoUsaArtilleryCannoneerGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoRank2"
+  requireAdminNotify: false
+  supervisors: Section chief
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: Pfc.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaArtilleryCannoneerGear
+  equipment:
+    id: WA68_ClothingDogtagUsaArtilleryCannoneer
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaOG107
+    head: WA68_ClothingHeadHatUsaPatrolCap
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM14
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+  storage:
+    back:
+    - WA68_Binoculars
+
+- type: job
+  id: WA68_RoleNatoUsaArtillerySectionChief
+  name: Usa Artillery section chief
+  description: Command the cannoneers, provide incorrect cords and a wipe out friendly platoon.
+  playTimeTracker: WA68_RoleNatoUsaArtillerySectionChiefTime
+  weight: 2
+  startingGear: WA68_RoleNatoUsaArtillerySectionChiefGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconNatoRank2"
+  requireAdminNotify: false
+  supervisors: Platoon commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    languagesUnderstood:
+    - English
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Nato
+      - WA68_Usa
+    - type: ChatRank
+      rank: SSgt.
+
+- type: startingGear
+  id: WA68_RoleNatoUsaArtillerySectionChiefGear
+  equipment:
+    id: WA68_ClothingDogtagUsaArtillerySectionChief
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUsaOG107
+    head: WA68_ClothingHeadHatUsaPatrolCap
+    back: WA68_ClothingBackpackUsaM1961
+    suitstorage: WA68_WeaponUsaM14
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledM17
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledM1911
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911
+    - WA68_MagazineM1911

@@ -1,65 +1,74 @@
 {
     "version": 1,
     "license": "CC-BY-NC-SA-4.0",
-    "copyright": "Made by JoeHammad",
+    "copyright": "Made by WillyBillyGilly",
     "size": {
         "x": 8,
         "y": 8
     },
     "states": [
     {
-      "name": "NatoReserve"
+      "name": "NatoRank0"
     },
     {
-      "name": "NatoInfantry"
+      "name": "NatoRank1"
     },
     {
-      "name": "NatoLeader"
+      "name": "NatoRank2"
     },
     {
-      "name": "NatoCommander"
+      "name": "NatoRank3"
     },
     {
-      "name": "NatoFobPersonnel"
+      "name": "NatoRank4"
     },
     {
-      "name": "NatoFobMayor"
+      "name": "NatoRank5"
     },
     {
-      "name": "PactReserve"
+      "name": "NatoRank6"
     },
     {
-      "name": "PactInfantry"
+      "name": "PactRank0"
     },
     {
-      "name": "PactLeader"
+      "name": "PactRank1"
     },
     {
-      "name": "PactCommander"
+      "name": "PactRank2"
     },
     {
-      "name": "PactFobPersonnel"
+      "name": "PactRank3"
     },
     {
-      "name": "PactFobMayor"
+      "name": "PactRank4"
     },
     {
-      "name": "Reserve"
+      "name": "PactRank5"
     },
     {
-      "name": "Infantry"
+      "name": "PactRank6"
     },
     {
-      "name": "Leader"
+      "name": "Rank0"
     },
     {
-      "name": "Commander"
+      "name": "Rank1"
     },
     {
-      "name": "FobPersonnel"
+      "name": "Rank2"
     },
     {
-      "name": "FobMayor"
+      "name": "Rank3"
+    },
+    {
+      "name": "Rank4"
+    },
+    {
+      "name": "Rank5"
+    },
+    {
+      "name": "Rank6"
     }
   ]
 }

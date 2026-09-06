@@ -78,7 +78,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 500 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+        Structural: 1000 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
     gibsOnHit: true
   - type: SpawnOnTrigger
     proto: WA68_ExplosionEffect
@@ -175,7 +175,7 @@
   - type: Projectile
     damage:
       types:
-        Structural: 500 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
+        Structural: 1000 # the Heat comp sucks dawg im gonna simulate the HEAT jopper jet like this instead
     gibsOnHit: true
   - type: SpawnOnTrigger
     proto: WA68_ExplosionEffect
@@ -274,8 +274,8 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: WA68_LowYieldExplosion
-    totalIntensity: 110 # center damage 126
-    intensitySlope: 3
+    totalIntensity: 50 # center damage 126
+    intensitySlope: 2.5
     maxIntensity: 100
   - type: StaminaDamageOnCollide
     damage: 100

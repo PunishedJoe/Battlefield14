@@ -100,35 +100,6 @@
   weather: true
 
 - type: tile
-  editorHidden: false
-  id: WA68_FloorCobblePavement
-  name: pevement
-  sprite: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/cobble.png
-  variants: 5
-  placementVariants:
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  - 1.0
-  edgeSpritePriority: 2
-  edgeSprites:
-    SouthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/single_edge_SE.png
-    NorthEast: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/single_edge_NE.png
-    NorthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/single_edge_NW.png
-    SouthWest: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/single_edge_SW.png
-    South: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/double_edge_S.png
-    East: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/double_edge_E.png
-    North: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/double_edge_N.png
-    West: /Textures/_WorldAblaze1968/Structures/Tiles/Cobblestone/double_edge_W.png
-  baseTurf: WA68_FloorDirt
-  isSubfloor: true
-  footstepSounds:
-    collection: FootstepAsteroid
-  heatCapacity: 10000
-  weather: true
-
-- type: tile
   id: WA68_FloorGrass
   editorHidden: false
   name: grass

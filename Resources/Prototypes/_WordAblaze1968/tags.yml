@@ -1,4 +1,7 @@
 - type: Tag
+  id: WA68_WebbingPouch
+
+- type: Tag
   id: WA68_GrenadeThrowable
 
 - type: Tag

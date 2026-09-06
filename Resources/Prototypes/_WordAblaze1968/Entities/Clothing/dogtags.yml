@@ -21,27 +21,29 @@
   - type: StationRecordKeyStorage
 
 ########################## Usa
+############# Artillery
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUsaFobPersonnel
+  id: WA68_ClothingDogtagUsaArtilleryCannoneer
   components:
   - type: Sprite
     layers:
     - state: usa
   - type: PresetIdCard
-    job: WA68_RoleNatoUsaFobPersonnel
+    job: WA68_RoleNatoUsaArtilleryCannoneer
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUsaFobMayor
+  id: WA68_ClothingDogtagUsaArtillerySectionChief
   components:
   - type: Sprite
     layers:
     - state: usa
   - type: PresetIdCard
-    job: WA68_RoleNatoUsaFobMayor
+    job: WA68_RoleNatoUsaArtillerySectionChief
 
+############# ARMY
 - type: entity
   parent: WA68_ClothingDogtagBase
   id: WA68_ClothingDogtagUsaArmyReserve
@@ -84,6 +86,16 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaArmyComanyLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaArmyCompanyLeader
+############# MARINE
+- type: entity
+  parent: WA68_ClothingDogtagBase
   id: WA68_ClothingDogtagUsaMarineReserve
   components:
   - type: Sprite
@@ -122,28 +134,40 @@
   - type: PresetIdCard
     job: WA68_RoleNatoUsaMarinePlatoonLeader
 
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUsaMarineCompanyLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: usa
+  - type: PresetIdCard
+    job: WA68_RoleNatoUsaMarineCompanyLeader
+
 ########################## Ussr
+############# Artillery
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUssrFobPersonnel
+  id: WA68_ClothingDogtagUssrArtilleryCannoneer
   components:
   - type: Sprite
     layers:
-    - state: ussr
+    - state: usa
   - type: PresetIdCard
-    job: WA68_RolePactUssrFobPersonnel
+    job: WA68_RolePactUssrArtilleryCannoneer
 
 - type: entity
   parent: WA68_ClothingDogtagBase
-  id: WA68_ClothingDogtagUssrFobMayor
+  id: WA68_ClothingDogtagUssrArtillerySectionChief
   components:
   - type: Sprite
     layers:
-    - state: ussr
+    - state: usa
   - type: PresetIdCard
-    job: WA68_RolePactUssrFobMayor
+    job: WA68_RolePactUssrArtillerySectionChief
 
+############# ARMY
 - type: entity
   parent: WA68_ClothingDogtagBase
   id: WA68_ClothingDogtagUssrArmyReserve
@@ -186,6 +210,16 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrArmyCompanyLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrArmyCompanyLeader
+############# AIRBORNE
+- type: entity
+  parent: WA68_ClothingDogtagBase
   id: WA68_ClothingDogtagUssrAirborneReserve
   components:
   - type: Sprite
@@ -226,6 +260,16 @@
 
 - type: entity
   parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrAirborneCompanyLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrAirborneCompanyLeader
+############# MARINE
+- type: entity
+  parent: WA68_ClothingDogtagBase
   id: WA68_ClothingDogtagUssrMarineReserve
   components:
   - type: Sprite
@@ -263,3 +307,13 @@
     - state: ussr
   - type: PresetIdCard
     job: WA68_RolePactUssrMarinePlatoonLeader
+
+- type: entity
+  parent: WA68_ClothingDogtagBase
+  id: WA68_ClothingDogtagUssrMarineCompanyLeader
+  components:
+  - type: Sprite
+    layers:
+    - state: ussr
+  - type: PresetIdCard
+    job: WA68_RolePactUssrMarineCompanyLeader

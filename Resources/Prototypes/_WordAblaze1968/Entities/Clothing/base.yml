@@ -1,4 +1,47 @@
 - type: entity
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: WA68_ClothingBeltMilitaryWebbingBase
+  abstract: true
+  suffix: WorldAblaze1968
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Clothing/Usa/Belt/m1967.rsi
+  - type: Clothing
+    sprite: _WorldAblaze1968/Clothing/Usa/Belt/m1967.rsi
+  - type: Item
+    size: Huge
+  - type: ExplosionResistance
+    damageCoefficient: 0
+  - type: Storage
+    maxItemSize: Huge
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,7,1
+    storageOpenSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageCloseSound:
+      collection: BF_Magpouch_Open
+      params:
+        volume: -3
+        variation: 0.125
+    storageInsertSound:
+      collection: BF_Magpouch_Insert
+      params:
+        volume: -1
+        variation: 0.125
+    storageRemoveSound:
+      collection: BF_Magpouch_Remove
+      params:
+        volume: -1
+        variation: 0.125
+    whitelist:
+      tags:
+      - WA68_WebbingPouch
+
+- type: entity
   parent: ClothingMaskBase
   id: WA68_ClothingGasMaskBase
   abstract: true
@@ -34,11 +77,11 @@
     layers:
       - state: medium_ammo_mag
   - type: Item
-    size: Small
+    size: Huge
     shape:
     - 0,0,5,5
   - type: Storage
-    maxItemSize: Small
+    maxItemSize: Huge
     grid:
     - 0,0,2,1
     storageOpenSound:

@@ -1,0 +1,237 @@
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGeneral
+  name: general pouch
+  description: A small pouch designed to hold miscelanius items a soilder might need.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/pouches.rsi
+    layers:
+      - state: general1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,1
+  - type: Tag
+    tags:
+      - WA68_WebbingPouch
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchLargeMagazine
+  name: large magazine pouch
+  description: A large pouch designed to hold large magazines such as machinegun boxes and drums.
+  components:
+  - type: Item
+    shape:
+    - 0,0,2,1
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/pouches.rsi
+    layers:
+      - state: largemag1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,1
+  - type: Tag
+    tags:
+      - WA68_WebbingPouch
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchMagazine
+  name: magazine pouch
+  description: A triad of pouches designed to hold magazines such as rifle magazines.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/pouches.rsi
+    layers:
+      - state: mag3
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,1
+  - type: Tag
+    tags:
+      - WA68_WebbingPouch
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchSmallMagazine
+  name: small magazine pouch
+  description: A tetrad of pouches designed to hold small magazines such as pistol magazines.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,0
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/pouches.rsi
+    layers:
+      - state: smallmag4
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,0
+  - type: Tag
+    tags:
+      - WA68_WebbingPouch
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchIFAK
+  name: IFAK pouch
+  description: A pouch designed to hold a Individials soilder First Aid Kit (IFAK).
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/pouches.rsi
+    layers:
+      - state: med1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,1,2
+  - type: Tag
+    tags:
+      - WA68_WebbingPouch
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchSurgery
+  name: field surgery pouch
+  description: A large pouch designed to hold a field surgery kit.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,1
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/pouches.rsi
+    layers:
+      - state: surgery1
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,1
+  - type: Tag
+    tags:
+      - WA68_WebbingPouch
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGrenade
+  name: grenade pouch
+  description: A triad of pouches designed to hold handgrenades.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,0
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/pouches.rsi
+    layers:
+      - state: grenade3
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,2,1
+  - type: Tag
+    tags:
+      - WA68_WebbingPouch
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchFlare
+  name: flare pouch
+  description: A tetriad pf pouches designed to hold signal flares.
+  components:
+  - type: Item
+    shape:
+    - 0,0,1,0
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/pouches.rsi
+    layers:
+      - state: flare4
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,1
+  - type: Tag
+    tags:
+      - WA68_WebbingPouch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGenericPistolMag
+  name: pistol mag pouch
+  description: A pouch designed to hold 5 pistol magazines.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+      - state: large_pistol_mag
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,4,0
+    whitelist:
+      tags:
+      - WA68_MagazineSmall
+
+- type: entity
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGenericGrenade
+  name: grenade pouch
+  description: A pouch designed to hold 5 grenades.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+      - state: utility
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,4,1
+    whitelist:
+      tags:
+      - WA68_GrenadeThrowable
+      - WA68_GrenadeRound
+
+- type: entity # IFAKs werent really a thing in 1968 but it would be fucking cancer if you didnt have one
+  parent: WA68_ClothingPouchBase
+  id: WA68_ClothingPouchGenericIFAK
+  name: first aid pouch
+  description: A firt aid pouch designed to hold the essential medical aid.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi # TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO TODO
+    layers:
+      - state: small_firstaid
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,1,2
+    whitelist:
+      tags:
+      - WA68_MedicalItemSmall

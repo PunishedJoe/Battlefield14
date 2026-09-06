@@ -1,13 +1,13 @@
 - type: department
   id: WA_68DepartmentPactUssrBackline
-  name: USSR batalyon material'nogo obespecheniya (Backline)
+  name: USSR Raptnyye voyska i artilleriya (Artillery)
   description: Lorem ipsum.
   color: "#ac3232"
   weight: 85
   roles:
-  - WA68_RolePactUssrFobMayor
-  - WA68_RolePactUssrFobPersonnel
-  editorHidden: true
+  - WA68_RolePactUssrArtilleryCannoneer
+  - WA68_RolePactUssrArtillerySectionChief
+  editorHidden: false
 
 - type: department
   id: WA_68DepartmentPactUssrArmy
@@ -16,11 +16,12 @@
   color: "#ac3232"
   weight: 85
   roles:
+  - WA68_RolePactUssrArmyCompanyLeader
   - WA68_RolePactUssrArmyPlatoonLeader
   - WA68_RolePactUssrArmySquadLeader
   - WA68_RolePactUssrArmyInfantry
   - WA68_RolePactUssrArmyReserve
-  editorHidden: true
+  editorHidden: false
 
 - type: department
   id: WA_68DepartmentPactUssrMarine
@@ -29,11 +30,12 @@
   color: "#ac3232"
   weight: 85
   roles:
+  - WA68_RolePactUssrMarineCompanyLeader
   - WA68_RolePactUssrMarinePlatoonLeader
   - WA68_RolePactUssrMarineSquadLeader
   - WA68_RolePactUssrMarineInfantry
   - WA68_RolePactUssrMarineReserve
-  editorHidden: true
+  editorHidden: false
 
 - type: department
   id: WA_68DepartmentPactUssrAirborne
@@ -42,8 +44,9 @@
   color: "#ac3232"
   weight: 85
   roles:
+  - WA68_RolePactUssrAirborneCompanyLeader
   - WA68_RolePactUssrAirbornePlatoonLeader
   - WA68_RolePactUssrAirborneSquadLeader
   - WA68_RolePactUssrAirborneInfantry
   - WA68_RolePactUssrAirborneReserve
-  editorHidden: true
+  editorHidden: false

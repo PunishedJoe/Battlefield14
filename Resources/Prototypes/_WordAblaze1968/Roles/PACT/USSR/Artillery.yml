@@ -1,0 +1,85 @@
+- type: job
+  id: WA68_RolePactUssrArtilleryCannoneer
+  name: USSR Artillery cannoneer
+  description: Man the large Artillery and provide indirrect fire support to frontline troops.
+  playTimeTracker: WA68_RolePactUssrArtilleryCannoneerTime
+  weight: 1
+  startingGear: WA68_RolePactUssrArtilleryCannoneerGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactRank2"
+  requireAdminNotify: false
+  supervisors: Section chief
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: Yef.
+
+- type: startingGear
+  id: WA68_RolePactUssrArtilleryCannoneerGear
+  equipment:
+    id: WA68_ClothingDogtagUssrArtilleryCannoneer
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrM1969
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackUssrVeshmeshok
+    suitstorage: WA68_WeaponUssrSKS
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  storage:
+    back:
+    - WA68_Binoculars
+
+- type: job
+  id: WA68_RolePactUssrArtillerySectionChief
+  name: USSR Artillery section chief
+  description: Command the cannoneers, provide incorrect cords and a wipe out friendly platoon.
+  playTimeTracker: WA68_RolePactUssrArtillerySectionChiefTime
+  weight: 2
+  startingGear: WA68_RolePactUssrArtillerySectionChiefGear
+  alwaysUseSpawner: true
+  icon: "WA68_JobIconPactRank2"
+  requireAdminNotify: false
+  supervisors: Platoon commander
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    languagesUnderstood:
+    - Russian
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - WA68_Pact
+      - WA68_Ussr
+    - type: ChatRank
+      rank: SSzh.
+
+- type: startingGear
+  id: WA68_RolePactUssrArtillerySectionChiefGear
+  equipment:
+    id: WA68_ClothingDogtagUssrArtillerySectionChief
+    shoes: WA68_ClothingShoesBootsGeneric
+    jumpsuit: WA68_ClothingUniformUssrM1969
+    head: WA68_ClothingHeadHelmetUssrSSh68
+    back: WA68_ClothingBackpackUssrVeshmeshok
+    suitstorage: WA68_WeaponUssrSKS
+    rightarmband: WA68_ClothingArmbandGenericHolsterFilledPM
+    leftarmband: WA68_ClothingArmbandGenericGasmaskFilledShM41M
+  storage:
+    back:
+    - WA68_Binoculars
+    - WA68_MagazinePM
+    - WA68_MagazinePM
+    - WA68_MagazinePM

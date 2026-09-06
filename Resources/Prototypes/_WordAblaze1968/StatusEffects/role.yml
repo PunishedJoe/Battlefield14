@@ -1,126 +1,146 @@
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoFobPersonnel
+  id: WA68_JobIconNatoRank0
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoFobPersonnel
+    state: NatoRank0
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoFobMayor
+  id: WA68_JobIconNatoRank1
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoFobMayor
+    state: NatoRank1
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoReserve
+  id: WA68_JobIconNatoRank2
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoReserve
+    state: NatoRank2
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoInfantry
+  id: WA68_JobIconNatoRank3
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoInfantry
-
-
-- type: jobIcon
-  parent: JobIcon
-  id: WA68_JobIconNatoLeader
-  icon:
-    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoLeader
+    state: NatoRank3
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconNatoCommander
+  id: WA68_JobIconNatoRank4
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: NatoCommander
+    state: NatoRank4
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactFobPersonnel
+  id: WA68_JobIconNatoRank5
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactFobPersonnel
+    state: NatoRank5
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactFobMayor
+  id: WA68_JobIconNatoRank6
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactFobMayor
+    state: NatoRank6
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactReserve
+  id: WA68_JobIconPactRank0
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactReserve
+    state: PactRank0
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactInfantry
+  id: WA68_JobIconPactRank1
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactInfantry
+    state: PactRank1
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactLeader
+  id: WA68_JobIconPactRank2
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactLeader
+    state: PactRank2
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconPactCommander
+  id: WA68_JobIconPactRank3
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: PactCommander
+    state: PactRank3
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconFobPersonnel
+  id: WA68_JobIconPactRank4
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: FobPersonnel
+    state: PactRank4
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconFobMayor
+  id: WA68_JobIconPactRank5
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: FobMayor
+    state: PactRank5
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconReserve
+  id: WA68_JobIconPactRank6
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: Reserve
+    state: PactRank6
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconInfantry
+  id: WA68_JobIconRank0
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: Infantry
+    state: Rank0
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconLeader
+  id: WA68_JobIconRank1
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: Leader
+    state: Rank1
 
 - type: jobIcon
   parent: JobIcon
-  id: WA68_JobIconCommander
+  id: WA68_JobIconRank2
   icon:
     sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
-    state: Commander
+    state: Rank2
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconRank3
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: Rank3
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconRank4
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: Rank4
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconRank5
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: Rank5
+
+- type: jobIcon
+  parent: JobIcon
+  id: WA68_JobIconRank6
+  icon:
+    sprite: /Textures/_WorldAblaze1968/Interface/role_icons.rsi
+    state: Rank6

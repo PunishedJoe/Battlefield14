@@ -1,0 +1,93 @@
+- type: entity
+  parent: BaseItem
+  id: WA68_StructureTrapTripwire
+  name: tripwire kit
+  description: 4 sticks and a thin but sturdy string. Can be used to set up traps
+  suffix: Disarmed, Placeable
+  components:
+  - type: Sprite
+    drawdepth: Items
+    sprite: _WorldAblaze1968/Structures/Traps/tripwire.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: WA68_StructureTrapTripwirePlaced
+    doAfter: 3
+    removeOnInteract: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Left click on a tile to set up.
+        color: green
+        requireDetailRange: true
+
+- type: entity
+  name: tripwire
+  id: WA68_StructureTrapTripwirePlaced
+  description: 4 sticks and a thin but sturdy string. If youre seeing this you probably almost walked into it.
+  parent: BaseStructureDisableAnchoring
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: RequiresGrid
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+          - LowImpassable
+  - type: Sprite
+    drawdepth: Items
+    sprite: _WorldAblaze1968/Structures/Traps/tripwire.rsi
+    layers:
+    - state: placed
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: LandMine
+    sound:
+        path: /Audio/Weapons/Guns/Cock/revolver_cock.ogg
+  - type: StepTrigger
+    requiredTriggeredSpeed: 2.6
+    stepOn: true
+  - type: DeviceLinkSource
+    ports: [ Pressed ]
+  - type: ExtendDescription
+    descriptionList:
+      - description: Can be disassembled with wirecutters.
+        color: green
+        requireDetailRange: true
+  - type: Construction
+    graph: WA68_StructureTrapTripwireGraph
+    node: start
+    deconstructionTarget: start
+
+- type: constructionGraph
+  id: WA68_StructureTrapTripwireGraph
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: WA68_StructureTrapTripwireGraph
+          completed:
+            - !type:AdminLog
+            - !type:SpawnPrototype
+              prototype: WA68_StructureTrapTripwire
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Cutting
+              doAfter: 2

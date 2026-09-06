@@ -1,0 +1,89 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Made by WillyBillyGilly",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+    {
+      "name": "largemag0"
+    },
+    {
+      "name": "largemag1"
+    },
+    {
+      "name": "mag0"
+    },
+    {
+      "name": "mag1"
+    },
+    {
+      "name": "mag2"
+    },
+    {
+      "name": "mag3"
+    },
+    {
+      "name": "smallmag0"
+    },
+    {
+      "name": "smallmag1"
+    },
+    {
+      "name": "smallmag2"
+    },
+    {
+      "name": "smallmag3"
+    },
+    {
+      "name": "smallmag4"
+    },
+    {
+      "name": "grenade0"
+    },
+    {
+      "name": "grenade1"
+    },
+    {
+      "name": "grenade2"
+    },
+    {
+      "name": "grenade3"
+    },
+    {
+      "name": "med0"
+    },
+    {
+      "name": "med1"
+    },
+    {
+      "name": "surgery0"
+    },
+    {
+      "name": "surgery1"
+    },
+    {
+      "name": "general0"
+    },
+    {
+      "name": "general1"
+    },
+    {
+      "name": "flare0"
+    },
+    {
+      "name": "flare1"
+    },
+    {
+      "name": "flare2"
+    },
+    {
+      "name": "flare3"
+    },
+    {
+      "name": "flare4"
+    }
+  ]
+}
