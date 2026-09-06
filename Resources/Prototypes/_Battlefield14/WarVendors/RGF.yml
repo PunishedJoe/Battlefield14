@@ -50,6 +50,8 @@
         name: kaolin powder packet
       - id: DefibrillatorDisposable
         name: disposable defibrillator
+      - id: Pervitin
+        name: pervitin pills
     - name: Backpack/belt
       choices: { BF14Storage: 2 }
       entries:

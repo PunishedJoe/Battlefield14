@@ -94,6 +94,12 @@
   name: box art
   artist: WillyBillyGilly
 
+- type: lobbyBackground
+  id: BackgroundSuddih
+  background: /Textures/_Battlefield14/LobbyScreens/tungtungtungsahur.jpg
+  name: Suddih Town Incident
+  artist: Belwoods
+
 #- type: lobbyBackground # IDF, not yet
 #  id: BackgroundWestBank
 #  background: /Textures/_Battlefield14/LobbyScreens/westbank.jpg
