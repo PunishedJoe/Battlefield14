@@ -1,0 +1,13 @@
+- type: entity
+  abstract: true
+  id: ClothingUniformFoldableBaseImpstation # Impstation suffix because DV already has its own ClothingUniformFoldableBase
+  components:
+  - type: Foldable
+    canFoldInsideContainer: true
+    unfoldVerbText: unflip-verb-clothing-watch
+    foldVerbText: flip-verb-clothing-watch
+  - type: FoldableClothing # this is so raped, whoever made this, is a fucking retard, this is so fucked, i try changing the name from folded to flip, and it all of the fucking sudden, fatal error, never fucking code again
+    foldedEquippedPrefix: folded
+
+
+# This is so fucked, I try changing the name from folded to flip, when i change it to flip, it breaks the game, so i have to keep it as folded, it's retarded, i know...

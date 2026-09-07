@@ -368,7 +368,6 @@
   - LoadoutHandsGlovesSoldierCombat
   - LoadoutHandsGlovesSoldierMercCombat
   - LoadoutHandsGlovesSoldierMercFingerless
-  - LoadoutHandsGlovesSoldierWristwatch
 
 - type: loadoutGroup
   id: BF_WPSGloves
@@ -377,7 +376,6 @@
   loadouts:
   - LoadoutHandsGlovesSoldierBlack
   - LoadoutHandsGlovesSoldierFingerless
-  - LoadoutHandsGlovesSoldierWristwatch
 
 #region FEET
 
@@ -471,7 +469,6 @@
   - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
   - LoadoutNeckCasioF91W
-  - LoadoutNeckCasioF91WCag
   - LoadoutNeckWristwatch
 
 - type: loadoutGroup
@@ -491,7 +488,6 @@
   - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
   - LoadoutNeckCasioF91W
-  - LoadoutNeckCasioF91WCag
   - LoadoutNeckWristwatch
 
 - type: loadoutGroup

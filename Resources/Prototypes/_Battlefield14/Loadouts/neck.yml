@@ -68,11 +68,6 @@
     neck: ClothingNeckCasioF91W
 
 - type: loadout
-  id: LoadoutNeckCasioF91WCag
-  equipment:
-    neck: ClothingNeckCasioF91WCag
-
-- type: loadout
   id: LoadoutNeckWristwatch
   equipment:
     neck: Wristwatch
