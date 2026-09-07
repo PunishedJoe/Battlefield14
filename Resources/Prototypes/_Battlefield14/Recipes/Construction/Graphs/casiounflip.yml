@@ -1,0 +1,16 @@
+- type: constructionGraph
+  id: UnflipWatch
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: UnflipWatch
+          steps:
+            - tag: ClothingNeckCasioF91WCag
+              name: a cagified Casio F91W
+              icon:
+                sprite: _Battlefield14/Clothing/Neck/CasioWatchCag.rsi
+                state: icon
+              doAfter: 1
+    - node: UnflipWatch
+      entity: ClothingNeckCasioF91W

@@ -17,7 +17,7 @@
   - type: Clothing
     sprite: Objects/Devices/wristwatch.rsi
     slots:
-    - gloves
+    - neck #BF14 change
   - type: Appearance
   - type: Damageable
     damageContainer: Inorganic

@@ -354,7 +354,7 @@
   - LoadoutBackRucksackBlack
   - MonoSecurityGuardBackpack
 
-#region ARMS 
+#region ARMS
 
 #region HANDS
 
@@ -470,6 +470,9 @@
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
+  - LoadoutNeckCasioF91W
+  - LoadoutNeckCasioF91WCag
+  - LoadoutNeckWristwatch
 
 - type: loadoutGroup
   id: BF_MiscItemsPACT
@@ -487,6 +490,9 @@
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
+  - LoadoutNeckCasioF91W
+  - LoadoutNeckCasioF91WCag
+  - LoadoutNeckWristwatch
 
 - type: loadoutGroup
   id: BF_MiscItemsIND
@@ -501,6 +507,8 @@
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsMREFlask
+  - LoadoutNeckCasioF91W
+  - LoadoutNeckWristwatchGold #flex on the HATO and PACToids with your hard earned swag, biach
 
 - type: loadoutGroup
   id: BF_Map
