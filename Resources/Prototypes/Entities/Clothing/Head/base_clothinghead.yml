@@ -67,7 +67,7 @@
     enabled: false
     radius: 3
     energy: 1
-    mask: /Textures/Effects/LightMasks/cone.png
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png # BF14
     autoRot: true
     netsync: false
   - type: Appearance
