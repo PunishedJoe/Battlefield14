@@ -14,7 +14,7 @@
     equippedPrefix: off
   - type: PointLight
     enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png # BF14
     autoRot: true
     radius: 7
     netsync: false

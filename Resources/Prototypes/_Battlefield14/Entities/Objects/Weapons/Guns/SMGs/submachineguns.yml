@@ -114,17 +114,20 @@
   id: WeaponSubmachinegunDEMP5A4
   description: Feather-light recoil, swag, and a high rate of fire; everything you need in a submachine gun, except for a massive flashlight mounted on top.
   components:
-#  - type: Item
-#    storedSprite:
-#      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
-#      state: icon-storage
-  - type: Sprite
+  - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A4
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+    - state: front-base
+    - state: stock-full
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
     clothingVisuals:
@@ -191,21 +194,111 @@
   - type: Appearance
 
 - type: entity
-  name: MP5A5
+  name: MP5A4 (flashlight)
   parent: WeaponSubmachinegunDEMP5A4
-  id: WeaponSubmachinegunDEMP5A5
+  id: WeaponSubmachinegunDEMP5A4Flashlight
+  suffix: doesn't work yet # for some reason the light turns off when you shoot the gun and won't ever come back on
   components:
-#  - type: Item
-#    storedSprite:
-#      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
-#      state: icon-storage
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A4
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+    - state: front-flashlight
+    - state: stock-full
+    - state: flashlight-overlay
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: HandheldLight
+    addPrefix: false
+    blinkingBehaviourId: blinking
+    radiatingBehaviourId: radiating
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        minValue: 0.1
+        maxValue: 2.0
+        isLooped: true
+  - type: PointLight
+    enabled: false
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
+    autoRot: true
+    radius: 8
+    netsync: false
+  - type: ToggleableLightVisuals # Needed for this to actually show a light in-world by the way
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 1
+        startingItem: PowerCellMedium
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMP5
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 3
+        whitelist:
+          tags:
+            - MagazinePistolMP5
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 2
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      cell_slot: !type:ContainerSlot
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+
+- type: entity
+  name: MP5A5
+  parent: WeaponSubmachinegunDEMP5A4
+  id: WeaponSubmachinegunDEMP5A5
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: front-base
+    - state: stock-collapsing
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
     clothingVisuals:
@@ -218,13 +311,20 @@
   id: WeaponSubmachinegunDEMP5SD5
   description: For a long while this was your go-to for full auto suppressed action, even surviving when people realised you could just make an AR15 shorter, until they figured out you could put a suppressor on that too.
   components:
-  - type: Sprite
+  - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5SD5.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A5
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+    - state: front-SD
+    - state: stock-full
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5SD5.rsi
     clothingVisuals:
@@ -234,7 +334,7 @@
     soundGunshot:
       collection: BF_MP5_Gunshots_SUPP
       params:
-        volume: -12
+        volume: -9
         variation: 0.125
         range: 10
 
@@ -243,17 +343,20 @@
   parent: WeaponSubmachinegunDEMP5SD5
   id: WeaponSubmachinegunDEMP5SD6
   components:
-#  - type: Item
-#    storedSprite:
-#      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
-#      state: icon-storage
-  - type: Sprite
+  - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5SD6.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP5A6
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+    - state: front-SD
+    - state: stock-collapsing
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5SD6.rsi
     clothingVisuals:

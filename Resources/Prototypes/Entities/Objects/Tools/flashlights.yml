@@ -59,7 +59,7 @@
     storedRotation: -90
   - type: PointLight
     enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png # BF14
     autoRot: true
     radius: 6
     netsync: false

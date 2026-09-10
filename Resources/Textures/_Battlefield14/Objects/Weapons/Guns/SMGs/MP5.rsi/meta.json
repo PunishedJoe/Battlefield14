@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "size": {
+    "x": 48,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon-MP5A4"
+    },
+    {
+      "name": "icon-MP5A5"
+    },
+    {
+      "name": "icon-MP5SD5"
+    },
+    {
+      "name": "icon-MP5SD6"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "bolt-open"
+    },
+    {
+      "name": "mag-0"
+    },
+    {
+      "name": "front-base"
+    },
+    {
+      "name": "front-flashlight"
+    },
+    {
+      "name": "front-SD"
+    },
+    {
+      "name": "stock-full"
+    },
+    {
+      "name": "stock-collapsing"
+    },
+    {
+      "name": "flashlight-overlay"
+    }
+  ]
+}
