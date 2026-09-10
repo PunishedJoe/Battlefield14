@@ -508,6 +508,7 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+      - state: holosight
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36K.rsi
   - type: GunWieldBonus
@@ -567,7 +568,7 @@
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
-      state: M68
+      state: eotech
   - type: ExtendDescription
     descriptionList:
       - description: Takes G36 pattern magazines.
@@ -636,6 +637,7 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+      - state: holosight
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36C.rsi
   - type: GunWieldBonus
@@ -652,10 +654,6 @@
       params:
         volume: -5
         variation: 0.125
-  - type: WieldedCrosshair
-    rsi:
-      sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
-      state: all
 
 - type: entity
   name: G36C SUPP.
@@ -672,6 +670,7 @@
       - state: stripes
       - state: supp
         offset: 0.22, 0
+      - state: holosight
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36C.rsi
   - type: Gun
