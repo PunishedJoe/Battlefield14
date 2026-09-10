@@ -143,6 +143,17 @@
 
 - type: entity
   parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEMP5A4
+  suffix: MP5A4
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunDEMP5A4
+    - id: MagazineSubmachinegunMP5
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
   id: BF14WeaponCaseLongDEMP5A5
   suffix: MP5A5
   components:
