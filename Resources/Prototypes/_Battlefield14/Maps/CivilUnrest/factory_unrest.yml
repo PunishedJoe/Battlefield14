@@ -28,6 +28,7 @@
             - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest2.yml 
             - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest3.yml
           mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
             - /Maps/_Battlefield14/Planets/MultiZ/FactoryUnrest/BF14FactoryZMapUnrest0.yml 
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity

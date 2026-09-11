@@ -32,6 +32,7 @@
             - /Maps/_Battlefield14/Planets/MultiZ/FactoryWar/BF14FactoryZMapWar2.yml 
             - /Maps/_Battlefield14/Planets/MultiZ/FactoryWar/BF14FactoryZMapWar3.yml
           mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
             - /Maps/_Battlefield14/Planets/MultiZ/FactoryWar/BF14FactoryZMapWar0.yml 
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity

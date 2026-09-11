@@ -45,6 +45,38 @@
     },
     {
       "name": "flashlight-overlay"
+    },
+    {
+      "name": "A4-equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
+      "name": "A4-equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "A5-equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
+      "name": "A5-equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "SD5-equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
+      "name": "SD5-equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "SD6-equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
+      "name": "SD6-equipped-BACKPACK",
+      "directions": 4
     }
   ]
 }

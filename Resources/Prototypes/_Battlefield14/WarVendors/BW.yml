@@ -93,6 +93,8 @@
         amount: 50
     - name: Sustainment
       entries:
+      - id: Tourniquet
+        amount: 20
       - id: BoxMRE
         amount: 50
       - id: FoodSnackNutribrick
