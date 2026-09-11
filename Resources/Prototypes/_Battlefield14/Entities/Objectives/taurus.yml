@@ -16,9 +16,9 @@
   name: hospital control point
   suffix: taurus, 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Taurus Hospital"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Taurus Hospital"
+#    timeToCapture: 180
   - type: CapturePoint
     pointName: "Taurus Hospital"
   - type: NavMapBeacon
@@ -33,7 +33,7 @@
   name: city hall control point
   suffix: taurus, 180s / 3m
   components:
-  - type: POICapture
+#  - type: POICapture
 #    poiName: "Taurus City Hall"
 #    timeToCapture: 180
   - type: CapturePoint
@@ -50,7 +50,7 @@
   name: police department control point
   suffix: taurus, 180s / 3m
   components:
-  - type: POICapture
+#  - type: POICapture
 #    poiName: "Taurus Police Department"
 #    timeToCapture: 180
   - type: CapturePoint

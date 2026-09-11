@@ -195,7 +195,7 @@
   - type: Explosive
     explosionType: Thermobaric
     totalIntensity: 300
-    intensitySlope: 25 #Will destroy the tile under it reliably, space 1-2 more to rods. Only does any significant damage in a 5-tile cross.
+    intensitySlope: 25
     maxIntensity: 60
   - type: ActiveTimerTrigger
     timeRemaining: 5
@@ -204,6 +204,6 @@
       path: /Audio/Effects/minibombcountdown.ogg
   - type: ExtendDescription
     descriptionList:
-      - description: It is ARMED.
+      - description: It is ARMED, get the hell back!
         color: red
         requireDetailRange: true
