@@ -9,4 +9,4 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - Bear5
+      - BF14MobBear5

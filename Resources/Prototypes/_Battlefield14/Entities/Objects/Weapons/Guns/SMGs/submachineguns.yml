@@ -129,10 +129,11 @@
     - state: front-base
     - state: stock-full
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: A4
     clothingVisuals:
       suitstorage2:
-      - state: equipped-BACKPACK
+      - state: A4-equipped-BACKPACK
   - type: Gun
     minAngle: 2
     maxAngle: 10
@@ -217,11 +218,6 @@
       shader: unshaded
       visible: false
       map: [ "light" ]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
-    clothingVisuals:
-      suitstorage2:
-      - state: equipped-BACKPACK
   - type: HandheldLight
     addPrefix: false
     blinkingBehaviourId: blinking
@@ -300,10 +296,11 @@
     - state: front-base
     - state: stock-collapsing
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: A5
     clothingVisuals:
       suitstorage2:
-      - state: equipped-BACKPACK
+      - state: A5-equipped-BACKPACK
 
 - type: entity
   name: MP5SD5
@@ -326,10 +323,11 @@
     - state: front-SD
     - state: stock-full
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5SD5.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: SD5
     clothingVisuals:
       suitstorage2:
-      - state: equipped-BACKPACK
+      - state: SD5-equipped-BACKPACK
   - type: Gun
     soundGunshot:
       collection: BF_MP5_Gunshots_SUPP
@@ -358,10 +356,11 @@
     - state: front-SD
     - state: stock-collapsing
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5SD6.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: SD6
     clothingVisuals:
       suitstorage2:
-      - state: equipped-BACKPACK
+      - state: SD6-equipped-BACKPACK
 
 - type: entity
   name: MP7
