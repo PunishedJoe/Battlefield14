@@ -184,13 +184,11 @@
   - CivilianUS
   - CivilianRU
   - CivilianRUEMT
-  - NationalistUA
-  - Gypsy
   - RUScav
   - RUScavGuard
   - RUScavBoss
 
-#region Partisan NATO (against)
+#region Partisans against NATO
 
 - type: department
   id: PartisanNATO
@@ -200,3 +198,15 @@
   weight: 2
   roles:
   - SuspectUS
+  - Gypsy
+
+#region Partisans against PACT
+
+- type: department
+  id: PartisanPACT
+  name: Anti-PACT partisans
+  description: department-NFCivilian-description
+  color: "#9FED58"
+  weight: 3
+  roles:
+  - NationalistUA
