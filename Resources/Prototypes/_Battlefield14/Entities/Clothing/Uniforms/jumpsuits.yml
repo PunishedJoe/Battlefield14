@@ -4,27 +4,37 @@
   parent: ClothingUniformBase
   id: ClothingUniformBaseNATO
   components:
-  - type: Faction
-    factionId: "Nato"
+#  - type: Faction
+#    factionId: "Nato"
   - type: ExtendDescription
     descriptionList:
       - description: Allows you to capture points for NATO.
         fontSize: 12
         color: "#4f94ad"
         requireDetailRange: false
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "NATO"
 
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformBasePACT
   components:
-  - type: Faction
-    factionId: "Warpact"
-  - type: ExtendDescription
-    descriptionList:
-      - description: Allows you to capture points for PACT.
-        fontSize: 12
-        color: "#4f94ad"
-        requireDetailRange: false
+#  - type: Faction
+#    factionId: "Warpact"
+#  - type: ExtendDescription
+#    descriptionList:
+#      - description: Allows you to capture points for PACT.
+#        fontSize: 12
+#        color: "#4f94ad"
+#        requireDetailRange: false
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "PACT"
 
 #region US
 
@@ -38,6 +48,11 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/uscamo.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "United States Army"
 
 - type: entity
   parent: ClothingUniformJumpsuitCamoUS
@@ -48,6 +63,11 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatdesert.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatdesert.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "United States Marine Corps"
 
 - type: entity
   parent: ClothingUniformJumpsuitCamoUSMarpatDesert
@@ -69,8 +89,11 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/blue_utility_crew.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/blue_utility_crew.rsi
-  - type: Faction
-    factionId: "Nato"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "United States Space Force"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitMilitaryCaptain , ClothingUniformBaseNATO ] # TODO better/unique sprites
@@ -78,8 +101,11 @@
   name: USSF captain uniform
   description: A full uniform for captains aboard United States Space Force vessels.
   components:
-  - type: Faction
-    factionId: "Nato"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "United States Space Force"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitCombatSuitUrbanWhite , ClothingUniformBaseNATO ]
@@ -91,9 +117,22 @@
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
   - type: Clothing
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/white_urban.rsi
-  - type: SuitSensor
-    randomMode: false
-    mode: SensorVitals
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "National Guard"
+
+- type: entity
+  parent: ClothingUniformJumpsuitCamoUSM81Urban
+  id: ClothingUniformJumpsuitCamoUSM81UrbanHECU
+  suffix: HECU
+  components:
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "United States Marine Corps"
 
 - type: entity
   parent: ClothingUniformBaseNATO
@@ -105,6 +144,11 @@
     sprite: _WorldAblaze1968/Objects/Clothing/USA/Uniform/tigerstripe.rsi
   - type: Clothing
     sprite: _WorldAblaze1968/Objects/Clothing/USA/Uniform/tigerstripe.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "United States Army"
 
 #region DE
 
@@ -118,6 +162,11 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/decamoflecktarn.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/decamoflecktarn.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Nato
+      factionName: "Bundeswehr"
 
 #region RU
 
@@ -131,6 +180,11 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rucamo.rsi
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "Russian Ground Forces"
 
 - type: entity
   parent: ClothingUniformBasePACT
@@ -142,8 +196,11 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/emrcamo.rsi
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "VDV"
 
 - type: entity
   parent: ClothingUniformBasePACT
@@ -155,8 +212,11 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rugorka.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/rugorka.rsi
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "Russian Ground Forces"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitMilitaryColorGrey , ClothingUniformBasePACT ]
@@ -164,8 +224,11 @@
   name: VKS crewman uniform
   description: A full uniform for crew aboard Russian Aerospace Forces vessels.
   components:
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "Russian Aerospace Forces"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitMilitaryCaptain , ClothingUniformBasePACT ] # TODO better/unique sprites
@@ -173,8 +236,11 @@
   name: VKS captain uniform
   description: A full uniform for captains aboard Russian Aerospace Forces vessels.
   components:
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "Russian Aerospace Forces"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitCombatSuitUrbanWhite , ClothingUniformBasePACT ]
@@ -187,11 +253,11 @@
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_red.rsi
   - type: Clothing
     sprite: _Mono/Clothing/Uniforms/Jumpsuit/combat-suits/Digital/digital_red.rsi
-  - type: SuitSensor
-    randomMode: false
-    mode: SensorVitals
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "VDV"
 
 - type: entity
   parent: ClothingUniformBasePACT
@@ -203,8 +269,11 @@
     sprite: _Civ14/Clothing/Uniforms/Jumpsuit/omon.rsi
   - type: Clothing
     sprite: _Civ14/Clothing/Uniforms/Jumpsuit/omon.rsi
-  - type: Faction
-    factionId: "Warpact"
+  - type: ClothingGrantComponent
+    component:
+    - type: GameFactionMember
+      faction: Warpact
+      factionName: "OMON"
 
 # MISC
 

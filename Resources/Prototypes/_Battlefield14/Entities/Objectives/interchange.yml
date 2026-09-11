@@ -6,9 +6,11 @@
   name: Parking lot control point
   suffix: Interchange, 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Inside parking lot"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Inside parking lot"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Inside parking lot"
   - type: NavMapBeacon
     defaultText: "Inside parking lot"
     color: "#FFFF00"
@@ -21,9 +23,12 @@
   name: Manager office control point
   suffix: Interchange, 180s / 4m
   components:
-  - type: POICapture
-    poiName: "Manager office"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Manager office"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Manager's office"
+    ticketValue: 2
   - type: NavMapBeacon
     defaultText: "Manager office"
     color: "#FFFF00"
@@ -36,9 +41,11 @@
   name: OLI control point
   suffix: Interchange, 240s / 4m
   components:
-  - type: POICapture
-    poiName: "OLI"
-    timeToCapture: 240
+#  - type: POICapture
+#    poiName: "OLI"
+#    timeToCapture: 240
+  - type: CapturePoint
+    pointName: "OLI"
   - type: NavMapBeacon
     defaultText: "OLI"
     color: "#FFFF00"
@@ -51,9 +58,11 @@
   name: Diamond casino point
   suffix: Interchange, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Diamond Casino"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Diamond Casino"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Diamond Casino"
   - type: NavMapBeacon
     defaultText: "Diamond Casino"
     color: "#FFFF00"
@@ -66,9 +75,11 @@
   name: Ferdinands pizzeria point
   suffix: Interchange, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Ferdinands pizzeria"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Ferdinands pizzeria"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Ferdinand's Pizzeria"
   - type: NavMapBeacon
     defaultText: "Ferdinands pizzeria"
     color: "#FFFF00"
@@ -81,9 +92,11 @@
   name: Swed house control point
   suffix: Interchange, 240s / 4m
   components:
-  - type: POICapture
-    poiName: "Swed house"
-    timeToCapture: 240
+#  - type: POICapture
+#    poiName: "Swed house"
+#    timeToCapture: 240
+  - type: CapturePoint
+    pointName: "Swed house"
   - type: NavMapBeacon
     defaultText: "Swed house"
     color: "#FFFF00"
@@ -96,9 +109,11 @@
   name: Kibba control point
   suffix: Interchange, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Kibba store"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Kibba store"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Kibba store"
   - type: NavMapBeacon
     defaultText: "kibba store"
     color: "#FFFF00"
@@ -111,9 +126,11 @@
   name: ATF 'r Us control point
   suffix: Interchange, 120 / 2m
   components:
-  - type: POICapture
-    poiName: "ATF 'r Us store"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "ATF 'r Us store"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "ATF 'r Us store"
   - type: NavMapBeacon
     defaultText: "ATF 'r Us store"
     color: "#FFFF00"

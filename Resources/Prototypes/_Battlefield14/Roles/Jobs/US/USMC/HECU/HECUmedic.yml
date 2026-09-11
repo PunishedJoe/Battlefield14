@@ -23,13 +23,10 @@
       - USMC
     - type: SurgerySpeedModifier
       SpeedModifier: 1.65
+    - type: ChatRank
+      rank: BF-rank-corporal
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-corporal
   access:
   - Maintenance
   - Service
@@ -49,7 +46,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMedicalEMTFilledBF14
-    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81UrbanHECU
     head: ClothingHeadHatHelmetUSUrban
     eyes: ClothingEyesHudMedicalBF
     outerClothing: ClothingOuterArmorPCV
