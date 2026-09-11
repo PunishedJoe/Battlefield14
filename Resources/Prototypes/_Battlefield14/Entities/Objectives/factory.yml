@@ -4,9 +4,11 @@
   name: Control room control point
   suffix: Factory, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Control room"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Control room"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Control room"
   - type: NavMapBeacon
     defaultText: "Control room"
     color: "#FFFF00"
@@ -19,9 +21,11 @@
   name: Office control point
   suffix: Factory, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "3rd floor office"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "3rd floor office"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "3rd floor office"
   - type: NavMapBeacon
     defaultText: "3rd floor office"
     color: "#FFFF00"
@@ -34,9 +38,11 @@
   name: Destroyed office control point
   suffix: Factory, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Destroyed office"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Destroyed office"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Destroyed office"
   - type: NavMapBeacon
     defaultText: "Destroyed office"
     color: "#FFFF00"
@@ -49,9 +55,11 @@
   name: Underground storage control point
   suffix: Factory, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Undergound storage"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Undergound storage"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Underground storage"
   - type: NavMapBeacon
     defaultText: "storage"
     color: "#FFFF00"
@@ -64,9 +72,11 @@
   name: Silo control point
   suffix: Factory, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Silos"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Silos"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Silos"
   - type: NavMapBeacon
     defaultText: "silo"
     color: "#FFFF00"
@@ -79,9 +89,11 @@
   name: Enrichment unit control point
   suffix: Factory, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Enrichment unit"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Enrichment unit"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Enrichment unit"
   - type: NavMapBeacon
     defaultText: "Enrichment unit"
     color: "#FFFF00"
@@ -94,9 +106,11 @@
   name: Bridge control point
   suffix: Factory, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Bridge"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Bridge"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Bridge"
   - type: NavMapBeacon
     defaultText: "Bridge"
     color: "#FFFF00"

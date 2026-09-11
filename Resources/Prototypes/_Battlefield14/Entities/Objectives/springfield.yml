@@ -4,9 +4,11 @@
   name: hospital control point
   suffix: springfield, 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Springfield Hospital"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Springfield Hospital"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Springfield Hospital"
   - type: NavMapBeacon
     defaultText: "Hospital"
     color: "#FFFF00"

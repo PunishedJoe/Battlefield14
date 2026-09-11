@@ -23,6 +23,8 @@
     - type: NpcFactionMember
       factions:
       - VDV
+    - type: ChatRank
+      rank: BF-rank-lieutenant
   - !type:AddImplantSpecial
     implants: [ TrackingImplantPACTRU ]
   access:

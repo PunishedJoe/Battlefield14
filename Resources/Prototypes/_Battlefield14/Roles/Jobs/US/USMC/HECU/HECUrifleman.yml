@@ -21,13 +21,10 @@
     - type: NpcFactionMember
       factions:
       - USMC
+    - type: ChatRank
+      rank: BF-rank-private
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-private
   access:
   - Maintenance
   - Service
@@ -47,7 +44,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
-    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81UrbanHECU
     head: ClothingHeadHatHelmetUSUrban
 #    eyes: ClothingEyesGogglesTan
     mask: ClothingMaskGasM40Green

@@ -56,15 +56,17 @@
   - type: NavMapBeacon
     defaultText: objective-beacon-general
     color: "#FFFF00"
-  - type: POICapture
-    poiName: "Control Point Alpha"
-    timeToCapture: 60 # 1 minute to capture
-    gracePeriod: 0
-    doAfterDelay: 3
-    controllingFaction: null
-    isBeingCaptured: false
-    capturingFaction: null
-    currentCaptureProgress: 0
+#  - type: POICapture
+#    poiName: "Control Point Alpha"
+#    timeToCapture: 60 # 1 minute to capture
+#    gracePeriod: 0
+#    doAfterDelay: 3
+#    controllingFaction: null
+#    isBeingCaptured: false
+#    capturingFaction: null
+#    currentCaptureProgress: 0
+  - type: CapturePoint
+    pointName: "Alpha"
   - type: WarpPoint
     location: "capture point"
 
@@ -74,9 +76,9 @@
   abstract: true
   placement:
     mode: SnapgridCenter
-  components:
-  - type: POICapture
-    gracePeriod: 600 # 10 minutes until open
+#  components:
+#  - type: POICapture
+#    gracePeriod: 600 # 10 minutes until open
 
 # Specific Control points for map locations | these ones listed are all for stations
 - type: entity
@@ -85,9 +87,11 @@
   name: engineering control point
   suffix: 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Engineering Sector"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Engineering Sector"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Engineering Sector"
   - type: NavMapBeacon
     defaultText: objective-beacon-engineering
     color: "#FFFF00"
@@ -100,9 +104,11 @@
   name: medical control point
   suffix: 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Medical Bay"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Medical Bay"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Medical Bay"
   - type: NavMapBeacon
     defaultText: objective-beacon-medical
     color: "#FFFF00"
@@ -115,9 +121,12 @@
   name: bridge control point
   suffix: 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Bridge"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Bridge"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Bridge"
+    ticketValue: 3
   - type: NavMapBeacon
     defaultText: objective-beacon-bridge
     color: "#FFFF00"
@@ -129,8 +138,11 @@
   parent: CapturePointBridge
   suffix: 1200s / 20m
   components:
-  - type: POICapture
-    timeToCapture: 1200
+#  - type: POICapture
+#    timeToCapture: 1200
+  - type: CapturePoint
+    pointName: "Bridge"
+    ticketValue: 30
 
 - type: entity
   id: CapturePointSecurity
@@ -138,15 +150,16 @@
   name: security control point
   suffix: 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Security"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Security"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Security"
   - type: NavMapBeacon
     defaultText: objective-beacon-security
     color: "#FFFF00"
   - type: WarpPoint
     location: "Security capture point"
-
 
 - type: entity
   id: CapturePointCargo
@@ -154,9 +167,11 @@
   name: cargo control point
   suffix: 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Cargo Department"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Cargo Department"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Cargo Department"
   - type: NavMapBeacon
     defaultText: objective-beacon-cargo
     color: "#FFFF00"
@@ -169,9 +184,11 @@
   name: atmospherics control point
   suffix: 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Atmospherics"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Atmospherics"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Atmospherics"
   - type: NavMapBeacon
     defaultText: objective-beacon-atmospherics
     color: "#FFFF00"
@@ -184,9 +201,11 @@
   name: research control point
   suffix: 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Research and development"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Research and development"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Research and Development"
   - type: NavMapBeacon
     defaultText: objective-beacon-science
     color: "#FFFF00"

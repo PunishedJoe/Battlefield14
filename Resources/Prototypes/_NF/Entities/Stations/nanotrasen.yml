@@ -15,6 +15,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Transform
+  - type: ConquestManager # BF14/FH84
 
 # region POIs
 - type: entity

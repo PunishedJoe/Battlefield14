@@ -19,6 +19,8 @@
   - type: POICapture
     poiName: "Taurus Hospital"
     timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Taurus Hospital"
   - type: NavMapBeacon
     defaultText: "Hospital"
     color: "#FFFF00"
@@ -32,8 +34,10 @@
   suffix: taurus, 180s / 3m
   components:
   - type: POICapture
-    poiName: "Taurus City Hall"
-    timeToCapture: 180
+#    poiName: "Taurus City Hall"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Taurus City Hall"
   - type: NavMapBeacon
     defaultText: "City Hall"
     color: "#FFFF00"
@@ -47,8 +51,10 @@
   suffix: taurus, 180s / 3m
   components:
   - type: POICapture
-    poiName: "Taurus Police Department"
-    timeToCapture: 180
+#    poiName: "Taurus Police Department"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Taurus Police Department"
   - type: NavMapBeacon
     defaultText: "Police Department"
     color: "#FFFF00"
@@ -61,9 +67,11 @@
   name: library control point
   suffix: taurus, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Library"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Library"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Library"
   - type: NavMapBeacon
     defaultText: "Library"
     color: "#FFFF00"
@@ -76,9 +84,11 @@
   name: botanical gardens control point
   suffix: taurus, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Botanical Gardens"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Botanical Gardens"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Botanical gardens"
   - type: NavMapBeacon
     defaultText: "Botanical Gardens"
     color: "#FFFF00"
@@ -91,9 +101,11 @@
   name: yacht club control point
   suffix: taurus, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Yacht Club"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Yacht Club"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Yacht club"
   - type: NavMapBeacon
     defaultText: "Yacht Club"
     color: "#FFFF00"
@@ -106,9 +118,11 @@
   name: diner control point
   suffix: taurus, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Taurus Diner"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Taurus Diner"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Taurus Diner"
   - type: NavMapBeacon
     defaultText: "Diner"
     color: "#FFFF00"
@@ -121,9 +135,11 @@
   name: hotel control point
   suffix: taurus, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Taurus Hotel"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Taurus Hotel"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Taurus Hotel"
   - type: NavMapBeacon
     defaultText: "Hotel"
     color: "#FFFF00"
@@ -136,9 +152,11 @@
   name: logistics control point
   suffix: taurus, 60s / 1m
   components:
-  - type: POICapture
-    poiName: "Taurus Logistics"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Taurus Logistics"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Taurus Logistics"
   - type: NavMapBeacon
     defaultText: "Logistics"
     color: "#FFFF00"
