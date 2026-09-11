@@ -109,7 +109,7 @@ public sealed partial class ConquestManagerSystem : EntitySystem
             return;
 
         comp.PointOwner = factionComp.Faction;
-        _chat.DispatchGlobalAnnouncement($"Point {comp.PointName} has been captured by the {factionComp.FactionName}.", null, false, null, Color.Yellow);
+        _chat.DispatchGlobalAnnouncement($"{comp.PointName} has been captured by {factionComp.FactionName}.", null, false, null, Color.Yellow);
 
         if (NextCheck == TimeSpan.Zero && Manager != null)
         {

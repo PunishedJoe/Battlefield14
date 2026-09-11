@@ -52,7 +52,7 @@
     component:
     - type: GameFactionMember
       faction: Nato
-      factionName: "United States Army"
+      factionName: "the United States Army"
 
 - type: entity
   parent: ClothingUniformJumpsuitCamoUS
@@ -67,7 +67,7 @@
     component:
     - type: GameFactionMember
       faction: Nato
-      factionName: "United States Marine Corps"
+      factionName: "the United States Marine Corps"
 
 - type: entity
   parent: ClothingUniformJumpsuitCamoUSMarpatDesert
@@ -93,7 +93,7 @@
     component:
     - type: GameFactionMember
       faction: Nato
-      factionName: "United States Space Force"
+      factionName: "the United States Space Force"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitMilitaryCaptain , ClothingUniformBaseNATO ] # TODO better/unique sprites
@@ -105,7 +105,7 @@
     component:
     - type: GameFactionMember
       faction: Nato
-      factionName: "United States Space Force"
+      factionName: "the United States Space Force"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitCombatSuitUrbanWhite , ClothingUniformBaseNATO ]
@@ -121,7 +121,7 @@
     component:
     - type: GameFactionMember
       faction: Nato
-      factionName: "National Guard"
+      factionName: "the National Guard"
 
 - type: entity
   parent: ClothingUniformJumpsuitCamoUSM81Urban
@@ -132,7 +132,7 @@
     component:
     - type: GameFactionMember
       faction: Nato
-      factionName: "United States Marine Corps"
+      factionName: "the United States Marine Corps"
 
 - type: entity
   parent: ClothingUniformBaseNATO
@@ -148,7 +148,7 @@
     component:
     - type: GameFactionMember
       faction: Nato
-      factionName: "United States Army"
+      factionName: "the United States Army"
 
 #region DE
 
@@ -166,7 +166,7 @@
     component:
     - type: GameFactionMember
       faction: Nato
-      factionName: "Bundeswehr"
+      factionName: "the Bundeswehr"
 
 #region RU
 
@@ -184,7 +184,7 @@
     component:
     - type: GameFactionMember
       faction: Warpact
-      factionName: "Russian Ground Forces"
+      factionName: "the Russian Ground Forces"
 
 - type: entity
   parent: ClothingUniformBasePACT
@@ -200,7 +200,7 @@
     component:
     - type: GameFactionMember
       faction: Warpact
-      factionName: "VDV"
+      factionName: "the VDV"
 
 - type: entity
   parent: ClothingUniformBasePACT
@@ -216,7 +216,7 @@
     component:
     - type: GameFactionMember
       faction: Warpact
-      factionName: "Russian Ground Forces"
+      factionName: "the Russian Ground Forces"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitMilitaryColorGrey , ClothingUniformBasePACT ]
@@ -228,7 +228,7 @@
     component:
     - type: GameFactionMember
       faction: Warpact
-      factionName: "Russian Aerospace Forces"
+      factionName: "the Russian Aerospace Forces"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitMilitaryCaptain , ClothingUniformBasePACT ] # TODO better/unique sprites
@@ -240,7 +240,7 @@
     component:
     - type: GameFactionMember
       faction: Warpact
-      factionName: "Russian Aerospace Forces"
+      factionName: "the Russian Aerospace Forces"
 
 - type: entity
   parent: [ ClothingUniformJumpsuitCombatSuitUrbanWhite , ClothingUniformBasePACT ]
@@ -257,7 +257,7 @@
     component:
     - type: GameFactionMember
       faction: Warpact
-      factionName: "VDV"
+      factionName: "the VDV"
 
 - type: entity
   parent: ClothingUniformBasePACT

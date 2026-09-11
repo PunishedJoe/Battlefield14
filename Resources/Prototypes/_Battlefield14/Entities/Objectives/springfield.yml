@@ -21,9 +21,11 @@
   name: springfield PD control point
   suffix: springfield, 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Springfield Police Department"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Springfield Police Department"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Springfield police department"
   - type: NavMapBeacon
     defaultText: "Police Department"
     color: "#FFFF00"
@@ -36,9 +38,11 @@
   name: springfield cinema control point
   suffix: springfield, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Cinema"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Cinema"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Springfield Cinema"
   - type: NavMapBeacon
     defaultText: "Cinema"
     color: "#FFFF00"
@@ -51,9 +55,11 @@
   name: springfield suburbs control point
   suffix: springfield, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Suburbs"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Suburbs"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Springfield suburbs"
   - type: NavMapBeacon
     defaultText: "Suburbs"
     color: "#FFFF00"
@@ -66,9 +72,11 @@
   name: springfield hotel control point
   suffix: springfield, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Springfield Hotel"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Springfield Hotel"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Springfield Hotel"
   - type: NavMapBeacon
     defaultText: "Hotel"
     color: "#FFFF00"
