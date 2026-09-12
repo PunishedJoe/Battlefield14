@@ -21,9 +21,13 @@
   - type: Tag
     tags:
       - ExtendableLadder
+  - type: SpawnAfterInteract
+    prototype: BF14ExtendableLadder
+    doAfter: 1
+    removeOnInteract: true
   - type: ExtendDescription
     descriptionList:
-      - description: This item can be stored on your auxillary suit storage slot.
+      - description: Left click on a tile to place it. This item can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true
 

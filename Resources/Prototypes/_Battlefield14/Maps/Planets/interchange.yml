@@ -27,11 +27,11 @@
             USMCSquadLeader: [ 1, 1 ]
             USMCRifleman: [ 3, 3 ]
             USMCMedic: [ 1, 1 ]
-            VDVLieutenant: [ 1, 1 ]
-            VDVSquadLeader: [ 3, 3 ]
-            VDVRifleman: [ 10, 10 ]
-            VDVAutomaticRifleman: [ 3, 3 ]
-            VDVMedic: [ 3, 3 ]
+            RGFLieutenant: [ 1, 1 ]
+            RGFSquadLeader: [ 3, 3 ]
+            RGFRifleman: [ 12, 12 ]
+            RGFAutomaticRifleman: [ 1, 1 ]
+            RGFMedic: [ 3, 3 ]
             RUScav: [ 4, 9 ]
         - type: CEStationZLevels
           mapsAbove:

@@ -581,8 +581,8 @@
   - type: StorageFill
     contents:
     - id: WeaponShotgunRUKSK
-    - id: ShellBoxBF12GaugeBuckshot
-      amount: 2
+    - id: MagazineShotgunKSK
+      amount: 5
 
 - type: entity
   parent: WeaponCaseLong
