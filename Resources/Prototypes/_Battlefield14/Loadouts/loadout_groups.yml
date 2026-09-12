@@ -354,7 +354,7 @@
   - LoadoutBackRucksackBlack
   - MonoSecurityGuardBackpack
 
-#region ARMS 
+#region ARMS
 
 #region HANDS
 
@@ -368,7 +368,6 @@
   - LoadoutHandsGlovesSoldierCombat
   - LoadoutHandsGlovesSoldierMercCombat
   - LoadoutHandsGlovesSoldierMercFingerless
-  - LoadoutHandsGlovesSoldierWristwatch
 
 - type: loadoutGroup
   id: BF_WPSGloves
@@ -377,7 +376,6 @@
   loadouts:
   - LoadoutHandsGlovesSoldierBlack
   - LoadoutHandsGlovesSoldierFingerless
-  - LoadoutHandsGlovesSoldierWristwatch
 
 #region FEET
 
@@ -470,6 +468,8 @@
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
+  - LoadoutNeckCasioF91W
+  - LoadoutNeckWristwatch
 
 - type: loadoutGroup
   id: BF_MiscItemsPACT
@@ -487,6 +487,8 @@
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsCamonet15
   - LoadoutMiscItemsMREFlask
+  - LoadoutNeckCasioF91W
+  - LoadoutNeckWristwatch
 
 - type: loadoutGroup
   id: BF_MiscItemsIND
@@ -501,6 +503,8 @@
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsMREFlask
+  - LoadoutNeckCasioF91W
+  - LoadoutNeckWristwatchGold #flex on the HATO and PACToids with your hard earned swag, biach
 
 - type: loadoutGroup
   id: BF_Map

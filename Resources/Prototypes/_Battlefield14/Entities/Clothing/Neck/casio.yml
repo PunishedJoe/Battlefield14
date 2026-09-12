@@ -1,0 +1,11 @@
+- type: entity
+  parent: [ClothingNeckBase, ClothingUniformFoldableBaseImpstation ]
+  id: ClothingNeckCasioF91W
+  name: Casio F91W
+  description: A classic, seen in the offices, in the battlefields (pun intended) and is still reliable.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Neck/CasioWatch.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Neck/CasioWatch.rsi
+
