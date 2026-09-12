@@ -38,6 +38,8 @@
             - /Maps/_Battlefield14/Planets/MultiZ/Interchange/BF14InterchangeZMap1.yml
             - /Maps/_Battlefield14/Planets/MultiZ/Interchange/BF14InterchangeZMap2.yml
             - /Maps/_Battlefield14/Planets/MultiZ/Interchange/BF14InterchangeZMap3.yml
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity
         - type: ConquestManager
