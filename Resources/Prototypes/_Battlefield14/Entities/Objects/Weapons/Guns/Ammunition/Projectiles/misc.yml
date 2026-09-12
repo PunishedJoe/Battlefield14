@@ -58,3 +58,10 @@
         Structural: 3
   - type: StaminaDamageOnCollide
     damage: 8 # ~13 hits to stun
+  - type: PointLight
+    radius: 2
+    color: blue
+    energy: 1.6
+  - type: Tracer
+    color: blue
+    length: 3
