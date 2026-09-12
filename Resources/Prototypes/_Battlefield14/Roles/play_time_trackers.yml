@@ -254,6 +254,9 @@
 
 - type: playTimeTracker
   id: JobGypsy
+  
+- type: playTimeTracker
+  id: JobCivilianChefDE
 
 #region Misc
 
