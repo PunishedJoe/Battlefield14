@@ -38,3 +38,4 @@
             CivilianUS: [ 3, 3]
         - type: StationBiome
           biome: Grasslands
+        - type: ConquestManager
