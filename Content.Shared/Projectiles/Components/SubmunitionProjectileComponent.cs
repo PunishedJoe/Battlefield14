@@ -1,3 +1,4 @@
+using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 
@@ -63,5 +64,17 @@ public sealed partial class SubmunitionProjectileComponent : Component
     /// </summary>
     [DataField]
     public bool SubmunitionsSpawned = false;
+
+    /// <summary>
+    /// Entities that match this blacklist will prevent submunitions from spawning when hit.
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? Blacklist;
+
+    /// <summary>
+    /// Whether submunition spawning has been blocked because the projectile hit a blacklisted entity.
+    /// </summary>
+    [DataField]
+    public bool SubmunitionsBlocked = false;
 }
 

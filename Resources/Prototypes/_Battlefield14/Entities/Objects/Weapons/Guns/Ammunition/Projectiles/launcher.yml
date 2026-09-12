@@ -23,6 +23,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -32,6 +35,11 @@
   id: BulletRocket84mmHEAT # High explosive anti tank, pierces and does damage on the inside
   name: 84mm HEAT rocket # Used for the AT4 and HEAA SMAW cartridge
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -82,6 +90,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -91,6 +102,11 @@
   id: BulletCarlGustavHE441D
   name: 84mm HE441D projectile
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -159,6 +175,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -168,6 +187,11 @@
   id: BulletRocket83mmNE
   name: 83mm Novel Explosive projectile # anti infantry, explodes on contact and sends fragments everywhere with a wide explosive for killing infantry
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -247,6 +271,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -256,6 +283,11 @@
   id: BulletRocket83mmHEDM
   name: 83mm HEDM projectile # High explosive dual mode, explodes on contact in a 3x3 area to blast open walls and such
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -297,6 +329,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 40
 
@@ -306,6 +341,11 @@
   id: BulletRocketM202FLASH
   name: 66mm incendiary rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -347,6 +387,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 200
 
@@ -356,6 +399,11 @@
   id: BulletRocketM72HEAT
   name: 66mm HEAT rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -407,6 +455,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 200
 
@@ -416,6 +467,11 @@
   id: BulletRocketM72Thermobaric
   name: 66mm incendiary rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -508,6 +564,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -517,6 +576,11 @@
   id: BulletRocketRPG7HEAT
   name: PG-7VL HEAT rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
     layers:
@@ -567,6 +631,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -576,6 +643,11 @@
   id: BulletRocketRPG7Frag
   name: OG-7V frag rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
     layers:
@@ -655,6 +727,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -664,6 +739,11 @@
   id: BulletRocketRPG26HEAT
   name: 72.5mm HEAT rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
     layers:
@@ -714,6 +794,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -723,6 +806,11 @@
   id: BulletRocketRPG26Thermobaric
   name: 72.5mm thermobaric rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
     layers:

@@ -57,6 +57,8 @@ public sealed class ProjectileFragSystem : EntitySystem
         var projectileCoord = _transformSystem.GetMapCoordinates(uid);
         var shootCount = 0;
         var totalCount = component.Container.ContainedEntities.Count + component.UnspawnedCount;
+        if (totalCount <= 0)
+            return;
         var segmentAngle = 360 / totalCount;
 
         while (TrySpawnContents(projectileCoord, component, out var contentUid))
