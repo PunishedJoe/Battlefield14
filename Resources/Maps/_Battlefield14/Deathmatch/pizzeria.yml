@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/11/2026 23:22:07
-  entityCount: 1334
+  time: 09/12/2026 00:58:03
+  entityCount: 1349
 maps:
 - 2
 grids:
@@ -194,10 +194,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
-        Smoke: []
         MetalFoam: []
         Kudzu: []
+        Puddle: []
+        Smoke: []
       updateAccumulator: 0.2993102
     - type: Shuttle
       dampingModifier: 0.25
@@ -371,10 +371,10 @@ entities:
           version: 7
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
-        Smoke: []
         MetalFoam: []
         Kudzu: []
+        Puddle: []
+        Smoke: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -685,6 +685,89 @@ entities:
     components:
     - type: Transform
       pos: 17.5,-4.5
+      parent: 1
+- proto: BF14TimedSpawnerWeaponMachinegun
+  entities:
+  - uid: 326
+    components:
+    - type: Transform
+      pos: 2.5,-1.5
+      parent: 1
+- proto: BF14TimedSpawnerWeaponRifle
+  entities:
+  - uid: 327
+    components:
+    - type: Transform
+      pos: 15.5,9.5
+      parent: 1
+  - uid: 328
+    components:
+    - type: Transform
+      pos: 16.5,-11.5
+      parent: 1
+  - uid: 335
+    components:
+    - type: Transform
+      pos: -10.5,14.5
+      parent: 1
+- proto: BF14TimedSpawnerWeaponShotgun
+  entities:
+  - uid: 329
+    components:
+    - type: Transform
+      pos: 9.5,-15.5
+      parent: 1
+  - uid: 330
+    components:
+    - type: Transform
+      pos: -1.5,-14.5
+      parent: 1
+  - uid: 331
+    components:
+    - type: Transform
+      pos: -17.5,-10.5
+      parent: 1
+  - uid: 338
+    components:
+    - type: Transform
+      pos: 17.5,6.5
+      parent: 1
+  - uid: 339
+    components:
+    - type: Transform
+      pos: 12.5,0.5
+      parent: 1
+  - uid: 340
+    components:
+    - type: Transform
+      pos: 8.5,-17.5
+      parent: 1
+- proto: BF14TimedSpawnerWeaponSubmachinegun
+  entities:
+  - uid: 332
+    components:
+    - type: Transform
+      pos: -10.5,-8.5
+      parent: 1
+  - uid: 333
+    components:
+    - type: Transform
+      pos: -13.5,-15.5
+      parent: 1
+  - uid: 334
+    components:
+    - type: Transform
+      pos: -10.5,10.5
+      parent: 1
+  - uid: 336
+    components:
+    - type: Transform
+      pos: 0.5,8.5
+      parent: 1
+  - uid: 337
+    components:
+    - type: Transform
+      pos: -0.5,14.5
       parent: 1
 - proto: BlastDoorIndestructible
   entities:
@@ -2706,62 +2789,117 @@ entities:
       rot: 4.71238898038469 rad
       pos: 6.5,-16.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 705
     components:
     - type: Transform
       rot: 4.71238898038469 rad
       pos: 15.5,-12.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 763
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 8.5,-7.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 767
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 12.5,-7.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 905
     components:
     - type: Transform
       pos: -13.5,6.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 910
     components:
     - type: Transform
       pos: -9.5,6.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 912
     components:
     - type: Transform
       pos: -8.5,6.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 935
     components:
     - type: Transform
       pos: 12.5,7.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 946
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -4.5,8.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 976
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -4.5,12.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 992
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -4.5,13.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
 - proto: N14DoorWoodSlanted
   entities:
   - uid: 785
@@ -2770,61 +2908,116 @@ entities:
       rot: 4.71238898038469 rad
       pos: 14.5,-5.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 822
     components:
     - type: Transform
       rot: 4.71238898038469 rad
       pos: 14.5,-0.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 827
     components:
     - type: Transform
       pos: 15.5,0.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 829
     components:
     - type: Transform
       pos: 17.5,0.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 831
     components:
     - type: Transform
       pos: 19.5,0.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 878
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 15.5,4.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 880
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 17.5,4.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 882
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 19.5,4.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 895
     components:
     - type: Transform
       rot: 4.71238898038469 rad
       pos: 14.5,5.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 919
     components:
     - type: Transform
       pos: 6.5,6.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
   - uid: 920
     components:
     - type: Transform
       pos: 7.5,6.5
       parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Open
+      - Close
+      - Toggle
 - proto: N14TableDeskWood
   entities:
   - uid: 48

@@ -181,7 +181,6 @@
 - type: entity
   name: floor charge
   description: A big explosive used to breach holes in roofs to access the juicy contents below.
-  parent: BaseLandMine
   id: BF14FloorCharge
   suffix: Armed, Placed
   components:
@@ -207,3 +206,18 @@
       - description: It is ARMED, get the hell back!
         color: red
         requireDetailRange: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Physics
+    bodyType: Static
+    fixedRotation: true
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+          - LowImpassable
