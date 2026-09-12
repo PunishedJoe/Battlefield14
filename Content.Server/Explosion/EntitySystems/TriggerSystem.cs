@@ -105,6 +105,7 @@ namespace Content.Server.Explosion.EntitySystems
             SubscribeLocalEvent<TriggerWhenEmptyComponent, OnEmptyGunShotEvent>(OnEmptyTriggered);
             SubscribeLocalEvent<RepeatingTriggerComponent, MapInitEvent>(OnRepeatInit);
             SubscribeLocalEvent<TriggerOnProjectileHitComponent, ProjectileHitEvent>(OnProjectileHitEvent); // Frontier: trigger on embed
+            SubscribeLocalEvent<TriggerOnImpactComponent, ProjectileHitEvent>(OnImpactHit);
 
             SubscribeLocalEvent<SpawnOnTriggerComponent, TriggerEvent>(OnSpawnTrigger);
             SubscribeLocalEvent<DeleteOnTriggerComponent, TriggerEvent>(HandleDeleteTrigger);
@@ -298,8 +299,13 @@ namespace Content.Server.Explosion.EntitySystems
 
         private void OnTriggerCollide(EntityUid uid, TriggerOnCollideComponent component, ref StartCollideEvent args)
         {
-            if (args.OurFixtureId == component.FixtureID && (!component.IgnoreOtherNonHard || args.OtherFixture.Hard))
-                Trigger(uid, args.OtherEntity);
+            if (args.OurFixtureId != component.FixtureID || (component.IgnoreOtherNonHard && !args.OtherFixture.Hard))
+                return;
+
+            if (_whitelistSystem.IsBlacklistPass(component.Blacklist, args.OtherEntity))
+                return;
+
+            Trigger(uid, args.OtherEntity);
         }
 
         private void OnSpawnTriggered(EntityUid uid, TriggerOnSpawnComponent component, MapInitEvent args)
@@ -342,6 +348,15 @@ namespace Content.Server.Explosion.EntitySystems
             Trigger(uid, args.Target);
         }
         // End Frontier
+
+        // Triggers on projectile impact unless the hit entity is blacklisted.
+        private void OnImpactHit(EntityUid uid, TriggerOnImpactComponent component, ref ProjectileHitEvent args)
+        {
+            if (_whitelistSystem.IsBlacklistPass(component.Blacklist, args.Target))
+                return;
+
+            Trigger(uid, args.Target);
+        }
 
         private void OnRepeatInit(Entity<RepeatingTriggerComponent> ent, ref MapInitEvent args)
         {

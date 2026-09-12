@@ -6,6 +6,11 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Projectile
     damage:
       types:
@@ -37,6 +42,11 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Projectile
     damage:
       types:
@@ -74,6 +84,11 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Projectile
     damage:
       types:
@@ -159,6 +174,11 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Projectile
     damage:
       types:
