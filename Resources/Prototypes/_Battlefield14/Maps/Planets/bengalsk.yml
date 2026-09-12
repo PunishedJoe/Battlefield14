@@ -34,3 +34,4 @@
             CivilianRUEMT: [ 1, 1 ]
         - type: StationBiome
           biome: Snow
+        - type: ConquestManager
