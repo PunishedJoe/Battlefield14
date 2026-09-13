@@ -52,7 +52,7 @@
   parent: ClothingHelmetAttachmentBase
   id: ClothingHelmetAttachmentNVGsNATOPVS14Binocular
   suffix: NATO
-  name: AN/PVS-14 biocular night vision device
+  name: AN/PVS-14 binocular night vision device
   description: 3rd generation binoculars with white phosphor, developed for United States Army personnel.
   components:
   - type: Sprite
