@@ -86,6 +86,8 @@
         amount: 2
     - name: Utility
       entries:
+      - id: ClothingHelmetAttachmentNVGsBasicPACT
+        amount: 3
       - id: RiotBulletShield
         amount: 3
       - id: CombatKnife
