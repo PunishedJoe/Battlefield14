@@ -55,7 +55,7 @@
   name: box of MP5 magazines
   parent: BoxMagazine
   id: BoxMagazineMP5
-  description: A box full of 9mm MP7 magazines.
+  description: A box full of 9mm MP5 magazines.
   components:
   - type: Storage
     grid:
@@ -66,10 +66,24 @@
         amount: 8
 
 - type: entity
+  name: box of MP5/10 magazines
+  parent: BoxMagazine
+  id: BoxMagazineMP510
+  description: A box full of 10mm MP5/10 magazines.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: MagazineSubmachinegunMP510
+        amount: 8
+
+- type: entity
   name: box of M9 magazines
   parent: BoxMagazine
   id: BoxMagazineM9
-  description: A box full of 9mm MP7 magazines.
+  description: A box full of 9mm M9 magazines.
   components:
   - type: Storage
     grid:

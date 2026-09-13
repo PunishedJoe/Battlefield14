@@ -1,12 +1,12 @@
 - type: job
-  id: USSFCaptain
-  name: job-name-ussf-captain
-  description: job-description-ussf-captain
-  playTimeTracker: JobUSSFCaptain
-  weight: 78
-  startingGear: USSFCaptainGear
+  id: USSFSquadLeader
+  name: job-name-ussf-squadleader
+  description: job-description-ussf-squadleader
+  playTimeTracker: JobUSSFSquadLeader
+  weight: 75
+  startingGear: USSFSquadLeaderGear
   alwaysUseSpawner: true
-  icon: "JobIconNATOCaptain"
+  icon: "JobIconNATOSquadleader"
   requireAdminNotify: true
   supervisors: job-supervisors-usgov
   canBeAntag: false
@@ -22,14 +22,9 @@
     components:
     - type: NpcFactionMember
       factions:
-      - NATO
+      - USMC
     - type: ChatRank
-      rank: BF-rank-us-seniormastersergeant
-    - type: SurgerySpeedModifier
-      SpeedModifier: 1.25
-    - type: CMVendorUser
-      id: USSFLieutenant
-      points: 4
+      rank: BF-rank-sergeant
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
   access:
@@ -43,25 +38,29 @@
   - NATOMaintenance
   - NATOSoldier
   - NATOArmory
-  - NATOFunds
-  - NATOCrew
-  - NATOCaptain
 
 - type: startingGear
-  id: USSFCaptainGear
+  id: USSFSquadLeaderGear
   equipment:
-    id: USSFCaptainPDA
-    ears: ClothingHeadsetAltUSCommand
-    jumpsuit: ClothingUniformJumpsuitSpaceForceCaptain
+    id: USSFSquadLeaderPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltAssaultFilledG36TracerRed
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
+    head: ClothingHeadHatBeretCommander
+    outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilledUSMC
-#    back: ClothingBackpackSatchelSecurity
-    belt: ClothingBeltCommandFilledUS
-    gloves: ClothingHandsGlovesCombat
+    suitstorage: WeaponRifleUSXM8
     pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSARifleman
+    rightarmband: ClothingArmbandThighHolsterFilledUSMK27
   storage:
     back:
-    - CMVendUSSFWarVendorLieutenantTablet
+    - ArmorPlateMediumPackaged
+    - BoxPinpointerUniversalNATO
     - ClothingMaskGasM40
     - FlashlightMilitaryUS
+    - MagazinePistolGlock17
+    - MagazinePistolGlock17
+    - Whistle
     - Tourniquet
     - Zipties

@@ -15,7 +15,10 @@ BF-rank-policechief = Chief
 
 BF-rank-us-lancecorporal = LCpl.
 BF-rank-us-gunnerysergeant = GySgt.
-BF-rank-us-specialist = Spc.
+BF-rank-us-specialist = Spc1.
+BF-rank-us-specialist2 = Spc2.
+BF-rank-us-specialist3 = Spc3.
+BF-rank-us-specialist4 = Spc4.
 BF-rank-us-seniormastersergeant = SMSgt.
 
 ## RU specific

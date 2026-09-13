@@ -37,6 +37,8 @@
   - USSFCaptain
   - USSFCrewman
   - USSFFighterPilot
+  - USSFSquadLeader
+  - USSFRifleman
 
 - type: department
   id: ARNG

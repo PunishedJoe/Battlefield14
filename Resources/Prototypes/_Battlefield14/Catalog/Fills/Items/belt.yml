@@ -533,6 +533,26 @@
       - id: Multitool
       - id: BF14ToolShipRepairDevice
 
+- type: entity
+  id: ClothingBeltAssaultFilledG36
+  parent: ClothingBeltAssault
+  suffix: Filled, G36
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleG36
+        amount: 8
+
+- type: entity
+  id: ClothingBeltAssaultFilledG36TracerRed
+  parent: ClothingBeltAssault
+  suffix: Filled, G36 red tracer
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleG36TracerRed
+        amount: 8
+
 #region MEDICAL
 
 - type: entity
