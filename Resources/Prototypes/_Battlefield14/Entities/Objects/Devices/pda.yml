@@ -280,6 +280,38 @@
   - type: PdaBorderColor
     borderColor: "#203564"
 
+- type: entity
+  parent: BasePDA
+  id: USSFSquadLeaderPDA
+  name: USSF PDA
+  description: Filled with autistic space game footage.
+  suffix: squad leader
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: USSFSquadLeaderIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
+- type: entity
+  parent: BasePDA
+  id: USSFRiflemanPDA
+  name: USSF PDA
+  description: Filled with autistic space game footage.
+  suffix: rifleman
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-us
+  - type: Pda
+    id: USSFRiflemanIDCard
+    state: pda-us
+  - type: PdaBorderColor
+    borderColor: "#203564"
+
 #region ARNG
 
 - type: entity

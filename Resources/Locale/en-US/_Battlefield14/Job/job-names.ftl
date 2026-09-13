@@ -10,6 +10,8 @@ job-name-usmc-recon = USMC Force Recon
 job-name-ussf-captain = USSF Colonel
 job-name-ussf-crewman = USSF Crewman
 job-name-ussf-fighter-pilot = USSF Fighter Pilot
+job-name-ussf-squadleader = USSF Boarder Team Leader
+job-name-ussf-rifleman = USSF Boarder
 
 job-name-ng-lieutenant = N.G. Lieutenant
 job-name-ng-squadleader = N.G. Squad Leader

@@ -1,8 +1,8 @@
 - type: gamePreset
-  id: BF14_Stations_USMC_VDV
+  id: BF14_Stations_USSF_VDV
   alias:
-  - USMCvsVDV
-  name: Station control, USMC vs VDV
+  - USSFvsVDV
+  name: Station control, USF vs VDV
   showInVote: false
   description: Larp and frag.
   minPlayers: 20
@@ -10,9 +10,9 @@
   - NFAdventure
 
 - type: gamePreset
-  id: BF14_Carriers_USMC_VDV
+  id: BF14_Carriers_USSF_VDV
   alias:
-  - CarriersUSMCvsVDV
+  - CarriersUSSFvsVDV
   name: carrier vs carrier
   showInVote: true
   supportedMaps: BF14MapPoolCarrierVCarrier

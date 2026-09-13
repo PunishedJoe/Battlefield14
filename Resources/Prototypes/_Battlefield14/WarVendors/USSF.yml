@@ -1,8 +1,8 @@
 - type: entity
   parent: ColMarTechBase
-  id: CMVendNATOUSMCWarVendor
-  name: USMC FREEDOM war vendor
-  description: Marine-Grade weaponry from a vending machine.
+  id: CMVendNATOUSSFWarVendor
+  name: USSF boarder war vendor
+  description: Aircraft-grade weaponry from a vending machine.
   suffix: ColMarTech
   components:
   - type: Sprite
@@ -25,9 +25,8 @@
     - name: Armour
       choices: { BF14Armour: 1 }
       entries:
-      - id: ClothingOuterArmorPlateCarrierIOTV
-        name: plate carrier
-      - id: ArmorPlateMediumPackaged
+      - id: EVAKitCombatUSMC
+        name: voidsuit
         recommended: true
     - name: 'Personal Medicine'
       choices: { BF14PersonalMedicine: 1 }
@@ -61,9 +60,6 @@
       - id: ClothingBackpackRucksackBlack
         replaceSlot: back
         name: black rucksack
-      - id: ClothingBackpackMercenary
-        replaceSlot: back
-        name: ALICE backpack
       - id: ClothingBeltMilitaryWebbingUS
         replaceSlot: belt
         name: ALICE belt rig
@@ -76,17 +72,15 @@
         amount: 4
     - name: Weapons
       entries:
-      - id: WeaponRifleUSM16A4
-        amount: 50
+      - id: WeaponRifleUSXM8
+        amount: 10
       - id: WeaponRifleUSM27IAR
         amount: 3
-      - id: WeaponRifleUSM4
+      - id: WeaponRifleUSM4A1
         amount: 5
-      - id: WeaponSniperUSM40A1
-        amount: 1
-      - id: WeaponSubmachinegunDEMP5A5
+      - id: WeaponSubmachinegunDEMP510
         amount: 5
-      - id: WeaponPistolM9
+      - id: WeaponPistolUSMK27
         amount: 2
     - name: Utility
       entries:
@@ -94,6 +88,10 @@
         amount: 3
       - id: CombatKnife
         amount: 10
+      - id: JetpackBlackFilled
+        amount: 10
+      - id: HandHeldMassScanner
+        amount: 50
       - id: Crowbar
         amount: 50
     - name: Sustainment
@@ -110,7 +108,7 @@
         amount: 50
     - name: Misc
       entries:
-      - id: USMCFlagFolded
+      - id: USAFlagFolded
         amount: 3
       - id: WeaponShotgunUSM590
         amount: 1
@@ -119,9 +117,9 @@
 
 - type: entity
   parent: ColMarTechBase
-  id: CMVendNATOUSMCWarVendorGear
-  name: USMC gear vendor
-  description: Marine-Grade weaponry from a vending machine.
+  id: CMVendNATOUSSFWarVendorGear
+  name: USSF gear vendor
+  description: Aircraft-grade weaponry from a vending machine.
   suffix: ColMarTech
   components:
   - type: Sprite
@@ -156,16 +154,12 @@
         amount: 10
       - id: ThermiteCharge
         amount: 5
-      - id: BF14ExtendableLadderItem
-        amount: 10
-      - id: BF14FloorChargeItem
-        amount: 10
     - name: Grenades
       entries:
-      - id: OffensiveGrenadeUSMK21
-        amount: 15
+      - id: OffensiveGrenadeUSM111
+        amount: 10
       - id: DefensiveGrenadeUSM67
-        amount: 5
+        amount: 10
       - id: FlashbangGrenadeUSM84
         amount: 20
       - id: SmokeGrenadeUSM18
@@ -184,8 +178,6 @@
       entries:
       - id: BarbedWire10
         amount: 1
-      - id: BoxSandbagEmpty
-        amount: 5
       - id: EntrenchingTool
         amount: 2
       - id: Multitool
@@ -202,12 +194,22 @@
         amount: 3
       - id: Boombox
         amount: 2
+    - name: EVA
+      entries:
+      - id: JetpackBlackFilled
+        amount: 10
+      - id: DoubleEmergencyOxygenTankFilled
+        amount: 50
+      - id: ClothingHeadHelmetSoftsuitNasa
+        amount: 50
+      - id: ClothingOuterSoftsuitNASA
+        amount: 50
 
 - type: entity
   parent: ColMarTechBase
-  id: CMVendNATOUSMCWarVendorAmmo
-  name: USMC ammo vendor
-  description: Marine-Grade weaponry from a vending machine.
+  id: CMVendNATOUSSFWarVendorAmmo
+  name: USSF ammo vendor
+  description: Aircraft-grade weaponry from a vending machine.
   suffix: ColMarTech
   components:
   - type: Sprite
@@ -226,11 +228,15 @@
     sections:
     - name: Magazine boxes
       entries:
-      - id: BoxMagazineSTANAG
+      - id: BoxMagazineG36
         amount: 3
-      - id: BoxMagazineSTANAGTracerRed
+      - id: BoxMagazineG36TracerRed
         amount: 2
-      - id: BoxMagazineMP5
+      - id: BoxMagazineSTANAG
+        amount: 1
+      - id: BoxMagazineSTANAGTracerRed
+        amount: 1
+      - id: BoxMagazineMP510
         amount: 5
       - id: BoxFlare
         amount: 4
@@ -248,11 +254,60 @@
         amount: 5
       - id: MagazineBox9x19mmBig
         amount: 5
+      - id: MagazineBox10x25mm
+        amount: 5
       - id: ShellBoxBF12GaugeBuckshot
         amount: 10
     - name: Misc
       entries:
-      - id: MagazinePistolM9
+      - id: MagazinePistolGlock17
         amount: 10
       - id: CrayonBox
         amount: 1
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendNATOUSSFWarVendorShips
+  name: USSF ship LPC vendor
+  description: Aircraft-grade space ships from a vending machine.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: AccessReader
+    access: [["NATOCommon"]]
+  - type: CMAutomatedVendor
+    access:
+    - "NATOCommon"
+    sections:
+    - name: Transports
+      entries:
+      - id: ShipVoucherAAVP8
+        amount: 8
+
+- type: entity
+  parent: CMVendNATOUSSFWarVendorShips
+  id: CMVendNATOUSSFWarVendorShipsExtended
+  name: USSF extended ship LPC vendor
+  suffix: ColMarTech, Extended
+  components:
+  - type: CMAutomatedVendor
+    access:
+    - "NATOCommon"
+    sections:
+    - name: Transports
+      entries:
+      - id: ShipVoucherAAVP8
+        amount: 8
+      - id: ShipVoucherBradleyTow
+        amount: 5
+      - id: ShipVoucherBradleyAA
+        amount: 5
+      - id: ShipVoucherBradleyMG
+        amount: 5

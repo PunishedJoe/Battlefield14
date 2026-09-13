@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/19/2026 07:33:30
+  time: 09/13/2026 06:17:25
   entityCount: 3750
 maps: []
 grids:
@@ -118,10 +118,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
         Puddle: []
-        MetalFoam: []
+        Kudzu: []
         Smoke: []
+        MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -927,8 +927,9 @@ entities:
       data:
         tiles:
           2,0:
-            0: 32783
-            1: 16384
+            0: 32775
+            1: 8
+            2: 16384
           1,0:
             0: 2048
           2,-1:
@@ -936,7 +937,7 @@ entities:
           3,0:
             0: 24639
           2,1:
-            1: 8
+            2: 8
           3,1:
             0: 7
           4,0:
@@ -975,48 +976,48 @@ entities:
             0: 3936
           5,-5:
             0: 5
-            2: 2
-            1: 8192
+            3: 2
+            2: 8192
           5,-9:
             0: 65383
           5,-4:
-            3: 546
-            1: 8192
+            4: 546
+            2: 8192
           6,-8:
             0: 41983
           6,-7:
             0: 15103
           6,-6:
             0: 139
-            1: 52224
+            2: 52224
           6,-5:
-            3: 1
-            1: 18
+            4: 1
+            2: 18
           6,-9:
             0: 65533
           7,-8:
             0: 4113
           7,-7:
             0: 273
-            1: 17408
+            2: 17408
           7,-6:
             0: 49
-            1: 256
+            2: 256
           7,-9:
             0: 4368
           0,-6:
-            1: 9216
-            3: 16384
+            2: 9216
+            4: 16384
           0,-5:
-            3: 26144
+            4: 26144
           0,-4:
-            3: 1026
-            1: 16896
+            4: 1026
+            2: 16896
           0,-8:
-            1: 4
+            2: 4
           0,-9:
-            1: 24576
-            3: 272
+            2: 24576
+            4: 272
             0: 12
           1,-8:
             0: 30470
@@ -1047,11 +1048,12 @@ entities:
           3,-4:
             0: 53759
           0,-3:
-            3: 8
+            4: 8
           2,-3:
             0: 39327
           2,-2:
-            0: 48057
+            0: 47545
+            3: 512
           3,-3:
             0: 30481
           3,-2:
@@ -1063,13 +1065,13 @@ entities:
           4,-2:
             0: 48059
           5,-3:
-            3: 25600
+            4: 25600
           5,-2:
-            3: 70
+            4: 70
             0: 8192
           5,-1:
             0: 1058
-            1: 8192
+            2: 8192
           0,-12:
             0: 56785
           0,-13:
@@ -1078,17 +1080,17 @@ entities:
             0: 20957
           -1,-12:
             0: 32768
-            1: 512
-            3: 8192
+            2: 512
+            4: 8192
           -1,-11:
             0: 136
-            3: 34
-            1: 512
+            4: 34
+            2: 512
           0,-10:
             0: 61949
           -1,-9:
-            3: 128
-            1: 2112
+            4: 128
+            2: 2112
           1,-12:
             0: 32766
           1,-11:
@@ -1129,7 +1131,7 @@ entities:
             0: 65254
           5,-13:
             0: 56592
-            4: 4
+            5: 4
           6,-12:
             0: 65037
           6,-11:
@@ -1138,39 +1140,39 @@ entities:
             0: 56784
           6,-13:
             0: 57280
-            5: 1
+            6: 1
           7,-10:
             0: 4372
           7,-12:
-            1: 72
+            2: 72
           7,-13:
-            3: 52416
+            4: 52416
             0: 256
-            1: 8
+            2: 8
           -1,-14:
-            1: 512
-            3: 8192
+            2: 512
+            4: 8192
           -1,-13:
-            3: 34
-            1: 512
+            4: 34
+            2: 512
             0: 136
           -1,-15:
-            1: 16384
+            2: 16384
           0,-15:
-            1: 61440
+            2: 61440
           0,-14:
             0: 1
-            3: 1760
+            4: 1760
           1,-15:
-            1: 28672
+            2: 28672
           1,-14:
-            3: 816
+            4: 816
             0: 4
           1,-16:
-            1: 4
+            2: 4
           1,-17:
-            3: 16384
-            1: 1024
+            4: 16384
+            2: 1024
             0: 8
           2,-16:
             0: 44591
@@ -1199,19 +1201,19 @@ entities:
           5,-17:
             0: 4353
           5,-15:
-            1: 57344
+            2: 57344
           5,-14:
             0: 2
-            3: 3264
+            4: 3264
           6,-15:
-            1: 61440
+            2: 61440
           6,-14:
-            3: 1648
+            4: 1648
             0: 8
           7,-15:
-            1: 8192
+            2: 8192
           7,-14:
-            1: 16384
+            2: 16384
           2,-18:
             0: 4096
           3,-18:
@@ -1224,6 +1226,25 @@ entities:
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.6852
+          - 81.57766
           - 0
           - 0
           - 0
@@ -1398,6 +1419,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 13.5,-14.5
       parent: 1
+- proto: AirlockDoubleGlassLockedNATOCrew
+  entities:
+  - uid: 216
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 8.5,-25.5
+      parent: 1
 - proto: AirlockDoubleLockedNATOCommon
   entities:
   - uid: 58
@@ -1473,7 +1502,7 @@ entities:
       pos: 20.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18391.783
+      secondsUntilStateChange: -18767.926
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1565,18 +1594,6 @@ entities:
     components:
     - type: Transform
       pos: 24.5,-35.5
-      parent: 1
-- proto: AirlockNfsdGlassLockedNATOCrew
-  entities:
-  - uid: 2414
-    components:
-    - type: Transform
-      pos: 8.5,-24.5
-      parent: 1
-  - uid: 2415
-    components:
-    - type: Transform
-      pos: 8.5,-25.5
       parent: 1
 - proto: AirlockNfsdGlassLockedNATOSoldier
   entities:
@@ -10651,25 +10668,6 @@ entities:
     - type: Transform
       pos: 9.5,-5.5
       parent: 1
-  - uid: 908
-    components:
-    - type: Transform
-      pos: 9.5,-54.5
-      parent: 1
-- proto: ClosetO2Filled
-  entities:
-  - uid: 1109
-    components:
-    - type: Transform
-      pos: 13.5,-59.5
-      parent: 1
-- proto: ClosetWall
-  entities:
-  - uid: 3692
-    components:
-    - type: Transform
-      pos: 11.5,1.5
-      parent: 1
     - type: EntityStorage
       air:
         volume: 200
@@ -10698,16 +10696,69 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 3693
-          - 3694
-          - 3695
-          - 3696
-          - 3697
-          - 3698
-          - 3699
-          - 3700
-          - 3701
+          - 218
+          - 222
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 908
+    components:
+    - type: Transform
+      pos: 9.5,-54.5
+      parent: 1
+- proto: ClosetO2Filled
+  entities:
+  - uid: 1109
+    components:
+    - type: Transform
+      pos: 13.5,-59.5
+      parent: 1
+- proto: ClosetWall
+  entities:
+  - uid: 3692
+    components:
+    - type: Transform
+      pos: 11.5,1.5
+      parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14923
+        moles:
+        - 1.8856695
+        - 7.0937095
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
           - 3702
+          - 3701
+          - 3700
+          - 3699
+          - 3698
+          - 3697
+          - 3696
+          - 3695
+          - 3694
+          - 3693
   - uid: 3730
     components:
     - type: Transform
@@ -10741,12 +10792,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 3731
-          - 3732
-          - 3733
-          - 3734
-          - 3735
           - 3736
+          - 3735
+          - 3734
+          - 3733
+          - 3732
+          - 3731
 - proto: ClothingHeadHatHardhatOrange
   entities:
   - uid: 312
@@ -10778,28 +10829,28 @@ entities:
     - type: Transform
       pos: 13.509247,-51.55244
       parent: 1
-- proto: CMVendNATOUSMCWarVendor
+- proto: CMVendNATOUSSFWarVendor
   entities:
   - uid: 197
     components:
     - type: Transform
       pos: 14.5,-12.5
       parent: 1
-- proto: CMVendNATOUSMCWarVendorAmmo
+- proto: CMVendNATOUSSFWarVendorAmmo
   entities:
   - uid: 198
     components:
     - type: Transform
       pos: 16.5,-12.5
       parent: 1
-- proto: CMVendNATOUSMCWarVendorGear
+- proto: CMVendNATOUSSFWarVendorGear
   entities:
   - uid: 196
     components:
     - type: Transform
       pos: 15.5,-12.5
       parent: 1
-- proto: CMVendNATOUSMCWarVendorShips
+- proto: CMVendNATOUSSFWarVendorShips
   entities:
   - uid: 195
     components:
@@ -12467,7 +12518,7 @@ entities:
       pos: 10.5,-42.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16230.1875
+      secondsUntilStateChange: -16606.33
       state: Closing
   - uid: 2294
     components:
@@ -16616,6 +16667,15 @@ entities:
     - type: Transform
       pos: 16.349726,-53.162285
       parent: 1
+- proto: IsraelFlagFolded
+  entities:
+  - uid: 218
+    components:
+    - type: Transform
+      parent: 61
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: JanitorialTrolley
   entities:
   - uid: 2501
@@ -17418,6 +17478,15 @@ entities:
       rot: 3.141592653589793 rad
       pos: 18.5,1.5
       parent: 1
+- proto: PlushieTrump
+  entities:
+  - uid: 222
+    components:
+    - type: Transform
+      parent: 61
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: PortableGeneratorSuperPacmanShuttle
   entities:
   - uid: 635
@@ -19080,60 +19149,22 @@ entities:
       rot: 3.141592653589793 rad
       pos: 5.5,-20.5
       parent: 1
-- proto: SpawnPointUSMCAutomaticRifleman
-  entities:
-  - uid: 2405
-    components:
-    - type: Transform
-      pos: 14.5,-24.5
-      parent: 1
-  - uid: 2406
-    components:
-    - type: Transform
-      pos: 17.5,-24.5
-      parent: 1
-- proto: SpawnPointUSMCLieutenant
-  entities:
-  - uid: 3753
-    components:
-    - type: Transform
-      pos: 11.5,-5.5
-      parent: 1
 - proto: SpawnPointUSMCMedic
-  entities:
-  - uid: 216
-    components:
-    - type: Transform
-      pos: 17.5,-21.5
-      parent: 1
-  - uid: 222
-    components:
-    - type: Transform
-      pos: 14.5,-21.5
-      parent: 1
-- proto: SpawnPointUSMCRecon
-  entities:
-  - uid: 218
-    components:
-    - type: Transform
-      pos: 17.5,-22.5
-      parent: 1
-  - uid: 223
-    components:
-    - type: Transform
-      pos: 14.5,-22.5
-      parent: 1
-- proto: SpawnPointUSMCRifleman
   entities:
   - uid: 228
     components:
     - type: Transform
-      pos: 17.5,-23.5
+      pos: 17.5,-22.5
       parent: 1
-  - uid: 240
+  - uid: 2399
     components:
     - type: Transform
-      pos: 14.5,-23.5
+      pos: 17.5,-24.5
+      parent: 1
+  - uid: 2405
+    components:
+    - type: Transform
+      pos: 17.5,-23.5
       parent: 1
 - proto: SpawnPointUSMCSquadLeader
   entities:
@@ -19149,10 +19180,10 @@ entities:
       parent: 1
 - proto: SpawnPointUSSFCaptain
   entities:
-  - uid: 3754
+  - uid: 240
     components:
     - type: Transform
-      pos: 15.5,-32.5
+      pos: 11.5,-5.5
       parent: 1
 - proto: SpawnPointUSSFCrewman
   entities:
@@ -19187,6 +19218,35 @@ entities:
     components:
     - type: Transform
       pos: 5.5,-29.5
+      parent: 1
+- proto: SpawnPointUSSFRifleman
+  entities:
+  - uid: 223
+    components:
+    - type: Transform
+      pos: 14.5,-24.5
+      parent: 1
+  - uid: 2398
+    components:
+    - type: Transform
+      pos: 14.5,-21.5
+      parent: 1
+  - uid: 2400
+    components:
+    - type: Transform
+      pos: 14.5,-22.5
+      parent: 1
+  - uid: 2406
+    components:
+    - type: Transform
+      pos: 14.5,-23.5
+      parent: 1
+- proto: SpawnPointUSSFSquadLeader
+  entities:
+  - uid: 2397
+    components:
+    - type: Transform
+      pos: 17.5,-21.5
       parent: 1
 - proto: SpawnVehicleWheelchair
   entities:
@@ -19929,29 +19989,32 @@ entities:
           - Reverse
         - - Middle
           - Off
-- proto: USMCFlag
+- proto: USAFlag
   entities:
-  - uid: 3746
-    components:
-    - type: Transform
-      pos: 13.5,-0.5
-      parent: 1
-  - uid: 3748
+  - uid: 2415
     components:
     - type: Transform
       pos: 15.5,-29.5
       parent: 1
+  - uid: 2426
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 13.5,-0.5
+      parent: 1
+- proto: USAFlagFolded
+  entities:
+  - uid: 2414
+    components:
+    - type: Transform
+      pos: 13.453522,-1.4001365
+      parent: 1
+- proto: USMCFlag
+  entities:
   - uid: 3749
     components:
     - type: Transform
       pos: 16.5,-62.5
-      parent: 1
-- proto: USMCFlagFolded
-  entities:
-  - uid: 3747
-    components:
-    - type: Transform
-      pos: 13.550386,-1.3762331
       parent: 1
 - proto: VendingMachineChefvend
   entities:
