@@ -23,6 +23,25 @@
     armorPenetration: -0.1
 
 - type: entity
+  id: BulletPistolBF10x25
+  name: bullet (10x25mm Auto)
+  parent: BaseBulletPistol
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 30
+    armorPenetration: -0.25
+  - type: StaminaDamageOnCollide
+    damage: 7 # ~15 hits to stun
+  - type: ProjectileDamageFalloff
+    falloffStart: 6
+    falloffPerTile: 0.1
+    minimumMultiplier: 0.6
+    stepByTile: true
+
+- type: entity
   id: BulletPistolBF762x25
   name: bullet (7.62x25mm Tokarev)
   parent: BaseBulletPistol
@@ -49,6 +68,11 @@
     armorPenetration: -0.25
   - type: StaminaDamageOnCollide
     damage: 9 # ~11 hits to stun
+  - type: ProjectileDamageFalloff
+    falloffStart: 6
+    falloffPerTile: 0.1
+    minimumMultiplier: 0.6
+    stepByTile: true
 
 - type: entity
   id: BulletPistolBF357

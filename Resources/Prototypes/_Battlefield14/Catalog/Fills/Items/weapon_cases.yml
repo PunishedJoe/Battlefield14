@@ -36,6 +36,30 @@
       amount: 2
     - id: MagazineBox9x19mm
 
+- type: entity
+  parent: WeaponCaseShort
+  id: BF14WeaponCaseShortATGlock17
+  suffix: Glock-17
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolATGlock17
+    - id: MagazinePistolGlock17
+      amount: 2
+    - id: MagazineBox9x19mm
+
+- type: entity
+  parent: WeaponCaseShort
+  id: BF14WeaponCaseShortATGlock20
+  suffix: Glock-20
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponPistolATGlock20
+    - id: MagazinePistolGlock20
+      amount: 2
+    - id: MagazineBox10x25mm
+
 #region Handguns, DE
 
 - type: entity
@@ -172,6 +196,17 @@
     contents:
     - id: WeaponSubmachinegunDEMP5SD6
     - id: MagazineSubmachinegunMP5
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEMP510
+  suffix: MP5/10
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunDEMP510
+    - id: MagazineSubmachinegunMP510
       amount: 5
 
 - type: entity

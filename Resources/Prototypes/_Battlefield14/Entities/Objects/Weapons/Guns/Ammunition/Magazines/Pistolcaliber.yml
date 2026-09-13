@@ -124,6 +124,25 @@
 
 - type: entity
   parent: MagazinePistolGlock17
+  id: MagazinePistolGlock20
+  name: Glock-20 magazine (10x25mm Auto)
+  description: A 10x25mm Auto magazine made for the Glock-20 pistol.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolGlock20
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol10x25
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol10x25
+    capacity: 15
+
+- type: entity
+  parent: MagazinePistolGlock17
   id: MagazinePistolUSP45
   name: USP45 magazine (.45 ACP)
   description: A .45 ACP magazine made for the Universal Self Loading Pistol.
@@ -268,7 +287,7 @@
         - BF_CartridgePistol762x25
     capacity: 30
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP5.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/ppsh.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -310,6 +329,32 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+
+- type: entity
+  parent: MagazineSubmachinegunMP5
+  id: MagazineSubmachinegunMP510
+  name: MP5/10 magazine (10x25mm Auto)
+  description: Gun food.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolMP510
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol10x25
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol10x25
+    capacity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/MP510.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   parent: BaseMagazineSMG
