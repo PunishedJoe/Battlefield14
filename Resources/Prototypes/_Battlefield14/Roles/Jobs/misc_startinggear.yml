@@ -88,3 +88,28 @@
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
+
+- type: startingGear
+  id: BF14FBIGoonGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPlain
+    ears: ClothingHeadsetAltUS
+    balaclava: ClothingBalaclavaClassicMouthRangerGreen
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    gloves: ClothingHandsGlovesCombat
+    belt: ClothingBeltStationSecurityFilledFBI
+    shoes: ClothingShoesBootsJackFilled
+    pocket2: PouchFirstAidFilled
+
+- type: startingGear
+  id: BF14FBISMGGoonGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPlain
+    ears: ClothingHeadsetAltUS
+    balaclava: ClothingBalaclavaClassicMouthRangerGreen
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    suitstorage: WeaponSubmachinegunDEMP510
+    gloves: ClothingHandsGlovesCombat
+    belt: ClothingBeltStationSecurityFilledFBISMG
+    shoes: ClothingShoesBootsJackFilled
+    pocket2: PouchFirstAidFilled

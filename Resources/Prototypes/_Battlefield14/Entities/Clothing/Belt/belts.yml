@@ -144,6 +144,11 @@
           - Sidearm
   - type: ExplosionResistance
     damageCoefficient: 0
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has a slot for a sidearm, alt-click to remove it.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
@@ -169,6 +174,11 @@
           - Sidearm
   - type: ExplosionResistance
     damageCoefficient: 0
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has a slot for a sidearm, alt-click to remove it.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
@@ -194,6 +204,11 @@
           - Machete
   - type: ExplosionResistance
     damageCoefficient: 0
+  - type: ExtendDescription
+    descriptionList:
+      - description: It has a slot for a machete, alt-click to remove it.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   parent: ClothingBeltMilitaryWebbingIkea

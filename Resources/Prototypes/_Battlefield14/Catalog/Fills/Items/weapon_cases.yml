@@ -874,3 +874,14 @@
     - id: WeaponRifleCMBLMG
     - id: MagazineBeltBoxAr2
       amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBreaching
+  suffix: Breaching
+  components:
+  - type: StorageFill
+    contents:
+    - id: FUBAR
+    - id: Boltcutters
+    - id: BF14FloorChargeItem

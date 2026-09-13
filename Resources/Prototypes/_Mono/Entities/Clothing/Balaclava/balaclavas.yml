@@ -982,10 +982,10 @@
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    sprite: _Mono/Clothing/Balaclavas/balaclava_classic_mouth.rsi # BF14 // lazy ass
     color: "#d2B48C"
   - type: Clothing
-    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    sprite: _Mono/Clothing/Balaclavas/balaclava_classic_mouth.rsi # BF14 // lazy ass
     clothingVisuals:
       balaclava:
       - state: equipped-BALACLAVA
@@ -1006,10 +1006,10 @@
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    sprite: _Mono/Clothing/Balaclavas/balaclava_classic_mouth.rsi # BF14 // lazy ass
     color: "#4A5A49"
   - type: Clothing
-    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    sprite: _Mono/Clothing/Balaclavas/balaclava_classic_mouth.rsi # BF14 // lazy ass
     clothingVisuals:
       balaclava:
       - state: equipped-BALACLAVA
@@ -1030,10 +1030,10 @@
   description: A colored balaclava to make you look menacing.
   components:
   - type: Sprite
-    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    sprite: _Mono/Clothing/Balaclavas/balaclava_classic_mouth.rsi # BF14 // lazy ass
     color: "#81613C"
   - type: Clothing
-    sprite: _Mono/Clothing/Balaclavas/balaclava_ski_mask.rsi
+    sprite: _Mono/Clothing/Balaclavas/balaclava_classic_mouth.rsi # BF14 // lazy ass
     clothingVisuals:
       balaclava:
       - state: equipped-BALACLAVA
