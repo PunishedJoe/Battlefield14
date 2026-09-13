@@ -537,6 +537,38 @@
         color: "#4f94ad"
         requireDetailRange: true
 
+- type: entity
+  name: Glock-20
+  parent: WeaponPistolATGlock17
+  id: WeaponPistolATGlock20
+  description: Made to take advantage of the 10mm Auto market in law enforcement and security roles.
+  components:
+  - type: Gun
+    angleIncrease: 3
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolGlock20
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolGlock20
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol10x25
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol10x25
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes Glock-20 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
 ## PACT
 #region RU
 

@@ -106,13 +106,25 @@
         volume: -12
         variation: 0.125
 
+- type: entity
+  name: SP5
+  parent: WeaponSubmachinegunDEMP5A4
+  id: WeaponSubmachinegunUSSP5
+  description: A civilian semi-automatic only version of the MP5A2.
+  components:
+  - type: Gun
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 5
+
 #region DE
 
 - type: entity
   name: MP5A4
   parent: BaseWeaponSubMachineGun
   id: WeaponSubmachinegunDEMP5A4
-  description: Feather-light recoil, swag, and a high rate of fire; everything you need in a submachine gun, except for a massive flashlight mounted on top.
+  description: An MP5A5 rechambered in 10x25mm Auto designed for use by the FBI. Features an automatic bolt hold open.
   components:
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
@@ -136,15 +148,16 @@
       - state: A4-equipped-BACKPACK
   - type: Gun
     minAngle: 2
-    maxAngle: 10
+    maxAngle: 12
     fireRate: 8
-    angleIncrease: 1.5
-    angleDecay: 15
+    angleIncrease: 3
+    angleDecay: 10
     projectileSpeed: 35 # pistol caliber
     availableModes:
     - SemiAuto
     - FullAuto
     - Burst
+    burstCooldown: 0.2
     soundGunshot:
       collection: BF_MP5_Gunshots
       params:
@@ -361,6 +374,82 @@
     clothingVisuals:
       suitstorage2:
       - state: SD6-equipped-BACKPACK
+
+- type: entity
+  name: MP5/10
+  parent: WeaponSubmachinegunDEMP5A4Flashlight
+  id: WeaponSubmachinegunDEMP510
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A5.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    state: icon-MP510
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-10-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: front-flashlight
+    - state: stock-collapsing
+    - state: flashlight-overlay
+      shader: unshaded
+      visible: false
+      map: [ "light" ]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+    equippedPrefix: A5
+    clothingVisuals:
+      suitstorage2:
+      - state: A5-equipped-BACKPACK
+  - type: Gun
+    minAngle: 2
+    maxAngle: 10
+    fireRate: 8
+    angleIncrease: 1.5
+    angleDecay: 15
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+    shotsPerBurst: 2
+    burstCooldown: 0.2
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: true
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        priority: 1
+        startingItem: PowerCellMedium
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMP510
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 3
+        whitelist:
+          tags:
+            - MagazinePistolMP510
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol10x25
+        priority: 2
+        whitelist:
+          tags:
+            - BF_CartridgePistol10x25
+  - type: MagazineVisuals
+    magState: mag-10
+    steps: 1
+    zeroVisible: true
 
 - type: entity
   name: MP7
