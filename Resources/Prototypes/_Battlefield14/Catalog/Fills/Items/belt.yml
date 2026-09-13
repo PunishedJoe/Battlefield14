@@ -445,6 +445,41 @@
         amount: 2
 
 - type: entity
+  id: ClothingBeltStationSecurityFilledFBI
+  parent: ClothingBeltStationSecurity
+  suffix: Filled, FBI
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolITM9Supp
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+        amount: 2
+      - id: FlashlightSeclite
+      - id: MagazinePistolM9
+        amount: 6
+
+- type: entity
+  id: ClothingBeltStationSecurityFilledFBISMG
+  parent: ClothingBeltStationSecurity
+  suffix: Filled, FBI, MP5/10
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - WeaponPistolITM9Supp
+  - type: StorageFill
+    contents:
+      - id: Handcuffs
+      - id: FlashlightSeclite
+      - id: MagazinePistolM9
+        amount: 2
+      - id: MagazineSubmachinegunMP510
+        amount: 4
+
+- type: entity
   id: ClothingBeltMacheteFilled
   parent: ClothingBeltMachete
   suffix: Filled

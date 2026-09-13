@@ -156,6 +156,26 @@
   - "/Audio/_Battlefield14/Weapons/Guns/UZI/uc_uzi_fire-06.ogg"
 
 - type: soundCollection
+  id: BF_USP45_Gunshots # USP - Used for USP45's
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-06.ogg"
+
+- type: soundCollection
+  id: BF_USP9_Gunshots # USP - Used for USP9's
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-9-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-9-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-9-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-9-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-9-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/USP/fire-9-06.ogg"
+
+- type: soundCollection
   id: BF_MP7_Gunshots # MP7 - Used for MP7
   files:
   - "/Audio/_Battlefield14/Weapons/Guns/MP7/uc_mp7_fire-01.ogg"
@@ -238,14 +258,24 @@
   - /Audio/Weapons/Guns/Miss/bullet_miss4.ogg
 
 - type: soundCollection
-  id: BF_M9Beretta_Gunshots # M9 Beretta - used for all pistols currently
+  id: BF_M9Beretta_Gunshots # M9 Beretta - used for M9 Beretta
   files:
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-01.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-02.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-03.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-04.ogg"
-#  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-05.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-06.ogg"
+
+- type: soundCollection
+  id: BF_M9Beretta_Gunshots_SUPP # M9 Beretta - used for M9 Beretta SUPP.
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-sup-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-sup-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-sup-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-sup-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-sup-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/Beretta/fire-sup-06.ogg"
 
 - type: soundCollection
   id: BF_SCARL_Gunshots # SCAR-L - used for SCAR-L

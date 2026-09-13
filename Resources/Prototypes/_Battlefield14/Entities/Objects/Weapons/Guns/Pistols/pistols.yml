@@ -164,7 +164,7 @@
 - type: entity
   name: M9 Beretta
   parent: BaseWeaponPistol
-  id: WeaponPistolM9 # USM9
+  id: WeaponPistolM9 # ITM9
   description: An over-engineered tent spike hammer.
   components:
   - type: Sprite
@@ -281,20 +281,20 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      collection: BF_Glock17_Gunshots
+      collection: BF_USP45_Gunshots
       params:
         volume: -3
   - type: ChamberMagazineAmmoProvider
     soundRack:
-      path: /Audio/_Battlefield14/Weapons/Guns/Glock17/rack.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/USP/rack.ogg
       params:
         volume: -1
     soundBoltOpened:
-      path: /Audio/_Battlefield14/Weapons/Guns/Glock17/lock.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/USP/slidepull.ogg
       params:
         volume: -1
     soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/Glock17/chamber.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/USP/slidedrop.ogg
       params:
         volume: -1
   - type: ItemSlots
@@ -302,8 +302,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistolUSP45
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/USP/magin1.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/USP/magout1.ogg
         priority: 2
         whitelist:
           tags:
@@ -332,13 +332,18 @@
   id: WeaponPistolDEUSP9
   description: The Universal Self Loading Pistol, as the name is the acronym of. Chambered in 9x19mm.
   components:
+  - type: Gun
+    soundGunshot:
+      collection: BF_USP9_Gunshots
+      params:
+        volume: -3
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistolUSP9
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/USP/magin1.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/USP/magout1.ogg
         priority: 2
         whitelist:
           tags:
@@ -568,6 +573,35 @@
       - description: Takes Glock-20 pattern magazines.
         color: "#4f94ad"
         requireDetailRange: true
+
+#region IT
+
+- type: entity
+  name: M9 Beretta SUPP.
+  parent: WeaponPistolM9
+  id: WeaponPistolITM9Supp
+  description: Shame you don't have any tranquilizer rounds.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/M9.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: supp
+      offset: 0.408, 0
+  - type: Gun
+    soundGunshot:
+      collection: BF_M9Beretta_Gunshots_SUPP
+      params:
+        volume: -9
+        range: 7
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,0
+    - 0,1,0,1
 
 ## PACT
 #region RU

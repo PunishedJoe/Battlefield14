@@ -1,0 +1,58 @@
+- type: entity
+  parent: MobHuman
+  id: BF14MobHumanFBIBase
+  name: John FBI
+  suffix: Human, Base, FBI, BF14
+  components:
+  - type: HumanoidAppearance
+    height: 1.0
+    width: 1.0
+  - type: Loadout
+    prototypes: [BF14FBIGoonGear]
+  - type: GhostRole
+    name: job-name-fbi-goon
+    description: job-description-fbi-goon
+    rules: ghost-role-information-fbi-rules
+    raffle:
+      settings: short
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - SyndicateNamesPrefix
+    - SyndicateNamesNormal # OPSEC bro..
+  - type: NpcFactionMember
+    factions:
+    - USPD
+  - type: Company
+    companyName: NATO
+  - type: LanguageKnowledge # Einstein Engines
+    speaks:
+    - English
+    - Russian
+    - Esperanto
+    - Sign
+    understands:
+    - English
+    - Russian
+    - Esperanto
+    - Sign
+    - TauCetiBasic
+  - type: CombatMode
+    disarmFailChance: 0.2
+  - type: Stamina
+    baseCritThreshold: 110
+
+- type: entity
+  parent: BF14MobHumanFSBBase
+  id: BF14MobHumanFBISMG
+  name: FBI submachinegunner
+  suffix: BF14
+  components:
+  - type: Loadout
+    prototypes: [BF14FBISMGGoonGear]
+  - type: GhostRole
+    name: job-name-fbi-submachinegunner
+    description: job-description-fbi-goon
+    rules: ghost-role-information-fbi-rules
+    raffle:
+      settings: short

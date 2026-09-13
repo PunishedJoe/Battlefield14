@@ -168,6 +168,7 @@
     storedSprite:
       sprite: _Civ14/Objects/grenade.rsi
       state: plastic-explosive1
+  - type: WeaponCaseInsertable
   - type: SpawnAfterInteract
     prototype: BF14FloorCharge
     doAfter: 2
