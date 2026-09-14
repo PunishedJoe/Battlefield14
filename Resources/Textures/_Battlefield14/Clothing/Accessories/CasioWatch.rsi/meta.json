@@ -11,11 +11,11 @@
       "name": "icon"
     },
     {
-      "name": "equipped-NECK",
+      "name": "equipped-ARMBAND",
       "directions": 4
     },
     {
-        "name": "folded-equipped-NECK",
+        "name": "flipped-equipped-ARMBAND",
         "directions": 4
     }
   ]

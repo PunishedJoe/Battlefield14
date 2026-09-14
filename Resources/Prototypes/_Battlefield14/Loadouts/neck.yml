@@ -62,17 +62,3 @@
   equipment:
     neck: ClothingNeckIFFtapeStGeorge
 
-- type: loadout
-  id: LoadoutNeckCasioF91W
-  equipment:
-    neck: ClothingNeckCasioF91W
-
-- type: loadout
-  id: LoadoutNeckWristwatch
-  equipment:
-    neck: Wristwatch
-
-- type: loadout
-  id: LoadoutNeckWristwatchGold
-  equipment:
-    neck: WristwatchGold
