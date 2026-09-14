@@ -286,6 +286,20 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledM320SWAT
+  suffix: Filled, M320, SWAT
+  parent: CrateSecgear
+  name: M320 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSM320
+        - id: BoxMagazine40x46ChemicalSmoke
+        - id: BoxMagazine40x46mmIllumination
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledM14EBR
   suffix: Filled, Mk-14 EBR
   parent: CrateSecgear

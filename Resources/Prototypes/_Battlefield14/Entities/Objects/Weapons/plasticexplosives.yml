@@ -151,3 +151,74 @@
     intensitySlope: 10
     maxIntensity: 150
     maxTileBreak: 2
+
+- type: entity
+  parent: BaseItem
+  id: BF14FloorChargeItem
+  name: floor charge
+  description: A big explosive used to breach holes in roofs to access the juicy contents below.
+  suffix: Disarmed, Placeable
+  components:
+  - type: Sprite
+    drawdepth: Items
+    sprite: _Civ14/Objects/grenade.rsi
+    state: plastic-explosive0
+  - type: Item
+    size: Small
+    storedSprite:
+      sprite: _Civ14/Objects/grenade.rsi
+      state: plastic-explosive1
+  - type: WeaponCaseInsertable
+  - type: SpawnAfterInteract
+    prototype: BF14FloorCharge
+    doAfter: 2
+    removeOnInteract: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is disarmed, left click on a tile to place and arm it.
+        color: green
+        requireDetailRange: true
+
+- type: entity
+  name: floor charge
+  description: A big explosive used to breach holes in roofs to access the juicy contents below.
+  id: BF14FloorCharge
+  suffix: Armed, Placed
+  components:
+  - type: Sprite
+    drawdepth: Items
+    sprite: _Civ14/Objects/grenade.rsi
+    state: plastic-explosive2
+  - type: Physics
+    bodyType: Dynamic
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Thermobaric
+    totalIntensity: 300
+    intensitySlope: 25
+    maxIntensity: 60
+  - type: ActiveTimerTrigger
+    timeRemaining: 5
+  - type: EmitSoundOnSpawn
+    sound: 
+      path: /Audio/Effects/minibombcountdown.ogg
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is ARMED, get the hell back!
+        color: red
+        requireDetailRange: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Physics
+    bodyType: Static
+    fixedRotation: true
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+          - LowImpassable

@@ -317,6 +317,8 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/m72.rsi
     layers:
       - state: folded
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/m72.rsi
   - type: SpawnItemsOnUse
     items:
     - id: WeaponLauncherUSM72LAW
@@ -341,22 +343,24 @@
 - type: entity
   parent: BaseWeaponLauncherDisposableFolded
   id: WeaponLauncherUSM72LAWThermobaricFolded
-  name: M72A6 LAW
-  description: An M72 LAW with a modified warhead for less penetration but a higher blast effect. Cannot be reloaded, drop after use.
+  name: M72A9 LAW
+  description: An M72 LAW with a modified warhead for a higher blast effect. Cannot be reloaded, drop after use.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/m72thermobaric.rsi
     layers:
       - state: folded
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/m72thermobaric.rsi
   - type: SpawnItemsOnUse
     items:
     - id: WeaponLauncherUSM72LAWThermobaric
 
 - type: entity
-  name: M72A6 LAW
+  name: M72A9 LAW
   parent: BaseWeaponLauncherDisposableUnfolded
   id: WeaponLauncherUSM72LAWThermobaric
-  description: An M72 LAW with a modified warhead for less penetration but a higher blast effect. Cannot be reloaded, drop after use.
+  description: An M72 LAW with a modified warhead for a higher blast effect. Cannot be reloaded, drop after use.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/m72thermobaric.rsi

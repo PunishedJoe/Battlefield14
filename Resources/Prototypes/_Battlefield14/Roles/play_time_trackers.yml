@@ -58,6 +58,12 @@
 - type: playTimeTracker
   id: JobUSSFFighterPilot
 
+- type: playTimeTracker
+  id: JobUSSFSquadLeader
+
+- type: playTimeTracker
+  id: JobUSSFRifleman
+
 #region National Guard
 
 - type: playTimeTracker

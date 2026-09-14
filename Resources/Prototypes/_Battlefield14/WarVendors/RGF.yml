@@ -86,6 +86,8 @@
         amount: 2
     - name: Utility
       entries:
+      - id: ClothingHelmetAttachmentNVGsBasicPACT
+        amount: 3
       - id: RiotBulletShield
         amount: 3
       - id: CombatKnife
@@ -98,6 +100,8 @@
         amount: 50
     - name: Sustainment
       entries:
+      - id: Tourniquet
+        amount: 20
       - id: BoxMRE
         amount: 50
       - id: FoodSnackNutribrick
@@ -157,7 +161,9 @@
       - id: BoxChargeFuzeKit
         amount: 5
       - id: BF14ExtendableLadderItem
-        amount: 5
+        amount: 10
+      - id: BF14FloorChargeItem
+        amount: 10
     - name: Grenades
       entries:
       - id: OffensiveGrenadeRURGD5

@@ -59,7 +59,7 @@
     sprite: _Battlefield14/Objects/Tools/flashlightmilitary.rsi
   - type: PointLight
     enabled: false
-    mask: /Textures/Effects/LightMasks/cone.png
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
     autoRot: true
     radius: 8
     netsync: false

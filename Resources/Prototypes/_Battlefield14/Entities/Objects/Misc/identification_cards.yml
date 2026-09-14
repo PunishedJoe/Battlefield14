@@ -246,6 +246,35 @@
   - type: PresetIdCard
     job: USSFFighterPilot
 
+
+- type: entity
+  parent: IDCardStandard
+  id: USSFSquadLeaderIDCard
+  name: Space Force ID card
+  suffix: squad leader
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USSFSquadLeader
+
+- type: entity
+  parent: IDCardStandard
+  id: USSFRiflemanIDCard
+  name: Space Force ID card
+  suffix: rifleman
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: USSFRifleman
+
 #region ARNG
 
 - type: entity

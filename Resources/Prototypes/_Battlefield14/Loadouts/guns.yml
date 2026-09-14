@@ -62,9 +62,9 @@
 
 - type: loadout
   id: LoadoutGunMP5
-  name: MP5A5 gun case
+  name: MP5A4 gun case
   inhand:
-  - BF14WeaponCaseLongDEMP5A5
+  - BF14WeaponCaseLongDEMP5A4
 
 - type: loadout
   id: LoadoutGunM870

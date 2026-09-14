@@ -23,6 +23,9 @@
   id: MagazinePistolGlock17
 
 - type: Tag
+  id: MagazinePistolGlock20
+
+- type: Tag
   id: MagazinePistolM1911
 
 - type: Tag
@@ -90,6 +93,9 @@
 
 - type: Tag
   id: BF_CartridgePistol9x19
+
+- type: Tag
+  id: BF_CartridgePistol10x25
 
 - type: Tag
   id: BF_CartridgePistol357
@@ -252,6 +258,9 @@
 
 - type: Tag
   id: MagazinePistolMP5
+
+- type: Tag
+  id: MagazinePistolMP510
 
 - type: Tag
   id: MagazinePistolMP7

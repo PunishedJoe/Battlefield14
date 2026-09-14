@@ -4,9 +4,11 @@
   name: Spaceport control point
   suffix: bengalsk, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Benglask spaceport"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Benglask spaceport"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Bengalst Spaceport"
   - type: NavMapBeacon
     defaultText: "Spaceport"
     color: "#FFFF00"
@@ -19,9 +21,11 @@
   name: City administration control point
   suffix: bengalsk, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Benglask city administration"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Benglask city administration"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Bengalsk city administration"
   - type: NavMapBeacon
     defaultText: "City Administration"
     color: "#FFFF00"
@@ -34,9 +38,11 @@
   name: MFC control point
   suffix: bengalsk, 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Benglask MFC"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Benglask MFC"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Bengalsk MFC"
   - type: NavMapBeacon
     defaultText: "MFC"
     color: "#FFFF00"
@@ -49,9 +55,11 @@
   name: Lower Houses control point
   suffix: bengalsk, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Benglask Lower Houses"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Benglask Lower Houses"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Bengalsk Luower houses"
   - type: NavMapBeacon
     defaultText: "Lower Houses"
     color: "#FFFF00"
@@ -64,9 +72,11 @@
   name: Upper Houses control point
   suffix: bengalsk, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Benglask Upper Houses"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Benglask Upper Houses"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Bengalsk upper houses"
   - type: NavMapBeacon
     defaultText: "Upper Houses"
     color: "#FFFF00"
@@ -79,9 +89,11 @@
   name: Mikkie D control point
   suffix: bengalsk, 120s / 2m
   components:
-  - type: POICapture
-    poiName: "Benglask Mikkie D"
-    timeToCapture: 120
+#  - type: POICapture
+#    poiName: "Benglask Mikkie D"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Bengalsk Mikkie D's"
   - type: NavMapBeacon
     defaultText: "Mikkie D"
     color: "#FFFF00"

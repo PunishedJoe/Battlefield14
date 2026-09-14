@@ -26,6 +26,9 @@
       "name": "supp"
     },
     {
+      "name": "holosight"
+    },
+    {
       "name": "inhand-left",
       "directions": 4
     },

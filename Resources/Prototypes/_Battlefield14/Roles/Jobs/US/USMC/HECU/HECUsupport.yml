@@ -21,14 +21,10 @@
     - type: NpcFactionMember
       factions:
       - USMC
+    - type: ChatRank
+      rank: BF-rank-corporal
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
-  # COMMENTED OUT: AddComponentSpecial requires at least one component, but all components are commented out
-  # - !type:AddComponentSpecial
-  #   components:
-  #     # COMMENTED OUT: ChatRank and HullrotFaction not supported
-  #     # - type: ChatRank
-  #     #   rank: BF-rank-corporal
   access:
   - Maintenance
   - Service
@@ -47,7 +43,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilled12GaugeBuckSlugBreach
-    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81UrbanHECU
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat
@@ -80,7 +76,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUSFilledM249
-    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81UrbanHECU
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat
@@ -111,7 +107,7 @@
     ears: ClothingHeadsetAltUS
     neck: FlashlightMilitaryUS
     belt: ClothingBeltMilitaryWebbingUS
-    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81UrbanHECU
     balaclava: ClothingBalaclavaMilitary
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat

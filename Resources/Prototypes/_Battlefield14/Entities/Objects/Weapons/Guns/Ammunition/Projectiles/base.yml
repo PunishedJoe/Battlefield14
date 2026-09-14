@@ -14,9 +14,9 @@
       types:
         Piercing: 20
   - type: ProjectileDamageFalloff
-    falloffStart: 8
+    falloffStart: 6
     falloffPerTile: 0.1
-    minimumMultiplier: 0.75
+    minimumMultiplier: 0.7
     stepByTile: true
   - type: StaminaDamageOnCollide
     damage: 5 # 20 hits to stun lol

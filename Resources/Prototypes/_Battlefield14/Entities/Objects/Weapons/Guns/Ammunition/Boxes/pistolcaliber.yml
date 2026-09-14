@@ -52,6 +52,18 @@
 
 - type: entity
   parent: MagazineBox9x19mm
+  id: MagazineBox10x25mm
+  name: ammunition pack (10x25mm Auto)
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 60
+    proto: BF_CartridgePistol10x25
+    whitelist:
+      tags:
+        - BF_CartridgePistol10x25
+
+- type: entity
+  parent: MagazineBox9x19mm
   id: MagazineBox45ACP
   name: ammunition pack (.45 ACP)
   components:

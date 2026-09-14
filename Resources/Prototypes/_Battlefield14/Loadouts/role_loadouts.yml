@@ -143,6 +143,33 @@
   - BF_MiscItemsNATO
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobUSSFSquadLeader
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_HelmetAttachmentNATO
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
+  - BF_PistolsUSMCSL
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobUSSFRifleman
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_HelmetAttachmentNATO
+  - BF_BackpacksBlack
+  - BF_MiscItemsNATO
+  - BF_Map
+  - ContractorWallet
+
 #region NG
 
 - type: roleLoadout

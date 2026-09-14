@@ -35,6 +35,8 @@
             USSFCaptain: [ -1, -1 ] # BF14 V
             USSFCrewman: [ -1, -1 ]
             USSFFighterPilot: [ -1, -1 ]
+            USSFSquadLeader: [ -1, -1 ]
+            USSFRifleman: [ -1, -1 ]
             VKSCaptain: [ -1, -1 ]
             VKSCrewman: [ -1, -1 ]
             VKSFighterPilot: [ -1, -1 ]

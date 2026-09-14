@@ -40,7 +40,6 @@
       - WeaponRifleUSM16A2
       - WeaponShotgunUSM590Buckshot
       - WeaponShotgunUSM870
-      - WeaponRifleUSM14
       - WeaponSniperUSM40A1
       - BF14KnifeFlipTaticool
     chance: 1
@@ -62,6 +61,7 @@
       - WeaponRifleDEG3A3
       - WeaponRifleDEG36
       - WeaponRifleUSM16A4
+      - WeaponRifleUSM14
       - WeaponShotgunUSM870
       - WeaponSubmachinegunDEMP7
       - WeaponSubmachinegunDEMP5SD6
@@ -159,6 +159,7 @@
       - WeaponPistolUSM1911
       - WeaponPistolM9
       - WeaponPistolATGlock17
+      - WeaponSubmachinegunUSSP5
       - WeaponShotgunUSM590Buckshot
       - BF14KnifeSwitchblade
     chance: 1
@@ -203,6 +204,7 @@
       - WeaponShotgunUSM870
       - WeaponRifleUSM14
       - WeaponSubmachinegunDEMP5SD6
+      - WeaponSubmachinegunDEMP510
       - WeaponSniperUSM40A1
     chance: 1
 

@@ -123,6 +123,32 @@
     - state: natofighterpilot
       scale: 1.5,1.5
 
+- type: entity
+  id: SpawnPointUSSFSquadLeader
+  parent: SpawnPointJobBase
+  name: USSF Squad Leader
+  components:
+  - type: SpawnPoint
+    job_id: USSFSquadLeader
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natosquadleader
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointUSSFRifleman
+  parent: SpawnPointJobBase
+  name: USSF Rifleman
+  components:
+  - type: SpawnPoint
+    job_id: USSFRifleman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natoinfantry
+      scale: 1.5,1.5
+
 #region ARNG
 
 - type: entity

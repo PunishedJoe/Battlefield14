@@ -1,15 +1,17 @@
 #United States#
 
-job-name-usmc-lieutenant = Marine Platoon Commander
-job-name-usmc-squadleader = Marine Squad Leader
-job-name-usmc-rifleman = Marine Rifleman
-job-name-usmc-automatic-rifleman = Marine Automatic Rifleman
+job-name-usmc-lieutenant = USMC Platoon Commander
+job-name-usmc-squadleader = USMC Squad Leader
+job-name-usmc-rifleman = USMC Rifleman
+job-name-usmc-automatic-rifleman = USMC Automatic Rifleman
 job-name-usmc-medic = Navy Corpsman
-job-name-usmc-recon = Marine Force Recon
+job-name-usmc-recon = USMC Force Recon
 
 job-name-ussf-captain = USSF Colonel
 job-name-ussf-crewman = USSF Crewman
 job-name-ussf-fighter-pilot = USSF Fighter Pilot
+job-name-ussf-squadleader = USSF Boarder Team Leader
+job-name-ussf-rifleman = USSF Boarder
 
 job-name-ng-lieutenant = N.G. Lieutenant
 job-name-ng-squadleader = N.G. Squad Leader

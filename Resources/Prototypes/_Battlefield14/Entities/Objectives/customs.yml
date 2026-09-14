@@ -6,9 +6,11 @@
   name: Dorms control point
   suffix: Customs, 240s / 4m
   components:
-  - type: POICapture
-    poiName: "Customs dormatories"
-    timeToCapture: 240
+#  - type: POICapture
+#    poiName: "Customs dormatories"
+#    timeToCapture: 240
+  - type: CapturePoint
+    pointName: "Customs dormatories"
   - type: NavMapBeacon
     defaultText: "Dormatories"
     color: "#FFFF00"
@@ -22,9 +24,11 @@
   name: Stronghold control point
   suffix: Customs, 240s / 4m
   components:
-  - type: POICapture
-    poiName: "Customs stronghold"
-    timeToCapture: 240
+#  - type: POICapture
+#    poiName: "Customs stronghold"
+#    timeToCapture: 240
+  - type: CapturePoint
+    pointName: "Customs stronghold"
   - type: NavMapBeacon
     defaultText: "Stronghold"
     color: "#FFFF00"
@@ -38,9 +42,11 @@
   name: Old Gas control point
   suffix: Customs, 180 / 3m
   components:
-  - type: POICapture
-    poiName: "Customs old gastation"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Customs old gastation"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Customs old gas station"
   - type: NavMapBeacon
     defaultText: "Old gastation"
     color: "#FFFF00"
@@ -54,9 +60,11 @@
   name: New Gas control point
   suffix: Customs, 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Customs new gastation"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Customs new gastation"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Customs new gas station"
   - type: NavMapBeacon
     defaultText: "New gastation"
     color: "#FFFF00"
@@ -70,9 +78,11 @@
   name: Warehouse control point
   suffix: Customs, 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Customs warehouses"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Customs warehouses"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Customs warehouses"
   - type: NavMapBeacon
     defaultText: "Warehouses"
     color: "#FFFF00"
@@ -86,9 +96,11 @@
   name: Crackhouse control point
   suffix: Customs, 180s / 3m
   components:
-  - type: POICapture
-    poiName: "Customs crackhouse"
-    timeToCapture: 180
+#  - type: POICapture
+#    poiName: "Customs crackhouse"
+#    timeToCapture: 180
+  - type: CapturePoint
+    pointName: "Customs crackhouse"
   - type: NavMapBeacon
     defaultText: "Crackhouse"
     color: "#FFFF00"

@@ -10,6 +10,21 @@
     {
       "name": "suicide_vest",
       "directions": 4
+    },
+    {
+      "name": "plastic-explosive0"
+    },
+    {
+      "name": "plastic-explosive1"
+    },
+    {
+      "name": "plastic-explosive2",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
     }
   ]
 }

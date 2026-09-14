@@ -4,7 +4,7 @@
   name: 'USS Barack Obama'
   minimumDistance: 3000
   maximumDistance: 3000
-  spawnGamePreset: [ BF14_Carriers_USMC_VDV ]
+  spawnGamePreset: [ BF14_Carriers_USSF_VDV ]
   spawnGroup: Optional
   gridPath: /Maps/_Battlefield14/Shuttles/NATO/Capitals/USSBarackObamaExtended.yml
   addComponents:
@@ -38,9 +38,6 @@
             USSFCaptain: [ 1, 1 ]
             USSFCrewman: [ 3, 3 ]
             USSFFighterPilot: [ 3, 3 ]
-            USMCLieutenant: [ 1, 1 ]
-            USMCSquadLeader: [ 3, 3 ]
-            USMCRifleman: [ -1, -1 ]
-            USMCAutomaticRifleman: [ 1, 1 ]
+            USSFSquadLeader: [ 3, 3 ]
+            USSFRifleman: [ -1, -1 ]
             USMCMedic: [ 3, 3 ]
-            USMCRecon: [ 3, 3 ]
