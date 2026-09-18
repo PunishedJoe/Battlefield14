@@ -79,9 +79,11 @@
       - id: WeaponRifleUSM16A4
         amount: 50
       - id: WeaponRifleUSM27IAR
-        amount: 3
+        amount: 5
       - id: WeaponRifleUSM4
         amount: 5
+      - id: WeaponRifleUSM38
+        amount: 1
       - id: WeaponSniperUSM40A1
         amount: 1
       - id: WeaponSubmachinegunDEMP5A5

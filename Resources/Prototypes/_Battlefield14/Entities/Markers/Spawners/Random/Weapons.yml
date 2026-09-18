@@ -73,6 +73,25 @@
       - CrateSecgearNATOFilledM202FLASH
     chance: 1
 
+#region DE
+
+- type: entity
+  parent: MarkerBase
+  id: RandomWeaponNATODESniper
+  name: random NATO DE sniper crate
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/G28.rsi
+        state: icon
+  - type: RandomSpawner
+    offset: 0
+    prototypes:
+      - CrateSecgearNATOFilledG22A2
+      - CrateSecgearNATOFilledG28
+    chance: 1
+
 ## PACT
 #region RU
 
@@ -108,6 +127,7 @@
     prototypes:
       - CrateSecgearPACTFilledRPG7
       - CrateSecgearPACTFilledRPG26Thermobaric
+      - CrateSecgearPACTFilledRPOAShmel
       - CrateSecgearPACTFilledRPG30
     chance: 1
 

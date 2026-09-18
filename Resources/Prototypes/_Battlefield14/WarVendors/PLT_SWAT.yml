@@ -27,6 +27,12 @@
       - id: BF14WeaponCaseLongUSXM8
         name: XM8 assault rifle
         points: 2
+      - id: BF14WeaponCaseLongBEP90
+        name: P90 PDW
+        points: 2
+      - id: BF14WeaponCaseLongGBAWP
+        name: AWP sniper rifle
+        points: 1
       - id: CrateSecgearNATOFilledM320SWAT
         name: M320 bundle
         points: 3

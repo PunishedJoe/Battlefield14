@@ -148,12 +148,13 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: LPVO
+      - state: grip-HK
       - state: stock-adjustable-HK
       - state: rifle-length-barrel-quadrail
       - state: foregrip
       - state: railcover
-      - state: supp
-        offset: 0.20, 0
+      - state: supp-sopmod
+        offset: 0.20, 0.03
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Icon
@@ -180,6 +181,7 @@
       params:
         volume: -12
         variation: 0.125
+        range: 15
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 10
@@ -450,6 +452,119 @@
         color: "#4f94ad"
         requireDetailRange: true
 
+- type: entity
+  name: G22A2
+  parent: WeaponSniperGBAWM
+  id: WeaponSniperDEG22A2
+
+#region GB
+
+- type: entity
+  name: AWM
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponSniperGBAWM
+  description: Arctic Warfare Magnum, chambered in .300 win mag, made by 3 guys in a shed.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/AWM.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/AWM.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,4,2
+  - type: Gun
+    fireRate: 0.5
+    projectileSpeed: 55 # it's a sniper
+    damageModifier: 1.5
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperAWM
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperAWM
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle300WM
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle300WM
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    canRack: false
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 0.8
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.90
+    sprintModifier: 0.90
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: acog
+  - type: UseDelay
+    delay: 0.2
+
+- type: entity
+  name: AWP
+  parent: WeaponSniperGBAWM
+  id: WeaponSniperGBAWP
+  description: Arctic Warfare Police, chambered in 7.62x51mm, made by 3 guys in a shed.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/AWP.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/AWP.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSniperAWP
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSniperAWP
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: Gun
+    damageModifier: 1.5
+
 #region RU
 
 - type: entity
@@ -498,10 +613,6 @@
         whitelist:
           tags:
             - BF_CartridgeRifle762x54r
-  - type: ContainerContainer
-    containers:
-      gun_magazine: !type:ContainerSlot
-      gun_chamber: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
     steps: 1

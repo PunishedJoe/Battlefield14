@@ -1,0 +1,58 @@
+- type: job
+  id: GRU90
+  name: job-name-gru-90
+  description: job-description-gru-90
+  playTimeTracker: JobGRU90
+  weight: 77
+  startingGear: GRU90Gear
+  alwaysUseSpawner: true
+  icon: "JobIconPACTSpecialForces"
+  requireAdminNotify: false
+  supervisors: job-supervisors-rugov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Russian
+    - Esperanto
+    languagesUnderstood:
+    - Russian
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - FSB
+    - type: ChatRank
+      rank: BF-rank-ru-juniorsergeant
+#  - !type:AddImplantSpecial
+#    implants: [ TrackingImplantPACTRU ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - PACTCommon
+  - PACTCommand
+  - PACTMaintenance
+  - PACTMedical
+  - PACTSoldier
+  - PACTArmory
+
+- type: startingGear
+  id: GRU90Gear
+  equipment:
+    ears: ClothingHeadsetAltRU
+    neck: FlashlightMilitaryAlt
+    jumpsuit: ClothingUniformJumpsuitRUGorka
+    outerClothing: ClothingOuterArmorKevlarVest
+    belt: ClothingBeltMilitaryWebbingRU
+    shoes: ClothingShoesBootsJackFilledRU
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenades
+  storage:
+    belt:
+#    - ClothingMaskGasM40
+    - Tourniquet
+    - Zipties

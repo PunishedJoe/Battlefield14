@@ -200,6 +200,7 @@
   weight: 2
   roles:
   - SuspectUS
+  - GRU90
   - Gypsy
 
 #region Partisans against PACT
@@ -211,4 +212,5 @@
   color: "#9FED58"
   weight: 3
   roles:
+  - Delta90
   - NationalistUA

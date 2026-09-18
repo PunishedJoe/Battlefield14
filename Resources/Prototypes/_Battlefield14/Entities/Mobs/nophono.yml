@@ -16,6 +16,8 @@
     - Ukrainian
     - Mexican
     - Esperanto
+    - Red
+    - Blue
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -45,7 +47,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-#      1000: Critical nophono can't quit
+#      2900: Critical nophono can't quit
       3000: Dead
   - type: DamageStateVisuals
     states:
@@ -137,3 +139,13 @@
     raffle:
       settings: short
   - type: Insulated
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 3000
+      behaviors:
+      - !type:GibBehavior { }

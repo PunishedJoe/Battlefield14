@@ -193,6 +193,7 @@
       params:
         volume: -8
         variation: 0.125
+        range: 15
 
 - type: entity
   name: AK-12
@@ -402,6 +403,7 @@
       params:
         volume: -10
         variation: 0.125
+        range: 15
   - type: ItemSlots
     slots:
       gun_magazine:

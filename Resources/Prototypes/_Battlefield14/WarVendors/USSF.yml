@@ -56,10 +56,10 @@
       - id: ClothingBackpackRucksackTan
         replaceSlot: back
         name: tan rucksack
-        recommended: true
       - id: ClothingBackpackRucksackBlack
         replaceSlot: back
         name: black rucksack
+        recommended: true
       - id: ClothingBeltMilitaryWebbingUS
         replaceSlot: belt
         name: ALICE belt rig

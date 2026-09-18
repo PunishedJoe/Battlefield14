@@ -61,6 +61,41 @@
   - type: Appearance
 
 - type: entity
+  parent: BaseItem
+  id: MagazineSubmachinegunP90
+  name: P90 magazine (5.7x28mm)
+  description: A bunch of itty bitty bullets that like to go ZIP right through you, packaged all neat.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/PDW/P90.rsi
+#    storedRotation: -90
+#    size: Normal
+    shape:
+    - 0,0,2,0
+  - type: Tag
+    tags:
+      - MagazinePistolP90
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePDW57x28
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePDW57x28
+    capacity: 50
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/PDW/P90.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Appearance
+  - type: EmitSoundOnLand
+    sound:
+      collection: BF_Magazine_Drop_SMG
+      params:
+        volume: -2
+
+- type: entity
   parent: BaseMagazineSMG
   id: MagazinePistolSR1MP
   name: SR1MP magazine (9x21mm)
@@ -121,3 +156,24 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+
+- type: entity
+  parent: MagazinePistolSR1MP
+  id: MagazinePistolSR2Udav
+  name: SR2 Udav magazine (9x21mm)
+  description: When you pull the trigger, the last bullet in the magazine will ascend a fixed distance, until fired; after which the slide will lock to the rear.
+  components:
+  - type: Tag
+    tags:
+      - MagazinePistolSR2Udav
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    capacity: 18
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]

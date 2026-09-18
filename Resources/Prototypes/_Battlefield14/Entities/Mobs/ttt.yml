@@ -67,7 +67,7 @@
     sound: 
       path: /Audio/_Battlefield14/Misc/ttt/spawn.ogg
       params:
-        range: 50
+        range: 20
   - type: DamageStateVisuals
     states:
       Alive:
@@ -82,6 +82,7 @@
     damage:
       types:
         Blunt: 500
+        Structural: 200
     animation: WeaponArcFist
   - type: Puller
     needsHands: false
@@ -111,3 +112,13 @@
       enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
   - type: Insulated
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 3000
+      behaviors:
+      - !type:GibBehavior { }

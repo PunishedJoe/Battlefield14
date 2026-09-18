@@ -71,6 +71,11 @@ job-name-wps-marshal = Chevron Marshal
 job-name-wps-warden = Chevron Brig Chief
 job-name-wps-officer = Chevron Security Officer
 
+#Partisan#
+
+job-name-deltaforce-90 = Delta Force '90
+job-name-gru-90 = GRU '90
+
 #Civilian#
 
 job-name-ind-civilian = Civilian

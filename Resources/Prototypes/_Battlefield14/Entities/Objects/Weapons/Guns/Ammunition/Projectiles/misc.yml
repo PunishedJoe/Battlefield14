@@ -1,4 +1,109 @@
 - type: entity
+  id: BF14_GassyMissileProjectile
+  name: gas missile
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Caustic: 10
+    deleteOnCollide: true
+  - type: SmokeOnTrigger
+    duration: 10
+    spreadAmount: 3
+    smokePrototype: SeeThruSmoke
+    solution:
+      reagents:
+      - ReagentId: BF14_GassyGas
+        Quantity: 30
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: TimedDespawn
+    lifetime: 10
+  - type: HeFragProjectile
+    fillPrototype: BF14_GassyMissileShrapnel
+    capacity: 25
+    randomAngle: true
+    minVelocity: 15
+    maxVelocity: 15
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: GassyGas
+    totalIntensity: 20
+    intensitySlope: 1.5
+    maxIntensity: 5
+    maxTileBreak: 1
+  - type: StaminaDamageOnCollide
+    damage: 40
+  - type: EmitSoundOnSpawn
+    sound: 
+      collection: GassyFartSound
+  - type: PointLight
+    radius: 3
+    color: "#09ff00"
+    energy: 0.5
+
+- type: entity
+  id: BF14_GassyMissileShrapnel
+  name: gas
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Caustic: 10
+  - type: StaminaDamageOnCollide
+    damage: 5 # ~20 hits to stun
+    deleteOnCollide: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: shard
+  - type: TimedDespawn
+    lifetime: 0.2
+  - type: PointLight
+    radius: 1
+    color: "#09ff00"
+    energy: 0.25
+
+- type: entity
+  id: BF14_GassyCloudProjectile
+  name: gas cloud
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Caustic: 10
+    deleteOnCollide: true
+  - type: SmokeOnTrigger
+    duration: 40
+    spreadAmount: 20
+    smokePrototype: SeeThruSmoke
+    solution:
+      reagents:
+      - ReagentId: BF14_GassyGas
+        Quantity: 50
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: TimedDespawn
+    lifetime: 10
+  - type: EmitSoundOnSpawn
+    sound: 
+      path: /Audio/_Battlefield14/Misc/gassy/longfart1.ogg
+  - type: PointLight
+    radius: 3
+    color: "#09ff00"
+    energy: 0.5
+
+- type: entity
   name: decomissioner projectile
   id: BulletDecomissioner
   parent: BaseBullet

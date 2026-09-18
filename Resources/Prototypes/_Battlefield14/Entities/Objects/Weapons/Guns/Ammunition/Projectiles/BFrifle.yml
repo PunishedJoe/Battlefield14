@@ -98,6 +98,36 @@
     damage: 10 # ~10 hits to stun
 
 - type: entity
+  id: BulletRifleBF300WM
+  name: bullet (.300 WM)
+  parent: BaseBulletRifle
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 60
+        Structural: 15
+    armorPenetration: 0.4
+  - type: StaminaDamageOnCollide
+    damage: 15 # ~7 hits to stun
+
+- type: entity
+  id: BulletRifleBF303British
+  name: bullet (.303 British)
+  parent: BaseBulletRifle
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40
+        Structural: 5
+    armorPenetration: 0.15
+  - type: StaminaDamageOnCollide
+    damage: 10 # ~10 hits to stun
+
+- type: entity
   id: BulletRifleBF792x57
   name: bullet (7.92x57mm)
   parent: BulletRifleBF762x54mmR

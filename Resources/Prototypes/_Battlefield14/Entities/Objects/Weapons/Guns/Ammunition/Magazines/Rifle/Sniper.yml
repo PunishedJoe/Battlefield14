@@ -89,6 +89,54 @@
     zeroVisible: false
   - type: Appearance
 
+- type: entity
+  parent: BaseMagazineRifle
+  id: MagazineSniperAWP
+  name: "AWP magazine (7.62x51mm)"
+  description: It's a magazine.
+  components:
+  - type: Tag
+    tags:
+      - MagazineSniperAWP
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x51
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle762x51
+    capacity: 10
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/AWM.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: MagazineSniperAWP
+  id: MagazineSniperAWM
+  name: "AWM magazine (.300WM)"
+  description: It's a magazine.
+  components:
+  - type: Tag
+    tags:
+      - MagazineSniperAWM
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle300WM
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle300WM
+    capacity: 5
+
 #region PACT
 
 - type: entity

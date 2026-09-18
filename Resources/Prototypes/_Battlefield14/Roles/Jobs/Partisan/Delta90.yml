@@ -1,0 +1,58 @@
+- type: job
+  id: Delta90
+  name: job-name-deltaforce-90
+  description: job-description-deltaforce-90
+  playTimeTracker: JobDelta90
+  weight: 77
+  startingGear: Delta90Gear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSpecialForces"
+  requireAdminNotify: false
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+    - type: ChatRank
+      rank: BF-rank-sergeant
+#  - !type:AddImplantSpecial
+#    implants: [ TrackingImplantNATOUS ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOMedical
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: Delta90Gear
+  equipment:
+    ears: ClothingHeadsetAltUS
+    neck: FlashlightMilitaryUS
+    jumpsuit: ClothingUniformJumpsuitCamoUSTigerstripe
+    outerClothing: ClothingOuterArmorKevlarVest
+    belt: ClothingBeltMilitaryWebbingUS
+    shoes: ClothingShoesBootsJackFilledUSMC
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenades
+  storage:
+    belt:
+    - ClothingMaskGasM40
+    - Tourniquet
+    - Zipties

@@ -20,10 +20,16 @@
       "name": "icon-full-M27IAR"
     },
     {
+      "name": "icon-full-M27RWK"
+    },
+    {
       "name": "icon-full-M4A1"
     },
     {
       "name": "icon-full-M4"
+    },
+    {
+      "name": "icon-full-CAR15"
     },
     {
       "name": "base"
@@ -56,13 +62,28 @@
       "name": "carryhandle"
     },
     {
+      "name": "carryhandle-reddot"
+    },
+    {
       "name": "foregrip"
+    },
+    {
+      "name": "foregrip-short"
     },
     {
       "name": "railcover"
     },
     {
       "name": "supp"
+    },
+    {
+      "name": "supp-sopmod"
+    },
+    {
+      "name": "muzzle-brake"
+    },
+    {
+      "name": "muzzle-comp"
     },
     {
       "name": "stock-full"
@@ -77,6 +98,12 @@
       "name": "stock-adjustable-HK"
     },
     {
+      "name": "stock-adjustable-sopmod1"
+    },
+    {
+      "name": "stock-adjustable-sopmod2"
+    },
+    {
       "name": "rifle-length-barrel-quadrail"
     },
     {
@@ -86,6 +113,9 @@
       "name": "rifle-length-barrel-M16"
     },
     {
+      "name": "rifle-length-barrel-M27"
+    },
+    {
       "name": "carbine-length-barrel-quadrail"
     },
     {
@@ -93,6 +123,21 @@
     },
     {
       "name": "carbine-length-barrel-XM177"
+    },
+    {
+      "name": "carbine-length-barrel-M27"
+    },
+    {
+      "name": "grip"
+    },
+    {
+      "name": "grip-HK"
+    },
+    {
+      "name": "laser"
+    },
+    {
+      "name": "laser-taped"
     }
   ]
 }

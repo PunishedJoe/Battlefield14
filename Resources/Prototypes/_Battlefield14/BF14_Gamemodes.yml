@@ -59,6 +59,20 @@
   - TenMinuteRestart
 
 - type: gamePreset
+  id: BF14_Commando
+  alias:
+  - commando
+  - kommando
+  name: Commando
+  showInVote: true
+  supportedMaps: BF14MapPoolCommando
+  description: Maps involving minimal gear and low TTK. Ten minute rounds.
+  minPlayers: 1
+  maxPlayers: 20
+  rules:
+  - TenMinuteRestart
+
+- type: gamePreset
   id: BF14_TDM # respawns
   alias:
     - teamdeathmatch

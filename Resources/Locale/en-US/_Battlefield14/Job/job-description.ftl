@@ -64,6 +64,11 @@ job-description-wps-marshal = Co-ordinate your goons, secure your outpost for yo
 job-description-wps-warden = Keep the brig secure and clean, make money.
 job-description-wps-officer = Keep the peace, keep the area safe, make money.
 
+#Partisan#
+
+job-description-deltaforce-90 = Clean up in close quarters.
+job-description-gru-90 = Clean up in close quarters.
+
 #Civilian#
 
 job-description-ind-civilian = Live your life and look after numero uno.

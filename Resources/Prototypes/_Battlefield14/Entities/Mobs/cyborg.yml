@@ -178,3 +178,13 @@
       collection: BF_Footsteps_Voidsuit
       params:
         variation: 0.07
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 3000
+      behaviors:
+      - !type:GibBehavior { }

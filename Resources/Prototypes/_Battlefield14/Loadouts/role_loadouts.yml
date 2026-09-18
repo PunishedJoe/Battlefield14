@@ -801,6 +801,26 @@
   - BF_MiscItemsIND
   - ContractorWallet
 
+- type: roleLoadout
+  id: JobDelta90
+  groups:
+  - BF_HeadCivilianUS
+  - BF_CombatMasks
+  - BF_CrewGlasses
+  - BF_SoldierGloves
+  - BF_MiscItemsPACT
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobGRU90
+  groups:
+  - BF_HeadCivilianUS
+  - BF_CombatMasks
+  - BF_CrewGlasses
+  - BF_SoldierGloves
+  - BF_MiscItemsPACT
+  - ContractorWallet
+
 #region Civilian
 
 - type: roleLoadout

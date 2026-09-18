@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/09/2026 23:58:59
+  time: 09/18/2026 06:33:02
   entityCount: 7787
 maps:
 - 1616
@@ -13799,9 +13799,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Puddle: []
         Smoke: []
+        Puddle: []
+        Kudzu: []
         MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -19638,9 +19638,9 @@ entities:
           version: 7
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Puddle: []
         Smoke: []
+        Puddle: []
+        Kudzu: []
         MetalFoam: []
     - type: GridPathfinding
     - type: Gravity
@@ -49358,19 +49358,19 @@ entities:
     - type: Transform
       pos: 197.5,107.5
       parent: 1
+- proto: RandomWeaponNATODESniper
+  entities:
+  - uid: 6318
+    components:
+    - type: Transform
+      pos: 36.5,195.5
+      parent: 1
 - proto: RandomWeaponNATOUSShotgun
   entities:
   - uid: 6317
     components:
     - type: Transform
       pos: 37.5,195.5
-      parent: 1
-- proto: CrateSecgearNATOFilledG28
-  entities:
-  - uid: 6318
-    components:
-    - type: Transform
-      pos: 36.5,195.5
       parent: 1
 - proto: RandomWeaponPACTRUShotgun
   entities:
@@ -54954,79 +54954,6 @@ entities:
     - type: Transform
       pos: 36.5,193.5
       parent: 1
-- proto: SpawnPointScav
-  entities:
-  - uid: 6675
-    components:
-    - type: Transform
-      pos: 121.5,107.5
-      parent: 1
-  - uid: 6695
-    components:
-    - type: Transform
-      pos: 110.5,81.5
-      parent: 1
-  - uid: 6696
-    components:
-    - type: Transform
-      pos: 131.5,81.5
-      parent: 1
-  - uid: 6697
-    components:
-    - type: Transform
-      pos: 180.5,102.5
-      parent: 1
-  - uid: 6698
-    components:
-    - type: Transform
-      pos: 201.5,102.5
-      parent: 1
-  - uid: 6699
-    components:
-    - type: Transform
-      pos: 61.5,102.5
-      parent: 1
-  - uid: 6700
-    components:
-    - type: Transform
-      pos: 40.5,102.5
-      parent: 1
-  - uid: 6701
-    components:
-    - type: Transform
-      pos: 152.5,80.5
-      parent: 1
-  - uid: 6702
-    components:
-    - type: Transform
-      pos: 89.5,80.5
-      parent: 1
-- proto: SpawnPointUSMCMedic
-  entities:
-  - uid: 1251
-    components:
-    - type: Transform
-      pos: 42.5,196.5
-      parent: 1
-- proto: SpawnPointUSMCRifleman
-  entities:
-  - uid: 6714
-    components:
-    - type: Transform
-      pos: 40.5,196.5
-      parent: 1
-  - uid: 7107
-    components:
-    - type: Transform
-      pos: 40.5,195.5
-      parent: 1
-- proto: SpawnPointUSMCSquadLeader
-  entities:
-  - uid: 6115
-    components:
-    - type: Transform
-      pos: 41.5,194.5
-      parent: 1
 - proto: SpawnPointRGFAutomaticRifleman
   entities:
   - uid: 7258
@@ -55148,6 +55075,79 @@ entities:
     components:
     - type: Transform
       pos: 261.5,101.5
+      parent: 1
+- proto: SpawnPointScav
+  entities:
+  - uid: 6675
+    components:
+    - type: Transform
+      pos: 121.5,107.5
+      parent: 1
+  - uid: 6695
+    components:
+    - type: Transform
+      pos: 110.5,81.5
+      parent: 1
+  - uid: 6696
+    components:
+    - type: Transform
+      pos: 131.5,81.5
+      parent: 1
+  - uid: 6697
+    components:
+    - type: Transform
+      pos: 180.5,102.5
+      parent: 1
+  - uid: 6698
+    components:
+    - type: Transform
+      pos: 201.5,102.5
+      parent: 1
+  - uid: 6699
+    components:
+    - type: Transform
+      pos: 61.5,102.5
+      parent: 1
+  - uid: 6700
+    components:
+    - type: Transform
+      pos: 40.5,102.5
+      parent: 1
+  - uid: 6701
+    components:
+    - type: Transform
+      pos: 152.5,80.5
+      parent: 1
+  - uid: 6702
+    components:
+    - type: Transform
+      pos: 89.5,80.5
+      parent: 1
+- proto: SpawnPointUSMCMedic
+  entities:
+  - uid: 1251
+    components:
+    - type: Transform
+      pos: 42.5,196.5
+      parent: 1
+- proto: SpawnPointUSMCRifleman
+  entities:
+  - uid: 6714
+    components:
+    - type: Transform
+      pos: 40.5,196.5
+      parent: 1
+  - uid: 7107
+    components:
+    - type: Transform
+      pos: 40.5,195.5
+      parent: 1
+- proto: SpawnPointUSMCSquadLeader
+  entities:
+  - uid: 6115
+    components:
+    - type: Transform
+      pos: 41.5,194.5
       parent: 1
 - proto: SSEWindowFramed
   entities:

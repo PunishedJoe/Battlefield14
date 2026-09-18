@@ -15,10 +15,21 @@
           weight: 0.5
       - !type:GroupSelector
         children:
-        - id: WeaponRifleUSXM177E2
         - id: WeaponRifleUSM4
         - id: WeaponRifleUSAR15
         - id: WeaponRifleUSM4A1
           weight: 0.5
         - id: WeaponRifleUSCAR15
-          weight: 0.5
+        - id: WeaponRifleUSRandomM4
+
+- type: entityTable
+  id: BF14TableRPOAShmel
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      weight: 69
+      children:
+      - !type:GroupSelector
+        children:
+        - id: WeaponLauncherRURPOAShmel
+        - id: WeaponLauncherRURPOAShmelCamo

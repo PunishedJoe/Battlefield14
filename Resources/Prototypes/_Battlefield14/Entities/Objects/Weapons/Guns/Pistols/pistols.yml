@@ -921,3 +921,35 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+
+- type: entity
+  name: SR2 Udav
+  parent: WeaponPistolRUSR1MP
+  id: WeaponPistolRUSR2Udav
+  description: Designed alongside the SR-2 Veresk by TsNIITochMash to use the 9x21mm cartridge. You can google that.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/sr2udav.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolSR2Udav
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePistolSR2Udav
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePDW9x21
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePDW9x21

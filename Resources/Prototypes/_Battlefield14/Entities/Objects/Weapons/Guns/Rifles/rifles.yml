@@ -680,6 +680,72 @@
         volume: -12
         variation: 0.125
 
+#region Britain
+
+- type: entity
+  name: Lee–Enfield No. 1 Mk III
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponRifleGBLeeEnfield
+  description: Objectively the best bolt-action rifle of both world wars. Chambered in .303 british, or 7.7x56mmR if you really like metric.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/leeenfield.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/leeenfield.rsi
+  - type: GunRequiresWield
+  - type: Item
+    shape:
+    - 0,0,4,2
+  - type: Gun
+    fireRate: 0.5
+    projectileSpeed: 55
+    soundGunshot:
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleLeeEnfield
+        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        whitelistFailPopup: gun-magazine-whitelist-fail
+        swap: false
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleLeeEnfield
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle303British
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle303British
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ChamberMagazineAmmoProvider
+    autoCycle: false
+    canRack: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 3000
+  - type: UseDelay
+    delay: 0.2
+
 #region Rifles - RU
 
 - type: entity

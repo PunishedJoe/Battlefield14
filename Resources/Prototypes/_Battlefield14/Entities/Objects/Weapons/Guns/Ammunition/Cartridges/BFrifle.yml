@@ -138,6 +138,46 @@
   - type: SpentAmmoVisuals
 
 - type: entity
+  id: BF_CartridgeRifle300WM
+  name: cartridge (.300 WM)
+  parent: BaseCartridgeRifle
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle300WM
+  - type: CartridgeAmmo
+    proto: BulletRifleBF300WM
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/7.62x51.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  id: BF_CartridgeRifle303British
+  name: cartridge (.303 British)
+  parent: BaseCartridgeRifle
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeRifle303British
+  - type: CartridgeAmmo
+    proto: BulletRifleBF303British
+    muzzleFlash: MuzzleFlashEffectBFLargeRifle
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/303British.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
   id: BF_CartridgeRifle792x57
   name: cartridge (7.92x57mm)
   parent: BF_CartridgeRifle762x51

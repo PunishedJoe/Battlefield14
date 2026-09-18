@@ -19,3 +19,8 @@
   - BF14ShuddihTown
   - BF14FactoryUnrest
   - BF14Waco
+
+- type: gameMapPool
+  id: BF14MapPoolCommando
+  maps:
+  - BF14Hijacked

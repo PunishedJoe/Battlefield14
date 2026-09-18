@@ -94,6 +94,8 @@
             RUScavGuard: [ -1, -1 ]
             RUScav: [ -1, -1 ]
             SuspectUS: [-1, -1]
+            Delta90: [-1, -1]
+            GRU90: [-1, -1]
             CivilianUS: [ -1, -1 ]
             CivilianRU: [ -1, -1 ]
             CivilianRUEMT: [ -1, -1 ]

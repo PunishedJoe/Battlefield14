@@ -43,7 +43,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Storage.EntitySystems;
 
-public abstract class SharedStorageSystem : EntitySystem
+public abstract partial class SharedStorageSystem : EntitySystem // BF14 - made partial
 {
     [Dependency] private   readonly IConfigurationManager _cfg = default!;
     [Dependency] protected readonly IGameTiming Timing = default!;
@@ -399,6 +399,7 @@ public abstract class SharedStorageSystem : EntitySystem
         if (!silent)
         {
             Audio.PlayPredicted(storageComp.StorageOpenSound, uid, entity);
+            AnimateStorage((uid, storageComp), entity); // BF14 - rustle animation
 
             if (useDelay != null)
                 UseDelay.TryResetDelay((uid, useDelay), id: OpenUiUseDelayID);
@@ -658,7 +659,7 @@ public abstract class SharedStorageSystem : EntitySystem
         // If we picked up at least one thing, play a sound and do a cool animation!
         if (successfullyInserted.Count > 0)
         {
-            Audio.PlayPredicted(component.StorageInsertSound, uid, args.User, _audioParams);
+            PlayInsertFeedback((uid, component), args.User); // BF14 - was Audio.PlayPredicted of StorageInsertSound, now also rustles
             EntityManager.RaiseSharedEvent(new AnimateInsertingEntitiesEvent(
                 GetNetEntity(uid),
                 GetNetEntityList(successfullyInserted),
@@ -738,11 +739,17 @@ public abstract class SharedStorageSystem : EntitySystem
                 LogImpact.Low,
                 $"{ToPrettyString(player):player} is attempting to take {ToPrettyString(item):item} out of {ToPrettyString(storage):storage}");
 
+            /* BF14 - replaced by PlayRemoveFeedback, which also rustles storages that have no remove sound
             if (_sharedHandsSystem.TryPickupAnyHand(player, item, handsComp: player.Comp)
                 && storage.Comp.StorageRemoveSound != null)
             {
                 Audio.PlayPredicted(storage.Comp.StorageRemoveSound, storage, player, _audioParams);
             }
+            */
+            // <BF14>
+            if (_sharedHandsSystem.TryPickupAnyHand(player, item, handsComp: player.Comp))
+                PlayRemoveFeedback(storage, player);
+            // </BF14>
 
             return;
         }
@@ -1046,6 +1053,7 @@ public abstract class SharedStorageSystem : EntitySystem
         }
 
         Audio.PlayPredicted(sourceComp.StorageInsertSound, target, user, _audioParams);
+        AnimateStorage((target, targetComp), user); // BF14 - rustle animation
     }
 
     /// <summary>
@@ -1238,7 +1246,7 @@ public abstract class SharedStorageSystem : EntitySystem
                 return false;
 
             if (playSound)
-                Audio.PlayPredicted(storageComp.StorageInsertSound, uid, user, _audioParams);
+                PlayInsertFeedback((uid, storageComp), user); // BF14 - was Audio.PlayPredicted of StorageInsertSound, now also rustles
 
             return true;
         }
@@ -1268,7 +1276,7 @@ public abstract class SharedStorageSystem : EntitySystem
         }
 
         if (playSound)
-            Audio.PlayPredicted(storageComp.StorageInsertSound, uid, user, _audioParams);
+            PlayInsertFeedback((uid, storageComp), user); // BF14 - was Audio.PlayPredicted of StorageInsertSound, now also rustles
 
         return true;
     }

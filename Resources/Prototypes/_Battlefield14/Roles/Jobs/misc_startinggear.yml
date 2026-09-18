@@ -19,7 +19,7 @@
     ears: ClothingHeadsetGrey
     balaclava: ClothingBalaclavaSkiMaskMouthBlack
     outerClothing: ClothingOuterArmorWebVestSec
-    belt: ClothingBeltStationSecurityFilled
+    belt: ClothingBeltStationSecurityFilledFBI
     shoes: ClothingShoesBootsJackFilled
     pocket2: PouchFirstAidFilled
 
