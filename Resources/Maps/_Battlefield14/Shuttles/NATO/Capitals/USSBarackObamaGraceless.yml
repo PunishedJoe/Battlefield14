@@ -16949,28 +16949,28 @@ entities:
     - type: Transform
       pos: 7.4801464,-46.947853
       parent: 1
-- proto: NATOUSMCAmmoVendor
+- proto: CMVendNATOUSSFWarAmmoVendor
   entities:
   - uid: 196
     components:
     - type: Transform
       pos: 15.5,-12.5
       parent: 1
-- proto: NATOUSMCGearVendor
+- proto: CMVendNATOUSSFWarGearVendor
   entities:
   - uid: 198
     components:
     - type: Transform
       pos: 16.5,-12.5
       parent: 1
-- proto: NATOUSMCShipVendor
+- proto: CMVendNATOUSSFWarShipVendor
   entities:
   - uid: 195
     components:
     - type: Transform
       pos: 17.5,-12.5
       parent: 1
-- proto: NATOUSMCWarVendor
+- proto: CMVendNATOUSSFWarVendor
   entities:
   - uid: 197
     components:

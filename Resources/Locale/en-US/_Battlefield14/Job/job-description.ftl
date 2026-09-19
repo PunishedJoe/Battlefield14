@@ -10,6 +10,8 @@ job-description-usmc-recon = Go on the flanks and conduct surprise attacks or re
 job-description-ussf-captain = Lead your battlegroup, whether that be from the front or your capital ship. Answer directly to President Trump.
 job-description-ussf-crewman = Maintain whatever capital ship/port you're assigned to.
 job-description-ussf-fighter-pilot = Eviscerate infantry, splash bandits, lust over your F-22 Raptor.
+job-description-ussf-squadleader = Coordinate optimal Russian shooting for your fireteam.
+job-description-ussf-rifleman = Shoot Russians.
 
 job-description-ng-lieutenant = Take top-down control of your national guard platoon and keep everything running smoothly.
 job-description-ng-squadleader = Coordinate optimal Russian shooting/rioter beating/disaster relief for your fireteam.
@@ -61,6 +63,11 @@ job-description-omon-rifleman = Beat rioters with sticks, maybe shoot them if it
 job-description-wps-marshal = Co-ordinate your goons, secure your outpost for your contractor.
 job-description-wps-warden = Keep the brig secure and clean, make money.
 job-description-wps-officer = Keep the peace, keep the area safe, make money.
+
+#Partisan#
+
+job-description-deltaforce-90 = Clean up in close quarters.
+job-description-gru-90 = Clean up in close quarters.
 
 #Civilian#
 

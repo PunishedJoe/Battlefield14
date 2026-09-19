@@ -13,7 +13,7 @@
       types:
         Piercing: 7.5
         Slash: 6
-        Structural: 2
+        Structural: 6
     armorPenetration: -0.3
   - type: ProjectileDamageFalloff
     falloffStart: 4
@@ -21,7 +21,7 @@
     minimumMultiplier: 0.50
     stepByTile: true
   - type: StaminaDamageOnCollide
-    damage: 3 # ~33 hits to stun
+    damage: 4 # ~25 hits to stun
 
 - type: entity
   id: SlugShotgunBF12Gauge
@@ -83,7 +83,7 @@
         Structural: 15
     armorPenetration: -0.15
   - type: StaminaDamageOnCollide
-    damage: 15 # ~7 hits to stun
+    damage: 10 # ~10 hits to stun
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
@@ -109,7 +109,7 @@
       types:
         Piercing: 17
         Slash: 10
-        Structural: 5
+        Structural: 8
     armorPenetration: -0.1
   - type: ProjectileDamageFalloff
     falloffStart: 6

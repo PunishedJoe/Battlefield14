@@ -59,6 +59,24 @@
       - state: flashbang
 
 - type: entity
+  name: box of MK3A2 blast grenades
+  parent: BoxMagazine
+  id: BoxGrenadesMK3A2
+  description: A box full of high explosive MK3A2 grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: OffensiveGrenadeUSMK3A2
+        amount: 8
+  - type: Sprite
+    layers:
+      - state: box_security
+      - state: flashbang
+
+- type: entity
   name: box of M18 smoke grenades
   parent: BoxMagazine
   id: BoxGrenadesM18

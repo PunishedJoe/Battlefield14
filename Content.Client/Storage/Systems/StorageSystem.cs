@@ -11,7 +11,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.Storage.Systems;
 
-public sealed class StorageSystem : SharedStorageSystem
+public sealed partial class StorageSystem : SharedStorageSystem // BF14 - made partial
 {
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly IPlayerManager _player = default!;
@@ -123,7 +123,7 @@ public sealed class StorageSystem : SharedStorageSystem
         if (!_timing.IsFirstTimePredicted)
             return;
 
-        if (TransformSystem.InRange(finalCoords, initialCoords, 0.1f) ||
+        if (/* BF14 - same-tile pickups hop upward in EntityPickupAnimationSystem instead: TransformSystem.InRange(finalCoords, initialCoords, 0.1f) || */
             !Exists(initialCoords.EntityId) || !Exists(finalCoords.EntityId))
         {
             return;

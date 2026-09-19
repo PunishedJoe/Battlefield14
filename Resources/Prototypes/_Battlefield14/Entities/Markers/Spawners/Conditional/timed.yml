@@ -99,9 +99,12 @@
         - BF14WeaponCaseLongUSM16A2
         - BF14WeaponCaseLongUSM16A3
         - BF14WeaponCaseLongUSM4A1
+        - BF14WeaponCaseLongUSCAR15
+        - BF14WeaponCaseLongUSCAR15SUPP
+        - BF14WeaponCaseLongUSM27RWK
         - BF14WeaponCaseLongUSM30MRC
         - BF14WeaponCaseLongUSM42A5
-        - BF14WeaponCaseLongUSMXM8
+        - BF14WeaponCaseLongUSXM8
         - BF14WeaponCaseLongDEG36
         - BF14WeaponCaseLongDEG36C
         - BF14WeaponCaseLongDEG3A3
@@ -211,9 +214,12 @@
         - BF14WeaponCaseLongUSM16A1
         - BF14WeaponCaseLongUSM16A2
         - BF14WeaponCaseLongUSM4A1
+        - BF14WeaponCaseLongUSCAR15
+        - BF14WeaponCaseLongUSCAR15SUPP
+        - BF14WeaponCaseLongUSM27RWK
         - BF14WeaponCaseLongUSM30MRC
         - BF14WeaponCaseLongUSM42A5
-        - BF14WeaponCaseLongUSMXM8
+        - BF14WeaponCaseLongUSXM8
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1

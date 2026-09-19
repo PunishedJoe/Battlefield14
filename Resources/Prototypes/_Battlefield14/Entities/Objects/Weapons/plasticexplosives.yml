@@ -168,6 +168,7 @@
     storedSprite:
       sprite: _Civ14/Objects/grenade.rsi
       state: plastic-explosive1
+  - type: WeaponCaseInsertable
   - type: SpawnAfterInteract
     prototype: BF14FloorCharge
     doAfter: 2
@@ -181,7 +182,6 @@
 - type: entity
   name: floor charge
   description: A big explosive used to breach holes in roofs to access the juicy contents below.
-  parent: BaseLandMine
   id: BF14FloorCharge
   suffix: Armed, Placed
   components:
@@ -195,7 +195,7 @@
   - type: Explosive
     explosionType: Thermobaric
     totalIntensity: 300
-    intensitySlope: 25 #Will destroy the tile under it reliably, space 1-2 more to rods. Only does any significant damage in a 5-tile cross.
+    intensitySlope: 25
     maxIntensity: 60
   - type: ActiveTimerTrigger
     timeRemaining: 5
@@ -204,6 +204,21 @@
       path: /Audio/Effects/minibombcountdown.ogg
   - type: ExtendDescription
     descriptionList:
-      - description: It is ARMED.
+      - description: It is ARMED, get the hell back!
         color: red
         requireDetailRange: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Physics
+    bodyType: Static
+    fixedRotation: true
+  - type: Fixtures
+    fixtures:
+      slips:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        hard: false
+        layer:
+          - LowImpassable

@@ -1,4 +1,13 @@
 - type: soundCollection
+  id: GassyFartSound
+  files:
+  - "/Audio/_Battlefield14/Misc/gassy/fart1.ogg"
+  - "/Audio/_Battlefield14/Misc/gassy/fart2.ogg"
+  - "/Audio/_Battlefield14/Misc/gassy/fart3.ogg"
+  - "/Audio/_Battlefield14/Misc/gassy/fart4.ogg"
+  - "/Audio/_Battlefield14/Misc/gassy/fart5.ogg"
+
+- type: soundCollection
   id: BearAmbient
   files:
   - "/Audio/_Battlefield14/Misc/bear/ambient1.ogg"

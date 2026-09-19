@@ -1,3 +1,6 @@
+##NATO
+#region USMC
+
 - type: loadoutEffectGroup
   id: BF_USMC_VET
   effects:
@@ -16,6 +19,8 @@
       role: JobUSMCSquadLeader
       time: 7200 # 2 hr
 
+#Region Bundeswehr
+
 - type: loadoutEffectGroup
   id: BF_BW_VET
   effects:
@@ -33,6 +38,29 @@
       !type:RoleTimeRequirement
       role: JobBWSquadLeader
       time: 7200 # 2 hr
+##PACT
+
+#region RGF
+
+- type: loadoutEffectGroup
+  id: BF_RGF_VET
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: RGF
+      time: 7200 # 2 hr
+
+- type: loadoutEffectGroup
+  id: BF_RGF_SL_VET
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobRGFSquadLeader
+      time: 7200 # 2 hr
+
+#region VDV
 
 - type: loadoutEffectGroup
   id: BF_VDV_VET
@@ -51,6 +79,9 @@
       !type:RoleTimeRequirement
       role: JobVDVSquadLeader
       time: 7200 # 2 hr
+
+##IND
+#region Civilian
 
 - type: loadoutEffectGroup
   id: BF_RU_CIV_1
@@ -78,6 +109,8 @@
       !type:RoleTimeRequirement
       role: JobRUScav
       time: 5400 # 1.5 hr
+
+#region scav boss
 
 - type: loadoutEffectGroup
   id: BF_RU_BOSS_1

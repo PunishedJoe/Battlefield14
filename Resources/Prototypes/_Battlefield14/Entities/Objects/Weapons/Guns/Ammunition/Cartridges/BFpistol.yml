@@ -37,6 +37,18 @@
   - type: SpentAmmoVisuals
 
 - type: entity
+  id: BF_CartridgePistol10x25
+  name: cartridge (10x25mm Auto)
+  parent: BF_CartridgePistol9x19
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolBF10x25
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgePistol10x25
+
+- type: entity
   id: BF_CartridgePistol762x25
   name: cartridge (7.62x25mm Tokarev)
   parent: BaseCartridgePistol

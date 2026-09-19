@@ -37,9 +37,11 @@
         - type: CEStationZLevels
           mapsAbove:
             - /Maps/_Battlefield14/Planets/MultiZ/Customs/BF14CustomsZMap1.yml
-#          mapsBelow:
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity
+        - type: ConquestManager
 
 - type: zMap
   id: BF14CustomsZMap

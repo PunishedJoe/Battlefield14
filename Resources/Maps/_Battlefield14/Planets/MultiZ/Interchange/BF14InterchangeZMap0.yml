@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/09/2026 23:58:59
+  time: 09/18/2026 06:33:02
   entityCount: 7787
 maps:
 - 1616
@@ -13799,9 +13799,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Puddle: []
         Smoke: []
+        Puddle: []
+        Kudzu: []
         MetalFoam: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -19638,9 +19638,9 @@ entities:
           version: 7
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        Puddle: []
         Smoke: []
+        Puddle: []
+        Kudzu: []
         MetalFoam: []
     - type: GridPathfinding
     - type: Gravity
@@ -28054,21 +28054,21 @@ entities:
     - type: Transform
       pos: 48.5,194.5
       parent: 1
-- proto: CMVendPACTVDVWarVendor
+- proto: CMVendPACTRGFWarVendor
   entities:
   - uid: 6214
     components:
     - type: Transform
       pos: 257.5,90.5
       parent: 1
-- proto: CMVendPACTVDVWarVendorAmmo
+- proto: CMVendPACTRGFWarVendorAmmo
   entities:
   - uid: 2097
     components:
     - type: Transform
       pos: 255.5,90.5
       parent: 1
-- proto: CMVendPACTVDVWarVendorGear
+- proto: CMVendPACTRGFWarVendorGear
   entities:
   - uid: 2098
     components:
@@ -49358,19 +49358,19 @@ entities:
     - type: Transform
       pos: 197.5,107.5
       parent: 1
+- proto: RandomWeaponNATODESniper
+  entities:
+  - uid: 6318
+    components:
+    - type: Transform
+      pos: 36.5,195.5
+      parent: 1
 - proto: RandomWeaponNATOUSShotgun
   entities:
   - uid: 6317
     components:
     - type: Transform
       pos: 37.5,195.5
-      parent: 1
-- proto: CrateSecgearNATOFilledG28
-  entities:
-  - uid: 6318
-    components:
-    - type: Transform
-      pos: 36.5,195.5
       parent: 1
 - proto: RandomWeaponPACTRUShotgun
   entities:
@@ -54954,6 +54954,128 @@ entities:
     - type: Transform
       pos: 36.5,193.5
       parent: 1
+- proto: SpawnPointRGFAutomaticRifleman
+  entities:
+  - uid: 7258
+    components:
+    - type: Transform
+      pos: 257.5,101.5
+      parent: 1
+  - uid: 7259
+    components:
+    - type: Transform
+      pos: 261.5,100.5
+      parent: 1
+  - uid: 7271
+    components:
+    - type: Transform
+      pos: 257.5,96.5
+      parent: 1
+  - uid: 7272
+    components:
+    - type: Transform
+      pos: 253.5,96.5
+      parent: 1
+- proto: SpawnPointRGFLieutenant
+  entities:
+  - uid: 7267
+    components:
+    - type: Transform
+      pos: 267.5,94.5
+      parent: 1
+  - uid: 7275
+    components:
+    - type: Transform
+      pos: 259.5,93.5
+      parent: 1
+- proto: SpawnPointRGFMedic
+  entities:
+  - uid: 7261
+    components:
+    - type: Transform
+      pos: 260.5,101.5
+      parent: 1
+  - uid: 7263
+    components:
+    - type: Transform
+      pos: 265.5,97.5
+      parent: 1
+  - uid: 7266
+    components:
+    - type: Transform
+      pos: 266.5,97.5
+      parent: 1
+  - uid: 7270
+    components:
+    - type: Transform
+      pos: 254.5,95.5
+      parent: 1
+  - uid: 7279
+    components:
+    - type: Transform
+      pos: 255.5,95.5
+      parent: 1
+- proto: SpawnPointRGFRecon
+  entities:
+  - uid: 7264
+    components:
+    - type: Transform
+      pos: 267.5,96.5
+      parent: 1
+  - uid: 7265
+    components:
+    - type: Transform
+      pos: 265.5,93.5
+      parent: 1
+  - uid: 7273
+    components:
+    - type: Transform
+      pos: 258.5,94.5
+      parent: 1
+  - uid: 7274
+    components:
+    - type: Transform
+      pos: 256.5,92.5
+      parent: 1
+- proto: SpawnPointRGFRifleman
+  entities:
+  - uid: 7260
+    components:
+    - type: Transform
+      pos: 259.5,101.5
+      parent: 1
+  - uid: 7262
+    components:
+    - type: Transform
+      pos: 257.5,99.5
+      parent: 1
+  - uid: 7269
+    components:
+    - type: Transform
+      pos: 256.5,97.5
+      parent: 1
+- proto: SpawnPointRGFSquadLeader
+  entities:
+  - uid: 7268
+    components:
+    - type: Transform
+      pos: 266.5,93.5
+      parent: 1
+  - uid: 7276
+    components:
+    - type: Transform
+      pos: 257.5,94.5
+      parent: 1
+  - uid: 7277
+    components:
+    - type: Transform
+      pos: 255.5,93.5
+      parent: 1
+  - uid: 7278
+    components:
+    - type: Transform
+      pos: 261.5,101.5
+      parent: 1
 - proto: SpawnPointScav
   entities:
   - uid: 6675
@@ -55026,128 +55148,6 @@ entities:
     components:
     - type: Transform
       pos: 41.5,194.5
-      parent: 1
-- proto: SpawnPointVDVAutomaticRifleman
-  entities:
-  - uid: 7258
-    components:
-    - type: Transform
-      pos: 257.5,101.5
-      parent: 1
-  - uid: 7259
-    components:
-    - type: Transform
-      pos: 261.5,100.5
-      parent: 1
-  - uid: 7271
-    components:
-    - type: Transform
-      pos: 257.5,96.5
-      parent: 1
-  - uid: 7272
-    components:
-    - type: Transform
-      pos: 253.5,96.5
-      parent: 1
-- proto: SpawnPointVDVLieutenant
-  entities:
-  - uid: 7267
-    components:
-    - type: Transform
-      pos: 267.5,94.5
-      parent: 1
-  - uid: 7275
-    components:
-    - type: Transform
-      pos: 259.5,93.5
-      parent: 1
-- proto: SpawnPointVDVMedic
-  entities:
-  - uid: 7261
-    components:
-    - type: Transform
-      pos: 260.5,101.5
-      parent: 1
-  - uid: 7263
-    components:
-    - type: Transform
-      pos: 265.5,97.5
-      parent: 1
-  - uid: 7266
-    components:
-    - type: Transform
-      pos: 266.5,97.5
-      parent: 1
-  - uid: 7270
-    components:
-    - type: Transform
-      pos: 254.5,95.5
-      parent: 1
-  - uid: 7279
-    components:
-    - type: Transform
-      pos: 255.5,95.5
-      parent: 1
-- proto: SpawnPointVDVRecon
-  entities:
-  - uid: 7264
-    components:
-    - type: Transform
-      pos: 267.5,96.5
-      parent: 1
-  - uid: 7265
-    components:
-    - type: Transform
-      pos: 265.5,93.5
-      parent: 1
-  - uid: 7273
-    components:
-    - type: Transform
-      pos: 258.5,94.5
-      parent: 1
-  - uid: 7274
-    components:
-    - type: Transform
-      pos: 256.5,92.5
-      parent: 1
-- proto: SpawnPointVDVRifleman
-  entities:
-  - uid: 7260
-    components:
-    - type: Transform
-      pos: 259.5,101.5
-      parent: 1
-  - uid: 7262
-    components:
-    - type: Transform
-      pos: 257.5,99.5
-      parent: 1
-  - uid: 7269
-    components:
-    - type: Transform
-      pos: 256.5,97.5
-      parent: 1
-- proto: SpawnPointVDVSquadLeader
-  entities:
-  - uid: 7268
-    components:
-    - type: Transform
-      pos: 266.5,93.5
-      parent: 1
-  - uid: 7276
-    components:
-    - type: Transform
-      pos: 257.5,94.5
-      parent: 1
-  - uid: 7277
-    components:
-    - type: Transform
-      pos: 255.5,93.5
-      parent: 1
-  - uid: 7278
-    components:
-    - type: Transform
-      pos: 261.5,101.5
       parent: 1
 - proto: SSEWindowFramed
   entities:

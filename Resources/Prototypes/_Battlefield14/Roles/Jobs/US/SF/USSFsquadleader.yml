@@ -1,0 +1,66 @@
+- type: job
+  id: USSFSquadLeader
+  name: job-name-ussf-squadleader
+  description: job-description-ussf-squadleader
+  playTimeTracker: JobUSSFSquadLeader
+  weight: 75
+  startingGear: USSFSquadLeaderGear
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSquadleader"
+  requireAdminNotify: true
+  supervisors: job-supervisors-usgov
+  canBeAntag: false
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - Esperanto
+    languagesUnderstood:
+    - English
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+    - type: ChatRank
+      rank: BF-rank-sergeant
+  - !type:AddImplantSpecial
+    implants: [ TrackingImplantNATOUS ]
+  access:
+  - Maintenance
+  - Service
+  - External
+  - Mercenary # Frontier
+  - Captain # Frontier
+  - NATOCommon
+  - NATOCommand
+  - NATOMaintenance
+  - NATOSoldier
+  - NATOArmory
+
+- type: startingGear
+  id: USSFSquadLeaderGear
+  equipment:
+    id: USSFSquadLeaderPDA
+    ears: ClothingHeadsetAltUS
+    belt: ClothingBeltAssaultFilledG36TracerRed
+    jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
+    head: ClothingHeadHatBeretCommander
+    outerClothing: ClothingOuterArmorPlateCarrierBlack
+    shoes: ClothingShoesBootsJackFilledUSMC
+    suitstorage: WeaponRifleUSXM8
+    pocket1: PouchFirstAidFilled
+    pocket2: PouchGrenadesFilledUSARifleman
+    rightarmband: ClothingArmbandThighHolsterFilledUSMK27
+  storage:
+    back:
+    - ArmorPlateMediumPackaged
+    - BoxPinpointerUniversalNATO
+    - ClothingMaskGasM40
+    - FlashlightMilitaryUS
+    - MagazinePistolGlock17
+    - MagazinePistolGlock17
+    - Whistle
+    - Tourniquet
+    - Zipties

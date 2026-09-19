@@ -35,6 +35,24 @@
   - BF14WeaponCaseShortDEUSP45
 
 - type: loadout
+  id: LoadoutGunRUSR2UdavRGFSLVET
+  name: SR2 Udav gun case
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_RGF_SL_VET
+  inhand:
+  - BF14WeaponCaseShortRUSR2udav
+
+- type: loadout
+  id: LoadoutGunRUPMRGFSLVET
+  name: PM Makarov gun case
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_RGF_VET
+  inhand:
+  - BF14WeaponCaseShortRUPM
+
+- type: loadout
   id: LoadoutGunSR1MPVDVSLVET
   name: SR1MP gun case
   effects:

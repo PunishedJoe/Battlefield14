@@ -1,4 +1,77 @@
 - type: entity
+  id: ActionGassyTeleport
+  name: Teleport
+  description: Teleport to the clicked location.
+  components:
+  - type: WorldTargetAction
+    useDelay: 10
+    range: 16
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Battlefield14/Misc/gassy/spawn.ogg
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    repeat: false
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: blink
+    event: !type:TeleportSpellEvent
+      speech: Tra la la!
+
+- type: entity
+  id: ActionGassyOpenDoors
+  name: Open doors
+  description: This spell opens nearby doors.
+  components:
+  - type: InstantAction
+    useDelay: 10
+    itemIconStyle: BigAction
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Battlefield14/Misc/gassy/hero.ogg
+    icon:
+      sprite: Objects/Magic/magicactions.rsi
+      state: knock
+    event: !type:KnockSpellEvent
+      speech: This page needs a hero!
+
+- type: entity
+  id: ActionGassyGasCloud
+  name: Gas cloud
+  description: Releases a gas cloud in the clicked direction.
+  components:
+  - type: Magic
+  - type: WorldTargetAction
+    useDelay: 30
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    raiseOnUser: true
+    range: 60
+    icon:
+      sprite: _Battlefield14/Objects/Misc/spells.rsi
+      state: gas1
+    event: !type:ProjectileSpellEvent
+      prototype: BF14_GassyCloudProjectile
+      speech: Looks like its time to bounce!
+
+- type: entity
+  id: ActionGassyGasMissile
+  name: Gas missile
+  description: Launches a gas missile at the clicked location.
+  components:
+  - type: Magic
+  - type: WorldTargetAction
+    useDelay: 10
+    itemIconStyle: BigAction
+    checkCanAccess: false
+    raiseOnUser: true
+    range: 60
+    icon:
+      sprite: _Battlefield14/Objects/Misc/spells.rsi
+      state: gas2
+    event: !type:ProjectileSpellEvent
+      prototype: BF14_GassyMissileProjectile
+      speech: Stand down chud!
+
+- type: entity
   parent: ActionSmiteNoReq
   id: ActionLiquidPhono
   name: Liquidphono

@@ -1,0 +1,145 @@
+- type: entity
+  name: gassy warrior
+  parent: [ BaseMob, MobCombat, MobDamageable ]
+  id: BF14MobGassyWarrior
+  description: This server needs hero!
+  suffix: Admeme
+  components:
+  - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+    - Russian
+    - Ukrainian
+    - English
+    - Sign
+    - German
+    - Mexican
+    - Esperanto
+    - Red
+    - Blue
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: _Battlefield14/Mobs/gassy.rsi
+  - type: Physics
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.48
+        density: 200
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: ContainerContainer
+  - type: MovementAlwaysTouching
+  - type: Tag
+    tags:
+    - FootstepSound
+    - DoorBumpOpener
+  - type: Bloodstream
+    bloodMaxVolume: 3000
+    maxBleedAmount: 0
+    bloodlossDamage:
+      types:
+        Bloodloss: 0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss: -1
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3
+    baseSprintSpeed: 3
+    weightlessAcceleration: 2
+    weightlessFriction: 2
+    baseWeightlessModifier: 2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+#      2900: Critical
+      3000: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      1000: 0.85
+      2000: 0.7
+  - type: EmitSoundOnSpawn
+    sound: 
+      path: /Audio/_Battlefield14/Misc/gassy/spawn.ogg
+      params:
+        range: 50
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    damage:
+      types:
+        Blunt: 35
+    animation: WeaponArcFist
+  - type: ActionGrant
+    actions:
+    - ActionGassyTeleport
+    - ActionGassyGasCloud
+    - ActionGassyGasMissile
+    - ActionGassyOpenDoors
+  - type: AmbientSound
+    volume: 12
+    range: 20
+    enabled: true
+    sound:
+      path: /Audio/_Battlefield14/Misc/gassy/song.ogg
+  - type: Puller
+    needsHands: false
+  - type: Body
+    prototype: Aghost
+    thermalVisibility: false
+  - type: ComplexInteraction
+  - type: ZombieImmune
+  - type: NightVision # Gen 3 wide-quadtube
+    relayOverlay: false
+    goggleEffect: true
+    viewCircleRadius: 600
+    viewCircleCount: 1
+    viewCircleSpacing: 280
+    action: ActionToggleNightVision
+    phosphorColor: "#00FF00"
+    lightingColor: "#FFFFFF32"
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    inHandsOnly: false
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+  - type: Insulated
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 3000
+      behaviors:
+      - !type:GibBehavior { }

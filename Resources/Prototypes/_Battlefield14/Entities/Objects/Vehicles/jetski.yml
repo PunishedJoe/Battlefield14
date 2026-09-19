@@ -1,0 +1,137 @@
+- type: entity
+  parent: VehicleATV
+  id: BF14VehicleJetski
+  name: jetski
+  description: A turbine with bike handles. Very safe.
+  components:
+#  - type: MovementAlwaysTouching
+  - type: CanMoveInAir
+  - type: AmbientSound
+    sound: /Audio/Effects/shuttle_thruster.ogg
+    range: 8
+    volume: 5
+    enabled: false
+  - type: Strap
+    buckleOffset: "0.1, -0.05"
+    # maxBuckleDistance: 1 # Umbra - buckling fix
+  - type: MovementSpeedModifier
+    baseAcceleration: 1.5
+    baseFriction: 1
+    baseWalkSpeed: 3.5
+    baseSprintSpeed: 6
+    baseWeightlessAcceleration: 1
+    baseWeightlessFriction: 0.05
+    weightlessFrictionNoInput: 0.05
+    baseWeightlessModifier: 3
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Vehicles/jetski.rsi
+    layers:
+    - state: vehicle
+    - state: lights
+      shader: unshaded
+    noRot: true
+#  - type: RandomSprite
+#    available:
+#      - enum.DamageStateVisualLayers.Base:
+#          hull: Sixteen # Rainbow, Emagged, Departmental, Advanced
+  - type: ItemSlots
+    slots:
+      key_slot:
+        name: vehicle-slot-component-slot-name-keys
+        whitelist:
+          requireAll: true
+          tags:
+          - VehicleKey
+          - HoverbikeKeys
+        priority: 1
+        insertSound:
+          path: /Audio/Effects/Vehicle/vehiclestartup.ogg
+          params:
+            volume: -5
+      bag:
+        name: stored bag
+        whitelist:
+          components:
+            - Storage
+        priority: 2
+        insertSound:
+          path: /Audio/Items/belt_equip.ogg
+          params:
+            volume: -3
+  - type: ItemMapper
+    mapLayers:
+      bag:
+        whitelist:
+          components:
+            - Storage
+    sprite: _NF/Objects/Vehicles/hoverbike.rsi
+  - type: Appearance
+  - type: PointLight
+    radius: 7
+    energy: 3
+
+- type: entity
+  parent: VehicleKeyHoverbikeNF
+  id: BF14VehicleKeyJetski
+  name: jetski keys
+  description: Cute bibelot.
+
+- type: entity
+  parent: BF14VehicleJetski
+  id: BF14VehicleJetskiKeys
+  suffix: With key
+  components:
+  - type: ItemSlots
+    slots:
+      key_slot:
+        name: vehicle-slot-component-slot-name-keys
+        whitelist:
+          requireAll: true
+          tags:
+          - VehicleKey
+          - HoverbikeKeys
+        startingItem: BF14VehicleKeyJetski
+        priority: 1
+        insertSound:
+          path: /Audio/Effects/Vehicle/vehiclestartup.ogg
+          params:
+            volume: -5
+      bag:
+        name: stored bag
+        whitelist:
+          components:
+            - Storage
+        priority: 2
+        insertSound:
+          path: /Audio/Items/belt_equip.ogg
+          params:
+            volume: -3
+
+- type: entity
+  name: hoverbike spawner
+  id: BF14SpawnerVehicleJetski
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Battlefield14/Structures/Vehicles/jetski.rsi
+      state: vehicle
+  - type: ConditionalSpawner
+    prototypes:
+    - BF14VehicleJetski
+
+- type: entity
+  name: hoverbike spawner
+  id: BF14SpawnerVehicleJetskiKeys
+  parent: MarkerBase
+  suffix: with keys
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Battlefield14/Structures/Vehicles/jetski.rsi
+      state: vehicle
+  - type: ConditionalSpawner
+    prototypes:
+    - BF14VehicleJetskiKeys

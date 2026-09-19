@@ -1,4 +1,95 @@
 - type: reagent
+  id: BF14_GassyGas
+  name: gas
+  group: Toxins
+  desc: gas
+  physicalDesc: reagent-physical-desc-irritating
+  flavor: bitter
+  color: "#09ff00"
+  boilingPoint: 310.0
+  meltingPoint: 95.0
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.15
+      effects:
+      - !type:PopupMessage
+        type: Local
+        visualType: Large
+        probability: 0.15
+        messages:
+        - generic-reagent-effect-burning-eyes
+        - generic-reagent-effect-burning-eyes-a-bit
+        - generic-reagent-effect-tearing-up
+        - norepinephricacid-effect-eyes-itch
+        - norepinephricacid-effect-eye-pain
+      - !type:PopupMessage
+        type: Local
+        visualType: LargeCaution
+        probability: 0.08
+        messages:
+        - norepinephricacid-effect-vision-fade
+        - norepinephricacid-effect-vision-fail
+        - norepinephricacid-effect-eye-disconnect
+        conditions:
+        - !type:ReagentThreshold
+          min: 3
+      - !type:Drunk
+        boozePower: 4
+        slurSpeech: false
+        conditions:
+        - !type:ReagentThreshold
+          min: 2
+      - !type:MovespeedModifier
+        walkSpeedModifier: 0.7
+        sprintSpeedModifier: 0.6
+        conditions:
+        - !type:ReagentThreshold
+          min: 2
+      - !type:ChemVomit
+        probability: 0.4
+        conditions:
+        - !type:ReagentThreshold
+          min: 1.5
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: StutteringAccent
+        probability: 0.5
+      - !type:GenericStatusEffect
+        key: TemporaryBlindness
+        component: TemporaryBlindness
+        probability: 0.4
+        conditions:
+        - !type:ReagentThreshold
+          min: 0.5
+      - !type:Emote
+        emote: Cough
+        showInChat: true
+        probability: 0.3
+      - !type:Emote
+        emote: Gasp
+        showInChat: true
+        probability: 0.15
+      - !type:Paralyze
+        probability: 0.2
+        paralyzeTime: 0.5
+        conditions:
+        - !type:ReagentThreshold
+          min: 2
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: false
+        damage:
+          types:
+            Caustic: 3
+      - !type:Emote
+        emote: Scream
+        probability: 0.15
+
+- type: reagent
   id: Sarin
   name: reagent-name-sarin
   group: Toxins

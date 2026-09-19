@@ -604,6 +604,33 @@
     capacity: 1
 
 - type: entity
+  name: "RPO-A 'Shmel'"
+  parent: BaseWeaponLauncherDisposable
+  id: WeaponLauncherRURPOAShmel
+  description: Technically a flamethrower according to the Russian military, fires 93mm thermobaric projectiles.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPOA.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPOA.rsi
+  - type: BasicEntityAmmoProvider
+    proto: BulletRocketRPG26ThermobaricArmingDistance
+    capacity: 1
+
+- type: entity
+  parent: WeaponLauncherRURPOAShmel
+  id: WeaponLauncherRURPOAShmelCamo
+  suffix: camo
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPOAcamo.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Launchers/RPOAcamo.rsi
+
+- type: entity
   name: 9K38 Igla MANPADS
   parent: BaseWeaponLauncherDisposable
   id: WeaponLauncherRUIgla

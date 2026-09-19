@@ -1,0 +1,315 @@
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendNATOUSSFWarVendor
+  name: USSF boarder war vendor
+  description: Aircraft-grade weaponry from a vending machine.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+#      shader: unshaded
+#    - state: panel
+#      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: AccessReader
+    access: [["NATOCommon"]]
+  - type: CMAutomatedVendor
+    access:
+    - "NATOCommon"
+    sections:
+    - name: Armour
+      choices: { BF14Armour: 1 }
+      entries:
+      - id: EVAKitCombatUSMC
+        name: voidsuit
+        recommended: true
+    - name: 'Personal Medicine'
+      choices: { BF14PersonalMedicine: 1 }
+      entries:
+      - id: MedicationBoxPillsBicaridine
+        name: bicaridine pills
+        recommended: true
+      - id: MedicationBoxSyrettesBicaridine
+        name: bicaridine syrettes
+      - id: MedicationBoxPillsKelotane
+        name: kelotane pills
+      - id: MedicationBoxSyrettesKelotane
+        name: kelotane syrettes
+      - id: MedicationBoxSyrettesTricordrazine
+        name: tricordrazine syrettes
+      - id: BlisterPackSyretteMeralyne
+        name: meralyne syrettes
+      - id: BlisterPackSyretteDermaline
+        name: dermaline syrettes
+      - id: FoodCondimentPacketKaolin
+        name: kaolin powder packet
+      - id: DefibrillatorDisposable
+        name: disposable defibrillator
+    - name: Backpack/belt
+      choices: { BF14Storage: 2 }
+      entries:
+      - id: ClothingBackpackRucksackTan
+        replaceSlot: back
+        name: tan rucksack
+      - id: ClothingBackpackRucksackBlack
+        replaceSlot: back
+        name: black rucksack
+        recommended: true
+      - id: ClothingBeltMilitaryWebbingUS
+        replaceSlot: belt
+        name: ALICE belt rig
+      - id: ClothingBeltAssault
+        replaceSlot: belt
+        name: assault belt
+      - id: ClothingBeltMedicalEMTFilledBF14Basic
+        replaceSlot: belt
+        name: basic medical belt
+        amount: 4
+    - name: Weapons
+      entries:
+      - id: WeaponRifleUSXM8
+        amount: 10
+      - id: WeaponRifleUSM27IAR
+        amount: 3
+      - id: WeaponRifleUSM4A1
+        amount: 5
+      - id: WeaponSubmachinegunDEMP510
+        amount: 5
+      - id: WeaponPistolUSMK27
+        amount: 2
+    - name: Utility
+      entries:
+      - id: ClothingHelmetAttachmentNVGsNATOPVS14Binocular
+        amount: 5
+      - id: RiotBulletShield
+        amount: 3
+      - id: CombatKnife
+        amount: 10
+      - id: JetpackBlackFilled
+        amount: 10
+      - id: HandHeldMassScanner
+        amount: 50
+      - id: Crowbar
+        amount: 50
+    - name: Sustainment
+      entries:
+      - id: Tourniquet
+        amount: 20
+      - id: BoxMRE
+        amount: 50
+      - id: FoodSnackNutribrick
+        amount: 50
+      - id: DrinkMREFlask
+        amount: 50
+      - id: OxygenTankFilled
+        amount: 50
+    - name: Misc
+      entries:
+      - id: USAFlagFolded
+        amount: 3
+      - id: WeaponShotgunUSM590
+        amount: 1
+      - id: ShellBoxBF12GaugeBreaching
+        amount: 1
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendNATOUSSFWarVendorGear
+  name: USSF gear vendor
+  description: Aircraft-grade weaponry from a vending machine.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: AccessReader
+    access: [["NATOCommon"]]
+  - type: CMAutomatedVendor
+    access:
+    - "NATOCommon"
+    sections:
+    - name: Identification
+      entries:
+      - id: BoxIFFNATOBlue
+        amount: 10
+      - id: BoxIFFNATOGreen
+        amount: 10
+      - id: BoxIFFNATOYellow
+        amount: 10
+    - name: Breaching
+      entries:
+      - id: BreachingCharge
+        amount: 10
+      - id: FUBAR
+        amount: 1
+      - id: RemoteSignallerM57
+        amount: 10
+      - id: ThermiteCharge
+        amount: 5
+    - name: Grenades
+      entries:
+      - id: OffensiveGrenadeUSM111
+        amount: 10
+      - id: DefensiveGrenadeUSM67
+        amount: 10
+      - id: FlashbangGrenadeUSM84
+        amount: 20
+      - id: SmokeGrenadeUSM18
+        amount: 20
+      - id: LandMineM16A2APMItem
+        amount: 10
+    - name: Storage
+      entries:
+      - id: PouchMags
+        amount: 5
+      - id: PouchFlaresFilledGlowsticksBlue
+        amount: 5
+      - id: ClothingArmbandDumpPouchBlack
+        amount: 2
+    - name: Utility
+      entries:
+      - id: BarbedWire10
+        amount: 1
+      - id: EntrenchingTool
+        amount: 2
+      - id: Multitool
+        amount: 3
+      - id: HandheldStationMapUnpowered
+        amount: 5
+      - id: BoxIPOCK
+        amount: 5
+      - id: Zipties
+        amount: 15
+      - id: Handcuffs
+        amount: 5
+      - id: Whistle
+        amount: 3
+      - id: Boombox
+        amount: 2
+    - name: EVA
+      entries:
+      - id: JetpackBlackFilled
+        amount: 10
+      - id: DoubleEmergencyOxygenTankFilled
+        amount: 50
+      - id: ClothingHeadHelmetSoftsuitNasa
+        amount: 50
+      - id: ClothingOuterSoftsuitNASA
+        amount: 50
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendNATOUSSFWarVendorAmmo
+  name: USSF ammo vendor
+  description: Aircraft-grade weaponry from a vending machine.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: AccessReader
+    access: [["NATOCommon"]]
+  - type: CMAutomatedVendor
+    access:
+    - "NATOCommon"
+    sections:
+    - name: Magazine boxes
+      entries:
+      - id: BoxMagazineG36
+        amount: 3
+      - id: BoxMagazineG36TracerRed
+        amount: 2
+      - id: BoxMagazineSTANAG
+        amount: 1
+      - id: BoxMagazineSTANAGTracerRed
+        amount: 1
+      - id: BoxMagazineMP510
+        amount: 5
+      - id: BoxFlare
+        amount: 4
+    - name: Loose rounds
+      entries:
+      - id: MagazineBox556x45Big
+        amount: 2
+      - id: BF14AmmoPackTearable556x45Clips
+        amount: 3
+      - id: MagazineBox556x45
+        amount: 2
+      - id: MagazineBox762x51Big
+        amount: 1
+      - id: MagazineBox762x51
+        amount: 5
+      - id: MagazineBox9x19mmBig
+        amount: 5
+      - id: MagazineBox10x25mm
+        amount: 5
+      - id: ShellBoxBF12GaugeBuckshot
+        amount: 10
+    - name: Misc
+      entries:
+      - id: MagazinePistolGlock17
+        amount: 10
+      - id: CrayonBox
+        amount: 1
+
+- type: entity
+  parent: ColMarTechBase
+  id: CMVendNATOUSSFWarVendorShips
+  name: USSF ship LPC vendor
+  description: Aircraft-grade space ships from a vending machine.
+  suffix: ColMarTech
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/armoury.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "normal-unshaded"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: AccessReader
+    access: [["NATOCommon"]]
+  - type: CMAutomatedVendor
+    access:
+    - "NATOCommon"
+    sections:
+    - name: Transports
+      entries:
+      - id: ShipVoucherAAVP8
+        amount: 8
+
+- type: entity
+  parent: CMVendNATOUSSFWarVendorShips
+  id: CMVendNATOUSSFWarVendorShipsExtended
+  name: USSF extended ship LPC vendor
+  suffix: ColMarTech, Extended
+  components:
+  - type: CMAutomatedVendor
+    access:
+    - "NATOCommon"
+    sections:
+    - name: Transports
+      entries:
+      - id: ShipVoucherAAVP8
+        amount: 8
+      - id: ShipVoucherBradleyTow
+        amount: 5
+      - id: ShipVoucherBradleyAA
+        amount: 5
+      - id: ShipVoucherBradleyMG
+        amount: 5

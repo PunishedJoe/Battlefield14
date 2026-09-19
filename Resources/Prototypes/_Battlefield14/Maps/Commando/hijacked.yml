@@ -1,0 +1,46 @@
+- type: gameMap
+  id: BF14Hijacked
+  mapName: 'Hijacked'
+  mapPath: /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap0.yml
+  minPlayers: 1
+  maxPlayers: 20
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Hijacked:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Hijacked, international waters"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Hijacked, international waters"
+          stationDescription: "A civilian ferry hijacked to traffic nuclear materials."
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            Delta90: [ 10, 10 ]
+            GRU90: [ 10, 10 ]
+        - type: ConquestManager
+        - type: CEStationZLevels
+          mapsAbove:
+            - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap1.yml
+            - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap2.yml
+            - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap3.yml
+            - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap4.yml
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+        - type: ConquestManager
+
+- type: zMap
+  id: BF14HijackedZMap
+  maps:
+    - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap0.yml    # 1st floor
+    - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap1.yml    # 2nd floor
+    - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap2.yml    # 3rd floor
+    - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap3.yml    # 4th floor
+    - /Maps/_Battlefield14/Commando/MultiZ/Hijacked/BF14HijackedZMap4.yml    # roof
+  components:
+    - type: CEAutoGridGravity

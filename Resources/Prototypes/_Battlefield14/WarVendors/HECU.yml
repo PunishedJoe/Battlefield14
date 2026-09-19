@@ -64,8 +64,10 @@
         amount: 4
     - name: Weapons
       entries:
-      - id: WeaponRifleUSM16A2
-        amount: 20
+      - id: WeaponRifleUSCAR15
+        amount: 10
+      - id: WeaponRifleUSM16A3
+        amount: 10
       - id: WeaponSubmachinegunDEMP5A5
         amount: 5
       - id: WeaponSniperUSM40A5

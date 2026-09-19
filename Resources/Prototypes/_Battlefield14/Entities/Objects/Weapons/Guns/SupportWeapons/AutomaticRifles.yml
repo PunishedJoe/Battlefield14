@@ -16,11 +16,14 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - state: grip-HK
       - state: longcog
       - state: stock-adjustable-HK
       - state: rifle-length-barrel-quadrail
-      - state: foregrip
       - state: railcover
+      - state: muzzle-comp
+        offset: 0.19,0
+      - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
@@ -74,6 +77,25 @@
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.35
+
+- type: entity
+  name: RPK-16
+  parent: WeaponRifleUSM27IAR
+  id: WeaponRifleUSRPK16
+  description: "At some point, American civilians became obsessed with having their own M27-IAR, and with the legalisation of civilian-owned full auto leading up to the war; there was an explosion of 'RPK-16' configurations for the AR15, obviously reminiscent of the soviet RPK-74."
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: grip-HK
+      - state: longcog
+      - state: stock-adjustable
+      - state: rifle-length-barrel-M27
+      - state: foregrip
+      - state: mag-30-0
+        map: ["enum.GunVisualLayers.Mag"]
 
 #region DE
 
@@ -150,7 +172,7 @@
   description: A modernised RPK-74, with simply "cooler" furniture and more modern manufacture, but does not exactly translate to performance. 2016 refers to the date of development.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK2016.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -158,7 +180,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK2016.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunRequiresWield

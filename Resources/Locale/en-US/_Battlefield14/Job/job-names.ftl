@@ -10,6 +10,8 @@ job-name-usmc-recon = USMC Force Recon
 job-name-ussf-captain = USSF Colonel
 job-name-ussf-crewman = USSF Crewman
 job-name-ussf-fighter-pilot = USSF Fighter Pilot
+job-name-ussf-squadleader = USSF Boarder Team Leader
+job-name-ussf-rifleman = USSF Boarder
 
 job-name-ng-lieutenant = N.G. Lieutenant
 job-name-ng-squadleader = N.G. Squad Leader
@@ -68,6 +70,11 @@ job-name-omon-rifleman = OMON Riot Officer
 job-name-wps-marshal = Chevron Marshal
 job-name-wps-warden = Chevron Brig Chief
 job-name-wps-officer = Chevron Security Officer
+
+#Partisan#
+
+job-name-deltaforce-90 = Delta Force '90
+job-name-gru-90 = GRU '90
 
 #Civilian#
 

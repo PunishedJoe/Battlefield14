@@ -97,7 +97,7 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
+    minAngle: -10
     maxAngle: -10
   - type: Gun
     minAngle: 16
@@ -113,7 +113,7 @@
       path: /Audio/Weapons/Guns/Gunshots/m41.ogg
       params:
         variation: 0.125
-    fireRate: 7.5
+    fireRate: 8
   - type: ChamberMagazineAmmoProvider
     soundBoltClosed:
       path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg

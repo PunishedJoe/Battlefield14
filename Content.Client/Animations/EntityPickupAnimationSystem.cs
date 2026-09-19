@@ -11,7 +11,7 @@ namespace Content.Client.Animations;
 /// <summary>
 ///     System that handles animating an entity that a player has picked up.
 /// </summary>
-public sealed class EntityPickupAnimationSystem : EntitySystem
+public sealed partial class EntityPickupAnimationSystem : EntitySystem // BF14 - made partial
 {
     [Dependency] private readonly AnimationPlayerSystem _animations = default!;
     [Dependency] private readonly MetaDataSystem _metaData = default!;
@@ -44,6 +44,10 @@ public sealed class EntityPickupAnimationSystem : EntitySystem
         if (IsPaused(uid, metadata))
             return;
 
+        // <BF14> - shrink, tilt, ease and fade instead of a straight 125ms slide, see EntityPickupAnimationSystem.BF14.cs
+        AnimateFancyPickup(uid, metadata, initial, final, initialAngle);
+        // </BF14>
+        /* BF14 - replaced by AnimateFancyPickup
         var animatableClone = Spawn("clientsideclone", initial);
         EnsureComp<EntityPickupAnimationComponent>(animatableClone);
         var val = metadata.EntityName;
@@ -83,5 +87,6 @@ public sealed class EntityPickupAnimationSystem : EntitySystem
                 },
             }
         }, "fancy_pickup_anim");
+        */
     }
 }

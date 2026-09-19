@@ -286,6 +286,20 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledM320SWAT
+  suffix: Filled, M320, SWAT
+  parent: CrateSecgear
+  name: M320 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSM320
+        - id: BoxMagazine40x46ChemicalSmoke
+        - id: BoxMagazine40x46mmIllumination
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledM14EBR
   suffix: Filled, Mk-14 EBR
   parent: CrateSecgear
@@ -406,6 +420,21 @@
           amount: 4
         - id: CartridgePZF3HE
           amount: 4
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledG22A2
+  suffix: Filled, G22A2
+  parent: CrateSecgear
+  name: G22A2 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponSniperDEG22A2
+          amount: 2
+        - id: BoxMagazineAWM
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -631,6 +660,21 @@
     contents:
         - id: WeaponLauncherRURPG26Thermobaric
           amount: 5
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRPOAShmel
+  suffix: Filled, RPO-A Shmel
+  parent: CrateSecgear
+  name: RPO-A Shmel crate
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: BF14TableRPOAShmel
+        rolls: !type:RangeNumberSelector
+          range: 5, 5
   - type: AccessReader
     access: [["PACTSoldier"]]
 

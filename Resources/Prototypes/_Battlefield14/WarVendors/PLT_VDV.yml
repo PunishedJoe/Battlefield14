@@ -35,6 +35,9 @@
         points: 1
     - name: anti-personnel solution
       entries:
+      - id: CrateSecgearPACTFilledRPOAShmel
+        name: RPO-A Shmel
+        points: 2
       - id: CrateSecgearPACTFilledRPG26Thermobaric
         name: RShG-2
         points: 2
