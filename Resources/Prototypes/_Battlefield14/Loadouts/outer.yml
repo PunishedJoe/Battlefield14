@@ -61,3 +61,13 @@
   id: LoadoutOuterArmorPlateCarrierHeavyTrack
   equipment:
     outerClothing: ClothingOuterArmorPlateCarrierHeavyTrack
+    
+- type: loadout
+  id: LoadoutOuterArmorChefApron
+  equipment:
+    outerClothing: ClothingOuterArmorChefApron
+    
+- type: loadout
+  id: LoadoutOuterArmorButcherApron
+  equipment:
+    outerClothing: ClothingOuterArmorButcherApron
