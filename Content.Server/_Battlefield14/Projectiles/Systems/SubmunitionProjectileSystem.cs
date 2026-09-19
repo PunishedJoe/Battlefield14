@@ -3,6 +3,7 @@ using Content.Server.Administration.Logs;
 using Content.Shared.Database;
 using Content.Shared.Projectiles;
 using Content.Shared.Projectiles.Components;
+using Content.Shared.Whitelist;
 using Robust.Shared.Map;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
@@ -17,10 +18,13 @@ public sealed class SubmunitionProjectileSystem : EntitySystem
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly IAdminLogManager _adminLogger = default!;
+    [Dependency] private readonly EntityWhitelistSystem _whitelist = default!;
 
     public override void Initialize()
     {
         base.Initialize();
+
+        SubscribeLocalEvent<SubmunitionProjectileComponent, ProjectileHitEvent>(OnProjectileHit);
     }
 
     public override void Update(float frameTime)
@@ -30,7 +34,7 @@ public sealed class SubmunitionProjectileSystem : EntitySystem
         var query = EntityQueryEnumerator<SubmunitionProjectileComponent, ProjectileComponent, PhysicsComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var submunition, out var projectile, out var physics, out var xform))
         {
-            if (submunition.SubmunitionsSpawned)
+            if (submunition.SubmunitionsSpawned || submunition.SubmunitionsBlocked)
                 continue;
 
             var currentVelocity = physics.LinearVelocity;
@@ -65,6 +69,12 @@ public sealed class SubmunitionProjectileSystem : EntitySystem
             // Spawn submunitions
             SpawnSubmunitions(uid, submunition, projectile, physics, xform);
         }
+    }
+
+    private void OnProjectileHit(EntityUid uid, SubmunitionProjectileComponent component, ref ProjectileHitEvent args)
+    {
+        if (_whitelist.IsBlacklistPass(component.Blacklist, args.Target))
+            component.SubmunitionsBlocked = true;
     }
 
     private void SpawnSubmunitions(EntityUid uid, SubmunitionProjectileComponent component, 
