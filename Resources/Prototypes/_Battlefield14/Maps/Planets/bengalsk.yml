@@ -2,7 +2,7 @@
   id: BF14Bengalsk
   mapName: 'Bengalsk'
   mapPath: /Maps/_Battlefield14/Planets/bengalsk.yml
-  minPlayers: 1
+  minPlayers: 10
   maxPlayers: 50
   randomRotation: false
   maxRandomOffset: 0
@@ -21,13 +21,13 @@
           availableJobs:
             USMCLieutenant: [ 1, 1 ]
             USMCSquadLeader: [ 3, 3 ]
-            USMCRifleman: [ 6, 6 ]
+            USMCRifleman: [ -1, -1 ]
             USMCAutomaticRifleman: [ 1, 1 ]
             USMCMedic: [ 3, 3 ]
             USMCRecon: [ 3, 3 ]
             RGFLieutenant: [ 1, 1 ]
             RGFSquadLeader: [ 3, 3 ]
-            RGFRifleman: [ 8, 8 ]
+            RGFRifleman: [ -1, -1 ]
             RGFAutomaticRifleman: [ 1, 1 ]
             RGFMedic: [ 3, 3 ]
             RGFRecon: [ 3, 3 ]

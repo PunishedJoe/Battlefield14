@@ -112,6 +112,16 @@
       enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
   - type: Insulated
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: "TTT"
+    description: "bring the tungs"
+    rules: "you're TTT, do whatever the fuck you want"
+    raffle:
+      settings: short
   - type: Damageable
     damageContainer: Biological
   - type: Destructible

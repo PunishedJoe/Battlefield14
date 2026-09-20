@@ -808,7 +808,7 @@
   - BF_CombatMasks
   - BF_CrewGlasses
   - BF_SoldierGloves
-  - BF_MiscItemsPACT
+  - BF_MiscItemsNATO
   - ContractorWallet
 
 - type: roleLoadout

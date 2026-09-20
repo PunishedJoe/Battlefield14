@@ -133,6 +133,16 @@
       enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
   - type: Insulated
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: "gassy warrior"
+    description: "this server needs a hero"
+    rules: "this server needs a hero"
+    raffle:
+      settings: short
   - type: Damageable
     damageContainer: Biological
   - type: Destructible
