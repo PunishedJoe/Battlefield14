@@ -41,11 +41,11 @@
         - id: WeaponLauncherUSSMAW
           amount: 2
         - id: CartridgeSMAWHEAA
-          amount: 4
+          amount: 2
         - id: CartridgeSMAWNE
-          amount: 4
+          amount: 2
         - id: CartridgeSMAWHEDM
-          amount: 4
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -60,9 +60,9 @@
         - id: WeaponLauncherSECarlGustavM2
           amount: 2
         - id: CartridgeCarlGustavHEDP502
-          amount: 4
+          amount: 2
         - id: CartridgeCarlGustavHE441D
-          amount: 4
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -75,7 +75,7 @@
   - type: StorageFill
     contents:
         - id: WeaponLauncherUSAT4
-          amount: 5
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -88,7 +88,7 @@
   - type: StorageFill
     contents:
         - id: WeaponLauncherUSSMAWDisposableFolded
-          amount: 5
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -101,7 +101,7 @@
   - type: StorageFill
     contents:
         - id: WeaponLauncherUSM202FLASHFolded
-          amount: 5
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -127,7 +127,7 @@
   - type: StorageFill
     contents:
         - id: WeaponLauncherUSM72LAWThermobaricFolded
-          amount: 5
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -273,15 +273,11 @@
   - type: StorageFill
     contents:
         - id: WeaponGrenadeLauncherUSM320
-          amount: 2
         - id: BoxMagazine40x46HE
         - id: BoxMagazine40x46HEDP
         - id: BoxMagazine40x46Frag
-          amount: 2
         - id: BoxMagazine40x46ChemicalSmoke
-          amount: 2
         - id: BoxMagazine40x46mmIllumination
-          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -417,9 +413,9 @@
         - id: WeaponLauncherDEPZF3
           amount: 2
         - id: CartridgePZF3HEAT
-          amount: 4
+          amount: 2
         - id: CartridgePZF3HE
-          amount: 4
+          amount: 2
   - type: AccessReader
     access: [["NATOSoldier"]]
 
@@ -618,9 +614,9 @@
         - id: WeaponLauncherRURPG7
           amount: 2
         - id: CartridgeRPG7HEAT
-          amount: 4
+          amount: 2
         - id: CartridgeRPG7Frag
-          amount: 4
+          amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
 
@@ -633,7 +629,7 @@
   - type: StorageFill
     contents:
         - id: WeaponLauncherRURPG30
-          amount: 5
+          amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
 
@@ -646,7 +642,7 @@
   - type: StorageFill
     contents:
         - id: WeaponLauncherRURPG26
-          amount: 5
+          amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
 
@@ -659,7 +655,7 @@
   - type: StorageFill
     contents:
         - id: WeaponLauncherRURPG26Thermobaric
-          amount: 5
+          amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
 
@@ -674,7 +670,7 @@
       entity_storage: !type:NestedSelector
         tableId: BF14TableRPOAShmel
         rolls: !type:RangeNumberSelector
-          range: 5, 5
+          range: 2, 2
   - type: AccessReader
     access: [["PACTSoldier"]]
 
@@ -706,7 +702,6 @@
         - id: ShellBoxBF4GaugeBarricade
           amount: 2
         - id: ShellBoxBF4GaugeShrap25
-          amount: 1
   - type: AccessReader
     access: [["PACTSoldier"]]
 
@@ -719,15 +714,10 @@
   - type: StorageFill
     contents:
         - id: WeaponGrenadeLauncherRUGM94
-          amount: 2
         - id: BoxMagazine43x30HEFrag
-          amount: 2
         - id: BoxMagazine43x30Thermobaric
-          amount: 2
         - id: BoxMagazine43x30ChemicalSmoke
-          amount: 2
         - id: BoxMagazine43x30Illumination
-          amount: 2
   - type: AccessReader
     access: [["PACTSoldier"]]
 

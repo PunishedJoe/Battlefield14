@@ -34,6 +34,7 @@
     understands:
     - English
     - Russian
+    - Ukrainian
     - Esperanto
     - Sign
     - TauCetiBasic
@@ -43,7 +44,7 @@
     baseCritThreshold: 110
 
 - type: entity
-  parent: BF14MobHumanFSBBase
+  parent: BF14MobHumanFBIBase
   id: BF14MobHumanFBISMG
   name: FBI submachinegunner
   suffix: BF14

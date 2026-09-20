@@ -14,7 +14,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocket84mmHEAT
@@ -23,6 +23,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -32,6 +35,11 @@
   id: BulletRocket84mmHEAT # High explosive anti tank, pierces and does damage on the inside
   name: 84mm HEAT rocket # Used for the AT4 and HEAA SMAW cartridge
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -39,9 +47,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 2000
-        Blunt: 180
-        Piercing: 180
+        Structural: 100
+        Blunt: 25
     deleteOnCollide: false
   - type: ArmorPiercing
     piercingThickness: 7
@@ -51,7 +58,7 @@
     fragmentationCount: 40
     fragmentationPrototype: Bullet84mmHEATFragment
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
   - type: Explosive
     explosionType: DemolitionCharge
     totalIntensity: 300
@@ -73,7 +80,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletCarlGustavHE441D
@@ -98,8 +105,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 1000
-        Blunt: 250
+        Structural: 100
+        Blunt: 25
   - type: ExplodeOnTrigger
   - type: HeFragProjectile
     fillPrototype: BulletGrenadeM67Fragment
@@ -114,7 +121,7 @@
     maxIntensity: 6
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
 
 - type: entity
   id: PelletCarlGustavASM401
@@ -150,7 +157,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocket83mmNE
@@ -175,8 +182,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 1000
-        Blunt: 250
+        Structural: 100
+        Blunt: 25
   - type: ExplodeOnTrigger
   - type: HeFragProjectile
     fillPrototype: BulletGrenadeM67Fragment
@@ -191,7 +198,7 @@
     maxIntensity: 6
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
 
 - type: entity
   id: Bullet84mmHEATFragment
@@ -238,7 +245,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocket83mmHEDM
@@ -263,8 +270,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 1500
-        Blunt: 250
+        Structural: 100
+        Blunt: 25
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
@@ -273,7 +280,7 @@
     maxIntensity: 100
     maxTileBreak: 1
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -338,7 +345,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketM72HEAT
@@ -347,8 +354,11 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
-    damage: 200
+    damage: 50
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -356,6 +366,11 @@
   id: BulletRocketM72HEAT
   name: 66mm HEAT rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:
@@ -363,9 +378,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 1500
-        Blunt: 120
-        Slash: 120
+        Structural: 100
+        Blunt: 25
     deleteOnCollide: false
   - type: ArmorPiercing
     piercingThickness: 5
@@ -375,7 +389,7 @@
     fragmentationCount: 30
     fragmentationPrototype: Bullet84mmHEATFragment
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
 #  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
@@ -397,8 +411,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 100
-        Blunt: 50
+        Structural: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketM72Thermobaric
@@ -408,7 +422,7 @@
     spreadAngle: 0
     velocityMultiplier: 1
   - type: StaminaDamageOnCollide
-    damage: 200
+    damage: 50
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -423,9 +437,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 1000
-        Blunt: 120
-        Slash: 120
+        Structural: 100
+        Blunt: 25
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Thermobaric
@@ -434,7 +447,7 @@
     maxIntensity: 4
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
-    damage: 200
+    damage: 50
 
 - type: entity
   id: BulletRocketStingerMANPADSMissile
@@ -499,7 +512,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketRPG7HEAT
@@ -508,6 +521,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -517,6 +533,11 @@
   id: BulletRocketRPG7HEAT
   name: PG-7VL HEAT rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
     layers:
@@ -524,9 +545,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 2000
-        Blunt: 180
-        Piercing: 180
+        Structural: 100
+        Blunt: 25
     deleteOnCollide: false
   - type: ArmorPiercing
     piercingThickness: 7
@@ -536,7 +556,7 @@
     fragmentationCount: 40
     fragmentationPrototype: BulletRPG7OG7VFragment
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
   - type: Explosive
     explosionType: DemolitionCharge
     totalIntensity: 300
@@ -558,7 +578,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketRPG7Frag
@@ -583,8 +603,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 500
-        Blunt: 200
+        Structural: 100
+        Blunt: 25
   - type: HeFragProjectile
     fillPrototype: BulletRPG7OG7VFragment
     capacity: 90
@@ -599,7 +619,7 @@
     maxIntensity: 2
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
 
 - type: entity
   id: BulletRPG7OG7VFragment
@@ -646,7 +666,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketRPG26HEAT
@@ -655,6 +675,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -664,6 +687,11 @@
   id: BulletRocketRPG26HEAT
   name: 72.5mm HEAT rocket
   components:
+  - type: TriggerOnCollide
+    fixtureID: projectile
+    blacklist:
+      components:
+        - HumanoidAppearance
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
     layers:
@@ -671,9 +699,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 1000
-        Blunt: 150
-        Piercing: 150
+        Structural: 100
+        Blunt: 25
     deleteOnCollide: false
   - type: ArmorPiercing
     piercingThickness: 5
@@ -683,7 +710,7 @@
     fragmentationCount: 20
     fragmentationPrototype: BulletRPG7OG7VFragment
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
   - type: Explosive
     explosionType: DemolitionCharge
     totalIntensity: 200
@@ -705,7 +732,7 @@
     damage:
       types:
         Structural: 100
-        Blunt: 50
+        Blunt: 25
     deleteOnCollide: true
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketRPG26Thermobaric
@@ -730,8 +757,8 @@
   - type: Projectile
     damage:
       types:
-        Structural: 1000
-        Blunt: 200
+        Structural: 100
+        Blunt: 25
   - type: SpawnOnTrigger
     proto: InstantEffectGravityWellThermobaric
   - type: ExplodeOnTrigger
@@ -742,7 +769,7 @@
     maxIntensity: 6
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
-    damage: 200 # It's a fucking rocket
+    damage: 50
 
 - type: entity
   id: BulletRocketIglaMANPADSMissile

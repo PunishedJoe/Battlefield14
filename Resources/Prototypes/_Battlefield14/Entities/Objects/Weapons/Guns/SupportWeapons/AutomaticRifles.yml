@@ -172,7 +172,7 @@
   description: A modernised RPK-74, with simply "cooler" furniture and more modern manufacture, but does not exactly translate to performance. 2016 refers to the date of development.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK2016.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -180,7 +180,7 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK2016.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunRequiresWield
