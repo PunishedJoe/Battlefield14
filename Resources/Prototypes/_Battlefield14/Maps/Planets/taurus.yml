@@ -2,7 +2,7 @@
   id: BF14Taurus
   mapName: 'Taurus'
   mapPath: /Maps/_Battlefield14/Planets/taurus.yml
-  minPlayers: 1
+  minPlayers: 6
   maxPlayers: 50
   fallback: True
   randomRotation: false
@@ -22,13 +22,13 @@
           availableJobs:
             NGLieutenant: [ 1, 1 ]
             NGSquadLeader: [ 3, 3 ]
-            NGRifleman: [ 6, 6 ]
+            NGRifleman: [ -1, -1 ]
             NGAutomaticRifleman: [ 1, 1 ]
             NGMedic: [ 3, 3 ]
             NGRecon: [ 3, 3 ]
             VDVLieutenant: [ 1, 1 ]
             VDVSquadLeader: [ 3, 3 ]
-            VDVRifleman: [ 6, 6 ]
+            VDVRifleman: [ -1, -1 ]
             VDVAutomaticRifleman: [ 3, 3 ]
             VDVMedic: [ 3, 3 ]
             VDVRecon: [ 3, 3 ]

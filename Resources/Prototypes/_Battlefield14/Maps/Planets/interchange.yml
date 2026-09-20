@@ -2,7 +2,7 @@
   id: BF14Interchange
   mapName: 'Interchange'
   mapPath: /Maps/_Battlefield14/Planets/MultiZ/Interchange/BF14InterchangeZMap0.yml 
-  minPlayers: 1
+  minPlayers: 20
   maxPlayers: 50
   randomRotation: false
   maxRandomOffset: 0

@@ -75,6 +75,10 @@
   id: BF14VehicleKeyJetski
   name: jetski keys
   description: Cute bibelot.
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Vehicles/hoverbike.rsi
+    state: keys
 
 - type: entity
   parent: BF14VehicleJetski
