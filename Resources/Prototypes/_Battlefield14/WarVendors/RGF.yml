@@ -82,8 +82,8 @@
         amount: 5
       - id: WeaponSubmachinegunRUVityaz
         amount: 5
-      - id: WeaponPistolMP443
-        amount: 2
+      - id: WeaponPistolRUPM
+        amount: 8
     - name: Utility
       entries:
       - id: ClothingHelmetAttachmentNVGsBasicPACT
@@ -264,7 +264,7 @@
         amount: 10
     - name: Misc
       entries:
-      - id: MagazinePistolMP443
-        amount: 10
+      - id: MagazinePistolPM
+        amount: 24
       - id: CrayonBox
         amount: 1
