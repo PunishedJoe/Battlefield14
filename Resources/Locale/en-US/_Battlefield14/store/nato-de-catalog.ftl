@@ -12,6 +12,9 @@ uplink-natode-mg3-desc = A crate with two MG3's with eight spare belt boxes.
 uplink-natode-pzf3-name = Panzerfaust 3 x2
 uplink-natode-pzf3-desc = Two panzerfaust launchers with four spare HEAT and four spare HE rockets.
 
+uplink-NATODE-G22A2crate-name = G22A2 x2
+uplink-NATODE-G22A2crate-desc = A crate with two G22A2's with two boxes of magazines.
+
 ## Explosives
 
 uplink-natode-dm51-box-name = DM51 grenade box

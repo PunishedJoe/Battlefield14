@@ -12,8 +12,9 @@
       balaclava:
       - state: equipped-BALACLAVA
   - type: Item
-    size: Small
-  - type: BreathMask
+    size: Normal
+    shape:
+    - 0,0,0,1
   - type: IdentityBlocker
   - type: HideLayerClothing
     slots:
@@ -33,3 +34,24 @@
     clothingVisuals:
       balaclava:
       - state: equipped-BALACLAVA
+
+- type: entity
+  parent: ClothingBalaclavaBase
+  id: ClothingBalaclavaMilitaryOpen
+  name: open balaclava
+  description: Not good for hiding your face but does keep your head warm.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/balaclavaopen.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/balaclavaopen.rsi
+    clothingVisuals:
+      balaclava:
+      - state: equipped-BALACLAVA
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,0,1
+  - type: HideLayerClothing
+    slots:
+    - Hair
