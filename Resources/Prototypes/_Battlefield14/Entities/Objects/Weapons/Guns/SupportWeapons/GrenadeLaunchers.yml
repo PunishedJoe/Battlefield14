@@ -219,7 +219,7 @@
   name: M32A1 MGL
   parent: WeaponRevolverMateba
   id: WeaponGrenadeLauncherUSM32A1
-  description: A south african design adopted across the world. The U.S. military selected this over a modernised china lake grenade launcher.
+  description: A south african designed six round revolver 40mm grenade launcher adopted across the world. The U.S. military selected this over a modernised china lake grenade launcher.
   components:
   - type: Item
     size: Huge
