@@ -216,6 +216,23 @@
 
 - type: entity
   parent: MagazineRifleAKM
+  id: MagazineRifleAK103
+  name: "AK-103 magazine (7.62x39mm)"
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleAKM
+      - Magazine
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/AKMblack.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: MagazineRifleAKM
   id: MagazineRifleAK203
   name: "AK-203 magazine (7.62x39mm)"
   description: Classic banana mag.

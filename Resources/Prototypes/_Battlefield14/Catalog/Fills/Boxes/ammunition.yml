@@ -346,6 +346,17 @@
         amount: 8
 
 - type: entity
+  name: box of AK-103 magazines
+  parent: BoxMagazine
+  id: BoxMagazineAK103
+  description: A box full of 7.62x39mm '47 pattern magazines.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazineRifleAK103
+        amount: 8
+
+- type: entity
   name: box of AK-203 magazines
   parent: BoxMagazine
   id: BoxMagazineAK203
