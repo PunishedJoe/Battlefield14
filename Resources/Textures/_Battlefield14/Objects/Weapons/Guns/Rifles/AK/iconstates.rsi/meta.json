@@ -11,6 +11,9 @@
             "name": "icon-ak74"
         },
         {
+            "name": "icon-rpk"
+        },
+        {
             "name": "icon-rpk74"
         },
         {
@@ -24,6 +27,9 @@
         },
         {
             "name": "icon-aks74u"
+        },
+        {
+            "name": "icon-ak103"
         },
         {
             "name": "icon-ak203"
@@ -62,13 +68,22 @@
             "name": "mag-ak12-3"
         },
         {
+            "name": "mag-ak12-4"
+        },
+        {
             "name": "mag-cag-0"
+        },
+        {
+            "name": "mag-ak103-0"
         },
         {
             "name": "mag-ak203-0"
         },
         {
             "name": "mag-akm-0"
+        },
+        {
+            "name": "mag-rpk-0"
         },
         {
             "name": "mag-ak74black-0"

@@ -9,7 +9,7 @@ public sealed partial class ConquestManagerComponent : Component
     public Dictionary<GameFactions, float> Tickets = [];
 
     [DataField]
-    public float MaxTickets = 600; //BF14 600>500
+    public float MaxTickets = 1500; //BF14 1500>500
 
     [DataField]
     public bool Enabled = false;

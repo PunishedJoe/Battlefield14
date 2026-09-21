@@ -1,4 +1,4 @@
-# US
+#region US
 - type: entity
   name: M320
   parent: WeaponFlareGun
@@ -215,7 +215,59 @@
     pvsIncrease: 0.35
   - type: GunRequiresWield
 
-# PACT
+- type: entity
+  name: M32A1 MGL
+  parent: WeaponRevolverMateba
+  id: WeaponGrenadeLauncherUSM32A1
+  description: A south african designed six round revolver 40mm grenade launcher adopted across the world. The U.S. military selected this over a modernised china lake grenade launcher.
+  components:
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/Milkor.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/Milkor.rsi
+    slots:
+    - back
+    - suitStorage
+#    - SUITSTORAGE2
+#    clothingVisuals:
+#      suitstorage2:
+#      - state: equipped-BACKPACK
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: 0
+  - type: Gun
+    minAngle: 4
+    maxAngle: 14
+    angleIncrease: 8
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    fireRate: 1.5
+    projectileSpeed: 40
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/Guns/M320/gl_fire.ogg
+      params:
+        volume: -2
+        variation: 0.125
+  - type: GunRequiresWield
+  - type: RevolverAmmoProvider
+    proto: Cartridge40x46mmHE
+    capacity: 6
+    whitelist:
+      tags:
+        - Cartridge40x46mmGrenade
+  - type: AmmoCounter
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a minimum arming distance of 5 tiles.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+#region RU
 
 - type: entity
   name: GM-94
@@ -243,7 +295,7 @@
     maxAngle: 10
     angleIncrease: 3
     angleDecay: 1
-    fireRate: 0.5
+    fireRate: 1
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto

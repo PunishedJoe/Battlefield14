@@ -2,7 +2,7 @@
   id: BF14Customs
   mapName: 'Customs'
   mapPath: /Maps/_Battlefield14/Planets/MultiZ/Customs/BF14CustomsZMap0.yml
-  minPlayers: 1
+  minPlayers: 10
   maxPlayers: 50
   randomRotation: false
   maxRandomOffset: 0
@@ -21,13 +21,13 @@
           availableJobs:
             USMCLieutenant: [ 1, 1 ]
             USMCSquadLeader: [ 3, 3 ]
-            USMCRifleman: [ 6, 6 ]
+            USMCRifleman: [ -1, -1 ]
             USMCAutomaticRifleman: [ 1, 1 ]
             USMCMedic: [ 3, 3 ]
             USMCRecon: [ 3, 3 ]
             VDVLieutenant: [ 1, 1 ]
             VDVSquadLeader: [ 3, 3 ]
-            VDVRifleman: [ 6, 6 ]
+            VDVRifleman: [ -1, -1 ]
             VDVAutomaticRifleman: [ 3, 3 ]
             VDVMedic: [ 3, 3 ]
             VDVRecon: [ 3, 3 ]

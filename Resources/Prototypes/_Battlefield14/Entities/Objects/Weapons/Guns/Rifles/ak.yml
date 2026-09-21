@@ -137,7 +137,7 @@
   components:
   - type: Item
     size: Large
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKS74u.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
     state: icon-aks74u
@@ -154,7 +154,7 @@
       - state: mag-ak74-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKS74u.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKS74u.rsi
   - type: Gun
     angleIncrease: 1.5
     projectileSpeed: 40 # Shorter barrel
@@ -202,7 +202,7 @@
   description: A "modernised" '74 pattern rifle, which looks attractive but doesn't advance much farther than the AK74M.
   components:
   - type: Item
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK12.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
     state: icon-ak12
@@ -219,7 +219,7 @@
       - state: mag-ak12-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK12.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -241,7 +241,7 @@
             - BF_CartridgeRifle545x39
   - type: MagazineVisuals
     magState: mag-ak12
-    steps: 4
+    steps: 5
     zeroVisible: true
   - type: Appearance
   - type: WieldedCrosshair
@@ -461,17 +461,17 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
   - type: GunWieldBonus
     minAngle: -29
-    maxAngle: -27
+    maxAngle: -30
   - type: Gun
     minAngle: 31
-    maxAngle: 40
-    angleIncrease: 1
-    angleDecay: 16
+    maxAngle: 45
+    angleIncrease: 1.5
+#    angleDecay: 16
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 5
+    fireRate: 6
     projectileSpeed: 40
     soundGunshot:
       collection: BF_AK_762_Gunshots
@@ -506,6 +506,53 @@
         requireDetailRange: true
 
 - type: entity
+  name: AK-103
+  parent: WeaponRifleRUAKMS
+  id: WeaponRifleRUAK103
+  description: A later revision of the AKM rifle, with even moderner design.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK74M.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-ak103
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-ak74black
+      - state: grip-ak74black
+      - state: handguard-ak74black
+      - state: barrel-ak74
+      - state: ironsight-ak74
+      - state: mag-ak103-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK74M.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK103
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
+  - type: MagazineVisuals
+    magState: mag-ak103
+
+- type: entity
   name: AK-203
   parent: WeaponRifleRUAKMS
   id: WeaponRifleRUAK203
@@ -529,14 +576,6 @@
         offset: -0.18, 0
       - state: mag-ak203-0
         map: ["enum.GunVisualLayers.Mag"]
-  - type: GunWieldBonus
-    minAngle: -29
-    maxAngle: -32
-  - type: Gun # Improved recoil over the AKM
-    minAngle: 31
-    maxAngle: 40
-    angleIncrease: 0.75
-    angleDecay: 16
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK203.rsi
   - type: ItemSlots

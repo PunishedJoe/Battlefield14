@@ -50,12 +50,12 @@
           tags:
             - BF_CartridgeRifle556x45
   - type: GunWieldBonus
-    minAngle: 0
-    maxAngle: 0
+    minAngle: -30
+    maxAngle: -30
   - type: Gun
-    minAngle: 6
-    maxAngle: 15
-    angleIncrease: 0.5
+    minAngle: 36 # wielded 6
+    maxAngle: 45 # wielded 15
+    angleIncrease: 1
     angleDecay: 12
     availableModes:
     - SemiAuto
@@ -172,7 +172,7 @@
   description: A modernised RPK-74, with simply "cooler" furniture and more modern manufacture, but does not exactly translate to performance. 2016 refers to the date of development.
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK2016.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
@@ -180,16 +180,16 @@
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/RPK2016.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK2016.rsi
   - type: Wieldable
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: 0
-    maxAngle: 0
+    minAngle: -30
+    maxAngle: -30
   - type: Gun
-    minAngle: 6
-    maxAngle: 15
+    minAngle: 36 # wielded 6
+    maxAngle: 45 # wielded 15
     angleIncrease: 0.5
     angleDecay: 12
     availableModes:
@@ -276,11 +276,11 @@
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: 0
-    maxAngle: 0
+    minAngle: -30
+    maxAngle: -30
   - type: Gun
-    minAngle: 6
-    maxAngle: 15
+    minAngle: 36 # wielded 6
+    maxAngle: 45 # wielded 15
     angleIncrease: 0.5
     angleDecay: 12
     availableModes:
@@ -375,3 +375,79 @@
     magState: mag-rpk74black
     steps: 1
     zeroVisible: true
+
+- type: entity
+  name: RPK
+  parent: WeaponRifleRURPK74
+  id: WeaponRifleRURPK
+  description: An AKM with a heavier barrel and front trunnion, plus a bipod. For laying down hate soviet style.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK74.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-rpk
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-rpk74
+      - state: grip-ak74
+      - state: handguard-ak74
+      - state: barrel-rpk74
+      - state: ironsight-ak74
+      - state: mag-rpk-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/RPK74.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunRequiresWield
+  - type: GunWieldBonus
+    minAngle: -30
+    maxAngle: -25
+  - type: Gun
+    minAngle: 36 # wielded 6
+    maxAngle: 45 # wielded 20
+    angleIncrease: 1
+    angleDecay: 12
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 7
+    projectileSpeed: 50 # twenty inch barrel
+    soundGunshot:
+      collection: BF_AK_762_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleRPKTracerGreen
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39TracerGreen
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
+  - type: MagazineVisuals
+    magState: mag-rpk
+    steps: 1
+    zeroVisible: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
