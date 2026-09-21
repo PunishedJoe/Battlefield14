@@ -76,7 +76,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 10
+    steps: 7
     zeroVisible: false
   - type: Appearance
 
@@ -96,12 +96,12 @@
 - type: entity
   parent: MagazineRifleAK74
   id: MagazineRifleRPK74
-  name: RPK-74 magazine
+  name: "RPK-74 magazine (5.45x39mm)"
   components:
   - type: BallisticAmmoProvider
     capacity: 45
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6p2.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/RPK74.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -121,7 +121,7 @@
   id: MagazineRifleRPK74Black
   components:
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6l26.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/RPK74black.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -133,7 +133,7 @@
   id: MagazineRifleRPK74BlackTracerGreen
   components:
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Magazines/6l26.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/RPK74black.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -231,6 +231,29 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: MagazineRifleAKM
+  id: MagazineRifleRPK
+  name: "RPK magazine (7.62x39mm)"
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 45
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/RPK.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: MagazineRifleRPK
+  id: MagazineRifleRPKTracerGreen
+  name: "RPK magazine (7.62x39mm green tracer)"
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle762x39TracerGreen
 
 - type: entity
   parent: BaseMagazineRifle
