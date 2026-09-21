@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/12/2026 05:37:42
-  entityCount: 3845
+  time: 09/21/2026 06:23:19
+  entityCount: 3854
 maps:
 - 68
 grids:
@@ -186,10 +186,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
         MetalFoam: []
         Kudzu: []
         Smoke: []
+        Puddle: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -1852,6 +1852,16 @@ entities:
       parent: 1
 - proto: CableApcExtension
   entities:
+  - uid: 322
+    components:
+    - type: Transform
+      pos: -34.5,-10.5
+      parent: 1
+  - uid: 323
+    components:
+    - type: Transform
+      pos: -34.5,-9.5
+      parent: 1
   - uid: 4155
     components:
     - type: Transform
@@ -6535,6 +6545,16 @@ entities:
     components:
     - type: Transform
       pos: 34.5,17.5
+      parent: 1
+  - uid: 324
+    components:
+    - type: Transform
+      pos: -34.5,-9.5
+      parent: 1
+  - uid: 325
+    components:
+    - type: Transform
+      pos: -34.5,-10.5
       parent: 1
   - uid: 4147
     components:
@@ -13157,6 +13177,34 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -15.5,7.5
+      parent: 1
+  - uid: 326
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 1.5,-1.5
+      parent: 1
+  - uid: 327
+    components:
+    - type: Transform
+      pos: 15.5,19.5
+      parent: 1
+  - uid: 328
+    components:
+    - type: Transform
+      pos: -2.5,2.5
+      parent: 1
+  - uid: 329
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 23.5,3.5
+      parent: 1
+  - uid: 330
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 30.5,15.5
       parent: 1
   - uid: 2541
     components:
