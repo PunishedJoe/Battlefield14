@@ -76,7 +76,7 @@
       entries:
       - id: WeaponRifleRUAK74M
         amount: 50
-      - id: WeaponRifleRUAK203
+      - id: WeaponRifleRUAK103
         amount: 5
       - id: WeaponRifleRUAKS74U
         amount: 5
@@ -238,7 +238,7 @@
         amount: 3
       - id: BoxMagazineVityaz
         amount: 5
-      - id: BoxMagazineAK203
+      - id: BoxMagazineAK103
         amount: 2
       - id: BoxMagazineAKM
         amount: 3

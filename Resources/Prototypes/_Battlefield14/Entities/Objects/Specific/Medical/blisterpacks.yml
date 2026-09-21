@@ -6,6 +6,9 @@
   components:
   - type: Item
     size: Tiny
+  - type: Icon
+    sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
+    state: icon
   - type: Sprite
     sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
     layers:
@@ -69,6 +72,9 @@
   parent: BlisterPack
   description: Holds up to 5 syrettes.
   components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
+    state: icon-ampuole
   - type: Sprite
     sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
     layers:
