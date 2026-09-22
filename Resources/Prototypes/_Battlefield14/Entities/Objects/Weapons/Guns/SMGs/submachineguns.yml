@@ -623,7 +623,6 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: null
     quickEquip: false
     slots:
     - Back
@@ -693,6 +692,44 @@
   - type: GunWieldBonus
     minAngle: 0
     maxAngle: -12
+
+- type: entity
+  name: MP9 SUPP.
+  parent: WeaponSubmachinegunATMP9
+  id: WeaponSubmachinegunATMP9SUPP
+  description: A suppressed MP9, as deadly as it is stealthy
+  components:
+  - type: Item
+    size: Large
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    - state: supp
+      sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9SUPP.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    soundGunshot:
+      collection: BF_MP5_Gunshots_SUPP
+      params:
+        volume: -8 # slightly worse than MP5SD
+        variation: 0.125
+        range: 12
 
 - type: entity
   name: SP9
