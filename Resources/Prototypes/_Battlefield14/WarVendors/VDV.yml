@@ -271,7 +271,7 @@
         amount: 5
       - id: MagazineBox762x54r
         amount: 4
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox9x19Big
         amount: 5
       - id: ShellBoxBF12GaugeBuckshot
         amount: 10

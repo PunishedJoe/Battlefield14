@@ -110833,7 +110833,7 @@ entities:
         ballistic-ammo: !type:Container
           ents: []
     - type: InsideEntityStorage
-- proto: MagazineBox9x19mmBig
+- proto: MagazineBox9x19Big
   entities:
   - uid: 1981
     components:

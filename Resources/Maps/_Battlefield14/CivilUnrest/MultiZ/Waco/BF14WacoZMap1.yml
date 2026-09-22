@@ -5079,7 +5079,7 @@ entities:
     - type: Transform
       pos: 53.5,10.5
       parent: 1
-- proto: MagazineBox9x19mm
+- proto: MagazineBox9x19
   entities:
   - uid: 110
     components:

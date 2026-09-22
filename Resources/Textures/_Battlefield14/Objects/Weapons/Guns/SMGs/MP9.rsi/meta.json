@@ -17,10 +17,13 @@
       "name": "bolt-open"
     },
     {
+      "name": "mag-0"
+    },
+    {
       "name": "supp"
     },
     {
-      "name": "mag-0"
+      "name": "tmp-overlay"
     },
     {
       "name": "inhand-left",

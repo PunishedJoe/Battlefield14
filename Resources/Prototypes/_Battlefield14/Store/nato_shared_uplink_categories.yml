@@ -58,7 +58,7 @@
   id: UplinkNATOAmmoBox9mmBig
   name: uplink-NATO-ammo-box-9mm-big-name
   description: uplink-NATO-ammo-box-9mm-big-desc
-  productEntity: MagazineBox9x19mmBig
+  productEntity: MagazineBox9x19Big
   icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/pistol.rsi, state: 9x19-nameplate }
   cost:
     NATORequisition: 4 # 40 seconds

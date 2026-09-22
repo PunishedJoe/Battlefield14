@@ -53906,7 +53906,7 @@ entities:
       containers:
         ballistic-ammo: !type:Container
           ents: []
-- proto: MagazineBox9x19mmBig
+- proto: MagazineBox9x19Big
   entities:
   - uid: 64913
     components:
