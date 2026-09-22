@@ -254,7 +254,7 @@
         amount: 1
       - id: MagazineBox762x51
         amount: 5
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox9x19Big
         amount: 5
       - id: MagazineBox10x25mm
         amount: 5

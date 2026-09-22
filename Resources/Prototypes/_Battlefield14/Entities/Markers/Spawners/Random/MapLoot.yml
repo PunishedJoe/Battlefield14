@@ -107,7 +107,7 @@
       - MagazinePistolFiveSeven
       - MagazineBox762x51
       - MagazineBox556x45
-      - MagazineBox9x19mm
+      - MagazineBox9x19
       - ShellBoxBF12GaugeBuckshot
       - MagazineRifleM14
       - MagazineRifleSTANAG
@@ -254,7 +254,7 @@
       - MagazinePistolGlock17
       - MagazineBox762x51
       - MagazineBox556x45
-      - MagazineBox9x19mm
+      - MagazineBox9x19
       - ShellBoxBF12GaugeBuckshot
       - MagazineRifleM14
       - MagazineRifleSTANAG
@@ -532,7 +532,7 @@
       - MagazineBox762x54r
       - ShellBoxBF12GaugeBuckshot
       - MagazineBox762x39
-      - MagazineBox9x18mm
+      - MagazineBox9x18
       - MagazineRifleAKM
       - MagazineRifleVPO215
       - MagazineRifleMagpulMosin

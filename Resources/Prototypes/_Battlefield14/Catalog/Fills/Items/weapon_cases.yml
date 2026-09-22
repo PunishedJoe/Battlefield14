@@ -22,7 +22,7 @@
     - id: WeaponPistolM9
     - id: MagazinePistolM9
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
 
 - type: entity
   parent: WeaponCaseShort
@@ -34,7 +34,7 @@
     - id: WeaponPistolUSHiPower
     - id: MagazinePistolHiPower
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
 
 - type: entity
   parent: WeaponCaseShort
@@ -46,7 +46,7 @@
     - id: WeaponPistolATGlock17
     - id: MagazinePistolGlock17
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
 
 - type: entity
   parent: WeaponCaseShort
@@ -72,7 +72,7 @@
     - id: WeaponPistolDEUSP9
     - id: MagazinePistolUSP9
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
 
 - type: entity
   parent: WeaponCaseShort
@@ -84,7 +84,7 @@
     - id: WeaponPistolDEUSPMatch
     - id: MagazinePistolUSP9
       amount: 2
-    - id: MagazineBox9x19mm
+    - id: MagazineBox9x19
 
 - type: entity
   parent: WeaponCaseShort
@@ -161,7 +161,7 @@
     - id: WeaponPistolRUPM
     - id: MagazinePistolPM
       amount: 2
-    - id: MagazineBox9x18mm
+    - id: MagazineBox9x18
 
 - type: entity
   parent: WeaponCaseShort
@@ -173,7 +173,7 @@
     - id: WeaponPistolRUAPS
     - id: MagazinePistolAPS
       amount: 2
-    - id: MagazineBox9x18mm
+    - id: MagazineBox9x18
 
 #region SMGs, US
 
