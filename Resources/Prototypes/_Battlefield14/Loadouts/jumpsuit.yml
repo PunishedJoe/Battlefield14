@@ -136,3 +136,11 @@
   id: LoadoutJumpsuitCivilianPatrioticUSA3
   equipment:
     jumpsuit: ClothingUniformJumpsuitPatrioticUSA3
+
+- type: loadout
+  id: LoadoutJumpsuitCivilianSmiley
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSmiley
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_CIV_2
