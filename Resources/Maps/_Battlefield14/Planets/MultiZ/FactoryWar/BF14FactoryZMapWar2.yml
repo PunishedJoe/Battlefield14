@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/08/2026 19:20:55
-  entityCount: 1881
+  time: 09/21/2026 12:27:29
+  entityCount: 1887
 maps:
 - 2
 grids:
@@ -317,9 +317,9 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Smoke: []
-        Puddle: []
         MetalFoam: []
         Kudzu: []
+        Puddle: []
       updateAccumulator: 0.5843353
     - type: Shuttle
       dampingModifier: 0.25
@@ -1144,9 +1144,9 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Smoke: []
-        Puddle: []
         MetalFoam: []
         Kudzu: []
+        Puddle: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -1679,6 +1679,36 @@ entities:
     - type: Transform
       pos: 71.5,52.5
       parent: 1
+  - uid: 873
+    components:
+    - type: Transform
+      pos: 10.5,51.5
+      parent: 2
+  - uid: 874
+    components:
+    - type: Transform
+      pos: 10.5,50.5
+      parent: 2
+  - uid: 875
+    components:
+    - type: Transform
+      pos: 10.5,49.5
+      parent: 2
+  - uid: 876
+    components:
+    - type: Transform
+      pos: 10.5,48.5
+      parent: 2
+  - uid: 877
+    components:
+    - type: Transform
+      pos: 10.5,47.5
+      parent: 2
+  - uid: 878
+    components:
+    - type: Transform
+      pos: 10.5,46.5
+      parent: 2
   - uid: 1565
     components:
     - type: Transform
