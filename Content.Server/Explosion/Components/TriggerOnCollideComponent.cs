@@ -1,5 +1,3 @@
-using Content.Shared.Whitelist;
-
 namespace Content.Server.Explosion.Components
 {
     [RegisterComponent]
@@ -13,11 +11,5 @@ namespace Content.Server.Explosion.Components
         /// </summary>
         [DataField("ignoreOtherNonHard")]
         public bool IgnoreOtherNonHard = true;
-
-        /// <summary>
-        ///     Entities that match this blacklist will not trigger the entity on collision.
-        /// </summary>
-        [DataField]
-        public EntityWhitelist? Blacklist;
     }
 }

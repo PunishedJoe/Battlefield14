@@ -11,11 +11,11 @@
         Piercing: 50
     deleteOnCollide: true
   - type: HeFragProjectile
-    fillPrototype: Bullet43x30mmFragFragment
-    capacity: 30
-    randomAngle: true
-    minVelocity: 8
-    maxVelocity: 15
+    explosionDelay: 0
+    fragmentationDelay: 0
+    fragmentationCount: 30
+    fragmentationPrototype: Bullet43x30mmFragFragment
+    plasmaAmount: 0
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade
