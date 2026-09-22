@@ -29,3 +29,8 @@
   id: LoadoutHandsGlovesSoldierWristwatch
   equipment:
     gloves: Wristwatch
+    
+- type: loadout
+  id: LoadoutHandsGlovesLeather
+  equipment:
+    gloves: ClothingHandsGlovesButcher

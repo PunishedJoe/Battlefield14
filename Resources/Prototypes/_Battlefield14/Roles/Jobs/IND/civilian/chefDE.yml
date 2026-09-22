@@ -1,0 +1,26 @@
+- type: job
+  id: CivilianChefDE
+  name: job-name-ind-chef
+  description: job-description-ind-chef
+  playTimeTracker: JobCivilianChefDE
+  displayWeight: 10
+  startingGear: CivilianChefDE
+  alwaysUseSpawner: true
+  icon: "JobIconChef"
+#  supervisors: job-supervisors-everyone
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - English
+    - German    
+    languagesUnderstood:
+    - English
+    - German
+  access:
+  - Maintenance
+  
+- type: startingGear
+  id: CivilianChefDE
+  equipment:
+    back: ClothingBackpackButtpackSurplus
+    pocket1: PouchFirstAidFilled

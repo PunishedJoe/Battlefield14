@@ -73,3 +73,4 @@ job-description-gru-90 = Clean up in close quarters.
 
 job-description-ind-civilian = Live your life and look after numero uno.
 job-description-ind-civilian-paramedic = Save the life of those who cannot save themselves.
+job-description-ind-chef = Prepare some bangin' meals with ingredients locally sourced from the locals.

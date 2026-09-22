@@ -1,0 +1,49 @@
+- type: gameMap
+  id: BF14Metzgerstadt
+  mapName: 'Metzgerstadt'
+  mapPath: /Maps/_Battlefield14/Planets/MultiZ/Metzgerstadt/BF14MetzgerstadtZMap0.yml 
+  minPlayers: 1
+  maxPlayers: 50
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Metzgerstadt:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Metzgerstadt, Frankfurt"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Metzgerstadt, Frankfurt"
+          stationDescription: "A odd town in the region of Frankfurt, Germany."
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            BWLieutenant: [ 1, 1 ]
+            BWSquadLeader: [ 3, 3 ]
+            BWRifleman: [ 12, 12 ]
+            BWAutomaticRifleman: [ 1, 1 ]
+            BWMedic: [ 3, 3 ]
+            BWRecon: [ 3, 3 ]
+            RGFLieutenant: [ 1, 1 ]
+            RGFSquadLeader: [ 3, 3 ]
+            RGFRifleman: [ 10, 10 ]
+            RGFAutomaticRifleman: [ 3, 3 ]
+            RGFMedic: [ 3, 3 ]
+            RGFRecon: [ 3, 3 ]
+        - type: CEStationZLevels
+          mapsAbove:
+            - /Maps/_Battlefield14/Planets/MultiZ/Metzgerstadt/BF14MetzgerstadtZMap1.yml
+          #mapsBelow:
+          # - /Maps/_Battlefield14/Planets/caves.yml
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+
+- type: zMap
+  id: BF14MetzgerstadtZMap
+  maps:
+    #- /Maps/_Battlefield14/Planets/caves.yml   
+    - /Maps/_Battlefield14/Planets/MultiZ/Metzgerstadt/BF14MetzgerstadtZMap0.yml    
+    - /Maps/_Battlefield14/Planets/MultiZ/Metzgerstadt/BF14MetzgerstadtZMap1.yml   
+  components:
+    - type: CEAutoGridGravity

@@ -80,3 +80,4 @@ job-name-gru-90 = GRU '90
 
 job-name-ind-civilian = Civilian
 job-name-ind-civilian-paramedic = Paramedic
+job-name-ind-chef = Backstreet Chef
