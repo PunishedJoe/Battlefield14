@@ -232,3 +232,14 @@
     sprite: _Civ14/Clothing/Uniforms/Jumpsuit/boomerwaffen3.rsi
   - type: Clothing
     sprite: _Civ14/Clothing/Uniforms/Jumpsuit/boomerwaffen3.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSmiley
+  name: smiley shirt
+  description: ":)"
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/smiley.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/smiley.rsi

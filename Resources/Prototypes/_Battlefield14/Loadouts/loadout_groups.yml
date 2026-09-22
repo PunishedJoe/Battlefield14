@@ -185,6 +185,7 @@
   - LoadoutJumpsuitCivilianPatrioticUSA1
   - LoadoutJumpsuitCivilianPatrioticUSA2
   - LoadoutJumpsuitCivilianPatrioticUSA3
+  - LoadoutJumpsuitCivilianSmiley
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianRU
@@ -317,6 +318,7 @@
   - LoadoutUniformJumpsuitDealer
   - LoadoutUniformJumpsuitHunter
   - LoadoutJumpsuitCivilianPatrioticUSA1
+  - LoadoutJumpsuitCivilianSmiley
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianRUEMT

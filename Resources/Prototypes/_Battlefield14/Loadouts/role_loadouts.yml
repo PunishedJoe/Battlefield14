@@ -809,6 +809,7 @@
   - BF_CrewGlasses
   - BF_SoldierGloves
   - BF_MiscItemsNATO
+  - BF_NATOIFF
   - ContractorWallet
 
 - type: roleLoadout
@@ -819,6 +820,7 @@
   - BF_CrewGlasses
   - BF_SoldierGloves
   - BF_MiscItemsPACT
+  - BF_PACTIFF
   - ContractorWallet
 
 #region Civilian

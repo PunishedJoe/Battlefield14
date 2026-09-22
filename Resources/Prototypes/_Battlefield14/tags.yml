@@ -284,6 +284,9 @@
   id: MagazinePistolMP7
 
 - type: Tag
+  id: MagazineSubmachinegunMP9
+
+- type: Tag
   id: MagazinePistolP90
 
 - type: Tag

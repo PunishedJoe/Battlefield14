@@ -605,6 +605,112 @@
     zeroVisible: true
   - type: Appearance
 
+#region AT
+
+- type: entity
+  name: TMP
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunATTMP
+  description: A cheap, compact, and concealable package, can give you a belly full of lead in less than a second.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: null
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    minAngle: 3
+    maxAngle: 30
+    fireRate: 15
+    angleIncrease: 2.2
+    angleDecay: 20
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunMP9
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSubmachinegunMP9
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: MP9
+  parent: [WeaponSubmachinegunATTMP , BaseGunWieldable ]
+  id: WeaponSubmachinegunATMP9
+  description: A cheap, compact, and concealable package, can give you a belly full of lead in less than a second. This further improvement from the TMP has a sidefolding stock.
+  components:
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: -12
+
+- type: entity
+  name: SP9
+  parent: [WeaponSubmachinegunATMP9 , BaseGunWieldable ]
+  id: WeaponSubmachinegunATSP9
+  description: A cheap, compact, and concealable package. Singlefire only for the civilian market.
+  components:
+  - type: GunWieldBonus
+    minAngle: 0
+    maxAngle: -5
+  - type: Gun
+    minAngle: 3
+    maxAngle: 10
+    availableModes:
+    - SemiAuto
+    selectedMode: SemiAuto
+    fireRate: 5
+
 ## PACT
 
 #region RU

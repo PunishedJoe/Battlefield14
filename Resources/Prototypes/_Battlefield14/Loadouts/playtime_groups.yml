@@ -84,6 +84,24 @@
 #region Civilian
 
 - type: loadoutEffectGroup
+  id: BF_CIV_1
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: BF14Civilian
+      time: 1800 # 30 min
+
+- type: loadoutEffectGroup
+  id: BF_CIV_2
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: BF14Civilian
+      time: 3600 # 1 hr
+
+- type: loadoutEffectGroup
   id: BF_RU_CIV_1
   effects:
   - !type:JobRequirementLoadoutEffect
