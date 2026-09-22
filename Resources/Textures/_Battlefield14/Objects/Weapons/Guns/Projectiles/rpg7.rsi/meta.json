@@ -8,13 +8,13 @@
   },
   "states": [
     {
-      "name": "dart"
+      "name": "thermobar"
     },
     {
       "name": "pg7v"
     },
     {
-      "name": "m371a1"
+      "name": "frag"
     }
   ]
 }

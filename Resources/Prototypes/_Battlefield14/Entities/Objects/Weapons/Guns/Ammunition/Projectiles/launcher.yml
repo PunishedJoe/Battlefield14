@@ -492,9 +492,9 @@
   name: PG-7VL HEAT rocket
   components:
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
     layers:
-    - state: pg7v
+    - state: base-spent
   - type: Projectile
     damage:
       types:
@@ -518,7 +518,7 @@
   name: PG-7VL HEAT rocket
   components:
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/projectiles.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/rpg7.rsi
     layers:
     - state: pg7v
   - type: Projectile
@@ -553,7 +553,7 @@
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
     layers:
-    - state: base-spent
+    - state: frag-spent
   - type: Projectile
     damage:
       types:
@@ -577,9 +577,9 @@
   name: OG-7V frag rocket
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/rpg7.rsi
     layers:
-    - state: frag-spent
+    - state: frag
   - type: Projectile
     damage:
       types:
@@ -665,9 +665,9 @@
   name: 72.5mm HEAT rocket
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/rpg7.rsi
     layers:
-    - state: base-spent
+    - state: pg7v
   - type: Projectile
     damage:
       types:
@@ -700,7 +700,7 @@
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
     layers:
-    - state: frag-spent
+    - state: thermobar-spent
   - type: Projectile
     damage:
       types:
@@ -724,9 +724,9 @@
   name: 72.5mm thermobaric rocket
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Launcher/RPG7.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/rpg7.rsi
     layers:
-    - state: frag-spent
+    - state: thermobar
   - type: Projectile
     damage:
       types:

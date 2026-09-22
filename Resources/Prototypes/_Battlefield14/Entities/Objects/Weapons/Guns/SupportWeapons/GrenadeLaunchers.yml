@@ -217,7 +217,7 @@
 
 - type: entity
   name: M32A1 MGL
-  parent: WeaponRevolverMateba
+  parent: BaseItem
   id: WeaponGrenadeLauncherUSM32A1
   description: A south african designed six round revolver 40mm grenade launcher adopted across the world. The U.S. military selected this over a modernised china lake grenade launcher.
   components:
@@ -225,6 +225,9 @@
     size: Huge
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/Milkor.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/Milkor.rsi
     slots:
@@ -260,7 +263,17 @@
     whitelist:
       tags:
         - Cartridge40x46mmGrenade
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+    soundEject:
+      path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+    soundInsert:
+      path: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
   - type: AmmoCounter
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _RMC14/Interface/MousePointer/explosive_mouse.rsi
+      state: all
   - type: ExtendDescription
     descriptionList:
       - description: Has a minimum arming distance of 5 tiles.
