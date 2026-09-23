@@ -416,7 +416,25 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
         // Also the default PVS range is 25*2 = 50. So capping it at 30 makes no sense here.
         // So actually maybe don't use Filter.Pvs at all and only use AddInRange?
         var audioRange = Math.Min(iterationIntensity.Count * 2, MaxExplosionAudioRange);
+
+        // CrystallEdge: include players on adjacent z-levels so explosions are heard across levels.
+        // The near sound stays positional; clients echo it onto the listener's level with attenuation.
+        var mapUid = _mapManager.GetMapEntityId(pos.MapId);
+        var zLevelMaps = new List<EntityUid>();
+        var hasZNetwork = _zLevels.GetNetworkMaps(mapUid, zLevelMaps);
+
         var filter = Filter.Pvs(pos).AddInRange(pos, audioRange);
+        if (hasZNetwork)
+        {
+            foreach (var levelUid in zLevelMaps)
+            {
+                if (!TryComp<MapComponent>(levelUid, out var levelMap) || levelMap.MapId == pos.MapId)
+                    continue;
+
+                filter.AddInRange(new MapCoordinates(pos.Position, levelMap.MapId), audioRange);
+            }
+        }
+
         var sound = iterationIntensity.Count < queued.Proto.SmallSoundIterationThreshold
             ? queued.Proto.SmallSound
             : queued.Proto.Sound;
@@ -427,11 +445,8 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
         // far sound should play for anyone who wasn't in range of any of the effects of the bomb
         var farAudioRange = iterationIntensity.Count * 5;
 
-        // CrystallEdge: include players on adjacent z-levels so distant explosions are heard across levels.
         var farFilter = Filter.Empty();
-        var mapUid = _mapManager.GetMapEntityId(pos.MapId);
-        var zLevelMaps = new List<EntityUid>();
-        if (_zLevels.GetNetworkMaps(mapUid, zLevelMaps))
+        if (hasZNetwork)
         {
             foreach (var levelUid in zLevelMaps)
             {

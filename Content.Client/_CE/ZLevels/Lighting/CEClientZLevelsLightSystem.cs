@@ -26,9 +26,6 @@ public sealed partial class CEClientZLevelsLightSystem : EntitySystem
     private EntityQuery<CEZMapComponent> _zMapQuery = default!;
     private EntityQuery<CEZLevelMirrorLightComponent> _mirrorQuery = default!;
 
-    private const float BlockedEnergyFactor = 0.15f;
-    private const float BlockedRadiusFactor = 0.6f;
-
     private readonly Dictionary<(EntityUid Source, EntityUid Target), EntityUid> _mirrors = new();
     private readonly HashSet<EntityUid> _desired = new();
     private readonly List<(EntityUid Source, EntityUid Target)> _stale = new();
@@ -92,6 +89,17 @@ public sealed partial class CEClientZLevelsLightSystem : EntitySystem
         Vector2 worldPos)
     {
         var key = (source, targetMap);
+        var depthDelta = targetZ.Depth - sourceZ.Depth;
+
+        // Opaque floors/ceilings block light completely: only transparent openings let it through.
+        if (_zLevels.IsZLevelPathBlocked(sourceMap, depthDelta, worldPos))
+        {
+            if (_mirrors.Remove(key, out var blockedMirror) && !TerminatingOrDeleted(blockedMirror))
+                QueueDel(blockedMirror);
+
+            return;
+        }
+
         if (!_mirrors.TryGetValue(key, out var mirror) || TerminatingOrDeleted(mirror))
         {
             mirror = Spawn("CEZLevelMirrorLight", new EntityCoordinates(targetMap, worldPos));
@@ -107,14 +115,11 @@ public sealed partial class CEClientZLevelsLightSystem : EntitySystem
         if (Vector2.DistanceSquared(_xform.GetWorldPosition(mirror), worldPos) > 0.0001f)
             _xform.SetWorldPosition(mirror, worldPos);
 
-        var depthDelta = targetZ.Depth - sourceZ.Depth;
-        var blocked = _zLevels.IsZLevelPathBlocked(sourceMap, depthDelta, worldPos);
-
         _lights.SetEnabled(mirror, sourceLight.Enabled);
         _lights.SetCastShadows(mirror, sourceLight.CastShadows);
         _lights.SetColor(mirror, sourceLight.Color);
         _lights.SetSoftness(mirror, sourceLight.Softness);
-        _lights.SetRadius(mirror, sourceLight.Radius * (blocked ? BlockedRadiusFactor : 1f));
-        _lights.SetEnergy(mirror, sourceLight.Energy * (blocked ? BlockedEnergyFactor : 1f));
+        _lights.SetRadius(mirror, sourceLight.Radius);
+        _lights.SetEnergy(mirror, sourceLight.Energy);
     }
 }
