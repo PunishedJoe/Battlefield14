@@ -5,7 +5,6 @@
 
 using System.Numerics;
 using Content.Shared._CE.ZLevels.Core.Components;
-using Content.Shared.Maps;
 using JetBrains.Annotations;
 
 namespace Content.Shared._CE.ZLevels.Core.EntitySystems;
@@ -62,8 +61,8 @@ public abstract partial class CESharedZLevelsSystem
             if (_mapManager.TryFindGridAt(boundaryMap.Owner, worldPos, out var gridUid, out var grid)
                 && _map.TryGetTileRef(gridUid, grid, worldPos, out var tileRef))
             {
-                var tileDef = (ContentTileDefinition) TilDefMan[tileRef.Tile.TypeId];
-                if (!tileDef.Transparent)
+                // Empty tiles (holes, atriums, stairwells) are openings and let light/sound through.
+                if (!CEZLevelOpeningCache.IsOpeningTile(tileRef.Tile, TilDefMan))
                     return true;
             }
         }

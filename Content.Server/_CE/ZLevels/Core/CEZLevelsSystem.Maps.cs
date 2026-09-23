@@ -68,21 +68,38 @@ public sealed partial class CEZLevelsSystem
             levelMapComponent.Depth = depth;
             levelMapComponent.NetworkUid = network;
 
-            if (network.Comp.ZLevels.TryGetValue(depth + 1, out var aboveMapUid))
-                levelMapComponent.MapAbove = aboveMapUid;
-
-            if (network.Comp.ZLevels.TryGetValue(depth - 1, out var belowMapUid))
-                levelMapComponent.MapBelow = belowMapUid;
-
             Dirty(mapUid, levelMapComponent);
 
             var ev = new CEMapAddedIntoZNetworkEvent(network, depth);
             RaiseLocalEvent(mapUid, ref ev);
         }
 
+        // Neighbours can only be resolved after every map has been registered, otherwise maps processed before
+        // their neighbour would be left without MapAbove/MapBelow.
+        RefreshNeighbours(network);
+
         RaiseLocalEvent(network, new CEZLevelMapNetworkUpdatedEvent());
 
         return success;
+    }
+
+    private void RefreshNeighbours(Entity<CEZMapNetworkComponent> network)
+    {
+        foreach (var (depth, mapUid) in network.Comp.ZLevels)
+        {
+            if (mapUid is not { } uid || !TryComp<CEZMapComponent>(uid, out var level))
+                continue;
+
+            var above = network.Comp.ZLevels.TryGetValue(depth + 1, out var aboveMapUid) ? aboveMapUid : null;
+            var below = network.Comp.ZLevels.TryGetValue(depth - 1, out var belowMapUid) ? belowMapUid : null;
+
+            if (level.MapAbove == above && level.MapBelow == below)
+                continue;
+
+            level.MapAbove = above;
+            level.MapBelow = below;
+            Dirty(uid, level);
+        }
     }
 
     /// <summary>

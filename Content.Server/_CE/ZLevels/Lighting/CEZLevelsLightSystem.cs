@@ -13,8 +13,9 @@ using Robust.Shared.Timing;
 namespace Content.Server._CE.ZLevels.Lighting;
 
 /// <summary>
-/// Applies a dark ambient light to every underground z-level (depth below the first level).
-/// Levels below the first are considered underground and have to be lit artificially.
+/// Synchronizes ambient (map) light across a z-network:
+/// every level at or above the first level shares the ambient of the first (ground) level,
+/// while levels below the first are considered underground and forced dark.
 /// </summary>
 public sealed class CEZLevelsLightSystem : EntitySystem
 {
@@ -39,20 +40,54 @@ public sealed class CEZLevelsLightSystem : EntitySystem
 
         _nextUpdate = _timing.CurTime + UpdateInterval;
 
-        var query = EntityQueryEnumerator<CEZMapComponent>();
-        while (query.MoveNext(out var mapUid, out var zMap))
+        var networks = EntityQueryEnumerator<CEZMapNetworkComponent>();
+        while (networks.MoveNext(out _, out var network))
         {
-            if (zMap.Depth >= 0)
+            SyncNetwork(network);
+        }
+    }
+
+    private void SyncNetwork(CEZMapNetworkComponent network)
+    {
+        // The "first" level is the closest to depth 0. It provides the ambient for every level above ground.
+        Color? surfaceAmbient = null;
+        var surfaceDepth = int.MaxValue;
+
+        foreach (var (depth, mapUid) in network.ZLevels)
+        {
+            if (mapUid is not { } uid || depth < 0)
+                continue;
+
+            if (depth >= surfaceDepth || HasComp<LightCycleComponent>(uid))
+                continue;
+
+            if (TryComp<MapLightComponent>(uid, out var light))
+            {
+                surfaceAmbient = light.AmbientLightColor;
+                surfaceDepth = depth;
+            }
+        }
+
+        foreach (var (depth, mapUid) in network.ZLevels)
+        {
+            if (mapUid is not { } uid)
                 continue;
 
             // Day/night cycle maps manage their own ambient light.
-            if (HasComp<LightCycleComponent>(mapUid))
+            if (HasComp<LightCycleComponent>(uid))
                 continue;
 
-            if (!TryComp<MapComponent>(mapUid, out var map))
+            if (!TryComp<MapComponent>(uid, out var map))
                 continue;
 
-            _map.SetAmbientLight(map.MapId, UndergroundAmbient);
+            if (depth < 0)
+            {
+                _map.SetAmbientLight(map.MapId, UndergroundAmbient);
+                continue;
+            }
+
+            if (surfaceAmbient is { } ambient)
+                _map.SetAmbientLight(map.MapId, ambient);
         }
     }
 }
