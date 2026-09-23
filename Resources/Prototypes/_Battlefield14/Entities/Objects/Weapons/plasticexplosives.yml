@@ -189,8 +189,6 @@
     drawdepth: Items
     sprite: _Civ14/Objects/grenade.rsi
     state: plastic-explosive2
-  - type: Physics
-    bodyType: Dynamic
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Thermobaric
