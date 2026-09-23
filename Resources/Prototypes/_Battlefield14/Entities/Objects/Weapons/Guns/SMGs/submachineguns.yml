@@ -211,7 +211,6 @@
   name: MP5A4 (flashlight)
   parent: WeaponSubmachinegunDEMP5A4
   id: WeaponSubmachinegunDEMP5A4Flashlight
-  suffix: doesn't work yet # for some reason the light turns off when you shoot the gun and won't ever come back on
   components:
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
@@ -256,7 +255,6 @@
     mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
     autoRot: true
     radius: 8
-    netsync: false
   - type: ToggleableLightVisuals # Needed for this to actually show a light in-world by the way
   - type: ItemSlots
     slots:

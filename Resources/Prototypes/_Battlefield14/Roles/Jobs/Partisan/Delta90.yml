@@ -44,15 +44,16 @@
   id: Delta90Gear
   equipment:
     ears: ClothingHeadsetAltUS
-    neck: FlashlightMilitaryUS
     jumpsuit: ClothingUniformJumpsuitCamoUSTigerstripe
     outerClothing: ClothingOuterArmorKevlarVest
     belt: ClothingBeltMilitaryWebbingUS
     shoes: ClothingShoesBootsJackFilledUSMC
+    rightarmband: FlashlightMilitaryUS
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenades
   storage:
     belt:
     - ClothingMaskGasM40
+    - DrinkMREFlask
     - Tourniquet
     - Zipties

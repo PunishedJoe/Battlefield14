@@ -862,6 +862,7 @@
   groups:
   - BF_HeadCivilianRU
   - BF_CombatMasks
+  - BF_NATOIFF
   - BF_JumpsuitsCivilianUANationalist
   - BF_OuterCivilianRU
   - BF_WPSGloves
@@ -872,6 +873,7 @@
 - type: roleLoadout
   id: JobGypsy
   groups:
+  - BF_PACTIFF
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND

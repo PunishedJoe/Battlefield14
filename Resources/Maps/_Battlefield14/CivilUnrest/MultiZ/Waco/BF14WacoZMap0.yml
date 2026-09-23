@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/12/2026 01:06:04
-  entityCount: 3014
+  time: 09/23/2026 02:20:10
+  entityCount: 3025
 maps:
 - 14
 grids:
@@ -212,9 +212,9 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
+        Puddle: []
         MetalFoam: []
         Kudzu: []
-        Puddle: []
         Smoke: []
       updateAccumulator: 0.12344074
     - type: Shuttle
@@ -129765,6 +129765,36 @@ entities:
       rot: 3.141592653589793 rad
       pos: 38.5,-20.5
       parent: 1
+  - uid: 3016
+    components:
+    - type: Transform
+      pos: 1.5,5.5
+      parent: 1
+  - uid: 3017
+    components:
+    - type: Transform
+      pos: 2.5,5.5
+      parent: 1
+  - uid: 3018
+    components:
+    - type: Transform
+      pos: 3.5,5.5
+      parent: 1
+  - uid: 3019
+    components:
+    - type: Transform
+      pos: 4.5,5.5
+      parent: 1
+  - uid: 3020
+    components:
+    - type: Transform
+      pos: 4.5,12.5
+      parent: 1
+  - uid: 3021
+    components:
+    - type: Transform
+      pos: 2.5,12.5
+      parent: 1
 - proto: Bed
   entities:
   - uid: 827
@@ -138549,6 +138579,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 57.50546,10.6758795
       parent: 1
+  - uid: 3024
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 1.5133519,13.01614
+      parent: 1
 - proto: ChurchOrganInstrument
   entities:
   - uid: 1156
@@ -138630,8 +138666,8 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 1149
           - 1150
+          - 1149
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -138667,6 +138703,17 @@ entities:
     - type: Transform
       pos: 57.5,11.5
       parent: 1
+- proto: ComputerTelevision
+  entities:
+  - uid: 1170
+    components:
+    - type: Transform
+      pos: 1.5,14.5
+      parent: 1
+    - type: ApcPowerReceiver
+      powerLoad: 5
+    - type: Battery
+      startingCharge: 0
 - proto: CrateMaterialsBasicFilled
   entities:
   - uid: 1137
@@ -139827,6 +139874,13 @@ entities:
     - type: Transform
       pos: 42.5,25.5
       parent: 1
+- proto: N14CrateWooden
+  entities:
+  - uid: 3023
+    components:
+    - type: Transform
+      pos: 4.5,14.5
+      parent: 1
 - proto: N14DecorFloorPallet
   entities:
   - uid: 1079
@@ -140914,11 +140968,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 46.5,5.5
       parent: 1
-  - uid: 1170
-    components:
-    - type: Transform
-      pos: 1.5,12.5
-      parent: 1
   - uid: 1171
     components:
     - type: Transform
@@ -141066,6 +141115,16 @@ entities:
     components:
     - type: Transform
       pos: 17.5,14.5
+      parent: 1
+  - uid: 3015
+    components:
+    - type: Transform
+      pos: 44.5,27.5
+      parent: 1
+  - uid: 3025
+    components:
+    - type: Transform
+      pos: 1.5,13.5
       parent: 1
 - proto: RandomAmmoMapMidTierNATO
   entities:
@@ -144410,6 +144469,11 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 57.5,11.5
+      parent: 1
+  - uid: 3022
+    components:
+    - type: Transform
+      pos: 1.5,12.5
       parent: 1
 - proto: Wirecutter
   entities:

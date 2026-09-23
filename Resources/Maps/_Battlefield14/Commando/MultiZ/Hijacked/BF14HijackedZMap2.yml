@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/14/2026 09:51:43
+  time: 09/23/2026 02:26:23
   entityCount: 1152
 maps:
 - 73
@@ -76,8 +76,8 @@ entities:
     - type: SpreaderGrid
       spreadQueues:
         Puddle: []
-        Kudzu: []
         MetalFoam: []
+        Kudzu: []
         Smoke: []
     - type: Shuttle
       dampingModifier: 0.25
@@ -4001,7 +4001,7 @@ entities:
       pos: 17.5,5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -5896.9683
+      secondsUntilStateChange: -6681.664
       state: Opening
     - type: DeviceLinkSource
       lastSignals:

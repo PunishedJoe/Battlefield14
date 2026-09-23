@@ -953,3 +953,9 @@
         whitelist:
           tags:
             - BF_CartridgePDW9x21
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
+    autoRot: true
+    radius: 5
