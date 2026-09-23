@@ -31,6 +31,7 @@ using Content.Shared.Maps;
 using Robust.Shared.Map.Components;
 using Content.Shared.Tiles; // Frontier: safe zone
 using Robust.Shared.Timing; // Mono
+using Content.Shared._CE.ZLevels.Core.EntitySystems; // CrystallEdge: z-level audio
 
 // Mono
 using Content.Shared.Stacks;
@@ -63,6 +64,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly StackSystem _stack = default!; // Mono
     [Dependency] private readonly IGameTiming _gameTiming = default!; // Mono
+    [Dependency] private readonly CESharedZLevelsSystem _zLevels = default!; // CrystallEdge: z-level audio
 
     private EntityQuery<FlammableComponent> _flammableQuery;
     private EntityQuery<PhysicsComponent> _physicsQuery;
@@ -424,7 +426,27 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
         // play far sound
         // far sound should play for anyone who wasn't in range of any of the effects of the bomb
         var farAudioRange = iterationIntensity.Count * 5;
-        var farFilter = Filter.Empty().AddInRange(pos, farAudioRange).RemoveInRange(pos, audioRange);
+
+        // CrystallEdge: include players on adjacent z-levels so distant explosions are heard across levels.
+        var farFilter = Filter.Empty();
+        var mapUid = _mapManager.GetMapEntityId(pos.MapId);
+        var zLevelMaps = new List<EntityUid>();
+        if (_zLevels.GetNetworkMaps(mapUid, zLevelMaps))
+        {
+            foreach (var levelUid in zLevelMaps)
+            {
+                if (!TryComp<MapComponent>(levelUid, out var levelMap))
+                    continue;
+
+                var levelPos = new MapCoordinates(pos.Position, levelMap.MapId);
+                farFilter.AddInRange(levelPos, farAudioRange).RemoveInRange(levelPos, audioRange);
+            }
+        }
+        else
+        {
+            farFilter.AddInRange(pos, farAudioRange).RemoveInRange(pos, audioRange);
+        }
+
         var farSound = iterationIntensity.Count < queued.Proto.SmallSoundIterationThreshold
             ? queued.Proto.SmallSoundFar
             : queued.Proto.SoundFar;
