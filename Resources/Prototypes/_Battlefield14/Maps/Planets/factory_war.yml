@@ -36,7 +36,6 @@
             - /Maps/_Battlefield14/Planets/MultiZ/FactoryWar/BF14FactoryZMapWar0.yml 
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity
-        - type: ConquestManager
 
 - type: zMap
   id: BF14FactoryWarZMap
