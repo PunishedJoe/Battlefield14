@@ -6,6 +6,7 @@ using Content.Shared.Speech;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
+using Robust.Shared.Timing;
 
 namespace Content.Server.Chat.Systems;
 
@@ -13,6 +14,11 @@ namespace Content.Server.Chat.Systems;
 public partial class ChatSystem
 {
     private FrozenDictionary<string, ImmutableList<EmotePrototype>> _wordEmoteDict = FrozenDictionary<string, ImmutableList<EmotePrototype>>.Empty; // DeltaV - Multiple emotes
+
+    private const float EmoteSoundCooldownSeconds = 2f;
+    private readonly Dictionary<EntityUid, TimeSpan> _lastEmoteSoundTime = new();
+
+    [Dependency] private readonly IGameTiming _gameTiming = default!;
 
     protected override void OnPrototypeReload(PrototypesReloadedEventArgs obj)
     {
@@ -148,6 +154,14 @@ public partial class ChatSystem
         if (proto == null)
             return false;
 
+        // 2 second cooldown on playing emote sounds, regardless of source (buttons, menu or chat input).
+        var now = _gameTiming.CurTime;
+        if (_lastEmoteSoundTime.TryGetValue(uid, out var last) &&
+            now - last < TimeSpan.FromSeconds(EmoteSoundCooldownSeconds))
+        {
+            return false;
+        }
+
         // try to get specific sound for this emote
         if (!proto.Sounds.TryGetValue(emoteId, out var sound))
         {
@@ -156,6 +170,8 @@ public partial class ChatSystem
             if (sound == null)
                 return false;
         }
+
+        _lastEmoteSoundTime[uid] = now;
 
         // optional override params > general params for all sounds in set > individual sound params
         var param = audioParams ?? proto.GeneralParams ?? sound.Params;
