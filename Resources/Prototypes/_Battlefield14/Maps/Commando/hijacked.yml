@@ -32,7 +32,6 @@
             - /Maps/_Battlefield14/Planets/caves.yml
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity
-        - type: ConquestManager
 
 - type: zMap
   id: BF14HijackedZMap
