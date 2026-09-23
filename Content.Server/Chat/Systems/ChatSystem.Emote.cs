@@ -15,7 +15,7 @@ public partial class ChatSystem
 {
     private FrozenDictionary<string, ImmutableList<EmotePrototype>> _wordEmoteDict = FrozenDictionary<string, ImmutableList<EmotePrototype>>.Empty; // DeltaV - Multiple emotes
 
-    private const float EmoteSoundCooldownSeconds = 2f;
+    private const float EmoteSoundCooldownSeconds = 3f;
     private readonly Dictionary<EntityUid, TimeSpan> _lastEmoteSoundTime = new();
 
     [Dependency] private readonly IGameTiming _gameTiming = default!;
@@ -154,7 +154,7 @@ public partial class ChatSystem
         if (proto == null)
             return false;
 
-        // 2 second cooldown on playing emote sounds, regardless of source (buttons, menu or chat input).
+        // 3 second cooldown on playing emote sounds, regardless of source (buttons, menu or chat input).
         var now = _gameTiming.CurTime;
         if (_lastEmoteSoundTime.TryGetValue(uid, out var last) &&
             now - last < TimeSpan.FromSeconds(EmoteSoundCooldownSeconds))
