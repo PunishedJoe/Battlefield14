@@ -44,7 +44,6 @@
             - /Maps/_Battlefield14/Planets/MultiZ/Springfield/BF14SpringfieldZMap0.yml
           zLevelsComponentOverrides:
             - type: CEAutoGridGravity
-        - type: ConquestManager
 
 - type: zMap
   id: BF14SpringfieldZMap
