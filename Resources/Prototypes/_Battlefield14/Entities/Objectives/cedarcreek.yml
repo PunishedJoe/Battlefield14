@@ -1,0 +1,84 @@
+- type: entity
+  id: CapturePointCedarCreekMikkieD
+  parent: BaseCapturePoint
+  name: Mikkie D's control point
+  suffix: cedar creek, 120s / 2m
+  components:
+#  - type: POICapture
+#    poiName: "Cedar Creek Hospital"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Mikkie D's"
+  - type: NavMapBeacon
+    defaultText: "Mikkie D's"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Mikkie D's capture point"
+
+- type: entity
+  id: CapturePointCedarCreekFourStores
+  parent: BaseCapturePoint
+  name: four stores control point
+  suffix: cedar creek, 120s / 2m
+  components:
+#  - type: POICapture
+#    poiName: "Cedar Creek Hospital"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Four stores"
+  - type: NavMapBeacon
+    defaultText: "Four stores"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Four stores capture point"
+
+- type: entity
+  id: CapturePointCedarCreekKino
+  parent: BaseCapturePoint
+  name: Kino control point
+  suffix: cedar creek, 120s / 2m
+  components:
+#  - type: POICapture
+#    poiName: "Cedar Creek Hospital"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Kino"
+  - type: NavMapBeacon
+    defaultText: "Kino"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Kino capture point"
+
+- type: entity
+  id: CapturePointCedarCreekPostOffice
+  parent: BaseCapturePoint
+  name: post office control point
+  suffix: cedar creek, 120s / 2m
+  components:
+#  - type: POICapture
+#    poiName: "Cedar Creek Hospital"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Post office"
+  - type: NavMapBeacon
+    defaultText: "Post office"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Post office capture point"
+
+- type: entity
+  id: CapturePointCedarCreekPolizei
+  parent: BaseCapturePoint
+  name: Polizei control point
+  suffix: cedar creek, 120s / 2m
+  components:
+#  - type: POICapture
+#    poiName: "Cedar Creek Hospital"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Polizei"
+  - type: NavMapBeacon
+    defaultText: "Polizei"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Polizei capture point"

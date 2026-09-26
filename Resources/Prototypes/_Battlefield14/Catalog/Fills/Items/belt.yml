@@ -435,13 +435,13 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolM9
+      - WeaponPistolDEUSP9
   - type: StorageFill
     contents:
       - id: Handcuffs
         amount: 2
       - id: FlashlightSeclite
-      - id: MagazinePistolM9
+      - id: MagazinePistolUSP9
         amount: 2
 
 - type: entity
