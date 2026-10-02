@@ -1,0 +1,16 @@
+- type: entity
+  id: BF14MuseumSpeaker
+  name: Speakers
+  description: WIP
+  suffix: Museum
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: nato
+  - type: AmbientSound
+    volume: 15
+    range: 35
+    sound:
+      path: "/Audio/_Battlefield14/Ambience/MapAmbience/Museum_Ambience.ogg"

@@ -144,3 +144,13 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: BF_CIV_2
+
+- type: loadout
+  id: LoadoutJumpsuitChef1
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChef
+
+- type: loadout
+  id: LoadoutJumpsuitChef2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitColorWhite
