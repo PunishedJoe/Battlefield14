@@ -7,6 +7,7 @@
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/M9.rsi
     state: supp
+    offset: -0.25, -0.15
   - type: ESGunSoundAttachment
     sound:
       collection: BF_M9Beretta_Gunshots_SUPP

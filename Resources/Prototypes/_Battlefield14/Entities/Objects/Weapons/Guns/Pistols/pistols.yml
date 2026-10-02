@@ -256,7 +256,38 @@
     mappings:
       barrelAttachment:
       - containerId: attachment_barrel
-        state: suppressed
+        state: supp
+        whitelist:
+          tags:
+          - BF14Pistol9x19mmSuppressor
+
+- type: entity
+  parent: WeaponPistolM9
+  id: WeaponPistolM9ITSupp
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolM9
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazinePistolM9
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+          - BF_CartridgePistol9x19
+      attachment_barrel:
+        startingItem: GunAttachmentSuppressorPistol9x19mm
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
         whitelist:
           tags:
           - BF14Pistol9x19mmSuppressor

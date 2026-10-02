@@ -452,8 +452,7 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolM9
-      - GunAttachmentSuppressorPistol9x19mm
+      - WeaponPistolM9ITSupp
   - type: StorageFill
     contents:
       - id: Handcuffs
@@ -471,7 +470,7 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolM9
+      - WeaponPistolM9ITSupp
   - type: StorageFill
     contents:
       - id: Handcuffs
