@@ -7,12 +7,19 @@
         "y": 32
     },
     "states": [
-        {
-            "name": "icon"
-        },
-        {
-            "name": "equipped-INNERCLOTHING",
-            "directions": 4
-        }
+    {
+      "name": "icon"
+    },
+    {
+      "name": "icon-unshaded"
+    },
+    {
+      "name": "equipped-INNERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "equipped-INNERCLOTHING-unshaded",
+      "directions": 4
+    }
     ]
 }

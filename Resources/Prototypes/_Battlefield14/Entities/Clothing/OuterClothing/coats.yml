@@ -65,7 +65,7 @@
     sprite: _Battlefield14/Clothing/OuterClothing/Coats/frjacket.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterVestHazard
   id: ClothingOuterWorkJacket
   name: work jacket
   description: A work jacket worn by blue collar workers.
@@ -87,7 +87,7 @@
     sprite: _Battlefield14/Clothing/OuterClothing/Misc/trenchcoat.rsi
 
 - type: entity
-  parent: ClothingOuterBase
+  parent: ClothingOuterVestHazard
   id: ClothingOuterWorkerHighViz
   name: high-viz vest
   description: A high visibility vest worn by blue collar workers.
