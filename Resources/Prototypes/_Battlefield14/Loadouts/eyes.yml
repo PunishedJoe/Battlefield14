@@ -1,3 +1,5 @@
+#region ballistic goggles
+
 - type: loadout
   id: LoadoutEyesGlassesBallisticGogglesTan
   equipment:
@@ -8,6 +10,12 @@
   equipment:
     eyes: ClothingEyesGogglesGreen
 
+- type: loadout
+  id: LoadoutEyesGlassesBallisticGogglesClear
+  equipment:
+    eyes: ClothingEyesGogglesClear
+
+#region trimax
 
 - type: loadout
   id: LoadoutEyesGlassesBallisticTriMaxBlack
@@ -25,7 +33,7 @@
     eyes: RMCGlassesTriMaxYellow
 
 
-# no hud trimax'
+#region no hud trimax'
 - type: loadout
   id: LoadoutEyesGlassesBallisticTriMaxBlackNohud
   equipment:

@@ -151,6 +151,9 @@
     intensitySlope: 10
     maxIntensity: 150
     maxTileBreak: 2
+  - type: Tag
+    tags:
+      - BreachingCharge
 
 - type: entity
   parent: BaseItem
@@ -173,6 +176,9 @@
     prototype: BF14FloorCharge
     doAfter: 2
     removeOnInteract: true
+  - type: Tag
+    tags:
+      - BreachingCharge
   - type: ExtendDescription
     descriptionList:
       - description: It is disarmed, left click on a tile to place and arm it.

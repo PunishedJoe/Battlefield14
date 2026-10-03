@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from baystation 12",
+  "copyright": "Made by WillyBillyGilly",
   "size": {
     "x": 32,
     "y": 32
@@ -11,7 +11,14 @@
       "name": "icon"
     },
     {
+      "name": "icon-unshaded"
+    },
+    {
       "name": "equipped-OUTERCLOTHING",
+      "directions": 4
+    },
+    {
+      "name": "equipped-OUTERCLOTHING-unshaded",
       "directions": 4
     }
   ]

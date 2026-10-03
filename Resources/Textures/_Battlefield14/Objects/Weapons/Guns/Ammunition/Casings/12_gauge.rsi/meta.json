@@ -54,6 +54,27 @@
         },
         {
             "name": "frag-spent"
+        },
+        {
+            "name": "bird"
+        },
+        {
+            "name": "bird-spent"
+        },
+        {
+            "name": "brass"
+        },
+        {
+            "name": "brass-spent"
+        },
+        {
+            "name": "incen"
+        },
+        {
+            "name": "incen-spent"
+        },
+        {
+            "name": "caseless"
         }
     ]
 }

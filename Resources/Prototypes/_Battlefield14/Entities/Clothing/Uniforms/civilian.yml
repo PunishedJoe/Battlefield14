@@ -127,8 +127,17 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/worker.rsi
+    layers:
+    - state: icon
+    - state: icon-unshaded
+      shader: unshaded
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/worker.rsi
+    clothingVisuals:
+      innerClothing:
+      - state: equipped-INNERCLOTHING
+      - state: equipped-INNERCLOTHING-unshaded
+        shader: unshaded
 
 - type: entity
   parent: ClothingUniformBase
