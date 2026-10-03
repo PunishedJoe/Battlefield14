@@ -9,6 +9,11 @@
   - BF14DeathAsteroid
 
 - type: gameMapPool
+  id: BF14MapPoolCTF
+  maps:
+  - BF14ProvingGroundCTF
+
+- type: gameMapPool
   id: BF14MapPoolKOTH
   maps:
   - BF14ProvingGroundKOTH

@@ -92,9 +92,9 @@
   description: A state-of-the-art combat vest including a powered armour system recharged with specialised cells, a geiger counter, and internal oxygen supply. # ,and an automatic intravenous morphine injector | WHEN THIS WORKS
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Armor/security.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/pcv.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Armor/security.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/pcv.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -118,9 +118,9 @@
   description: A state-of-the-art combat vest including a powered armour system recharged with a recharging cell, a geiger counter, and internal oxygen supply. # ,and an automatic intravenous morphine injector | WHEN THIS WORKS
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Armor/security.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/pcv.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/Armor/security.rsi
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/pcv.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -174,3 +174,15 @@
     walkModifier: 0.9
     sprintModifier: 0.85
   - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingOuterArmorPCVRecharging
+  id: ClothingOuterArmorPCVExtendedRecharging
+  name: powered combat vest
+  suffix: Deathmatch only
+  description: A state-of-the-art combat vest including a powered armour system recharged with a recharging cell, a geiger counter, and internal oxygen supply. # ,and an automatic intravenous morphine injector | WHEN THIS WORKS
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/pcvextended.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/OuterClothing/Armor/pcvextended.rsi

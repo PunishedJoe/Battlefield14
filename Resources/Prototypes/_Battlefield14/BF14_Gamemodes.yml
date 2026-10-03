@@ -103,12 +103,28 @@
     - kingofthehill
     - koth
   name: King Of The Hill
-  description: Capture and hold the central control point
+  description: Capture and hold the central control point.
   maxPlayers: 20
   showInVote: true
+  respawnMultiplier: 0.166 # 30 seconds
   supportedMaps: BF14MapPoolKOTH
   rules:
-    - TenMinuteRestart
+    - Arcade
+
+- type: gamePreset
+  id: BF14_CTF
+  alias:
+    - capturetheflag
+    - ctf
+    - capturetheintel
+  name: Capture The Flag
+  description: Capture the enemy intel and defend yours.
+  maxPlayers: 20
+  showInVote: true
+  respawnMultiplier: 0.166 # 30 seconds
+  supportedMaps: BF14MapPoolCTF
+  rules:
+    - Arcade
 
 - type: gamePreset
   id: BF14_TDMHardcore # no respawns
@@ -126,6 +142,16 @@
     - TeamDeathMatchHardcore
 
 #region game rules
+
+- type: entity
+  id: Arcade
+  parent: BaseGameRule
+  components:
+  - type: KillCalloutRule
+  - type: PointManager
+  - type: MaxTimeRestartRule
+    roundMaxTime: 901 # 15 minutes
+    roundEndDelay: 30
 
 - type: entity
   id: TeamDeathMatch

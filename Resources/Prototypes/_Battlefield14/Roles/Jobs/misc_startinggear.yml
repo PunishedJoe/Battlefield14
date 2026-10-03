@@ -28,7 +28,7 @@
   equipment:
     id: USMCRiflemanIDCard
     jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
-    head: ClothingHeadHatHelmetSecurityBF14
+    head: ClothingHeadHatHelmetUSFAST
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
@@ -39,7 +39,7 @@
     neck: ClothingNeckIFFBlue
     leftarmband: FlashlightMilitaryUS
     suitstorage: WeaponRifleDEG36K
-    pocket1: WeaponPistolILDeagleSilver
+    pocket1: WeaponPistolATGlock20
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -47,9 +47,10 @@
     - CrowbarRed
     - DefensiveGrenadeUSM67
     - Tourniquet
+    - BF14PinpointerBlueIntel
     belt:
-    - MagazinePistolDeagle
-    - MagazinePistolDeagle
+    - MagazinePistolGlock20
+    - MagazinePistolGlock20
     - MagazineRifleG36
     - MagazineRifleG36
     - MagazineRifleG36
@@ -61,11 +62,11 @@
   equipment:
     id: USMCRiflemanIDCard
     jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
-    head: ClothingHeadHatHelmetRUAltyn
+    head: ClothingHeadHatHelmetUSFAST
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVRecharging
+    outerClothing: ClothingOuterArmorPCVExtendedRecharging
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -80,6 +81,7 @@
     - FlashbangGrenadeUSM84
     - FlashbangGrenadeUSM84
     - Tourniquet
+    - BF14PinpointerBlueIntel
     belt:
     - MagazineSubmachinegunMP5
     - MagazineSubmachinegunMP5
@@ -92,8 +94,9 @@
   id: BF14TDMGearBlueMarksman
   equipment:
     id: USMCRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
-    head: ClothingHeadHatBlacksoft
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueReconTDM
+    mask: ClothingMaskNeckGaiter
+    head: ClothingHeadHatBoonie
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
     outerClothing: ClothingOuterArmorPCVRecharging
@@ -103,7 +106,7 @@
     neck: ClothingNeckIFFBlue
     leftarmband: FlashlightMilitaryUS
     suitstorage: WeaponSniperUSM14EBR
-    pocket1: WeaponPistolATGlock17
+    pocket1: WeaponPistolUSM1911
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -111,9 +114,10 @@
     - CrowbarRed
     - SmokeGrenadeUSM18
     - Tourniquet
+    - BF14PinpointerBlueIntel
     belt:
-    - WeaponPistolATGlock17
-    - WeaponPistolATGlock17
+    - MagazinePistolM1911
+    - MagazinePistolM1911
     - MagazineRifleM14
     - MagazineRifleM14
     - MagazineRifleM14
@@ -125,7 +129,7 @@
   equipment:
     id: VDVRiflemanIDCard
     jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
-    head: ClothingHeadHatHelmetSecurityBF14
+    head: ClothingHeadHatHelmetUSFAST
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltRU
     gloves: ClothingHandsGlovesFingerless
@@ -136,7 +140,7 @@
     neck: ClothingNeckIFFRed
     leftarmband: FlashlightMilitaryAlt
     suitstorage: WeaponRifleRUAK74M
-    pocket1: WeaponPistolILDeagleSilver
+    pocket1: WeaponPistolRUSR1MP
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -144,9 +148,10 @@
     - CrowbarRed
     - OffensiveGrenadeRURGD5
     - Tourniquet
+    - BF14PinpointerRedIntel
     belt:
-    - MagazinePistolDeagle
-    - MagazinePistolDeagle
+    - MagazinePistolSR1MP
+    - MagazinePistolSR1MP
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
@@ -158,11 +163,11 @@
   equipment:
     id: USMCRiflemanIDCard
     jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
-    head: ClothingHeadHatHelmetRUAltyn
+    head: ClothingHeadHatHelmetUSFAST
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVRecharging
+    outerClothing: ClothingOuterArmorPCVExtendedRecharging
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -177,6 +182,7 @@
     - FlashbangGrenadeRUZarya
     - FlashbangGrenadeRUZarya
     - Tourniquet
+    - BF14PinpointerRedIntel
     belt:
     - MagazineSubmachinegunVityaz
     - MagazineSubmachinegunVityaz
@@ -189,8 +195,9 @@
   id: BF14TDMGearRedMarksman
   equipment:
     id: USMCRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
-    head: ClothingHeadHatBlacksoft
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedReconTDM
+    mask: ClothingMaskNeckGaiter
+    head: ClothingHeadHatBoonie
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
     outerClothing: ClothingOuterArmorPCVRecharging
@@ -200,7 +207,7 @@
     neck: ClothingNeckIFFRed
     leftarmband: FlashlightMilitaryUS
     suitstorage: WeaponSniperRUSVDS
-    pocket1: WeaponPistolMP443
+    pocket1: WeaponPistolRUTT33
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -208,9 +215,10 @@
     - CrowbarRed
     - BoxGrenadesRDG2
     - Tourniquet
+    - BF14PinpointerRedIntel
     belt:
-    - MagazinePistolMP443
-    - MagazinePistolMP443
+    - MagazinePistolTT33
+    - MagazinePistolTT33
     - MagazineSniperSVD
     - MagazineSniperSVD
     - MagazineSniperSVD

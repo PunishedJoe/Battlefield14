@@ -222,7 +222,7 @@
   - type: DeleteOnTrigger
   - type: AnnounceOnSpawn
     message: "The grace period will end in 30 seconds, prepare."
-    sender: "Team deathmatch"
+    sender: "Combat Area"
     sound:
       path: /Audio/_Battlefield14/Announcements/TDMgrace.ogg
 
@@ -236,7 +236,7 @@
   components:
   - type: AnnounceOnSpawn
     message: "The grace period has ended!"
-    sender: "Team deathmatch"
+    sender: "Combat Area"
     sound:
       path: /Audio/_Battlefield14/Announcements/TDMstart.ogg
 #    color: "#BE8700"

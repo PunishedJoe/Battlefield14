@@ -1,0 +1,60 @@
+- type: gameMap
+  id: BF14ProvingGroundCTF
+  mapName: 'Proving grounds (CTF)'
+  mapPath: /Maps/_Battlefield14/Deathmatch/provinggroundCTF.yml
+  minPlayers: 0
+  maxPlayers: 400
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14ProvingGroundCTF:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Proving grounds, Nowhereski"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            TDMRed: [ -1, -1 ]
+            TDMRedPointman: [ -1, -1 ]
+            TDMRedMarksman: [ -1, -1 ]
+            TDMBlue: [ -1, -1 ]
+            TDMBluePointman: [ -1, -1 ]
+            TDMBlueMarksman: [ -1, -1 ]
+        - type: CEStationZLevels
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+            - type: CEZLevelRoof
+            - type: MapLight
+              ambientlight: "#adcfd8"
+            - type: Parallax
+              parallax: bedrock
+            - type: MapAtmosphere
+              space: False
+              mixture:
+                volume: 2500
+                immutable: True
+                temperature: 274.6
+                moles:
+                  - 21.82478
+                  - 82.10312
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0

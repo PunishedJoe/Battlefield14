@@ -1030,7 +1030,7 @@
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: natoinfantry
+    - state: natorecon
     scale: 1.5,1.5
 
 - type: entity
@@ -1043,7 +1043,7 @@
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: natoinfantry
+    - state: natospecialforces
     scale: 1.5,1.5
 
 - type: entity
@@ -1082,5 +1082,5 @@
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: pactinfantry
+    - state: pactspecialforces
     scale: 1.5,1.5

@@ -26,6 +26,16 @@
 
 - type: entity
   parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetUSFAST
+  name: FAST helmet
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/fasthelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/fasthelmet.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
   id: ClothingHeadHatHelmetUSACH
   name: ACH helmet
   components:
