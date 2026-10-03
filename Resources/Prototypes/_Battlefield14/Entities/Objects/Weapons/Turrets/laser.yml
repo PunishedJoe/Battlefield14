@@ -1,0 +1,75 @@
+- type: entity
+  id: BF14SpawnMobWeaponTurretLaserNato
+  parent: MarkerBase
+  name: Nato laser turret spawner
+  suffix: Nato
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _NF/Objects/Weapons/Guns/Turrets/laser.rsi
+      state: base
+  - type: ConditionalSpawner
+    prototypes:
+    - BF14WeaponTurretLaserIndestructibleNato
+
+- type: entity
+  id: BF14WeaponTurretLaserIndestructibleNato
+  name: laser turret
+  categories: [ HideSpawnMenu ]
+  suffix: Nato
+  parent:
+  - BaseWeaponTurretEnergyNF
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Turrets/laser.rsi
+  - type: Gun
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+      params:
+        variation: 0.125
+  - type: HitscanBatteryAmmoProvider
+    proto: RedHeavyLaser
+    fireCost: 1
+  - type: NpcFactionMember
+    factions:
+    - NATO
+
+- type: entity
+  id: BF14SpawnMobWeaponTurretLaserPact
+  parent: MarkerBase
+  name: Pact laser turret spawner
+  suffix: Pact
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _NF/Objects/Weapons/Guns/Turrets/laser.rsi
+      state: base
+  - type: ConditionalSpawner
+    prototypes:
+    - BF14WeaponTurretLaserIndestructiblePact
+
+- type: entity
+  id: BF14WeaponTurretLaserIndestructiblePact
+  name: laser turret
+  categories: [ HideSpawnMenu ]
+  suffix: Pact
+  parent:
+  - BaseWeaponTurretEnergyNF
+  components:
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Turrets/laser.rsi
+  - type: Gun
+    fireRate: 1.5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+      params:
+        variation: 0.125
+  - type: HitscanBatteryAmmoProvider
+    proto: RedHeavyLaser
+    fireCost: 1
+  - type: NpcFactionMember
+    factions:
+    - PACT

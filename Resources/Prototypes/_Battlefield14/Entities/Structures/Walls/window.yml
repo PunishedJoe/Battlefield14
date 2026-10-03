@@ -1,0 +1,21 @@
+- type: entity
+  parent: SSEWindowBase
+  id: BF14WindowFramedIndestructible
+  suffix: Indestructible
+  components:
+  - type: Sprite
+    sprite: _HaloSSE/Structures/Windows/framed.rsi
+    state: framewindow
+  - type: Icon
+    sprite: _HaloSSE/Structures/Windows/framed.rsi
+    state: framewindow
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 999999999 #basicaly unbreakable
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: ArmorThickness # BF14
+    thickness: 3000

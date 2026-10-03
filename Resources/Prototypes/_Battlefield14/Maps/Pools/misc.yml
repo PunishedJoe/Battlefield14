@@ -9,8 +9,14 @@
   - BF14DeathAsteroid
 
 - type: gameMapPool
+  id: BF14MapPoolKOTH
+  maps:
+  - BF14ProvingGroundKOTH
+
+- type: gameMapPool
   id: BF14MapPoolTDMHardcore
   maps:
   - BF14ShuddihTownTDM
   - BF14CedarCreekTDM
   - BF14TeufortTDM
+  - BF14ProvingGroundTDM

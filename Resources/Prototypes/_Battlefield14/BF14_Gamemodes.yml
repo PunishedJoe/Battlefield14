@@ -98,6 +98,19 @@
     - TeamDeathMatch
 
 - type: gamePreset
+  id: BF14_KOTH
+  alias:
+    - kingofthehill
+    - koth
+  name: King Of The Hill
+  description: Capture and hold the central control point
+  maxPlayers: 20
+  showInVote: true
+  supportedMaps: BF14MapPoolKOTH
+  rules:
+    - TenMinuteRestart
+
+- type: gamePreset
   id: BF14_TDMHardcore # no respawns
   alias:
     - hardcoreteamdeathmatch

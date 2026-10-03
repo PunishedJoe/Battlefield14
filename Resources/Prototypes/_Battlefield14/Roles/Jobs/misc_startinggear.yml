@@ -57,6 +57,70 @@
     - MagazineRifleG36
 
 - type: startingGear
+  id: BF14TDMGearBluePointman
+  equipment:
+    id: USMCRiflemanIDCard
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
+    head: ClothingHeadHatHelmetRUAltyn
+    balaclava: ClothingBalaclavaMilitary
+    ears: ClothingHeadsetAltUS
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterArmorPCVRecharging
+    belt: ClothingBeltAssault
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackButtpackSurplus
+    neck: ClothingNeckIFFBlue
+    leftarmband: FlashlightMilitaryUS
+    suitstorage: WeaponSubmachinegunDEMP5A4
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - BiofoamCanister
+    - CrowbarRed
+    - FlashbangGrenadeUSM84
+    - FlashbangGrenadeUSM84
+    - Tourniquet
+    belt:
+    - MagazineSubmachinegunMP5
+    - MagazineSubmachinegunMP5
+    - MagazineSubmachinegunMP5
+    - MagazineSubmachinegunMP5
+    - MagazineSubmachinegunMP5
+    - MagazineSubmachinegunMP5
+
+- type: startingGear
+  id: BF14TDMGearBlueMarksman
+  equipment:
+    id: USMCRiflemanIDCard
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
+    head: ClothingHeadHatBlacksoft
+    ears: ClothingHeadsetAltUS
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterArmorPCVRecharging
+    belt: ClothingBeltAssault
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackButtpackSurplus
+    neck: ClothingNeckIFFBlue
+    leftarmband: FlashlightMilitaryUS
+    suitstorage: WeaponSniperUSM14EBR
+    pocket1: WeaponPistolATGlock17
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - BiofoamCanister
+    - CrowbarRed
+    - SmokeGrenadeUSM18
+    - Tourniquet
+    belt:
+    - WeaponPistolATGlock17
+    - WeaponPistolATGlock17
+    - MagazineRifleM14
+    - MagazineRifleM14
+    - MagazineRifleM14
+    - MagazineRifleM14
+    - MagazineRifleM14
+
+- type: startingGear
   id: BF14TDMGearRed
   equipment:
     id: VDVRiflemanIDCard
@@ -78,7 +142,7 @@
     back:
     - BiofoamCanisterRed
     - CrowbarRed
-    - DefensiveGrenadeUSM67
+    - OffensiveGrenadeRURGD5
     - Tourniquet
     belt:
     - MagazinePistolDeagle
@@ -88,6 +152,70 @@
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
+
+- type: startingGear
+  id: BF14TDMGearRedPointman
+  equipment:
+    id: USMCRiflemanIDCard
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
+    head: ClothingHeadHatHelmetRUAltyn
+    balaclava: ClothingBalaclavaMilitary
+    ears: ClothingHeadsetAltUS
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterArmorPCVRecharging
+    belt: ClothingBeltAssault
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackButtpackSurplus
+    neck: ClothingNeckIFFRed
+    leftarmband: FlashlightMilitaryUS
+    suitstorage: WeaponSubmachinegunRUVityaz
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - BiofoamCanisterRed
+    - CrowbarRed
+    - FlashbangGrenadeRUZarya
+    - FlashbangGrenadeRUZarya
+    - Tourniquet
+    belt:
+    - MagazineSubmachinegunVityaz
+    - MagazineSubmachinegunVityaz
+    - MagazineSubmachinegunVityaz
+    - MagazineSubmachinegunVityaz
+    - MagazineSubmachinegunVityaz
+    - MagazineSubmachinegunVityaz
+
+- type: startingGear
+  id: BF14TDMGearRedMarksman
+  equipment:
+    id: USMCRiflemanIDCard
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
+    head: ClothingHeadHatBlacksoft
+    ears: ClothingHeadsetAltUS
+    gloves: ClothingHandsGlovesFingerless
+    outerClothing: ClothingOuterArmorPCVRecharging
+    belt: ClothingBeltAssault
+    shoes: ClothingShoesBootsJackFilled
+    back: ClothingBackpackButtpackSurplus
+    neck: ClothingNeckIFFRed
+    leftarmband: FlashlightMilitaryUS
+    suitstorage: WeaponSniperRUSVDS
+    pocket1: WeaponPistolMP443
+    pocket2: PouchFirstAidFilled
+  storage:
+    back:
+    - BiofoamCanisterRed
+    - CrowbarRed
+    - BoxGrenadesRDG2
+    - Tourniquet
+    belt:
+    - MagazinePistolMP443
+    - MagazinePistolMP443
+    - MagazineSniperSVD
+    - MagazineSniperSVD
+    - MagazineSniperSVD
+    - MagazineSniperSVD
+    - MagazineSniperSVD
 
 - type: startingGear
   id: BF14FBIGoonGear
