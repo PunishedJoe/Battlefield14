@@ -11,7 +11,7 @@
       stationProto: StandardFrontierStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Skeld Bunker"
+          mapNameTemplate: "Skeld Bunker, Bosnia"
         - type: ExtraStationInformation
           iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
           stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
