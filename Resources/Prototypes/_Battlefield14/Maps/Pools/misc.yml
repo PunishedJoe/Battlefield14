@@ -9,6 +9,13 @@
   - BF14DeathAsteroid
 
 - type: gameMapPool
+  id: BF14MapPoolFFA
+  maps:
+  - BF14Pizzeria
+  - BF14SkeldBunker
+  - BF14Stronghold
+
+- type: gameMapPool
   id: BF14MapPoolCTF
   maps:
   - BF14ProvingGroundCTF

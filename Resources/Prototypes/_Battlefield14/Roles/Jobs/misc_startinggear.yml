@@ -1,22 +1,22 @@
 - type: startingGear
   id: BF14DeathmatchGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorWhite
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorWhiteTDM
     ears: ClothingHeadsetGrey
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorWebVestSecEmpty
+    head: ClothingHeadHatHelmetUSFAST
+    outerClothing: ClothingOuterArmorKevlarVest
     shoes: ClothingShoesBootsJackFilled
-    back: ClothingBackpackButtpackSurplus
     neck: FlashlightMilitaryUS
-    suitstorage: WeaponRifleUSM4
-    pocket1: WeaponPistolILDeagleSilver
+    suitstorage: WeaponRifleUSM16A3
+    pocket1: PouchMagsLargeFilledSTANAG
     pocket2: PouchFirstAidFilled
 
 - type: startingGear
   id: BF14GoonGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCombatSuitDigitalBlack
-    ears: ClothingHeadsetGrey
+    ears: ClothingHeadsetGreyw
     balaclava: ClothingBalaclavaSkiMaskMouthBlack
     outerClothing: ClothingOuterArmorWebVestSec
     belt: ClothingBeltStationSecurityFilledFBI
