@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/04/2026 02:40:59
-  entityCount: 2692
+  time: 10/04/2026 15:48:21
+  entityCount: 2706
 maps:
 - 2
 grids:
@@ -412,10 +412,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Kudzu: []
-        MetalFoam: []
-        Smoke: []
         Puddle: []
+        MetalFoam: []
+        Kudzu: []
+        Smoke: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: GridPathfinding
@@ -963,6 +963,17 @@ entities:
       parent: 1
 - proto: AlwaysPoweredWallLight
   entities:
+  - uid: 16
+    components:
+    - type: Transform
+      pos: -5.5,10.5
+      parent: 1
+  - uid: 19
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 4.5,-9.5
+      parent: 1
   - uid: 3323
     components:
     - type: Transform
@@ -2864,6 +2875,20 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -10.5,-12.5
+      parent: 1
+- proto: BlueTeamFlag
+  entities:
+  - uid: 26
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -42.5,-21.5
+      parent: 1
+  - uid: 27
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -37.5,12.5
       parent: 1
 - proto: CableApcExtension
   entities:
@@ -12074,6 +12099,12 @@ entities:
       rot: 3.141592653589793 rad
       pos: 42.5,20.5
       parent: 1
+  - uid: 17
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 3.5,10.5
+      parent: 1
   - uid: 2107
     components:
     - type: Transform
@@ -12499,12 +12530,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -7.5,10.5
-      parent: 1
-  - uid: 2750
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -4.5,10.5
       parent: 1
   - uid: 2751
     components:
@@ -13340,6 +13365,17 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 39.5,20.5
       parent: 1
+  - uid: 15
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -4.5,10.5
+      parent: 1
+  - uid: 18
+    components:
+    - type: Transform
+      pos: 4.5,10.5
+      parent: 1
   - uid: 2105
     components:
     - type: Transform
@@ -13507,12 +13543,6 @@ entities:
       rot: 4.71238898038469 rad
       pos: -15.5,10.5
       parent: 1
-  - uid: 2775
-    components:
-    - type: Transform
-      rot: 4.71238898038469 rad
-      pos: -5.5,10.5
-      parent: 1
   - uid: 2778
     components:
     - type: Transform
@@ -13524,11 +13554,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -6.5,15.5
-      parent: 1
-  - uid: 2781
-    components:
-    - type: Transform
-      pos: 3.5,10.5
       parent: 1
   - uid: 2782
     components:
@@ -13845,6 +13870,20 @@ entities:
     - type: Transform
       pos: 43.5,-0.5
       parent: 1
+- proto: RedTeamFlag
+  entities:
+  - uid: 20
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 41.5,22.5
+      parent: 1
+  - uid: 25
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 36.5,-11.5
+      parent: 1
 - proto: RMCPlatformCornerSmall
   entities:
   - uid: 156
@@ -14115,6 +14154,58 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 38.5,15.5
+      parent: 1
+- proto: SignArmory
+  entities:
+  - uid: 21
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 43.5,-2.5
+      parent: 1
+  - uid: 22
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 43.5,-5.5
+      parent: 1
+  - uid: 23
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 37.5,-7.5
+      parent: 1
+  - uid: 24
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 34.5,-7.5
+      parent: 1
+- proto: SignNfsdArmoury
+  entities:
+  - uid: 28
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -38.5,8.5
+      parent: 1
+  - uid: 29
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -35.5,8.5
+      parent: 1
+  - uid: 30
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -44.5,6.5
+      parent: 1
+  - uid: 31
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -44.5,3.5
       parent: 1
 - proto: SmallLightDim
   entities:

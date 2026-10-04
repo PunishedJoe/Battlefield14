@@ -24,8 +24,8 @@
   - type: Appearance
   - type: ApcVisuals
   - type: Battery
-    maxCharge: 50000
-    startingCharge: 50000
+    maxCharge: 50000000
+    startingCharge: 50000000
   - type: ExaminableBattery
   - type: NodeContainer
     examinable: true
