@@ -357,6 +357,9 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon2.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon2.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.15
+    sprintModifier: 1.1
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformBasePACT ]
@@ -370,6 +373,7 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon1.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon1.rsi
+  - type: ArrivalsBlacklist # this is for the pinpointers to work
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformBasePACT ]
@@ -383,3 +387,6 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon2.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon2.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.15
+    sprintModifier: 1.1

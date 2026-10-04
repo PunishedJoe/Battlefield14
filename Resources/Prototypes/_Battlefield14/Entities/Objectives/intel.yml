@@ -1,3 +1,5 @@
+# BLUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+
 - type: entity
   parent: BaseItem
   id: BF14IntelBlue
@@ -34,10 +36,25 @@
     follow: true
     location: blue intel
   - type: ArrivalsBlacklist # BUDDY code made by BUDDIES for BUDDIES
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.75
+  - type: HeldSpeedModifier
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 9999
+        mask:
+        - ItemMask
+        restitution: 0.3  # fite me
+        friction: 0.2
 
 - type: entity
   name: blue pinpointer
-  description: Tracks the Blue team's intel if its outside the safe.
+  description: Tracks both the KOTH capture point and the Blue team's intel if its outside the safe.
   id: BF14PinpointerBlueIntel
   parent: PinpointerBase
   components:
@@ -54,7 +71,6 @@
     state: pinpointer-blue
   - type: Pinpointer
     component: ArrivalsBlacklist
-    targetName: blue intel
 
 - type: entity
   parent: BaseStructure
@@ -245,6 +261,8 @@
     - node: closed
       edges: []
 
+# REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEED
+
 - type: entity
   parent: BaseItem
   id: BF14IntelRed
@@ -281,10 +299,14 @@
     follow: true
     location: red intel
   - type: NukeDisk # BUDDY code made by BUDDIES for BUDDIES
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.75
+  - type: HeldSpeedModifier
 
 - type: entity
   name: red pinpointer
-  description: Tracks the Red team's intel if its outside the safe.
+  description: Tracks both the KOTH capture point and the Red team's intel if its outside the safe.
   id: BF14PinpointerRedIntel
   parent: PinpointerBase
   components:
@@ -301,7 +323,6 @@
     state: pinpointer-red
   - type: Pinpointer
     component: NukeDisk
-    targetName: red intel
 
 - type: entity
   parent: BaseStructure

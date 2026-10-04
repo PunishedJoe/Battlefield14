@@ -12,15 +12,18 @@
   id: BF14MapPoolCTF
   maps:
   - BF14ProvingGroundCTF
+  - BF14TurbineCTF
 
 - type: gameMapPool
   id: BF14MapPoolKOTH
   maps:
   - BF14ProvingGroundKOTH
+  - BF14TurbineKOTH
 
 - type: gameMapPool
   id: BF14MapPoolTDMHardcore
   maps:
+  - BF14TurbineTDM
   - BF14ShuddihTownTDM
   - BF14CedarCreekTDM
   - BF14TeufortTDM

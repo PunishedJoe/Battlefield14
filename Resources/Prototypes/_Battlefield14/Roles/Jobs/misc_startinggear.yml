@@ -32,7 +32,7 @@
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVRecharging
+    outerClothing: ClothingOuterArmorPCVExtendedRecharging
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -61,12 +61,11 @@
   id: BF14TDMGearBluePointman
   equipment:
     id: USMCRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
-    head: ClothingHeadHatHelmetUSFAST
-    balaclava: ClothingBalaclavaMilitary
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueReconTDM
+    head: ClothingHeadHatBlacksoft
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVExtendedRecharging
+    outerClothing: ClothingOuterArmorKevlarVest
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -94,7 +93,7 @@
   id: BF14TDMGearBlueMarksman
   equipment:
     id: USMCRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueReconTDM
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorBlueTDM
     mask: ClothingMaskNeckGaiter
     head: ClothingHeadHatBoonie
     ears: ClothingHeadsetAltUS
@@ -133,7 +132,7 @@
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltRU
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVRecharging
+    outerClothing: ClothingOuterArmorPCVExtendedRecharging
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -162,12 +161,11 @@
   id: BF14TDMGearRedPointman
   equipment:
     id: USMCRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
-    head: ClothingHeadHatHelmetUSFAST
-    balaclava: ClothingBalaclavaMilitary
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedReconTDM
+    head: ClothingHeadHatBlacksoft
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVExtendedRecharging
+    outerClothing: ClothingOuterArmorKevlarVest
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -195,7 +193,7 @@
   id: BF14TDMGearRedMarksman
   equipment:
     id: USMCRiflemanIDCard
-    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedReconTDM
+    jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
     mask: ClothingMaskNeckGaiter
     head: ClothingHeadHatBoonie
     ears: ClothingHeadsetAltUS

@@ -181,6 +181,8 @@
     color: "#FFFF00"
   - type: WarpPoint
     location: "Capture point"
+  - type: NukeDisk # this is for the pinpointers to work
+  - type: ArrivalsBlacklist # this is for the pinpointers to work
 
 - type: entity
   id: CapturePointSharedNavBouy
