@@ -1745,7 +1745,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 2.5,-14.5
       parent: 1
-- proto: ChudFlag
+- proto: RedTeamFlag
   entities:
   - uid: 32
     components:
@@ -1771,7 +1771,7 @@ entities:
     - type: Transform
       pos: 19.5,-3.5
       parent: 1
-- proto: GemFlag
+- proto: BlueTeamFlag
   entities:
   - uid: 30
     components:

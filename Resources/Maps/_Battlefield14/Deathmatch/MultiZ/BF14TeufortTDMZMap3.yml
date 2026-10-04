@@ -5385,7 +5385,7 @@ entities:
     - type: Transform
       pos: 18.5,46.5
       parent: 1
-- proto: ChudFlag
+- proto: RedTeamFlag
   entities:
   - uid: 58836
     components:
@@ -5407,7 +5407,7 @@ entities:
     - type: Transform
       pos: -19.5,33.5
       parent: 1
-- proto: GemFlag
+- proto: BlueTeamFlag
   entities:
   - uid: 58425
     components:
