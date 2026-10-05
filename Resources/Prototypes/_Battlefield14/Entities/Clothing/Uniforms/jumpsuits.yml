@@ -333,19 +333,66 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/navycombat.rsi
 
 - type: entity
-  parent: ClothingUniformJumpsuitMilitaryColorBlue
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMilitaryColorWhiteTDM
+  description: unremovable identification suit
+  name: white goon uniform
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/whitegoon1.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/whitegoon1.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformBaseNATO ]
   id: ClothingUniformJumpsuitMilitaryColorBlueTDM
   name: blue goon uniform
   description: unremovable identification suit
   suffix: Unremoveable
   components:
   - type: Unremoveable
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon1.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon1.rsi
 
 - type: entity
-  parent: ClothingUniformJumpsuitMilitaryColorRed
+  parent: [ClothingUniformBase, ClothingUniformBaseNATO ]
+  id: ClothingUniformJumpsuitMilitaryColorBlueReconTDM
+  name: blue goon uniform
+  description: unremovable identification suit
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon2.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon2.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformBasePACT ]
   id: ClothingUniformJumpsuitMilitaryColorRedTDM
   description: unremovable identification suit
   name: red goon uniform
   suffix: Unremoveable
   components:
   - type: Unremoveable
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon1.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon1.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, ClothingUniformBasePACT ]
+  id: ClothingUniformJumpsuitMilitaryColorRedReconTDM
+  description: unremovable identification suit
+  name: red goon uniform
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon2.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon2.rsi

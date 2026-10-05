@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/01/2026 20:02:58
+  time: 10/04/2026 02:46:44
   entityCount: 571
 maps:
 - 2
@@ -494,10 +494,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
         Kudzu: []
-        MetalFoam: []
+        Smoke: []
         Puddle: []
+        MetalFoam: []
       updateAccumulator: 0.13303375
     - type: Shuttle
       dampingModifier: 0.25
@@ -3437,10 +3437,10 @@ entities:
       chunks: {}
     - type: SpreaderGrid
       spreadQueues:
-        Smoke: []
         Kudzu: []
-        MetalFoam: []
+        Smoke: []
         Puddle: []
+        MetalFoam: []
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -3496,26 +3496,22 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 14.5,44.5
       parent: 1
-  - uid: 10
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -14.5,-43.5
-      parent: 1
-- proto: AirlockDouble
-  entities:
   - uid: 8
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -12.5,-52.5
       parent: 1
-- proto: AirlockDouble
-  entities:
   - uid: 9
     components:
     - type: Transform
       pos: 12.5,53.5
+      parent: 1
+  - uid: 10
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -14.5,-43.5
       parent: 1
 - proto: AlwaysPoweredWallLight
   entities:

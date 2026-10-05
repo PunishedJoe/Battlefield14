@@ -887,6 +887,26 @@
   - ContractorWallet
 
 - type: roleLoadout
+  id: JobTDMBluePointman
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobTDMBlueMarksman
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
   id: JobTDMRed
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobTDMRedPointman
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobTDMRedMarksman
   groups:
   - ContractorWallet

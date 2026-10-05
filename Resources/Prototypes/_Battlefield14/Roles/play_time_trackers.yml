@@ -273,4 +273,16 @@
   id: JobTDMBlue
 
 - type: playTimeTracker
+  id: JobTDMBluePointman
+
+- type: playTimeTracker
+  id: JobTDMBlueMarksman
+
+- type: playTimeTracker
   id: JobTDMred
+
+- type: playTimeTracker
+  id: JobTDMredPointman
+
+- type: playTimeTracker
+  id: JobTDMredMarksman

@@ -1,0 +1,56 @@
+- type: gameMap
+  id: BF14TurbineTDM
+  mapName: 'Turbine hall (TDM)'
+  mapPath: /Maps/_Battlefield14/Deathmatch/turbineTDM.yml
+  minPlayers: 0
+  maxPlayers: 400
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14TurbineTDM:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Geothermal turbine hall, New Mexico"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            TDMRed: [ 10, 10 ]
+            TDMBlue: [ 10, 10 ]
+        - type: CEStationZLevels
+          mapsBelow:
+            - /Maps/_Battlefield14/Planets/caves.yml
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+            - type: CEZLevelRoof
+            - type: MapLight
+              ambientlight: "#adcfd8"
+            - type: Parallax
+              parallax: bedrock
+            - type: MapAtmosphere
+              space: False
+              mixture:
+                volume: 2500
+                immutable: True
+                temperature: 274.6
+                moles:
+                  - 21.82478
+                  - 82.10312
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0
+                  - 0

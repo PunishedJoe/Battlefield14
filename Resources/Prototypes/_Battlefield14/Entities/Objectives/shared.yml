@@ -166,6 +166,25 @@
 #    color: "#BE8700"
 
 - type: entity
+  id: CapturePointDeathmatchKOTH
+  parent: BaseCapturePoint
+  name: Capture point
+  suffix: KOTH, 120s / 2m
+  components:
+#  - type: POICapture
+#    poiName: "Hill"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Capture point"
+  - type: NavMapBeacon
+    defaultText: "Capture point"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Capture point"
+  - type: NukeDisk # this is for the pinpointers to work
+  - type: ArrivalsBlacklist # this is for the pinpointers to work
+
+- type: entity
   id: CapturePointSharedNavBouy
   parent: BaseCapturePoint
   name: nav bouy control point
@@ -205,7 +224,7 @@
   - type: DeleteOnTrigger
   - type: AnnounceOnSpawn
     message: "The grace period will end in 30 seconds, prepare."
-    sender: "Team deathmatch"
+    sender: "Combat Area"
     sound:
       path: /Audio/_Battlefield14/Announcements/TDMgrace.ogg
 
@@ -219,7 +238,7 @@
   components:
   - type: AnnounceOnSpawn
     message: "The grace period has ended!"
-    sender: "Team deathmatch"
+    sender: "Combat Area"
     sound:
       path: /Audio/_Battlefield14/Announcements/TDMstart.ogg
 #    color: "#BE8700"

@@ -164,7 +164,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 10 # BF14 15 > 10
-  showInVote: true # Frontier: true < false BF14 false > true
+  showInVote: false # Frontier: true < false BF14 false > true > BF14 false again
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31

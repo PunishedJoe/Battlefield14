@@ -1010,7 +1010,7 @@
 - type: entity
   id: SpawnPointTDMBlue
   parent: SpawnPointJobBase
-  name: TDM Blue
+  name: TDM Blue Goon
   components:
   - type: SpawnPoint
     job_id: TDMBlue
@@ -1021,9 +1021,35 @@
     scale: 1.5,1.5
 
 - type: entity
+  id: SpawnPointTDMBluePointman
+  parent: SpawnPointJobBase
+  name: TDM Blue Pointman
+  components:
+  - type: SpawnPoint
+    job_id: TDMBluePointman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natorecon
+    scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointTDMBlueMarksman
+  parent: SpawnPointJobBase
+  name: TDM Blue Marksman
+  components:
+  - type: SpawnPoint
+    job_id: TDMBlueMarksman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: natospecialforces
+    scale: 1.5,1.5
+
+- type: entity
   id: SpawnPointTDMRed
   parent: SpawnPointJobBase
-  name: TDM Red
+  name: TDM Red Goon
   components:
   - type: SpawnPoint
     job_id: TDMRed
@@ -1031,4 +1057,30 @@
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
     - state: pactinfantry
+    scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointTDMRedPointman
+  parent: SpawnPointJobBase
+  name: TDM Red Pointman
+  components:
+  - type: SpawnPoint
+    job_id: TDMRedPointman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactinfantry
+    scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointTDMRedMarksman
+  parent: SpawnPointJobBase
+  name: TDM Red Marksman
+  components:
+  - type: SpawnPoint
+    job_id: TDMRedMarksman
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactspecialforces
     scale: 1.5,1.5

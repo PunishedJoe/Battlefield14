@@ -1,0 +1,526 @@
+# BLUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+
+- type: entity
+  parent: BaseItem
+  id: BF14IntelBlue
+  name: blue intel
+  categories: [ HideSpawnMenu ]
+  description: Contains valuable information.
+  components:
+  - type: Tag
+    tags:
+    - IntelBlue
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/intelblue.rsi
+    state: icon
+  - type: Item
+    sprite: _Battlefield14/Objects/Misc/intelblue.rsi
+    size: Ginormous
+  - type: ExtendDescription
+    descriptionList:
+      - description: Will automatically return within 5 minutees to the Blue team's safe regardless if its held. It can also be returned manually.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+      - description: Can be captured in at the red drop-off.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
+  - type: TimedDespawn
+    lifetime: 300
+  - type: PointLight
+    color: "#2d61ff"
+    enabled: true
+    radius: 1.5
+  - type: WarpPoint
+    follow: true
+    location: blue intel
+  - type: ArrivalsBlacklist # BUDDY code made by BUDDIES for BUDDIES
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 9999
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+
+- type: entity
+  name: blue pinpointer
+  description: Tracks both the KOTH capture point and the Blue team's intel if its outside the safe.
+  id: BF14PinpointerBlueIntel
+  parent: PinpointerBase
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/intelpinpointer.rsi
+    layers:
+    - state: pinpointer-blue
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    state: pinpointer-blue
+  - type: Pinpointer
+    component: ArrivalsBlacklist
+
+- type: entity
+  parent: BaseStructure
+  id: BF14IntelDropoffBlueOpen
+  name: intel drop-off
+  description: A secure container with a opening on the top shaped like a briefcase.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/inteldropoff.rsi
+    drawdepth: WallTops
+    layers:
+    - state: openblue
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Red team's intel can be captured here for a Blue team victory.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
+  - type: Construction
+    graph: BF14IntelBlueDropoffGraph
+    node: open
+
+- type: entity
+  parent: BaseStructure
+  id: BF14IntelDropoffBlueClosed
+  name: intel drop-off
+  categories: [ HideSpawnMenu ]
+  description: A secure container with a opening on the top shaped like a briefcase.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/inteldropoff.rsi
+    drawdepth: WallTops
+    layers:
+    - state: closedblue
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: InteractionOutline
+  - type: AnnounceOnSpawn
+    message: "The Blue team has captured the Red team's intel and has won!"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/BlueWin.ogg
+    color: "#2d61ff"
+
+- type: constructionGraph
+  id: BF14IntelBlueDropoffGraph
+  start: open
+  graph:
+    - node: open
+      entity: BF14IntelDropoffBlueOpen
+      edges:
+        - to: closed
+          completed:
+            - !type:AdminLog
+              message: "The Red team's intel has ben captured"
+            - !type:SpawnPrototype
+              prototype: BF14IntelDropoffBlueClosed
+            - !type:DeleteEntity
+          steps:
+            - tag: IntelRed
+              doAfter: 5
+    - node: closed
+      edges: []
+
+- type: entity
+  parent: BaseStructure
+  id: BF14IntelSafeBlueClosed
+  name: intel safe
+  description: A safe containing a briefcase full of valuable information.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/intelsafe.rsi
+    drawdepth: WallTops
+    layers:
+    - state: closedblue
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Can be pried open with a crowbar to extract intel.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue team's intel has ben RETURNED to their safe"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelReturn.ogg
+    color: "#2d61ff"
+  - type: Construction
+    graph: BF14BlueIntelSafeClosedGraph
+    node: closed
+  - type: PointLight
+    color: "#2d61ff"
+    enabled: true
+    radius: 1.5
+  - type: WarpPoint
+    follow: true
+    location: blue intel
+
+- type: entity
+  parent: BaseStructure
+  id: BF14IntelSafeBlueOpen
+  name: intel safe
+  categories: [ HideSpawnMenu ]
+  description: A safe containing a briefcase full of valuable information.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/intelsafe.rsi
+    drawdepth: WallTops
+    layers:
+    - state: openblue
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Blue team's intel automatically return here within 5 minutees regardless if its held. It can also be returned manually.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue team's intel has ben STOLEN from their safe"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelSteal.ogg
+    color: "#2d61ff"
+  - type: TimedDespawn
+    lifetime: 300
+  - type: SpawnOnDespawn
+    prototype: BF14IntelSafeBlueClosed
+  - type: Construction
+    graph: BF14BlueIntelSafeOpenGraph
+    node: open
+
+- type: constructionGraph
+  id: BF14BlueIntelSafeClosedGraph
+  start: closed
+  graph:
+    - node: closed
+      edges:
+        - to: open
+          completed:
+            - !type:AdminLog
+              message: "The Blue team's safe has ben opened"
+            - !type:GivePrototype
+              prototype: BF14IntelBlue
+              amount: 1
+            - !type:SpawnPrototype
+              prototype: BF14IntelSafeBlueOpen
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Prying
+              doAfter: 5
+
+- type: constructionGraph
+  id: BF14BlueIntelSafeOpenGraph
+  start: open
+  graph:
+    - node: open
+      entity: BF14IntelSafeBlueOpen
+      edges:
+        - to: closed
+          completed:
+            - !type:AdminLog
+              message: "The Blue team=s intel has ben recovered"
+            - !type:SpawnPrototype
+              prototype: BF14IntelSafeBlueClosed
+            - !type:DeleteEntity
+          steps:
+            - tag: IntelBlue
+              doAfter: 5
+    - node: closed
+      edges: []
+
+# REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEED
+
+- type: entity
+  parent: BaseItem
+  id: BF14IntelRed
+  name: red intel
+  categories: [ HideSpawnMenu ]
+  description: Contains valuable information.
+  components:
+  - type: Tag
+    tags:
+    - IntelRed
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/intelred.rsi
+    state: icon
+  - type: Item
+    sprite: _Battlefield14/Objects/Misc/intelred.rsi
+    size: Ginormous
+  - type: ExtendDescription
+    descriptionList:
+      - description: Will automatically return within 5 minutees to the Red team's safe regardless if its held. It can also be returned manually.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+      - description: Can be captured in at the blue drop-off.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
+  - type: TimedDespawn
+    lifetime: 300
+  - type: PointLight
+    color: "#ff2c00"
+    enabled: true
+    radius: 1.5
+  - type: WarpPoint
+    follow: true
+    location: red intel
+  - type: NukeDisk # BUDDY code made by BUDDIES for BUDDIES
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.80
+  - type: HeldSpeedModifier
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 9999
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+
+
+- type: entity
+  name: red pinpointer
+  description: Tracks both the KOTH capture point and the Red team's intel if its outside the safe.
+  id: BF14PinpointerRedIntel
+  parent: PinpointerBase
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/intelpinpointer.rsi
+    layers:
+    - state: pinpointer-red
+      map: ["enum.PinpointerLayers.Base"]
+    - state: pinonnull
+      map: ["enum.PinpointerLayers.Screen"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    state: pinpointer-red
+  - type: Pinpointer
+    component: NukeDisk
+
+- type: entity
+  parent: BaseStructure
+  id: BF14IntelDropoffRedOpen
+  name: intel drop-off
+  description: A secure container with a opening on the top shaped like a briefcase.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/inteldropoff.rsi
+    drawdepth: WallTops
+    layers:
+    - state: openred
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Blue team's intel can be captured here for a Red team victory.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
+  - type: Construction
+    graph: BF14IntelRedDropoffGraph
+    node: open
+
+- type: entity
+  parent: BaseStructure
+  id: BF14IntelDropoffRedClosed
+  name: intel drop-off
+  categories: [ HideSpawnMenu ]
+  description: A secure container with a opening on the top shaped like a briefcase.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/inteldropoff.rsi
+    drawdepth: WallTops
+    layers:
+    - state: closedred
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: InteractionOutline
+  - type: AnnounceOnSpawn
+    message: "The Red team has captured the Blue team's intel and has won!"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/RedWin.ogg
+    color: "#ff2c00"
+
+- type: constructionGraph
+  id: BF14IntelRedDropoffGraph
+  start: open
+  graph:
+    - node: open
+      entity: BF14IntelDropoffRedOpen
+      edges:
+        - to: closed
+          completed:
+            - !type:AdminLog
+              message: "The Blue team's intel has ben captured"
+            - !type:SpawnPrototype
+              prototype: BF14IntelDropoffRedClosed
+            - !type:DeleteEntity
+          steps:
+            - tag: IntelBlue
+              doAfter: 5
+    - node: closed
+      edges: []
+
+- type: entity
+  parent: BaseStructure
+  id: BF14IntelSafeRedClosed
+  name: intel safe
+  description: A safe containing a briefcase full of valuable information.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/intelsafe.rsi
+    drawdepth: WallTops
+    layers:
+    - state: closedred
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Can be pried open with a crowbar to extract intel.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Red team's intel has ben RETURNED to their safe"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelReturn.ogg
+    color: "#ff2c00"
+  - type: Construction
+    graph: BF14RedIntelSafeClosedGraph
+    node: closed
+  - type: PointLight
+    color: "#ff2c00"
+    enabled: true
+    radius: 1.5
+  - type: WarpPoint
+    follow: true
+    location: red intel
+
+- type: entity
+  parent: BaseStructure
+  id: BF14IntelSafeRedOpen
+  name: intel safe
+  categories: [ HideSpawnMenu ]
+  description: A safe containing a briefcase full of valuable information.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/intelsafe.rsi
+    drawdepth: WallTops
+    layers:
+    - state: openred
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Red team's intel automatically return here within 5 minutees regardless if its held. It can also be returned manually.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Red team's intel has ben STOLEN from their safe"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelSteal.ogg
+    color: "#ff2c00"
+  - type: TimedDespawn
+    lifetime: 300
+  - type: SpawnOnDespawn
+    prototype: BF14IntelSafeRedClosed
+  - type: Construction
+    graph: BF14RedIntelSafeOpenGraph
+    node: open
+
+- type: constructionGraph
+  id: BF14RedIntelSafeClosedGraph
+  start: closed
+  graph:
+    - node: closed
+      edges:
+        - to: open
+          completed:
+            - !type:AdminLog
+              message: "The Red team's safe has ben opened"
+            - !type:GivePrototype
+              prototype: BF14IntelRed
+              amount: 1
+            - !type:SpawnPrototype
+              prototype: BF14IntelSafeRedOpen
+              amount: 1
+            - !type:DeleteEntity
+          steps:
+            - tool: Prying
+              doAfter: 5
+
+- type: constructionGraph
+  id: BF14RedIntelSafeOpenGraph
+  start: open
+  graph:
+    - node: open
+      entity: BF14IntelSafeRedOpen
+      edges:
+        - to: closed
+          completed:
+            - !type:AdminLog
+              message: "The Red team's intel has ben recovered"
+            - !type:SpawnPrototype
+              prototype: BF14IntelSafeRedClosed
+            - !type:DeleteEntity
+          steps:
+            - tag: IntelRed
+              doAfter: 5
+    - node: closed
+      edges: []
