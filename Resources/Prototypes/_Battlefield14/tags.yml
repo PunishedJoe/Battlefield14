@@ -161,6 +161,12 @@
   id: ExtendableLadder
 
 - type: Tag
+  id: IntelBlue
+
+- type: Tag
+  id: IntelRed
+
+- type: Tag
   id: ShellMortar81M252
 
 - type: Tag

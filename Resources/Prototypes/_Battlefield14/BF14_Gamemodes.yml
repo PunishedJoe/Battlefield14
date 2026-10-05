@@ -98,21 +98,76 @@
     - TeamDeathMatch
 
 - type: gamePreset
-  id: BF14_TDMHardcore # no respawns
+  id: BF14_FFA
+  alias:
+    - freeforall
+    - ffa
+    - deathmatch
+    - dm
+  name: Free For All
+  description: Fight and win.
+  maxPlayers: 10
+  showInVote: true
+  supportedMaps: BF14MapPoolFFA
+  rules:
+    - DeathMatch31
+
+- type: gamePreset
+  id: BF14_KOTH
+  alias:
+    - kingofthehill
+    - koth
+  name: King Of The Hill
+  description: Capture and hold the central control point.
+  maxPlayers: 20
+  showInVote: true
+  respawnMultiplier: 0.166 # 30 seconds
+  supportedMaps: BF14MapPoolKOTH
+  rules:
+    - Arcade
+
+- type: gamePreset
+  id: BF14_CTF
+  alias:
+    - capturetheflag
+    - ctf
+    - capturetheintel
+  name: Capture The Flag
+  description: Capture the enemy intel and defend yours.
+  maxPlayers: 20
+  showInVote: true
+  respawnMultiplier: 0.166 # 30 seconds
+  supportedMaps: BF14MapPoolCTF
+  rules:
+    - Arcade
+
+- type: gamePreset
+  id: BF14_TDMHardcore # limited respawns
   alias:
     - hardcoreteamdeathmatch
     - teamdeathmatchhardcore
     - hardcoretdm
     - tdmhardcore
-  name: Team DeathMatch (Hardcore)
+  name: Team DeathMatch # (Hardcore) removed the hardcore thing because its the only TDM gamemode we got running right now
   description: Match to the death with your team, no respawns.
   maxPlayers: 20
   showInVote: true
+  respawnMultiplier: 0.333 # 60 seconds
   supportedMaps: BF14MapPoolTDMHardcore
   rules:
     - TeamDeathMatchHardcore
 
 #region game rules
+
+- type: entity
+  id: Arcade
+  parent: BaseGameRule
+  components:
+  - type: KillCalloutRule
+  - type: PointManager
+  - type: MaxTimeRestartRule
+    roundMaxTime: 901 # 15 minutes
+    roundEndDelay: 30
 
 - type: entity
   id: TeamDeathMatch

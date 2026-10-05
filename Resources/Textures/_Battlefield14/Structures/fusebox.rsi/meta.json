@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "license": "",
+    "copyright": "Sprited by WillyBillyGilly for Battlefield14 do not reuse or edit",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "base"
+        }
+    ]
+}

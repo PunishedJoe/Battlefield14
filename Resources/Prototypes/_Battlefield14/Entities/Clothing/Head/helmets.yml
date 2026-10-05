@@ -26,6 +26,41 @@
 
 - type: entity
   parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetUSFAST
+  description: A high cut helmet used by special ops units and larpers.
+  name: FAST helmet
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/fasthelmet.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/fasthelmet.rsi
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
+  id: ClothingHeadHatHelmetUSFASTMandible
+  description: A high cut helmet used by special ops units and larpers. This one has a attached mandible cover that protects your ears and face from sharpnel.
+  name: FAST helmet (mandible)
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Head/Helmets/fasthelmetmandible.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Head/Helmets/fasthelmetmandible.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+      flatReductions:
+        Blunt: 1
+        Slash: 1
+        Piercing: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: ClothingHeadHatHelmetUS
   id: ClothingHeadHatHelmetUSACH
   name: ACH helmet
   components:
