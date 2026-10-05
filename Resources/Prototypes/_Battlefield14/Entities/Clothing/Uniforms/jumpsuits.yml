@@ -383,7 +383,6 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon1.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon1.rsi
-  - type: ArrivalsBlacklist # this is for the pinpointers to work
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformBasePACT ]
