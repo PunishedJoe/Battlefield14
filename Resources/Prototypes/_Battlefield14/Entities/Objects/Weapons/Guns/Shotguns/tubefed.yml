@@ -52,6 +52,11 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M590.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M590.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - map: ["barrelAttachment"]
+      offset: 0.185, 0
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M590.rsi
     slots:
@@ -121,10 +126,11 @@
     mappings:
       barrelAttachment:
       - containerId: attachment_barrel
-        state: bayonet # TODO
+        state: bayonet-m7
         whitelist:
           tags:
           - BF14BayonetM7
+  - type: Appearance
   - type: ExtendDescription
     descriptionList:
       - description: Takes M7 pattern bayonets.

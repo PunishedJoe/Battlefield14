@@ -20,6 +20,7 @@
         Slash: 28 # BF14 22 > 28
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
+    animation: WeaponArcKick # BF14
   - type: Sprite
   - type: Tool
     qualities:
@@ -113,13 +114,14 @@
   - type: ESGunComponentAttachment # BF14
     component:
       - type: AltFireMelee
-        attackType: Heavy
+        attackType: Light
       - type: MeleeWeapon
         damage:
           types:
            Slash: 30
         angle: 1
         wideAnimationRotation: -90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+        animation: WeaponArcKick
         soundHit:
           path: /Audio/Weapons/bladeslice.ogg
 

@@ -124,14 +124,14 @@
       - state: dart
         map: [ "enum.AmmoVisualLayers.Base" ]
   - type: CartridgeAmmo
-    proto: PelletShotgunBF12Gauge_Spread
+    proto: FlechetteShotgunBF12Gauge_Spread
   - type: SpentAmmoVisuals
     state: "dart"
 
 - type: entity
   id: FlechetteShotgunBF12Gauge_Spread
   categories: [ HideSpawnMenu ]
-  parent: PelletShotgunBF12Gauge
+  parent: FlechetteShotgunBF12Gauge
   components:
   - type: ProjectileSpread
     proto: FlechetteShotgunBF12Gauge
