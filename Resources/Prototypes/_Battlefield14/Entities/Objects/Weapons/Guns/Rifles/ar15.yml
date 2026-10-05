@@ -311,6 +311,8 @@
   parent: WeaponRifleUSM4A1
   id: WeaponRifleUSM4A1ACOG
   components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1ACOG.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:

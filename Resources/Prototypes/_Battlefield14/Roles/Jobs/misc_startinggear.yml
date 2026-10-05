@@ -24,6 +24,33 @@
     pocket2: PouchFirstAidFilled
 
 - type: startingGear
+  id: BF14FBIGoonGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPlain
+    ears: ClothingHeadsetAltUS
+    balaclava: ClothingBalaclavaClassicMouthRangerGreen
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    gloves: ClothingHandsGlovesCombat
+    belt: ClothingBeltStationSecurityFilledFBI
+    shoes: ClothingShoesBootsJackFilled
+    pocket2: PouchFirstAidFilled
+
+- type: startingGear
+  id: BF14FBISMGGoonGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPlain
+    ears: ClothingHeadsetAltUS
+    balaclava: ClothingBalaclavaClassicMouthRangerGreen
+    outerClothing: ClothingOuterArmorPlateCarrierTan
+    suitstorage: WeaponSubmachinegunDEMP510
+    gloves: ClothingHandsGlovesCombat
+    belt: ClothingBeltStationSecurityFilledFBISMG
+    shoes: ClothingShoesBootsJackFilled
+    pocket2: PouchFirstAidFilled
+
+#region TDM
+
+- type: startingGear
   id: BF14TDMGearBlue
   equipment:
     id: USMCRiflemanIDCard
@@ -106,7 +133,7 @@
     neck: ClothingNeckIFFBlue
     leftarmband: FlashlightMilitaryUS
     suitstorage: WeaponSniperUSM14EBR
-    pocket1: WeaponPistolUSM1911
+    pocket1: WeaponPistolATGlock20
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -116,8 +143,8 @@
     - Tourniquet
     - BF14PinpointerBlueIntel
     belt:
-    - MagazinePistolM1911
-    - MagazinePistolM1911
+    - MagazinePistolGlock20
+    - MagazinePistolGlock20
     - MagazineRifleM14
     - MagazineRifleM14
     - MagazineRifleM14
@@ -207,7 +234,7 @@
     neck: ClothingNeckIFFRed
     leftarmband: FlashlightMilitaryUS
     suitstorage: WeaponSniperRUSVDS
-    pocket1: WeaponPistolRUTT33
+    pocket1: WeaponPistolATGlock20
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -217,35 +244,10 @@
     - Tourniquet
     - BF14PinpointerRedIntel
     belt:
-    - MagazinePistolTT33
-    - MagazinePistolTT33
+    - MagazinePistolGlock20
+    - MagazinePistolGlock20
     - MagazineSniperSVD
     - MagazineSniperSVD
     - MagazineSniperSVD
     - MagazineSniperSVD
     - MagazineSniperSVD
-
-- type: startingGear
-  id: BF14FBIGoonGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitPlain
-    ears: ClothingHeadsetAltUS
-    balaclava: ClothingBalaclavaClassicMouthRangerGreen
-    outerClothing: ClothingOuterArmorPlateCarrierTan
-    gloves: ClothingHandsGlovesCombat
-    belt: ClothingBeltStationSecurityFilledFBI
-    shoes: ClothingShoesBootsJackFilled
-    pocket2: PouchFirstAidFilled
-
-- type: startingGear
-  id: BF14FBISMGGoonGear
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitPlain
-    ears: ClothingHeadsetAltUS
-    balaclava: ClothingBalaclavaClassicMouthRangerGreen
-    outerClothing: ClothingOuterArmorPlateCarrierTan
-    suitstorage: WeaponSubmachinegunDEMP510
-    gloves: ClothingHandsGlovesCombat
-    belt: ClothingBeltStationSecurityFilledFBISMG
-    shoes: ClothingShoesBootsJackFilled
-    pocket2: PouchFirstAidFilled

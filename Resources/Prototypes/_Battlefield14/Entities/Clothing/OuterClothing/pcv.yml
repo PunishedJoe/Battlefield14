@@ -178,9 +178,6 @@
 - type: entity
   parent: ClothingOuterArmorPCVRecharging
   id: ClothingOuterArmorPCVExtendedRecharging
-  name: powered combat vest
-  suffix: Deathmatch only
-  description: A state-of-the-art combat vest including a powered armour system recharged with a recharging cell, a geiger counter, and internal oxygen supply. # ,and an automatic intravenous morphine injector | WHEN THIS WORKS
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/OuterClothing/Armor/pcvextended.rsi
