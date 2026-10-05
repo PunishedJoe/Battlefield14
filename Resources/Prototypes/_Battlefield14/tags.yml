@@ -194,6 +194,12 @@
   id: MagazineRifleASVAL
 
 - type: Tag
+  id: MagazineRifleFAL
+
+- type: Tag
+  id: MagazineRifleL1A1
+
+- type: Tag
   id: MagazineRifleG3
 
 - type: Tag

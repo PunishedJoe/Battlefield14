@@ -91,11 +91,12 @@
     - tdm
   name: Team DeathMatch
   description: Match to the death with your team.
-  maxPlayers: 10
-  showInVote: false # Disabled because it doesnt work
+  maxPlayers: 15
+  showInVote: true
+  respawnMultiplier: 0.02 # 6 seconds
   supportedMaps: BF14MapPoolTDM
   rules:
-    - TeamDeathMatch
+    - TeamDeathMatchHardcore # whatever
 
 - type: gamePreset
   id: BF14_FFA
@@ -142,17 +143,17 @@
     - Arcade
 
 - type: gamePreset
-  id: BF14_TDMHardcore # limited respawns
+  id: BF14_TDMHardcore # no respawns
   alias:
     - hardcoreteamdeathmatch
     - teamdeathmatchhardcore
     - hardcoretdm
     - tdmhardcore
-  name: Team DeathMatch # (Hardcore) removed the hardcore thing because its the only TDM gamemode we got running right now
+  name: Team DeathMatch (Hardcore)
   description: Match to the death with your team, no respawns.
-  maxPlayers: 20
+  maxPlayers: 15
   showInVote: true
-  respawnMultiplier: 0.333 # 60 seconds
+  respawnMultiplier: 2 # no respawns
   supportedMaps: BF14MapPoolTDMHardcore
   rules:
     - TeamDeathMatchHardcore
