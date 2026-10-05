@@ -16,7 +16,7 @@
   id: BF14GoonGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitCombatSuitDigitalBlack
-    ears: ClothingHeadsetGreyw
+    ears: ClothingHeadsetGrey
     balaclava: ClothingBalaclavaSkiMaskMouthBlack
     outerClothing: ClothingOuterArmorWebVestSec
     belt: ClothingBeltStationSecurityFilledFBI

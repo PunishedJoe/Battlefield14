@@ -102,6 +102,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
     - state: sabot
+    scale: 0.5, 0.5
   - type: Projectile
     damage:
       types:

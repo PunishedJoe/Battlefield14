@@ -17,6 +17,9 @@
             "name": "bolt-open"
         },
         {
+            "name": "bayonet-m7"
+        },
+        {
             "name": "inhand-left",
             "directions": 4
         },
