@@ -34,6 +34,8 @@
     sprite: _Battlefield14/Clothing/Head/Helmets/fasthelmet.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Head/Helmets/fasthelmet.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.95 # high cut
 
 - type: entity
   parent: ClothingHeadHatHelmetUS
@@ -56,8 +58,6 @@
         Blunt: 1
         Slash: 1
         Piercing: 0.5
-  - type: ExplosionResistance
-    damageCoefficient: 0.9
 
 - type: entity
   parent: ClothingHeadHatHelmetUS
