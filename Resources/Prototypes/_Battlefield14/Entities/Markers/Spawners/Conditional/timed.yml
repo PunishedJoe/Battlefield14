@@ -8,9 +8,8 @@
     - type: Sprite
       layers:
         - state: blue
-        - sprite: Mobs/Species/Human/parts.rsi
-          state: full
-        - state: ai
+        - sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/USPmatch.rsi
+          state: icon
     - type: Timer
     - type: TimedSpawner
       prototypes:
@@ -34,9 +33,8 @@
     - type: Sprite
       layers:
         - state: blue
-        - sprite: Mobs/Species/Human/parts.rsi
-          state: full
-        - state: ai
+        - sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5.rsi
+          state: icon-MP5A5
     - type: Timer
     - type: TimedSpawner
       prototypes:
@@ -62,9 +60,8 @@
     - type: Sprite
       layers:
         - state: blue
-        - sprite: Mobs/Species/Human/parts.rsi
-          state: full
-        - state: ai
+        - sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/Benelli.rsi
+          state: icon
     - type: Timer
     - type: TimedSpawner
       prototypes:
@@ -89,12 +86,12 @@
     - type: Sprite
       layers:
         - state: blue
-        - sprite: Mobs/Species/Human/parts.rsi
-          state: full
-        - state: ai
+        - sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+          state: icon-full-CAR15
     - type: Timer
     - type: TimedSpawner
       prototypes:
+        - BF14WeaponCaseLongUSM14
         - BF14WeaponCaseLongUSM16A1
         - BF14WeaponCaseLongUSM16A2
         - BF14WeaponCaseLongUSM16A3
@@ -114,6 +111,8 @@
         - BF14WeaponCaseLongBESCARL
         - BF14WeaponCaseLongBESCARH
         - BF14WeaponCaseLongBEF2000
+        - BF14WeaponCaseLongBEFAL
+        - BF14WeaponCaseLongGBL1A1
         - BF14WeaponCaseLongRUAK74
         - BF14WeaponCaseLongRUAK74M
         - BF14WeaponCaseLongRUAK12
@@ -133,9 +132,8 @@
     - type: Sprite
       layers:
         - state: blue
-        - sprite: Mobs/Species/Human/parts.rsi
-          state: full
-        - state: ai
+        - sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG3.rsi
+          state: icon
     - type: Timer
     - type: TimedSpawner
       prototypes:
@@ -210,12 +208,12 @@
     - type: Sprite
       layers:
         - state: blue
-        - sprite: Mobs/Species/Human/parts.rsi
-          state: full
-        - state: ai
+        - sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
+          state: icon-full-CAR15
     - type: Timer
     - type: TimedSpawner
       prototypes:
+        - BF14WeaponCaseLongUSM14
         - BF14WeaponCaseLongUSM16A1
         - BF14WeaponCaseLongUSM16A2
         - BF14WeaponCaseLongUSM4A1
@@ -238,9 +236,8 @@
     - type: Sprite
       layers:
         - state: blue
-        - sprite: Mobs/Species/Human/parts.rsi
-          state: full
-        - state: ai
+        - sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36.rsi
+          state: icon
     - type: Timer
     - type: TimedSpawner
       prototypes:
@@ -263,9 +260,8 @@
     - type: Sprite
       layers:
         - state: blue
-        - sprite: Mobs/Species/Human/parts.rsi
-          state: full
-        - state: ai
+        - sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+          state: icon-AK74M
     - type: Timer
     - type: TimedSpawner
       prototypes:

@@ -295,6 +295,17 @@
 
 - type: entity
   parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSM14
+  suffix: M14
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleUSM14
+    - id: MagazineRifleM14
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
   id: BF14WeaponCaseLongUSM16A1
   suffix: M16A1
   components:
@@ -595,6 +606,17 @@
     - id: MagazineRifleSTANAG
       amount: 5
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBEFAL
+  suffix: FAL
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBEFAL
+    - id: MagazineRifleFAL
+      amount: 5
+
 #region SMGs, BE
 
 - type: entity
@@ -619,6 +641,17 @@
     contents:
     - id: WeaponRifleGBLeeEnfield
     - id: MagazineRifleLeeEnfield
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongGBL1A1
+  suffix: L1A1
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleGBL1A1
+    - id: MagazineRifleL1A1
       amount: 5
 
 #region Snipers, GB

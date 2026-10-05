@@ -287,3 +287,25 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+
+- type: entity
+  parent: MagazineRifleM14
+  id: MagazineRifleFAL
+  name: "FAL magazine (7.62x51mm)"
+  description: It's a magazine.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleFAL
+      - Magazine
+
+- type: entity
+  parent: MagazineRifleFAL
+  id: MagazineRifleL1A1
+  name: "L1A1 magazine (7.62x51mm)"
+  description: It's a magazine.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleL1A1
+      - Magazine

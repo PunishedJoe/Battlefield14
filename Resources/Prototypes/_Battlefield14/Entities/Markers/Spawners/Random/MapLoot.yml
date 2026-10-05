@@ -37,7 +37,6 @@
       - WeaponRifleUSAR15
       - WeaponSubmachinegunDEMP5A5
       - WeaponSubmachinegunUSMAC10
-      - WeaponSubmachinegunUSMAC10Supp
       - WeaponSubmachinegunATMP9
       - WeaponRifleUSM16A2
       - WeaponShotgunUSM590Buckshot
@@ -60,11 +59,12 @@
     prototypes:
       - WeaponRifleBESCARH
       - WeaponRifleBESCARL
+      - WeaponRifleBEFAL
       - WeaponRifleDEG3A3
       - WeaponRifleDEG36
       - WeaponRifleUSM16A4
-      - WeaponRifleUSM14
       - WeaponShotgunUSM870
+      - WeaponSubmachinegunUSMAC10Supp
       - WeaponSubmachinegunDEMP7
       - WeaponSubmachinegunDEMP5SD6
     chance: 1
@@ -109,7 +109,7 @@
       - MagazineBox556x45
       - MagazineBox9x19
       - ShellBoxBF12GaugeBuckshot
-      - MagazineRifleM14
+      - MagazineRifleFAL
       - MagazineRifleSTANAG
       - MagazineRifleG36
       - MagazineSubmachinegunMP5
@@ -139,6 +139,7 @@
       - MagazineRifleG36
       - MagazineRifleG3
       - MagazineRifleSCARH
+      - MagazineRifleFAL
       - MagazineSubmachinegunMP5
       - MagazineSubmachinegunMAC10
       - FlashbangGrenadeUSM84

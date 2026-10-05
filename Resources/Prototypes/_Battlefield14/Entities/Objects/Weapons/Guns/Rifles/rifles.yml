@@ -20,7 +20,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M14.rsi
   - type: Item
     shape:
-    - 0,0,5,2
+    - 0,0,4,2
   - type: GunWieldBonus
     minAngle: -20
     maxAngle: -40
@@ -330,6 +330,89 @@
       - description: Takes STANAG magazines. It has a laser sight attached which improves recoil recovery.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  name: FN FAL
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponRifleBEFAL
+  description: The right arm of the free world, would've fired an intermediate cartridge and been the standard service rifle of NATO if it weren't for America, and maybe Germany.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-wood
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -40
+  - type: Gun
+    fireRate: 5
+    minAngle: 20
+    maxAngle: 60
+    angleIncrease: 4
+    angleDecay: 16
+    projectileSpeed: 50
+    soundGunshot:
+      collection: BF_FAL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+      - FullAuto
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_rack.ogg
+      params:
+        volume: -5
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chforward.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chback.ogg
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleFAL
+        insertSound:
+          path:  /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magin.ogg
+          params:
+            volume: -6
+        ejectSound:
+          path: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magout.ogg
+          params:
+            volume: -6
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleFAL
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
 
 #region Germany
 
@@ -847,6 +930,54 @@
     price: 3000
   - type: UseDelay
     delay: 0.2
+
+- type: entity
+  name: L1A1
+  parent: WeaponRifleBEFAL
+  id: WeaponRifleGBL1A1
+  description: The commonwealth variation of the FN FAL, removing the full auto capability and manufactured using imperial measurements instead of metric, meaning it requires its own proprietary magazines.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/L1A1.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-black
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/L1A1.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleL1A1
+        insertSound:
+          path:  /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magin.ogg
+          params:
+            volume: -6
+        ejectSound:
+          path: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magout.ogg
+          params:
+            volume: -6
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleL1A1
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
 
 #region Rifles - RU
 

@@ -4,9 +4,12 @@
   - BF14NavBouy
 
 - type: gameMapPool
-  id: BF14MapPoolTDM
+  id: BF14MapPoolTDM # Should have respawning weapon spawners, last 3 don't
   maps:
   - BF14DeathAsteroid
+  - BF14ProvingGroundTDM
+  - BF14TurbineTDM
+  - BF14TeufortTDM
 
 - type: gameMapPool
   id: BF14MapPoolFFA
