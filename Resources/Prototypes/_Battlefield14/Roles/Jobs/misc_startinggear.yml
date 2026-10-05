@@ -8,7 +8,7 @@
     outerClothing: ClothingOuterArmorKevlarVest
     shoes: ClothingShoesBootsJackFilled
     neck: FlashlightMilitaryUS
-    suitstorage: WeaponRifleUSM16A3
+    suitstorage: WeaponRifleUSM16A2
     pocket1: PouchMagsLargeFilledSTANAG
     pocket2: PouchFirstAidFilled
 
@@ -39,7 +39,7 @@
     neck: ClothingNeckIFFBlue
     leftarmband: FlashlightMilitaryUS
     suitstorage: WeaponRifleDEG36K
-    pocket1: WeaponPistolATGlock20
+    pocket1: WeaponPistolATGlock17
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -49,8 +49,8 @@
     - Tourniquet
     - BF14PinpointerBlueIntel
     belt:
-    - MagazinePistolGlock20
-    - MagazinePistolGlock20
+    - MagazinePistolGlock17
+    - MagazinePistolGlock17
     - MagazineRifleG36
     - MagazineRifleG36
     - MagazineRifleG36
