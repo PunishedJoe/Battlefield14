@@ -294,6 +294,28 @@
   name: "FAL magazine (7.62x51mm)"
   description: It's a magazine.
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/FAL.rsi
+  - type: Tag
+    tags:
+      - MagazineRifleFAL
+      - Magazine
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a FAL pattern locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  parent: MagazineRifleFAL
+  id: MagazineRifleFAL30
+  name: "30 round FAL magazine (7.62x51mm)"
+  description: It's an extended magazine.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/FAL30.rsi
+  - type: BallisticAmmoProvider
+    capacity: 30
   - type: Tag
     tags:
       - MagazineRifleFAL
@@ -303,9 +325,14 @@
   parent: MagazineRifleFAL
   id: MagazineRifleL1A1
   name: "L1A1 magazine (7.62x51mm)"
-  description: It's a magazine.
+  description: It's a magazine, but manufactured with imperial measurements, not compatible with the FAL.
   components:
   - type: Tag
     tags:
       - MagazineRifleL1A1
       - Magazine
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a L1A1 pattern locking system.
+        color: "#4f94ad"
+        requireDetailRange: true

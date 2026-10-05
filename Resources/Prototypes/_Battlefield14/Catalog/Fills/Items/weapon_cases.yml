@@ -617,6 +617,17 @@
     - id: MagazineRifleFAL
       amount: 5
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongBEFALPara
+  suffix: FAL PARA
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleBEFALPara
+    - id: MagazineRifleFAL
+      amount: 5
+
 #region SMGs, BE
 
 - type: entity
