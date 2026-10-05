@@ -8,33 +8,6 @@
   },
   "states": [
     {
-      "name": "icon-wood"
-    },
-    {
-      "name": "icon-black"
-    },
-    {
-      "name": "icon-para"
-    },
-    {
-      "name": "base"
-    },
-    {
-      "name": "bolt-open"
-    },
-    {
-      "name": "mag-0"
-    },
-    {
-      "name": "furniture-wood"
-    },
-    {
-      "name": "furniture-black"
-    },
-    {
-      "name": "furniture-para"
-    },
-    {
       "name": "inhand-left",
       "directions": 4
     },

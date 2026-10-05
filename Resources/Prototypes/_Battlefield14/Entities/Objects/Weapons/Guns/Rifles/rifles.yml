@@ -413,6 +413,33 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes FAL pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: FAL PARA
+  parent: WeaponRifleBEFAL
+  id: WeaponRifleBEFALPara
+  description: A cut down FAL with a ~16 inch barrel and folding stock, for paratroopers.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-para
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FALPara.rsi
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FALPara.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    state: icon-para
 
 #region Germany
 
@@ -939,6 +966,9 @@
   components:
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/L1A1.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    state: icon-black
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
     layers:
@@ -953,6 +983,8 @@
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -978,6 +1010,11 @@
         whitelist:
           tags:
             - BF_CartridgeRifle762x51
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes L1A1 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 #region Rifles - RU
 

@@ -60,6 +60,7 @@
       - WeaponRifleBESCARH
       - WeaponRifleBESCARL
       - WeaponRifleBEFAL
+      - WeaponRifleBEFALPara
       - WeaponRifleDEG3A3
       - WeaponRifleDEG36
       - WeaponRifleUSM16A4
@@ -140,6 +141,7 @@
       - MagazineRifleG3
       - MagazineRifleSCARH
       - MagazineRifleFAL
+      - MagazineRifleFAL30
       - MagazineSubmachinegunMP5
       - MagazineSubmachinegunMAC10
       - FlashbangGrenadeUSM84
