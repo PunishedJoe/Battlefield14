@@ -26,7 +26,7 @@
             TDMBluePointman: [ -1, -1 ]
             TDMBlueMarksman: [ -1, -1 ]
         - type: ConquestManager
-          maxTickets: 500
+          maxTickets: 300
         - type: CEStationZLevels
           mapsBelow:
             - /Maps/_Battlefield14/Planets/caves.yml
