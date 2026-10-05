@@ -263,7 +263,8 @@
 
 - type: entity
   parent: WeaponPistolM9
-  id: WeaponPistolM9ITSupp
+  id: WeaponPistolITM9Supp
+  suffix: SUPP.
   components:
   - type: ItemSlots
     slots:

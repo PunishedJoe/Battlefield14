@@ -90,8 +90,46 @@
     wideAnimationRotation: -90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
     soundHit:
       collection: MetalThud
+  - type: ContainerContainer # BAYONET STUFF
+    containers:
+      attachment_barrel: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - BF14BayonetM7
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14BayonetM7
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet # TODO
+        whitelist:
+          tags:
+          - BF14BayonetM7
   - type: ExtendDescription
     descriptionList:
+      - description: Takes M7 pattern bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
       - description: This weapon can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true

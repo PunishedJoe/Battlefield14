@@ -38,19 +38,7 @@
   id: MagazinePistolPM # down to here
 
 - type: Tag
-  id: BF_CartridgePistol50AE
-
-- type: Tag
-  id: BF_CartridgePistol762x25
-
-- type: Tag
-  id: BF_CartridgePistol9x18
-
-- type: Tag
   id: BF_CartridgeGrenade25x40
-
-- type: Tag
-  id: BF_CartridgePistol45ACP
 
 - type: Tag
   id: BF_CartridgePDW46x30
@@ -60,6 +48,27 @@
 
 - type: Tag
   id: BF_CartridgePDW9x21
+
+- type: Tag
+  id: BF_CartridgePistol45ACP
+
+- type: Tag
+  id: BF_CartridgePistol50AE
+
+- type: Tag
+  id: BF_CartridgePistol762x25
+
+- type: Tag
+  id: BF_CartridgePistol9x18
+
+- type: Tag
+  id: BF_CartridgePistol9x19
+
+- type: Tag
+  id: BF_CartridgePistol10x25
+
+- type: Tag
+  id: BF_CartridgePistol357
 
 - type: Tag
   id: BF_CartridgeRifle127x55
@@ -96,15 +105,6 @@
 
 - type: Tag
   id: BF_CartridgeRifle9x39
-
-- type: Tag
-  id: BF_CartridgePistol9x19
-
-- type: Tag
-  id: BF_CartridgePistol10x25
-
-- type: Tag
-  id: BF_CartridgePistol357
 
 - type: Tag
   id: BF_CartridgeShotgun12Gauge
@@ -159,6 +159,12 @@
 
 - type: Tag
   id: ExtendableLadder
+
+- type: Tag
+  id: IntelBlue
+
+- type: Tag
+  id: IntelRed
 
 - type: Tag
   id: ShellMortar81M252
@@ -389,3 +395,6 @@
 
 - type: Tag
   id: BF14Pistol9x19mmSuppressor
+
+- type: Tag
+  id: BF14BayonetM7

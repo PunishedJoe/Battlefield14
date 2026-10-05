@@ -452,7 +452,7 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolM9ITSupp
+      - WeaponPistolITM9Supp
   - type: StorageFill
     contents:
       - id: Handcuffs
@@ -470,7 +470,7 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolM9ITSupp
+      - WeaponPistolITM9Supp
   - type: StorageFill
     contents:
       - id: Handcuffs
