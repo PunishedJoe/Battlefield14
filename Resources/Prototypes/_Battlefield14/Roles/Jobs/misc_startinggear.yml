@@ -39,7 +39,7 @@
     neck: ClothingNeckIFFBlue
     leftarmband: FlashlightMilitaryUS
     suitstorage: WeaponRifleDEG36K
-    pocket1: WeaponPistolATGlock17
+    pocket1: WeaponPistolATGlock20
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -49,8 +49,8 @@
     - Tourniquet
     - BF14PinpointerBlueIntel
     belt:
-    - MagazinePistolGlock17
-    - MagazinePistolGlock17
+    - MagazinePistolGlock20
+    - MagazinePistolGlock20
     - MagazineRifleG36
     - MagazineRifleG36
     - MagazineRifleG36
@@ -140,7 +140,7 @@
     neck: ClothingNeckIFFRed
     leftarmband: FlashlightMilitaryAlt
     suitstorage: WeaponRifleRUAK74M
-    pocket1: WeaponPistolRUSR1MP
+    pocket1: WeaponPistolATGlock20
     pocket2: PouchFirstAidFilled
   storage:
     back:
@@ -150,8 +150,8 @@
     - Tourniquet
     - BF14PinpointerRedIntel
     belt:
-    - MagazinePistolSR1MP
-    - MagazinePistolSR1MP
+    - WeaponPistolATGlock20
+    - WeaponPistolATGlock20
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
     - MagazineRifleAK74Black
