@@ -110,6 +110,9 @@
             "name": "stock-cag"
         },
         {
+            "name": "stock-UUK"
+        },
+        {
             "name": "stock-folding"
         },
         {
@@ -132,6 +135,9 @@
         },
         {
             "name": "handguard-cag"
+        },
+        {
+            "name": "handguard-UUK"
         },
         {
             "name": "handguard-ak203"
@@ -170,10 +176,16 @@
             "name": "grip-cag"
         },
         {
+            "name": "grip-UUK"
+        },
+        {
             "name": "grip-ak203"
         },
         {
             "name": "foregrip-polymer"
+        },
+        {
+            "name": "foregrip-polymerblack"
         },
         {
             "name": "foregrip-cag"
@@ -188,6 +200,9 @@
             "name": "collimator-1p87"
         },
         {
+            "name": "collimator-1p87black"
+        },
+        {
             "name": "scope-lpvo-cag"
         },
         {
@@ -195,6 +210,9 @@
         },
         {
             "name": "supp"
+        },
+        {
+            "name": "bayonet-6h3"
         }
     ]
 }

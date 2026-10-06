@@ -93,7 +93,7 @@
       entries:
       - id: RiotBulletShield
         amount: 3
-      - id: CombatKnife
+      - id: FHKnife6h4
         amount: 10
       - id: JetpackBlackFilled
         amount: 10
@@ -121,6 +121,8 @@
         amount: 1
       - id: MagazineSniperSVD
         amount: 3
+      - id: FHKnife6h3
+        amount: 5
 
 #region gear
 
