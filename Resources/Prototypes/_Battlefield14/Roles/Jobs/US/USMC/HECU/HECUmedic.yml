@@ -50,10 +50,11 @@
     head: ClothingHeadHatHelmetUSUrban
     eyes: ClothingEyesHudMedicalBF
     outerClothing: ClothingOuterArmorPCV
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJack
     gloves: ClothingHandsGlovesLatex
     back: ClothingBackpackMercenary
     suitstorage: WeaponSubmachinegunDEMP5A5
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     pocket1: PouchMagsPistolLargeFilledMP5
     pocket2: PouchGrenadesFilledUSMCScout
     leftarmband: Tourniquet

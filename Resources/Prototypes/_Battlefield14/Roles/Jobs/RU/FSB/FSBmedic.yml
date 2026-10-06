@@ -60,7 +60,7 @@
     suitstorage: WeaponSubmachinegunRUSR2MP
     pocket1: PouchMagsPistolLargeFilledSR2MP
     pocket2: PouchGrenadesFilledVDVScout
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:
@@ -94,7 +94,7 @@
     suitstorage: WeaponSubmachinegunRUSR2MP
     pocket1: PouchMagsPistolLargeFilledSR2MP
     pocket2: PouchGrenadesFilledVDVScout
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:

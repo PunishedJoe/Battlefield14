@@ -94,6 +94,11 @@
         animation: WeaponArcKick
         soundHit:
           path: /Audio/Weapons/bladeslice.ogg
+      - type: Tool
+        qualities:
+        - Cutting
+        useSound:
+          path: /Audio/Items/wirecutter.ogg
 
 - type: entity
   name: 6h4 bayonet
@@ -123,6 +128,11 @@
         animation: WeaponArcKick
         soundHit:
           path: /Audio/Weapons/bladeslice.ogg
+      - type: Tool
+        qualities:
+        - Cutting
+        useSound:
+          path: /Audio/Items/wirecutter.ogg
 
 - type: entity
   name: vz.58 bayonet
@@ -133,6 +143,30 @@
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Melee/bayonet.rsi
     state: vz58
+  - type: Tag
+    tags:
+    - CombatKnife
+    - Knife
+    - BF14Bayonetvz58
+  - type: ESGunAttachment # BF14
+  - type: ESGunComponentAttachment # BF14
+    component:
+      - type: AltFireMelee
+        attackType: Light
+      - type: MeleeWeapon
+        damage:
+          types:
+           Slash: 30
+        angle: 1
+        wideAnimationRotation: -90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+        animation: WeaponArcKick
+        soundHit:
+          path: /Audio/Weapons/bladeslice.ogg
+      - type: Tool
+        qualities:
+        - Cutting
+        useSound:
+          path: /Audio/Items/wirecutter.ogg
 
 - type: entity
   name: M7 bayonet
@@ -224,6 +258,5 @@
     state: taiga
   - type: Tag # BF14
     tags:
-    - CombatKnife
-    - Knife
+    - BF14KnifeTaiga
     - Machete

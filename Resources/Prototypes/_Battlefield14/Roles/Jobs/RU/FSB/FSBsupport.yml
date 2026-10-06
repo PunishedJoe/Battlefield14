@@ -59,7 +59,7 @@
     suitstorage: WeaponGrenadeLauncherRUGM94
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledVDVSupport
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:
@@ -91,7 +91,7 @@
     suitstorage: WeaponGrenadeLauncherRUGM94
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledVDVSupport
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:

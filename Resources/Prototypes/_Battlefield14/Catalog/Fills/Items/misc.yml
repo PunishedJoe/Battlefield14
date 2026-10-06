@@ -15,6 +15,33 @@
       amount: 2
 
 - type: entity
+  id: DiskCaseFilledRandomMusicProp
+  parent: DiskCase
+  name: CD case
+  description: A case for storing a CD.
+  suffix: Filled, random music album prop
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14MusicDiskRandomProp
+
+- type: entity
+  id: ShipRepairKitFilled
+  parent: ShipRepairKit
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14ToolShipRepairDevice
+    - id: ShipRepairDeviceAmmo
+    - id: Crowbar
+    - id: Wrench
+    - id: WelderMini
+    - id: Flare
+
+#region thigh holster
+
+- type: entity
   id: ClothingArmbandThighHolsterFilledUS
   parent: ClothingArmbandThighHolster
   suffix: Filled, US, M9
@@ -74,25 +101,7 @@
       item:
       - WeaponPistolRevolverRUMP412
 
-- type: entity
-  id: ClothingArmbandSheathKnifePolymerFilled
-  parent: ClothingArmbandSheathKnifePolymer
-  suffix: Filled
-  components:
-  - type: ContainerFill
-    containers:
-      item:
-      - CombatKnife
-
-- type: entity
-  id: ClothingArmbandSheathKnifePolymerFilledTaiga
-  parent: ClothingArmbandSheathKnifePolymer
-  suffix: Filled
-  components:
-  - type: ContainerFill
-    containers:
-      item:
-      - FHKnifeTaiga
+#region combat boots
 
 - type: entity
   id: ClothingShoesBootsJackFilledUSMC
@@ -124,27 +133,64 @@
       item:
       - FHKnife6h4
 
-- type: entity
-  id: DiskCaseFilledRandomMusicProp
-  parent: DiskCase
-  name: CD case
-  description: A case for storing a CD.
-  suffix: Filled, random music album prop
-  components:
-  - type: StorageFill
-    contents:
-    - id: BF14MusicDiskRandomProp
+#region knife sheaths
 
 - type: entity
-  id: ShipRepairKitFilled
-  parent: ShipRepairKit
+  id: ClothingArmbandSheathKnifePolymerFilled
+  parent: ClothingArmbandSheathKnifePolymer
   suffix: Filled
   components:
-  - type: StorageFill
-    contents:
-    - id: BF14ToolShipRepairDevice
-    - id: ShipRepairDeviceAmmo
-    - id: Crowbar
-    - id: Wrench
-    - id: WelderMini
-    - id: Flare
+  - type: ContainerFill
+    containers:
+      item:
+      - CombatKnife
+
+- type: entity
+  id: BF14ClothingArmbandSheathKnifeM7
+  parent: BF14ClothingArmbandSheathKnifeM7Empty
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - FHKnifeM7
+
+- type: entity
+  id: BF14ClothingArmbandSheathKnife6h3
+  parent: BF14ClothingArmbandSheathKnife6h3Empty
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - FHKnife6h3
+
+- type: entity
+  id: BF14ClothingArmbandSheathKnife6h4
+  parent: BF14ClothingArmbandSheathKnife6h4Empty
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - FHKnife6h4
+
+- type: entity
+  id: BF14ClothingArmbandSheathKnifevz58
+  parent: BF14ClothingArmbandSheathKnifevz58Empty
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - FHKnifevz58
+
+- type: entity
+  id: BF14ClothingArmbandSheathKnifeTaiga
+  parent: BF14ClothingArmbandSheathKnifeTaigaEmpty
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - FHKnifeTaiga
