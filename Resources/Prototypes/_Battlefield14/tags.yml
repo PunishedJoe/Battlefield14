@@ -397,10 +397,16 @@
 - type: Tag
   id: Cartridge43x30mmChemicalSmoke
 
+- type: Tag
+  id: BF14KnifeTaiga
+
 # Attachments
 
 - type: Tag
   id: BF14Pistol9x19mmSuppressor
+
+- type: Tag
+  id: BF14BayonetM7
 
 - type: Tag
   id: BF14Bayonet6h3
@@ -409,4 +415,4 @@
   id: BF14Bayonet6h4
 
 - type: Tag
-  id: BF14BayonetM7
+  id: BF14Bayonetvz58

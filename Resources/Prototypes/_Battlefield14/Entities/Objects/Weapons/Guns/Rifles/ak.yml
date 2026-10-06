@@ -148,6 +148,10 @@
       - state: foregrip-polymerblack
       - state: mag-ak74black-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: 1p87
 
 - type: entity
   name: AKS-74u

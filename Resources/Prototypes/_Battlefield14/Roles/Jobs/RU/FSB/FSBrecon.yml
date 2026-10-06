@@ -59,7 +59,7 @@
     suitstorage: WeaponRifleRUAKS74UB
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledVDVScout
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:
@@ -93,7 +93,7 @@
     suitstorage: WeaponRifleRUAKS74UB
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledVDVScout
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:

@@ -50,9 +50,10 @@
     mask: ClothingMaskGasM40Green
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorPCV
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpackMercenary
     suitstorage: WeaponRifleUSCAR15
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSARifleman
     leftarmband: Tourniquet
