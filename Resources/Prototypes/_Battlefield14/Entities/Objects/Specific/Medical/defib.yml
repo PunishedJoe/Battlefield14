@@ -19,11 +19,11 @@
   - type: Defibrillator
     zapHeal:
       types:
-        Asphyxiation: -40
-        Blunt: -20
-        Slash: -20
-        Piercing: -20
-        Heat: -25
+        Asphyxiation: -80
+        Blunt: -40
+        Slash: -40
+        Piercing: -40
+        Heat: -40
         Shock: -20
   - type: MeleeWeapon
     damage:

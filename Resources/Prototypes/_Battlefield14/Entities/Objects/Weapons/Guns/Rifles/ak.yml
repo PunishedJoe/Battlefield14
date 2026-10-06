@@ -130,6 +130,26 @@
     zeroVisible: true
 
 - type: entity
+  name: AK-74M UUK
+  parent: WeaponRifleRUAK74M
+  id: WeaponRifleRUAK74MUUK
+  description: Universal Upgrade Kit, a kind of in-between point of the AK-74M and AK-12.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-UUK
+      - state: grip-UUK
+      - state: handguard-UUK
+      - state: barrel-ak74
+      - state: collimator-1p87black
+      - state: foregrip-polymerblack
+      - state: mag-ak74black-0
+        map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
   name: AKS-74u
   parent: WeaponRifleRUAK74
   id: WeaponRifleRUAKS74U
@@ -466,7 +486,7 @@
     minAngle: 31
     maxAngle: 45
     angleIncrease: 1.5
-#    angleDecay: 16
+    angleDecay: 16
     availableModes:
     - SemiAuto
     - FullAuto
@@ -525,6 +545,8 @@
       - state: grip-ak74black
       - state: handguard-ak74black
       - state: barrel-ak74
+      - map: ["barrelAttachment"]
+        offset: 0.8, 0.1
       - state: ironsight-ak74
       - state: mag-ak103-0
         map: ["enum.GunVisualLayers.Mag"]
@@ -549,8 +571,51 @@
         whitelist:
           tags:
             - BF_CartridgeRifle762x39
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
   - type: MagazineVisuals
     magState: mag-ak103
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonet6h3
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-6h3
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Takes 6h3 pattern bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: AK-203

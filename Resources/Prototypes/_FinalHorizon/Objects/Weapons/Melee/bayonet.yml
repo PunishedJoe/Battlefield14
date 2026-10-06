@@ -75,6 +75,25 @@
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Melee/bayonet.rsi
     state: 6h3
+  - type: Tag
+    tags:
+    - CombatKnife
+    - Knife
+    - BF14Bayonet6h3
+  - type: ESGunAttachment # BF14
+  - type: ESGunComponentAttachment # BF14
+    component:
+      - type: AltFireMelee
+        attackType: Light
+      - type: MeleeWeapon
+        damage:
+          types:
+           Slash: 30
+        angle: 1
+        wideAnimationRotation: -90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+        animation: WeaponArcKick
+        soundHit:
+          path: /Audio/Weapons/bladeslice.ogg
 
 - type: entity
   name: 6h4 bayonet
@@ -85,6 +104,25 @@
   - type: Sprite
     sprite: _FinalHorizon/Objects/Weapons/Melee/bayonet.rsi
     state: 6h4
+  - type: Tag
+    tags:
+    - CombatKnife
+    - Knife
+    - BF14Bayonet6h4
+  - type: ESGunAttachment # BF14
+  - type: ESGunComponentAttachment # BF14
+    component:
+      - type: AltFireMelee
+        attackType: Light
+      - type: MeleeWeapon
+        damage:
+          types:
+           Slash: 30
+        angle: 1
+        wideAnimationRotation: -90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
+        animation: WeaponArcKick
+        soundHit:
+          path: /Audio/Weapons/bladeslice.ogg
 
 - type: entity
   name: vz.58 bayonet
