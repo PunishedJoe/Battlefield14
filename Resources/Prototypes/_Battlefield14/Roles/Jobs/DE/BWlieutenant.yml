@@ -45,7 +45,7 @@
 - type: startingGear
   id: BWLieutenantGear
   equipment:
-    id: BWSquadLeaderPDA
+    id: BWLieutenantPDA
     ears: ClothingHeadsetAltDECommand
     belt: ClothingBeltMilitaryWebbingDEFilledG28
     jumpsuit: ClothingUniformJumpsuitCamoDEFlecktarn

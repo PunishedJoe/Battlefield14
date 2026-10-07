@@ -665,6 +665,19 @@
     - id: MagazineRifleL1A1
       amount: 5
 
+#region Rifles, CZ
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongCZVZ58
+  suffix: vz. 58
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleCZVZ58
+    - id: MagazineRifleVZ58
+      amount: 5
+
 #region Snipers, GB
 
 - type: entity
