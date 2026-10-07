@@ -224,22 +224,19 @@
   id: MagazineRifleM14
 
 - type: Tag
-  id: MagazineBeltBoxM240
-
-- type: Tag
-  id: MagazineBeltBoxM249
-
-- type: Tag
-  id: MagazineBeltBoxM60
-
-- type: Tag
   id: MagazineRifleM30MRC
 
 - type: Tag
   id: MagazineRifleM41A
 
 - type: Tag
-  id: MagazineSniperM40A5
+  id: MagazineRifleVZ58
+
+- type: Tag
+  id: MagazineBeltBoxM240
+
+- type: Tag
+  id: MagazineBeltBoxM249
 
 - type: Tag
   id: MagazineBeltBoxMG3
@@ -251,10 +248,16 @@
   id: MagazineBeltBoxMK48
 
 - type: Tag
+  id: MagazineBeltBoxM60
+
+- type: Tag
   id: MagazineBeltBoxPKM
 
 - type: Tag
   id: MagazineSniperM107
+
+- type: Tag
+  id: MagazineSniperM40A5
 
 - type: Tag
   id: MagazineSniperSVD

@@ -94,15 +94,10 @@
         animation: WeaponArcKick
         soundHit:
           path: /Audio/Weapons/bladeslice.ogg
-      - type: Tool
-        qualities:
-        - Cutting
-        useSound:
-          path: /Audio/Items/wirecutter.ogg
 
 - type: entity
   name: 6h4 bayonet
-  parent: FHKnifeBase
+  parent: FHKnife6h3
   id: FHKnife6h4
   description: An AK74 bayonet with two sharp edges near the point.
   components:
@@ -114,28 +109,9 @@
     - CombatKnife
     - Knife
     - BF14Bayonet6h4
-  - type: ESGunAttachment # BF14
-  - type: ESGunComponentAttachment # BF14
-    component:
-      - type: AltFireMelee
-        attackType: Light
-      - type: MeleeWeapon
-        damage:
-          types:
-           Slash: 30
-        angle: 1
-        wideAnimationRotation: -90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
-        animation: WeaponArcKick
-        soundHit:
-          path: /Audio/Weapons/bladeslice.ogg
-      - type: Tool
-        qualities:
-        - Cutting
-        useSound:
-          path: /Audio/Items/wirecutter.ogg
 
 - type: entity
-  name: vz.58 bayonet
+  name: vz. 58 bayonet
   parent: FHKnifeBase
   id: FHKnifevz58
   description: A slim and sharp, but somewhat fragile Czechoslovakian bayonet.

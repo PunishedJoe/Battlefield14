@@ -6378,7 +6378,7 @@ entities:
       parent: 1
     - type: Physics
       canCollide: False
-- proto: ClothingMaskGasRussia
+- proto: ClothingMaskGasGP7VM
   entities:
   - uid: 1285
     components:

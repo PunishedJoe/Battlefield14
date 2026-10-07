@@ -97,6 +97,18 @@
     sprite: _Battlefield14/Clothing/Mask/M40green.rsi
 
 - type: entity
+  parent: ClothingMaskGasM40
+  id: ClothingMaskGasGP7VM
+  name: GP-7VM civilian mask
+  description: Effective against stuff you reaally dont want in your body. Developed by the soviet union to protect civilian from NBC threats.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Mask/GP7VM.rsi
+    scale: 0.7, 0.7
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Mask/GP7VM.rsi
+
+- type: entity
   parent: ClothingBaseGasMask
   id: ClothingMaskGasRussia # yeah no idea what its actually called, the file from c13 was literally just 'russiamask', so im keeping this generic so it can be easily renamed
   name: GP-21 gas mask # a complete guess based off the shape

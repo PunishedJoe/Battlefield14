@@ -1,3 +1,4 @@
+#region NATO
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleSCARH
@@ -216,50 +217,6 @@
 
 - type: entity
   parent: BaseMagazineRifle
-  id: MagazineRifleASH12
-  name: "ASH-12 magazine (12.7x55mm)"
-  description: Big and chunky mag, holding 20 12.7x55 bullets for eradicating "cag operators" in CQB with Russian brutality.
-  components:
-  - type: Tag
-    tags:
-      - MagazineRifleASH12
-      - Magazine
-  - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle127x55
-    mayTransfer: true
-    whitelist:
-      tags:
-        - BF_CartridgeRifle127x55
-    capacity: 20
-  - type: Sprite
-    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/7.62x51mm/7.62x51mm_mag.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 3
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  parent: MagazineRifleASH12
-  id: MagazineRifleASH12Duplex
-  name: "ASH-12 magazine (12.7x55mm duplex)"
-  description: Apparantly one .50 caliber projectile wasn't enough, and ivan decided to put two in the same bullet. Each projectile does less damage on its own but they do more together.
-  components:
-  - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle127x55Duplex # thanks to the cartridge firing a spread this means the gun is perfectly accurate, save for the actual spread of the rounds of course
-    mayTransfer: true
-    whitelist:
-      tags:
-        - BF_CartridgeRifle127x55
-    capacity: 20
-
-- type: entity
-  parent: BaseMagazineRifle
   id: MagazineRifleLeeEnfield
   name: "Lee-Enfield magazine (.303 British)"
   description: It's a magazine for the Lee-Enfield series of rifles, chambered in .303 british.
@@ -336,3 +293,67 @@
       - description: Has a L1A1 pattern locking system.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  parent: MagazineRifleAKM
+  id: MagazineRifleVZ58
+  name: "vz. 58 magazine (7.62x39)"
+  description: You are NOT the AK magazine!
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleVZ58
+      - Magazine
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/VZ58.rsi
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a vz. 58 pattern locking system.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+#region PACT
+
+- type: entity
+  parent: BaseMagazineRifle
+  id: MagazineRifleASH12
+  name: "ASH-12 magazine (12.7x55mm)"
+  description: Big and chunky mag, holding 20 12.7x55 bullets for eradicating "cag operators" in CQB with Russian brutality.
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleASH12
+      - Magazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle127x55
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle127x55
+    capacity: 20
+  - type: Sprite
+    sprite: _Mono/Objects/Weapons/Guns/Ammunition/Magazine/7.62x51mm/7.62x51mm_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: MagazineRifleASH12
+  id: MagazineRifleASH12Duplex
+  name: "ASH-12 magazine (12.7x55mm duplex)"
+  description: Apparantly one .50 caliber projectile wasn't enough, and ivan decided to put two in the same bullet. Each projectile does less damage on its own but they do more together.
+  components:
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgeRifle127x55Duplex # thanks to the cartridge firing a spread this means the gun is perfectly accurate, save for the actual spread of the rounds of course
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgeRifle127x55
+    capacity: 20
