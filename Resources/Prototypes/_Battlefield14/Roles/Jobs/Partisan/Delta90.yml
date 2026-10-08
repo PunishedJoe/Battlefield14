@@ -46,8 +46,9 @@
     ears: ClothingHeadsetAltUS
     jumpsuit: ClothingUniformJumpsuitCamoUSTigerstripe
     outerClothing: ClothingOuterArmorKevlarVest
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     belt: ClothingBeltMilitaryWebbingUS
-    shoes: ClothingShoesBootsJackFilledUSMC
+    shoes: ClothingShoesBootsJack
     rightarmband: FlashlightMilitaryUS
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenades

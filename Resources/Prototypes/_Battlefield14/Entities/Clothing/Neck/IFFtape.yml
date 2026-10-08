@@ -67,6 +67,10 @@
     sprite: _Battlefield14/Clothing/Neck/IFFtapeStGeorge.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Neck/IFFtapeStGeorge.rsi
+    slots: [neck, HELMETCOVER]
+    clothingVisuals:
+      helmetcover:
+      - state: equipped-HELMETCOVER
 
 - type: entity
   parent: [ClothingNeckBase , BaseFoldable]

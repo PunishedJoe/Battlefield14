@@ -47,7 +47,7 @@
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMedicalEMTFilledBF14
     eyes: ClothingEyesHudMedicalBF
-    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+#    jumpsuit:: ClothingUniformJumpsuitCamoUSMarpatDesert
     head: ClothingHeadHatHelmetUSACH
     outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilledUSMC

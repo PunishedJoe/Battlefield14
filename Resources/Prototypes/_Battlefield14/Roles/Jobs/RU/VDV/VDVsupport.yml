@@ -43,7 +43,7 @@
     id: VDVAutomaticRiflemanPDA
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledAK74blackdrumTracerGreen
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+#    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRU6b47Riot
     outerClothing: ClothingOuterArmorPlateCarrier6B45Heavy
     shoes: ClothingShoesBootsJackFilledRU

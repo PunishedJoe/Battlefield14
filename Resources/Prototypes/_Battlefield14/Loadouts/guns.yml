@@ -1,3 +1,5 @@
+#region Sidearms
+
 - type: loadout
   id: LoadoutGunFiveSevenUSMCSLVET
   name: Five-seveN gun case
@@ -70,6 +72,23 @@
   inhand:
   - BF14WeaponCaseShortRUTT33
 
+#region RGF
+
+- type: loadout
+  id: LoadoutGunAK74M
+  name: AK-74M
+  equipment:
+    suitstorage: WeaponRifleRUAK74M
+
+- type: loadout
+  id: LoadoutGunAK74MUUK
+  name: AK-74M UUK
+  equipment:
+    suitstorage: WeaponRifleRUAK74MUUK
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_RGF_VET
+
 #region SWAT
 
 - type: loadout
@@ -111,7 +130,7 @@
   - BF14WeaponCaseLongRURMB93
 
 - type: loadout
-  id: LoadoutGunAK74M
+  id: LoadoutGunCaseAK74M
   name: AK-74M gun case
   inhand:
   - BF14WeaponCaseLongRUAK74M
