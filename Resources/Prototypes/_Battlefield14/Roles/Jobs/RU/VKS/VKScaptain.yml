@@ -54,7 +54,7 @@
 #    back: ClothingBackpackSatchelSecurity
     belt: ClothingBeltCommandFilledRU
     gloves: ClothingHandsGlovesCombat
-    pocket1: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilledPACT
   storage:
     back:
     - ClothingMaskGasRussia

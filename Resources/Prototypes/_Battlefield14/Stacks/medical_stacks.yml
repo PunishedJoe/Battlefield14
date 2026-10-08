@@ -1,3 +1,5 @@
+#region Advanced
+
 - type: stack
   id: BF14AdvancedTraumaKit
   name: advanced trauma kit
@@ -10,4 +12,27 @@
   name: advanced burn kit
   icon: {sprite: "_Battlefield14/Objects/Specific/Medical/medical.rsi", state: burnkit}
   spawn: BF14AdvancedBurnKit
+  maxCount: 15
+
+#region Normal
+
+- type: stack
+  id: BF14Gauze
+  name: gauze
+  icon: {sprite: "_Battlefield14/Objects/Specific/Medical/medicalV2.rsi", state: gauze_3 }
+  spawn: BF14Gauze
+  maxCount: 15
+
+- type: stack
+  id: BF14Dressing
+  name: wound dressing
+  icon: {sprite: "_Battlefield14/Objects/Specific/Medical/medicalV2.rsi", state: dressing_3 }
+  spawn: BF14Dressing
+  maxCount: 15
+
+- type: stack
+  id: BF14Ointment
+  name: ointment
+  icon: {sprite: "_Battlefield14/Objects/Specific/Medical/medicalV2.rsi", state: ointment_3 }
+  spawn: BF14Ointment
   maxCount: 15

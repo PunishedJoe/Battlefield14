@@ -386,3 +386,38 @@
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon2.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon2.rsi
+
+#- type: entity
+#  parent: ClothingUniformJumpsuitCamoUSMarpatDesert
+#  id: ClothingUniformJumpsuitPatchTest
+#  name: HELP ME patch test
+#  components:
+#  - type: Sprite
+#    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatdesert.rsi
+#  - type: Clothing
+#    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatdesert.rsi
+#    clothingVisuals:
+#      jumpsuit:
+#      - state: equipped-INNERCLOTHING
+#      - map: ["barrelAttachment"]
+#        sprite: _Battlefield14/Clothing/Accessories/patches.rsi
+#  - type: ItemSlots
+#    slots:
+#      attachment_barrel:
+#        name: Patch
+#        priority: 1
+#        whitelist:
+#          tags:
+#          - BF14PatchRusich
+#  - type: ContainerContainer
+#    containers:
+#      attachment_barrel: !type:ContainerSlot
+#  - type: ESItemMapper
+#    mappings:
+#      barrelAttachment:
+#      - containerId: attachment_barrel
+#        state: rusich-equipped
+#        whitelist:
+#          tags:
+#          - BF14PatchRusich
+#  - type: Appearance

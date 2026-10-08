@@ -594,8 +594,10 @@
     size: Tiny
     sprite: _DV/Objects/Specific/Chemistry/pills_canister.rsi # DeltaV - Resprited some medical items
   - type: Sprite
-    sprite: _DV/Objects/Specific/Chemistry/pills_canister.rsi # DeltaV - Resprited some medical items
-    state: pill_canister
+    sprite: _Battlefield14/Objects/Specific/Medical/medicalV2.rsi # BF14
+    layers:
+      - map: [ base ]
+        state: pillcanister
   - type: Tag
     tags:
       - PillCanister
@@ -619,3 +621,10 @@
     sound:
       path: /Audio/_Goobstation/Items/handling/pillbottle_drop.ogg
   # Goobstation edit end
+  - type: GenericVisualizer # BF14
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: pillcanister_e }
+          False: { state: pillcanister }
+  - type: Appearance # BF14

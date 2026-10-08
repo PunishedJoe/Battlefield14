@@ -878,6 +878,17 @@
 
 - type: entity
   parent: WeaponCaseLong
+  id: BF14WeaponCaseLongRUAKS74
+  suffix: AKS-74
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleRUAKS74
+    - id: MagazineRifleAK74
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
   id: BF14WeaponCaseLongRUAK74M
   suffix: AK-74M
   components:
