@@ -1,6 +1,20 @@
 #region HEAD
 
 - type: loadoutGroup
+  id: BF_HelmetCoverUSMC
+  name: loadout-group-BF14-helmetcover
+  minLimit: 0
+  loadouts:
+  - LoadoutHelmetCoverMarpatWoodland
+
+- type: loadoutGroup
+  id: BF_HelmetCoverVDV
+  name: loadout-group-BF14-helmetcover
+  minLimit: 0
+  loadouts:
+  - LoadoutHelmetCoverRUDigitalRed
+
+- type: loadoutGroup
   id: BF_VDVHead
   name: loadout-group-BF14-vdvhead
   minLimit: 0
@@ -144,6 +158,24 @@
   - LoadoutNeckIFFOrangeTape
 
 #region BODY (uniform/armour)
+
+- type: loadoutGroup
+  id: BF_JumpsuitsUSMC
+  name: loadout-group-BF14-uniform
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutUniformJumpsuitCamoUSMarpatDesert
+  - LoadoutUniformJumpsuitCamoUSMarpatWoodland
+
+- type: loadoutGroup
+  id: BF_JumpsuitsVDV
+  name: loadout-group-BF14-uniform
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutUniformJumpsuitCamoRUEMR
+  - LoadoutUniformJumpsuitCamoRUDigitalRed
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianUS
@@ -399,18 +431,27 @@
 #region LONGARMS
 
 - type: loadoutGroup
-  id: BF_LongarmsOMONSergeant
-  name: longarm
+  id: BF_LongarmsRGFRifleman
+  name: loadout-group-BF14-longarm
   minLimit: 1
   maxLimit: 1
   loadouts:
   - LoadoutGunAK74M
+  - LoadoutGunAK74MUUK
+
+- type: loadoutGroup
+  id: BF_LongarmsOMONSergeant
+  name: loadout-group-BF14-longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunCaseAK74M
   - LoadoutGunPP91
   - LoadoutGunKS23M
 
 - type: loadoutGroup
   id: BF_LongarmsOMON
-  name: longarm
+  name: loadout-group-BF14-longarm
   minLimit: 1
   maxLimit: 1
   loadouts:
@@ -420,7 +461,7 @@
 
 - type: loadoutGroup
   id: BF_LongarmsSWAT
-  name: longarm
+  name: loadout-group-BF14-longarm
   minLimit: 1
   maxLimit: 1
   loadouts:

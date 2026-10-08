@@ -43,7 +43,7 @@
     id: VDVReconPDA
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledASVALShort
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+#    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRU6b47Alt
     helmetattachment: ClothingHelmetAttachmentNVGsBasicPACT
     outerClothing: ClothingOuterArmorPlateCarrier6B45

@@ -46,8 +46,8 @@
   equipment:
     id: VDVMedicPDA
     ears: ClothingHeadsetAltRU
-    belt: ClothingBeltMedicalEMTFilledBF14 # ClothingBeltMilitaryWebbingRUFilledVityaz
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+    belt: ClothingBeltMedicalEMTFilledBF14
+#    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRU6b47
     eyes: ClothingEyesHudMedicalBF
     outerClothing: ClothingOuterArmorPlateCarrier6B45

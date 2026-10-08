@@ -24,12 +24,12 @@
   components:
 #  - type: Faction
 #    factionId: "Warpact"
-#  - type: ExtendDescription
-#    descriptionList:
-#      - description: Allows you to capture points for PACT.
-#        fontSize: 12
-#        color: "#4f94ad"
-#        requireDetailRange: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Allows you to capture points for PACT.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
   - type: ClothingGrantComponent
     component:
     - type: GameFactionMember

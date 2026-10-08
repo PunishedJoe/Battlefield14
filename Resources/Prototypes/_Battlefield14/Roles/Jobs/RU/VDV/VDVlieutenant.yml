@@ -49,7 +49,7 @@
     id: VDVLieutenantPDA
     ears: ClothingHeadsetAltRUCommand
     belt: ClothingBeltMilitaryWebbingRUFilledAK12TracerGreen
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+#    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRU6b47
     outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJackFilledRU

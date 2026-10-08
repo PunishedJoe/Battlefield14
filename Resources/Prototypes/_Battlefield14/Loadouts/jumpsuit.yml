@@ -1,3 +1,32 @@
+#region NATO
+
+- type: loadout
+  id: LoadoutUniformJumpsuitCamoUSMarpatDesert
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+
+- type: loadout
+  id: LoadoutUniformJumpsuitCamoUSMarpatWoodland
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatWoodland
+
+#region PACT
+
+- type: loadout
+  id: LoadoutUniformJumpsuitCamoRUEMR
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+
+- type: loadout
+  id: LoadoutUniformJumpsuitCamoRUDigitalRed
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCamoRUDigitalRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_VDV_VET
+
+#region Scav
+
 - type: loadout
   id: LoadoutUniformJumpsuitTracksuitRed
   equipment:
@@ -66,6 +95,8 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: BF_RU_BOSS_2
+
+#region Civilian
 
 - type: loadout
   id: LoadoutUniformJumpsuitClerk

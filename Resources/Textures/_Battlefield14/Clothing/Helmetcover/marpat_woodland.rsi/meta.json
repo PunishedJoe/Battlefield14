@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "Custom",
-  "copyright": "Made by Joehammad. Do not re-use these sprites without permission.",
+  "copyright": "Comissioned from discord: okhrimm for Battlefield14, DO NOT REUSE",
   "size": {
     "x": 32,
     "y": 32
@@ -9,10 +9,6 @@
   "states": [
     {
       "name": "icon"
-    },
-    {
-      "name": "equipped-NECK",
-      "directions": 4
     },
     {
       "name": "equipped-HELMETCOVER",

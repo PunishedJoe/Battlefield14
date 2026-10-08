@@ -42,7 +42,7 @@
     id: USMCRiflemanPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
-    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+#    jumpsuit:: ClothingUniformJumpsuitCamoUSMarpatDesert
     head: ClothingHeadHatHelmetUSACH
     outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilledUSMC
