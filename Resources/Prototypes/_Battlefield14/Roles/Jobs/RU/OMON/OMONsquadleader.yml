@@ -49,7 +49,7 @@
     outerClothing: ClothingOuterArmorWebVestSec
     belt: ClothingBeltMilitaryWebbingSmallPouchesOlive
     shoes: ClothingShoesBootsJackFilledRU
-    pocket1: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilledPACT
     pocket2: PouchGrenadesFilledVDVScout
     rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:

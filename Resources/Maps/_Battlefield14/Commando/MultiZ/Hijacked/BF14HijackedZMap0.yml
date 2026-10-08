@@ -4152,7 +4152,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: BF14WeaponCaseLongRUAK74
+- proto: BF14WeaponCaseLongRUAKS74
   entities:
   - uid: 93
     components:

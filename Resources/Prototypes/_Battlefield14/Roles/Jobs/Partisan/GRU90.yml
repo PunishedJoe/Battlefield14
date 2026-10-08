@@ -50,7 +50,7 @@
     belt: ClothingBeltMilitaryWebbingRU
     shoes: ClothingShoesBootsJack
     rightarmband: FlashlightMilitaryAlt
-    pocket1: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilledPACT
     pocket2: PouchGrenades
   storage:
     belt:

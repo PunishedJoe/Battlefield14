@@ -52,7 +52,7 @@
     outerClothing: ClothingOuterArmorWebVestSec
     belt: ClothingBeltCommandFilledRU
     shoes: ClothingShoesBootsJackFilledRU
-    pocket1: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilledPACT
     pocket2: PouchGrenadesFilledVDVScout
   storage:
     back:

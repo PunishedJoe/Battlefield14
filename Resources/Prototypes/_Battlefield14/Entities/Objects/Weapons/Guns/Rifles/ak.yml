@@ -154,8 +154,100 @@
       state: 1p87
 
 - type: entity
-  name: AKS-74u
+  name: AKS-74
   parent: WeaponRifleRUAK74
+  id: WeaponRifleRUAKS74
+  description: An AK-74 with a folding stock, for VDV paratroopers in the soviet union.
+  components:
+  - type: Item
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-folding
+      - map: ["stockAttachment"]
+      - state: grip-ak74
+      - state: handguard-ak74
+      - state: barrel-ak74
+      - map: ["barrelAttachment"]
+        offset: 0.6875 , 0.065
+      - state: ironsight-ak74
+      - state: mag-ak74-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK74
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+      attachment_barrel:
+        name: Barrel attachment
+        whitelist:
+          tags:
+            - BF14Bayonet6h4
+      attachment_stock:
+        name: Stock attachment
+        whitelist:
+          tags:
+            - BF14TourniquetEsmarch
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+      attachment_stock: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: barrel attachment
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonet6h4
+    - name: stock attachment
+      containerId: attachment_stock
+      whitelist:
+        tags:
+        - BF14TourniquetEsmarch
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-6h4
+        whitelist:
+          tags:
+          - BF14Bayonet6h4
+      stockAttachment:
+      - containerId: attachment_stock
+        state: esmarch
+        whitelist:
+          tags:
+          - BF14TourniquetEsmarch
+
+- type: entity
+  name: AKS-74u
+  parent: WeaponRifleRUAKS74
   id: WeaponRifleRUAKS74U
   description: You know when they decided to bring this out? Afghanistan. Rough.
   components:
@@ -171,6 +263,7 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: stock-folding
+      - map: ["stockAttachment"]
       - state: grip-ak74
       - state: handguard-ak74
       - state: barrel-aks74u
@@ -186,6 +279,58 @@
     availableModes:
     - SemiAuto
     - FullAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK74
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+      attachment_stock:
+        name: Stock attachment
+        whitelist:
+          tags:
+            - BF14TourniquetEsmarch
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_stock: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: stock attachment
+      containerId: attachment_stock
+      whitelist:
+        tags:
+        - BF14TourniquetEsmarch
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      stockAttachment:
+      - containerId: attachment_stock
+        state: esmarch
+        whitelist:
+          tags:
+          - BF14TourniquetEsmarch
 
 - type: entity
   name: AKS-74UB
@@ -199,6 +344,7 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: stock-folding
+      - map: ["stockAttachment"]
       - state: grip-ak74
       - state: handguard-ak74
       - state: barrel-aks74u

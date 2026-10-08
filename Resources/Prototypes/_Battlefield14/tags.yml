@@ -409,6 +409,9 @@
   id: BF14Pistol9x19mmSuppressor
 
 - type: Tag
+  id: BF14TourniquetEsmarch
+
+- type: Tag
   id: BF14BayonetM7
 
 - type: Tag

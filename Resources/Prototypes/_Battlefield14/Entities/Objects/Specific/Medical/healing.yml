@@ -159,20 +159,21 @@
 
 - type: entity
   name: esmarch tourniquet
-  description: A soviet tourniquet.
+  description: A soviet tourniquet, doesn't use a windlass.
   parent: Tourniquet
   id: BF14TourniquetEsmarch
   components:
   - type: Tag
     tags:
     - Tourniquet
+    - BF14TourniquetEsmarch
   - type: Sprite
     sprite: _Battlefield14/Objects/Specific/Medical/medicalV2.rsi
     state: esmarch
   - type: Item
     sprite: _Battlefield14/Objects/Specific/Medical/medicalV2.rsi
     heldPrefix: esmarch
-  - type: Appearance
+  - type: ESGunAttachment
 
 #region Packets
 
