@@ -4,16 +4,16 @@
   suffix: Filled
   parent: Medkit
   components:
-  - type: StorageFill
+  - type: StorageFill # It's all BF14 stuff
     contents:
-      - id: Brutepack
-      - id: Ointment
-      - id: Gauze
-      - id: BlisterPackTricordrazine # BF14
-      - id: BlisterPackIron #BF14
-      - id: BF14SyretteInaprovalineCapped # BF14
+      - id: BF14DressingPacket
+      - id: BF14GauzePacket
+      - id: BF14Ointment
+      - id: BlisterPackTricordrazine
+      - id: BlisterPackIron
+      - id: BF14SyretteInaprovalineCapped
         amount: 2
-      - id: HandheldHealthAnalyzerUnpowered #BF14
+      - id: HandheldHealthAnalyzerUnpowered
       # see https://github.com/tgstation/blob/master/code/game/objects/items/storage/firstaid.dm for example contents
 
 - type: entity
@@ -21,27 +21,27 @@
   suffix: Filled
   parent: MedkitBurn
   components:
-  - type: StorageFill
+  - type: StorageFill # It's all BF14 stuff
     contents:
-      - id: Ointment
+      - id: BF14Ointment
         amount: 2
-      - id: MedicationBoxPillsKelotane # BF14
-      - id: HandheldHealthAnalyzerUnpowered #BF14
+      - id: MedicationBoxPillsKelotane
+      - id: HandheldHealthAnalyzerUnpowered
 
 - type: entity
   id: MedkitBruteFilled
   suffix: Filled
   parent: MedkitBrute
   components:
-  - type: StorageFill
+  - type: StorageFill # It's all BF14 stuff
     contents:
-      - id: Brutepack
+      - id: BF14DressingPacket
         amount: 2
-      - id: Gauze
-      - id: MedicationBoxPillsBicaridine # BF14
-      - id: BlisterPackIron # BF14
-      - id: SyringeSaline # BF14
-      - id: HandheldHealthAnalyzerUnpowered #BF14
+      - id: BF14GauzePacket
+      - id: MedicationBoxPillsBicaridine
+      - id: BlisterPackIron
+      - id: SyringeSaline
+      - id: HandheldHealthAnalyzerUnpowered
 
 - type: entity
   id: MedkitToxinFilled
@@ -94,14 +94,14 @@
   suffix: Filled
   parent: MedkitAdvanced
   components:
-  - type: StorageFill # BF14
+  - type: StorageFill # It's all BF14 stuff
     contents:
-      - id: HandheldHealthAnalyzerUnpowered # BF14
-      - id: BF14HyposprayFilledAdvanced # BF14
-      - id: BF14HyposprayFilledNanoblood # BF14
-      - id: BF14HyposprayFilledHypervene # BF14
-      - id: BF14AdvancedTraumaKit # BF14
-      - id: BF14AdvancedBurnKit # BF14
+      - id: HandheldHealthAnalyzerUnpowered
+      - id: BF14HyposprayFilledAdvanced
+      - id: BF14HyposprayFilledNanoblood
+      - id: BF14HyposprayFilledHypervene
+      - id: BF14AdvancedTraumaKit
+      - id: BF14AdvancedBurnKit
 
 - type: entity
   id: MedkitCombatFilled
@@ -112,9 +112,9 @@
     contents:
       - id: HandheldHealthAnalyzerUnpowered #BF14
       - id: BF14AdvancedTraumaKit # BF14
-#      - id: BF14AdvancedBurnKit # BF14
-      - id: BF14AutoInjectorCombatStabilisationCapped
-        amount: 3
+      - id: BF14AdvancedBurnKit # BF14
+      - id: BF14AutoInjectorCombatStabilisationCapped # BF14
+        amount: 2
 #BF14      - id: SyringeEphedrine
       - id: SyringeSaline
 

@@ -103,7 +103,7 @@
         amount: 50
     - name: Sustainment
       entries:
-      - id: Tourniquet
+      - id: BF14TourniquetEsmarch
         amount: 20
       - id: BoxMRE
         amount: 50

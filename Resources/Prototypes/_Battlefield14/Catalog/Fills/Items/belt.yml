@@ -565,9 +565,9 @@
   - type: StorageFill
     contents:
       - id: HandheldHealthAnalyzerUnpowered
-      - id: AU14HemostaticGauzePacket
-      - id: Brutepack
-      - id: Ointment
+      - id: BF14GauzePacket
+      - id: BF14DressingPacket
+      - id: BF14Ointment
       - id: MedicationBoxPillsBicaridine
       - id: MedicationBoxPillsKelotane
       - id: MedicationBoxPillsTricordrazine

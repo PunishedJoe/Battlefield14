@@ -7,10 +7,24 @@
   components:
   - type: StorageFill
     contents:
-    - id: AU14HemostaticGauzePacket # Gauze but sovl
-    - id: Ointment
+    - id: BF14GauzePacket # Gauze but sovl
+    - id: BF14Ointment
     - id: PillCanisterTricordrazine
     - id: Tourniquet
+    - id: PillCanisterIron # Tramadol
+    - id: BF14SyretteInaprovalineCapped
+
+- type: entity
+  parent: PouchFirstAidFilled
+  id: PouchFirstAidFilledPACT
+  suffix: Filled, PACT
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14GauzePacketTan
+    - id: BF14Ointment
+    - id: PillCanisterTricordrazine
+    - id: BF14TourniquetEsmarch
     - id: PillCanisterIron # Tramadol
     - id: BF14SyretteInaprovalineCapped
 
