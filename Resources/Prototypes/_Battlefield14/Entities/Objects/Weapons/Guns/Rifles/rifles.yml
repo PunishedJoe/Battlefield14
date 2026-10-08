@@ -182,11 +182,6 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
-#  - type: ExtendDescription
-#    descriptionList:
-#      - description: Takes SCAR-H pattern magazines.
-#        color: "#4f94ad"
-#        requireDetailRange: true
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi

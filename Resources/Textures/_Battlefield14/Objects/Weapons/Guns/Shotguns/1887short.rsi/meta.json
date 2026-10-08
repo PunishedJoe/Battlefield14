@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "license": "CC-BY-SA-3.0",
+    "license": "Custom",
     "copyright": "Made by WillyBillyGilly",
     "size": {
         "x": 48,
@@ -15,9 +15,6 @@
         },
         {
             "name": "bolt-open"
-        },
-        {
-            "name": "bayonet-m7"
         },
         {
             "name": "inhand-left",

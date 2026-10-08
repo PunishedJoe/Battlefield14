@@ -68,9 +68,9 @@
       - state: equipped-BACKPACK
   - type: Gun
     fireRate: 1
-    projectileSpeed: 20 # short barrel
+    projectileSpeed: 25 # short barrel
   - type: GunSpreadModifier
-    spread: 1.5 # short barrel
+    spread: 2 # short barrel
   - type: Tag
     tags:
     - WeaponShotgunKammerer
@@ -82,7 +82,7 @@
     capacity: 4
     proto: BF_CartridgeShotgun12GaugeBreaching
     soundInsert:
-      collection: BF_M870_ShellIn
+      collection: BF_Mossberg_ShellIn
       params:
         volume: -5
   - type: AltFireMelee

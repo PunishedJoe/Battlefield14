@@ -60,6 +60,11 @@
         Slash: 4
         Piercing: 4
         Structural: 50
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.75
+    stepByTile: false
   - type: StaminaDamageOnCollide
     damage: 10 # ~10 hits to stun
   - type: TimedDespawn

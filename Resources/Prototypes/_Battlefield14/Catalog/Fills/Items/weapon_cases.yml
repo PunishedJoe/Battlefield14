@@ -291,6 +291,17 @@
     - id: MagazineShotgunUSAS
       amount: 5
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUS1887Short
+  suffix: "1887 Shorty"
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponShotgunUS1887Short
+    - id: ShellBoxBF12GaugeBuckshot
+      amount: 2
+
 #region Rifles, US
 
 - type: entity

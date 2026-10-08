@@ -26,10 +26,13 @@
     minAngle: 0
     maxAngle: 180
     angleIncrease: 25
-    angleDecay: 25
+    angleDecay: 35
     projectileSpeed: 67 # it's a sniper
     soundGunshot:
-      path: /Audio/_Harmony/Weapons/Guns/Gunshots/hristov_fire_alt.ogg
+      collection: BF_M82_Gunshots
+      params:
+        volume: -2
+        variation: 0.125
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -286,7 +289,7 @@
     projectileSpeed: 55 # it's a sniper
     damageModifier: 2.5
     soundGunshot:
-      path: /Audio/_Battlefield14/Weapons/Guns/misc/lever_fire.ogg
+      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/dmr.ogg
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -482,7 +485,10 @@
     projectileSpeed: 55 # it's a sniper
     damageModifier: 1.5
     soundGunshot:
-      path: /Audio/_Mono/Weapons/Guns/SmallArms/Gunshots/heavy_rifle_1.ogg
+      collection: BF_AWM_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -491,8 +497,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineSniperAWM
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AWM/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AWM/magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -511,6 +517,8 @@
   - type: ChamberMagazineAmmoProvider
     autoCycle: false
     canRack: false
+    soundBoltClosed: /Audio/_Battlefield14/Weapons/Guns/AWM/boltforward.ogg
+    soundBoltOpened: /Audio/_Battlefield14/Weapons/Guns/AWM/boltback.ogg
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 10
@@ -548,8 +556,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazineSniperAWP
-        insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
-        ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AWM/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AWM/magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -563,6 +571,11 @@
             - BF_CartridgeRifle762x51
   - type: Gun
     damageModifier: 1.5
+    soundGunshot:
+      collection: BF_AWP_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
 
 #region RU
 
@@ -619,6 +632,8 @@
   - type: ChamberMagazineAmmoProvider
     autoCycle: false
     canRack: false
+    soundBoltClosed: /Audio/_Battlefield14/Weapons/Guns/AWM/boltforward.ogg
+    soundBoltOpened: /Audio/_Battlefield14/Weapons/Guns/AWM/boltback.ogg
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 10
