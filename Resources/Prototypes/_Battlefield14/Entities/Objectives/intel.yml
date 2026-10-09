@@ -54,7 +54,7 @@
 
 - type: entity
   name: blue pinpointer
-  description: Tracks both the KOTH capture point and the Blue team's intel if its outside the safe.
+  description: Tracks both the KOTH/AttDef capture point and the Blue team's intel if its outside the safe.
   id: BF14PinpointerBlueIntel
   parent: PinpointerBase
   components:
@@ -318,7 +318,7 @@
 
 - type: entity
   name: red pinpointer
-  description: Tracks both the KOTH capture point and the Red team's intel if its outside the safe.
+  description: Tracks both the KOTH/AttDef capture point and the Red team's intel if its outside the safe.
   id: BF14PinpointerRedIntel
   parent: PinpointerBase
   components:

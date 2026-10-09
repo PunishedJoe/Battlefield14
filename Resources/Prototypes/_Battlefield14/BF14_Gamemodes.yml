@@ -114,48 +114,68 @@
     - DeathMatch31
 
 - type: gamePreset
-  id: BF14_KOTH
+  id: BF14_TDMObjective
   alias:
     - kingofthehill
     - koth
-  name: King Of The Hill
-  description: Capture and hold the central control point.
-  maxPlayers: 20
-  showInVote: true
-  respawnMultiplier: 0.166 # 30 seconds
-  supportedMaps: BF14MapPoolKOTH
-  rules:
-    - Arcade
-
-- type: gamePreset
-  id: BF14_AttDef
-  alias:
     - Attack and Defense
     - AttackDefense
     - AttDef
-  name: Attack/Defense
-  description: Blue team defends while red team attacks
-  maxPlayers: 20
-  showInVote: true
-  respawnMultiplier: 0.166 # 30 seconds
-  supportedMaps: BF14MapPoolAttDef
-  rules:
-    - Arcade
-
-- type: gamePreset
-  id: BF14_CTF
-  alias:
     - capturetheflag
     - ctf
     - capturetheintel
-  name: Capture The Flag
-  description: Capture the enemy intel and defend yours.
+  name: Team DeathMatch (KOTH/CTF/AttDef)
+  description: KOTH, CTF and Attack/Defense maps
   maxPlayers: 20
   showInVote: true
   respawnMultiplier: 0.166 # 30 seconds
-  supportedMaps: BF14MapPoolCTF
+  supportedMaps: BF14MapPoolTDMObjective
   rules:
     - Arcade
+
+#- type: gamePreset
+#  id: BF14_KOTH
+#  alias:
+#    - kingofthehill
+#    - koth
+#  name: King Of The Hill
+#  description: Capture and hold the central control point.
+#  maxPlayers: 20
+#  showInVote: true
+#  respawnMultiplier: 0.166 # 30 seconds
+#  supportedMaps: BF14MapPoolKOTH
+#  rules:
+#    - Arcade
+
+#- type: gamePreset
+#  id: BF14_AttDef
+#  alias:
+#    - Attack and Defense
+#    - AttackDefense
+#    - AttDef
+#  name: Attack/Defense
+#  description: Blue team defends while red team attacks
+#  maxPlayers: 20
+#  showInVote: true
+#  respawnMultiplier: 0.166 # 30 seconds
+#  supportedMaps: BF14MapPoolAttDef
+#  rules:
+#    - Arcade
+
+#- type: gamePreset
+#  id: BF14_CTF
+#  alias:
+#    - capturetheflag
+#    - ctf
+#    - capturetheintel
+#  name: Capture The Flag
+#  description: Capture the enemy intel and defend yours.
+#  maxPlayers: 20
+#  showInVote: true
+#  respawnMultiplier: 0.166 # 30 seconds
+#  supportedMaps: BF14MapPoolCTF
+#  rules:
+#    - Arcade
 
 - type: gamePreset
   id: BF14_TDMHardcore # no respawns

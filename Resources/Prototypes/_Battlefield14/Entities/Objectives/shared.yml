@@ -206,17 +206,17 @@
   parent: BaseGracePeriodAnnouncerSpawner
   id: GracePeriodAnnouncerSpawnerTDM5Min
   name: grace period announcer spawner
-  suffix: 3 minutes, TDM
+  suffix: 5 minutes, TDM
   components:
   - type: ActiveTimerTrigger # this is so the annoucement doesnt play while the game is still in menu as it loads the map before the round starts
     timeRemaining: 1
   - type: SpawnOnTrigger
-    proto: GracePeriodAnnouncerSpawnerTDM3MinActiveWarning
+    proto: GracePeriodAnnouncerSpawnerTDM5MinActive
   - type: DeleteOnTrigger
 
 - type: entity
   parent: BaseGracePeriodAnnouncerSpawner
-  id: GracePeriodAnnouncerSpawnerTDM5MinActiveWarning
+  id: GracePeriodAnnouncerSpawnerTDM5MinActive
   categories: [ HideSpawnMenu ]
   suffix: DO NOT MAP
   components:
