@@ -1,5 +1,5 @@
 ## Red
-# Utility
+# Utility # more pricey meds and tools than blue team
 
 - type: listing
   id: UplinkRedBiofoam
@@ -7,7 +7,7 @@
   description: A biofoam canister filled with biofoam, used for treating wounds.
   productEntity: BiofoamCanisterRed
   cost:
-    PACTRequisition: 3
+    PACTRequisition: 4
   categories:
     - UplinkRedUtility
   conditions:
@@ -22,7 +22,7 @@
   description: A large breaching hammer used to break shit.
   productEntity: SecBreachingHammer
   cost:
-    PACTRequisition: 5
+    PACTRequisition: 6
   categories:
     - UplinkRedUtility
   conditions:
@@ -52,7 +52,7 @@
   description: Wirecutter, used for cutting wire or barbed wire.
   productEntity: Wirecutter
   cost:
-    PACTRequisition: 1
+    PACTRequisition: 3
   categories:
     - UplinkRedUtility
   conditions:
@@ -67,7 +67,7 @@
   description: A handy dandy crowbar.
   productEntity: Crowbar
   cost:
-    PACTRequisition: 1
+    PACTRequisition: 3
   categories:
     - UplinkRedUtility
   conditions:
@@ -82,7 +82,7 @@
   description: A multitool. Can be used to disarm landmines
   productEntity: Multitool
   cost:
-    PACTRequisition: 1
+    PACTRequisition: 3
   categories:
     - UplinkRedUtility
   conditions:
@@ -99,7 +99,22 @@
   description: A Russian MP-133 shotgun.
   productEntity: WeaponShotgunRUMP133
   cost:
-    PACTRequisition: 20
+    PACTRequisition: 15
+  categories:
+    - UplinkRedWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedFNFal
+  name: FN Fal rifle
+  description: A Belgian FN Fal rifle.
+  productEntity: WeaponRifleBEFAL
+  cost:
+    PACTRequisition: 15
   categories:
     - UplinkRedWeapons
   conditions:
@@ -144,7 +159,7 @@
   description: A Russian RShG-2 disposable termobaric rocket launcher.
   productEntity: WeaponLauncherRURPG26Thermobaric
   cost:
-    PACTRequisition: 50
+    PACTRequisition: 30 # its single use so not gonna be pricey
   categories:
     - UplinkRedWeapons
   conditions:
@@ -161,7 +176,22 @@
   description: A box of 20 12 Gauge buckshot shells.
   productEntity: ShellBoxBF12GaugeBuckshot
   cost:
-    PACTRequisition: 5
+    PACTRequisition: 3
+  categories:
+    - UplinkRedAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedFNFalMag
+  name: FN Fal mag
+  description: A 20 round magazine for the FN Fal rifle.
+  productEntity: MagazineRifleFAL
+  cost:
+    PACTRequisition: 2
   categories:
     - UplinkRedAmmo
   conditions:
@@ -173,10 +203,10 @@
 - type: listing
   id: UplinkRedRP46Belt
   name: RP-46 belt
-  description: A a 50 round belt for the RP-46 machinegun.
+  description: A 50 round belt for the RP-46 machinegun.
   productEntity: MagazineBeltRP46
   cost:
-    PACTRequisition: 10
+    PACTRequisition: 7
   categories:
     - UplinkRedAmmo
   conditions:
@@ -204,7 +234,7 @@
 
 - type: listing
   id: UplinkRedBreachingCharge
-  name: RDG-2 smoke grenades
+  name: breaching charges
   description: A box of 4 breaching charges.
   productEntity: BoxBreachingCharges
   cost:
@@ -278,7 +308,7 @@
           - RussianUplink
 
 ## Blue
-# Utility
+# Utility cheaper meds and tools than red team
 
 - type: listing
   id: UplinkBlueBiofoam
@@ -302,6 +332,21 @@
   productEntity: BF14AutoInjectorCombatStabilisationCapped
   cost:
     NATORequisition: 4
+  categories:
+    - UplinkBlueUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueDefib
+  name: Combat defibllator
+  description: A small and compact defib.
+  productEntity: DefibrillatorCompactBF
+  cost:
+    NATORequisition: 8
   categories:
     - UplinkBlueUtility
   conditions:
@@ -371,6 +416,21 @@
           - AmericanUplink
 
 # Structures
+
+- type: listing
+  id: UplinkBlueDefenseTurret
+  name: Defense turret
+  description: A defense turret flatpack, comes loaded with a 200 rounds. Cannot be reloaded or moved once unfolded
+  productEntity: BallisticTurretHighCaliberBlueFlatpack
+  cost:
+    NATORequisition: 60
+  categories:
+    - UplinkBlueStructures
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
 
 - type: listing
   id: UplinkBlueHesco
@@ -487,7 +547,7 @@
   description: A box of 20 12 Gauge buckshot shells.
   productEntity: ShellBoxBF12GaugeBuckshot
   cost:
-    NATORequisition: 5
+    NATORequisition: 3
   categories:
     - UplinkBlueAmmo
   conditions:
@@ -502,7 +562,7 @@
   description: A 10 round magazine for the AWP sniper.
   productEntity: MagazineSniperAWP
   cost:
-    NATORequisition: 5
+    NATORequisition: 3
   categories:
     - UplinkBlueAmmo
   conditions:

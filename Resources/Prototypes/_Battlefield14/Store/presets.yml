@@ -91,6 +91,6 @@
     currencyWhitelist:
     - NATORequisition
     balance:
-      NATORequisition: 500 # good shit at start no more points as the round goes spend wisely
+      NATORequisition: 400 # good shit at start no more points as the round goes spend wisely
     buySuccessSound:
       path: "/Audio/_Battlefield14/Misc/TDMvendor/buy.ogg"

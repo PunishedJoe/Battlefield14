@@ -155,4 +155,4 @@
     autoRechargeRate: 0
   - type: ProjectileBatteryAmmoProvider
     proto: BulletRifleBF556x45
-    fireCost: 50
+    fireCost: 25

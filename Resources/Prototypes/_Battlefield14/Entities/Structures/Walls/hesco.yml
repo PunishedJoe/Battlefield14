@@ -89,7 +89,7 @@
         acts: [ "Destruction" ]
   - type: DisassembleOnAltVerb
     prototype: BF14HescoBarrierBlue
-    doAfter: 1
+    doAfter: 0.5
   - type: Construction
     graph: BF14HescoBarrierBlueGraph
     node: start
@@ -108,7 +108,7 @@
             - !type:DeleteEntity
           steps:
             - tag: SandbagFillable
-              doAfter: 3
+              doAfter: 1
     - node: end
       edges: []
 

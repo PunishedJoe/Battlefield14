@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 10/09/2026 03:53:00
-  entityCount: 1870
+  time: 10/09/2026 12:05:13
+  entityCount: 1893
 maps:
 - 2
 grids:
@@ -147,6 +147,37 @@ entities:
         version: 2
         nodes:
         - node:
+            angle: 1.5707963267948966 rad
+            color: '#FFFFFFFF'
+            id: Arrows
+          decals:
+            67: 12,-27
+            68: 12,-25
+            69: -11,-8
+            70: -11,-10
+        - node:
+            angle: 3.141592653589793 rad
+            color: '#FFFFFFFF'
+            id: Arrows
+          decals:
+            54: 16,-23
+            55: 18,-23
+            57: 18,-12
+            58: 16,-12
+            59: -16,-23
+            60: -18,-23
+            61: -18,-12
+            62: -16,-12
+        - node:
+            angle: 4.71238898038469 rad
+            color: '#FFFFFFFF'
+            id: Arrows
+          decals:
+            63: -12,-25
+            64: -12,-27
+            65: 11,-10
+            66: 11,-8
+        - node:
             angle: 3.141592653589793 rad
             color: '#FFFFFFFF'
             id: BotGreyscale
@@ -188,6 +219,68 @@ entities:
           decals:
             34: 7,-9
             35: -9,-9
+        - node:
+            color: '#FFFFFFFF'
+            id: TechCornerE
+          decals:
+            95: -3,13
+        - node:
+            color: '#FFFFFFFF'
+            id: TechCornerN
+          decals:
+            92: 3,13
+        - node:
+            color: '#FFFFFFFF'
+            id: TechCornerS
+          decals:
+            94: -3,9
+        - node:
+            color: '#FFFFFFFF'
+            id: TechCornerW
+          decals:
+            93: 3,9
+        - node:
+            color: '#FFFFFFFF'
+            id: TechE
+          decals:
+            75: -2,12
+            76: -2,11
+            77: -2,10
+            85: -3,8
+            86: -3,7
+            87: -3,14
+            88: -3,15
+        - node:
+            color: '#FFFFFFFF'
+            id: TechNE
+          decals:
+            74: -2,13
+        - node:
+            color: '#FFFFFFFF'
+            id: TechNW
+          decals:
+            73: 2,13
+        - node:
+            color: '#FFFFFFFF'
+            id: TechSE
+          decals:
+            71: -2,9
+        - node:
+            color: '#FFFFFFFF'
+            id: TechSW
+          decals:
+            72: 2,9
+        - node:
+            color: '#FFFFFFFF'
+            id: TechW
+          decals:
+            78: 2,10
+            79: 2,11
+            80: 2,12
+            81: 3,14
+            82: 3,15
+            83: 3,7
+            84: 3,8
         - node:
             color: '#FFFFFFFF'
             id: WarnCornerSmallNE
@@ -246,10 +339,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        MetalFoam: []
         Kudzu: []
-        Smoke: []
+        MetalFoam: []
         Puddle: []
+        Smoke: []
       updateAccumulator: 0.7664075
     - type: Shuttle
       dampingModifier: 0.25
@@ -1266,6 +1359,23 @@ entities:
       rot: 3.141592653589793 rad
       pos: -4.5,-11.5
       parent: 1
+- proto: BF14AutoInjectorCombatStabilisationCapped
+  entities:
+  - uid: 279
+    components:
+    - type: Transform
+      pos: -0.5,-47.5
+      parent: 1
+  - uid: 280
+    components:
+    - type: Transform
+      pos: -0.5,-47.5
+      parent: 1
+  - uid: 281
+    components:
+    - type: Transform
+      pos: -0.5,-47.5
+      parent: 1
 - proto: BF14DefenseObjectiveBlueServerStage0
   entities:
   - uid: 15
@@ -1275,7 +1385,54 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Static
-- proto: BF14FogWall3
+- proto: BF14FogSpawner5
+  entities:
+  - uid: 284
+    components:
+    - type: Transform
+      pos: -0.5,12.5
+      parent: 1
+  - uid: 285
+    components:
+    - type: Transform
+      pos: -0.5,11.5
+      parent: 1
+  - uid: 286
+    components:
+    - type: Transform
+      pos: -0.5,10.5
+      parent: 1
+  - uid: 287
+    components:
+    - type: Transform
+      pos: 0.5,12.5
+      parent: 1
+  - uid: 288
+    components:
+    - type: Transform
+      pos: 0.5,11.5
+      parent: 1
+  - uid: 289
+    components:
+    - type: Transform
+      pos: 0.5,10.5
+      parent: 1
+  - uid: 290
+    components:
+    - type: Transform
+      pos: 1.5,12.5
+      parent: 1
+  - uid: 291
+    components:
+    - type: Transform
+      pos: 1.5,11.5
+      parent: 1
+  - uid: 292
+    components:
+    - type: Transform
+      pos: 1.5,10.5
+      parent: 1
+- proto: BF14FogWall5
   entities:
   - uid: 108
     components:
@@ -2174,6 +2331,69 @@ entities:
     - type: Transform
       pos: 0.5,5.5
       parent: 1
+- proto: BoxGrenadesRGD5
+  entities:
+  - uid: 278
+    components:
+    - type: Transform
+      pos: 1.5,-47.5
+      parent: 1
+- proto: BreachingCharge
+  entities:
+  - uid: 274
+    components:
+    - type: Transform
+      pos: 0.5,-47.5
+      parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Timer
+      - Trigger
+  - uid: 275
+    components:
+    - type: Transform
+      pos: 0.5,-47.5
+      parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Timer
+      - Trigger
+  - uid: 276
+    components:
+    - type: Transform
+      pos: 0.5,-47.5
+      parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Timer
+      - Trigger
+  - uid: 277
+    components:
+    - type: Transform
+      pos: 0.5,-47.5
+      parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Timer
+      - Trigger
+  - uid: 282
+    components:
+    - type: Transform
+      pos: 0.5,-47.5
+      parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Timer
+      - Trigger
+  - uid: 283
+    components:
+    - type: Transform
+      pos: 0.5,-47.5
+      parent: 1
+    - type: DeviceLinkSink
+      ports:
+      - Timer
+      - Trigger
 - proto: ButtonFrameCaution
   entities:
   - uid: 5239
@@ -3536,6 +3756,11 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-59.5
+      parent: 1
+  - uid: 293
+    components:
+    - type: Transform
+      pos: 0.5,-59.5
       parent: 1
 - proto: GracePeriodAnnouncerSpawnerTDM3Min
   entities:
@@ -10497,6 +10722,23 @@ entities:
     components:
     - type: Transform
       pos: 2.5,-8.5
+      parent: 1
+- proto: TableFolding
+  entities:
+  - uid: 271
+    components:
+    - type: Transform
+      pos: 0.5,-47.5
+      parent: 1
+  - uid: 272
+    components:
+    - type: Transform
+      pos: -0.5,-47.5
+      parent: 1
+  - uid: 273
+    components:
+    - type: Transform
+      pos: 1.5,-47.5
       parent: 1
 - proto: WaterCooler
   entities:

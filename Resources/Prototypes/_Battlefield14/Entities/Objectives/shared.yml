@@ -204,7 +204,7 @@
 
 - type: entity
   parent: BaseGracePeriodAnnouncerSpawner
-  id: GracePeriodAnnouncerSpawnerTDM3Min
+  id: GracePeriodAnnouncerSpawnerTDM5Min
   name: grace period announcer spawner
   suffix: 3 minutes, TDM
   components:
@@ -216,14 +216,14 @@
 
 - type: entity
   parent: BaseGracePeriodAnnouncerSpawner
-  id: GracePeriodAnnouncerSpawnerTDM3MinActiveWarning
+  id: GracePeriodAnnouncerSpawnerTDM5MinActiveWarning
   categories: [ HideSpawnMenu ]
   suffix: DO NOT MAP
   components:
   - type: ActiveTimerTrigger
-    timeRemaining: 164
+    timeRemaining: 284
   - type: SpawnOnTrigger
-    proto: GracePeriodAnnouncerSpawnerTDM3MinActive
+    proto: GracePeriodAnnouncerSpawnerTDMStartWarning
   - type: DeleteOnTrigger
   - type: AnnounceOnSpawn
     message: "The grace period will end in 3 minutes, prepare."
@@ -233,7 +233,7 @@
 
 - type: entity
   parent: BaseGracePeriodAnnouncerSpawner
-  id: GracePeriodAnnouncerSpawnerTDM3MinActive
+  id: GracePeriodAnnouncerSpawnerTDMStartWarning
   categories: [ HideSpawnMenu ]
   suffix: DO NOT MAP
   components:
