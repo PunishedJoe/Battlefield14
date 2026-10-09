@@ -423,7 +423,7 @@
   description: A defense turret flatpack, comes loaded with a 200 rounds. Cannot be reloaded or moved once unfolded
   productEntity: BallisticTurretHighCaliberBlueFlatpack
   cost:
-    NATORequisition: 60
+    NATORequisition: 40
   categories:
     - UplinkBlueStructures
   conditions:
