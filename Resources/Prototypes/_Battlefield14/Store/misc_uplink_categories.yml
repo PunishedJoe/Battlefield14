@@ -221,7 +221,7 @@
   description: A single 14.5x114mm cartridge for the PTRD-41 AMR, has a 2-tap and wallbang potential.
   productEntity: BF_CartridgeRifle145x114
   cost:
-    PACTRequisition: 5
+    PACTRequisition: 3
   categories:
     - UplinkRedAmmo
   conditions:
@@ -592,7 +592,7 @@
   description: A 50 round drum for the MG3 GMPG.
   productEntity: MagazineBeltBoxMG3Short
   cost:
-    NATORequisition: 10
+    NATORequisition: 7
   categories:
     - UplinkBlueAmmo
   conditions:
@@ -607,7 +607,7 @@
   description: A 100 round belt box for the MG3 GMPG.
   productEntity: MagazineBeltBoxMG3
   cost:
-    NATORequisition: 25
+    NATORequisition: 18
   categories:
     - UplinkBlueAmmo
   conditions:
