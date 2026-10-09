@@ -226,7 +226,7 @@
     proto: GracePeriodAnnouncerSpawnerTDMStartWarning
   - type: DeleteOnTrigger
   - type: AnnounceOnSpawn
-    message: "The grace period will end in 3 minutes, prepare."
+    message: "The grace period will end in 5 minutes, prepare."
     sender: "Combat Area"
     sound:
       path: /Audio/_Battlefield14/Announcements/TDMgrace.ogg
