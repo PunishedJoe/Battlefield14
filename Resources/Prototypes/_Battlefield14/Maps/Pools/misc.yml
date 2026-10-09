@@ -12,6 +12,11 @@
   - BF14TeufortTDM
 
 - type: gameMapPool
+  id: BF14MapPoolAttDef
+  maps:
+  - BF14FortressAttDef
+
+- type: gameMapPool
   id: BF14MapPoolFFA
   maps:
   - BF14Pizzeria

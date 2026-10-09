@@ -8,16 +8,7 @@
   },
   "states": [
     {
-      "name": "closedblue"
-    },
-    {
-      "name": "openblue"
-    },
-    {
-      "name": "closedred"
-    },
-    {
-      "name": "openred"
+      "name": "base"
     }
   ]
 }

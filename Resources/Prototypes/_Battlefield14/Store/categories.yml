@@ -99,3 +99,44 @@
 - type: storeCategory
   id: UplinkPACTRUShips
   name: store-category-bf-ships
+
+## Misc
+# Red team
+
+- type: storeCategory
+  id: UplinkRedUtility
+  name: store-category-bf-utility
+
+- type: storeCategory
+  id: UplinkRedWeapons
+  name: store-category-bf-weapons
+
+- type: storeCategory
+  id: UplinkRedAmmo
+  name: store-category-bf-ammo
+
+- type: storeCategory
+  id: UplinkRedExplosives
+  name: store-category-bf-explosives
+
+# Blue team
+
+- type: storeCategory
+  id: UplinkBlueUtility
+  name: store-category-bf-utility
+
+- type: storeCategory
+  id: UplinkBlueStructures
+  name: Structures
+
+- type: storeCategory
+  id: UplinkBlueWeapons
+  name: store-category-bf-weapons
+
+- type: storeCategory
+  id: UplinkBlueAmmo
+  name: store-category-bf-ammo
+
+- type: storeCategory
+  id: UplinkBlueExplosives
+  name: store-category-bf-explosives

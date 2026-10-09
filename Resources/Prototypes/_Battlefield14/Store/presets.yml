@@ -57,3 +57,40 @@
     - PACTRequisition
     balance:
       PACTRequisition: 0
+
+- type: entity
+  id: StorePresetRedUpink
+  abstract: true
+  components:
+  - type: Store
+    name: Red team requesition
+    categories:
+    - UplinkRedUtility
+    - UplinkRedWeapons
+    - UplinkRedAmmo
+    - UplinkRedExplosives
+    currencyWhitelist:
+    - PACTRequisition
+    balance:
+      PACTRequisition: 25 # shit gear at start better shit as the round goes on
+    buySuccessSound:
+      path: "/Audio/_Battlefield14/Misc/TDMvendor/buy.ogg"
+
+- type: entity
+  id: StorePresetBlueUpink
+  abstract: true
+  components:
+  - type: Store
+    name: Blue team requesition
+    categories:
+    - UplinkBlueUtility
+    - UplinkBlueStructures
+    - UplinkBlueWeapons
+    - UplinkBlueAmmo
+    - UplinkBlueExplosives
+    currencyWhitelist:
+    - NATORequisition
+    balance:
+      NATORequisition: 500 # good shit at start no more points as the round goes spend wisely
+    buySuccessSound:
+      path: "/Audio/_Battlefield14/Misc/TDMvendor/buy.ogg"

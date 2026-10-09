@@ -128,6 +128,21 @@
     - Arcade
 
 - type: gamePreset
+  id: BF14_AttDef
+  alias:
+    - Attack and Defense
+    - AttackDefense
+    - AttDef
+  name: Attack/Defense
+  description: Blue team defends while red team attacks
+  maxPlayers: 20
+  showInVote: true
+  respawnMultiplier: 0.166 # 30 seconds
+  supportedMaps: BF14MapPoolAttDef
+  rules:
+    - Arcade
+
+- type: gamePreset
   id: BF14_CTF
   alias:
     - capturetheflag

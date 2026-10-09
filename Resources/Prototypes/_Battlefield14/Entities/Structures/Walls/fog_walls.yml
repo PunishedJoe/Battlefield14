@@ -18,6 +18,15 @@
 
 - type: entity
   parent: RMCFogWallPermanent
+  id: BF14FogWall3
+  description: It looks way too dangerous to traverse. Best wait until it has cleared up.
+  suffix: 3 minutes
+  components:
+  - type: TimedDespawn
+    lifetime: 180
+
+- type: entity
+  parent: RMCFogWallPermanent
   id: BF14FogWall5
   description: It looks way too dangerous to traverse. Best wait until it has cleared up.
   suffix: 5 minutes

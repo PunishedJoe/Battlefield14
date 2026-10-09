@@ -1,0 +1,619 @@
+## Red
+# Utility
+
+- type: listing
+  id: UplinkRedBiofoam
+  name: Biofoam
+  description: A biofoam canister filled with biofoam, used for treating wounds.
+  productEntity: BiofoamCanisterRed
+  cost:
+    PACTRequisition: 3
+  categories:
+    - UplinkRedUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedBreachingHammer
+  name: Breaching hammer
+  description: A large breaching hammer used to break shit.
+  productEntity: SecBreachingHammer
+  cost:
+    PACTRequisition: 5
+  categories:
+    - UplinkRedUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedStabil
+  name: autoinjector (combat stabilisation)
+  description: A autoinjector filled with quick healing medicine.
+  productEntity: BF14AutoInjectorCombatStabilisationCapped
+  cost:
+    PACTRequisition: 6
+  categories:
+    - UplinkRedUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedWirecutter
+  name: Wirecutter
+  description: Wirecutter, used for cutting wire or barbed wire.
+  productEntity: Wirecutter
+  cost:
+    PACTRequisition: 1
+  categories:
+    - UplinkRedUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedCrowbar
+  name: Crowbar
+  description: A handy dandy crowbar.
+  productEntity: Crowbar
+  cost:
+    PACTRequisition: 1
+  categories:
+    - UplinkRedUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedMultitool
+  name: Multitool
+  description: A multitool. Can be used to disarm landmines
+  productEntity: Multitool
+  cost:
+    PACTRequisition: 1
+  categories:
+    - UplinkRedUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+# Weapons
+
+- type: listing
+  id: UplinkRedMP133
+  name: MP-133 shotgun
+  description: A Russian MP-133 shotgun.
+  productEntity: WeaponShotgunRUMP133
+  cost:
+    PACTRequisition: 20
+  categories:
+    - UplinkRedWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedRP46
+  name: RP-46 GPMG
+  description: A Soviet RP-46 GPMG.
+  productEntity: WeaponMachineGunRURP46
+  cost:
+    PACTRequisition: 30
+  categories:
+    - UplinkRedWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedPTRD41
+  name: PTRD-41
+  description: A Soviet PTRD-41 AMR. Has a 2-tap and wallbang potential.
+  productEntity: WeaponRifleRUPTRD41
+  cost:
+    PACTRequisition: 40
+  categories:
+    - UplinkRedWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedRShG2
+  name: RShG-2
+  description: A Russian RShG-2 disposable termobaric rocket launcher.
+  productEntity: WeaponLauncherRURPG26Thermobaric
+  cost:
+    PACTRequisition: 50
+  categories:
+    - UplinkRedWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+# Ammo
+
+- type: listing
+  id: UplinkRed12Gauge
+  name: 12Ga. buckshot
+  description: A box of 20 12 Gauge buckshot shells.
+  productEntity: ShellBoxBF12GaugeBuckshot
+  cost:
+    PACTRequisition: 5
+  categories:
+    - UplinkRedAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedRP46Belt
+  name: RP-46 belt
+  description: A a 50 round belt for the RP-46 machinegun.
+  productEntity: MagazineBeltRP46
+  cost:
+    PACTRequisition: 10
+  categories:
+    - UplinkRedAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedPTRD41Cartridge
+  name: PTRD-41 cartridge
+  description: A single 14.5x114mm cartridge for the PTRD-41 AMR, has a 2-tap and wallbang potential.
+  productEntity: BF_CartridgeRifle145x114
+  cost:
+    PACTRequisition: 5
+  categories:
+    - UplinkRedAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+# Explosives
+
+- type: listing
+  id: UplinkRedBreachingCharge
+  name: RDG-2 smoke grenades
+  description: A box of 4 breaching charges.
+  productEntity: BoxBreachingCharges
+  cost:
+    PACTRequisition: 15
+  categories:
+    - UplinkRedExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedRDG2
+  name: RDG-2 smoke grenades
+  description: A box of 8 RDG-2 smoke grenades.
+  productEntity: BoxGrenadesRDG2
+  cost:
+    PACTRequisition: 10
+  categories:
+    - UplinkRedExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedZarya
+  name: Zarya flash grenades
+  description: A box of 8 zarya flash grenades.
+  productEntity: BoxGrenadesZarya
+  cost:
+    PACTRequisition: 10
+  categories:
+    - UplinkRedExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedRGD5
+  name: RGD-5 frag grenades
+  description: A box of 8 RGD-5 frag grenades.
+  productEntity: BoxGrenadesRGD5
+  cost:
+    PACTRequisition: 15
+  categories:
+    - UplinkRedExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkRedRGO
+  name: RGO impact grenades
+  description: A box of 8 RGO impact grenades.
+  productEntity: BoxGrenadesRGO
+  cost:
+    PACTRequisition: 20
+  categories:
+    - UplinkRedExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+## Blue
+# Utility
+
+- type: listing
+  id: UplinkBlueBiofoam
+  name: Biofoam
+  description: A biofoam canister filled with biofoam, used for treating wounds.
+  productEntity: BiofoamCanister
+  cost:
+    NATORequisition: 2
+  categories:
+    - UplinkBlueUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueStabil
+  name: autoinjector (combat stabilisation)
+  description: A autoinjector filled with quick healing medicine.
+  productEntity: BF14AutoInjectorCombatStabilisationCapped
+  cost:
+    NATORequisition: 4
+  categories:
+    - UplinkBlueUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueWirecutter
+  name: Wirecutter
+  description: Wirecutter, used for cutting wire or barbed wire.
+  productEntity: Wirecutter
+  cost:
+    NATORequisition: 1
+  categories:
+    - UplinkBlueUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueShovel
+  name: Shovel
+  description: A shovel used for digging soil for sandbags and hesco barriers.
+  productEntity: Shovel
+  cost:
+    NATORequisition: 1
+  categories:
+    - UplinkBlueUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueCrowbar
+  name: Crowbar
+  description: A handy dandy crowbar.
+  productEntity: Crowbar
+  cost:
+    NATORequisition: 1
+  categories:
+    - UplinkBlueUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueMultitool
+  name: Multitool
+  description: A multitool. Can be used to disarm landmines
+  productEntity: Multitool
+  cost:
+    NATORequisition: 1
+  categories:
+    - UplinkBlueUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Structures
+
+- type: listing
+  id: UplinkBlueHesco
+  name: HESCO barrier
+  description: A stack of 10 HESCO barriers.
+  productEntity: BF14HescoBarrierBlue10
+  cost:
+    NATORequisition: 10
+  categories:
+    - UplinkBlueStructures
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueSandbag
+  name: Sandbag
+  description: A stack of 10 sandbags.
+  productEntity: SandbagFull10
+  cost:
+    NATORequisition: 5
+  categories:
+    - UplinkBlueStructures
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueBarbedwire
+  name: Barbedwire
+  description: A stack of 10 barbedwire.
+  productEntity: BarbedWire10
+  cost:
+    NATORequisition: 5
+  categories:
+    - UplinkBlueStructures
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Weapons
+
+- type: listing
+  id: UplinkBlueM870
+  name: M870 shotgun
+  description: A American M870 shotgun.
+  productEntity: WeaponShotgunUSM870
+  cost:
+    NATORequisition: 20
+  categories:
+    - UplinkBlueWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueM249Para
+  name: M249 Para LMG
+  description: A American M249 Para LMG.
+  productEntity: WeaponMachineGunUSM249Para
+  cost:
+    NATORequisition: 35
+  categories:
+    - UplinkBlueWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueMG3
+  name: MG3 GPMG
+  description: A German MG3 GPMG.
+  productEntity: WeaponMachineGunDEMG3
+  cost:
+    NATORequisition: 50
+  categories:
+    - UplinkBlueWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueAWP
+  name: AWP sniper
+  description: A British AWP sniper.
+  productEntity: WeaponSniperGBAWP
+  cost:
+    NATORequisition: 35
+  categories:
+    - UplinkBlueWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Ammo
+
+- type: listing
+  id: UplinkBlue12Gauge
+  name: 12Ga. buckshot
+  description: A box of 20 12 Gauge buckshot shells.
+  productEntity: ShellBoxBF12GaugeBuckshot
+  cost:
+    NATORequisition: 5
+  categories:
+    - UplinkBlueAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueM107Mag
+  name: AWP mag
+  description: A 10 round magazine for the AWP sniper.
+  productEntity: MagazineSniperAWP
+  cost:
+    NATORequisition: 5
+  categories:
+    - UplinkBlueAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueM249BeltBox
+  name: M249 belt box
+  description: A 100 round belt box for the M249 LMG.
+  productEntity: MagazineBeltBoxM249
+  cost:
+    NATORequisition: 10
+  categories:
+    - UplinkBlueAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueMG3Drum
+  name: MG3 drum
+  description: A 50 round drum for the MG3 GMPG.
+  productEntity: MagazineBeltBoxMG3Short
+  cost:
+    NATORequisition: 10
+  categories:
+    - UplinkBlueAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueMG3BeltBox
+  name: MG3 belt box
+  description: A 100 round belt box for the MG3 GMPG.
+  productEntity: MagazineBeltBoxMG3
+  cost:
+    NATORequisition: 25
+  categories:
+    - UplinkBlueAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+# Explosives
+
+- type: listing
+  id: UplinkBlueM16A2APM
+  name: M16A2 APM
+  description: A M16A2 anti-personel landmine.
+  productEntity: LandMineM16A2APMItem
+  cost:
+    NATORequisition: 2
+  categories:
+    - UplinkBlueExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueM18
+  name: M18 smoke grenades
+  description: A box of 8 M18 smoke grenades.
+  productEntity: BoxGrenadesM18
+  cost:
+    NATORequisition: 10
+  categories:
+    - UplinkBlueExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueM84
+  name: M84 flash grenades
+  description: A box of 8 M84 flash grenades.
+  productEntity: BoxGrenadesM84
+  cost:
+    NATORequisition: 10
+  categories:
+    - UplinkBlueExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+
+- type: listing
+  id: UplinkBlueM67
+  name: M67 frag grenades
+  description: A box of 8 M67 frag grenades.
+  productEntity: BoxGrenadesM67
+  cost:
+    NATORequisition: 15
+  categories:
+    - UplinkBlueExplosives
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink

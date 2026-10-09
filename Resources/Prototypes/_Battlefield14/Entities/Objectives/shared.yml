@@ -93,6 +93,7 @@
   id: BaseGracePeriodAnnouncer
   name: grace period announcer
   suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
   placement:
     mode: SnapgridCenter
   components:
@@ -132,7 +133,7 @@
     message: "The area is now an active warzone."
     sender: "Combat Area"
     sound:
-      path: /Audio/Announcements/bloblarm.ogg
+      path: /Audio/_Battlefield14/Announcements/WARstart.ogg
 #    color: "#BE8700"
 
 - type: entity
@@ -140,6 +141,7 @@
   id: BaseGracePeriodAnnouncerOMON
   name: OMON grace period announcer
   suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
   placement:
     mode: SnapgridCenter
   components:
@@ -155,6 +157,7 @@
   id: BaseGracePeriodAnnouncerSWAT
   name: SWAT grace period announcer
   suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
   placement:
     mode: SnapgridCenter
   components:
@@ -201,20 +204,66 @@
 
 - type: entity
   parent: BaseGracePeriodAnnouncerSpawner
-  id: GracePeriodAnnouncerSpawnerTDM30Sec
+  id: GracePeriodAnnouncerSpawnerTDM3Min
   name: grace period announcer spawner
-  suffix: TDM, 30 seconds
+  suffix: 3 minutes, TDM
   components:
-  - type: ActiveTimerTrigger
+  - type: ActiveTimerTrigger # this is so the annoucement doesnt play while the game is still in menu as it loads the map before the round starts
     timeRemaining: 1
   - type: SpawnOnTrigger
-    proto: GracePeriodAnnouncerSpawnerTDMActive
+    proto: GracePeriodAnnouncerSpawnerTDM3MinActiveWarning
   - type: DeleteOnTrigger
 
 - type: entity
   parent: BaseGracePeriodAnnouncerSpawner
-  id: GracePeriodAnnouncerSpawnerTDMActive
-  name: TDM announcer spawner
+  id: GracePeriodAnnouncerSpawnerTDM3MinActiveWarning
+  categories: [ HideSpawnMenu ]
+  suffix: DO NOT MAP
+  components:
+  - type: ActiveTimerTrigger
+    timeRemaining: 164
+  - type: SpawnOnTrigger
+    proto: GracePeriodAnnouncerSpawnerTDM3MinActive
+  - type: DeleteOnTrigger
+  - type: AnnounceOnSpawn
+    message: "The grace period will end in 3 minutes, prepare."
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/TDMgrace.ogg
+
+- type: entity
+  parent: BaseGracePeriodAnnouncerSpawner
+  id: GracePeriodAnnouncerSpawnerTDM3MinActive
+  categories: [ HideSpawnMenu ]
+  suffix: DO NOT MAP
+  components:
+  - type: ActiveTimerTrigger
+    timeRemaining: 15
+  - type: SpawnOnTrigger
+    proto: BaseGracePeriodAnnouncerTDM
+  - type: DeleteOnTrigger
+  - type: AnnounceOnSpawn
+    message: "The grace is about to end in 15 seconds, get ready."
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/TDMgracewarn.ogg
+
+- type: entity
+  parent: BaseGracePeriodAnnouncerSpawner
+  id: GracePeriodAnnouncerSpawnerTDM30Sec
+  name: grace period announcer spawner
+  suffix: 30 seconds, TDM
+  components:
+  - type: ActiveTimerTrigger # this is so the annoucement doesnt play while the game is still in menu as it loads the map before the round starts
+    timeRemaining: 1
+  - type: SpawnOnTrigger
+    proto: GracePeriodAnnouncerSpawnerTDM30SecActive
+  - type: DeleteOnTrigger
+
+- type: entity
+  parent: BaseGracePeriodAnnouncerSpawner
+  id: GracePeriodAnnouncerSpawnerTDM30SecActive
+  categories: [ HideSpawnMenu ]
   suffix: DO NOT MAP
   components:
   - type: ActiveTimerTrigger
@@ -231,7 +280,7 @@
 - type: entity
   parent: BaseGracePeriodAnnouncer
   id: BaseGracePeriodAnnouncerTDM
-  name: TDM grace period announcer
+  categories: [ HideSpawnMenu ]
   suffix: DO NOT MAP
   placement:
     mode: SnapgridCenter

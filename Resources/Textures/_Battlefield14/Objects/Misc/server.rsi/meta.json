@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "",
+  "copyright": "Made by WillyBillyGilly for Battlefield14 Do not Edit or Reuse without permission",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "hack0"
+    },
+    {
+      "name": "hack1"
+    },
+    {
+      "name": "hack2"
+    },
+    {
+      "name": "hack3"
+    },
+    {
+      "name": "hack4"
+    },
+    {
+      "name": "hack5",
+      "delays": [
+        [
+          0.4,
+          0.4
+        ]
+      ]
+    }
+  ]
+}

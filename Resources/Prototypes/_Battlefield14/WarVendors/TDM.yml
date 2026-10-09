@@ -1,0 +1,71 @@
+- type: entity
+  parent: [ BaseMachine , StorePresetBlueUpink ]
+  id: BlueDefenseUplinkMachine
+  name: Blue team vendor
+  description: Defense focused gear from a vending machine.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/tdmvendor.rsi
+    layers:
+    - state: "baseblue"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "blueanim"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Tag
+    tags:
+    - AmericanUplink
+  - type: AmbientSound
+    volume: 0
+    range: 10
+    sound:
+      path: "/Audio/_Battlefield14/Misc/TDMvendor/ambient.ogg"
+  - type: PointLight
+    color: "#2d61ff"
+    enabled: true
+    radius: 1.5
+  - type: ExtendDescription
+    descriptionList:
+      - description: Limited points, spend them wisely.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+
+- type: entity
+  parent: [ BaseMachine , StorePresetRedUpink ]
+  id: RedOffensiveUplinkMachine
+  name: Red team vendor
+  description: Offensive focused gear from a vending machine.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/tdmvendor.rsi
+    layers:
+    - state: "basered"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "redanim"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Tag
+    tags:
+    - RussianUplink
+  - type: AmbientSound
+    volume: 0
+    range: 10
+    sound:
+      path: "/Audio/_Battlefield14/Misc/TDMvendor/ambient.ogg"
+  - type: PointLight
+    color: "#ff2c00"
+    enabled: true
+    radius: 1.5

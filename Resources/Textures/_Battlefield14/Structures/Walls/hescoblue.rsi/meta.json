@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": "",
+  "copyright": "Made by WillyBillyGilly for Battlefield14 Do not Edit or Reuse without permission",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "stack1"
+    },
+    {
+      "name": "stack2"
+    },
+    {
+      "name": "stack3"
+    },
+    {
+      "name": "placed"
+    },
+    {
+      "name": "built"
+    }
+  ]
+}

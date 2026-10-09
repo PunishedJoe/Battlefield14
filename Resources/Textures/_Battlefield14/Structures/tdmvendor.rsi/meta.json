@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "license": "",
+  "copyright": "Made by WillyBillyGilly for Battlefield14 Do not Edit or Reuse without permission",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "baseblue"
+    },
+    {
+      "name": "basered"
+    },
+    {
+      "name": "blueanim",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "redanim",
+      "delays": [
+        [
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "bluebuy",
+      "delays": [
+        [
+          0.2,
+          0.2,
+		  0.2
+        ]
+      ]
+    },
+    {
+      "name": "redbuy",
+      "delays": [
+        [
+          0.2,
+          0.2,
+		  0.2
+        ]
+      ]
+    }
+  ]
+}

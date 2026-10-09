@@ -1,0 +1,436 @@
+# stage 0 initial
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage0
+  name: blue server
+  description: A sever full of valuable information.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack0
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Can be hacked with a Alt-click.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue server is NO LONGER being hacked. (Stage 0/4)"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelReturn.ogg
+    color: "#2d61ff"
+  - type: DisassembleOnAltVerb
+    prototype: BF14DefenseObjectiveBlueServerStage0Hack
+    doAfter: 2
+  - type: PointLight
+    color: "#2d61ff"
+    enabled: true
+    radius: 1.5
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage0Hack
+  name: blue server
+  description: A sever full of valuable information.
+  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack5
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Hack can be stopped with a Alt-click, otherwise it will enter next stage in 7.5 seconds.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue server is BEING hacked. (Stage 0/4)"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelSteal.ogg
+    color: "#ff2c00"
+  - type: TimedDespawn
+    lifetime: 7.5
+  - type: SpawnOnDespawn
+    prototype: BF14DefenseObjectiveBlueServerStage1Hack
+  - type: RotatingLight
+  - type: PointLight
+    mask: /Textures/Effects/LightMasks/double_cone.png
+    color: "#b51b10"
+    energy: 5
+    radius: 10
+    softness: 1
+  - type: AmbientSound
+    volume: 0
+    range: 25
+    sound:
+      path: "/Audio/_Battlefield14/Misc/alarm/alarm4.ogg"
+  - type: DisassembleOnAltVerb
+    prototype: BF14DefenseObjectiveBlueServerStage0
+    doAfter: 1
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 
+
+# stage 1
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage1
+  name: blue server
+  description: A sever full of valuable information.
+  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack1
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Can be hacked with a Alt-click.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue server is NO LONGER being hacked. (Stage 1/4)"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelReturn.ogg
+    color: "#2d61ff"
+  - type: DisassembleOnAltVerb
+    prototype: BF14DefenseObjectiveBlueServerStage1Hack
+    doAfter: 2
+  - type: PointLight
+    color: "#2d61ff"
+    enabled: true
+    radius: 1.5
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage1Hack
+  name: blue server
+  description: A sever full of valuable information.
+  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack5
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Hack can be stopped with a Alt-click, otherwise it will enter next stage in 7.5 seconds.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue server is BEING hacked. (Stage 1/4)"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelSteal.ogg
+    color: "#ff2c00"
+  - type: TimedDespawn
+    lifetime: 7.5
+  - type: SpawnOnDespawn
+    prototype: BF14DefenseObjectiveBlueServerStage2Hack
+  - type: RotatingLight
+  - type: PointLight
+    mask: /Textures/Effects/LightMasks/double_cone.png
+    color: "#b51b10"
+    energy: 5
+    radius: 10
+    softness: 1
+  - type: AmbientSound
+    volume: 0
+    range: 25
+    sound:
+      path: "/Audio/_Battlefield14/Misc/alarm/alarm4.ogg"
+  - type: DisassembleOnAltVerb
+    prototype: BF14DefenseObjectiveBlueServerStage1
+    doAfter: 1
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 
+
+# stage 2
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage2
+  name: blue server
+  description: A sever full of valuable information.
+  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack2
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Can be hacked with a Alt-click.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue server is NO LONGER being hacked. (Stage 2/4)"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelReturn.ogg
+    color: "#2d61ff"
+  - type: DisassembleOnAltVerb
+    prototype: BF14DefenseObjectiveBlueServerStage2Hack
+    doAfter: 2
+  - type: PointLight
+    color: "#2d61ff"
+    enabled: true
+    radius: 1.5
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage2Hack
+  name: blue server
+  description: A sever full of valuable information.
+  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack5
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Hack can be stopped with a Alt-click, otherwise it will enter next stage in 7.5 seconds.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue server is BEING hacked. (Stage 2/4)"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelSteal.ogg
+    color: "#ff2c00"
+  - type: TimedDespawn
+    lifetime: 7.5
+  - type: SpawnOnDespawn
+    prototype: BF14DefenseObjectiveBlueServerStage3Hack
+  - type: RotatingLight
+  - type: PointLight
+    mask: /Textures/Effects/LightMasks/double_cone.png
+    color: "#b51b10"
+    energy: 5
+    radius: 10
+    softness: 1
+  - type: AmbientSound
+    volume: 0
+    range: 25
+    sound:
+      path: "/Audio/_Battlefield14/Misc/alarm/alarm4.ogg"
+  - type: DisassembleOnAltVerb
+    prototype: BF14DefenseObjectiveBlueServerStage2
+    doAfter: 1
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 
+
+# stage 3
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage3
+  name: blue server
+  description: A sever full of valuable information.
+  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack3
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Can be hacked with a Alt-click.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue server is NO LONGER being hacked. (Stage 3/4)"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelReturn.ogg
+    color: "#2d61ff"
+  - type: DisassembleOnAltVerb
+    prototype: BF14DefenseObjectiveBlueServerStage3Hack
+    doAfter: 2
+  - type: PointLight
+    color: "#2d61ff"
+    enabled: true
+    radius: 1.5
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage3Hack
+  name: blue server
+  description: A sever full of valuable information.
+  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack5
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: ExtendDescription
+    descriptionList:
+      - description: Hack can be stopped with a Alt-click, otherwise it will enter next stage in 7.5 seconds.
+        fontSize: 12
+        color: "#a89017"
+        requireDetailRange: false
+  - type: AnnounceOnSpawn
+    message: "The Blue server is BEING hacked. (Stage 3/4)"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/CTFIntelSteal.ogg
+    color: "#ff2c00"
+  - type: TimedDespawn
+    lifetime: 7.5
+  - type: SpawnOnDespawn
+    prototype: BF14DefenseObjectiveBlueServerStage4
+  - type: RotatingLight
+  - type: PointLight
+    mask: /Textures/Effects/LightMasks/double_cone.png
+    color: "#b51b10"
+    energy: 5
+    radius: 10
+    softness: 1
+  - type: AmbientSound
+    volume: 0
+    range: 25
+    sound:
+      path: "/Audio/_Battlefield14/Misc/alarm/alarm4.ogg"
+  - type: DisassembleOnAltVerb
+    prototype: BF14DefenseObjectiveBlueServerStage3
+    doAfter: 1
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 
+
+# stage 4 red win
+
+- type: entity
+  parent: BaseStructure
+  id: BF14DefenseObjectiveBlueServerStage4
+  name: blue server
+  description: A sever full of valuable information.
+  suffix: DO NOT MAP
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/server.rsi
+    drawdepth: WallTops
+    layers:
+    - state: base
+    - state: hack4
+      shader: unshaded
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Dynamic
+  - type: Rotatable
+  - type: InteractionOutline
+  - type: AnnounceOnSpawn
+    message: "The Blue server has ben fully hacked and the Red team has won!"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/RedWin.ogg
+    color: "#ff2c00"
+  - type: RotatingLight
+  - type: PointLight
+    mask: /Textures/Effects/LightMasks/double_cone.png
+    color: "#b51b10"
+    energy: 5
+    radius: 10
+    softness: 1
+  - type: NukeDisk # these 2 are for the pinpointer to work
+  - type: ArrivalsBlacklist 

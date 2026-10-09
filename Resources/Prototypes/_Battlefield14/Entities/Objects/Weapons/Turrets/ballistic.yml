@@ -103,3 +103,56 @@
     entity: BallisticTurretHighCaliberPACT
   - type: Item
     size: Large
+
+- type: entity
+  parent: BaseFlatpack
+  id: BallisticTurretHighCaliberBlueFlatpack
+  name: Ballistic turret flatpack (Blue)
+  description: A flatpack turret. Used by the blue team in defensive scenarios.
+  components:
+  - type: Flatpack
+    entity: BallisticTurretHighCaliberBlue
+  - type: Item
+    size: Large
+
+- type: entity
+  parent: BallisticTurretHighCaliber
+  name: blue defensive turret
+  id: BallisticTurretHighCaliberBlue
+  description: A single use turret designed by the Bluea team for defense of HVT's.
+  suffix: NATO
+  components:
+  - type: NpcFactionMember
+    factions:
+    - NATO
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Turrets/blue_turret.rsi
+    drawdepth: Mobs
+    layers:
+    - state: base
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 0
+  - type: ProjectileBatteryAmmoProvider
+    proto: BulletRifleBF556x45
+    fireCost: 50

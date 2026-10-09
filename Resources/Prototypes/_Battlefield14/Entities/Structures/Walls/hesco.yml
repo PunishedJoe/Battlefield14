@@ -1,0 +1,150 @@
+- type: entity
+  parent: BaseItem
+  id: BF14HescoBarrierBlue
+  name: HESCO barrier
+  description: A HESCO barrier, its like a sandbag but bigger and better.
+  suffix: item
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Walls/hescoblue.rsi
+    layers:
+    - state: stack1
+      map: ["base"]
+  - type: Item
+    size: Large
+  - type: SpawnAfterInteract
+    prototype: BF14HescoBarrierBluePlaced
+    doAfter: 0.5
+    removeOnInteract: true
+  - type: ExtendDescription
+    descriptionList:
+      - description: Left click on a tile to place it.
+        color: green
+        requireDetailRange: true
+  - type: Appearance
+  - type: Stack
+    stackType: BF14HescoBarrierBlueStack
+    count: 1
+    baseLayer: base
+    layerStates:
+    - stack1
+    - stack2
+    - stack3
+
+- type: entity
+  parent: BF14HescoBarrierBlue
+  id: BF14HescoBarrierBlue10
+  suffix: "10"
+  components:
+  - type: Stack
+    stackType: SandbagFull
+    count: 10
+
+- type: stack
+  id: BF14HescoBarrierBlueStack
+  name: HESCO barrier
+  spawn: BF14HescoBarrierBlue
+  maxCount: 10
+
+- type: entity
+  parent: BaseWallTierOne
+  id: BF14HescoBarrierBluePlaced
+  name: HESCO barrier
+  description: A HESCO barrier, its like a sandbag but bigger and better.
+  components:
+  - type: Tag
+    tags:
+    - Wall
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Walls/hescoblue.rsi
+    state: placed
+  - type: Icon
+    sprite: Structures/Walls/solid.rsi
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is currently weak and fragile, it needs to be filled with soil. It can also be disasembled by Alt-clicking.
+        color: green
+        requireDetailRange: true
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: DisassembleOnAltVerb
+    prototype: BF14HescoBarrierBlue
+    doAfter: 1
+  - type: Construction
+    graph: BF14HescoBarrierBlueGraph
+    node: start
+
+- type: constructionGraph
+  id: BF14HescoBarrierBlueGraph
+  start: start
+  graph:
+    - node: start
+      entity: BF14HescoBarrierBluePlaced
+      edges:
+        - to: end
+          completed:
+            - !type:SpawnPrototype
+              prototype: BF14HescoBarrierBlueBuilt
+            - !type:DeleteEntity
+          steps:
+            - tag: SandbagFillable
+              doAfter: 3
+    - node: end
+      edges: []
+
+- type: entity
+  parent: BaseWallTierOne
+  id: BF14HescoBarrierBlueBuilt
+  name: HESCO barrier
+  description: A HESCO barrier, its like a sandbag but bigger and better.
+  components:
+  - type: Tag
+    tags:
+    - Wall
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Walls/hescoblue.rsi
+    state: built
+  - type: Icon
+    sprite: Structures/Walls/solid.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalSlam
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
