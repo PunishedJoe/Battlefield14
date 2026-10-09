@@ -1371,11 +1371,6 @@ entities:
     - type: Transform
       pos: -0.5,-47.5
       parent: 1
-  - uid: 281
-    components:
-    - type: Transform
-      pos: -0.5,-47.5
-      parent: 1
 - proto: BF14DefenseObjectiveBlueServerStage0
   entities:
   - uid: 15
@@ -2340,42 +2335,6 @@ entities:
       parent: 1
 - proto: BreachingCharge
   entities:
-  - uid: 274
-    components:
-    - type: Transform
-      pos: 0.5,-47.5
-      parent: 1
-    - type: DeviceLinkSink
-      ports:
-      - Timer
-      - Trigger
-  - uid: 275
-    components:
-    - type: Transform
-      pos: 0.5,-47.5
-      parent: 1
-    - type: DeviceLinkSink
-      ports:
-      - Timer
-      - Trigger
-  - uid: 276
-    components:
-    - type: Transform
-      pos: 0.5,-47.5
-      parent: 1
-    - type: DeviceLinkSink
-      ports:
-      - Timer
-      - Trigger
-  - uid: 277
-    components:
-    - type: Transform
-      pos: 0.5,-47.5
-      parent: 1
-    - type: DeviceLinkSink
-      ports:
-      - Timer
-      - Trigger
   - uid: 282
     components:
     - type: Transform
