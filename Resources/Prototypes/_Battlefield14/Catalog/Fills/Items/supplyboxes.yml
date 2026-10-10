@@ -11,10 +11,10 @@
       - id: BoxBodyBag
       - id: BF14AdvancedTraumaKit
       - id: BF14AdvancedBurnKit
-      - id: AU14HemostaticGauzePacket
+      - id: BF14GauzePacket
         amount: 2
-      - id: Brutepack
-      - id: Ointment
+      - id: BF14DressingPacket
+      - id: BF14Ointment
       - id: SyringeSaline
         amount: 2
       - id: BF14SyretteInaprovalineCapped
