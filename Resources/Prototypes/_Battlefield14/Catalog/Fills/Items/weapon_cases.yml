@@ -271,8 +271,19 @@
 
 - type: entity
   parent: WeaponCaseLong
+  id: BF14WeaponCaseLongUSM1014
+  suffix: M1014
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponShotgunUSM1014
+    - id: ShellBoxBF12GaugeBuckshot
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseLong
   id: BF14WeaponCaseLongUSSPAS12
-  suffix: SPAS12
+  suffix: SPAS-12
   components:
   - type: StorageFill
     contents:
@@ -283,7 +294,7 @@
 - type: entity
   parent: WeaponCaseLong
   id: BF14WeaponCaseLongUSUSAS12
-  suffix: USAS12
+  suffix: USAS-12
   components:
   - type: StorageFill
     contents:
@@ -580,6 +591,28 @@
     contents:
     - id: WeaponRifleDEHK51
     - id: MagazineRifleG3
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEMPIKM
+  suffix: MPi-KM
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEMPIKM
+    - id: MagazineRifleAKM
+      amount: 5
+
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEMPIKMS
+  suffix: MPi-KMS
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleDEMPIKMS
+    - id: MagazineRifleAKM
       amount: 5
 
 #region Rifles, BE

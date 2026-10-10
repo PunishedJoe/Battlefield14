@@ -41,6 +41,8 @@
     whitelist:
       tags:
         - BF_CartridgeShotgun410Bore
+  - type: GunSpreadModifier
+    spread: 1.5
   - type: ExtendDescription
     descriptionList:
       - description: Takes .410 bore.

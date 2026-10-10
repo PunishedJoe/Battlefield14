@@ -50,3 +50,10 @@
   - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-03.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-04.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/SPAS12/uc_spas12_shell-insert-05.ogg"
+
+- type: soundCollection
+  id: BF_M1014_ShellIn # M1014 - Used for M1014
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/M1014/shell-insert-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M1014/shell-insert-02.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/M1014/shell-insert-03.ogg"

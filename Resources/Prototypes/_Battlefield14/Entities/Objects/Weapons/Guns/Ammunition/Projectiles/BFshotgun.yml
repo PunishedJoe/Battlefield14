@@ -13,8 +13,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 7.5
-        Slash: 6
+        Piercing: 9
+        Slash: 4.5
         Structural: 6
     armorPenetration: -0.3
   - type: ProjectileDamageFalloff
@@ -117,8 +117,8 @@
         Slash: 3
     armorPenetration: 0.1
   - type: ProjectileDamageFalloff
-    falloffStart: 15
-    falloffPerTile: 0.25
+    falloffStart: 7
+    falloffPerTile: 0.1
     minimumMultiplier: 0.50
     stepByTile: true
   - type: StaminaDamageOnCollide

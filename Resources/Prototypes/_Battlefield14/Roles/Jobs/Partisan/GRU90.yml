@@ -54,7 +54,7 @@
     pocket2: PouchGrenades
   storage:
     belt:
-#    - ClothingMaskGasM40
+    - ClothingMaskGasGP7VM
     - DrinkMREFlask
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - Zipties

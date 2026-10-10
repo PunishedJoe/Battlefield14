@@ -24,26 +24,33 @@
     sections:
     - name: weaponry
       entries:
+      - id: CrateSecgearNATOFilledM320SWAT
+        name: M320 bundle
+        points: 3
       - id: BF14WeaponCaseLongUSXM8
         name: XM8 assault rifle
         points: 2
       - id: BF14WeaponCaseLongBEP90
         name: P90 PDW
         points: 2
+      - id: BF14WeaponCaseLongUSM1014
+        name: M1014 combat shotgun
+        points: 2
       - id: BF14WeaponCaseLongGBAWP
         name: AWP sniper rifle
         points: 1
-      - id: CrateSecgearNATOFilledM320SWAT
-        name: M320 bundle
-        points: 3
+      - id: RiotBulletShield
+        name: ballistic shield
+        points: 1
+        amount: 1
     - name: throwables
       entries:
-      - id: BoxGrenadesM84
-        name: M84 flashbang grenades
-        points: 1
       - id: BoxGrenadesM58
         name: CS gas grenades
         points: 2
+      - id: BoxGrenadesM84
+        name: M84 flashbang grenades
+        points: 1
     - name: utility
       entries:
       - id: BoxBreachingCharges

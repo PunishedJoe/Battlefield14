@@ -1,6 +1,6 @@
 - type: entity
   name: "1887 shorty"
-  parent: WeaponShotgunUSM590Buckshot
+  parent: BaseWeaponShotgun
   id: WeaponShotgunUS1887Short
   description: An outdated lever-action shotgun. A cut down barrel and stock, and enlarged lever allows one handed racking
   components:
@@ -16,6 +16,13 @@
       map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/1887short.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
   - type: Gun
     fireRate: 1
     projectileSpeed: 30 # short barrel
@@ -24,17 +31,16 @@
   - type: GunSpreadModifier
     spread: 2 # short barrel
   - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun12Gauge
     capacity: 5
-  - type: AltFireMelee
-    attackType: Heavy
-  - type: MeleeWeapon
-    damage:
-      types:
-       Blunt: 6.7 # idiot
-    angle: 0
-    wideAnimationRotation: 90 # -90 if it takes bayonets (hits with muzzle) 90 if not (hits with butt)
-    soundHit:
-      collection: MetalThud
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+    soundInsert:
+      collection: BF_Mossberg_ShellIn
+      params:
+        volume: -5
   - type: Appearance
   - type: ExtendDescription
     descriptionList:
