@@ -1,3 +1,5 @@
+#region Base
+
 - type: entity
   parent: ClothingMaskBase
   id: ClothingBaseGasMask
@@ -29,6 +31,8 @@
     modifiers:
       coefficients:
         Radiation: 0.75
+
+#region NATO
 
 - type: entity
   parent: ClothingBaseGasMask
@@ -96,15 +100,16 @@
   - type: Clothing
     sprite: _Battlefield14/Clothing/Mask/M40green.rsi
 
+#region PACT
+
 - type: entity
   parent: ClothingMaskGasM40
   id: ClothingMaskGasGP7VM
-  name: GP-7VM civilian mask
+  name: GP-7VM gas mask
   description: Effective against stuff you reaally dont want in your body. Developed by the soviet union to protect civilian from NBC threats.
   components:
   - type: Sprite
     sprite: _Battlefield14/Clothing/Mask/GP7VM.rsi
-    scale: 0.7, 0.7
   - type: Clothing
     sprite: _Battlefield14/Clothing/Mask/GP7VM.rsi
 

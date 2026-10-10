@@ -96,7 +96,7 @@
 
 - type: entity
   name: wound dressing
-  description: Medical gauze for sealing cuts and punctures.
+  description: A thin sterile pad for protecting wounds. Lightly heals the full spectrum of brute damage.
   parent: Brutepack
   id: BF14Dressing
   suffix: Full
