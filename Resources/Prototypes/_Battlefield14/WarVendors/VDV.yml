@@ -195,6 +195,8 @@
         amount: 1
       - id: BoxSandbagEmpty
         amount: 5
+      - id: BF14HescoBarrierGreen10
+        amount: 4
       - id: EntrenchingTool
         amount: 2
       - id: Multitool

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "license": "",
+  "copyright": "Made by WillyBillyGilly for Battlefield14. Do not edit or reuse without permission",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "stack1_blue"
+    },
+    {
+      "name": "stack2_blue"
+    },
+    {
+      "name": "stack3_blue"
+    },
+    {
+      "name": "placed_blue"
+    },
+    {
+      "name": "icon_blue"
+    },
+    {
+      "name": "stack1_green"
+    },
+    {
+      "name": "stack2_green"
+    },
+    {
+      "name": "stack3_green"
+    },
+    {
+      "name": "placed_green"
+    },
+    {
+      "name": "icon_green"
+    },
+    {
+      "name": "stack1_tan"
+    },
+    {
+      "name": "stack2_tan"
+    },
+    {
+      "name": "stack3_tan"
+    },
+    {
+      "name": "placed_tan"
+    },
+    {
+      "name": "icon_tan"
+    },
+    {
+      "name": "fill1"
+    },
+    {
+      "name": "fill2"
+    },
+    {
+      "name": "fill3"
+    },
+    {
+      "name": "fill4"
+    },
+    {
+      "name": "fill5"
+    }
+  ]
+}
