@@ -14,19 +14,16 @@
 - type: gameMapPool
   id: BF14MapPoolFFA
   maps:
+  - BF14DeathAsteroid
   - BF14Pizzeria
   - BF14SkeldBunker
   - BF14Stronghold
 
 - type: gameMapPool
-  id: BF14MapPoolCTF
+  id: BF14MapPoolTDMObjective
   maps:
   - BF14ProvingGroundCTF
   - BF14TurbineCTF
-
-- type: gameMapPool
-  id: BF14MapPoolKOTH
-  maps:
   - BF14ProvingGroundKOTH
   - BF14TurbineKOTH
 
