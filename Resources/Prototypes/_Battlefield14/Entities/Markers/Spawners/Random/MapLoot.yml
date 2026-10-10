@@ -87,8 +87,8 @@
       - MagazinePistolM9
       - MagazinePistolM1911
       - MagazinePistolGlock17
-      - ShellBoxBF12GaugeBuckshot
       - MagazineSubmachinegunMP9
+      - ShellBoxBF12GaugeBreaching
       - SmokeGrenadeUSM18
     chance: 1
 
@@ -169,6 +169,7 @@
       - WeaponPistolATGlock17
       - WeaponSubmachinegunUSSP5
       - WeaponShotgunUSM590Buckshot
+      - WeaponPistolRevolverBRJudge
       - BF14KnifeSwitchblade
     chance: 1
 
@@ -238,6 +239,7 @@
       - MagazineSubmachinegunMP5
       - MagazineRifleSTANAGShort
       - ShellBoxBF12GaugeBuckshot
+      - ShellBox410Bore
       - SmokeGrenadeUSM18
     chance: 1
 

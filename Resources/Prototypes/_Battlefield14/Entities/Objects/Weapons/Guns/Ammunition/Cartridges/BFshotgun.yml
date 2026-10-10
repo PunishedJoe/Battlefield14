@@ -1,3 +1,5 @@
+#region 12 gauge
+
 - type: entity
   id: BaseShellShotgunBF12Gauge
   name: shotgun shell (12 gauge)
@@ -138,13 +140,13 @@
     count: 10
     spread: 5
 
-# 4 gauge
+#region 4 gauge
 
 - type: entity
   id: BaseShellShotgunBF4Gauge
   name: shotgun shell (4 gauge)
   parent: BaseCartridge
-  description: Standard shotgun round practically everywhere.
+  description: A beefy 23mm shell with a brass case.
   abstract: true
   components:
   - type: Tag
@@ -232,3 +234,59 @@
   components:
   - type: CartridgeAmmo
     proto: Bullet23mmFrag # lol
+
+#region .410 bore
+
+- type: entity
+  id: BaseShellShotgun410Bore
+  name: shotgun shell (.410 bore)
+  parent: BaseCartridge
+  description: A tiny shotgun shell.
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - BF_CartridgeShotgun410Bore
+  - type: CartridgeAmmo
+    muzzleFlash: MuzzleFlashEffectBFShotgun
+    soundEject:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: EmitSoundOnLand
+    sound:
+      collection: ShellEject
+      params:
+        variation: 0.06
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/410Bore.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1
+
+- type: entity
+  id: BF_CartridgeShotgun410BoreBuckshot
+  name: shotgun shell (.410 bore buckshot)
+  parent: BaseShellShotgun410Bore
+  components:
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunBF410Bore_Spread
+
+- type: entity
+  id: PelletShotgunBF410Bore_Spread
+  categories: [ HideSpawnMenu ]
+  parent: PelletShotgunBF12Gauge
+  components:
+  - type: ProjectileSpread
+    proto: PelletShotgunBF12Gauge
+    count: 5
+    spread: 7

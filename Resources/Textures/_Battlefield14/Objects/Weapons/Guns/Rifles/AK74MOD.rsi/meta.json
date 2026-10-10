@@ -8,21 +8,6 @@
   },
   "states": [
     {
-      "name": "icon"
-    },
-    {
-      "name": "base"
-    },
-    {
-      "name": "bolt-open"
-    },
-    {
-      "name": "supp"
-    },
-    {
-      "name": "mag-0"
-    },
-    {
       "name": "inhand-left",
       "directions": 4
     },

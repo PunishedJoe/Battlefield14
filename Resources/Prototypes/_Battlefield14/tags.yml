@@ -122,6 +122,9 @@
   id: BF_CartridgeShotgun4Gauge
 
 - type: Tag
+  id: BF_CartridgeShotgun410Bore
+
+- type: Tag
   id: BlisterPack
 
 - type: Tag

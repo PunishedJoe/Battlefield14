@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": "CC-BY-SA-4.0",
-  "copyright": "Icons by WillyBillyGilly for the Battlefield 14 project, inhand sprites by JoeHammad. Do not reuse without permission.",
+  "license": "Custom",
+  "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Do not re-use these sprites without permission from WillyBillyGilly.",
   "size": {
     "x": 32,
     "y": 32
@@ -14,10 +14,7 @@
       "name": "base"
     },
     {
-      "name": "mag-1"
-    },
-    {
-      "name": "mag-2"
+      "name": "bolt-open"
     },
     {
       "name": "inhand-left",
