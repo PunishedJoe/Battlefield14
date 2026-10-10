@@ -1,3 +1,5 @@
+#region 12 Gauge
+
 - type: entity
   id: PelletShotgunBF12Gauge
   name: 12 gauge shotgun pellet
@@ -122,7 +124,7 @@
   - type: StaminaDamageOnCollide
     damage: 2 # ~50 hits to stun
 
-# 4 gauge
+#region 4 Gauge
 
 - type: entity
   id: PelletShotgunBF4Gauge

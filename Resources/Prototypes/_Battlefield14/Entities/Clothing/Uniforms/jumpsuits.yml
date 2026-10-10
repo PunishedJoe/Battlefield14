@@ -399,11 +399,11 @@
 #    clothingVisuals:
 #      jumpsuit:
 #      - state: equipped-INNERCLOTHING
-#      - map: ["barrelAttachment"]
+#      - map: ["patchAttachment"]
 #        sprite: _Battlefield14/Clothing/Accessories/patches.rsi
 #  - type: ItemSlots
 #    slots:
-#      attachment_barrel:
+#      attachment_patch:
 #        name: Patch
 #        priority: 1
 #        whitelist:
@@ -411,11 +411,11 @@
 #          - BF14PatchRusich
 #  - type: ContainerContainer
 #    containers:
-#      attachment_barrel: !type:ContainerSlot
+#      attachment_patch: !type:ContainerSlot
 #  - type: ESItemMapper
 #    mappings:
-#      barrelAttachment:
-#      - containerId: attachment_barrel
+#      patchAttachment:
+#      - containerId: attachment_patch
 #        state: rusich-equipped
 #        whitelist:
 #          tags:
