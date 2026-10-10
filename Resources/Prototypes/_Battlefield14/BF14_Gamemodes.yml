@@ -114,35 +114,6 @@
     - DeathMatch31
 
 - type: gamePreset
-  id: BF14_KOTH
-  alias:
-    - kingofthehill
-    - koth
-  name: King Of The Hill
-  description: Capture and hold the central control point.
-  maxPlayers: 20
-  showInVote: true
-  respawnMultiplier: 0.166 # 30 seconds
-  supportedMaps: BF14MapPoolKOTH
-  rules:
-    - Arcade
-
-- type: gamePreset
-  id: BF14_CTF
-  alias:
-    - capturetheflag
-    - ctf
-    - capturetheintel
-  name: Capture The Flag
-  description: Capture the enemy intel and defend yours.
-  maxPlayers: 20
-  showInVote: true
-  respawnMultiplier: 0.166 # 30 seconds
-  supportedMaps: BF14MapPoolCTF
-  rules:
-    - Arcade
-
-- type: gamePreset
   id: BF14_TDMHardcore # no respawns
   alias:
     - hardcoreteamdeathmatch
@@ -157,6 +128,20 @@
   supportedMaps: BF14MapPoolTDMHardcore
   rules:
     - TeamDeathMatchHardcore
+
+- type: gamePreset
+  id: BF14_TDMObjective # respawns
+  alias:
+    - teamobjective
+    - tdmobjective
+  name: Team Objective
+  description: Complete objectives to the death with your team.
+  maxPlayers: 15
+  showInVote: true
+  respawnMultiplier: 0.166 # 30 seconds
+  supportedMaps: BF14MapPoolTDMObjective
+  rules:
+    - Arcade
 
 #region game rules
 
