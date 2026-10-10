@@ -92,6 +92,9 @@
             "name": "mag-ak74black-0"
         },
         {
+            "name": "stock-mpikm"
+        },
+        {
             "name": "stock-ak74"
         },
         {
@@ -119,10 +122,16 @@
             "name": "stock-underfolding"
         },
         {
+            "name": "stock-mpikms"
+        },
+        {
             "name": "stock-ak203"
         },
         {
             "name": "stock-ak12k"
+        },
+        {
+            "name": "handguard-mpi"
         },
         {
             "name": "handguard-ak74"
