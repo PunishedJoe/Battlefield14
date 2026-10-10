@@ -45,11 +45,10 @@
     jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
     head: ClothingHeadHatHelmetUSUrban
     helmetattachment: ClothingHelmetAttachmentNVGsBasicNATO
-#    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierIOTV
-    shoes: ClothingShoesBootsJackFilledUSMC
-#    back: ClothingBackpackRucksackTan
-    suitstorage: WeaponRifleUSM14
+    shoes: ClothingShoesBootsJack
+#    suitstorage: WeaponRifleUSM14
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSMCScout
   storage:

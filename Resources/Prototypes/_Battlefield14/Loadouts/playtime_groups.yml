@@ -19,6 +19,17 @@
       role: JobUSMCSquadLeader
       time: 7200 # 2 hr
 
+#region ARNG
+
+- type: loadoutEffectGroup
+  id: BF_ARNG_PVT
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:DepartmentTimeRequirement
+      department: ARNG
+      time: 1800 # 30 minutes
+
 #Region Bundeswehr
 
 - type: loadoutEffectGroup

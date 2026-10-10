@@ -326,6 +326,8 @@
       - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1ACOG.rsi
   - type: ItemSlots
     slots:
       gun_magazine:

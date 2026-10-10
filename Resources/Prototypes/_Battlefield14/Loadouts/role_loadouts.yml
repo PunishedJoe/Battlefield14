@@ -221,6 +221,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_LongarmsARNGRifleman
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -241,24 +242,26 @@
   - ContractorWallet
 
 - type: roleLoadout
-  id: JobNGRecon
-  groups:
-  - BF_SoldierGlassesTan
-  - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_NATOIFF
-  - BF_BackpacksTan
-  - BF_MiscItemsNATO
-  - BF_Map
-  - ContractorWallet
-
-- type: roleLoadout
   id: JobNGMedic
   groups:
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_LongarmsARNGMedic
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobNGRecon
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_LongarmsARNGRecon
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map

@@ -431,6 +431,33 @@
 #region LONGARMS
 
 - type: loadoutGroup
+  id: BF_LongarmsARNGRifleman
+  name: loadout-group-BF14-longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunM16A2
+  - LoadoutGunM16A130ARNGPVT
+
+- type: loadoutGroup
+  id: BF_LongarmsARNGMedic
+  name: loadout-group-BF14-longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunM4
+  - LoadoutGunRandomM4
+
+- type: loadoutGroup
+  id: BF_LongarmsARNGRecon
+  name: loadout-group-BF14-longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunM14
+  - LoadoutGunM14EBR
+
+- type: loadoutGroup
   id: BF_LongarmsRGFRifleman
   name: loadout-group-BF14-longarm
   minLimit: 1
