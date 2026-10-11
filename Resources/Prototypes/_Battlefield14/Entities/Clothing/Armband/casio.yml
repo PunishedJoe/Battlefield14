@@ -8,6 +8,11 @@
     sprite: _Battlefield14/Clothing/Accessories/CasioWatch.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Accessories/CasioWatch.rsi
+    clothingVisuals:
+      leftarmband:
+      - state: equipped-ARMBAND
+      rightarmband:
+      - state: equipped-ARMBAND
   - type: Foldable
     canFoldInsideContainer: true
     unfoldVerbText: fold-flip-verb
