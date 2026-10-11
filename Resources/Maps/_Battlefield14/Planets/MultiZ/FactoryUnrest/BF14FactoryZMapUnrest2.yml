@@ -1161,11 +1161,8 @@ entities:
       chunkCollection:
         version: 2
         nodes: []
-    - type: PlanetMap
     - type: Parallax
       parallax: bedrock
-    - type: MapLight
-      ambientLightColor: '#D1CDBAFF'
     - type: Roof
       data: {}
     - type: MapAtmosphere

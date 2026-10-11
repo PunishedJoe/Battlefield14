@@ -188,7 +188,7 @@
 - type: startingGear
   id: BF14TDMGearRedPointman
   equipment:
-    id: USMCRiflemanIDCard
+    id: VDVRiflemanIDCard
     jumpsuit: ClothingUniformJumpsuitMilitaryColorRedTDM
     head: ClothingHeadHatHelmetUSFASTMandible
     balaclava: ClothingBalaclavaMilitary
@@ -221,7 +221,7 @@
 - type: startingGear
   id: BF14TDMGearRedMarksman
   equipment:
-    id: USMCRiflemanIDCard
+    id: VDVRiflemanIDCard
     jumpsuit: ClothingUniformJumpsuitMilitaryColorRedReconTDM
     mask: ClothingMaskNeckGaiter
     head: ClothingHeadHatBoonie
