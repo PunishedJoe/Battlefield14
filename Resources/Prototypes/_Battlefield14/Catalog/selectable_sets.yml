@@ -47,3 +47,13 @@
     state: bengalsk
   content:
   - MapBengalsk
+
+- type: thiefBackpackSet
+  id: BF14Set_MapCedarCreek
+  name: Cedar Creek
+  description: A map of Cedar Creek, Germany.
+  sprite:
+    sprite: _Battlefield14/Objects/Misc/maps.rsi
+    state: cedarcreek
+  content:
+  - BF14MapCedarCreek

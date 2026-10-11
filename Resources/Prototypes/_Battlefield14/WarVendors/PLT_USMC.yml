@@ -44,11 +44,6 @@
       - id: BoxGrenadesM58
         name: CS gas grenades
         points: 1
-    - name: anti-vessel solution
-      entries:
-      - id: CrateSecgearNATOFilledStinger
-        name: Stinger MANPADS
-        points: 1
     - name: ammunition
       entries:
       - id: BF14WeaponCaseHeavySMAWMixed

@@ -107,6 +107,10 @@
       entries:
       - id: GermanFlagFolded
         amount: 3
+      - id: WeaponRifleDEG3A3
+        amount: 1
+      - id: WeaponRifleDEG3A4
+        amount: 1
 
 #region gear
 
@@ -177,6 +181,8 @@
         amount: 1
       - id: BoxSandbagEmpty
         amount: 5
+      - id: BF14HescoBarrierGreen10
+        amount: 4
       - id: EntrenchingTool
         amount: 2
       - id: Multitool
@@ -221,6 +227,8 @@
         amount: 2
       - id: BoxMagazineMP5
         amount: 5
+      - id: BoxMagazineG3
+        amount: 2
       - id: BoxFlare
         amount: 4
     - name: Loose rounds
@@ -233,10 +241,12 @@
         amount: 1
       - id: MagazineBox762x51
         amount: 5
-      - id: MagazineBox9x19mmBig
+      - id: MagazineBox9x19Big
         amount: 5
       - id: ShellBoxBF12GaugeBuckshot
         amount: 10
+      - id: ShellBoxBF12GaugeFlechette
+        amount: 2
     - name: Misc
       entries:
       - id: MagazinePistolUSP9

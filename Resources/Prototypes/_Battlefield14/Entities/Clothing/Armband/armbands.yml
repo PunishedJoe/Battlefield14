@@ -1,4 +1,4 @@
-# Storage
+#region Storage
 
 - type: entity
   parent: ClothingArmbandBase
@@ -34,7 +34,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
-# Holsters/Sheaths
+#region Holsters/Sheaths
 
 - type: entity
   parent: ClothingArmbandBase
@@ -57,6 +57,10 @@
     slots:
       item:
         name: Knife
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
         whitelist:
           tags:
           - Knife
@@ -119,7 +123,153 @@
           tags:
           - GasMask
 
-# Misc
+- type: entity
+  parent: ClothingArmbandBase
+  id: BF14ClothingArmbandSheathKnifeM7Empty
+  name: M9 pattern M7 bayonet sheath
+  description: A sheath for an M7 bayonet, designation M9. Not to be confused for a sheath for the M9 bayonet.
+  components:
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/escal_sheaths.rsi
+    state: m9_empty
+  - type: Clothing
+#    sprite: _Battlefield14/Clothing/Accessories/knifesheathpolymer.rsi
+    slots: [ belt, neck, ARMBANDLEFT, ARMBANDRIGHT, suitStorage, SUITSTORAGE2 ]
+#    clothingVisuals:
+#      leftarmband:
+#      - state: equipped-ARMBANDLEFT
+#      rightarmband:
+#      - state: equipped-ARMBANDRIGHT
+  - type: ItemSlots
+    slots:
+      item:
+        name: Knife
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - BF14BayonetM7
+  - type: ItemMapper
+    mapLayers:
+      m9:
+        whitelist:
+          tags:
+          - BF14BayonetM7
+  - type: Appearance
+
+- type: entity
+  parent: BF14ClothingArmbandSheathKnifeM7Empty
+  id: BF14ClothingArmbandSheathKnife6h3Empty
+  name: 6h3 bayonet sheath
+  description: A sheath for a 6h3 bayonet.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/escal_sheaths.rsi
+    state: 6h3_empty
+  - type: ItemSlots
+    slots:
+      item:
+        name: Knife
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
+  - type: ItemMapper
+    mapLayers:
+      6h3:
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
+
+- type: entity
+  parent: BF14ClothingArmbandSheathKnife6h3Empty
+  id: BF14ClothingArmbandSheathKnife6h4Empty
+  name: 6h4 bayonet sheath
+  description: A sheath for a 6h4 bayonet.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/escal_sheaths.rsi
+    state: 6h4_empty
+  - type: ItemSlots
+    slots:
+      item:
+        name: Knife
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - BF14Bayonet6h4
+  - type: ItemMapper
+    mapLayers:
+      6h4:
+        whitelist:
+          tags:
+          - BF14Bayonet6h4
+
+- type: entity
+  parent: BF14ClothingArmbandSheathKnife6h3Empty
+  id: BF14ClothingArmbandSheathKnifevz58Empty
+  name: vz. 58 bayonet sheath
+  description: A sheath for a vz. 58 bayonet.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/escal_sheaths.rsi
+    state: vz58_empty
+  - type: ItemSlots
+    slots:
+      item:
+        name: Knife
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - BF14Bayonetvz58
+  - type: ItemMapper
+    mapLayers:
+      vz58:
+        whitelist:
+          tags:
+          - BF14Bayonetvz58
+
+- type: entity
+  parent: BF14ClothingArmbandSheathKnifeM7Empty
+  id: BF14ClothingArmbandSheathKnifeTaigaEmpty
+  name: taiga sheath
+  description: A sheath for a taiga survival machete.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/escal_sheaths.rsi
+    state: taiga_empty
+  - type: ItemSlots
+    slots:
+      item:
+        name: Knife
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - BF14KnifeTaiga
+  - type: ItemMapper
+    mapLayers:
+      taiga:
+        whitelist:
+          tags:
+          - BF14KnifeTaiga
+
+#region Armour
 
 - type: entity
   parent: ClothingArmbandBase
@@ -192,6 +342,8 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.97
     sprintModifier: 0.97
+
+#region Misc
 
 - type: entity
   parent: ClothingArmbandBase

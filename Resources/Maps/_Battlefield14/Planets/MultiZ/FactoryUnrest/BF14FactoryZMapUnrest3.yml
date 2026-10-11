@@ -783,7 +783,6 @@ entities:
       chunkCollection:
         version: 2
         nodes: []
-    - type: PlanetMap
     - type: Parallax
       parallax: bedrock
     - type: MapLight

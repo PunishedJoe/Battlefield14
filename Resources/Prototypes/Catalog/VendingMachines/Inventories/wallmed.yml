@@ -1,10 +1,10 @@
 - type: vendingMachineInventory
   id: NanoMedInventory
   startingInventory:
-    Brutepack: 6 # Frontier: 3<6
-    Ointment: 6 # Frontier: 3<6
+    BF14DressingPacket: 3 # BF14
+    BF14Ointment: 3 # BF14
 #BF14    Bloodpack: 6 # Frontier: 3<6
-    Gauze: 6 # Frontier
+    BF14GauzePacket: 3 # Frontier
     Tourniquet: 10 # BF14
     MedicationBoxPillsIron: 6 #BF14
     MedicationBoxSyrettesEpinephrine: 2 # BF14

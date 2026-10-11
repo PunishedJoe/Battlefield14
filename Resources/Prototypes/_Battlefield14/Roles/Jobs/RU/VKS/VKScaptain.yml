@@ -54,10 +54,10 @@
 #    back: ClothingBackpackSatchelSecurity
     belt: ClothingBeltCommandFilledRU
     gloves: ClothingHandsGlovesCombat
-    pocket1: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilledPACT
   storage:
     back:
     - ClothingMaskGasRussia
     - FlashlightMilitaryAlt
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - Zipties

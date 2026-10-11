@@ -91,6 +91,12 @@ public sealed partial class ChatSystem : SharedChatSystem
         Subs.CVar(_configurationManager, CCVars.CritLoocEnabled, OnCritLoocEnabledChanged, true);
 
         SubscribeLocalEvent<GameRunLevelChangedEvent>(OnGameChange);
+        SubscribeLocalEvent<EntityTerminatingEvent>(OnEntityTerminating);
+    }
+
+    private void OnEntityTerminating(ref EntityTerminatingEvent args)
+    {
+        _lastEmoteSoundTime.Remove(args.Entity.Owner);
     }
 
     private void OnLoocEnabledChanged(bool val)

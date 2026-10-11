@@ -234,7 +234,7 @@
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
-    pvsIncrease: 0.35
+    pvsIncrease: 0.5
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
@@ -311,6 +311,8 @@
   parent: WeaponRifleUSM4A1
   id: WeaponRifleUSM4A1ACOG
   components:
+  - type: Item # Controls inhand sprites
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1ACOG.rsi
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
     layers:
@@ -324,6 +326,8 @@
       - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/M4A1ACOG.rsi
   - type: ItemSlots
     slots:
       gun_magazine:

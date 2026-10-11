@@ -49,13 +49,13 @@
     id: VDVLieutenantPDA
     ears: ClothingHeadsetAltRUCommand
     belt: ClothingBeltMilitaryWebbingRUFilledAK12TracerGreen
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+#    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRU6b47
     outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJackFilledRU
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUAK12SKTracerGreen
-    pocket1: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilledPACT
     pocket2: PouchGrenadesFilledVDVRifleman
     rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:
@@ -65,6 +65,6 @@
     - MagazinePistolMP443
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussiaPMK4
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - Zipties
     - CMVendVDVWarVendorLieutenantTablet

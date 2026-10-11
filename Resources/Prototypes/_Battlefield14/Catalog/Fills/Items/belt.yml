@@ -435,13 +435,13 @@
   - type: ContainerFill
     containers:
       item:
-      - WeaponPistolM9
+      - WeaponPistolDEUSP9
   - type: StorageFill
     contents:
       - id: Handcuffs
         amount: 2
       - id: FlashlightSeclite
-      - id: MagazinePistolM9
+      - id: MagazinePistolUSP9
         amount: 2
 
 - type: entity
@@ -457,6 +457,7 @@
     contents:
       - id: Handcuffs
         amount: 2
+      - id: GunAttachmentSuppressorPistol9x19mm
       - id: FlashlightSeclite
       - id: MagazinePistolM9
         amount: 6
@@ -473,6 +474,7 @@
   - type: StorageFill
     contents:
       - id: Handcuffs
+      - id: GunAttachmentSuppressorPistol9x19mm
       - id: FlashlightSeclite
       - id: MagazinePistolM9
         amount: 2
@@ -563,9 +565,9 @@
   - type: StorageFill
     contents:
       - id: HandheldHealthAnalyzerUnpowered
-      - id: AU14HemostaticGauzePacket
-      - id: Brutepack
-      - id: Ointment
+      - id: BF14GauzePacket
+      - id: BF14DressingPacket
+      - id: BF14Ointment
       - id: MedicationBoxPillsBicaridine
       - id: MedicationBoxPillsKelotane
       - id: MedicationBoxPillsTricordrazine

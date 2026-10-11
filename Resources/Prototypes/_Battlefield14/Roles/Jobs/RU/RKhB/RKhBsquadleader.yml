@@ -53,13 +53,13 @@
     shoes: ClothingShoesBootsJackFilledRU
 #    back: ClothingBackpackRucksackBlack
     suitstorage: WeaponRifleRUAK74M
-    pocket1: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilledPACT
     pocket2: PouchGrenadesFilledRGFRifleman
   storage:
     back:
     - ArmorPlateMediumPackaged
     - FlashlightMilitaryAlt
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - Zipties
     - SyndicateWhistle
     - BoxPinpointerUniversalPACT

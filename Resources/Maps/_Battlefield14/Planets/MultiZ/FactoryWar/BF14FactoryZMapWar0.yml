@@ -1128,11 +1128,8 @@ entities:
       chunkCollection:
         version: 2
         nodes: []
-    - type: PlanetMap
     - type: Parallax
       parallax: bedrock
-    - type: MapLight
-      ambientLightColor: '#0D0D0DFF'
     - type: Roof
       data: {}
     - type: MapAtmosphere
@@ -10129,7 +10126,7 @@ entities:
     - type: Transform
       pos: 37.5,40.5
       parent: 1
-- proto: ClothingMaskGasRussia
+- proto: ClothingMaskGasGP7VM
   entities:
   - uid: 4206
     components:

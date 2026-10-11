@@ -6,13 +6,15 @@
   weight: 6
   roles:
   - TDMBlue
+  - TDMBluePointman
+  - TDMBlueMarksman
 
 - type: job
   id: TDMBlue
   name: Blue Goon
   description: Shoot reds.
   playTimeTracker: JobTDMBlue
-  displayWeight: 2
+  displayWeight: 4
   startingGear: BF14TDMGearBlue
   alwaysUseSpawner: true
   icon: "JobIconNATORifleman"
@@ -24,6 +26,61 @@
     languagesUnderstood:
     - Blue
     - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  access:
+  - Maintenance
+
+- type: job
+  id: TDMBluePointman
+  name: Blue Pointman
+  description: Push reds.
+  playTimeTracker: JobTDMBluePointman
+  displayWeight: 5
+  startingGear: BF14TDMGearBluePointman
+  alwaysUseSpawner: true
+  icon: "JobIconNATOSpecialForces"
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Blue
+    - Esperanto
+    languagesUnderstood:
+    - Blue
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
+  access:
+  - Maintenance
+
+- type: job
+  id: TDMBlueMarksman
+  name: Blue Marksman
+  description: Snipe reds.
+  playTimeTracker: JobTDMBlueMarksman
+  displayWeight: 6
+  startingGear: BF14TDMGearBlueMarksman
+  alwaysUseSpawner: true
+  icon: "JobIconNATORecon"
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Blue
+    - Esperanto
+    languagesUnderstood:
+    - Blue
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - USMC
   access:
   - Maintenance
 
@@ -35,6 +92,8 @@
   weight: 7
   roles:
   - TDMRed
+  - TDMRedPointman
+  - TDMRedMarksman
 
 - type: job
   id: TDMRed
@@ -53,5 +112,60 @@
     languagesUnderstood:
     - Red
     - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+  access:
+  - Maintenance
+
+- type: job
+  id: TDMRedPointman
+  name: Red Pointman
+  description: Push blues.
+  playTimeTracker: JobTDMRedPointman
+  displayWeight: 2
+  startingGear: BF14TDMGearRedPointman
+  alwaysUseSpawner: true
+  icon: "JobIconPACTSpecialForces"
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Red
+    - Esperanto
+    languagesUnderstood:
+    - Red
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
+  access:
+  - Maintenance
+
+- type: job
+  id: TDMRedMarksman
+  name: Red Marksman
+  description: Snipe blues.
+  playTimeTracker: JobTDMRedMarksman
+  displayWeight: 3
+  startingGear: BF14TDMGearRedMarksman
+  alwaysUseSpawner: true
+  icon: "JobIconPACTRecon"
+  special:
+  - !type:AddLanguageSpecial
+    languagesSpoken:
+    - Red
+    - Esperanto
+    languagesUnderstood:
+    - Red
+    - Esperanto
+  - !type:AddComponentSpecial
+    components:
+    - type: NpcFactionMember
+      factions:
+      - VDV
   access:
   - Maintenance

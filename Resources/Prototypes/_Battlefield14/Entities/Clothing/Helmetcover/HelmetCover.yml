@@ -1,5 +1,19 @@
 - type: entity
   parent: ClothingHelmetCoverBase
+  id: BF14ClothingHelmetCoverMarpatWoodland
+  name: MARPAT woodland helmet cover
+  description: A woodland digital camouflage helmet cover for your tactical fashion, designed to fit over a lowcut ACH helmet.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Helmetcover/marpat_woodland.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Helmetcover/marpat_woodland.rsi
+    clothingVisuals:
+      helmetcover:
+      - state: equipped-HELMETCOVER
+
+- type: entity
+  parent: ClothingHelmetCoverBase
   id: ClothingHelmetCoverRUDigitalRed
   name: red digital helmet cover
   description: A red digital camouflage helmet cover for your tactical fashion needs or to mount attachments.

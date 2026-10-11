@@ -48,6 +48,15 @@
     sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesgreen.rsi
 
 - type: entity
+  parent: ClothingEyesGogglesGreen
+  id: ClothingEyesGogglesClear
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesclear.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Eyes/Goggles/ballisticgogglesclear.rsi
+
+- type: entity
   parent: [ClothingEyesBase , BallisticGlasses]
   id: ClothingEyesGlassesSafetyGoggles
   name: safety goggles

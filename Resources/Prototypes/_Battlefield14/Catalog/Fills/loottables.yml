@@ -33,3 +33,20 @@
         children:
         - id: WeaponLauncherRURPOAShmel
         - id: WeaponLauncherRURPOAShmelCamo
+
+- type: entityTable
+  id: BF14TableSurplusG3
+  table: !type:GroupSelector
+    children:
+    # Common Group
+    - !type:GroupSelector
+      weight: 69
+      children:
+      - !type:GroupSelector
+        children:
+        - id: WeaponRifleDEG3A3
+        - id: WeaponRifleDEG3A4
+        - id: WeaponRifleDEHK51
+          weight: 0.5
+        - id: WeaponRifleDEG3A3ZF
+          weight: 0.5

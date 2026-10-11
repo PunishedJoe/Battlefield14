@@ -95,13 +95,13 @@
   components:
   - type: StorageFill
     contents:
-      - id: Brutepack
+      - id: BF14DressingPacket
         amount: 2
-      - id: Ointment
+      - id: BF14Ointment
         amount: 1
 #BF14      - id: Bloodpack
 #BF14        amount: 1
-      - id: Gauze
+      - id: BF14GauzePacket
         amount: 2 # BF14
       - id: EmergencyMedipen #You never know what people are going to latejoin into
 
@@ -112,10 +112,10 @@
   components:
   - type: StorageFill
     contents:
-      - id: Brutepack
-      - id: Ointment
-#      - id: Bloodpack # BF14
-      - id: Gauze
+      - id: BF14DressingPacket
+      - id: BF14Ointment
+#BF14      - id: Bloodpack
+      - id: BF14GauzePacket
       - id: EmergencyMedipen #You never know what people are going to latejoin into
         amount: 3
 

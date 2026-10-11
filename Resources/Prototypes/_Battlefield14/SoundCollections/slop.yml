@@ -1,0 +1,46 @@
+- type: soundCollection
+  id: GassyFartSound
+  files:
+  - "/Audio/_Battlefield14/Misc/gassy/fart1.ogg"
+  - "/Audio/_Battlefield14/Misc/gassy/fart2.ogg"
+  - "/Audio/_Battlefield14/Misc/gassy/fart3.ogg"
+  - "/Audio/_Battlefield14/Misc/gassy/fart4.ogg"
+  - "/Audio/_Battlefield14/Misc/gassy/fart5.ogg"
+
+- type: soundCollection
+  id: BearAmbient
+  files:
+  - "/Audio/_Battlefield14/Misc/bear/ambient1.ogg"
+  - "/Audio/_Battlefield14/Misc/bear/ambient2.ogg"
+  - "/Audio/_Battlefield14/Misc/bear/ambient3.ogg"
+  - "/Audio/_Battlefield14/Misc/bear/ambient4.ogg"
+  - "/Audio/_Battlefield14/Misc/bear/ambient5.ogg"
+  - "/Audio/_Battlefield14/Misc/bear/ambient6.ogg"
+
+- type: soundCollection
+  id: BearMovement
+  files:
+  - "/Audio/_Battlefield14/Misc/bear/move1.ogg"
+  - "/Audio/_Battlefield14/Misc/bear/move2.ogg"
+  - "/Audio/_Battlefield14/Misc/bear/move3.ogg"
+
+- type: soundCollection
+  id: ScavPlush
+  files:
+  - "/Audio/_Battlefield14/Collections/scav/hit1.ogg"
+  - "/Audio/_Battlefield14/Collections/scav/hit2.ogg"
+  - "/Audio/_Battlefield14/Collections/scav/hit3.ogg"
+  - "/Audio/_Battlefield14/Collections/scav/hit4.ogg"
+  - "/Audio/_Battlefield14/Collections/scav/hit5.ogg"
+  - "/Audio/_Battlefield14/Collections/scav/hit6.ogg"
+  - "/Audio/_Battlefield14/Collections/scav/hit7.ogg"
+
+- type: soundCollection
+  id: HeavyVest
+  files:
+  - "/Audio/_Battlefield14/Collections/heavyvest/move1.ogg"
+  - "/Audio/_Battlefield14/Collections/heavyvest/move2.ogg"
+  - "/Audio/_Battlefield14/Collections/heavyvest/move3.ogg"
+  - "/Audio/_Battlefield14/Collections/heavyvest/move4.ogg"
+  - "/Audio/_Battlefield14/Collections/heavyvest/move5.ogg"
+  - "/Audio/_Battlefield14/Collections/heavyvest/move6.ogg"

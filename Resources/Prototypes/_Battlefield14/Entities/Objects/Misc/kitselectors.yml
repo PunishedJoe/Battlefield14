@@ -19,6 +19,7 @@
     - BF14Set_MapInterchange
     - BF14Set_MapCustoms
     - BF14Set_MapBengalsk
+    - BF14Set_MapCedarCreek
     maxSelectedSets: 1
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key

@@ -51,6 +51,11 @@
     damage: 8 # ~13 hits to stun
 
 - type: entity
+  id: BulletRifleBF762x39TracerGreen
+  parent: [BulletRifleBF762x39 , BaseTracerGreen]
+  categories: [ HideSpawnMenu ]
+
+- type: entity
   id: BulletRifleBF762x51
   name: bullet (7.62x51)
   parent: BaseBulletRifle

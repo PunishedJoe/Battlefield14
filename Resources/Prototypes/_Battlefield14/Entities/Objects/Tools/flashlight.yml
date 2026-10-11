@@ -72,6 +72,7 @@
       - suitStorage
       - ARMBANDLEFT
       - ARMBANDRIGHT
+      - SUITSTORAGE2
 
 - type: entity
   name: military flashlight

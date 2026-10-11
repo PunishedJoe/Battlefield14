@@ -54,11 +54,11 @@
     gloves: ClothingHandsGlovesCombat
     suitstorage: WeaponRifleRUAKS74U
     pocket1: PouchMagsFilledAK74
-    pocket2: PouchFirstAidFilled
+    pocket2: PouchFirstAidFilledPACT
   storage:
     back:
     - ClothingMaskGasRussia
     - FlashlightMilitaryAlt
     - ShipRepairDeviceAmmo
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - Zipties

@@ -24,12 +24,12 @@
   components:
 #  - type: Faction
 #    factionId: "Warpact"
-#  - type: ExtendDescription
-#    descriptionList:
-#      - description: Allows you to capture points for PACT.
-#        fontSize: 12
-#        color: "#4f94ad"
-#        requireDetailRange: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Allows you to capture points for PACT.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false
   - type: ClothingGrantComponent
     component:
     - type: GameFactionMember
@@ -275,7 +275,7 @@
       faction: Warpact
       factionName: "OMON"
 
-# MISC
+#region MISC
 
 - type: entity
   parent: ClothingUniformBase
@@ -332,20 +332,92 @@
   - type: Clothing
     sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/navycombat.rsi
 
+#region TDM
+
 - type: entity
-  parent: ClothingUniformJumpsuitMilitaryColorBlue
-  id: ClothingUniformJumpsuitMilitaryColorBlueTDM
-  name: blue goon uniform
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMilitaryColorWhiteTDM
   description: unremovable identification suit
+  name: white goon uniform
   suffix: Unremoveable
   components:
   - type: Unremoveable
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/whitegoon1.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/whitegoon1.rsi
 
 - type: entity
-  parent: ClothingUniformJumpsuitMilitaryColorRed
+  parent: [ClothingUniformJumpsuitMilitaryColorWhiteTDM, ClothingUniformBaseNATO ]
+  id: ClothingUniformJumpsuitMilitaryColorBlueTDM
+  name: blue goon uniform
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon1.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon1.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryColorBlueTDM
+  id: ClothingUniformJumpsuitMilitaryColorBlueReconTDM
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon2.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/bluegoon2.rsi
+
+- type: entity
+  parent: [ClothingUniformJumpsuitMilitaryColorWhiteTDM, ClothingUniformBasePACT ]
   id: ClothingUniformJumpsuitMilitaryColorRedTDM
   description: unremovable identification suit
   name: red goon uniform
-  suffix: Unremoveable
   components:
-  - type: Unremoveable
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon1.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon1.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitMilitaryColorRedTDM
+  id: ClothingUniformJumpsuitMilitaryColorRedReconTDM
+  description: unremovable identification suit
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon2.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/redgoon2.rsi
+
+#- type: entity
+#  parent: ClothingUniformJumpsuitCamoUSMarpatDesert
+#  id: ClothingUniformJumpsuitPatchTest
+#  name: HELP ME patch test
+#  components:
+#  - type: Sprite
+#    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatdesert.rsi
+#  - type: Clothing
+#    sprite: _Battlefield14/Clothing/Uniforms/Jumpsuit/usmarpatdesert.rsi
+#    clothingVisuals:
+#      jumpsuit:
+#      - state: equipped-INNERCLOTHING
+#      - map: ["patchAttachment"]
+#        sprite: _Battlefield14/Clothing/Accessories/patches.rsi
+#  - type: ItemSlots
+#    slots:
+#      attachment_patch:
+#        name: Patch
+#        priority: 1
+#        whitelist:
+#          tags:
+#          - BF14PatchRusich
+#  - type: ContainerContainer
+#    containers:
+#      attachment_patch: !type:ContainerSlot
+#  - type: ESItemMapper
+#    mappings:
+#      patchAttachment:
+#      - containerId: attachment_patch
+#        state: rusich-equipped
+#        whitelist:
+#          tags:
+#          - BF14PatchRusich
+#  - type: Appearance

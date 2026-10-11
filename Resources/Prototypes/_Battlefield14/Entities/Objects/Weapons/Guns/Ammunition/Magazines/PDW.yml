@@ -171,7 +171,7 @@
   - type: BallisticAmmoProvider
     capacity: 18
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/SR2Udav.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]

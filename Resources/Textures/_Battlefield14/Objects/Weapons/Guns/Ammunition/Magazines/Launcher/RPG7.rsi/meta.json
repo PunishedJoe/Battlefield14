@@ -18,6 +18,12 @@
     },
     {
       "name": "frag-spent"
+    },
+    {
+      "name": "thermobar"
+    },
+    {
+      "name": "thermobar-spent"
     }
   ]
 }

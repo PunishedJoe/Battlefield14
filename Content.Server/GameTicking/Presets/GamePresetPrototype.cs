@@ -42,5 +42,11 @@ namespace Content.Server.GameTicking.Presets
         /// </summary>
         [DataField("supportedMaps", customTypeSerializer: typeof(PrototypeIdSerializer<GameMapPoolPrototype>))]
         public string? MapPool;
+
+        /// <summary>
+        /// Mono - multiply respawn timer by this amount
+        /// </summary>
+        [DataField]
+        public float RespawnMultiplier = 1f;
     }
 }

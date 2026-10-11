@@ -185,7 +185,7 @@
     whitelist:
       tags:
         - BF_CartridgeRifle762x54r
-    capacity: 5
+    capacity: 10
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Sniper/SV98.rsi
     layers:

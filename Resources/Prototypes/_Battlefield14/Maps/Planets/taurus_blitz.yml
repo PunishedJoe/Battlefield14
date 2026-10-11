@@ -34,4 +34,3 @@
             USPDOfficer: [ 1, 1 ]
         - type: StationBiome
           biome: Grasslands
-        - type: ConquestManager

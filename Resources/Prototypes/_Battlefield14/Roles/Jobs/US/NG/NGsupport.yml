@@ -45,8 +45,9 @@
     jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
     head: ClothingHeadHatHelmetUSUrbanRiot
     outerClothing: ClothingOuterArmorPlateCarrierIOTVExtended
-    shoes: ClothingShoesBootsJackFilledUSMC
+    shoes: ClothingShoesBootsJack
     suitstorage: WeaponMachineGunUSM60
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSASupport
     rightarmband: ClothingArmbandThighHolsterFilledUS

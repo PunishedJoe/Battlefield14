@@ -1,0 +1,10 @@
+- type: entity
+  id: CEZLevelMirrorLight
+  name: z-level mirror light
+  save: false
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: PointLight
+  - type: Tag
+    tags:
+    - HideContextMenu

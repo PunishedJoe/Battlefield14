@@ -1,3 +1,5 @@
+#region 12 Gauge
+
 - type: entity
   id: PelletShotgunBF12Gauge
   name: 12 gauge shotgun pellet
@@ -11,8 +13,8 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 7.5
-        Slash: 6
+        Piercing: 9
+        Slash: 4.5
         Structural: 6
     armorPenetration: -0.3
   - type: ProjectileDamageFalloff
@@ -60,6 +62,11 @@
         Slash: 4
         Piercing: 4
         Structural: 50
+  - type: ProjectileDamageFalloff
+    falloffStart: 3
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.75
+    stepByTile: false
   - type: StaminaDamageOnCollide
     damage: 10 # ~10 hits to stun
   - type: TimedDespawn
@@ -92,7 +99,32 @@
     maxIntensity: 0.5
     maxTileBreak: 0
 
-# 4 gauge
+- type: entity
+  id: FlechetteShotgunBF12Gauge
+  name: 12 gauge flechette
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: sabot
+    scale: 0.5, 0.5
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 7
+        Slash: 3
+    armorPenetration: 0.1
+  - type: ProjectileDamageFalloff
+    falloffStart: 7
+    falloffPerTile: 0.1
+    minimumMultiplier: 0.50
+    stepByTile: true
+  - type: StaminaDamageOnCollide
+    damage: 2 # ~50 hits to stun
+
+#region 4 Gauge
 
 - type: entity
   id: PelletShotgunBF4Gauge

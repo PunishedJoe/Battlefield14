@@ -48,6 +48,9 @@
         name: RPK-74M x3
         points: 1
         amount: 1
+      - id: BF14WeaponCaseLongRUAN94
+        name: AN-94
+        points: 1
       - id: BoxGrenadesK51
         name: CS gas grenades
         points: 1

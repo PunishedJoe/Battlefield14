@@ -8,6 +8,12 @@
     },
     "states": [
         {
+            "name": "blueteam"
+        },
+        {
+            "name": "redteam"
+        },
+        {
             "name": "nato"
         },
         {

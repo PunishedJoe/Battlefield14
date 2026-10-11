@@ -96,6 +96,8 @@
   id: MagazineBeltBoxM60
   name: "M60 belt box (7.62x51mm)"
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/M60.rsi
   - type: Tag
     tags:
       - MagazineBeltBoxM60

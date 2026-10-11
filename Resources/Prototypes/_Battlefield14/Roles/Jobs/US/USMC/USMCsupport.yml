@@ -42,7 +42,7 @@
     id: USMCAutomaticRiflemanPDA
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMilitaryWebbingUSFilledM249
-    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+#    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
     head: ClothingHeadHatHelmetUSRiotACH
     outerClothing: ClothingOuterArmorPlateCarrierIOTVExtended
     shoes: ClothingShoesBootsJackFilledUSMC

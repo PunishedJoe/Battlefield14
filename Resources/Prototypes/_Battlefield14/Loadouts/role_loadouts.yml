@@ -7,11 +7,13 @@
 - type: roleLoadout
   id: JobUSMCLieutenant
   groups:
+  - BF_HelmetAttachmentNATO
+  - BF_HelmetCoverUSMC
   - BF_SoldierGlassesTan
   - BF_CombatMasks
-  - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_HelmetAttachmentNATO
+  - BF_SoldierGloves
+  - BF_JumpsuitsUSMC
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -21,11 +23,13 @@
 - type: roleLoadout
   id: JobUSMCSquadLeader
   groups:
+  - BF_HelmetAttachmentNATO
+  - BF_HelmetCoverUSMC
   - BF_SoldierGlassesTan
   - BF_CombatMasks
-  - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_HelmetAttachmentNATO
+  - BF_SoldierGloves
+  - BF_JumpsuitsUSMC
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -35,11 +39,13 @@
 - type: roleLoadout
   id: JobUSMCRifleman
   groups:
+  - BF_HelmetAttachmentNATO
+  - BF_HelmetCoverUSMC
   - BF_SoldierGlassesTan
   - BF_CombatMasks
-  - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_HelmetAttachmentNATO
+  - BF_SoldierGloves
+  - BF_JumpsuitsUSMC
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -48,11 +54,13 @@
 - type: roleLoadout
   id: JobUSMCAutomaticRifleman
   groups:
+  - BF_HelmetAttachmentNATO
+  - BF_HelmetCoverUSMC
   - BF_SoldierGlassesTan
   - BF_CombatMasks
-  - BF_SoldierGloves
   - BF_NATOIFF
-  - BF_HelmetAttachmentNATO
+  - BF_SoldierGloves
+  - BF_JumpsuitsUSMC
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -62,9 +70,12 @@
 - type: roleLoadout
   id: JobUSMCRecon
   groups:
+  - BF_HelmetCoverUSMC
   - BF_SoldierGlassesTan
   - BF_CombatMasks
+  - BF_NATOIFF
   - BF_SoldierGloves
+  - BF_JumpsuitsUSMC
   - BF_NATOIFF
   - BF_BackpacksTan
   - BF_MiscItemsNATO
@@ -74,10 +85,12 @@
 - type: roleLoadout
   id: JobUSMCMedic
   groups:
-  - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_HelmetCoverUSMC
+  - BF_CombatMasks
+  - BF_NATOIFF
+  - BF_SoldierGloves
+  - BF_JumpsuitsUSMC
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -208,6 +221,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_LongarmsARNGRifleman
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -228,24 +242,26 @@
   - ContractorWallet
 
 - type: roleLoadout
-  id: JobNGRecon
-  groups:
-  - BF_SoldierGlassesTan
-  - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_NATOIFF
-  - BF_BackpacksTan
-  - BF_MiscItemsNATO
-  - BF_Map
-  - ContractorWallet
-
-- type: roleLoadout
   id: JobNGMedic
   groups:
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_LongarmsARNGMedic
+  - BF_BackpacksTan
+  - BF_MiscItemsNATO
+  - BF_Map
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobNGRecon
+  groups:
+  - BF_SoldierGlassesTan
+  - BF_CombatMasks
+  - BF_SoldierGloves
+  - BF_NATOIFF
+  - BF_LongarmsARNGRecon
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -444,6 +460,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_LongarmsRGFRifleman
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -492,12 +509,14 @@
 - type: roleLoadout
   id: JobVDVLieutenant
   groups:
-  - BF_SoldierGlassesGreen
-  - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_PACTIFF
+  - BF_HelmetCoverVDV
   - BF_HelmetAttachmentPACT
   - BF_VDVHead
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - BF_SoldierGloves
+  - BF_JumpsuitsVDV
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -507,12 +526,14 @@
 - type: roleLoadout
   id: JobVDVSquadLeader
   groups:
-  - BF_SoldierGlassesGreen
-  - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_PACTIFF
+  - BF_HelmetCoverVDV
   - BF_HelmetAttachmentPACT
   - BF_VDVHead
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - BF_SoldierGloves
+  - BF_JumpsuitsVDV
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -522,12 +543,14 @@
 - type: roleLoadout
   id: JobVDVRifleman
   groups:
-  - BF_SoldierGlassesGreen
-  - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_PACTIFF
+  - BF_HelmetCoverVDV
   - BF_HelmetAttachmentPACT
   - BF_VDVHead
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - BF_SoldierGloves
+  - BF_JumpsuitsVDV
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -536,12 +559,14 @@
 - type: roleLoadout
   id: JobVDVAutomaticRifleman
   groups:
-  - BF_SoldierGlassesGreen
-  - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_PACTIFF
+  - BF_HelmetCoverVDV
   - BF_HelmetAttachmentPACT
   - BF_VDVHead
+  - BF_SoldierGlassesGreen
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - BF_SoldierGloves
+  - BF_JumpsuitsVDV
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -551,11 +576,13 @@
 - type: roleLoadout
   id: JobVDVMedic
   groups:
-  - BF_CombatMasks
-  - BF_SoldierGloves
-  - BF_PACTIFF
+  - BF_HelmetCoverVDV
   - BF_HelmetAttachmentPACT
   - BF_VDVHead
+  - BF_CombatMasks
+  - BF_PACTIFF
+  - BF_SoldierGloves
+  - BF_JumpsuitsVDV
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -564,11 +591,14 @@
 - type: roleLoadout
   id: JobVDVRecon
   groups:
+  - BF_HelmetCoverVDV
+  - BF_HelmetAttachmentPACT
+  - BF_VDVHead
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
-  - BF_SoldierGloves
   - BF_PACTIFF
-  - BF_VDVHead
+  - BF_SoldierGloves
+  - BF_JumpsuitsVDV
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -809,6 +839,7 @@
   - BF_CrewGlasses
   - BF_SoldierGloves
   - BF_MiscItemsNATO
+  - BF_NATOIFF
   - ContractorWallet
 
 - type: roleLoadout
@@ -819,6 +850,7 @@
   - BF_CrewGlasses
   - BF_SoldierGloves
   - BF_MiscItemsPACT
+  - BF_PACTIFF
   - ContractorWallet
 
 #region Civilian
@@ -860,6 +892,7 @@
   groups:
   - BF_HeadCivilianRU
   - BF_CombatMasks
+  - BF_NATOIFF
   - BF_JumpsuitsCivilianUANationalist
   - BF_OuterCivilianRU
   - BF_WPSGloves
@@ -870,6 +903,7 @@
 - type: roleLoadout
   id: JobGypsy
   groups:
+  - BF_PACTIFF
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
@@ -883,6 +917,26 @@
   - ContractorWallet
 
 - type: roleLoadout
+  id: JobTDMBluePointman
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobTDMBlueMarksman
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
   id: JobTDMRed
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobTDMRedPointman
+  groups:
+  - ContractorWallet
+
+- type: roleLoadout
+  id: JobTDMRedMarksman
   groups:
   - ContractorWallet

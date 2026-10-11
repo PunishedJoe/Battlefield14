@@ -48,9 +48,10 @@
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorPCV
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpackMercenary
     suitstorage: WeaponShotgunUSSPAS12
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSARifleman
     leftarmband: Tourniquet
@@ -81,9 +82,10 @@
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorPCV
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJack
     back: ClothingBackpackMercenary
     suitstorage: WeaponMachineGunUSM249Para
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSARifleman
     leftarmband: Tourniquet
@@ -112,7 +114,7 @@
     eyes: ClothingEyesGogglesGreen
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorPCV
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJackFilledUSMC
     back: ClothingBackpackSatchelSecurity
     suitstorage: WeaponLauncherUSSMAW
     suitstorage2: WeaponSubmachinegunDEMP5A5

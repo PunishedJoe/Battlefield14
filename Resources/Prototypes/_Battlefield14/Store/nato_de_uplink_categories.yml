@@ -63,12 +63,44 @@
         tags:
           - BundeswehrUplink
 
+- type: listing
+  id: UplinkNATODEG22A2Crate
+  name: uplink-NATODE-G22A2crate-name
+  description: uplink-NATODE-G22A2crate-desc
+  productEntity: CrateSecgearNATOFilledG22A2
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Snipers/AWM.rsi, state: icon }
+  cost:
+    NATORequisition: 18 # 3 minutes
+  categories:
+    - UplinkNATODEWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
 #region Ammo
 
 - type: listing
+  id: UplinkNATODEMagazineBoxG3
+  name: uplink-NATODE-magazine-box-G3-name
+  description: uplink-NATODE-magazine-box-G3-desc
+  productEntity: BoxMagazineG3
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G3.rsi, state: icon }
+  cost:
+    NATORequisition: 4 # 40 seconds
+  categories:
+    - UplinkNATODEAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+- type: listing
   id: UplinkNATODEAmmoBox
-  name: uplink-natous-ammo-box-name
-  description: uplink-natous-ammo-box-desc
+  name: uplink-NATODE-ammo-box-name
+  description: uplink-NATODE-ammo-box-desc
   productEntity: SupplyBoxAmmoUSFilledDE
   icon: { sprite: _Battlefield14/Objects/Misc/ammoboxus.rsi, state: icon }
   cost:

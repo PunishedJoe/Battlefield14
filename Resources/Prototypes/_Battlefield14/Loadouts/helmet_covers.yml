@@ -1,0 +1,16 @@
+#region NATO
+
+- type: loadout
+  id: LoadoutHelmetCoverMarpatWoodland
+  equipment:
+    helmetcover: BF14ClothingHelmetCoverMarpatWoodland
+
+#region PACT
+
+- type: loadout
+  id: LoadoutHelmetCoverRUDigitalRed
+  equipment:
+    helmetcover: ClothingHelmetCoverRUDigitalRed
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_VDV_VET

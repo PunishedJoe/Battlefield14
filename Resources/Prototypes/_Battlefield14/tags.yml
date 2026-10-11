@@ -38,19 +38,7 @@
   id: MagazinePistolPM # down to here
 
 - type: Tag
-  id: BF_CartridgePistol50AE
-
-- type: Tag
-  id: BF_CartridgePistol762x25
-
-- type: Tag
-  id: BF_CartridgePistol9x18
-
-- type: Tag
   id: BF_CartridgeGrenade25x40
-
-- type: Tag
-  id: BF_CartridgePistol45ACP
 
 - type: Tag
   id: BF_CartridgePDW46x30
@@ -60,6 +48,27 @@
 
 - type: Tag
   id: BF_CartridgePDW9x21
+
+- type: Tag
+  id: BF_CartridgePistol45ACP
+
+- type: Tag
+  id: BF_CartridgePistol50AE
+
+- type: Tag
+  id: BF_CartridgePistol762x25
+
+- type: Tag
+  id: BF_CartridgePistol9x18
+
+- type: Tag
+  id: BF_CartridgePistol9x19
+
+- type: Tag
+  id: BF_CartridgePistol10x25
+
+- type: Tag
+  id: BF_CartridgePistol357
 
 - type: Tag
   id: BF_CartridgeRifle127x55
@@ -98,15 +107,6 @@
   id: BF_CartridgeRifle9x39
 
 - type: Tag
-  id: BF_CartridgePistol9x19
-
-- type: Tag
-  id: BF_CartridgePistol10x25
-
-- type: Tag
-  id: BF_CartridgePistol357
-
-- type: Tag
   id: BF_CartridgeShotgun12Gauge
 
 - type: Tag
@@ -120,6 +120,9 @@
 
 - type: Tag
   id: BF_CartridgeShotgun4Gauge
+
+- type: Tag
+  id: BF_CartridgeShotgun410Bore
 
 - type: Tag
   id: BlisterPack
@@ -161,6 +164,12 @@
   id: ExtendableLadder
 
 - type: Tag
+  id: IntelBlue
+
+- type: Tag
+  id: IntelRed
+
+- type: Tag
   id: ShellMortar81M252
 
 - type: Tag
@@ -188,6 +197,12 @@
   id: MagazineRifleASVAL
 
 - type: Tag
+  id: MagazineRifleFAL
+
+- type: Tag
+  id: MagazineRifleL1A1
+
+- type: Tag
   id: MagazineRifleG3
 
 - type: Tag
@@ -212,22 +227,19 @@
   id: MagazineRifleM14
 
 - type: Tag
-  id: MagazineBeltBoxM240
-
-- type: Tag
-  id: MagazineBeltBoxM249
-
-- type: Tag
-  id: MagazineBeltBoxM60
-
-- type: Tag
   id: MagazineRifleM30MRC
 
 - type: Tag
   id: MagazineRifleM41A
 
 - type: Tag
-  id: MagazineSniperM40A5
+  id: MagazineRifleVZ58
+
+- type: Tag
+  id: MagazineBeltBoxM240
+
+- type: Tag
+  id: MagazineBeltBoxM249
 
 - type: Tag
   id: MagazineBeltBoxMG3
@@ -239,10 +251,16 @@
   id: MagazineBeltBoxMK48
 
 - type: Tag
+  id: MagazineBeltBoxM60
+
+- type: Tag
   id: MagazineBeltBoxPKM
 
 - type: Tag
   id: MagazineSniperM107
+
+- type: Tag
+  id: MagazineSniperM40A5
 
 - type: Tag
   id: MagazineSniperSVD
@@ -282,6 +300,9 @@
 
 - type: Tag
   id: MagazinePistolMP7
+
+- type: Tag
+  id: MagazineSubmachinegunMP9
 
 - type: Tag
   id: MagazinePistolP90
@@ -381,3 +402,31 @@
 
 - type: Tag
   id: Cartridge43x30mmChemicalSmoke
+
+- type: Tag
+  id: BF14KnifeTaiga
+
+# Attachments
+
+- type: Tag
+  id: BF14Pistol9x19mmSuppressor
+
+- type: Tag
+  id: BF14TourniquetEsmarch
+
+- type: Tag
+  id: BF14BayonetM7
+
+- type: Tag
+  id: BF14Bayonet6h3
+
+- type: Tag
+  id: BF14Bayonet6h4
+
+- type: Tag
+  id: BF14Bayonetvz58
+
+# Patches
+
+- type: Tag
+  id: BF14PatchRusich
