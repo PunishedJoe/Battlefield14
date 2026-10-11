@@ -120,7 +120,7 @@
     sender: "Combat Area"
     sound:
       path: /Audio/_Battlefield14/Announcements/BlueWin.ogg
-    color: "#2d61ff"
+    color: "#47fb2b"
 
 - type: constructionGraph
   id: BF14IntelBlueDropoffGraph
@@ -384,7 +384,7 @@
     sender: "Combat Area"
     sound:
       path: /Audio/_Battlefield14/Announcements/RedWin.ogg
-    color: "#ff2c00"
+    color: "#47fb2b"
 
 - type: constructionGraph
   id: BF14IntelRedDropoffGraph
