@@ -19,8 +19,8 @@
           lobbySortOrder: 1
         - type: StationJobs
           availableJobs:
-            TDMRed: [ 10, 10 ]
-            TDMBlue: [ 10, 10 ]
+            TDMRed: [ -1, -1 ]
+            TDMBlue: [ -1, -1 ]
         - type: CEStationZLevels
           mapsBelow:
             - /Maps/_Battlefield14/Planets/caves.yml

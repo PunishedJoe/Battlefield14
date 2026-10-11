@@ -9,6 +9,7 @@
 #    timeToCapture: 120
   - type: CapturePoint
     pointName: "Control room"
+    ticketValue: 3
   - type: NavMapBeacon
     defaultText: "Control room"
     color: "#FFFF00"
@@ -26,6 +27,7 @@
 #    timeToCapture: 120
   - type: CapturePoint
     pointName: "3rd floor office"
+    ticketValue: 3
   - type: NavMapBeacon
     defaultText: "3rd floor office"
     color: "#FFFF00"
@@ -43,6 +45,7 @@
 #    timeToCapture: 120
   - type: CapturePoint
     pointName: "Destroyed office"
+    ticketValue: 3
   - type: NavMapBeacon
     defaultText: "Destroyed office"
     color: "#FFFF00"
@@ -60,6 +63,7 @@
 #    timeToCapture: 120
   - type: CapturePoint
     pointName: "Underground storage"
+    ticketValue: 3
   - type: NavMapBeacon
     defaultText: "storage"
     color: "#FFFF00"
@@ -77,6 +81,7 @@
 #    timeToCapture: 120
   - type: CapturePoint
     pointName: "Silos"
+    ticketValue: 3
   - type: NavMapBeacon
     defaultText: "silo"
     color: "#FFFF00"
@@ -94,6 +99,7 @@
 #    timeToCapture: 120
   - type: CapturePoint
     pointName: "Enrichment unit"
+    ticketValue: 3
   - type: NavMapBeacon
     defaultText: "Enrichment unit"
     color: "#FFFF00"
@@ -111,6 +117,7 @@
 #    timeToCapture: 120
   - type: CapturePoint
     pointName: "Bridge"
+    ticketValue: 3
   - type: NavMapBeacon
     defaultText: "Bridge"
     color: "#FFFF00"

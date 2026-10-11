@@ -927,9 +927,9 @@
   description: A de-militarized AKM made for the civilian market.
   components:
   - type: Item
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/VPO136.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/MPiKM.rsi # fuck it. change to AKM later
   - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/VPO136.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/MPiKM.rsi
     state: icon
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
@@ -944,7 +944,7 @@
       - state: mag-akm-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/VPO136.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/MPiKM.rsi
   - type: GunWieldBonus
     minAngle: -29
     maxAngle: -27
@@ -980,7 +980,7 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-ak74black-0
+      - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AN94.rsi

@@ -59,7 +59,7 @@
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVRecharging
+    outerClothing: ClothingOuterArmorPCVExtendedRecharging
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -93,7 +93,7 @@
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVExtendedRecharging
+    outerClothing: ClothingOuterArmorPCVRecharging
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -160,7 +160,7 @@
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltRU
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVRecharging
+    outerClothing: ClothingOuterArmorPCVExtendedRecharging
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus
@@ -194,7 +194,7 @@
     balaclava: ClothingBalaclavaMilitary
     ears: ClothingHeadsetAltUS
     gloves: ClothingHandsGlovesFingerless
-    outerClothing: ClothingOuterArmorPCVExtendedRecharging
+    outerClothing: ClothingOuterArmorPCVRecharging
     belt: ClothingBeltAssault
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackButtpackSurplus

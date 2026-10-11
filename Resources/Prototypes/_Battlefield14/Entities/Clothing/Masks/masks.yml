@@ -47,7 +47,7 @@
     sprite: _Battlefield14/Clothing/Mask/M40.rsi
 
 - type: entity
-  parent: [ ClothingMaskBase , ShowSecurityIcons ]
+  parent: [ ClothingMaskGasM40 , ShowSecurityIcons ]
   id: ClothingMaskGasM40Green
   name: M40 field protective mask
   description: Effective against stuff you reaally dont want in your body, upgraded with built-in night vision and heads-up-display.
@@ -82,10 +82,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
-  - type: Armor
-    modifiers:
-      coefficients:
-        Radiation: 0.75
 
 - type: entity
   parent: ClothingMaskGasM40
