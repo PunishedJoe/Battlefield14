@@ -19,10 +19,10 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -19
+    minAngle: -16
     maxAngle: -35
   - type: Gun
-    minAngle: 19 # Wielded = 0
+    minAngle: 20 # Wielded = 4
     maxAngle: 50 # wielded = 15
     angleIncrease: 1
     angleDecay: 20
