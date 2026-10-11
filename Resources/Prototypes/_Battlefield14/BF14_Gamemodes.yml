@@ -1,3 +1,5 @@
+#region space
+
 - type: gamePreset
   id: BF14_Stations_USSF_VDV
   alias:
@@ -21,6 +23,8 @@
   rules:
   - NFAdventure
 
+#region groundwar
+
 - type: gamePreset
   id: BF14_GroundwarUSA
   alias:
@@ -29,6 +33,7 @@
   showInVote: true
   supportedMaps: BF14MapPoolEarthUSA
   description: Larp and frag. American edition.
+  respawnMultiplier: 0.5 # 2.5 minutes
   minPlayers: 15
   rules:
   - NFAdventure
@@ -41,6 +46,7 @@
   showInVote: true
   supportedMaps: BF14MapPoolEarthGermany
   description: Larp and frag. German edition.
+  respawnMultiplier: 0.5 # 2.5 minutes
   minPlayers: 15
   rules:
   - NFAdventure
@@ -53,9 +59,12 @@
   showInVote: true
   supportedMaps: BF14MapPoolEarthRussia
   description: Larp and frag. Russian edition.
+  respawnMultiplier: 0.5 # 2.5 minutes
   minPlayers: 15
   rules:
   - NFAdventure
+
+#region other
 
 - type: gamePreset
   id: BF14_CivilUnrest
@@ -83,6 +92,8 @@
   maxPlayers: 20
   rules:
   - TenMinuteRestart
+
+#region TDM
 
 - type: gamePreset
   id: BF14_TDM # respawns

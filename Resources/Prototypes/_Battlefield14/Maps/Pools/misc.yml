@@ -30,8 +30,6 @@
 - type: gameMapPool
   id: BF14MapPoolTDMHardcore
   maps:
-  - BF14TurbineTDM
   - BF14ShuddihTownTDM
   - BF14CedarCreekTDM
   - BF14TeufortTDM
-  - BF14ProvingGroundTDM
