@@ -33,7 +33,7 @@
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 8
+    fireRate: 12.5 # 750 RPM
     projectileSpeed: 45
     shotsPerBurst: 3
     burstCooldown: 0.3
@@ -175,7 +175,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 10 # intended this is a power weapon
+    fireRate: 15 # 900 RPM
     projectileSpeed: 50 # why not son
   - type: MagazineVisuals
     magState: mag
@@ -259,7 +259,7 @@
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 6
+    fireRate: 10 # 600 RPM
     projectileSpeed: 45
     shotsPerBurst: 3
     burstCooldown: 0.3
@@ -335,7 +335,7 @@
     soundGunshot:
       path: /Audio/_Battlefield14/Weapons/Guns/pulse/ar2_shot.ogg
     soundEmpty: /Audio/_Battlefield14/Weapons/Guns/pulse/empty.ogg
-    fireRate: 7.5
+    fireRate: 12.5 # 750 RPM
   - type: ChamberMagazineAmmoProvider
     soundBoltClosed:
       path: /Audio/_Battlefield14/Weapons/Guns/pulse/bolt_in.ogg
