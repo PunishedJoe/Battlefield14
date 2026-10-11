@@ -35,7 +35,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 6
+    fireRate: 10.8 # 650 RPM
     projectileSpeed: 45
     soundGunshot:
       collection: BF_AK_545_Gunshots
@@ -275,7 +275,6 @@
   - type: Gun
     angleIncrease: 1.5
     projectileSpeed: 40 # Shorter barrel
-    fireRate: 6
     availableModes:
     - SemiAuto
     - FullAuto
@@ -356,8 +355,6 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKS74u.rsi
   - type: Gun
-    projectileSpeed: 35 # Shorter barrel + suppressed
-    fireRate: 7
     soundGunshot:
       collection: BF_AK_545_Gunshots_SUPP
       params:
@@ -499,7 +496,6 @@
     maxAngle: 42
     angleIncrease: 1.25
     projectileSpeed: 40 # Shorter barrel
-    fireRate: 7
     availableModes:
     - SemiAuto
     - FullAuto
@@ -566,7 +562,6 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 7
     projectileSpeed: 45
     soundGunshot:
       collection: BF_AK_545_Gunshots_SUPP
@@ -641,7 +636,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 6
+    fireRate: 10 # 600 RPM
     projectileSpeed: 40
     soundGunshot:
       collection: BF_AK_762_Gunshots
@@ -956,7 +951,7 @@
     availableModes:
     - SemiAuto
     selectedMode: SemiAuto
-    fireRate: 4
+    fireRate: 5
     projectileSpeed: 40
     soundGunshot:
       collection: BF_AK_762_Gunshots
@@ -989,7 +984,7 @@
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 6
+    fireRate: 10 # 600 RPM
     projectileSpeed: 45
     shotsPerBurst: 2
     burstFireRate: 30

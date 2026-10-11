@@ -43,7 +43,7 @@
       params:
         volume: -5
         variation: 0.125
-    fireRate: 7
+    fireRate: 12.5 # 750 RPM
   - type: ChamberMagazineAmmoProvider
     soundRack:
       path: /Audio/_Battlefield14/Weapons/Guns/M16/rack.ogg
@@ -202,7 +202,7 @@
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 7
+    fireRate: 12.5 # 750 RPM
 
 - type: entity
   name: M16A4
@@ -411,7 +411,6 @@
         volume: -12
         variation: 0.125
         range: 15
-    fireRate: 7
   - type: Appearance
   - type: WieldedCrosshair
     rsi:
@@ -488,7 +487,7 @@
     selectedMode: Burst
     burstFireRate: 16
     burstCooldown: 0.3
-    fireRate: 4
+    fireRate: 5
   - type: WieldedCrosshair
     rsi:
       sprite: _RMC14/Interface/MousePointer/rifle_mouse.rsi
@@ -496,7 +495,7 @@
 
 - type: entity
   name: CAR-15 SUPP.
-  parent: WeaponRifleUSM4A1
+  parent: WeaponRifleUSCAR15
   id: WeaponRifleUSCAR15SUPP
   description: This is so CAG bro!.
   components:
@@ -521,27 +520,13 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/CAR15SUPP.rsi
-  - type: Wieldable
-    unwieldOnUse: false
-  - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -27
   - type: Gun
-    minAngle: 26
-    maxAngle: 40
-    angleIncrease: 1
-    projectileSpeed: 45
-    availableModes:
-    - SemiAuto
-    - FullAuto
-    selectedMode: FullAuto
     soundGunshot:
       collection: BF_Galil_Gunshots_SUPP
       params:
         volume: -12
         variation: 0.125
         range: 15
-    fireRate: 7
   - type: Appearance
   - type: WieldedCrosshair
     rsi:
