@@ -5,6 +5,11 @@
   - BF14Springfield
 
 - type: gameMapPool
+  id: BF14MapPoolEarthGermany
+  maps:
+  - BF14CedarCreek
+
+- type: gameMapPool
   id: BF14MapPoolEarthRussia
   maps:
   - BF14Customs

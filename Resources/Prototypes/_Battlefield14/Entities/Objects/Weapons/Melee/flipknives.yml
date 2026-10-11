@@ -25,7 +25,7 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Slash: 21
+        Slash: 28
     activatedSoundOnHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: MeleeWeapon

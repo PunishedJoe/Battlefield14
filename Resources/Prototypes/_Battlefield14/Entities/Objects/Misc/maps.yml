@@ -121,6 +121,31 @@
           color: "#4f94ad"
           requireDetailRange: true
 
+- type: entity
+  parent: BaseBattlemap
+  id: BF14MapCedarCreek
+  name: 'map (cedar creek)'
+  description: It's a map of Cedar Creek, in Germany. The red squares mark objectives.
+  components:
+    - type: Item
+      size: Tiny
+      storedSprite:
+        sprite: _Battlefield14/Objects/Misc/maps.rsi
+        state: cedarcreek-storage
+    - type: Sprite
+      sprite: _Battlefield14/Objects/Misc/maps.rsi
+      state: cedarcreek
+    - type: TabletopGame
+      size: 282, 357
+      setup:
+        !type:TabletopEmptySetup
+        boardPrototype: PhotoMapCedarCreek
+    - type: ExtendDescription
+      descriptionList:
+        - description: To use, place on the floor, hover over the item, and tap E on the keyboard.
+          color: "#4f94ad"
+          requireDetailRange: true
+
 # Image protos
 
 - type: entity
@@ -171,4 +196,14 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/GroundMaps/Bengalsk.rsi
+    state: map
+
+- type: entity
+  parent: BaseBoardTabletop
+  id: PhotoMapCedarCreek
+  name: map of Cedar Creek
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/GroundMaps/CedarCreek.rsi
     state: map

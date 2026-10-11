@@ -43,19 +43,19 @@
     id: VDVReconPDA
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRUFilledASVALShort
-    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
+#    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRU6b47Alt
     helmetattachment: ClothingHelmetAttachmentNVGsBasicPACT
     outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJackFilledRU
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUASVAL
-    pocket1: PouchFirstAidFilled
+    pocket1: PouchFirstAidFilledPACT
     pocket2: PouchGrenadesFilledVDVScout
   storage:
     back:
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussiaPMK4
     - Rangefinder
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - Zipties

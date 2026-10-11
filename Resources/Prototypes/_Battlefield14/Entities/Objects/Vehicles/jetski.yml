@@ -27,6 +27,7 @@
     sprite: _Battlefield14/Structures/Vehicles/jetski.rsi
     layers:
     - state: vehicle
+      map: ["enum.VehicleVisualLayers.AutoAnimate"]
     - state: lights
       shader: unshaded
     noRot: true

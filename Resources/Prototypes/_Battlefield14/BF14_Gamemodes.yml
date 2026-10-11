@@ -1,3 +1,5 @@
+#region space
+
 - type: gamePreset
   id: BF14_Stations_USSF_VDV
   alias:
@@ -21,14 +23,30 @@
   rules:
   - NFAdventure
 
+#region groundwar
+
 - type: gamePreset
   id: BF14_GroundwarUSA
   alias:
   - USA
   name: Ground war, USA
-  showInVote: true # objectives not working yet, could poison the view of the map into a mindless TDM
+  showInVote: true
   supportedMaps: BF14MapPoolEarthUSA
-  description: Larp and frag.
+  description: Larp and frag. American edition.
+  respawnMultiplier: 0.5 # 2.5 minutes
+  minPlayers: 15
+  rules:
+  - NFAdventure
+
+- type: gamePreset
+  id: BF14_GroundwarGermany
+  alias:
+  - Germany
+  name: Ground war, Germany
+  showInVote: true
+  supportedMaps: BF14MapPoolEarthGermany
+  description: Larp and frag. German edition.
+  respawnMultiplier: 0.5 # 2.5 minutes
   minPlayers: 15
   rules:
   - NFAdventure
@@ -38,12 +56,15 @@
   alias:
   - Russia
   name: Ground war, Russia
-  showInVote: true # objectives not working yet, could poison the view of the map into a mindless TDM
+  showInVote: true
   supportedMaps: BF14MapPoolEarthRussia
   description: Larp and frag. Russian edition.
+  respawnMultiplier: 0.5 # 2.5 minutes
   minPlayers: 15
   rules:
   - NFAdventure
+
+#region other
 
 - type: gamePreset
   id: BF14_CivilUnrest
@@ -52,7 +73,7 @@
   name: Civil Unrest
   showInVote: true
   supportedMaps: BF14MapPoolCivilUnrest
-  description: Maps involving civilians in combat.
+  description: Maps involving civilians in combat. Ten minute rounds.
   minPlayers: 10
   maxPlayers: 30
   rules:
@@ -72,6 +93,8 @@
   rules:
   - TenMinuteRestart
 
+#region TDM
+
 - type: gamePreset
   id: BF14_TDM # respawns
   alias:
@@ -79,11 +102,27 @@
     - tdm
   name: Team DeathMatch
   description: Match to the death with your team.
-  maxPlayers: 10
-  showInVote: false # Disabled because it doesnt work
+  maxPlayers: 15
+  showInVote: true
+  respawnMultiplier: 0.02 # 6 seconds
   supportedMaps: BF14MapPoolTDM
   rules:
-    - TeamDeathMatch
+    - TeamDeathMatchHardcore # whatever
+
+- type: gamePreset
+  id: BF14_FFA
+  alias:
+    - freeforall
+    - ffa
+    - deathmatch
+    - dm
+  name: Free For All
+  description: Fight and win.
+  maxPlayers: 10
+  showInVote: true
+  supportedMaps: BF14MapPoolFFA
+  rules:
+    - DeathMatch31
 
 - type: gamePreset
   id: BF14_TDMHardcore # no respawns
@@ -94,13 +133,38 @@
     - tdmhardcore
   name: Team DeathMatch (Hardcore)
   description: Match to the death with your team, no respawns.
-  maxPlayers: 20
+  maxPlayers: 15
   showInVote: true
+  respawnMultiplier: 2 # no respawns
   supportedMaps: BF14MapPoolTDMHardcore
   rules:
     - TeamDeathMatchHardcore
 
+- type: gamePreset
+  id: BF14_TDMObjective # respawns
+  alias:
+    - teamobjective
+    - tdmobjective
+  name: Team Objective
+  description: Complete objectives to the death with your team.
+  maxPlayers: 15
+  showInVote: true
+  respawnMultiplier: 0.166 # 30 seconds
+  supportedMaps: BF14MapPoolTDMObjective
+  rules:
+    - Arcade
+
 #region game rules
+
+- type: entity
+  id: Arcade
+  parent: BaseGameRule
+  components:
+  - type: KillCalloutRule
+  - type: PointManager
+  - type: MaxTimeRestartRule
+    roundMaxTime: 901 # 15 minutes
+    roundEndDelay: 30
 
 - type: entity
   id: TeamDeathMatch

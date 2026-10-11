@@ -1,0 +1,21 @@
+- type: entity
+  name: rusich patch
+  parent: BaseItem
+  id: BF14ClothingPatchRusich
+  description: A patch for the rusich group.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Accessories/patches.rsi
+    state: rusich
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - BF14PatchRusich
+  - type: ESGunAttachment
+  - type: ExtendDescription
+    descriptionList:
+      - description: Attaches to jumpsuits.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: false

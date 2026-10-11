@@ -99,6 +99,28 @@
     - 0,0,3,1
 
 - type: entity
+  parent: ClothingBeltMilitaryWebbingUS
+  id: ClothingBeltMilitaryWebbingMP40
+  name: MP40 webbing
+  description: An outdated webbing that can only hold submachinegun or pistol magazines. Worn by tactical bums or larpers, may or may not be a reproduction depending on who you ask.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Belt/mp40.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Belt/mp40.rsi
+  - type: Item
+    size: Huge
+  - type: Storage
+    maxItemSize: Small
+    defaultStorageOrientation: Vertical
+    grid:
+    - 0,0,2,1
+    - 4,0,6,1
+    whitelist:
+      tags:
+        - PistolMagazine
+
+- type: entity
   parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
   id: ClothingBeltStationSecurity
   name: security belt

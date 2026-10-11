@@ -8,6 +8,9 @@
     "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Do not re-use these sprites without permission from WillyBillyGilly. Modified by JoeHammad",
     "states": [
         {
+            "name": "icon"
+        },
+        {
             "name": "base"
         },
         {

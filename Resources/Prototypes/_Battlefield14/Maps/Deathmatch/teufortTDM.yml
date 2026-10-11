@@ -1,0 +1,41 @@
+- type: gameMap
+  id: BF14TeufortTDM
+  mapName: 'Teufort (TDM)'
+  mapPath: /Maps/_Battlefield14/Deathmatch/MultiZ/BF14TeufortTDMZMap3.yml
+  minPlayers: 1
+  maxPlayers: 20
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14TeufortTDM:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Teufort, New Mexico"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_NF/Structures/Decoration/banner.rsi/nfsd-banner.png
+          stationSubtext: "Cedar Creek, Bavaria"
+          stationDescription: "A part of a industrial complex located in New Mexico, USA"
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            TDMRed: [ 10, 10 ]
+            TDMBlue: [ 10, 10 ]
+        - type: CEStationZLevels
+          mapsBelow:
+            - /Maps/_Battlefield14/Deathmatch/MultiZ/BF14TeufortTDMZMap0.yml 
+            - /Maps/_Battlefield14/Deathmatch/MultiZ/BF14TeufortTDMZMap1.yml
+            - /Maps/_Battlefield14/Deathmatch/MultiZ/BF14TeufortTDMZMap2.yml
+          zLevelsComponentOverrides:
+            - type: CEAutoGridGravity
+
+
+- type: zMap
+  id: BF14TeufortZMapTDM
+  maps:
+    - /Maps/_Battlefield14/Deathmatch/MultiZ/BF14TeufortTDMZMap0.yml    # Level -2 Basement
+    - /Maps/_Battlefield14/Deathmatch/MultiZ/BF14TeufortTDMZMap1.yml    # Level -1 Water
+    - /Maps/_Battlefield14/Deathmatch/MultiZ/BF14TeufortTDMZMap2.yml    # Level 0 Bridge
+    - /Maps/_Battlefield14/Deathmatch/MultiZ/BF14TeufortTDMZMap3.yml    # Level 1 Spawns
+  components:
+    - type: CEAutoGridGravity

@@ -11,6 +11,9 @@
             "name": "icon-ak74"
         },
         {
+            "name": "icon-rpk"
+        },
+        {
             "name": "icon-rpk74"
         },
         {
@@ -24,6 +27,9 @@
         },
         {
             "name": "icon-aks74u"
+        },
+        {
+            "name": "icon-ak103"
         },
         {
             "name": "icon-ak203"
@@ -62,7 +68,13 @@
             "name": "mag-ak12-3"
         },
         {
+            "name": "mag-ak12-4"
+        },
+        {
             "name": "mag-cag-0"
+        },
+        {
+            "name": "mag-ak103-0"
         },
         {
             "name": "mag-ak203-0"
@@ -71,7 +83,16 @@
             "name": "mag-akm-0"
         },
         {
+            "name": "mag-akmbakelite-0"
+        },
+        {
+            "name": "mag-rpk-0"
+        },
+        {
             "name": "mag-ak74black-0"
+        },
+        {
+            "name": "stock-mpikm"
         },
         {
             "name": "stock-ak74"
@@ -92,16 +113,25 @@
             "name": "stock-cag"
         },
         {
+            "name": "stock-UUK"
+        },
+        {
             "name": "stock-folding"
         },
         {
             "name": "stock-underfolding"
         },
         {
+            "name": "stock-mpikms"
+        },
+        {
             "name": "stock-ak203"
         },
         {
             "name": "stock-ak12k"
+        },
+        {
+            "name": "handguard-mpi"
         },
         {
             "name": "handguard-ak74"
@@ -114,6 +144,9 @@
         },
         {
             "name": "handguard-cag"
+        },
+        {
+            "name": "handguard-UUK"
         },
         {
             "name": "handguard-ak203"
@@ -152,10 +185,16 @@
             "name": "grip-cag"
         },
         {
+            "name": "grip-UUK"
+        },
+        {
             "name": "grip-ak203"
         },
         {
             "name": "foregrip-polymer"
+        },
+        {
+            "name": "foregrip-polymerblack"
         },
         {
             "name": "foregrip-cag"
@@ -170,6 +209,9 @@
             "name": "collimator-1p87"
         },
         {
+            "name": "collimator-1p87black"
+        },
+        {
             "name": "scope-lpvo-cag"
         },
         {
@@ -177,6 +219,15 @@
         },
         {
             "name": "supp"
+        },
+        {
+            "name": "esmarch"
+        },
+        {
+            "name": "bayonet-6h3"
+        },
+        {
+            "name": "bayonet-6h4"
         }
     ]
 }

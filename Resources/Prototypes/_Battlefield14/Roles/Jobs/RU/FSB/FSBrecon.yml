@@ -59,7 +59,7 @@
     suitstorage: WeaponRifleRUAKS74UB
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledVDVScout
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:
@@ -71,7 +71,7 @@
     - CrowbarRed
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussia
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - Zipties
 
 - type: startingGear
@@ -93,7 +93,7 @@
     suitstorage: WeaponRifleRUAKS74UB
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledVDVScout
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:
@@ -106,5 +106,5 @@
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussia
     - DoubleEmergencyOxygenTankFilled
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - Zipties

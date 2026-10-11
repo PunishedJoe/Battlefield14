@@ -1,0 +1,93 @@
+- type: entity
+  id: BF14Fusebox
+  name: Fusebox
+  description: A fusebox, it has fuses inside a box, hence the name.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: StationAiWhitelist
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -9
+    range: 2
+    sound:
+      path: /Audio/Ambience/Objects/hdd_buzz.ogg
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _Battlefield14/Structures/fusebox.rsi
+    layers:
+    - state: base
+  - type: Appearance
+  - type: ApcVisuals
+  - type: Battery
+    maxCharge: 50000000
+    startingCharge: 50000000
+  - type: ExaminableBattery
+  - type: NodeContainer
+    examinable: true
+    nodes:
+      input:
+        !type:CableDeviceNode
+        nodeGroupID: MVPower
+      output:
+        !type:CableDeviceNode
+        nodeGroupID: Apc
+  - type: PowerMonitoringDevice
+    group: APC
+    sourceNode: input
+    loadNode: output
+    collectionName: apc
+    sprite: _Battlefield14/Structures/fusebox.rsi
+    state: base
+  - type: BatteryCharger
+    voltage: Medium
+  - type: PowerProvider
+    voltage: Apc
+  - type: Apc
+    voltage: Apc
+  - type: ExtensionCableProvider
+  - type: UserInterface
+    interfaces:
+      enum.ApcUiKey.Key:
+        type: ApcBoundUserInterface
+  - type: ActivatableUI
+    inHandsOnly: false
+    key: enum.ApcUiKey.Key
+  - type: Construction
+    graph: APC
+    node: apc
+  - type: PowerNetworkBattery
+    maxSupply: 15000
+    maxChargeRate: 5000
+    supplyRampTolerance: 15000
+    supplyRampRate: 500
+  - type: WallMount
+  - type: WiresPanel
+  - type: WiresVisuals
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallicStrong
+  - type: StationInfiniteBatteryTarget
+  - type: Electrified
+    onHandInteract: false
+    onInteractUsing: false
+    onBump: false
+    requirePower: true
+    mediumVoltageNode: input
+    lowVoltageNode: output
+  - type: LightningTarget
+    priority: 1
+  - type: StaticPrice
+    price: 500
+  - type: GuideHelp
+    guides:
+    - VoltageNetworks
+    - Power
+  - type: BatteryDrinkerSource
+    maxAmount: 10000
+  - type: PowerSupplier
+    supplyRate: 10000

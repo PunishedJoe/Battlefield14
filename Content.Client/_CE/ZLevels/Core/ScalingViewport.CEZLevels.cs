@@ -150,15 +150,12 @@ public sealed partial class ScalingViewport
                 if (!_mapQuery.Value.TryComp(mapUidBelow, out var mapComp))
                     continue;
 
-                Angle rotation = _fallbackEye.Rotation * -1;
-                var offset = rotation.ToWorldVec() * CEClientZLevelsSystem.ZLevelOffset * depth;
-
                 viewport.Eye = new ZEye(lowestDepth, depth, lookUp)
                 {
                     Position = new MapCoordinates(_fallbackEye.Position.Position, mapComp.MapId),
                     DrawFov = _fallbackEye.DrawFov && depth >= 0,
                     DrawLight = _fallbackEye.DrawLight,
-                    Offset = _fallbackEye.Offset + offset,
+                    Offset = _fallbackEye.Offset,
                     Rotation = _fallbackEye.Rotation,
                     Scale = _fallbackEye.Scale,
                 };

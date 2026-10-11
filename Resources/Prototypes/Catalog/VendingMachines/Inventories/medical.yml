@@ -2,10 +2,10 @@
   id: NanoMedPlusInventory
   startingInventory:
     HandheldHealthAnalyzer: 5
-    Brutepack: 5
-    Ointment: 5
+    BF14DressingPacket: 5
+    BF14Ointment: 5
 #BF14    Bloodpack: 5
-    Gauze: 5 # Frontier
+    BF14GauzePacket: 5 # Frontier
     Tourniquet: 20 # BF14
     MedicationBoxPillsBicaridine: 5 #BF14
     MedicationBoxPillsKelotane: 5 #BF14

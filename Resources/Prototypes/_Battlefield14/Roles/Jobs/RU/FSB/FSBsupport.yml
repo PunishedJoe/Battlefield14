@@ -59,7 +59,7 @@
     suitstorage: WeaponGrenadeLauncherRUGM94
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledVDVSupport
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:
@@ -69,7 +69,7 @@
     - BoxMagazine43x30Thermobaric
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussia
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - MagazinePistolSR1MP
 
 - type: startingGear
@@ -91,7 +91,7 @@
     suitstorage: WeaponGrenadeLauncherRUGM94
     pocket1: PouchMedkitFilledMarsoc
     pocket2: PouchGrenadesFilledVDVSupport
-    leftarmband: ClothingArmbandSheathKnifePolymerFilledTaiga
+    leftarmband: BF14ClothingArmbandSheathKnifeTaiga
     rightarmband: ClothingArmbandThighHolsterFilledRUSR1MP
   storage:
     back:
@@ -101,5 +101,5 @@
     - BoxMagazine43x30Thermobaric
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussia
-    - Tourniquet
+    - BF14TourniquetEsmarch
     - MagazinePistolSR1MP

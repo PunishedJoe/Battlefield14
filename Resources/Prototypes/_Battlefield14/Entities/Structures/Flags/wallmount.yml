@@ -393,6 +393,82 @@
 
 - type: entity
   parent: BF_BaseFlag
+  id: BlueTeamFlag
+  name: Blue team flag
+  description: Im blue, da-ba-dee.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: blueteam
+  - type: DisassembleOnAltVerb
+    prototype: BlueTeamFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: BlueTeamFlagFolded
+  parent: BF_BaseFlagFolded
+  name: Blue team flag
+  description: Im blue, da-ba-dee.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#004282"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#004282"
+      right:
+      - state: inhand-right
+        color: "#004282"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: BlueTeamFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BF_BaseFlag
+  id: RedTeamFlag
+  name: Red team flag
+  description: SNCA description here.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Structures/Flags/wallmountv2.rsi
+    state: redteam
+  - type: DisassembleOnAltVerb
+    prototype: RedTeamFlagFolded
+    doAfter: 3
+
+- type: entity
+  id: RedTeamFlagFolded
+  parent: BF_BaseFlagFolded
+  name: Red team flag
+  description: SNCA description here.
+  components:
+  - type: Sprite
+    sprite: Clothing/Multiple/towel.rsi
+    layers:
+    - state: icon
+      color: "#b70f0f"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#b70f0f"
+      right:
+      - state: inhand-right
+        color: "#b70f0f"
+    size: Small
+  - type: SpawnAfterInteract
+    prototype: RedTeamFlag
+    doAfter: 3
+    removeOnInteract: true
+
+- type: entity
+  parent: BF_BaseFlag
   id: TrollwaffenFlag
   name: trollwaffen flag
   description: No longer larping.

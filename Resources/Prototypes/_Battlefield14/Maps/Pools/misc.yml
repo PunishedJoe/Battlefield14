@@ -4,12 +4,32 @@
   - BF14NavBouy
 
 - type: gameMapPool
-  id: BF14MapPoolTDM
+  id: BF14MapPoolTDM # Should have respawning weapon spawners, last 3 don't
   maps:
   - BF14DeathAsteroid
+  - BF14ProvingGroundTDM
+  - BF14TurbineTDM
+  - BF14TeufortTDM
+
+- type: gameMapPool
+  id: BF14MapPoolFFA
+  maps:
+  - BF14DeathAsteroid
+  - BF14Pizzeria
+  - BF14SkeldBunker
+  - BF14Stronghold
+
+- type: gameMapPool
+  id: BF14MapPoolTDMObjective
+  maps:
+  - BF14ProvingGroundCTF
+  - BF14TurbineCTF
+  - BF14ProvingGroundKOTH
+  - BF14TurbineKOTH
 
 - type: gameMapPool
   id: BF14MapPoolTDMHardcore
   maps:
   - BF14ShuddihTownTDM
   - BF14CedarCreekTDM
+  - BF14TeufortTDM

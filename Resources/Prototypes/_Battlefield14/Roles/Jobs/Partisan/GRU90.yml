@@ -44,15 +44,17 @@
   id: GRU90Gear
   equipment:
     ears: ClothingHeadsetAltRU
-    neck: FlashlightMilitaryAlt
     jumpsuit: ClothingUniformJumpsuitRUGorka
     outerClothing: ClothingOuterArmorKevlarVest
+    suitstorage2: BF14ClothingArmbandSheathKnife6h4
     belt: ClothingBeltMilitaryWebbingRU
-    shoes: ClothingShoesBootsJackFilledRU
-    pocket1: PouchFirstAidFilled
+    shoes: ClothingShoesBootsJack
+    rightarmband: FlashlightMilitaryAlt
+    pocket1: PouchFirstAidFilledPACT
     pocket2: PouchGrenades
   storage:
     belt:
-#    - ClothingMaskGasM40
-    - Tourniquet
+    - ClothingMaskGasGP7VM
+    - DrinkMREFlask
+    - BF14TourniquetEsmarch
     - Zipties

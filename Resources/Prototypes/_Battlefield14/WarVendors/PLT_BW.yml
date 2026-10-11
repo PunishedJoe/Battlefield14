@@ -32,6 +32,14 @@
         points: 1
     - name: anti-personnel solution
       entries:
+      - id: CrateSecgearNATOFilledMG36
+        name: MG36 x3
+        points: 1
+        amount: 1
+      - id: CrateSecgearNATOFilledSurplusG3
+        name: Surplus G3 crate
+        points: 1
+        amount: 1
       - id: BoxGrenadesM58
         name: CS gas grenades
         points: 1

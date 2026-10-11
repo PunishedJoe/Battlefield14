@@ -1,6 +1,20 @@
 #region HEAD
 
 - type: loadoutGroup
+  id: BF_HelmetCoverUSMC
+  name: loadout-group-BF14-helmetcover
+  minLimit: 0
+  loadouts:
+  - LoadoutHelmetCoverMarpatWoodland
+
+- type: loadoutGroup
+  id: BF_HelmetCoverVDV
+  name: loadout-group-BF14-helmetcover
+  minLimit: 0
+  loadouts:
+  - LoadoutHelmetCoverRUDigitalRed
+
+- type: loadoutGroup
   id: BF_VDVHead
   name: loadout-group-BF14-vdvhead
   minLimit: 0
@@ -77,6 +91,7 @@
   minLimit: 1
   loadouts:
   - LoadoutEyesGlassesBallisticGogglesTan
+  - LoadoutEyesGlassesBallisticGogglesClear
   - LoadoutEyesGlassesBallisticTriMaxBlack
   - LoadoutEyesGlassesBallisticTriMaxBronze
   - LoadoutEyesGlassesBallisticTriMaxYellow
@@ -87,6 +102,7 @@
   minLimit: 1
   loadouts:
   - LoadoutEyesGlassesBallisticGogglesGreen
+  - LoadoutEyesGlassesBallisticGogglesClear
   - LoadoutEyesGlassesBallisticTriMaxBlack
   - LoadoutEyesGlassesBallisticTriMaxBronze
   - LoadoutEyesGlassesBallisticTriMaxYellow
@@ -110,6 +126,7 @@
   - LoadoutMaskBF14NeckGaiter
   - LoadoutMaskBF14MilitaryBalaclava
   - LoadoutMaskBF14MilitaryBalaclavaSkull
+  - LoadoutMaskBF14MilitaryBalaclavaOpen
 
 
 #region EARS
@@ -141,6 +158,24 @@
   - LoadoutNeckIFFOrangeTape
 
 #region BODY (uniform/armour)
+
+- type: loadoutGroup
+  id: BF_JumpsuitsUSMC
+  name: loadout-group-BF14-uniform
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutUniformJumpsuitCamoUSMarpatDesert
+  - LoadoutUniformJumpsuitCamoUSMarpatWoodland
+
+- type: loadoutGroup
+  id: BF_JumpsuitsVDV
+  name: loadout-group-BF14-uniform
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutUniformJumpsuitCamoRUEMR
+  - LoadoutUniformJumpsuitCamoRUDigitalRed
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianUS
@@ -184,6 +219,7 @@
   - LoadoutJumpsuitCivilianPatrioticUSA1
   - LoadoutJumpsuitCivilianPatrioticUSA2
   - LoadoutJumpsuitCivilianPatrioticUSA3
+  - LoadoutJumpsuitCivilianSmiley
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianRU
@@ -316,6 +352,7 @@
   - LoadoutUniformJumpsuitDealer
   - LoadoutUniformJumpsuitHunter
   - LoadoutJumpsuitCivilianPatrioticUSA1
+  - LoadoutJumpsuitCivilianSmiley
 
 - type: loadoutGroup
   id: BF_JumpsuitsCivilianRUEMT
@@ -392,18 +429,54 @@
 #region LONGARMS
 
 - type: loadoutGroup
-  id: BF_LongarmsOMONSergeant
-  name: longarm
+  id: BF_LongarmsARNGRifleman
+  name: loadout-group-BF14-longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunM16A2
+  - LoadoutGunM16A130ARNGPVT
+
+- type: loadoutGroup
+  id: BF_LongarmsARNGMedic
+  name: loadout-group-BF14-longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunM4
+  - LoadoutGunRandomM4
+
+- type: loadoutGroup
+  id: BF_LongarmsARNGRecon
+  name: loadout-group-BF14-longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunM14
+  - LoadoutGunM14EBR
+
+- type: loadoutGroup
+  id: BF_LongarmsRGFRifleman
+  name: loadout-group-BF14-longarm
   minLimit: 1
   maxLimit: 1
   loadouts:
   - LoadoutGunAK74M
+  - LoadoutGunAK74MUUK
+
+- type: loadoutGroup
+  id: BF_LongarmsOMONSergeant
+  name: loadout-group-BF14-longarm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutGunCaseAK74M
   - LoadoutGunPP91
   - LoadoutGunKS23M
 
 - type: loadoutGroup
   id: BF_LongarmsOMON
-  name: longarm
+  name: loadout-group-BF14-longarm
   minLimit: 1
   maxLimit: 1
   loadouts:
@@ -413,7 +486,7 @@
 
 - type: loadoutGroup
   id: BF_LongarmsSWAT
-  name: longarm
+  name: loadout-group-BF14-longarm
   minLimit: 1
   maxLimit: 1
   loadouts:

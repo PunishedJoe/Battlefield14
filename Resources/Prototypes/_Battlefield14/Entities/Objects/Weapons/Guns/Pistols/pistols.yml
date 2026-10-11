@@ -134,7 +134,7 @@
       params:
         volume: -1
     soundBoltClosed:
-      path: /Audio/_Battlefield14/Weapons/Guns/Glock17/chamber.ogg
+      path: /Audio/_Battlefield14/Weapons/Guns/1911/slidedrop.ogg
       params:
         volume: -1
   - type: ItemSlots
@@ -142,8 +142,8 @@
       gun_magazine:
         name: Magazine
         startingItem: MagazinePistolM1911
-        insertSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magin.ogg
-        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Glock17/magout.ogg
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/1911/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/1911/magout.ogg
         priority: 2
         whitelist:
           tags:
@@ -174,6 +174,8 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+    - map: ["barrelAttachment"]
+      offset: 0.408, 0
   - type: Gun
     minAngle: 0
     maxAngle: 15
@@ -218,15 +220,82 @@
         whitelist:
           tags:
             - BF_CartridgePistol9x19
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - BF14Pistol9x19mmSuppressor
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Pistol9x19mmSuppressor
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: supp
+        whitelist:
+          tags:
+          - BF14Pistol9x19mmSuppressor
+
+- type: entity
+  parent: WeaponPistolM9
+  id: WeaponPistolITM9Supp
+  suffix: SUPP.
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolM9
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/Beretta/magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazinePistolM9
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+          - BF_CartridgePistol9x19
+      attachment_barrel:
+        startingItem: GunAttachmentSuppressorPistol9x19mm
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - BF14Pistol9x19mmSuppressor
 
 - type: entity
   name: Hi-Power
-  parent: WeaponPistolM9
+  parent: BaseWeaponPistol
   id: WeaponPistolUSHiPower
   description: One of Browning's popular pistols, developed after the 1911, serving in World War II and practically every conflict after.
   components:
@@ -237,6 +306,32 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 0
+    maxAngle: 15
+    angleIncrease: 2
+    angleDecay: 10
+    fireRate: 5
+    projectileSpeed: 30
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_M9Beretta_Gunshots
+      params:
+        volume: -3
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/rack.ogg
+      params:
+        volume: -1
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/slidepull.ogg
+      params:
+        volume: -1
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/Beretta/sliderel.ogg
+      params:
+        volume: -1
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -247,14 +342,19 @@
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolHiPower
+          - MagazinePistolHiPower
       gun_chamber:
         name: Chamber
         startingItem: BF_CartridgePistol9x19
         priority: 1
         whitelist:
           tags:
-            - BF_CartridgePistol9x19
+          - BF_CartridgePistol9x19
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
 
 #region DE
 
@@ -573,35 +673,6 @@
       - description: Takes Glock-20 pattern magazines.
         color: "#4f94ad"
         requireDetailRange: true
-
-#region IT
-
-- type: entity
-  name: M9 Beretta SUPP.
-  parent: WeaponPistolM9
-  id: WeaponPistolITM9Supp
-  description: Shame you don't have any tranquilizer rounds.
-  components:
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/M9.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: supp
-      offset: 0.408, 0
-  - type: Gun
-    soundGunshot:
-      collection: BF_M9Beretta_Gunshots_SUPP
-      params:
-        volume: -9
-        range: 7
-  - type: Item
-    size: Normal
-    shape:
-    - 0,0,2,0
-    - 0,1,0,1
 
 ## PACT
 #region RU
@@ -953,3 +1024,9 @@
         whitelist:
           tags:
             - BF_CartridgePDW9x21
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
+    autoRot: true
+    radius: 5

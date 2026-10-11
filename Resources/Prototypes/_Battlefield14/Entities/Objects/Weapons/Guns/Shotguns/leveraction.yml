@@ -1,0 +1,49 @@
+- type: entity
+  name: "1887 shorty"
+  parent: BaseWeaponShotgun
+  id: WeaponShotgunUS1887Short
+  description: An outdated lever-action shotgun. A cut down barrel and stock, and enlarged lever allows one handed racking
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,2,1
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/1887short.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/1887short.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/1887short.rsi
+    slots:
+    - Back
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    fireRate: 1
+    projectileSpeed: 30 # short barrel
+    soundGunshot:
+      path: /Audio/_Battlefield14/Weapons/Guns/misc/lever_fire.ogg
+  - type: GunSpreadModifier
+    spread: 2 # short barrel
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+      - BF_CartridgeShotgun12Gauge
+    capacity: 5
+    proto: BF_CartridgeShotgun12GaugeBuckshot
+    soundInsert:
+      collection: BF_Mossberg_ShellIn
+      params:
+        volume: -5
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: This weapon can be stored on your auxillary suit storage slot.
+        color: "#4f94ad"
+        requireDetailRange: true

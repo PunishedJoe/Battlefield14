@@ -31,6 +31,7 @@ using Content.Shared.Maps;
 using Robust.Shared.Map.Components;
 using Content.Shared.Tiles; // Frontier: safe zone
 using Robust.Shared.Timing; // Mono
+using Content.Shared._CE.ZLevels.Core.EntitySystems; // CrystallEdge: z-level audio
 
 // Mono
 using Content.Shared.Stacks;
@@ -63,6 +64,7 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
     [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly StackSystem _stack = default!; // Mono
     [Dependency] private readonly IGameTiming _gameTiming = default!; // Mono
+    [Dependency] private readonly CESharedZLevelsSystem _zLevels = default!; // CrystallEdge: z-level audio
 
     private EntityQuery<FlammableComponent> _flammableQuery;
     private EntityQuery<PhysicsComponent> _physicsQuery;
@@ -414,7 +416,25 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
         // Also the default PVS range is 25*2 = 50. So capping it at 30 makes no sense here.
         // So actually maybe don't use Filter.Pvs at all and only use AddInRange?
         var audioRange = Math.Min(iterationIntensity.Count * 2, MaxExplosionAudioRange);
+
+        // CrystallEdge: include players on adjacent z-levels so explosions are heard across levels.
+        // The near sound stays positional; clients echo it onto the listener's level with attenuation.
+        var mapUid = _mapManager.GetMapEntityId(pos.MapId);
+        var zLevelMaps = new List<EntityUid>();
+        var hasZNetwork = _zLevels.GetNetworkMaps(mapUid, zLevelMaps);
+
         var filter = Filter.Pvs(pos).AddInRange(pos, audioRange);
+        if (hasZNetwork)
+        {
+            foreach (var levelUid in zLevelMaps)
+            {
+                if (!TryComp<MapComponent>(levelUid, out var levelMap) || levelMap.MapId == pos.MapId)
+                    continue;
+
+                filter.AddInRange(new MapCoordinates(pos.Position, levelMap.MapId), audioRange);
+            }
+        }
+
         var sound = iterationIntensity.Count < queued.Proto.SmallSoundIterationThreshold
             ? queued.Proto.SmallSound
             : queued.Proto.Sound;
@@ -424,7 +444,24 @@ public sealed partial class ExplosionSystem : SharedExplosionSystem
         // play far sound
         // far sound should play for anyone who wasn't in range of any of the effects of the bomb
         var farAudioRange = iterationIntensity.Count * 5;
-        var farFilter = Filter.Empty().AddInRange(pos, farAudioRange).RemoveInRange(pos, audioRange);
+
+        var farFilter = Filter.Empty();
+        if (hasZNetwork)
+        {
+            foreach (var levelUid in zLevelMaps)
+            {
+                if (!TryComp<MapComponent>(levelUid, out var levelMap))
+                    continue;
+
+                var levelPos = new MapCoordinates(pos.Position, levelMap.MapId);
+                farFilter.AddInRange(levelPos, farAudioRange).RemoveInRange(levelPos, audioRange);
+            }
+        }
+        else
+        {
+            farFilter.AddInRange(pos, farAudioRange).RemoveInRange(pos, audioRange);
+        }
+
         var farSound = iterationIntensity.Count < queued.Proto.SmallSoundIterationThreshold
             ? queued.Proto.SmallSoundFar
             : queued.Proto.SoundFar;

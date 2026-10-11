@@ -50,10 +50,10 @@
     head: ClothingHeadHatHelmetUSUrban
     eyes: ClothingEyesHudMedicalBF
     outerClothing: ClothingOuterArmorPlateCarrierIOTV
-    shoes: ClothingShoesBootsJackFilledUSMC
+    shoes: ClothingShoesBootsJack
     gloves: ClothingHandsGlovesLatex
-#    back: ClothingBackpackRucksackTan
-    suitstorage: WeaponRifleUSM4
+#    suitstorage: WeaponRifleUSM4
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     pocket1: PouchMagsLargeFilledSTANAG
     pocket2: PouchGrenadesFilledUSMCScout
   inhand:

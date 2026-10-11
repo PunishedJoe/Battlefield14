@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/29/2026 11:14:25
-  entityCount: 8165
+  time: 09/21/2026 06:21:07
+  entityCount: 8172
 maps:
 - 125
 grids:
@@ -344,10 +344,10 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
       spreadQueues:
-        Puddle: []
-        Smoke: []
-        Kudzu: []
         MetalFoam: []
+        Kudzu: []
+        Smoke: []
+        Puddle: []
     - type: Shuttle
       dampingModifier: 0.25
     - type: BecomesStation
@@ -21323,6 +21323,38 @@ entities:
     - type: Transform
       pos: 77.5,81.5
       parent: 1
+- proto: LandMineM16A2APMItem
+  entities:
+  - uid: 8162
+    components:
+    - type: Transform
+      pos: 57.282974,86.861015
+      parent: 1
+  - uid: 8163
+    components:
+    - type: Transform
+      pos: 57.51735,86.861015
+      parent: 1
+  - uid: 8168
+    components:
+    - type: Transform
+      pos: 57.751724,86.861015
+      parent: 1
+  - uid: 8170
+    components:
+    - type: Transform
+      pos: 57.782974,86.61084
+      parent: 1
+  - uid: 8171
+    components:
+    - type: Transform
+      pos: 57.5486,86.563934
+      parent: 1
+  - uid: 8172
+    components:
+    - type: Transform
+      pos: 57.314224,86.59521
+      parent: 1
 - proto: LargeBin
   entities:
   - uid: 5725
@@ -22182,7 +22214,7 @@ entities:
       pos: 36.5,13.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21305.965
+      secondsUntilStateChange: -21571.312
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -22219,7 +22251,7 @@ entities:
       pos: 100.5,13.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21305.965
+      secondsUntilStateChange: -21571.312
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -22626,7 +22658,7 @@ entities:
       pos: 22.5,25.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21305.965
+      secondsUntilStateChange: -21571.312
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -22675,7 +22707,7 @@ entities:
       pos: 86.5,25.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21305.965
+      secondsUntilStateChange: -21571.312
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -22755,7 +22787,7 @@ entities:
       pos: 36.5,34.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21305.965
+      secondsUntilStateChange: -21571.312
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -22803,7 +22835,7 @@ entities:
       pos: 100.5,34.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21305.965
+      secondsUntilStateChange: -21571.312
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -23166,7 +23198,7 @@ entities:
       pos: 22.5,46.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21305.965
+      secondsUntilStateChange: -21571.312
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -23204,7 +23236,7 @@ entities:
       pos: 86.5,46.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -21305.965
+      secondsUntilStateChange: -21571.312
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -32096,6 +32128,11 @@ entities:
     components:
     - type: Transform
       pos: 56.5,88.5
+      parent: 1
+  - uid: 8154
+    components:
+    - type: Transform
+      pos: 57.501724,86.50139
       parent: 1
   - uid: 8159
     components:

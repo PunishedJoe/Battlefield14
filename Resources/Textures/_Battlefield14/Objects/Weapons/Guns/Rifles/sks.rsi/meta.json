@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "license": "Custom",
-  "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "license": "",
+  "copyright": "Made by WillyBillyGilly for Battlefield14. Do not reuse or edit without permission.",
   "size": {
-    "x": 48,
+    "x": 64,
     "y": 32
   },
   "states": [
@@ -15,6 +15,14 @@
     },
     {
       "name": "bolt-open"
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
     },
     {
       "name": "inhand-left",
@@ -30,14 +38,6 @@
     },
     {
       "name": "wielded-inhand-right",
-      "directions": 4
-    },
-    {
-      "name": "equipped-BACKPACK",
-      "directions": 4
-    },
-    {
-      "name": "equipped-SUITSTORAGE",
       "directions": 4
     }
   ]

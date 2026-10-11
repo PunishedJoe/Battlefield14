@@ -1,3 +1,4 @@
+#region 12 gauge
 - type: entity
   parent: [BaseAmmoProvider, RecyclableItemCardboard]
   id: BaseShellBoxBF12Gauge
@@ -62,7 +63,22 @@
         map: ["enum.GunVisualLayers.Mag"]
       - state: practice
 
-# 4 gauge
+- type: entity
+  name: shotgun shell box (12 gauge flechette)
+  parent: BaseShellBoxBF12Gauge
+  id: ShellBoxBF12GaugeFlechette
+  components:
+    - type: BallisticAmmoProvider
+      proto: BF_CartridgeShotgun12GaugeFlechette
+    - type: Sprite
+      layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-1
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: lethal
+
+#region 4 gauge
 
 - type: entity
   parent: [BaseAmmoProvider, RecyclableItemCardboard]
@@ -157,3 +173,17 @@
       - state: mag-1
         map: ["enum.GunVisualLayers.Mag"]
       - state: lethal
+
+#region .410 bore
+
+- type: entity
+  parent: MagazineBox9x19
+  id: ShellBox410Bore
+  name: ammunition pack (.410 bore buckshot)
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 20
+    proto: BF_CartridgeShotgun410BoreBuckshot
+    whitelist:
+      tags:
+        - BF_CartridgeShotgun410Bore

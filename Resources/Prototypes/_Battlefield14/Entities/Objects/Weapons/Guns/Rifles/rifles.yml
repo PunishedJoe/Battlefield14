@@ -20,7 +20,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/M14.rsi
   - type: Item
     shape:
-    - 0,0,5,2
+    - 0,0,4,2
   - type: GunWieldBonus
     minAngle: -20
     maxAngle: -40
@@ -182,11 +182,6 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
-#  - type: ExtendDescription
-#    descriptionList:
-#      - description: Takes SCAR-H pattern magazines.
-#        color: "#4f94ad"
-#        requireDetailRange: true
   - type: WieldedCrosshair
     rsi:
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
@@ -331,6 +326,116 @@
         color: "#4f94ad"
         requireDetailRange: true
 
+- type: entity
+  name: FN FAL
+  parent: [BaseWeaponRifle, BaseGunWieldable]
+  id: WeaponRifleBEFAL
+  description: The right arm of the free world, would've fired an intermediate cartridge and been the standard service rifle of NATO if it weren't for America, and maybe Germany.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-wood
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+  - type: Item
+    shape:
+    - 0,0,5,2
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -40
+  - type: Gun
+    fireRate: 5
+    minAngle: 20
+    maxAngle: 60
+    angleIncrease: 4
+    angleDecay: 16
+    projectileSpeed: 50
+    soundGunshot:
+      collection: BF_FAL_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+      - FullAuto
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_rack.ogg
+      params:
+        volume: -5
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chforward.ogg
+      params:
+        volume: -5
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/M14/uc_m14_chback.ogg
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleFAL
+        insertSound:
+          path:  /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magin.ogg
+          params:
+            volume: -6
+        ejectSound:
+          path: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magout.ogg
+          params:
+            volume: -6
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleFAL
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes FAL pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: FAL PARA
+  parent: WeaponRifleBEFAL
+  id: WeaponRifleBEFALPara
+  description: A cut down FAL with a ~16 inch barrel and folding stock, for paratroopers.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-para
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FALPara.rsi
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FALPara.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    state: icon-para
+
 #region Germany
 
 - type: entity
@@ -421,6 +526,11 @@
   id: WeaponRifleDEG3A3
   description: Derived from the spanish CETME rifle, think of this weapon as the MP5's older brother who does steroids. Was used by west germany post WW2 until it was replaced by the G36 after reunification.
   components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    state: icon-G3A3
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
     layers:
@@ -428,8 +538,9 @@
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-G3A3
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3.rsi
   - type: GunWieldBonus
     minAngle: -24
     maxAngle: -27
@@ -489,6 +600,102 @@
       - description: Takes G3 pattern magazines.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  name: G3A4
+  parent: WeaponRifleDEG3A3
+  id: WeaponRifleDEG3A4
+  description: A G3 variant with a collapsable stock and darker furniture. A neat package but you won't be stuffing it in your bag.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A4.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A4.rsi
+    state: icon
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A4.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A4.rsi
+
+- type: entity
+  name: G3A3ZF
+  parent: WeaponRifleDEG3A3
+  id: WeaponRifleDEG3A3ZF
+  description: A G3A3 with a ZF1 scope mounted. Used by sharpshooters and soldiers alike. At least 60 years ago.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3ZF.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    state: icon-G3A3ZF
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-G3A3
+      - state: ZF
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3ZF.rsi
+  - type: Gun
+    angleIncrease: 1.5
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 5
+    pvsIncrease: 0.5
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics31.rsi
+      state: ZF1
+
+- type: entity
+  name: HK51
+  parent: WeaponRifleDEG3A3
+  id: WeaponRifleDEHK51
+  description: A cut down G3 with. Not actually produced by HK. Has significant muzzle flash and report.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/HK51.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    state: icon-HK51
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-HK51
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/HK51.rsi
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -25
+  - type: Gun
+    minAngle: 26
+    maxAngle: 40
+    angleIncrease: 1.5
+    projectileSpeed: 45
+    fireRate: 6.5
+    soundGunshot:
+      collection: BF_G3_Gunshots
+      params:
+        volume: -1
+        variation: 0.125
+  - type: PointLight
+    enabled: false
+    mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
+    autoRot: true
+    radius: 5
+    color: orange
 
 - type: entity
   name: G36K
@@ -746,7 +953,170 @@
   - type: UseDelay
     delay: 0.2
 
-#region Rifles - RU
+- type: entity
+  name: L1A1
+  parent: WeaponRifleBEFAL
+  id: WeaponRifleGBL1A1
+  description: The commonwealth variation of the FN FAL, removing the full auto capability and manufactured using imperial measurements instead of metric, meaning it requires its own proprietary magazines.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/L1A1.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    state: icon-black
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - state: furniture-black
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/L1A1.rsi
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+  - type: ChamberMagazineAmmoProvider
+    autoOpenBoltOnEmpty: false
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleL1A1
+        insertSound:
+          path:  /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magin.ogg
+          params:
+            volume: -6
+        ejectSound:
+          path: /Audio/_Battlefield14/Weapons/Guns/FAL/uc_fal_magout.ogg
+          params:
+            volume: -6
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleL1A1
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x51
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x51
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes L1A1 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+#region CZ
+
+- type: entity
+  name: vz. 58
+  parent: BaseWeaponRifle
+  id: WeaponRifleCZVZ58
+  description: When you're told to make an AK but you don't want to make an AK.
+  components:
+#  - type: Icon
+#    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/vz58.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/vz58.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+      - map: ["barrelAttachment"]
+        offset: 0.28, 0.0
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/vz58.rsi
+  - type: GunWieldBonus
+    minAngle: -29
+    maxAngle: -30
+  - type: Gun
+    minAngle: 31
+    maxAngle: 45
+    angleIncrease: 2
+    angleDecay: 20
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 13.3
+    projectileSpeed: 45
+    soundGunshot:
+      collection: BF_AK_762_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleVZ58
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleVZ58
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - BF14Bayonetvz58
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonetvz58
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet
+        whitelist:
+          tags:
+          - BF14Bayonetvz58
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes vz. 58 pattern magazines and bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+#region PACT - RU
 
 - type: entity
   name: SKS Simonov
@@ -798,7 +1168,7 @@
   name: OP-SKS Simonov
   parent: WeaponRifleRUSKS
   id: WeaponRifleRUOPSKS
-  description: A SKS with a scope mount made for the civiliian hunter market.
+  description: A SKS with a scope mount made for the civilian hunter market.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/opsks.rsi

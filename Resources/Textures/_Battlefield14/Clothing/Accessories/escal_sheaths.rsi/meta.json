@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from CF84.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "6h3"
+        },
+        {
+            "name": "6h3_empty"
+        },
+        {
+            "name": "6h4"
+        },
+        {
+            "name": "6h4_empty"
+        },
+        {
+            "name": "taiga"
+        },
+        {
+            "name": "taiga_empty"
+        },
+        {
+            "name": "vz58"
+        },
+        {
+            "name": "vz58_empty"
+        },
+        {
+            "name": "m9"
+        },
+        {
+            "name": "m9_empty"
+        }
+    ]
+}

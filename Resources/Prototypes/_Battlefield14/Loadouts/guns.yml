@@ -1,3 +1,5 @@
+#region Sidearms
+
 - type: loadout
   id: LoadoutGunFiveSevenUSMCSLVET
   name: Five-seveN gun case
@@ -70,6 +72,88 @@
   inhand:
   - BF14WeaponCaseShortRUTT33
 
+#region ARNG
+
+- type: loadout
+  id: LoadoutGunM16A1
+  name: M16A1
+  equipment:
+    suitstorage: WeaponRifleUSM16A1
+
+- type: loadout
+  id: LoadoutGunM16A130
+  name: M16A1
+  equipment:
+    suitstorage: WeaponRifleUSM16A130
+
+- type: loadout
+  id: LoadoutGunM16A130ARNGPVT
+  name: M16A1
+  equipment:
+    suitstorage: WeaponRifleUSM16A130
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_ARNG_PVT
+
+- type: loadout
+  id: LoadoutGunM16A2
+  name: M16A2
+  equipment:
+    suitstorage: WeaponRifleUSM16A2
+
+- type: loadout
+  id: LoadoutGunCAR15
+  name: CAR-15
+  equipment:
+    suitstorage: WeaponRifleUSCAR15
+
+- type: loadout
+  id: LoadoutGunM4
+  name: M4
+  equipment:
+    suitstorage: WeaponRifleUSM4
+
+- type: loadout
+  id: LoadoutGunRandomM4
+  name: M4A1
+  equipment:
+    suitstorage: WeaponRifleUSRandomM4
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_ARNG_PVT
+
+- type: loadout
+  id: LoadoutGunM14
+  name: M14
+  equipment:
+    suitstorage: WeaponRifleUSM14
+
+- type: loadout
+  id: LoadoutGunM14EBR
+  name: Mk 14 EBR
+  equipment:
+    suitstorage: WeaponSniperUSM14EBR
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_ARNG_PVT
+
+#region RGF
+
+- type: loadout
+  id: LoadoutGunAK74M
+  name: AK-74M
+  equipment:
+    suitstorage: WeaponRifleRUAK74M
+
+- type: loadout
+  id: LoadoutGunAK74MUUK
+  name: AK-74M UUK
+  equipment:
+    suitstorage: WeaponRifleRUAK74MUUK
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: BF_RGF_VET
+
 #region SWAT
 
 - type: loadout
@@ -111,7 +195,7 @@
   - BF14WeaponCaseLongRURMB93
 
 - type: loadout
-  id: LoadoutGunAK74M
+  id: LoadoutGunCaseAK74M
   name: AK-74M gun case
   inhand:
   - BF14WeaponCaseLongRUAK74M

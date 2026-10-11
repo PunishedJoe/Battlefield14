@@ -43,7 +43,7 @@
     ears: ClothingHeadsetAltUS
     belt: ClothingBeltMilitaryWebbingUSFilledSTANAG
     helmetattachment: ClothingHelmetAttachmentNVGsBasicNATO
-    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
+#    jumpsuit:: ClothingUniformJumpsuitCamoUSMarpatDesert
     head: ClothingHeadHatHelmetUSACH
     outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilledUSMC

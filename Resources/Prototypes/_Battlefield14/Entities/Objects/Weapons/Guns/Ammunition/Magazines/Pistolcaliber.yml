@@ -194,7 +194,7 @@
         - BF_CartridgePistol9x18
     capacity: 20
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/PM.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/SR2Udav.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -212,6 +212,8 @@
   name: PM magazine (9x18mm)
   description: A single stack 9x18mm magazine made for the PM Makarov.
   components:
+  - type: Item
+    size: Tiny
   - type: Tag
     tags:
       - MagazinePistolPM
@@ -233,7 +235,7 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
-    steps: 8
+    steps: 6
     zeroVisible: false
   - type: Appearance
 
@@ -405,6 +407,37 @@
       tags:
         - BF_CartridgePistol9x19
     capacity: 32
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/vlad.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseMagazineSMG
+  id: MagazineSubmachinegunMP9
+  name: MP9 magazine (9x19mm)
+  description: Gun food.
+  components:
+  - type: Tag
+    tags:
+      - MagazineSubmachinegunMP9
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol9x19
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol9x19
+    capacity: 30
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/vlad.rsi
     layers:

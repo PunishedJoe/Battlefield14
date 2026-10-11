@@ -449,6 +449,21 @@
   - type: AccessReader
     access: [["NATOSoldier"]]
 
+- type: entity
+  id: CrateSecgearNATOFilledSurplusG3
+  suffix: Filled, surplus G3
+  parent: CrateSecgear
+  name: surplus G3 crate
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: BF14TableSurplusG3
+        rolls: !type:RangeNumberSelector
+          range: 5, 5
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
 ## PACT
 #region RU
 

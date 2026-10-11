@@ -166,6 +166,25 @@
 #    color: "#BE8700"
 
 - type: entity
+  id: CapturePointDeathmatchKOTH
+  parent: BaseCapturePoint
+  name: Capture point
+  suffix: KOTH, 120s / 2m
+  components:
+#  - type: POICapture
+#    poiName: "Hill"
+#    timeToCapture: 120
+  - type: CapturePoint
+    pointName: "Capture point"
+  - type: NavMapBeacon
+    defaultText: "Capture point"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Capture point"
+  - type: NukeDisk # this is for the pinpointers to work
+  - type: ArrivalsBlacklist # this is for the pinpointers to work
+
+- type: entity
   id: CapturePointSharedNavBouy
   parent: BaseCapturePoint
   name: nav bouy control point
@@ -179,3 +198,47 @@
     color: "#FFFF00"
   - type: WarpPoint
     location: "nav bouy capture point"
+
+- type: entity
+  parent: BaseGracePeriodAnnouncerSpawner
+  id: GracePeriodAnnouncerSpawnerTDM30Sec
+  name: grace period announcer spawner
+  suffix: TDM, 30 seconds
+  components:
+  - type: ActiveTimerTrigger
+    timeRemaining: 1
+  - type: SpawnOnTrigger
+    proto: GracePeriodAnnouncerSpawnerTDMActive
+  - type: DeleteOnTrigger
+
+- type: entity
+  parent: BaseGracePeriodAnnouncerSpawner
+  id: GracePeriodAnnouncerSpawnerTDMActive
+  name: TDM announcer spawner
+  suffix: DO NOT MAP
+  components:
+  - type: ActiveTimerTrigger
+    timeRemaining: 29
+  - type: SpawnOnTrigger
+    proto: BaseGracePeriodAnnouncerTDM
+  - type: DeleteOnTrigger
+  - type: AnnounceOnSpawn
+    message: "The grace period will end in 30 seconds, prepare."
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/TDMgrace.ogg
+
+- type: entity
+  parent: BaseGracePeriodAnnouncer
+  id: BaseGracePeriodAnnouncerTDM
+  name: TDM grace period announcer
+  suffix: DO NOT MAP
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: AnnounceOnSpawn
+    message: "The grace period has ended!"
+    sender: "Combat Area"
+    sound:
+      path: /Audio/_Battlefield14/Announcements/TDMstart.ogg
+#    color: "#BE8700"

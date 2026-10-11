@@ -8,13 +8,13 @@
       - id: BoxSyringe
       - id: EpinephrineChemistryBottle
         amount: 1
-      - id: Brutepack
+      - id: BF14DressingPacket
         amount: 2
-      - id: Ointment
+      - id: BF14Ointment
         amount: 2
 #      - id: Bloodpack
 #        amount: 2
-      - id: Gauze
+      - id: BF14GauzePacket
         amount: 2 # BF14
 
 - type: entity
@@ -28,13 +28,13 @@
       - id: BoxSyringe
       - id: EpinephrineChemistryBottle
         amount: 1
-      - id: Brutepack
+      - id: BF14DressingPacket
         amount: 2
-      - id: Ointment
+      - id: BF14Ointment
         amount: 2
 #      - id: Bloodpack
 #        amount: 2
-      - id: Gauze
+      - id: BF14GauzePacket
         amount: 2 # BF14
 
 - type: entity
