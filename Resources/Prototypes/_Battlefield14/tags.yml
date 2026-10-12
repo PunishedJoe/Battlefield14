@@ -398,6 +398,9 @@
   id: FitsInVoidsuitKit
 
 - type: Tag
+  id: CartridgeVOG25
+
+- type: Tag
   id: Cartridge43x30mmGrenade
 
 - type: Tag
