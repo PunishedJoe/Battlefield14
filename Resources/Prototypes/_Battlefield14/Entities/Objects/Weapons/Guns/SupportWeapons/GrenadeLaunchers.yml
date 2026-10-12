@@ -47,7 +47,7 @@
         variation: 0.125
   - type: ExtendDescription
     descriptionList:
-      - description: This weapon can be stored on your auxillary suit storage slot, and has a minimum arming distance of 5 tiles.
+      - description: This weapon can be stored on your auxillary suit storage slot, and has a minimum arming distance of 5 tiles. Takes 40x46mm grenades.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -246,6 +246,7 @@
     minAngle: 4
     maxAngle: 14
     angleIncrease: 8
+    angleDecay: 14
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -276,7 +277,7 @@
       state: all
   - type: ExtendDescription
     descriptionList:
-      - description: Has a minimum arming distance of 5 tiles.
+      - description: Has a minimum arming distance of 5 tiles. Takes 40x46mm grenades.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -328,7 +329,7 @@
   - type: GunRequiresWield
   - type: ExtendDescription
     descriptionList:
-      - description: Has a minimum arming distance of 5 tiles.
+      - description: Has a minimum arming distance of 5 tiles. Takes 43x30mm grenades.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -363,3 +364,42 @@
   components:
   - type: BallisticAmmoProvider
     proto: Cartridge43x30mmIllumination
+
+- type: entity
+  name: RG-6
+  parent: WeaponGrenadeLauncherUSM32A1
+  id: WeaponGrenadeLauncherRURG6
+  description: A six round revolving grenade launcher.
+  components:
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/RG6.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/RG6.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: Gun
+    soundGunshot:
+      collection: BF_GP25_Gunshots
+      params:
+        volume: -2
+        variation: 0.125
+  - type: RevolverAmmoProvider
+    proto: CartridgeVOG25HEFrag
+    whitelist:
+      tags:
+        - CartridgeVOG25
+    soundInsert:
+      path: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes VOG-25 grenades.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: "#4f94ad"
+        requireDetailRange: true

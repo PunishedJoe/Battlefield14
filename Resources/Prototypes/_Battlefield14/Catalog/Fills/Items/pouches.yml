@@ -351,6 +351,16 @@
     - id: SmokeCSGrenadeRUK51
       amount: 3
 
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledVOG25
+  suffix: Filled, VOG-25
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeVOG25HEFrag
+      amount: 6
+
 #region flare pouches
 
 - type: entity

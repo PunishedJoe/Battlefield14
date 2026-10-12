@@ -2,7 +2,7 @@
 #region US
 - type: entity
   name: M27-IAR
-  parent: WeaponRifleUSM16A4
+  parent: WeaponRifleUSM16A3
   id: WeaponRifleUSM27IAR
   description: The Marine corps own 416, intended to replace the M16A4 and the M249.
   components:
@@ -56,12 +56,11 @@
     minAngle: 36 # wielded 6
     maxAngle: 45 # wielded 15
     angleIncrease: 1
-    angleDecay: 12
+    angleDecay: 20
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 7
     projectileSpeed: 50 # twenty inch barrel
     soundGunshot:
       collection: BF_M16_Gunshots
@@ -124,7 +123,6 @@
     maxAngle: 40 # wielded = 24
     angleIncrease: 1.5
     projectileSpeed: 50
-    fireRate: 8
     soundGunshot:
       collection: BF_SCARL_Gunshots
       params:
@@ -191,12 +189,12 @@
     minAngle: 36 # wielded 6
     maxAngle: 45 # wielded 15
     angleIncrease: 0.5
-    angleDecay: 12
+    angleDecay: 22
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 7
+    fireRate: 13.3 # 800 RPM
     projectileSpeed: 50 # twenty inch barrel
     soundGunshot:
       collection: BF_AK_545_Gunshots
@@ -282,12 +280,11 @@
     minAngle: 36 # wielded 6
     maxAngle: 45 # wielded 15
     angleIncrease: 0.5
-    angleDecay: 12
+    angleDecay: 20
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 7
     projectileSpeed: 50 # twenty inch barrel
     soundGunshot:
       collection: BF_AK_545_Gunshots
@@ -406,17 +403,17 @@
   - type: GunRequiresWield
   - type: GunWieldBonus
     minAngle: -30
-    maxAngle: -25
+    maxAngle: -30
   - type: Gun
     minAngle: 36 # wielded 6
-    maxAngle: 45 # wielded 20
+    maxAngle: 45 # wielded 15
     angleIncrease: 1
-    angleDecay: 12
+    angleDecay: 20
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
-    fireRate: 7
+    fireRate: 10 # 600 RPM
     projectileSpeed: 50 # twenty inch barrel
     soundGunshot:
       collection: BF_AK_762_Gunshots
@@ -457,3 +454,16 @@
   parent: WeaponRifleRURPK
   id: WeaponRifleDELMGK
   description: An east german lisenced copy of the RPK. Quite the rare piece today.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-rpk74
+      - state: grip-ak74
+      - state: handguard-mpi
+      - state: barrel-rpk74
+      - state: ironsight-ak74
+      - state: mag-rpk-0
+        map: ["enum.GunVisualLayers.Mag"]

@@ -1,7 +1,7 @@
 - type: gameMap
   id: BF14ProvingGroundKOTH
   mapName: 'Proving grounds (KOTH)'
-  mapPath: /Maps/_Battlefield14/Deathmatch/provinggroundKOTH.yml
+  mapPath: /Maps/_Battlefield14/Deathmatch/ProvinggroundKOTH.yml
   minPlayers: 0
   maxPlayers: 400
   randomRotation: false

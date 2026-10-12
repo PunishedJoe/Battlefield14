@@ -19,18 +19,18 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -19
+    minAngle: -16
     maxAngle: -35
   - type: Gun
-    minAngle: 19 # Wielded = 0
+    minAngle: 20 # Wielded = 4
     maxAngle: 50 # wielded = 15
     angleIncrease: 1
-    angleDecay: 12
+    angleDecay: 20
     availableModes:
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 7
+    fireRate: 14 # ~850 RPM
     projectileSpeed: 40 # 13 inch barrel
     shotsPerBurst: 8 # Fictional, to help with conserving ammo
     burstCooldown: 0.5
@@ -120,12 +120,12 @@
     minAngle: 19 # Wielded = 0
     maxAngle: 55 # wielded = 20
     angleIncrease: 1
-    angleDecay: 12
+    angleDecay: 20
     availableModes:
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 6
+    fireRate: 10.8 # 650 RPM
     projectileSpeed: 50 # full length barrel
     shotsPerBurst: 5 # Fictional, to help with conserving ammo
     burstCooldown: 0.5
@@ -195,12 +195,10 @@
     minAngle: 19 # Wielded = 0
     maxAngle: 60 # wielded = 25
     angleIncrease: 1
-    angleDecay: 12
     availableModes:
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 7
     projectileSpeed: 40 # 13 inch barrel
     shotsPerBurst: 8 # Fictional, to help with conserving ammo
     burstCooldown: 0.5
@@ -271,12 +269,12 @@
     minAngle: 19 # Wielded = 0
     maxAngle: 55 # wielded = 20
     angleIncrease: 1
-    angleDecay: 12
+    angleDecay: 20
     availableModes:
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 5.5
+    fireRate: 8.3 # 500 RPM
     projectileSpeed: 50 # full length barrel
     shotsPerBurst: 5 # Fictional, to help with conserving ammo
     burstCooldown: 0.5
@@ -344,7 +342,7 @@
     minAngle: 19 # Wielded = 5
     maxAngle: 60 # wielded = 25
     angleIncrease: 1.5
-    angleDecay: 15
+    angleDecay: 20
     availableModes:
     - FullAuto
     - Burst
@@ -441,12 +439,12 @@
     minAngle: 19 # Wielded = 5
     maxAngle: 60 # wielded = 25
     angleIncrease: 1.65
-    angleDecay: 10
+    angleDecay: 20
     availableModes:
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 7
+    fireRate: 10.8 # 650 RPM
     projectileSpeed: 50 # full length barrel
     shotsPerBurst: 8 # Fictional, to help with conserving ammo
     burstCooldown: 0.5
@@ -555,7 +553,7 @@
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 6
+    fireRate: 10
     projectileSpeed: 50 # full length barrel
     shotsPerBurst: 8 # Fictional, to help with conserving ammo
     burstCooldown: 0.5

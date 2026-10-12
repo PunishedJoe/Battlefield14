@@ -332,3 +332,12 @@
   - "/Audio/_Battlefield14/Weapons/Guns/M82/fire-04.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/M82/fire-05.ogg"
   - "/Audio/_Battlefield14/Weapons/Guns/M82/fire-06.ogg"
+
+- type: soundCollection
+  id: BF_GP25_Gunshots # GP25 - Used for RG-6 and GP25
+  files:
+  - "/Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-03.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-04.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-05.ogg"
+  - "/Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-06.ogg"

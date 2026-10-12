@@ -19,7 +19,7 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade
-    totalIntensity: 30
+    totalIntensity: 20
     intensitySlope: 3
     maxIntensity: 2
     maxTileBreak: 0
