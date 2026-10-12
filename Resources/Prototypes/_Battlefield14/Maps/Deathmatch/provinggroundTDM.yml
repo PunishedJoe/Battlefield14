@@ -1,7 +1,7 @@
 - type: gameMap
   id: BF14ProvingGroundTDM
   mapName: 'Proving grounds (TDM)'
-  mapPath: /Maps/_Battlefield14/Deathmatch/provinggroundTDM.yml
+  mapPath: /Maps/_Battlefield14/Deathmatch/ProvinggroundTDM.yml
   minPlayers: 0
   maxPlayers: 400
   randomRotation: false
