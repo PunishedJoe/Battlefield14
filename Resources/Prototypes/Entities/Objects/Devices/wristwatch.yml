@@ -18,8 +18,15 @@
     sprite: Objects/Devices/wristwatch.rsi
     slots:
     - gloves
+    #BF14 EDIT START
     - ARMBANDLEFT
     - ARMBANDRIGHT
+    clothingVisuals:
+      leftarmband:
+      - state: equipped-HAND
+      rightarmband:
+      - state: equipped-HAND
+    #BF14 EDIT END
   - type: Appearance
   - type: Damageable
     damageContainer: Inorganic
