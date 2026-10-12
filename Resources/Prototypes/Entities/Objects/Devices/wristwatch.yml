@@ -18,6 +18,8 @@
     sprite: Objects/Devices/wristwatch.rsi
     slots:
     - gloves
+    - ARMBANDLEFT
+    - ARMBANDRIGHT
   - type: Appearance
   - type: Damageable
     damageContainer: Inorganic
