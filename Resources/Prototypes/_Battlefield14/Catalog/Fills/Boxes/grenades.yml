@@ -568,6 +568,22 @@
       - id: Cartridge43x30mmIllumination
         amount: 8
 
+# VOG-25
+
+- type: entity
+  name: box of VOG-25 grenades
+  parent: BoxMagazine
+  id: BoxMagazineVOG25HEFrag
+  description: A box full of high explosive fragmenting VOG-25 grenades.
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: CartridgeVOG25HEFrag
+        amount: 8
+
 ## Charges
 
 # RU

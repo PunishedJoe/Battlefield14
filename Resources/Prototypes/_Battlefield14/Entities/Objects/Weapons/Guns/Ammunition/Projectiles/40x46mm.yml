@@ -1,5 +1,6 @@
 # Distinct from the ones in _Battlefield14\Entities\BattlefieldArtillery\Artillery\Factions\Nato\US\Kinetic\Ammunition but similar, chemicalsmoke and plasmagas dont work well with infantry gameplay
 
+#region 40x46mm HE
 - type: entity
   id: Bullet40x46mmHE
   name: 40x46mm HE grenade
@@ -14,9 +15,9 @@
     deleteOnCollide: true
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: MicroBomb
-    totalIntensity: 25
-    intensitySlope: 4
+    explosionType: HandGrenade
+    totalIntensity: 20
+    intensitySlope: 3
     maxIntensity: 2
     maxTileBreak: 0
   - type: Sprite
@@ -30,7 +31,7 @@
     color: orange
     energy: 0.5
 
-# 40x46mm HEDP
+#region 40x46mm HEDP
 - type: entity
   id: Bullet40x46mmHEDP
   name: 40x46mm HEDP grenade
@@ -67,7 +68,7 @@
     color: orange
     energy: 0.5
 
-# 40x46mm Fragmentation
+#region 40x46mm Fragmentation
 - type: entity
   id: Bullet40x46mmFrag
   name: 40x46mm fragmentation grenade
@@ -98,7 +99,7 @@
     color: orange
     energy: 0.5
 
-# 40x46mm HEDP Fragment
+#region 40x46mm HEDP Fragment
 - type: entity
   id: Bullet40x46mmHEDPFragment
   name: 40x46mm HEDP fragment
@@ -125,7 +126,7 @@
     color: orange
     energy: 0.3
 
-# 40x46mm Frag Fragment
+#region 40x46mm Frag Fragment
 - type: entity
   id: Bullet40x46mmFragFragment
   name: 40x46mm fragment
@@ -152,7 +153,7 @@
     color: orange
     energy: 0.2
 
-# 40x46mm MP-APERS
+#region 40x46mm MP-APERS
 - type: entity
   id: Bullet40x46mmMPAPERS
   name: 40x46mm MP-APERS grenade
@@ -183,7 +184,7 @@
     color: orange
     energy: 0.5
 
-# 40x46mm MP-APERS Fragment
+#region 40x46mm MP-APERS Fragment
 - type: entity
   id: Bullet40x46mmMPAPERSFragment
   name: MP-APERS fragment
