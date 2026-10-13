@@ -15,3 +15,18 @@
   id: LoadoutArmbandStationMap
   equipment:
     leftarmband: ClothingArmbandStationMap
+
+- type: loadout
+  id: LoadoutArmbandCasioF91W
+  equipment:
+    leftarmband: ClothingArmbandCasioF91W
+
+- type: loadout
+  id: LoadoutArmbandWristwatch
+  equipment:
+    leftarmband: Wristwatch
+
+- type: loadout
+  id: LoadoutArmbandWristwatchGold
+  equipment:
+    leftarmband: WristwatchGold
