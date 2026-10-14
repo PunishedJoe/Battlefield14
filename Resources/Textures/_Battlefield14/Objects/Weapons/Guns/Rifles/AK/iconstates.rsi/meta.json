@@ -1,7 +1,7 @@
 {
     "version": 1,
-    "license": "",
-    "copyright": "Made by WillyBillyGilly for Final Horizon 84 do not reuse or edit without permission. Permission given for use in Battlefield 14, slight edits made to make the bolt contrast more",
+    "license": "All rights reserved",
+    "copyright": "Made by WillyBillyGilly for use in Battlefield 14.",
     "size": {
         "x": 64,
         "y": 32
@@ -33,6 +33,9 @@
         },
         {
             "name": "icon-ak203"
+        },
+        {
+            "name": "icon-akm"
         },
         {
             "name": "icon-akms"
@@ -90,6 +93,9 @@
         },
         {
             "name": "mag-ak74black-0"
+        },
+        {
+            "name": "stock-akm"
         },
         {
             "name": "stock-mpikm"
@@ -228,6 +234,9 @@
         },
         {
             "name": "bayonet-6h4"
+        },
+        {
+            "name": "gp25"
         }
     ]
 }

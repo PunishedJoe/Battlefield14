@@ -18,6 +18,7 @@
       - WeaponShotgunUSM590Buckshot
       - WeaponSubmachinegunATSP9
       - BF14KnifeSwitchblade
+      - BF14KnifeFlipTaticool
     chance: 1
 
 - type: entity
@@ -39,10 +40,9 @@
       - WeaponSubmachinegunUSMAC10
       - WeaponSubmachinegunATMP9
       - WeaponRifleUSM16A2
-      - WeaponShotgunUS1887Short
+      - WeaponShotgunUSM590Buckshot
       - WeaponShotgunUSM870
       - WeaponSniperUSM40A1
-      - BF14KnifeFlipTaticool
     chance: 1
 
 - type: entity
@@ -171,6 +171,7 @@
       - WeaponShotgunUSM590Buckshot
       - WeaponPistolRevolverBRJudge
       - BF14KnifeSwitchblade
+      - BF14KnifeFlipTaticool
     chance: 1
 
 - type: entity
@@ -190,10 +191,9 @@
       - WeaponRifleUSAR15
       - WeaponSubmachinegunDEMP5A5
       - WeaponSubmachinegunUSMAC10
-      - WeaponShotgunUSM590Buckshot
+      - WeaponShotgunUS1887Short
       - WeaponShotgunUSM870
       - WeaponSniperUSM40A1
-      - BF14KnifeFlipTaticool
     chance: 1
 
 - type: entity
@@ -313,6 +313,7 @@
       - WeaponPistolDEUSP45
       - WeaponPistolDEUSP9
       - BF14KnifeSwitchblade
+      - BF14KnifeFlipTaticool
     chance: 1
 
 - type: entity
@@ -331,7 +332,6 @@
       - WeaponRifleDEG36C
       - WeaponSubmachinegunDEMP5A5
       - WeaponShotgunUSM870
-      - BF14KnifeFlipTaticool
     chance: 1
 
 - type: entity
@@ -468,10 +468,10 @@
       - WeaponSubmachinegunRUPPsh41
       - WeaponSubmachinegunRUVityaz
       - WeaponShotgunRUMP133
+      - WeaponShotgunRUMP43C1
       - WeaponRifleRUAKMUDraco
       - WeaponRifleRUSKS
       - WeaponSniperRUVPO215
-      - WeaponShotgunRUMP43C1
       - WeaponRifleRUMP18
     chance: 1
 
@@ -490,7 +490,6 @@
       - WeaponRifleRUAKS74U
       - WeaponRifleRUAKMS
       - WeaponRifleRUAKMUDraco
-      - WeaponShotgunRUMP133
       - WeaponShotgunRURMB93
       - WeaponRifleRUOPSKS
       - WeaponSniperRUVPO215

@@ -78,7 +78,7 @@
 - type: entity
   parent: MagazineRifleSTANAG
   id: MagazineRifleSTANAGDoubleDrum
-  name: "STANAG double drum magazine (5.56x45mm)"
+  name: "Beta-C double drum magazine (5.56x45mm)"
   description: Oh heavens no, the M16 has balls.
   components:
   - type: Item
