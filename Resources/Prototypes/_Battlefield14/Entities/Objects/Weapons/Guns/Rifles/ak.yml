@@ -600,22 +600,22 @@
       state: acog
 
 - type: entity
-  name: AKMS
+  name: AKM
   parent: WeaponRifleRUAK74
-  id: WeaponRifleRUAKMS
+  id: WeaponRifleRUAKM
   description: The right arm of the enslaved world.
   components:
   - type: Item
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKM.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
-    state: icon-akms
+    state: icon-akm
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: stock-underfolding
+      - state: stock-akm
       - state: grip-ak74
       - state: handguard-ak74
       - state: barrel-akm
@@ -623,7 +623,7 @@
       - state: mag-akm-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AKMS.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKM.rsi
   - type: GunWieldBonus
     minAngle: -29
     maxAngle: -30
@@ -671,8 +671,34 @@
         requireDetailRange: true
 
 - type: entity
+  name: AKMS
+  parent: WeaponRifleRUAKM
+  id: WeaponRifleRUAKMS
+  description: The right arm of the enslaved world.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKMS.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-akms
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-underfolding
+      - state: grip-ak74
+      - state: handguard-ak74
+      - state: barrel-akm
+      - state: ironsight-ak74
+      - state: mag-akm-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKMS.rsi
+
+- type: entity
   name: MPi-KM
-  parent: WeaponRifleRUAKMS
+  parent: WeaponRifleRUAKM
   id: WeaponRifleDEMPIKM
   description: A locally produced east German AKM.
   components:
@@ -680,7 +706,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/MPiKM.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
-    state: icon-akms
+    state: icon-akm
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
     layers:
@@ -724,7 +750,7 @@
 
 - type: entity
   name: AK-103
-  parent: WeaponRifleRUAKMS
+  parent: WeaponRifleRUAKM
   id: WeaponRifleRUAK103
   description: A later revision of the AKM rifle, with even moderner design.
   components:
@@ -816,7 +842,7 @@
 
 - type: entity
   name: AK-203
-  parent: WeaponRifleRUAKMS
+  parent: WeaponRifleRUAKM
   id: WeaponRifleRUAK203
   description: A later revision of the AKM rifle, with even moderner design.
   components:
@@ -864,7 +890,7 @@
 
 - type: entity
   name: draco
-  parent: WeaponRifleRUAKMS
+  parent: WeaponRifleRUAKM
   id: WeaponRifleRUAKMUDraco
   description: A chopped down AK47, unwieldy and impractical, with a reputation for being used by gang members.
   components:
@@ -917,47 +943,15 @@
 
 - type: entity
   name: VPO-136
-  parent: WeaponRifleRUAKMS
+  parent: WeaponRifleRUAKM
   id: WeaponRifleRUVPO136
   description: A de-militarized AKM made for the civilian market.
   components:
-  - type: Item
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/MPiKM.rsi # fuck it. change to AKM later
-  - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/MPiKM.rsi
-    state: icon
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
-    layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: stock-ak74
-      - state: grip-ak74
-      - state: handguard-ak74
-      - state: barrel-akm
-      - state: ironsight-ak74
-      - state: mag-akm-0
-        map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/MPiKM.rsi
-  - type: GunWieldBonus
-    minAngle: -29
-    maxAngle: -27
   - type: Gun
-    minAngle: 31
-    maxAngle: 40
-    angleIncrease: 1
-    angleDecay: 16
     availableModes:
     - SemiAuto
     selectedMode: SemiAuto
     fireRate: 5
-    projectileSpeed: 40
-    soundGunshot:
-      collection: BF_AK_762_Gunshots
-      params:
-        volume: -5
-        variation: 0.125
 
 - type: entity
   name: AN-94

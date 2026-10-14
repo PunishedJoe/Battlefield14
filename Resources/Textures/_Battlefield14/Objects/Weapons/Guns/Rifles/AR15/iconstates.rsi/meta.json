@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": "Custom",
-  "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Modified by JoeHammad. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "license": "All rights reserved",
+  "copyright": "Made by WillyBillyGilly for use in Battlefield 14.",
   "size": {
     "x": 64,
     "y": 32
@@ -113,6 +113,9 @@
       "name": "rifle-length-barrel-M16"
     },
     {
+      "name": "rifle-length-barrel-grenadier"
+    },
+    {
       "name": "rifle-length-barrel-M27"
     },
     {
@@ -144,6 +147,9 @@
     },
     {
       "name": "bayonet-m9"
+    },
+    {
+      "name": "M203"
     }
   ]
 }
