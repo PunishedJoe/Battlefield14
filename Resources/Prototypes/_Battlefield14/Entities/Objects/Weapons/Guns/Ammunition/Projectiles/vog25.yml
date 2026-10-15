@@ -1,3 +1,5 @@
+#region HE
+
 - type: entity
   id: BulletVOG25HEFrag
   name: VOG-25
@@ -49,7 +51,7 @@
       types:
         Structural: 15
         Blunt: 40
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: BulletVOG25HEFrag
     distanceDelay: 5
@@ -57,5 +59,141 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
   - type: StaminaDamageOnCollide
     damage: 20
+
+#region chemical smoke
+
+- type: entity
+  id: BulletVOG25ChemicalSmoke
+  name: "GRD-40 'Gvozd'"
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Blunt: 40
+    deleteOnCollide: true
+  - type: SmokeOnTrigger
+    duration: 30
+    spreadAmount: 20
+    smokePrototype: Smoke
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: gvozd-spent
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    radius: 3
+    color: gray
+    energy: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletVOG25ChemicalSmokeArmingDistance
+  name: "GRD-40 'Gvozd'"
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: gvozd-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Blunt: 40
+    deleteOnCollide: false
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletVOG25ChemicalSmoke
+    distanceDelay: 5
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+#region flare
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: Pellet12_gaugeFlare
+  id: BulletVOG25Illumination
+  name: VSG-25
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: flare-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Blunt: 40
+
+#region paraflare
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletVOG25IlluminationPara
+  name: VG-40OP paraflare
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: paraflare-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Blunt: 40
+  - type: ActiveTimerTrigger
+    timeRemaining: 0.4
+  - type: SpawnOnTrigger
+    proto: ArtilleryMarker2B14Flare
+  - type: DeleteOnTrigger
+
+- type: entity
+  id: ArtilleryMarkerVOG25ParaFlare
+  name: artillery strike VG-40OP 40mm paraflare
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Misc/ArtilleryImpact.rsi
+    state: flare
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 60
+  - type: EmitSoundOnSpawn
+    sound: /Audio/_RMC14/Items/fulton.ogg
+  - type: AmbientSound
+    enabled: true
+    volume: 0
+    range: 5
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: PointLight
+    enabled: true
+    color: "#FF8080"
+    radius: 15.0
+    energy: 9.0

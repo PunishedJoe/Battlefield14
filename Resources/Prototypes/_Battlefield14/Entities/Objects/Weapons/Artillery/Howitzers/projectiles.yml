@@ -59,9 +59,8 @@
   name: artillery strike M118 155mm illumination flare shell
   components:
   - type: Sprite
-    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
-    visible: false
-    state: icon
+    sprite: _WorldAblaze1968/Objects/Misc/ArtilleryImpact.rsi
+    state: flare
   - type: IgnitionSource
     ignited: true
     temperature: 1000

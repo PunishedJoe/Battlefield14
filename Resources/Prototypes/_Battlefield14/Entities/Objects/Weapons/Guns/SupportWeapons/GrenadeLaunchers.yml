@@ -11,7 +11,7 @@
       - state: base
         map: ["enum.GunVisualLayers.Base"]
   - type: Item
-    size: Huge
+    size: Large
     sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
     storedSprite:
       sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/M320.rsi
@@ -47,7 +47,13 @@
         variation: 0.125
   - type: ExtendDescription
     descriptionList:
-      - description: This weapon can be stored on your auxillary suit storage slot, and has a minimum arming distance of 5 tiles. Takes 40x46mm grenades.
+      - description: Takes 40x46mm grenades.
+        color: green
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
+      - description: This weapon can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -277,8 +283,11 @@
       state: all
   - type: ExtendDescription
     descriptionList:
-      - description: Has a minimum arming distance of 5 tiles. Takes 40x46mm grenades.
-        color: "#4f94ad"
+      - description: Takes 40x46mm grenades.
+        color: green
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
         requireDetailRange: true
 
 #region RU
@@ -328,10 +337,13 @@
         volume: -2
   - type: GunRequiresWield
   - type: ExtendDescription
-    descriptionList:
-      - description: Has a minimum arming distance of 5 tiles. Takes 43x30mm grenades.
-        color: "#4f94ad"
-        requireDetailRange: true
+  descriptionList:
+    - description: Has a minimum arming distance of 5 tiles.
+      color: "#4f94ad"
+      requireDetailRange: true
+    - description: Takes 43x30mm grenades.
+      color: green
+      requireDetailRange: true
 
 - type: entity
   parent: WeaponGrenadeLauncherRUGM94
@@ -389,17 +401,71 @@
         volume: -2
         variation: 0.125
   - type: RevolverAmmoProvider
-    proto: CartridgeVOG25HEFrag
+    proto: CartridgeGrenadeVOG25HEFrag
     whitelist:
       tags:
-        - CartridgeVOG25
+        - CartridgeGrenadeVOG25
     soundInsert:
       path: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
   - type: ExtendDescription
     descriptionList:
       - description: Takes VOG-25 grenades.
-        color: "#4f94ad"
+        color: green
         requireDetailRange: true
       - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
+
+- type: entity
+  name: RGM-40 Kastet
+  parent: BaseItem
+  id: WeaponGrenadeLauncherRURGM40
+  description: A standalone chassis for the GP-30 grenade launcher.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/RGM40.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+  - type: Item
+    size: Large
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/RGM40.rsi
+    slots:
+    - Belt
+    - suitStorage
+    - SUITSTORAGE2
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    projectileSpeed: 40
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      collection: BF_GP25_Gunshots
+      params:
+        volume: -2
+        variation: 0.125
+  - type: BallisticAmmoProvider
+    autoCycle: true
+    whitelist:
+      tags:
+      - CartridgeGrenadeVOG25
+    capacity: 1
+#    proto: CartridgeGrenadeVOG25HEFrag
+    soundInsert:
+      path: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes VOG-25 grenades.
+        color: green
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
+      - description: This weapon can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true

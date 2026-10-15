@@ -736,6 +736,23 @@
   - type: AccessReader
     access: [["PACTSoldier"]]
 
+- type: entity
+  id: CrateSecgearPACTFilledRGM40
+  suffix: Filled, RGM-40
+  parent: CrateSecgear
+  name: RGM-40 Kastet crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherRURGM40
+        - id: BoxMagazineVOG25HEFrag
+        - id: BoxMagazineVOG25HEFrag
+        - id: BoxMagazineVOG25ChemicalSmoke
+        - id: BoxMagazineVOG25Illumination
+        - id: BoxMagazineVOG25IlluminationPara
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
 ## Misc
 # Shared
 

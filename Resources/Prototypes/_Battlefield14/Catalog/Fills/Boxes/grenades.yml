@@ -581,7 +581,52 @@
     - 0,0,3,3
   - type: StorageFill
     contents:
-      - id: CartridgeVOG25HEFrag
+      - id: CartridgeGrenadeVOG25HEFrag
+        amount: 8
+
+- type: entity
+  name: box of GRD-40 grenades
+  parent: BoxMagazineVOG25HEFrag
+  id: BoxMagazineVOG25ChemicalSmoke
+  description: A box full of CS gas producing GRD-40 grenades.
+  suffix: CS gas
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: CartridgeGrenadeVOG25ChemicalSmoke
+        amount: 8
+
+- type: entity
+  name: box of VSG-25 grenades
+  parent: BoxMagazineVOG25HEFrag
+  id: BoxMagazineVOG25Illumination
+  description: A box full of illuminating VSG-25 grenades.
+  suffix: flare
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: CartridgeGrenadeVOG25Illumination
+        amount: 8
+
+- type: entity
+  name: box of VG-40OP grenades
+  parent: BoxMagazineVOG25HEFrag
+  id: BoxMagazineVOG25IlluminationPara
+  description: A box full of VG-40OP 40mm paraflares.
+  suffix: paraflare
+  components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+  - type: StorageFill
+    contents:
+      - id: CartridgeGrenadeVOG25IlluminationPara
         amount: 8
 
 ## Charges
