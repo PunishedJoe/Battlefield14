@@ -173,8 +173,8 @@
   name: artillery strike VG-40OP 40mm paraflare
   components:
   - type: Sprite
-    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
-    visible: false
+    sprite: _WorldAblaze1968/Objects/Misc/ArtilleryImpact.rsi
+    state: flare
   - type: IgnitionSource
     ignited: true
     temperature: 1000

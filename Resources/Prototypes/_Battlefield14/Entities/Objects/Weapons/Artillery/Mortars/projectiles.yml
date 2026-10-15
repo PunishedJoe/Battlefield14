@@ -92,8 +92,8 @@
   name: artillery strike M853A1 81mm Illumination
   components:
   - type: Sprite
-    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
-    visible: false
+    sprite: _WorldAblaze1968/Objects/Misc/ArtilleryImpact.rsi
+    state: flare
   - type: IgnitionSource
     ignited: true
     temperature: 1000
@@ -231,8 +231,8 @@
   name: artillery strike S-832S 82mm Illumination
   components:
   - type: Sprite
-    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
-    visible: false
+    sprite: _WorldAblaze1968/Objects/Misc/ArtilleryImpact.rsi
+    state: flare
   - type: IgnitionSource
     ignited: true
     temperature: 1000
