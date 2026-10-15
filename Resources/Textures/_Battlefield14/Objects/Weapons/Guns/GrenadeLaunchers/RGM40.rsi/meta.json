@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "license": "all rights reserved",
+  "copyright": "Icon sprites made by JoeHammad for the Battlefield14 project, inhands by WillyBillyGilly. Do not relicense or edit reuse without permission",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "mortar"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    }
+  ]
+}

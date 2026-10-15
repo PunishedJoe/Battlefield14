@@ -221,6 +221,8 @@
     count: 25
     spread: 15
 
+#region chemical smoke
+
 - type: entity
   id: Bullet40x46mmChemicalSmokeInfantry
   name: 40x46mm CS gas shell
@@ -251,6 +253,8 @@
     radius: 3
     color: gray
     energy: 0.5
+
+#region arming distance
 
 - type: entity
   categories: [ HideSpawnMenu ]

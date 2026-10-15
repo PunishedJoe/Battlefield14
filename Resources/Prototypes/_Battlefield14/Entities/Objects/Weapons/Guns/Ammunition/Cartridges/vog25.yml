@@ -1,5 +1,5 @@
 - type: entity
-  id: CartridgeVOG25HEFrag
+  id: CartridgeGrenadeVOG25HEFrag
   name: VOG-25
   parent: BaseCartridge40x46
   description: A soviet era caseless grenade.
@@ -10,7 +10,7 @@
     tags:
     - Cartridge
     - Grenade
-    - CartridgeVOG25
+    - CartridgeGrenadeVOG25
   - type: CartridgeAmmo
     deleteOnSpawn: true
     proto: BulletVOG25HEFragArmingDistance
@@ -41,9 +41,81 @@
     damageModifierSet: Metallic
   - type: ExtendDescription
     descriptionList:
-      - description: Has a minimum arming distance of 5 tiles.
-        color: "#4f94ad"
-        requireDetailRange: true
       - description: Has 15 fragments.
         color: "#4f94ad"
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
+
+- type: entity
+  id: CartridgeGrenadeVOG25ChemicalSmoke
+  name: "GRD-40 'Gvozd'"
+  parent: CartridgeGrenadeVOG25HEFrag
+  description: A soviet era caseless grenade, packed with CS gas.
+  suffix: CS gas
+  components:
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: BulletVOG25ChemicalSmokeArmingDistance
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: gvozd
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is a VOG-25 pattern grenade.
+        color: green
+        requireDetailRange: true
+      - description: Releases CS gas for 30 seconds.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
+
+- type: entity
+  id: CartridgeGrenadeVOG25Illumination
+  name: VSG-25
+  parent: CartridgeGrenadeVOG25HEFrag
+  description: A caseless illumination grenade.
+  suffix: flare
+  components:
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: BulletVOG25Illumination
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: flare
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is a VOG-25 pattern grenade.
+        color: green
+        requireDetailRange: true
+
+- type: entity
+  id: CartridgeGrenadeVOG25IlluminationPara
+  name: VG-40OP
+  parent: CartridgeGrenadeVOG25HEFrag
+  description: A parachute flare grenade, for best results shoot into the sky.
+  suffix: paraflare
+  components:
+  - type: CartridgeAmmo
+    deleteOnSpawn: true
+    proto: BulletVOG25IlluminationPara
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: paraflare
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: ExtendDescription
+    descriptionList:
+      - description: Deploys parachute at approx 16 tiles.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: It is a VOG-25 pattern grenade.
+        color: green
         requireDetailRange: true

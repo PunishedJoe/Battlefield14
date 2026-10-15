@@ -358,7 +358,7 @@
   components:
   - type: StorageFill
     contents:
-    - id: CartridgeVOG25HEFrag
+    - id: CartridgeGrenadeVOG25HEFrag
       amount: 6
 
 #region flare pouches

@@ -3,7 +3,7 @@
 - type: entity
   id: Cartridge40x46mmFrag
   name: cartridge (40x46mm fragmentation)
-  parent: BaseCartridge40x46
+  parent: BaseCartridge40x46 # all this does is set the muzzle flash and eject/landing sounds
   components:
   - type: Item
     size: Small
@@ -34,7 +34,7 @@
       - !type:ExplodeBehavior
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
+    maxIntensity: 20
     intensitySlope: 3
     totalIntensity: 2
   - type: ExplodeOnTrigger
