@@ -119,3 +119,6 @@
       - description: It is a VOG-25 pattern grenade.
         color: green
         requireDetailRange: true
+      - description: Make sure when you are looking up to shoot at a higher Z level, your mouse is over a tile, or it won't shoot up.
+        color: red
+        requireDetailRange: true
