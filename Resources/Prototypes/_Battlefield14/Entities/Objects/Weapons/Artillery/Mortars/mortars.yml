@@ -42,6 +42,12 @@
   - type: ExtendDescription
     descriptionList:
       - description: Maximum range 100 meters.
+        color: green
+        requireDetailRange: true
+      - description: 15 meter minimum safe range.
+        color: red
+        requireDetailRange: true
+      - description: Alt-click to pick up.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -122,6 +128,12 @@
   - type: ExtendDescription
     descriptionList:
       - description: Maximum range 100 meters.
+        color: green
+        requireDetailRange: true
+      - description: 15 meter minimum safe range.
+        color: red
+        requireDetailRange: true
+      - description: Alt-click to pick up.
         color: "#4f94ad"
         requireDetailRange: true
 

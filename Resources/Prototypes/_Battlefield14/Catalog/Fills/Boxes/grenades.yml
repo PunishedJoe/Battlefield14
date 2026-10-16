@@ -149,7 +149,8 @@
       - state: box_security
       - state: flashbang
 
-# 40x46mm
+#region 40x46mm
+# BoxMagazine so when you search BoxGrenade it just comes up with handheld grenades
 
 - type: entity
   name: box of 40x46 HE grenades
@@ -510,7 +511,7 @@
       - state: box_security
       - state: flashbang
 
-# 43x30mm
+#region 43x30mm
 
 - type: entity
   name: box of 43x30mm HE-Frag grenades
@@ -568,7 +569,7 @@
       - id: Cartridge43x30mmIllumination
         amount: 8
 
-# VOG-25
+#region VOG-25
 
 - type: entity
   name: box of VOG-25 grenades
@@ -629,7 +630,7 @@
       - id: CartridgeGrenadeVOG25IlluminationPara
         amount: 8
 
-## Charges
+#region Charges
 
 # RU
 
@@ -658,10 +659,11 @@
   name: APM-6 cluster charge kit
   parent: BoxChargeFuze
   id: BoxChargeFuzeKit
-  description: A box containing one APM-6 cluster charge, a detonator, and a multitool.
+  description: A box containing two APM-6 cluster charges, a detonator, and a multitool.
   components:
   - type: StorageFill
     contents:
       - id: FuzeCharge
+        amount: 2
       - id: RemoteSignallerClacker
       - id: Multitool

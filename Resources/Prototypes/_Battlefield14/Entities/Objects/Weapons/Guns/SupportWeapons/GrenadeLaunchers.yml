@@ -417,7 +417,7 @@
         requireDetailRange: true
 
 - type: entity
-  name: RGM-40 Kastet
+  name: RGM-40 kastet
   parent: BaseItem
   id: WeaponGrenadeLauncherRURGM40
   description: A standalone chassis for the GP-30 grenade launcher.
@@ -458,6 +458,10 @@
 #    proto: CartridgeGrenadeVOG25HEFrag
     soundInsert:
       path: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+  - type: SpawnAfterInteract
+    prototype: MortarPACTRU40mmRGM40
+    doAfter: 2
+    removeOnInteract: true
   - type: ExtendDescription
     descriptionList:
       - description: Takes VOG-25 grenades.
@@ -467,5 +471,55 @@
         color: red
         requireDetailRange: true
       - description: This weapon can be stored on your auxillary suit storage slot.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Click a tile to place as a mortar, remove any round form the chamber before doing this.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  id: MortarPACTRU40mmRGM40
+  parent: BaseStructure
+  name: RGM-40 kastet
+  suffix: 40mm
+  description: Another cold war classic that still sees use in the modern day, although the laws of physics have stayed the same since at least the 80's.
+  components:
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/RGM40.rsi
+    state: mortar
+  - type: Mortar
+    baseAccuracy: 1.6
+    accuracyDegradation: 0.02
+    maxSpread: 10
+    minOffsetX: -30
+    maxOffsetX: 30
+    minOffsetY: -30
+    maxOffsetY: 30
+    minSafeDistance: 0
+  - type: ContainerContainer
+    containers:
+      mortar_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mortar_chamber:
+        name: Chamber
+        priority: 1
+        insertSound: null
+        whitelist:
+          tags:
+            - CartridgeGrenadeVOG25
+  - type: DisassembleOnAltVerb
+    prototype: WeaponGrenadeLauncherRURGM40
+    doAfter: 2
+  - type: ExtendDescription
+    descriptionList:
+      - description: Maximum range 30 meters.
+        color: green
+        requireDetailRange: true
+      - description: No minimum safe range.
+        color: red
+        requireDetailRange: true
+      - description: Alt-click to pick up.
         color: "#4f94ad"
         requireDetailRange: true
