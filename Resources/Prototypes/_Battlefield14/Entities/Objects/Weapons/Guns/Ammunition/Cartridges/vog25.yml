@@ -42,7 +42,7 @@
     damageContainer: Inorganic
     damageModifierSet: Metallic
   - type: MortarShell
-    delayPerTile: 0.5
+    delayPerTile: 0.3
     fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
     explosionEntity: ArtilleryMarkerVOG25HEFrag
@@ -75,7 +75,7 @@
     - state: gvozd
       map: ["enum.AmmoVisualLayers.Base"]
   - type: MortarShell
-    delayPerTile: 0.5
+    delayPerTile: 0.3
     fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
     explosionEntity: ArtilleryMarkerVOG25ChemicalSmoke
@@ -111,7 +111,7 @@
     - state: flare
       map: ["enum.AmmoVisualLayers.Base"]
   - type: MortarShell
-    delayPerTile: 0.5
+    delayPerTile: 0.3
     fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
     explosionEntity: ArtilleryMarkerVOG25Illumination
@@ -141,7 +141,7 @@
     - state: paraflare
       map: ["enum.AmmoVisualLayers.Base"]
   - type: MortarShell
-    delayPerTile: 0.5
+    delayPerTile: 0.3
     fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
     preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
     explosionEntity: ArtilleryMarkerVOG25ParaFlare
