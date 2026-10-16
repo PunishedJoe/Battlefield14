@@ -20,6 +20,9 @@ uplink-NATODE-G22A2crate-desc = A crate with two G22A2's with two boxes of magaz
 uplink-NATODE-magazine-box-G3-name = G3 magazine box
 uplink-NATODE-magazine-box-G3-desc = A box of 8 G3 pattern 7.62x51 magazines.
 
+uplink-NATODE-magazine-MG3-name = MG3 belt box
+uplink-NATODE-magazine-MG3-desc = One 100 round MG3 belt box.
+
 ## Explosives
 
 uplink-natode-dm51-box-name = DM51 grenade box

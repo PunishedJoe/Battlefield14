@@ -154,52 +154,26 @@
     energy: 0.2
 
 #region 40x46mm MP-APERS
+
 - type: entity
   id: Bullet40x46mmMPAPERS
-  name: 40x46mm MP-APERS grenade
-  parent: BaseBulletTrigger
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Projectile
-    damage:
-      types:
-        Structural: 30
-        Piercing: 20
-    deleteOnCollide: true
-  - type: HeFragProjectile
-    fillPrototype: Bullet40x46mmMPAPERSFragment
-    capacity: 150
-    randomAngle: true
-    minVelocity: 10
-    maxVelocity: 18
-  - type: ExplodeOnTrigger
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
-    layers:
-    - state: grenade
-  - type: TimedDespawn
-    lifetime: 10
-  - type: PointLight
-    radius: 3
-    color: orange
-    energy: 0.5
-
-#region 40x46mm MP-APERS Fragment
-- type: entity
-  id: Bullet40x46mmMPAPERSFragment
-  name: MP-APERS fragment
+  name: MP-APERS projectile
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
       types:
-        Structural: 12
+        Structural: 8
         Slash: 5
-        Piercing: 13
+        Piercing: 15
   - type: StaminaDamageOnCollide
-    damage: 4 # ~25 hits to stun
-    deleteOnCollide: true
+    damage: 3 # ~34 hits to stun
+  - type: ProjectileDamageFalloff
+    falloffStart: 4
+    falloffPerTile: 0.25
+    minimumMultiplier: 0.5
+    stepByTile: true
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
     layers:
@@ -214,12 +188,12 @@
 - type: entity
   id: 40x46mmMPAPERSSpread
   categories: [ HideSpawnMenu ]
-  parent: Pellet12_gauge
+  parent: Bullet40x46mmMPAPERS
   components:
   - type: ProjectileSpread
-    proto: Bullet40x46mmMPAPERSFragment
-    count: 25
-    spread: 15
+    proto: Bullet40x46mmMPAPERS
+    count: 20
+    spread: 10
 
 #region chemical smoke
 
@@ -271,7 +245,7 @@
       types:
         Structural: 50
         Blunt: 40
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet40x46mmHE
     distanceDelay: 5
@@ -279,6 +253,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
   - type: StaminaDamageOnCollide
     damage: 20
 
@@ -297,7 +274,7 @@
       types:
         Structural: 50
         Blunt: 40
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet40x46mmHEDP
     distanceDelay: 5
@@ -305,6 +282,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
   - type: StaminaDamageOnCollide
     damage: 20
 
@@ -323,7 +303,7 @@
       types:
         Structural: 50
         Blunt: 40
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: Bullet40x46mmFrag
     distanceDelay: 5
@@ -331,5 +311,8 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
   - type: StaminaDamageOnCollide
     damage: 20

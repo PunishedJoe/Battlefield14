@@ -513,7 +513,7 @@
       types:
         Structural: 100
         Blunt: 25
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketRPG7HEAT
     distanceDelay: 6
@@ -524,6 +524,9 @@
     blacklist:
       components:
         - HumanoidAppearance
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -579,7 +582,7 @@
       types:
         Structural: 100
         Blunt: 25
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketRPG7Frag
     distanceDelay: 6
@@ -587,6 +590,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -667,7 +673,7 @@
       types:
         Structural: 100
         Blunt: 25
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketRPG26HEAT
     distanceDelay: 6
@@ -678,6 +684,9 @@
     blacklist:
       components:
         - HumanoidAppearance
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
   - type: StaminaDamageOnCollide
     damage: 50
 
@@ -733,7 +742,7 @@
       types:
         Structural: 100
         Blunt: 25
-    deleteOnCollide: true
+    deleteOnCollide: false
   - type: SubmunitionProjectile
     submunitionPrototype: BulletRocketRPG26Thermobaric
     distanceDelay: 6
@@ -741,6 +750,9 @@
     submunitionCount: 1
     spreadAngle: 0
     velocityMultiplier: 1
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
   - type: StaminaDamageOnCollide
     damage: 50
 

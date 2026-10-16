@@ -114,6 +114,8 @@
     intensitySlope: 3
     maxIntensity: 2
     maxTileBreak: 0
+  - type: SpawnOnTrigger
+    proto: InstantEffectGravityWellThermobaric
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
     layers:
@@ -171,6 +173,8 @@
     intensitySlope: 3
     maxIntensity: 2
     maxTileBreak: 0
+  - type: SpawnOnTrigger
+    proto: InstantEffectGravityWellThermobaric
 
 #region chemical smoke
 

@@ -46,6 +46,7 @@
   id: Cartridge40x46mmHE
   name: cartridge (40x46mm HE)
   parent: BaseCartridge40x46
+  description: NATO standard 40mm grenade, used from underbarrel grenade launchers to mounted AGLs.
   components:
   - type: Item
     size: Small
@@ -76,18 +77,27 @@
       - !type:ExplodeBehavior
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
+    maxIntensity: 20
     intensitySlope: 3
     totalIntensity: 2
   - type: ExplodeOnTrigger
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: ExtendDescription
+    descriptionList:
+      - description: Designation M406.
+        color: white
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
 
 - type: entity
   id: Cartridge40x46mmHEDP
   name: cartridge (40x46mm HEDP)
   parent: BaseCartridge40x46
+  description: An anti-structure grenade with a small shaped charge.
   components:
   - type: Item
     size: Small
@@ -118,18 +128,27 @@
       - !type:ExplodeBehavior
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
+    maxIntensity: 20
     intensitySlope: 3
     totalIntensity: 2.5
   - type: ExplodeOnTrigger
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: ExtendDescription
+    descriptionList:
+      - description: Designation M433.
+        color: white
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
 
 - type: entity
   id: Cartridge40x46mmChemicalSmokeInfantry
   name: cartridge (40x46mm CS gas)
   parent: BaseCartridge40x46
+  description: A CS gas grenade for non-lethal incapacitation.
   components:
   - type: Item
     size: Small
@@ -160,18 +179,24 @@
       - !type:ExplodeBehavior
   - type: Explosive
     explosionType: Default
-    maxIntensity: 100
+    maxIntensity: 20
     intensitySlope: 3
     totalIntensity: 1.5
   - type: ExplodeOnTrigger
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: ExtendDescription
+    descriptionList:
+      - description: Designation M651.
+        color: white
+        requireDetailRange: true
 
 - type: entity
   id: Cartridge40x46mmMPAPERS
   name: cartridge (40x46mm MP-APERS)
   parent: BaseCartridge40x46
+  description: Turns your grenade launcher into a shotgun with 20 projectiles.
   components:
   - type: Item
     size: Small
@@ -183,7 +208,7 @@
   - type: CartridgeAmmo
     proto: 40x46mmMPAPERSSpread
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/40x46mm.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
     - state: apers
       map: ["enum.AmmoVisualLayers.Base"]
@@ -191,11 +216,17 @@
   - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 100
+  - type: ExtendDescription
+    descriptionList:
+      - description: Designation M576.
+        color: white
+        requireDetailRange: true
 
 - type: entity
   id: Cartridge40x46mmIllumination
   name: cartridge (40x46mm Illumination)
   parent: BaseCartridge40x46
+  description: An illumination grenade.
   components:
   - type: Item
     size: Small
@@ -214,3 +245,8 @@
   - type: SpentAmmoVisuals
   - type: StaticPrice
     price: 100
+  - type: ExtendDescription
+    descriptionList:
+      - description: Designation M585.
+        color: white
+        requireDetailRange: true

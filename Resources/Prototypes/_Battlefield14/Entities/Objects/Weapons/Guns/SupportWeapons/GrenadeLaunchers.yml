@@ -37,6 +37,7 @@
             - Cartridge40x46mmGrenade
   - type: Gun
     fireRate: 1
+    projectileSpeed: 40
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
