@@ -5,7 +5,7 @@
   description: An outdated lever-action shotgun. A cut down barrel and stock, and enlarged lever allows one handed racking
   components:
   - type: Item
-    size: Normal
+    size: Large
     shape:
     - 0,0,2,1
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/1887short.rsi

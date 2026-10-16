@@ -1,3 +1,5 @@
+#region Base
+
 - type: entity
   name: blister pack
   id: BlisterPack
@@ -6,11 +8,13 @@
   components:
   - type: Item
     size: Tiny
+    sprite: _Battlefield14/Objects/Specific/Medical/medicalV2.rsi
+    heldPrefix: dressing
   - type: Icon
-    sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
+    sprite: _Battlefield14/Objects/Specific/Medical/blisterpackV2.rsi
     state: icon
   - type: Sprite
-    sprite: _Battlefield14/Objects/Specific/Medical/blisterpack.rsi
+    sprite: _Battlefield14/Objects/Specific/Medical/blisterpackV2.rsi
     layers:
     - state: base
     - state: fill-1
@@ -68,6 +72,151 @@
       path: /Audio/_Goobstation/Items/handling/pillbottle_drop.ogg
 
 - type: entity
+  id: BaseBlisterPackBlue
+  parent: BlisterPack
+  abstract: true
+  components:
+  - type: Icon
+    state: icon-blue
+  - type: Sprite
+    layers:
+    - state: base
+    - state: fill-blue-1
+      map: ["fill-1"]
+      visible: false
+    - state: fill-blue-2
+      map: ["fill-2"]
+      visible: false
+    - state: fill-blue-3
+      map: ["fill-3"]
+      visible: false
+    - state: fill-blue-4
+      map: ["fill-4"]
+      visible: false
+    - state: fill-blue-5
+      map: ["fill-5"]
+      visible: false
+    - state: fill-blue-6
+      map: ["fill-6"]
+      visible: false
+
+- type: entity
+  id: BaseBlisterPackRed
+  parent: BlisterPack
+  abstract: true
+  components:
+  - type: Icon
+    state: icon-red
+  - type: Sprite
+    layers:
+    - state: base
+    - state: fill-red-1
+      map: ["fill-1"]
+      visible: false
+    - state: fill-red-2
+      map: ["fill-2"]
+      visible: false
+    - state: fill-red-3
+      map: ["fill-3"]
+      visible: false
+    - state: fill-red-4
+      map: ["fill-4"]
+      visible: false
+    - state: fill-red-5
+      map: ["fill-5"]
+      visible: false
+    - state: fill-red-6
+      map: ["fill-6"]
+      visible: false
+
+- type: entity
+  id: BaseBlisterPackGreen
+  parent: BlisterPack
+  abstract: true
+  components:
+  - type: Icon
+    state: icon-green
+  - type: Sprite
+    layers:
+    - state: base
+    - state: fill-green-1
+      map: ["fill-1"]
+      visible: false
+    - state: fill-green-2
+      map: ["fill-2"]
+      visible: false
+    - state: fill-green-3
+      map: ["fill-3"]
+      visible: false
+    - state: fill-green-4
+      map: ["fill-4"]
+      visible: false
+    - state: fill-green-5
+      map: ["fill-5"]
+      visible: false
+    - state: fill-green-6
+      map: ["fill-6"]
+      visible: false
+
+- type: entity
+  id: BaseBlisterPackYellow
+  parent: BlisterPack
+  abstract: true
+  components:
+  - type: Icon
+    state: icon-yellow
+  - type: Sprite
+    layers:
+    - state: base
+    - state: fill-yellow-1
+      map: ["fill-1"]
+      visible: false
+    - state: fill-yellow-2
+      map: ["fill-2"]
+      visible: false
+    - state: fill-yellow-3
+      map: ["fill-3"]
+      visible: false
+    - state: fill-yellow-4
+      map: ["fill-4"]
+      visible: false
+    - state: fill-yellow-5
+      map: ["fill-5"]
+      visible: false
+    - state: fill-yellow-6
+      map: ["fill-6"]
+      visible: false
+
+- type: entity
+  id: BaseBlisterPackGrey
+  parent: BlisterPack
+  abstract: true
+  components:
+  - type: Icon
+    state: icon-grey
+  - type: Sprite
+    layers:
+    - state: base
+    - state: fill-grey-1
+      map: ["fill-1"]
+      visible: false
+    - state: fill-grey-2
+      map: ["fill-2"]
+      visible: false
+    - state: fill-grey-3
+      map: ["fill-3"]
+      visible: false
+    - state: fill-grey-4
+      map: ["fill-4"]
+      visible: false
+    - state: fill-grey-5
+      map: ["fill-5"]
+      visible: false
+    - state: fill-grey-6
+      map: ["fill-6"]
+      visible: false
+
+- type: entity
   id: BlisterPackSyrette
   parent: BlisterPack
   description: Holds up to 5 syrettes.
@@ -119,7 +268,7 @@
 #region Pills
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackRed
   id: BlisterPackBicaridine
   suffix: Bicaridine 15u, 6
   components:
@@ -129,7 +278,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackYellow
   id: BlisterPackKelotane
   suffix: Kelotane 15u, 6
   components:
@@ -139,7 +288,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackBlue
   id: BlisterPackTricordrazine
   suffix: Tricordrazine 15u, 6
   components:
@@ -149,7 +298,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackBlue
   id: BlisterPackDexalin
   suffix: Dexalin 15u, 6
   components:
@@ -159,7 +308,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackGreen
   id: BlisterPackDylovene
   suffix: Dylovene 15u, 6
   components:
@@ -169,7 +318,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackGreen
   id: BlisterPackEthylredoxrazine
   suffix: Ethylredoxrazine 10u, 6
   components:
@@ -179,7 +328,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackGrey
   id: BlisterPackIron
   suffix: Iron 10u, 6
   components:
@@ -199,7 +348,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackRed
   id: BlisterPackMeralyne
   suffix: Meralyne 7.5u, 6
   components:
@@ -209,7 +358,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackYellow
   id: BlisterPackDermaline
   suffix: Dermaline 7.5u, 6
   components:
@@ -219,7 +368,7 @@
       amount: 6
 
 - type: entity
-  parent: BlisterPack
+  parent: BaseBlisterPackGreen
   id: BlisterPackHyronalin
   suffix: Hyronalin 10u, 6
   components:
