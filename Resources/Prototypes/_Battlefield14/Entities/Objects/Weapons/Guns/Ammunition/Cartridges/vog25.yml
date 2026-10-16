@@ -57,6 +57,37 @@
         color: red
         requireDetailRange: true
 
+#region Thermobaric
+
+- type: entity
+  id: CartridgeGrenadeVOG25Thermobaric
+  name: VG-40TB
+  parent: CartridgeGrenadeVOG25HEFrag
+  description: A caseless thermobaric projected grenade.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletVOG25ThermobaricArmingDistance
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: vg40
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: MortarShell
+    delayPerTile: 0.3
+    fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    explosionEntity: ArtilleryMarkerVOG25Thermobaric
+    insertSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is a VOG-25 pattern grenade.
+        color: green
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
+
 #region CS gas
 
 - type: entity
@@ -88,6 +119,37 @@
         requireDetailRange: true
       - description: Releases CS gas for 30 seconds.
         color: "#4f94ad"
+        requireDetailRange: true
+      - description: Has a minimum arming distance of 5 tiles.
+        color: red
+        requireDetailRange: true
+
+#region Flashbang
+
+- type: entity
+  id: CartridgeGrenadeVOG25Flashbang
+  name: VG-40SZ
+  parent: CartridgeGrenadeVOG25HEFrag
+  description: A caseless projected flashbang grenade.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletVOG25FlashbangArmingDistance
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: vg40
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: MortarShell
+    delayPerTile: 0.3
+    fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    explosionEntity: ArtilleryMarkerVOG25Flashbang
+    insertSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+    useDirectExplosion: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: It is a VOG-25 pattern grenade.
+        color: green
         requireDetailRange: true
       - description: Has a minimum arming distance of 5 tiles.
         color: red
