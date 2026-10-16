@@ -490,8 +490,8 @@
     state: mortar
   - type: Mortar
     baseAccuracy: 1.6
-    accuracyDegradation: 0.02
-    maxSpread: 10
+    accuracyDegradation: 0.1
+    maxSpread: 5
     minOffsetX: -30
     maxOffsetX: 30
     minOffsetY: -30
