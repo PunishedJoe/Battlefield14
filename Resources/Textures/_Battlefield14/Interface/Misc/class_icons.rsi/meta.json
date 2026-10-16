@@ -20,13 +20,28 @@
       "name": "natosupport"
     },
     {
-      "name": "natorecon"
+      "name": "natomachinegunner"
+    },
+    {
+      "name": "natoautorifleman"
+    },
+    {
+      "name": "natogrenadier"
     },
     {
       "name": "natomedic"
     },
     {
+      "name": "natorecon"
+    },
+    {
+      "name": "natomarksman"
+    },
+    {
       "name": "natoengineer"
+    },
+    {
+      "name": "natoradio"
     },
     {
       "name": "natofighterpilot"
@@ -47,10 +62,22 @@
       "name": "natoallysupport"
     },
     {
-      "name": "natoallyrecon"
+      "name": "natoallymachinegunner"
+    },
+    {
+      "name": "natoallyautorifleman"
+    },
+    {
+      "name": "natoallygrenadier"
     },
     {
       "name": "natoallymedic"
+    },
+    {
+      "name": "natoallyrecon"
+    },
+    {
+      "name": "natoallymarksman"
     },
     {
       "name": "natoallyengineer"
@@ -68,13 +95,28 @@
       "name": "pactsupport"
     },
     {
-      "name": "pactrecon"
+      "name": "pactmachinegunner"
+    },
+    {
+      "name": "pactautorifleman"
+    },
+    {
+      "name": "pactgrenadier"
     },
     {
       "name": "pactmedic"
     },
     {
+      "name": "pactrecon"
+    },
+    {
+      "name": "pactmarksman"
+    },
+    {
       "name": "pactengineer"
+    },
+    {
+      "name": "pactradio"
     },
     {
       "name": "pactfighterpilot"

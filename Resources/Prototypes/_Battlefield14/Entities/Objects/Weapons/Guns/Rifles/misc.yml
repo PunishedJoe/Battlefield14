@@ -225,7 +225,7 @@
   parent: BaseItem
   id: WeaponRifleCMB
   description: Overwatch Standard Issue Pulse Rifle.
-  suffix: ar2
+  suffix: ar1
   components:
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR2_alt.rsi
