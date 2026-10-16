@@ -1,4 +1,4 @@
-#region HE
+#region HE-Frag
 
 - type: entity
   id: BulletVOG25HEFrag
@@ -93,6 +93,85 @@
     minVelocity: 8
     maxVelocity: 15
 
+#region Thermobaric
+
+- type: entity
+  id: BulletVOG25Thermobaric
+  name: VG-40TB
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Piercing: 40
+    deleteOnCollide: true
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Thermobaric
+    totalIntensity: 20
+    intensitySlope: 3
+    maxIntensity: 2
+    maxTileBreak: 0
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: vg40-spent
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletVOG25ThermobaricArmingDistance
+  name: VG-40TB
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: vg40-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Blunt: 40
+    deleteOnCollide: false
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletVOG25Thermobaric
+    distanceDelay: 5
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+- type: entity
+  id: ArtilleryMarkerVOG25Thermobaric
+  name: artillery strike VG-40TB 40mm thermobaric
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: vg40-spent
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Thermobaric
+    totalIntensity: 20
+    intensitySlope: 3
+    maxIntensity: 2
+    maxTileBreak: 0
+
 #region chemical smoke
 
 - type: entity
@@ -180,6 +259,83 @@
     - trigger
     sound: /Audio/Items/smoke_grenade_smoke.ogg
     positional: true
+
+#region Flashbang
+
+- type: entity
+  id: BulletVOG25Flashbang
+  name: VG-40SZ
+  parent: BaseBulletTrigger
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Piercing: 40
+    deleteOnCollide: true
+  - type: FlashOnTrigger
+    range: 5
+  - type: SpawnOnTrigger
+    proto: GrenadeFlashEffect
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/flashbang.ogg
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: vg40-spent
+  - type: TimedDespawn
+    lifetime: 10
+  - type: PointLight
+    radius: 3
+    color: orange
+    energy: 0.5
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: BulletVOG25FlashbangArmingDistance
+  name: VG-40SZ
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: vg40-spent
+  - type: Projectile
+    damage:
+      types:
+        Structural: 15
+        Blunt: 40
+    deleteOnCollide: false
+  - type: SubmunitionProjectile
+    submunitionPrototype: BulletVOG25Flashbang
+    distanceDelay: 5
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 1
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    deleteOnRemove: true
+  - type: StaminaDamageOnCollide
+    damage: 20
+
+- type: entity
+  id: ArtilleryMarkerVOG25Flashbang
+  name: artillery strike VG-40SZ 40mm Flashbang
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: vg40-spent
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: FlashOnTrigger
+    range: 5
+  - type: SpawnOnTrigger
+    proto: GrenadeFlashEffect
+  - type: SoundOnTrigger
+    sound: /Audio/_Battlefield14/Weapons/Grenades/flashbang.ogg
 
 #region flare
 

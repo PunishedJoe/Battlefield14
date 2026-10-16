@@ -746,8 +746,23 @@
     contents:
         - id: WeaponGrenadeLauncherRURGM40
         - id: BoxMagazineVOG25HEFrag
-        - id: BoxMagazineVOG25HEFrag
+        - id: BoxMagazineVOG25Thermobaric
         - id: BoxMagazineVOG25ChemicalSmoke
+        - id: BoxMagazineVOG25Illumination
+        - id: BoxMagazineVOG25IlluminationPara
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRGM40OMON
+  suffix: Filled, RGM-40, OMON
+  parent: CrateSecgearPACTFilledRGM40
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherRURGM40
+        - id: BoxMagazineVOG25ChemicalSmoke
+        - id: BoxMagazineVOG25Flashbang
         - id: BoxMagazineVOG25Illumination
         - id: BoxMagazineVOG25IlluminationPara
   - type: AccessReader

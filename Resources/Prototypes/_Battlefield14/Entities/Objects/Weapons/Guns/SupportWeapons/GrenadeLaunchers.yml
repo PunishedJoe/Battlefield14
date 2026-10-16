@@ -420,7 +420,7 @@
   name: RGM-40 Kastet
   parent: BaseItem
   id: WeaponGrenadeLauncherRURGM40
-  description: A standalone chassis for the GP-30 grenade launcher.
+  description: A standalone chassis for the GP-30 grenade launcher, sometimes used for indirect fire.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/RGM40.rsi
@@ -482,7 +482,7 @@
   parent: BaseStructure
   name: RGM-40 Kastet
   suffix: 40mm
-  description: Another cold war classic that still sees use in the modern day, although the laws of physics have stayed the same since at least the 80's.
+  description: A standalone chassis for the GP-30 grenade launcher, currently being used for indirect fire.
   components:
   - type: InteractionOutline
   - type: Sprite
