@@ -1,0 +1,74 @@
+- type: entity
+  id: CapturePointMetzgerConstruction
+  parent: BaseCapturePoint
+  name: Construction zone control point
+  suffix: metzgerstadt, 180s / 3m
+  components:
+  - type: POICapture
+    poiName: "Metzgerstadt construction zone"
+    timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: "Construction zone"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Construction zone capture point"
+    
+- type: entity
+  id: CapturePointSoccer
+  parent: BaseCapturePoint
+  name: Soccer field control point
+  suffix: metzgerstadt, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Metzgerstadt soccer field"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Soccer field"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Soccer field capture point"
+
+- type: entity
+  id: CapturePointMetzgerApartment
+  parent: BaseCapturePoint
+  name: Apartment control point
+  suffix: metzgerstadt, 120s / 2m
+  components:
+  - type: POICapture
+    poiName: "Metzgerstadt apartment"
+    timeToCapture: 120
+  - type: NavMapBeacon
+    defaultText: "Apartment cluster"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Apartment capture point"
+
+- type: entity
+  id: CapturePointMetzgerMuseum
+  parent: BaseCapturePoint
+  name: Museum control point
+  suffix: metzgerstadt, 180s / 3m
+  components:
+  - type: POICapture
+    poiName: "Metzgerstadt War Museum"
+    timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: "Metzgerstadt War Museum"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Museum capture point"
+    
+- type: entity
+  id: CapturePointMetzgerHospital
+  parent: BaseCapturePoint
+  name: Hospital control point
+  suffix: metzgerstadt, 180s / 3m
+  components:
+  - type: POICapture
+    poiName: "Metzgerstadt hospital"
+    timeToCapture: 180
+  - type: NavMapBeacon
+    defaultText: "Hospital"
+    color: "#FFFF00"
+  - type: WarpPoint
+    location: "Hospital capture point"

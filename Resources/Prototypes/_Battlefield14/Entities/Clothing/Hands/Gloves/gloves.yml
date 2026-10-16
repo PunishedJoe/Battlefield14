@@ -1,0 +1,12 @@
+- type: entity
+  parent: ClothingHandsGlovesLeather
+  id: ClothingHandsGlovesButcher
+  name: leather gloves
+  description: Thick leather gloves meant to protect you from accidentally stabbing yourself with a knife.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Hands/Gloves/pilot.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Hands/Gloves/pilot.rsi
+  - type: Fiber
+    fiberColor: fibers-brown

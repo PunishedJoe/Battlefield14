@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "Sprites made by AveriV2. Trademark ALDI Süd www.aldi-sued.de",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+          "name": "aldi"
+      },
+      {
+          "name": "aldi_notext"
+      },
+      {
+          "name": "aldi_small"
+       }
+   ]
+}
