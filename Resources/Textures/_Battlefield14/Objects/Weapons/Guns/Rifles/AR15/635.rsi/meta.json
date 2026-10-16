@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "license": "All rights reserved",
+  "copyright": "Made by WillyBillyGilly for the Battlefield 14 project, do not relicense, edit, or reuse without permission",
+  "size": {
+    "x": 48,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "bolt-open"
+    },
+    {
+      "name": "mag-0"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    }
+  ]
+}

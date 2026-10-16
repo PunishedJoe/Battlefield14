@@ -347,8 +347,7 @@
     - FullAuto
     - Burst
     selectedMode: FullAuto
-    fireRate: 13
-    burstFireRate: 13
+    fireRate: 20
     projectileSpeed: 50 # full length barrel
     shotsPerBurst: 5 # Fictional, to help with conserving ammo
     burstCooldown: 0.5

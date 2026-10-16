@@ -98,6 +98,22 @@
           - BundeswehrUplink
 
 - type: listing
+  id: UplinkNATODEBeltBoxMG3
+  name: uplink-NATODE-magazine-MG3-name
+  description: uplink-NATODE-magazine-MG3-desc
+  productEntity: MagazineBeltBoxMG3
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/MG3.rsi, state: icon }
+  cost:
+    NATORequisition: 10 # 1 minute 40 seconds
+  categories:
+    - UplinkNATODEAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - BundeswehrUplink
+
+- type: listing
   id: UplinkNATODEAmmoBox
   name: uplink-NATODE-ammo-box-name
   description: uplink-NATODE-ammo-box-desc

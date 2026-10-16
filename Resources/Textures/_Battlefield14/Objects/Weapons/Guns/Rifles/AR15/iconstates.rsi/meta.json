@@ -44,6 +44,9 @@
       "name": "mag-20-0"
     },
     {
+      "name": "mag-9mm-0"
+    },
+    {
       "name": "acog"
     },
     {
@@ -131,6 +134,9 @@
       "name": "carbine-length-barrel-M27"
     },
     {
+      "name": "carbine-length-barrel-M231"
+    },
+    {
       "name": "grip"
     },
     {
@@ -150,6 +156,9 @@
     },
     {
       "name": "M203"
+    },
+    {
+      "name": "gooseneck"
     }
   ]
 }

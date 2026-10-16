@@ -474,7 +474,7 @@
   name: uplink-natous-40x46mm-mpapers-name
   description: uplink-natous-40x46mm-mpapers-desc
   productEntity: BoxMagazine40x46mmMPAPERS
-  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/40x46mm.rsi, state: apers }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi, state: apers }
   cost:
     NATORequisition: 12 # 2 minutes
   categories:

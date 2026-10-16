@@ -109,37 +109,6 @@
 
 - type: entity
   parent: BaseItem
-  id: MagazineBeltBoxMG3Short
-  name: "MG3 drum (7.62x51mm)"
-  description: A big circular drum that has a belt in it, for 7.62x51 millimeter ammo.
-  components:
-  - type: Tag
-    tags:
-      - MagazineBeltBoxMG3
-  - type: Item
-    size: Normal
-  - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle762x51TracerRed
-    mayTransfer: true
-    whitelist:
-      tags:
-        - BF_CartridgeRifle762x51
-    capacity: 50
-  - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/MG3Short.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 3
-    zeroVisible: false
-  - type: Appearance
-
-- type: entity
-  parent: MagazineBeltBoxMG3Short
   id: MagazineBeltBoxMG3
   name: "MG3 belt box (7.62x51mm)"
   description: A big box that has a belt in it, for 7.62x51 millimeter ammo.
@@ -166,7 +135,27 @@
     magState: mag
     steps: 5
     zeroVisible: false
+  - type: Tag
+    tags:
+      - MagazineBeltBoxMG3
   - type: Appearance
+
+- type: entity
+  parent: MagazineBeltBoxMG3
+  id: MagazineBeltBoxMG3Short
+  name: "MG3 drum (7.62x51mm)"
+  description: A big circular drum that has a belt in it, for 7.62x51 millimeter ammo.
+  components:
+  - type: Item
+    size: Normal
+  - type: BallisticAmmoProvider
+    capacity: 50
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/BeltBoxes/MG3Short.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
 
 - type: entity
   parent: MagazineBeltBoxMG3Short

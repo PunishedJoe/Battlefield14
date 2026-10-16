@@ -118,6 +118,71 @@
     selectedMode: SemiAuto
     fireRate: 5
 
+- type: entity
+  name: Colt 635 DOE
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunUSDOE
+  description: An AR-15 in 9mm, for the department of energy.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/635.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/635.rsi
+  - type: Gun
+    minAngle: 3
+    maxAngle: 12
+    fireRate: 11.6 # 700 RPM
+    angleIncrease: 3
+    angleDecay: 10
+    projectileSpeed: 35 # pistol caliber
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/M16/rack.ogg
+      params:
+        volume: -2
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
+      params:
+        volume: -5
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunAR9
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSubmachinegunAR9
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol9x19
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol9x19
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AR9 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
 #region DE
 
 - type: entity
@@ -147,7 +212,7 @@
       suitstorage2:
       - state: A4-equipped-BACKPACK
   - type: Gun
-    minAngle: 2
+    minAngle: 3
     maxAngle: 12
     fireRate: 11.6 # 700 RPM
     angleIncrease: 3
@@ -348,7 +413,7 @@
       suitstorage2:
       - state: A5-equipped-BACKPACK
   - type: Gun
-    minAngle: 2
+    minAngle: 3
     maxAngle: 10
     fireRate: 13.3 # 800 RPM
     angleIncrease: 1.5
@@ -413,7 +478,7 @@
     minAngle: -2
     maxAngle: -10
   - type: Gun
-    minAngle: 2
+    minAngle: 3
     maxAngle: 15
     fireRate: 15.8 # 950 RPM
     angleIncrease: 2
@@ -755,7 +820,7 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
   - type: Gun
-    minAngle: 2
+    minAngle: 3
     maxAngle: 10
     fireRate: 11.6 # 700 RPM
     angleIncrease: 1.5
@@ -992,7 +1057,7 @@
     minAngle: -2
     maxAngle: -10
   - type: Gun
-    minAngle: 2
+    minAngle: 3
     maxAngle: 15
     fireRate: 15.8 # 950 RPM
     angleIncrease: 2
