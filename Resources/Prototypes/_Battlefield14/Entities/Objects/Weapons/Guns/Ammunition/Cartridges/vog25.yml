@@ -1,3 +1,5 @@
+#region HE frag
+
 - type: entity
   id: CartridgeGrenadeVOG25HEFrag
   name: VOG-25
@@ -39,6 +41,13 @@
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Metallic
+  - type: MortarShell
+    delayPerTile: 0.3
+    fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    explosionEntity: ArtilleryMarkerVOG25HEFrag
+    insertSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+    useDirectExplosion: false
   - type: ExtendDescription
     descriptionList:
       - description: Has 15 fragments.
@@ -47,6 +56,8 @@
       - description: Has a minimum arming distance of 5 tiles.
         color: red
         requireDetailRange: true
+
+#region CS gas
 
 - type: entity
   id: CartridgeGrenadeVOG25ChemicalSmoke
@@ -63,6 +74,13 @@
     layers:
     - state: gvozd
       map: ["enum.AmmoVisualLayers.Base"]
+  - type: MortarShell
+    delayPerTile: 0.3
+    fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    explosionEntity: ArtilleryMarkerVOG25ChemicalSmoke
+    insertSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+    useDirectExplosion: false
   - type: ExtendDescription
     descriptionList:
       - description: It is a VOG-25 pattern grenade.
@@ -74,6 +92,8 @@
       - description: Has a minimum arming distance of 5 tiles.
         color: red
         requireDetailRange: true
+
+#region flare
 
 - type: entity
   id: CartridgeGrenadeVOG25Illumination
@@ -90,11 +110,20 @@
     layers:
     - state: flare
       map: ["enum.AmmoVisualLayers.Base"]
+  - type: MortarShell
+    delayPerTile: 0.3
+    fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    explosionEntity: ArtilleryMarkerVOG25Illumination
+    insertSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+    useDirectExplosion: false
   - type: ExtendDescription
     descriptionList:
       - description: It is a VOG-25 pattern grenade.
         color: green
         requireDetailRange: true
+
+#region paraflare
 
 - type: entity
   id: CartridgeGrenadeVOG25IlluminationPara
@@ -111,6 +140,13 @@
     layers:
     - state: paraflare
       map: ["enum.AmmoVisualLayers.Base"]
+  - type: MortarShell
+    delayPerTile: 0.3
+    fireSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25-blast-01.ogg
+    preExplosionSound: /Audio/_VXS14/Weapons/Guns/Artillery/mortarflyby.ogg
+    explosionEntity: ArtilleryMarkerVOG25ParaFlare
+    insertSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+    useDirectExplosion: false
   - type: ExtendDescription
     descriptionList:
       - description: Deploys parachute at approx 16 tiles.

@@ -65,6 +65,34 @@
   - type: StaminaDamageOnCollide
     damage: 20
 
+- type: entity
+  id: ArtilleryMarkerVOG25HEFrag
+  name: artillery strike VOG-25 40mm HE-Frag
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: base-spent
+  - type: TriggerOnSpawn
+  - type: DeleteOnTrigger
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: HandGrenade
+    totalIntensity: 20
+    intensitySlope: 3
+    maxIntensity: 2
+    maxTileBreak: 0
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    triggerKey: trigger
+    fillPrototype: Bullet43x30mmFragFragment
+    capacity: 15
+    randomAngle: true
+    minVelocity: 8
+    maxVelocity: 15
+
 #region chemical smoke
 
 - type: entity
@@ -127,6 +155,32 @@
   - type: StaminaDamageOnCollide
     damage: 20
 
+- type: entity
+  id: ArtilleryMarkerVOG25ChemicalSmoke
+  name: artillery strike GRD-40 40mm CS-Gas
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Fun/goldbikehorn.rsi
+    visible: false
+    state: icon
+  - type: TriggerOnSpawn
+  - type: TimedDespawn
+    lifetime: 30
+  - type: SmokeOnTrigger
+    keysIn:
+    - trigger
+    duration: 30
+    spreadAmount: 20
+    solution:
+      reagents:
+      - ReagentId: CSGas
+        Quantity: 50
+  - type: EmitSoundOnTrigger
+    keysIn:
+    - trigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+    positional: true
+
 #region flare
 
 - type: entity
@@ -144,6 +198,37 @@
       types:
         Structural: 15
         Blunt: 40
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+#  parent: BaseBullet
+  id: ArtilleryMarkerVOG25Illumination
+  name: VSG-25
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/vog25.rsi
+    layers:
+    - state: flare-spent
+  - type: IgnitionSource
+    ignited: true
+    temperature: 1000
+  - type: TimedDespawn
+    lifetime: 240
+  - type: AmbientSound
+    enabled: true
+    volume: 0
+    range: 7
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: IgniteOnCollide
+    fireStacks: 1
+  - type: PointLight
+    enabled: true
+    color: "#FF8080"
+    radius: 15.0
+    energy: 9.0
 
 #region paraflare
 
