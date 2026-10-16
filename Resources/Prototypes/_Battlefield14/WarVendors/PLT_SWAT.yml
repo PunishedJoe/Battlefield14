@@ -51,10 +51,16 @@
       - id: BoxGrenadesM84
         name: M84 flashbang grenades
         points: 1
+      - id: BoxGrenadesM18
+        name: M18 smoke grenades
+        points: 1
     - name: utility
       entries:
       - id: BoxBreachingCharges
         name: breaching charges
+        points: 2
+      - id: ClothingOuterArmorPlateCarrierHeavy
+        name: heavy ballistic vest
         points: 2
       - id: BF14WeaponCaseLongBreaching
         name: FUBAR + boltcutters + floor charge

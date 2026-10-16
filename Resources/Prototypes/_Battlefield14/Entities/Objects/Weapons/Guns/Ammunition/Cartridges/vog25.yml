@@ -4,7 +4,7 @@
   id: CartridgeGrenadeVOG25HEFrag
   name: VOG-25
   parent: BaseCartridge40x46
-  description: A soviet era caseless grenade.
+  description: A soviet era caseless grenade. GRAU index 7P17.
   components:
   - type: Item
     size: Small
@@ -99,7 +99,7 @@
   id: CartridgeGrenadeVOG25Illumination
   name: VSG-25
   parent: CartridgeGrenadeVOG25HEFrag
-  description: A caseless illumination grenade.
+  description: A caseless illumination grenade. GRAU index 7P58.
   suffix: flare
   components:
   - type: CartridgeAmmo

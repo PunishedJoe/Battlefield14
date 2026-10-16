@@ -46,7 +46,7 @@
   suffix: Breaching
   components:
   - type: Item
-    size: Normal
+    size: Large
     shape:
     - 0,0,2,1
     sprite: _Battlefield14/Objects/Weapons/Guns/Shotguns/M590.rsi

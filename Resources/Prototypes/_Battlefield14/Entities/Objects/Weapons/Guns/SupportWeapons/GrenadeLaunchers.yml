@@ -417,7 +417,7 @@
         requireDetailRange: true
 
 - type: entity
-  name: RGM-40 kastet
+  name: RGM-40 Kastet
   parent: BaseItem
   id: WeaponGrenadeLauncherRURGM40
   description: A standalone chassis for the GP-30 grenade launcher.
@@ -480,7 +480,7 @@
 - type: entity
   id: MortarPACTRU40mmRGM40
   parent: BaseStructure
-  name: RGM-40 kastet
+  name: RGM-40 Kastet
   suffix: 40mm
   description: Another cold war classic that still sees use in the modern day, although the laws of physics have stayed the same since at least the 80's.
   components:
@@ -490,8 +490,8 @@
     state: mortar
   - type: Mortar
     baseAccuracy: 1.6
-    accuracyDegradation: 0.02
-    maxSpread: 10
+    accuracyDegradation: 0.1
+    maxSpread: 5
     minOffsetX: -30
     maxOffsetX: 30
     minOffsetY: -30
