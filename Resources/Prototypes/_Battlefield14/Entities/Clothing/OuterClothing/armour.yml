@@ -311,3 +311,78 @@
     walkModifier: 0.95
     sprintModifier: 0.95
   - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingOuterArmorBase
+  id: BF14ClothingOuterArmorChestplateIron
+  name: iron chestplate
+  description: A well crafted breastplate, for professional soldiers.
+  components:
+  - type: Sprite
+    sprite: _Civ14/Clothing/OuterClothing/iron_chestplate.rsi
+  - type: Clothing
+    sprite: _Civ14/Clothing/OuterClothing/iron_chestplate.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 8
+        Slash: 25
+        Piercing: 9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: StaminaDamageResistance
+    coefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingOuterArmorBase
+  id: BF14ClothingOuterArmorChainmail
+  name: chainmail armour
+  description: A chainmail vest for militiamen.
+  components:
+  - type: Sprite
+    sprite: _Civ14/Clothing/OuterClothing/early_chainmail.rsi
+  - type: Clothing
+    sprite: _Civ14/Clothing/OuterClothing/early_chainmail.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 5
+        Slash: 20
+        Piercing: 7
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: StaminaDamageResistance
+    coefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+
+- type: entity
+  parent: ClothingOuterArmorBase
+  id: BF14ClothingOuterArmorGambeson
+  name: gambeson
+  description: Thick cloth armour.
+  components:
+  - type: Sprite
+    sprite: _Civ14/Clothing/OuterClothing/gambeson.rsi
+  - type: Clothing
+    sprite: _Civ14/Clothing/OuterClothing/gambeson.rsi
+  - type: Armor
+    modifiers:
+      flatReductions:
+        Blunt: 5
+        Slash: 12
+        Piercing: 4
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+  - type: StaminaDamageResistance
+    coefficient: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier

@@ -65,3 +65,35 @@
       - description: This weapon can be stored on your auxillary suit storage slot.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  name: war hammer
+  parent: BaseItem
+  id: BF14WarHammer
+  description: The perfect tool for wanton carnage.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Melee/warhammer.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Melee/halberd.rsi
+    quickEquip: false
+    slots:
+    - belt
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+  - type: MeleeWeapon
+    heavyStaminaCost: 5
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 25
+        Structural: 5
+    soundHit:
+      collection: MetalThud
+    bluntStaminaDamageFactor: 0.35
+  - type: StaminaDamageOnHit
+    damage: 10
+  - type: Item
+    size: Large
