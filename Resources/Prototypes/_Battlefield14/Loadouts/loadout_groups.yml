@@ -616,3 +616,45 @@
   - LoadoutItemsIFFBoxPACTWhite
   - LoadoutItemsIFFBoxPACTRed
   - LoadoutItemsIFFBoxPACTStGeorge
+
+#region Grenades
+
+- type: loadoutGroup
+  id: BF_GrenadePouch40x46
+  name: loadout-group-BF14-pouchgrenades
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutPouchGrenadesFilled40x46Frag
+  - LoadoutPouchGrenadesFilled40x46HE
+  - LoadoutPouchGrenadesFilled40x46HEDP
+  - LoadoutPouchGrenadesFilled40x46MPAPERS
+
+- type: loadoutGroup
+  id: BF_GrenadeBox40x46
+  name: loadout-group-BF14-boxgrenades
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutBoxMagazine40x46ChemicalSmoke
+  - LoadoutBoxMagazine40x46Illumination
+
+- type: loadoutGroup
+  id: BF_GrenadePouchVOG25
+  name: loadout-group-BF14-pouchgrenades
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutPouchGrenadesFilledVOG25
+  - LoadoutPouchGrenadesFilledVOG25Thermobaric
+
+- type: loadoutGroup
+  id: BF_GrenadeBoxVOG25
+  name: loadout-group-BF14-boxgrenades
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LoadoutBoxMagazineVOG25ChemicalSmoke
+  - LoadoutBoxMagazineVOG25Flashbang
+  - LoadoutBoxMagazineVOG25Illumination
+  - LoadoutBoxMagazineVOG25IlluminationPara

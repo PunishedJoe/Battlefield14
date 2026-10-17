@@ -35,6 +35,7 @@
         whitelist:
           tags:
             - Cartridge40x46mmGrenade
+        whitelistFailPopup: gun-magazine-whitelist-fail
   - type: Gun
     fireRate: 1
     projectileSpeed: 40
@@ -70,6 +71,10 @@
         startingItem: Cartridge40x46mmHE
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 - type: entity
   name: M320
@@ -83,6 +88,10 @@
         startingItem: Cartridge40x46mmHEDP
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 - type: entity
   name: M320
@@ -96,6 +105,10 @@
         startingItem: Cartridge40x46mmFrag
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 - type: entity
   name: M320
@@ -109,7 +122,10 @@
         startingItem: Cartridge40x46mmIllumination
         insertSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_insert.ogg
         ejectSound: /Audio/_Battlefield14/Weapons/Guns/M320/gl_remove.ogg
-
+        whitelist:
+          tags:
+            - Cartridge40x46mmGrenade
+        whitelistFailPopup: gun-magazine-whitelist-fail
 
 - type: entity
   name: M79 (Embiggened)

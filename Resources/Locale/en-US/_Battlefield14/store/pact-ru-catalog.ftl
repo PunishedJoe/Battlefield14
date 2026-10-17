@@ -113,6 +113,12 @@ uplink-PACTRU-43x30-box-Thermobaric-desc = Contains 8 43x30 thermobaric grenades
 uplink-PACTRU-43x30-box-ChemicalSmoke-name = 43x30 CS gas Grenade box
 uplink-PACTRU-43x30-box-ChemicalSmoke-desc = Contains 8 43x30 chemical smoke grenades.
 
+uplink-PACTRU-VOG25-box-HEFrag-name = VOG-25 HE-Frag Grenade box
+uplink-PACTRU-VOG25-box-HEFrag-desc = Contains 8 VOG-25 high explosive fragmenting grenades for the GP-25 line of weapons.
+
+uplink-PACTRU-VOG25-box-ChemicalSmoke-name = GRD-40 'Gvozd' CS gas Grenade box
+uplink-PACTRU-VOG25-box-ChemicalSmoke-desc = Contains 8 GRD-40 'Gvozd' CS gas grenades for the GP-25 line of weapons.
+
 ## Ship ammo
 
 uplink-PACTRU-gromn-frag-name = A-300 Grom-N 30mm fragmentation magazine

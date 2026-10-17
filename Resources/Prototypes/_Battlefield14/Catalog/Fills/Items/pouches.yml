@@ -351,6 +351,68 @@
     - id: SmokeCSGrenadeRUK51
       amount: 3
 
+#region projected grenade pouches
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilled40x46Frag
+  suffix: Filled, 40x46 Frag
+  components:
+  - type: StorageFill
+    contents:
+    - id: Cartridge40x46mmFrag
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilled40x46HE
+  suffix: Filled, 40x46 HE
+  components:
+  - type: StorageFill
+    contents:
+    - id: Cartridge40x46mmHE
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilled40x46HEDP
+  suffix: Filled, 40x46 HEDP
+  components:
+  - type: StorageFill
+    contents:
+    - id: Cartridge40x46mmHEDP
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilled40x46ChemicalSmoke
+  suffix: Filled, 40x46 CS Gas
+  components:
+  - type: StorageFill
+    contents:
+    - id: Cartridge40x46mmChemicalSmokeInfantry
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilled40x46MPAPERS
+  suffix: Filled, 40x46 MP-APERS
+  components:
+  - type: StorageFill
+    contents:
+    - id: Cartridge40x46mmMPAPERS
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilled40x46Illumination
+  suffix: Filled, 40x46 Illumination
+  components:
+  - type: StorageFill
+    contents:
+    - id: Cartridge40x46mmIllumination
+      amount: 6
+
 - type: entity
   parent: PouchGrenades
   id: PouchGrenadesFilledVOG25
@@ -359,6 +421,36 @@
   - type: StorageFill
     contents:
     - id: CartridgeGrenadeVOG25HEFrag
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledVOG25Thermobaric
+  suffix: Filled, VG-40TB
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeGrenadeVOG25Thermobaric
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledVOG25Illumination
+  suffix: Filled, VSG-25
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeGrenadeVOG25Illumination
+      amount: 6
+
+- type: entity
+  parent: PouchGrenades
+  id: PouchGrenadesFilledVOG25IlluminationPara
+  suffix: Filled, VG-40OP
+  components:
+  - type: StorageFill
+    contents:
+    - id: CartridgeGrenadeVOG25IlluminationPara
       amount: 6
 
 #region flare pouches

@@ -30,6 +30,7 @@
   - BF_NATOIFF
   - BF_SoldierGloves
   - BF_JumpsuitsUSMC
+  - BF_GrenadePouch40x46
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -207,6 +208,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_GrenadePouch40x46
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -446,6 +448,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_GrenadePouchVOG25
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsRGFSL
@@ -534,6 +537,7 @@
   - BF_PACTIFF
   - BF_SoldierGloves
   - BF_JumpsuitsVDV
+  - BF_GrenadePouchVOG25
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL

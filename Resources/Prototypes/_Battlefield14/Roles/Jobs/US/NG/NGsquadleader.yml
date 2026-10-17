@@ -49,12 +49,12 @@
     head: ClothingHeadHatHelmetUSUrban
 #    eyes: ClothingEyesGogglesTan
     outerClothing: ClothingOuterArmorPlateCarrierIOTV
-    shoes: ClothingShoesBootsJack
+    shoes: ClothingShoesBootsJackFilledUSMC
 #    back: ClothingBackpackRucksackTan
     suitstorage: WeaponRifleUSCAR15
-    suitstorage2: BF14ClothingArmbandSheathKnifeM7
+    suitstorage2: WeaponGrenadeLauncherUSM320
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSARifleman
+#    pocket2: PouchGrenadesFilledUSARifleman
     rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:

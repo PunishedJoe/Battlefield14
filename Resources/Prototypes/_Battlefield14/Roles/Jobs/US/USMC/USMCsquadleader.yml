@@ -50,8 +50,9 @@
     outerClothing: ClothingOuterArmorPlateCarrierIOTV
     shoes: ClothingShoesBootsJackFilledUSMC
     suitstorage: WeaponRifleUSM27IAR
+    suitstorage2: WeaponGrenadeLauncherUSM320
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCRifleman
+#    pocket2: PouchGrenadesFilledUSMCRifleman
     rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:
