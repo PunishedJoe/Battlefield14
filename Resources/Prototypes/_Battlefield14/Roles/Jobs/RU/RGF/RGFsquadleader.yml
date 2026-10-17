@@ -51,8 +51,9 @@
     outerClothing: ClothingOuterArmorPlateCarrier6B45
     shoes: ClothingShoesBootsJackFilledRU
     suitstorage: WeaponRifleRUAK74MUUK
+    suitstorage2: WeaponGrenadeLauncherRURGM40
     pocket1: PouchFirstAidFilledPACT
-    pocket2: PouchGrenadesFilledRGFRifleman
+#    pocket2: PouchGrenadesFilledRGFRifleman
     rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:
     back:

@@ -52,8 +52,9 @@
     shoes: ClothingShoesBootsJackFilledRU
     neck: ClothingNeckIFFtapeWhite
     suitstorage: WeaponRifleRUAK12Magnified
+    suitstorage2: WeaponGrenadeLauncherRURGM40
     pocket1: PouchFirstAidFilledPACT
-    pocket2: PouchGrenadesFilledVDVRifleman
+#    pocket2: PouchGrenadesFilledVDVRifleman
     rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:
     back:

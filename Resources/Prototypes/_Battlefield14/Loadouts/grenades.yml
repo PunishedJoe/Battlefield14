@@ -1,0 +1,135 @@
+#region US
+
+- type: loadout
+  id: LoadoutBoxMagazine40x46Frag
+  storage:
+    back:
+    - BoxMagazine40x46Frag
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilled40x46Frag
+  name: 40x46mm Frag grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilled40x46Frag
+
+- type: loadout
+  id: LoadoutBoxMagazine40x46HE
+  storage:
+    back:
+    - BoxMagazine40x46HE
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilled40x46HE
+  name: 40x46mm HE grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilled40x46HE
+
+- type: loadout
+  id: LoadoutBoxMagazine40x46HEDP
+  storage:
+    back:
+    - BoxMagazine40x46HEDP
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilled40x46HEDP
+  name: 40x46mm HEDP grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilled40x46HEDP
+
+- type: loadout
+  id: LoadoutBoxMagazine40x4MPAPERS
+  storage:
+    back:
+    - BoxMagazine40x46mmMPAPERS
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilled40x46MPAPERS
+  name: 40x46mm MP-APERS grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilled40x46MPAPERS
+
+- type: loadout
+  id: LoadoutBoxMagazine40x46ChemicalSmoke
+  storage:
+    back:
+    - BoxMagazine40x46ChemicalSmoke
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilled40x46ChemicalSmoke
+  name: 40x46mm CS gas grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilled40x46ChemicalSmoke
+
+- type: loadout
+  id: LoadoutBoxMagazine40x46Illumination
+  storage:
+    back:
+    - BoxMagazine40x46mmIllumination
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilled40x46Illumination
+  name: 40x46mm flare grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilled40x46mm
+
+#region RU
+
+- type: loadout
+  id: LoadoutBoxMagazineVOG25HEFrag
+  storage:
+    back:
+    - BoxMagazineVOG25HEFrag
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilledVOG25
+  name: VOG-25 HE grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilledVOG25
+
+- type: loadout
+  id: LoadoutBoxMagazineVOG25Thermobaric
+  storage:
+    back:
+    - BoxMagazineVOG25Thermobaric
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilledVOG25Thermobaric
+  name: GRD-40TB thermobaric grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilledVOG25Thermobaric
+
+- type: loadout
+  id: LoadoutBoxMagazineVOG25ChemicalSmoke
+  storage:
+    back:
+    - BoxMagazineVOG25ChemicalSmoke
+
+- type: loadout
+  id: LoadoutBoxMagazineVOG25Flashbang
+  storage:
+    back:
+    - BoxMagazineVOG25Flashbang
+
+- type: loadout
+  id: LoadoutBoxMagazineVOG25Illumination
+  storage:
+    back:
+    - BoxMagazineVOG25Illumination
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilledVOG25Illumination
+  name: VSG-25 illumination grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilledVOG25Illumination
+
+- type: loadout
+  id: LoadoutBoxMagazineVOG25IlluminationPara
+  storage:
+    back:
+    - BoxMagazineVOG25IlluminationPara
+
+- type: loadout
+  id: LoadoutPouchGrenadesFilledVOG25IlluminationPara
+  name: VG-40OP illumination grenade pouch
+  equipment:
+    pocket2: PouchGrenadesFilledVOG25IlluminationPara
