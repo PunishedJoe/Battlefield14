@@ -1,0 +1,68 @@
+- type: entity
+  name: halberd
+  parent: BaseItem
+  id: BF14Halberd
+  description: A finely crafted polearm, with an axe and two spikes.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Melee/halberd.rsi
+    state: icon
+  - type: MeleeWeapon
+    heavyStaminaCost: 15
+    wideAnimationRotation: 225
+    animation: WeaponArcKick
+    attackRate: 0.7
+    range: 2
+    angle: 25
+    damage:
+      types:
+        Slash: 10
+        Structural: 5
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: StaminaDamageOnHit
+    damage: 9
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/crowbar_drop.ogg
+      params:
+        volume: 2
+  - type: Wieldable 
+#    unwieldOnUse: false
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Slash: 30
+  - type: ThrowingAngle
+    angle: 225
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 30
+  - type: EmbeddableProjectile
+    offset: -0.15,0.0
+  - type: PhysicalComposition
+    materialComposition: 
+      Steel: 200
+  - type: Item
+    size: Ginormous
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Melee/halberd.rsi
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+#  - type: ToolTileCompatible
+  - type: Tool
+    qualities:
+      - Prying
+    speedModifier: 0.8
+    useSound: /Audio/Items/crowbar.ogg
+  - type: Prying
+    useSound: /Audio/Items/crowbar.ogg
+  - type: UseDelay
+    delay: 1
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
