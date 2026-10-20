@@ -987,3 +987,104 @@
     magState: mag
     steps: 1
     zeroVisible: true
+
+#region underbarrel grenade launchers
+
+- type: entity
+  name: AK-74/GP25
+  parent: BaseWeaponRifle
+  id: WeaponRifleRUAK74GP25
+  description: The communist response to the success of the M16.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK74.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-ak74
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-ak74
+      - state: grip-ak74
+      - state: handguard-ak74
+      - state: barrel-ak74
+      - state: ironsight-ak74
+      - state: gp25
+      - state: mag-ak74-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK74.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -29
+    maxAngle: -30
+  - type: Gun
+    minAngle: 31
+    maxAngle: 42
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 10.8 # 650 RPM
+    projectileSpeed: 45
+    soundGunshot:
+      collection: BF_AK_545_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ChamberMagazineAmmoProvider
+    boltClosed: null # means the bolt doesnt lock back like M16 pattern rifles, also means you need to cycle the gun after an empty mag
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/AK_GENERIC/rack.ogg
+  - type: AlternateGun
+    switchSound:
+      path: /Audio/_FinalHorizon/Weapons/Guns/Deploy/gp25_select.ogg
+  - type: ItemSlots
+    slots:
+      launcher:
+        name: Launcher
+        priority: 1
+        startingItem: BF14WeaponUnderbarrelLauncherGP25
+        locked: true
+      launcher_mag:
+        name: LauncherMag
+        priority: 3
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/GP25/gp25_insert.ogg
+        ejectSound: /Audio/_FinalHorizon/Weapons/Guns/MagOut/gp25_openbarrel.ogg
+        whitelist:
+          tags:
+            - CartridgeGrenadeVOG25
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK74
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 4
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39
+        priority: 2
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag-ak74
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AK-74 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true

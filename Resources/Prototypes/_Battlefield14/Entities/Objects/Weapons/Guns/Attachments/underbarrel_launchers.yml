@@ -1,0 +1,19 @@
+#region US
+
+
+#region RU
+
+- type: entity
+  id: BF14WeaponUnderbarrelLauncherGP25
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: BF_GP25_Gunshots
+      params:
+        volume: -2
+        variation: 0.125
+  - type: AlternateGunAmmoProvider

@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+using Content.Shared._FinalHorizon.Guns.AlternateGun; // FH
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
 using Content.Shared.Administration.Logs;
@@ -46,6 +47,9 @@ namespace Content.Shared.Weapons.Ranged.Systems;
 
 public abstract partial class SharedGunSystem : EntitySystem
 {
+    // FH start
+    [Dependency] private readonly AlternateGunSystem _altGun = default!;
+    // FH end
     [Dependency] private   readonly ActionBlockerSystem _actionBlockerSystem = default!;
     [Dependency] protected readonly IGameTiming Timing = default!;
     [Dependency] protected readonly IMapManager MapManager = default!;
@@ -260,8 +264,9 @@ public abstract partial class SharedGunSystem : EntitySystem
             hands.ActiveHandEntity is { } held &&
             TryComp(held, out GunComponent? gun))
         {
-            gunEntity = held;
-            gunComp = gun;
+            var altFart = _altGun.CheckForAltGun((held, gunComp));
+            gunEntity = altFart.Entity;
+            gunComp = altFart.Comp;
             return true;
         }
 
@@ -277,8 +282,9 @@ public abstract partial class SharedGunSystem : EntitySystem
         // Last resort is check if the entity itself is a gun.
         if (TryComp(entity, out gun))
         {
-            gunEntity = entity;
-            gunComp = gun;
+            var altFart = _altGun.CheckForAltGun((held, gunComp));
+            gunEntity = altFart.Entity;
+            gunComp = altFart.Comp;
             return true;
         }
 
@@ -653,7 +659,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         }
     }
 
-    protected IShootable EnsureShootable(EntityUid uid)
+    public IShootable EnsureShootable(EntityUid uid) // FH - makes this public
     {
         if (TryComp<CartridgeAmmoComponent>(uid, out var cartridge))
             return cartridge;
