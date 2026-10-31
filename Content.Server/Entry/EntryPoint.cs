@@ -1,3 +1,4 @@
+using System.Reflection;
 using Content.Server._NF.Auth;
 using Content.Server.Acz;
 using Content.Server.Administration;
@@ -30,6 +31,7 @@ using Content.Shared.Kitchen;
 using Content.Shared.Localizations;
 using Robust.Server;
 using Robust.Server.ServerStatus;
+using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.ContentPack;
 using Robust.Shared.Prototypes;
@@ -62,6 +64,7 @@ namespace Content.Server.Entry
             var logManager = IoCManager.Resolve<ILogManager>();
 
             LoadConfigPresets(cfg, res, logManager.GetSawmill("configpreset"));
+            SetEngineBuildVersion(cfg);
 
             var aczProvider = new ContentMagicAczProvider(IoCManager.Resolve<IDependencyCollection>());
             IoCManager.Resolve<IStatusHost>().SetMagicAczProvider(aczProvider);
@@ -216,6 +219,19 @@ namespace Content.Server.Entry
                 cfg.LoadDefaultsFromTomlStream(file);
                 sawmill.Info("Loaded config preset: {Preset}", path);
             }
+        }
+
+        private static void SetEngineBuildVersion(IConfigurationManager cfg)
+        {
+            var assembly = typeof(CVars).Assembly;
+            var numericVersion = assembly.GetName().Version?.ToString(3);
+            if (cfg.GetCVar(CVars.BuildEngineVersion) != numericVersion)
+                return;
+
+            var informationalVersion = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?
+                .InformationalVersion;
+            if (informationalVersion != null)
+                cfg.SetCVar(CVars.BuildEngineVersion, informationalVersion.Split('+')[0]);
         }
 
         private static void LoadBuildConfigPresets(IConfigurationManager cfg, IResourceManager res, ISawmill sawmill)
