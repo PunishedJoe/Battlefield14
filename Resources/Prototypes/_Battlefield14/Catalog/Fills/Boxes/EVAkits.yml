@@ -29,7 +29,7 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterVoidsuitAmericanCombatMarine
-      - id: ClothingShoesBootsMagAshenFilled
+      - id: BF14ClothingShoesBootsMagTacticalFilled
       - id: DoubleEmergencyOxygenTankFilled
       - id: HandHeldMassScanner
       - id: HandheldGPSBasic
@@ -44,7 +44,7 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterVoidsuitGermanCombat
-      - id: ClothingShoesBootsMagAshenFilled
+      - id: BF14ClothingShoesBootsMagTacticalFilled
       - id: DoubleEmergencyOxygenTankFilled
       - id: HandHeldMassScanner
       - id: HandheldGPSBasic
@@ -59,7 +59,7 @@
   - type: StorageFill
     contents:
       - id: ClothingOuterVoidsuitRussianCombat
-      - id: ClothingShoesBootsMagAshenFilled
+      - id: BF14ClothingShoesBootsMagTacticalFilled
       - id: DoubleEmergencyOxygenTankFilled
       - id: HandHeldMassScanner
       - id: HandheldGPSBasic
