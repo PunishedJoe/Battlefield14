@@ -44,9 +44,9 @@ public sealed class UserDbDataManager : IPostInjectInit
 
     public void ClientDisconnected(ICommonSession session)
     {
-        _users.Remove(session.UserId, out var data);
-        if (data == null)
-            throw new InvalidOperationException("Did not have cached data in ClientDisconnect!");
+        // A session can disconnect before it reaches InGame and calls ClientConnected.
+        if (!_users.Remove(session.UserId, out var data))
+            return;
 
         data.Cancel.Cancel();
         data.Cancel.Dispose();
