@@ -19,7 +19,7 @@ public class RaiseEventBenchmark
     [GlobalSetup]
     public void Setup()
     {
-        ProgramShared.PathOffset = "../../../../";
+        BenchmarkPath.Configure();
         PoolManager.Startup(typeof(BenchSystem).Assembly);
         _pair = PoolManager.GetServerClient().GetAwaiter().GetResult();
         var entMan = _pair.Server.EntMan;

@@ -58,7 +58,7 @@ public class DeviceNetworkingBenchmark
     [GlobalSetup]
     public async Task SetupAsync()
     {
-        ProgramShared.PathOffset = "../../../../";
+        BenchmarkPath.Configure();
         PoolManager.Startup(typeof(DeviceNetworkingBenchmark).Assembly);
         _pair = await PoolManager.GetServerClient();
         var server = _pair.Server;
