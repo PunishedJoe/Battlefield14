@@ -46,7 +46,7 @@ public class PvsBenchmark
     public void Setup()
     {
 #if !DEBUG
-        ProgramShared.PathOffset = "../../../../";
+        BenchmarkPath.Configure();
 #endif
         PoolManager.Startup();
 
