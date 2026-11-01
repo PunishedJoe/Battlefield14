@@ -44,14 +44,15 @@
   equipment:
     id: USSFSquadLeaderPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltAssaultFilledG36TracerRed
+    belt: ClothingBeltAssaultFilledM30MRC
     jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
     head: ClothingHeadHatBeretCommander
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilledUSMC
-    suitstorage: WeaponRifleUSXM8
+    suitstorage2: WeaponGrenadeLauncherUSM320
+    suitstorage: WeaponRifleUSM30MRC
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSARifleman
+#    pocket2: PouchGrenadesFilledUSARifleman
     rightarmband: ClothingArmbandThighHolsterFilledUSMK27
   storage:
     back:

@@ -17,12 +17,13 @@
     unwieldOnUse: false
   - type: AmmoCounter
   - type: GunWieldBonus
-    minAngle: -14
+    minAngle: -11
     maxAngle: -16
   - type: Gun
     minAngle: 16
     maxAngle: 32
     angleIncrease: 1
+    angleDecay: 8
     projectileSpeed: 45
     availableModes:
     - SemiAuto
@@ -30,7 +31,7 @@
     selectedMode: Burst
     shotsPerBurst: 5
     burstCooldown: 0.2
-    burstFireRate: 7
+    burstFireRate: 15 # 7
     fireRate: 7
     soundGunshot:
       path: /Audio/_HaloSSE/Weapons/UNSC/Assault_Rifle_Fire_New.ogg
