@@ -1,0 +1,152 @@
+{
+    "version": 1,
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Made by JoeHammad",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+    {
+      "name": "natocaptain"
+    },
+    {
+      "name": "natosquadleader"
+    },
+    {
+      "name": "natoinfantry"
+    },
+    {
+      "name": "natosupport"
+    },
+    {
+      "name": "natomachinegunner"
+    },
+    {
+      "name": "natoautorifleman"
+    },
+    {
+      "name": "natogrenadier"
+    },
+    {
+      "name": "natomedic"
+    },
+    {
+      "name": "natorecon"
+    },
+    {
+      "name": "natomarksman"
+    },
+    {
+      "name": "natoengineer"
+    },
+    {
+      "name": "natoradio"
+    },
+    {
+      "name": "natofighterpilot"
+    },
+    {
+      "name": "natospecialforces"
+    },
+    {
+      "name": "natoallycaptain"
+    },
+    {
+      "name": "natoallysquadleader"
+    },
+    {
+      "name": "natoallyinfantry"
+    },
+    {
+      "name": "natoallysupport"
+    },
+    {
+      "name": "natoallymachinegunner"
+    },
+    {
+      "name": "natoallyautorifleman"
+    },
+    {
+      "name": "natoallygrenadier"
+    },
+    {
+      "name": "natoallymedic"
+    },
+    {
+      "name": "natoallyrecon"
+    },
+    {
+      "name": "natoallymarksman"
+    },
+    {
+      "name": "natoallyengineer"
+    },
+    {
+      "name": "pactcaptain"
+    },
+    {
+      "name": "pactsquadleader"
+    },
+    {
+      "name": "pactinfantry"
+    },
+    {
+      "name": "pactsupport"
+    },
+    {
+      "name": "pactmachinegunner"
+    },
+    {
+      "name": "pactautorifleman"
+    },
+    {
+      "name": "pactgrenadier"
+    },
+    {
+      "name": "pactmedic"
+    },
+    {
+      "name": "pactrecon"
+    },
+    {
+      "name": "pactmarksman"
+    },
+    {
+      "name": "pactengineer"
+    },
+    {
+      "name": "pactradio"
+    },
+    {
+      "name": "pactfighterpilot"
+    },
+    {
+      "name": "pactspecialforces"
+    },
+    {
+      "name": "pactallycaptain"
+    },
+    {
+      "name": "pactallysquadleader"
+    },
+    {
+      "name": "pactallyinfantry"
+    },
+    {
+      "name": "indcaptain"
+    },
+    {
+      "name": "indsquadleader"
+    },
+    {
+      "name": "indinfantry"
+    },
+    {
+      "name": "indwarden"
+    },
+    {
+      "name": "indsecurity"
+    }
+  ]
+}

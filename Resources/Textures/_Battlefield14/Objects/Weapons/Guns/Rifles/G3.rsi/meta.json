@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "Icons made by WillyBillyGilly, permission given for use in the Battlefield14 project. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "size": {
+    "x": 64,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon-G3A3"
+    },
+    {
+      "name": "icon-G3A3ZF"
+    },
+    {
+      "name": "icon-HK51"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "bolt-open"
+    },
+    {
+      "name": "mag-0"
+    },
+    {
+      "name": "furniture-G3A3"
+    },
+    {
+      "name": "furniture-HK51"
+    },
+    {
+      "name": "ZF"
+    }
+  ]
+}

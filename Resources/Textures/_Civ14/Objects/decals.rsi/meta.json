@@ -1,0 +1,197 @@
+{
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "gas",
+            "delays": [
+                [
+                    0.3,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "open",
+            "delays": [
+                [
+                    0.6,
+                    0.6
+                ]
+            ]
+        },
+        {
+            "name": "gunshop",
+            "delays": [
+                [
+                    0.3,
+                    0.5
+                ]
+            ]
+        },
+        {
+            "name": "barber",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "zebracrossing",
+            "directions": 4
+        },
+        {
+            "name": "yeld"
+        },
+        {
+            "name": "stop"
+        },
+        {
+            "name": "donotenter"
+        },
+        {
+            "name": "parking"
+        },
+        {
+            "name": "cafesign"
+        },
+        {
+            "name": "cafesign_ru"
+        },
+        {
+            "name": "barsign"
+        },
+        {
+            "name": "gasolinesign"
+        },
+        {
+            "name": "humansign"
+        },
+        {
+            "name": "waysign"
+        },
+        {
+            "name": "zebra"
+        },
+        {
+            "name": "centralline"
+        },
+        {
+            "name": "sideline"
+        },
+        {
+            "name": "trespass"
+        },
+        {
+            "name": "minefield"
+        },
+        {
+            "name": "bank"
+        },
+        {
+            "name": "yellow_logo"
+        },
+        {
+            "name": "redcross"
+        },
+        {
+            "name": "greencross"
+        },
+        {
+            "name": "sale"
+        },
+        {
+            "name": "rent"
+        },
+        {
+            "name": "clock"
+        },
+        {
+            "name": "orthodox1"
+        },
+        {
+            "name": "orthodox2"
+        },
+        {
+            "name": "orthodox3"
+        },
+        {
+            "name": "delta_force"
+        },
+        {
+            "name": "delta_force2"
+        },
+        {
+            "name": "delta_force3"
+        },
+        {
+            "name": "mcd"
+        },
+        {
+            "name": "mcd-pole"
+        },
+        {
+            "name": "mcd2"
+        },
+        {
+            "name": "mcd3"
+        },
+        {
+            "name": "signpost_pole"
+        },
+        {
+            "name": "signpost_east"
+        },
+        {
+            "name": "signpost_south"
+        },
+        {
+            "name": "signpost_north"
+        },
+        {
+            "name": "signpost_west"
+        },
+        {
+            "name": "hitler"
+        },
+        {
+            "name": "lenin"
+        },
+        {
+            "name": "stalin"
+        },
+        {
+            "name": "brezhnev"
+        },
+        {
+            "name": "sokolov"
+        },
+        {
+            "name": "vp"
+        },
+        {
+            "name": "hirohito"
+        },
+        {
+            "name": "kinggeorgev"
+        },
+        {
+            "name": "donut_shop"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "license": "Custom",
+  "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Edited by JoeHammad. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "base-red"
+    },
+    {
+      "name": "base-yellow"
+    },
+    {
+      "name": "base-purple"
+    },
+    {
+      "name": "base-darkblue"
+    },
+    {
+      "name": "base-green"
+    },
+    {
+      "name": "base-white"
+    },
+    {
+      "name": "band"
+    },
+    {
+      "name": "mag-1"
+    },
+    {
+      "name": "mag-2"
+    }
+  ]
+}

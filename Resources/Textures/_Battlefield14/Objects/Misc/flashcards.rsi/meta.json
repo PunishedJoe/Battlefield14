@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "Made by JoeHammad.",
+  "size": {
+    "x": 250,
+    "y": 250
+  },
+  "states": [
+    {
+      "name": "CardNATO"
+    },
+    {
+      "name": "CardPACT"
+    },
+    {
+      "name": "CardIND"
+    }
+  ]
+}

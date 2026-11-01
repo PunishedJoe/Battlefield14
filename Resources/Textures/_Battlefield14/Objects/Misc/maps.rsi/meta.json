@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "Made by WillyBillyGilly. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "customs"
+    },
+    {
+      "name": "interchange"
+    },
+    {
+      "name": "taurus"
+    },
+    {
+      "name": "taurus-storage"
+    },
+    {
+      "name": "springfield"
+    },
+    {
+      "name": "springfield-storage"
+    },
+    {
+      "name": "bengalsk"
+    },
+    {
+      "name": "bengalsk-storage"
+    },
+    {
+      "name": "cedarcreek"
+    },
+    {
+      "name": "cedarcreek-storage"
+    }
+  ]
+}

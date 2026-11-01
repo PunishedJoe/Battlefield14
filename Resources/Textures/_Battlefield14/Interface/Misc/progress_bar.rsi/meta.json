@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "size": {
+        "x": 24,
+        "y": 7
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Made by JoeHammad",
+    "states": [
+        {
+            "name": "icon"
+        }
+    ]
+}

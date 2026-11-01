@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "license": "Custom",
+  "copyright": "Created by WillyBillyGilly for Battlefield14, animated by JoeHammad, all rights reserved for Battlefield14. Do not modify, publish, use, relicense, or edit.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "critical",
+      "delays": [
+        [
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by JoeHammad",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "acog"
+    },
+    {
+      "name": "M68"
+    },
+    {
+      "name": "eotech"
+    },
+    {
+      "name": "okp7"
+    },
+    {
+      "name": "1p87"
+    },
+    {
+      "name": "svd"
+    }
+  ]
+}

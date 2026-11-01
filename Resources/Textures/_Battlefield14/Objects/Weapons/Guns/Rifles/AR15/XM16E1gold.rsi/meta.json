@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "All rights reserved",
+  "copyright": "Made by WillyBillyGilly for the Battlefield 14 project, edited by Joehammad, do not relicense, edit, or reuse without permission",
+  "size": {
+    "x": 64,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "bolt-open"
+    },
+    {
+      "name": "mag-0"
+    }
+  ]
+}

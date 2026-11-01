@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "license": "All rights reserved",
+  "copyright": "Made by WillyBillyGilly for use in Battlefield 14.",
+  "size": {
+    "x": 64,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon-full-M16A1"
+    },
+    {
+      "name": "icon-full-M16A2"
+    },
+    {
+      "name": "icon-full-M16A4"
+    },
+    {
+      "name": "icon-full-M27IAR"
+    },
+    {
+      "name": "icon-full-M27RWK"
+    },
+    {
+      "name": "icon-full-M4A1"
+    },
+    {
+      "name": "icon-full-M4"
+    },
+    {
+      "name": "icon-full-CAR15"
+    },
+    {
+      "name": "base"
+    },
+    {
+      "name": "bolt-open"
+    },
+    {
+      "name": "mag-30-0"
+    },
+    {
+      "name": "mag-20-0"
+    },
+    {
+      "name": "mag-9mm-0"
+    },
+    {
+      "name": "acog"
+    },
+    {
+      "name": "longcog"
+    },
+    {
+      "name": "LPVO"
+    },
+    {
+      "name": "reddot"
+    },
+    {
+      "name": "holosight"
+    },
+    {
+      "name": "carryhandle"
+    },
+    {
+      "name": "carryhandle-reddot"
+    },
+    {
+      "name": "foregrip"
+    },
+    {
+      "name": "foregrip-short"
+    },
+    {
+      "name": "railcover"
+    },
+    {
+      "name": "supp"
+    },
+    {
+      "name": "supp-sopmod"
+    },
+    {
+      "name": "muzzle-brake"
+    },
+    {
+      "name": "muzzle-comp"
+    },
+    {
+      "name": "stock-full"
+    },
+    {
+      "name": "stock-full-short"
+    },
+    {
+      "name": "stock-adjustable"
+    },
+    {
+      "name": "stock-adjustable-HK"
+    },
+    {
+      "name": "stock-adjustable-sopmod1"
+    },
+    {
+      "name": "stock-adjustable-sopmod2"
+    },
+    {
+      "name": "rifle-length-barrel-quadrail"
+    },
+    {
+      "name": "rifle-length-barrel-clamshell"
+    },
+    {
+      "name": "rifle-length-barrel-M16"
+    },
+    {
+      "name": "rifle-length-barrel-grenadier"
+    },
+    {
+      "name": "rifle-length-barrel-M27"
+    },
+    {
+      "name": "carbine-length-barrel-quadrail"
+    },
+    {
+      "name": "carbine-length-barrel-clamshell"
+    },
+    {
+      "name": "carbine-length-barrel-XM177"
+    },
+    {
+      "name": "carbine-length-barrel-M27"
+    },
+    {
+      "name": "carbine-length-barrel-M231"
+    },
+    {
+      "name": "grip"
+    },
+    {
+      "name": "grip-HK"
+    },
+    {
+      "name": "laser"
+    },
+    {
+      "name": "laser-taped"
+    },
+    {
+      "name": "bayonet-m7"
+    },
+    {
+      "name": "bayonet-m9"
+    },
+    {
+      "name": "M203"
+    },
+    {
+      "name": "gooseneck"
+    }
+  ]
+}

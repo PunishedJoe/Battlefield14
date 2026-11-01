@@ -1,0 +1,56 @@
+{
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "linenbin-full"
+        },
+        {
+            "name": "linenbin-half"
+        },
+        {
+            "name": "linenbin-empty"
+        },
+        {
+            "name": "palisade",
+            "directions": 4
+        },
+        {
+            "name": "concrete",
+            "directions": 4
+        },
+        {
+            "name": "bank_glass"
+        },
+        {
+            "name": "bank_glass_open"
+        },
+        {
+            "name": "shelfwood"
+        },
+        {
+            "name": "storeshelf"
+        },
+        {
+            "name": "camonet"
+        },
+        {
+            "name": "camonet_opaque"
+        },
+        {
+            "name": "crowd_barrier",
+            "directions": 4
+        },
+        {
+            "name": "lift_panel"
+        },
+        {
+            "name": "lift_panel2"
+        }
+    ]
+}

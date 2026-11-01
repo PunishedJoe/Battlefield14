@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Icon Taken from Civ13 at commit https://github.com/Civ13/Civ13/pull/1199/changes/0e286d4601291187993d30c39a2583702228e420",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "flashlight"
+    },
+    {
+      "name": "flashlight-on"
+    },
+    {
+      "name": "flashlight-overlay"
+    },
+    {
+      "name": "inhand-left-light",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right-light",
+      "directions": 4
+    }
+  ]
+}

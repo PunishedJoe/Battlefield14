@@ -1,0 +1,44 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Escalation. rusfedflag by JoeHammad",
+    "size": {
+        "x": 128,
+        "y": 128
+    },
+    "states": [
+        {
+            "name": "usaflag"
+        },
+        {
+            "name": "natoflag"
+        },
+        {
+            "name": "germanflag"
+        },
+        {
+            "name": "britishflag"
+        },
+        {
+            "name": "heerflag"
+        },
+        {
+            "name": "rusfedflag"
+        },
+        {
+            "name": "ddrflag"
+        },
+        {
+            "name": "cslaflag"
+        },
+        {
+            "name": "finnflag"
+        },
+        {
+            "name": "sovietflag"
+        },
+        {
+            "name": "whiteflag"
+        }
+    ]
+}

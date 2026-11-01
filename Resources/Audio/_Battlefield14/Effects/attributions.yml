@@ -1,0 +1,14 @@
+- files: ["armor_break"]
+  license: "CC-BY-3.0" # I ACTUALLY DONT KNOW SORRY
+  copyright: 'Taken from the HaloSSE project and converted to mono by JoeHammad'
+  source: "https://github.com/HaloSpaceStation/HaloSpaceStation13/blob/alpha/code/modules/halo/sounds/effects/armor_break.ogg"
+
+- files: ["YouAreGoingToDie.ogg"]
+  license: "CC-BY-3.0"
+  copyright: 'Kevin Macleod'
+  source: "https://www.youtube.com/watch?v=4yV_gv299VM"
+
+- files: ["YouAreGoingToDieFast.ogg"]
+  license: "CC-BY-3.0"
+  copyright: 'Kevin Macleod'
+  source: "https://www.youtube.com/watch?v=4yV_gv299VM"

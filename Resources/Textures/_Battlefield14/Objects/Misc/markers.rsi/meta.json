@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-4.0",
+  "copyright": "Made by WillyBillyGilly. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "lowclothing"
+    },
+    {
+      "name": "lowclothingindustrial"
+    },
+    {
+      "name": "lowgunus"
+    },
+    {
+      "name": "midgunus"
+    },
+    {
+      "name": "highgunus"
+    },
+    {
+      "name": "lowammous"
+    },
+    {
+      "name": "midammous"
+    },
+    {
+      "name": "highammous"
+    },
+    {
+      "name": "lowgunde"
+    },
+    {
+      "name": "lowgunru"
+    },
+    {
+      "name": "midgunru"
+    },
+    {
+      "name": "midgunde"
+    },
+    {
+      "name": "midclothing"
+    },
+    {
+      "name": "highgunde"
+    },
+    {
+      "name": "highgunru"
+    },
+    {
+      "name": "lowammoru"
+    },
+    {
+      "name": "midammoru"
+    },
+    {
+      "name": "highammoru"
+    },
+    {
+      "name": "lowarmor"
+    },
+    {
+      "name": "midarmor"
+    },
+    {
+      "name": "higharmor"
+    }
+  ]
+}

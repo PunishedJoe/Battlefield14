@@ -1,0 +1,137 @@
+{
+	"version": 1,
+	"license": "CC-BY-SA-3.0",
+    "copyright": "Icons taken from haloSSE, inhands taken from TG at https://github.com/tgstation/tgstation/tree/727eb0a445bccbdc2d472e158e96b87fc0e997a1. surgery states taken from bay12, bezerk inhands by JoeHammad",
+	"size": {
+		"x": 32,
+		"y": 32
+	},
+	"states": [
+		{
+			"name": "firstaid"
+		},
+		{
+      "name": "firstaid-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "firstaid-inhand-left",
+      "directions": 4
+    },
+		{
+			"name": "ointment"
+		},
+		{
+			"name": "firefirstaid"
+		},
+		{
+      "name": "burnkit-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "burnkit-inhand-left",
+      "directions": 4
+    },
+		{
+			"name": "o2kit"
+		},
+		{
+      "name": "o2kit-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "o2kit-inhand-left",
+      "directions": 4
+    },
+		{
+			"name": "antitoxin"
+		},
+		{
+			"name": "antitoxfirstaid"
+		},
+		{
+			"name": "antitoxfirstaid2"
+		},
+		{
+			"name": "antitoxfirstaid3"
+		},
+		{
+      "name": "toxinkit-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "toxinkit-inhand-left",
+      "directions": 4
+    },
+		{
+			"name": "radfirstaid"
+		},
+		{
+			"name": "radfirstaid2"
+		},
+		{
+			"name": "radfirstaid3"
+		},
+		{
+      "name": "radkit-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "radkit-inhand-left",
+      "directions": 4
+    },
+    {
+			"name": "purplefirstaid"
+		},
+    {
+			"name": "purplefireaid"
+		},
+    {
+			"name": "purpletoxaid"
+		},
+		{
+      "name": "purplekit-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "purplekit-inhand-left",
+      "directions": 4
+    },
+    {
+			"name": "surgery"
+		},
+    {
+			"name": "surgerykit"
+		},
+		{
+      "name": "surgery-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "surgery-inhand-left",
+      "directions": 4
+    },
+    {
+			"name": "advfirstaid"
+		},
+		{
+      "name": "advkit-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "advkit-inhand-left",
+      "directions": 4
+    },
+    {
+			"name": "bezerk"
+		},
+		{
+      "name": "bezerk-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "bezerk-inhand-left",
+      "directions": 4
+    }
+	]
+}
