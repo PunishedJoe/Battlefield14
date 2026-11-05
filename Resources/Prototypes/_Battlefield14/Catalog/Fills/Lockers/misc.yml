@@ -22,8 +22,7 @@
     - id: RadioHandheldNF
     - id: FlashlightLantern
     - id: WelderMini
-    - id: BlisterPackSyretteInaprovaline
-    - id: BlisterPackDexalin
+    - id: MedicationBoxComboInaprovalineDexalin
     - id: MonoMRE
 
 - type: entity
@@ -54,8 +53,7 @@
     - id: RadioHandheldNF
     - id: FlashlightLantern
     - id: WelderMini
-    - id: BlisterPackSyretteInaprovaline
-    - id: BlisterPackDexalin
+    - id: MedicationBoxComboInaprovalineDexalin
     - id: MonoMRE
 
 - type: entity

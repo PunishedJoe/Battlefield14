@@ -74,9 +74,13 @@
       collection: FragGrenadeSFX
   - type: ExtendDescription
     descriptionList:
-      - description: Has a random timer between 3-5 seconds, produces shrapnel.
+      - description: Has a random timer between 3-5 seconds.
         fontSize: 12
         color: "#4f94ad"
+        requireDetailRange: true
+      - description: Produces shrapnel.
+        fontSize: 12
+        color: white
         requireDetailRange: true
 
 - type: entity
@@ -155,11 +159,30 @@
   parent: BF14GrenadeBaseDefensive
   id: DefensiveGrenadeUSM67
   components:
+  - type: ExpendableLight # Makes you have to do an extra Z input but with a sound effect, simulates the safety clip
+    litSound:
+      path: /Audio/Items/Handcuffs/rope_breakout.ogg
+  - type: PointLight
+    enabled: false
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m67.rsi
   - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m67.rsi
     state: base
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a random timer between 3-5 seconds.
+        fontSize: 12
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Produces shrapnel.
+        fontSize: 12
+        color: white
+        requireDetailRange: true
+      - description: Requires a safety clip to be removed before the pin can be pulled.
+        fontSize: 12
+        color: red
+        requireDetailRange: true
 
 - type: entity
   id: BulletGrenadeM67Fragment
@@ -341,7 +364,7 @@
     tags:
       - Grenade
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m67.rsi
     layers:
     - state: icon
     - state: primed
@@ -382,9 +405,10 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade
-    maxIntensity: 10
-    intensitySlope: 2
     totalIntensity: 30
+    intensitySlope: 4
+    maxIntensity: 6
+    maxTileBreak: 0
     canCreateVacuum: false
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeF1Fragment
@@ -419,6 +443,9 @@
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m18.rsi
+  - type: Icon
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m18.rsi
+    state: base
 
 - type: entity
   name: M84 flashbang
@@ -428,6 +455,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi
+    state: base
 
 - type: entity
   name: M58 CS gas grenade
@@ -541,6 +571,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/DM45.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/DM45.rsi
+    state: base
 
 #region RU
 
@@ -551,9 +584,9 @@
   id: OffensiveGrenadeRURGD5
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rgd5.rsi
   - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rgd5.rsi
     state: base
   - type: TimerTriggerVisuals
     primingSound:
@@ -591,9 +624,9 @@
   id: DefensiveGrenadeRUF1
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/f1.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/f1.rsi
   - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Grenades/f1.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/f1.rsi
     state: base
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeF1Fragment
@@ -761,7 +794,10 @@
   id: SmokeGrenadeRURDG
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/rdg2.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rdg2.rsi
+  - type: Icon
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rdg2.rsi
+    state: base
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger3.ogg"
@@ -784,6 +820,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/zarya.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/zarya.rsi
+    state: base
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"
@@ -987,3 +1026,52 @@
       Glass: 100
   - type: StaticPrice
     price: 16
+
+- type: entity
+  description: An outdated blast grenade due to having its body partially containing asbestos, but the people using this definetly don't care. Requires a safety clip to be removed before the pin can be pulled.
+  parent: OffensiveGrenadeUSMK3A2
+  id: OffensiveGrenadeCMBMK3A2
+  suffix: CMB
+  components:
+  - type: Sprite
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/mk3a2.rsi
+  - type: Icon
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/mk3a2.rsi
+    state: base
+  - type: ExpendableLight
+    spentName: expendable-light-spent-red-glowstick-name
+    glowColorLit: red
+    glowDuration: 600
+    fadeOutDuration: 100
+    turnOnBehaviourID: turn_on
+    fadeOutBehaviourID: fade_out
+    litSound:
+      path: /Audio/Items/Handcuffs/rope_breakout.ogg
+  - type: PointLight
+    color: red
+    radius: 1.1
+    energy: 4
+    enabled: false
+    netsync: false
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour # slowly fade in once activated
+        id: turn_on
+        interpolate: Linear
+        maxDuration: 0.5
+        startValue: 0.0
+        endValue: 3.0
+        property: Energy
+      - !type:FadeBehaviour # fade out energy as it burns out
+        id: fade_out
+        interpolate: Linear
+        maxDuration: 10 # 300.0
+        startValue: 3.0
+        endValue: 0.2
+        property: Energy
+      - !type:FadeBehaviour # fade out radius as it burns out
+        id: fade_out
+        interpolate: Linear
+        maxDuration: 10 # 300.0
+        startValue: 5.0
+        endValue: 1.5
