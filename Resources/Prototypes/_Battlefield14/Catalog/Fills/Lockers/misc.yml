@@ -14,3 +14,66 @@
         - id: ClothingUniformJumpsuitMechanic
         - id: ClothingEyesGlassesSafetyGoggles
 
+- type: entityTable
+  id: FillLockerEmergencyNATO
+  table: !type:AllSelector
+    children:
+    - id: EVAKitNASA
+    - id: RadioHandheldNF
+    - id: FlashlightLantern
+    - id: WelderMini
+    - id: BlisterPackSyretteInaprovaline
+    - id: BlisterPackDexalin
+    - id: MonoMRE
+
+- type: entity
+  id: BF14ClosetEmergencyFilledNATO
+  parent: ClosetEmergency
+  suffix: Filled, BF14, NATO
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillLockerEmergencyNATO
+
+- type: entity
+  id: BF14ClosetWallEmergencyFilledNATO
+  parent: ClosetWallEmergency
+  suffix: Filled, BF14, NATO
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillLockerEmergencyNATO
+
+- type: entityTable
+  id: FillLockerEmergencyPACT
+  table: !type:AllSelector
+    children:
+    - id: EVAKitVKS
+    - id: RadioHandheldNF
+    - id: FlashlightLantern
+    - id: WelderMini
+    - id: BlisterPackSyretteInaprovaline
+    - id: BlisterPackDexalin
+    - id: MonoMRE
+
+- type: entity
+  id: BF14ClosetEmergencyFilledPACT
+  parent: ClosetEmergency
+  suffix: Filled, BF14, PACT
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillLockerEmergencyPACT
+
+- type: entity
+  id: BF14ClosetWallEmergencyFilledPACT
+  parent: ClosetWallEmergency
+  suffix: Filled, BF14, PACT
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillLockerEmergencyPACT

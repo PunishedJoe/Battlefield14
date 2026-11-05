@@ -3,6 +3,18 @@
 #region NATO | America
 
 - type: entity
+  id: LockerArmoryNATOFilledEVAKitNASA
+  suffix: Filled, NASA EVA
+  parent: LockerArmoryNATOSoldier
+  name: NATO locker
+  components:
+  - type: StorageFill
+    contents:
+        - id: EVAKitNASA
+  - type: AccessReader
+    access: [["NATOCommon"]]
+
+- type: entity
   id: LockerArmoryNATOFilledM249Para
   suffix: Filled, M249 Para
   parent: LockerArmoryNATOSoldier
