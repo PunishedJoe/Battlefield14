@@ -72,7 +72,7 @@
         amount: 4
     - name: Weapons
       entries:
-      - id: WeaponRifleUSM30MRC
+      - id: WeaponRifleUSXM8
         amount: 10
       - id: WeaponRifleUSM27IAR
         amount: 3
@@ -232,8 +232,10 @@
     sections:
     - name: Magazine boxes
       entries:
-      - id: BoxMagazineM30
-        amount: 5
+      - id: BoxMagazineG36
+        amount: 3
+      - id: BoxMagazineG36TracerRed
+        amount: 2
       - id: BoxMagazineSTANAG
         amount: 1
       - id: BoxMagazineSTANAGTracerRed
@@ -244,10 +246,12 @@
         amount: 4
     - name: Loose rounds
       entries:
-      - id: MagazineBox473x33Big
+      - id: MagazineBox556x45Big
         amount: 2
-      - id: MagazineBox473x33
-        amount: 5
+      - id: BF14AmmoPackTearable556x45Clips
+        amount: 3
+      - id: MagazineBox556x45
+        amount: 2
       - id: MagazineBox762x51Big
         amount: 1
       - id: MagazineBox762x51

@@ -41,12 +41,12 @@
   equipment:
     id: USSFRiflemanPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltAssaultFilledM30MRC
+    belt: ClothingBeltAssaultFilledG36
     jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
     head: ClothingHeadHatBlacksoft
     outerClothing: ClothingOuterArmorPlateCarrierBlack
     shoes: ClothingShoesBootsJackFilledUSMC
-    suitstorage: WeaponRifleUSM30MRC
+    suitstorage: WeaponRifleUSXM8
     pocket1: PouchFirstAidFilled
     pocket2: PouchGrenadesFilledUSARifleman
   storage:
