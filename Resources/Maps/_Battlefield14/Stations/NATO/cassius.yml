@@ -21011,6 +21011,11 @@ entities:
     - type: Transform
       pos: -1.5,-40.5
       parent: 1
+  - uid: 8004
+    components:
+    - type: Transform
+      pos: -1.5,-40.5
+      parent: 1
 - proto: GravityGenerator
   entities:
   - uid: 3182
