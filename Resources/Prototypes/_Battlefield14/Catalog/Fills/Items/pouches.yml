@@ -29,6 +29,17 @@
     - id: BF14SyretteInaprovalineCapped
 
 - type: entity
+  parent: PouchFirstAidSmall
+  id: PouchFirstAidSmallFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: BF14DressingPacket
+    - id: BlisterPackTricordrazine
+    - id: Tourniquet
+
+- type: entity
   parent: PouchMedkit
   id: PouchMedkitFilled
   suffix: Filled
@@ -59,6 +70,20 @@
       - id: PillCanisterTricordrazine
       - id: Tourniquet
         amount: 2
+
+- type: entity
+  parent: PouchSurgery
+  id: PouchSurgeryFilled
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: Scalpel
+      - id: Retractor
+      - id: Hemostat
+      - id: Cautery
+      - id: BoneGel
+      - id: HandheldHealthAnalyzerUnpowered
 
 #region magazine pouches
 

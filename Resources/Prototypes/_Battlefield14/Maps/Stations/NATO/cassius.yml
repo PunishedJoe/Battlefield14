@@ -1,0 +1,40 @@
+- type: pointOfInterest
+  id: NATOCassius
+  parent: [BasePOI, BaseRepairablePOI]
+  name: 'Independant Fland Installation'
+#  minimumDistance: 0
+#  maximumDistance: 0
+#  spawnGamePreset: [ Battlefield14 , NFAdventure ]
+#  spawnGroup: Required
+  gridPath: /Maps/_Battlefield14/Stations/NATO/cassius.yml
+  addComponents:
+  - type: IFF
+    color: "#efefef"
+#    flags: [HideLabel]
+#    readOnly: true
+
+- type: gameMap
+  id: BF14Cassius
+  mapName: 'ODP Cassius'
+  mapPath: /Maps/_Battlefield14/Stations/NATO/cassius.yml
+  minPlayers: 10
+  maxPlayers: 120
+  randomRotation: false
+  maxRandomOffset: 0
+  stations:
+    BF14Cassius:
+      stationProto: StandardFrontierStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "ODP 'Cassius'"
+        - type: ExtraStationInformation
+          iconPath: /Textures/_Battlefield14/poi_icons.rsi/barackobama.png
+          stationSubtext: 'frontier-lobby-frontier-subtext' # TODO
+          stationDescription: 'frontier-lobby-frontier-subtext' # TODO
+          lobbySortOrder: 1
+        - type: StationJobs
+          availableJobs:
+            USSFCaptain: [ 1, 1 ]
+            USSFCrewman: [ 3, 4 ]
+            USSFSquadLeader: [ 3, 3 ]
+            USSFRifleman: [ -1, -1 ]

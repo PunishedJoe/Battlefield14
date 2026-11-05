@@ -55,6 +55,7 @@
   name: pill bottle
   id: BF14PillBottle
   parent: PillCanister
+  description: An older pill bottle design, holds up to 20 pills.
   components:
   - type: Item
     size: Small
@@ -66,7 +67,7 @@
         state: pillbottle
   - type: Storage
     grid:
-    - 0,0,4,2 # BF14
+    - 0,0,4,3 # BF14
     quickInsert: true
     areaInsert: true
     areaInsertRadius: 1

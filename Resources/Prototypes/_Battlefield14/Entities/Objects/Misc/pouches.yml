@@ -6,7 +6,7 @@
   - type: Sprite
     sprite: _Battlefield14/Objects/Misc/pouches.rsi
     layers:
-      - state: utility
+      - state: survival
   - type: Item
     size: Small
     shape:
@@ -51,6 +51,42 @@
     damageCoefficient: 0.0
 
 - type: entity
+  id: PouchFirstAidSmall
+  parent: PouchFirstAid
+  name: small first aid pouch
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: small_firstaid
+  - type: Storage
+    grid:
+    - 0,0,1,1
+
+- type: entity
+  id: PouchAutoinjectors
+  parent: PouchFirstAid
+  name: autoinjector pouch
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: firstaid_injector
+  - type: Storage
+    defaultStorageOrientation: Horizontal # sadly not valid
+    grid:
+    - 0,0,1,4
+    whitelist:
+      tags:
+        - Syrette
+      components:
+        - Hypospray
+        - Injector
+        - Pill
+  - type: ExplosionResistance
+    damageCoefficient: 0.0
+
+- type: entity
   id: PouchMedkit
   parent: PouchFirstAid
   name: medkit pouch
@@ -78,6 +114,23 @@
         - Injector
         - Pill
 
+- type: entity
+  id: PouchSurgery
+  parent: PouchFirstAid
+  name: surgical pouch
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: surgery
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,3,2
+    whitelist:
+      tags:
+        - SurgeryTool
+        - DiscreteHealthAnalyzer
 
 - type: entity
   id: PouchMags
@@ -194,7 +247,7 @@
   id: PouchGrenades
   parent: PouchMags
   name: grenade pouch
-  description: A small pouch for holding a bunch of grenades.
+  description: A small pouch for holding six of grenades.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Misc/pouches.rsi
@@ -234,7 +287,7 @@
   - type: Storage
     maxItemSize: Tiny
     grid:
-    - 0,0,4,1
+    - 0,0,4,2
     whitelist:
       tags:
         - Flare

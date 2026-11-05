@@ -10,7 +10,6 @@ loadout-group-BF14-gogglecovers = Goggle cover
 loadout-group-BF14-helmetattachment = Helmet attachment
 loadout-group-BF14-vdvhead = VDV head
 loadout-group-BF14-jumpsuit = Clothing
-loadout-group-BF14-uniform = Uniform
 loadout-group-BF14-backpack = Backpack
 loadout-group-BF14-miscitem = Misc. Item
 loadout-group-BF14-longarm = Longarm
