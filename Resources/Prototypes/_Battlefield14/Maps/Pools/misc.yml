@@ -4,6 +4,11 @@
   - BF14NavBouy
 
 - type: gameMapPool
+  id: BF14MapPoolODPNATO
+  maps:
+  - BF14ODPCassius
+
+- type: gameMapPool
   id: BF14MapPoolTDM # Should have respawning weapon spawners, last 3 don't
   maps:
   - BF14DeathAsteroid
