@@ -23,6 +23,18 @@
   rules:
   - NFAdventure
 
+- type: gamePreset
+  id: BF14_ODP_NATO_VDV
+  alias:
+  - ODPNATO
+  name: Station control, NATO vs VDV
+  showInVote: true
+  supportedMaps: BF14MapPoolODPNATO
+  description: Larp and frag, destroy or defend the ODP, beware the railgun.
+  minPlayers: 10
+  rules:
+  - NFAdventure
+
 #region groundwar
 
 - type: gamePreset
