@@ -330,6 +330,88 @@
     state: base
 
 - type: entity
+  name: M33A1 offensive impact grenade
+  description: An early iteration of the M67 hand grenade with an impact fuse.
+  parent: BaseItem
+  id: ImpactGrenadeUSM33A1
+  components:
+  - type: Item
+    size: Small
+  - type: Tag
+    tags:
+      - Grenade
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+    layers:
+    - state: icon
+    - state: primed
+      visible: false
+      map: ["enum.ToggleVisuals.Layer"]
+  - type: Appearance
+  - type: AnimationPlayer
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      path: /Audio/_Battlefield14/Weapons/Grenades/trigger2.ogg
+    soundDeactivate:
+      path: /Audio/_Battlefield14/Weapons/Grenades/disable1.ogg
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Grenade
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: ComponentToggler
+    components:
+    - type: DamageOnLand
+      damage:
+        types:
+          Blunt: 60
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: HandGrenade
+    maxIntensity: 10
+    intensitySlope: 2
+    totalIntensity: 30
+    canCreateVacuum: false
+  - type: ProjectileGrenade
+    fillPrototype: BulletGrenadeF1Fragment
+    capacity: 60
+  - type: EmitSoundOnPickup
+    sound: /Audio/_Battlefield14/Weapons/Grenades/grab1.ogg
+  - type: EmitSoundOnDrop
+    sound: /Audio/_Battlefield14/Weapons/Grenades/drop1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      collection: FragGrenadeSFX
+  - type: ExtendDescription
+    descriptionList:
+      - description: Activate to pull the pin, arming the contact fuze, activate again to disarm.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Will bounce off walls.
+        color: green
+        requireDetailRange: true
+      - description: Produces shrapnel.
+        color: white
+        requireDetailRange: true
+      - description: Useless without gravity.
+        color: red
+        requireDetailRange: true
+
+- type: entity
   name: M18 smoke grenade
   description: A simple grey smoke grenade, canned smoke for your convenience. At least, you think it’s canned smoke, you’re not entirely sure how these things actually work.
   parent: BF14GrenadeBaseSmoke
@@ -618,8 +700,14 @@
       collection: FragGrenadeSFX
   - type: ExtendDescription
     descriptionList:
-      - description: Activate to pull the pin, arming the contact fuze, activate again to disarm. Will bounce off walls. Useless without gravity.
+      - description: Activate to pull the pin, arming the contact fuze, activate again to disarm.
         color: "#4f94ad"
+        requireDetailRange: true
+      - description: Will bounce off walls.
+        color: green
+        requireDetailRange: true
+      - description: Useless without gravity.
+        color: red
         requireDetailRange: true
 
 - type: entity
@@ -635,8 +723,17 @@
     capacity: 45
   - type: ExtendDescription
     descriptionList:
-      - description: Activate to pull the pin, arming the contact fuze, activate again to disarm, produces shrapnel. Will bounce off walls. Useless without gravity.
+      - description: Activate to pull the pin, arming the contact fuze, activate again to disarm.
         color: "#4f94ad"
+        requireDetailRange: true
+      - description: Will bounce off walls.
+        color: green
+        requireDetailRange: true
+      - description: Produces shrapnel.
+        color: white
+        requireDetailRange: true
+      - description: Useless without gravity.
+        color: red
         requireDetailRange: true
 
 - type: entity

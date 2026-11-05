@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleAK74
-  name: "AK-74 magazine (5.45x39mm)"
+  name: "AK-74 magazine"
   description: Classic rock-and-lock magazine in 5.45, for 74 pattern rifles.
   components:
   - type: Tag
@@ -31,12 +31,15 @@
     descriptionList:
       - description: Has an AK-74 pattern locking system.
         color: "#4f94ad"
-        requireDetailRange: true
+        requireDetailRange: false
+      - description: Feeds 5.45x39mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineRifleAK74
   id: MagazineRifleAK74TracerGreen
-  name: "AK-74 magazine (5.45x39mm green tracer)"
+  name: "AK-74 magazine (tracer)"
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle545x39TracerGreen
@@ -56,7 +59,7 @@
 - type: entity
   parent: MagazineRifleAK74Black
   id: MagazineRifleAK74BlackTracerGreen
-  name: "AK-74 magazine (5.45x39mm green tracer)"
+  name: "AK-74 magazine (tracer)"
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle545x39TracerGreen
@@ -64,7 +67,7 @@
 - type: entity
   parent: MagazineRifleAK74
   id: MagazineRifleAK12
-  name: "AK-12 magazine (5.45x39mm)"
+  name: "AK-12 magazine"
   description: A modernised '74 pattern rifle magazine, with handy features like a 45 degree cutout for use as a monopod while prone, and windows to see your remaining ammo.
   components:
   - type: Sprite
@@ -83,7 +86,7 @@
 - type: entity
   parent: MagazineRifleAK12
   id: MagazineRifleAK12TracerGreen
-  name: "AK-12 magazine (5.45x39mm green tracer)"
+  name: "AK-12 magazine (tracer)"
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle545x39TracerGreen
@@ -96,7 +99,7 @@
 - type: entity
   parent: MagazineRifleAK74
   id: MagazineRifleRPK74
-  name: "RPK-74 magazine (5.45x39mm)"
+  name: "RPK-74 magazine"
   components:
   - type: BallisticAmmoProvider
     capacity: 45
@@ -111,7 +114,7 @@
 - type: entity
   parent: MagazineRifleRPK74
   id: MagazineRifleRPK74TracerGreen
-  name: "RPK-74 magazine (5.45x39mm green tracer)"
+  name: "RPK-74 magazine (tracer)"
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle545x39TracerGreen
@@ -143,7 +146,7 @@
 - type: entity
   parent: MagazineRifleAK74
   id: MagazineRifleAK74blackdrum
-  name: "AK-74 pattern 75 round drum magazine (5.45x39mm)"
+  name: "AK-74 pattern 75 round drum magazine"
   description: 75 rounds for your 74.
   components:
   - type: Tag
@@ -169,7 +172,7 @@
 - type: entity
   parent: MagazineRifleAK74blackdrum
   id: MagazineRifleAK74blackdrumTracerGreen
-  name: "AK-74 pattern 75 round drum magazine (5.45x39mm green tracer)"
+  name: "AK-74 pattern 75 round drum magazine (tracer)"
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle545x39TracerGreen
@@ -182,7 +185,7 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleAKM
-  name: "AKM magazine (7.62x39)"
+  name: "AKM magazine"
   description: Classic banana mag, just not yellow.
   components:
   - type: Tag
@@ -212,12 +215,15 @@
     descriptionList:
       - description: Has an AKM pattern locking system.
         color: "#4f94ad"
-        requireDetailRange: true
-
+        requireDetailRange: false
+      - description: Feeds 7.62x39.
+        color: white
+        requireDetailRange: false
+        
 - type: entity
   parent: MagazineRifleAKM
   id: MagazineRifleAK103
-  name: "AK-103 magazine (7.62x39mm)"
+  name: "AK-103 magazine"
   components:
   - type: Tag
     tags:
@@ -234,7 +240,7 @@
 - type: entity
   parent: MagazineRifleAKM
   id: MagazineRifleAK203
-  name: "AK-203 magazine (7.62x39mm)"
+  name: "AK-203 magazine"
   description: Classic banana mag.
   components:
   - type: Tag
@@ -252,7 +258,7 @@
 - type: entity
   parent: MagazineRifleAKM
   id: MagazineRifleRPK
-  name: "RPK magazine (7.62x39mm)"
+  name: "RPK magazine"
   components:
   - type: BallisticAmmoProvider
     capacity: 45
@@ -267,8 +273,7 @@
 - type: entity
   parent: MagazineRifleRPK
   id: MagazineRifleRPKTracerGreen
-  name: "RPK magazine (7.62x39mm green tracer)"
+  name: "RPK magazine (tracer)"
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle762x39TracerGreen
-

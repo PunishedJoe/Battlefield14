@@ -118,6 +118,8 @@
         amount: 1
       - id: WeaponRifleUSXM16E1Patriot
         amount: 1
+      - id: ImpactGrenadeUSM33A1
+        amount: 2
 
 - type: entity
   parent: ColMarTechBase
