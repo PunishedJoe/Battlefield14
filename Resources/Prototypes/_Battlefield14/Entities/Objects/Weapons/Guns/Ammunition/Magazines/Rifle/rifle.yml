@@ -33,7 +33,7 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleM14
-  name: "M14 magazine (7.62x51mm)"
+  name: "M14 magazine"
   description: It's a magazine.
   components:
   - type: Tag
@@ -59,9 +59,14 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 7.62x51mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
-  parent: BaseMagazineRifle
+  parent: MagazineRifleM14
   id: MagazineRifleG28
   name: "G28 magazine (7.62x51mm)"
   description: A 417 style magazine with a tan baseplate.
@@ -70,30 +75,16 @@
     tags:
       - MagazineRifleHK417
       - Magazine
-  - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle762x51
-    mayTransfer: true
-    whitelist:
-      tags:
-        - BF_CartridgeRifle762x51
-    capacity: 20
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G28.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 3
-    zeroVisible: false
-  - type: Appearance
   - type: ExtendDescription
     descriptionList:
       - description: Has a 417 pattern locking system.
         color: "#4f94ad"
-        requireDetailRange: true
+        requireDetailRange: false
+      - description: Feeds 7.62x51mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineRifleG28
@@ -105,30 +96,21 @@
     tags:
       - MagazineRifleG3
       - Magazine
-  - type: BallisticAmmoProvider
-    proto: BF_CartridgeRifle762x51
-    mayTransfer: true
-    whitelist:
-      tags:
-        - BF_CartridgeRifle762x51
-    capacity: 20
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/G3.rsi
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: MagazineVisuals
-    magState: mag
-    steps: 3
-    zeroVisible: false
-  - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Has a G3 pattern locking system.
+        color: "#4f94ad"
+        requireDetailRange: false
+      - description: Feeds 7.62x51mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleG36
-  name: "G36 magazine (5.56x45mm)"
+  name: "G36 magazine"
   description: Standard magazine for the G36 family of rifles.
   components:
   - type: Tag
@@ -158,12 +140,15 @@
     descriptionList:
       - description: Has a G36 pattern locking system.
         color: "#4f94ad"
-        requireDetailRange: true
+        requireDetailRange: false
+      - description: Feeds 5.56x45mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineRifleG36
   id: MagazineRifleG36TracerRed
-  name: "G36 magazine (5.56x45mm red tracer)"
+  name: "G36 magazine (tracer)"
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle556x45TracerRed
@@ -176,7 +161,7 @@
 - type: entity
   parent: MagazineRifleG36
   id: MagazineRifleG36DoubleDrum
-  name: "G36 double drum magazine (5.56x45mm)"
+  name: "G36 double drum magazine"
   description: Oh heavens no, the G36 has balls.
   components:
   - type: Item
@@ -205,7 +190,7 @@
 - type: entity
   parent: MagazineRifleG36DoubleDrum
   id: MagazineRifleG36DoubleDrumTracerRed
-  name: "G36 double drum magazine (5.56x45mm red tracer)"
+  name: "G36 double drum magazine (tracer)"
   components:
   - type: BallisticAmmoProvider
     proto: BF_CartridgeRifle556x45TracerRed
@@ -218,7 +203,7 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleLeeEnfield
-  name: "Lee-Enfield magazine (.303 British)"
+  name: "Lee-Enfield magazine"
   description: It's a magazine for the Lee-Enfield series of rifles, chambered in .303 british.
   components:
   - type: Tag
@@ -244,11 +229,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds .303 British.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineRifleM14
   id: MagazineRifleFAL
-  name: "FAL magazine (7.62x51mm)"
+  name: "FAL magazine"
   description: It's a magazine.
   components:
   - type: Sprite
@@ -261,12 +251,15 @@
     descriptionList:
       - description: Has a FAL pattern locking system.
         color: "#4f94ad"
-        requireDetailRange: true
+        requireDetailRange: false
+      - description: Feeds 7.62x51mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineRifleFAL
   id: MagazineRifleFAL30
-  name: "30 round FAL magazine (7.62x51mm)"
+  name: "30 round FAL magazine"
   description: It's an extended magazine.
   components:
   - type: Sprite
@@ -281,7 +274,7 @@
 - type: entity
   parent: MagazineRifleFAL
   id: MagazineRifleL1A1
-  name: "L1A1 magazine (7.62x51mm)"
+  name: "L1A1 magazine"
   description: It's a magazine, but manufactured with imperial measurements, not compatible with the FAL.
   components:
   - type: Tag
@@ -292,12 +285,15 @@
     descriptionList:
       - description: Has a L1A1 pattern locking system.
         color: "#4f94ad"
-        requireDetailRange: true
+        requireDetailRange: false
+      - description: Feeds 7.62x51mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineRifleAKM
   id: MagazineRifleVZ58
-  name: "vz. 58 magazine (7.62x39)"
+  name: "vz. 58 magazine"
   description: You are NOT the AK magazine!
   components:
   - type: Tag
@@ -310,14 +306,17 @@
     descriptionList:
       - description: Has a vz. 58 pattern locking system.
         color: "#4f94ad"
-        requireDetailRange: true
+        requireDetailRange: false
+      - description: Feeds 7.62x39mm.
+        color: white
+        requireDetailRange: false
 
 #region PACT
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleASVAL
-  name: "AS-VAL extended magazine (9x39mm)"
+  name: "AS-VAL extended magazine"
   description: 9mm slugs, a little slow but still hit hard.
   components:
   - type: Tag
@@ -347,12 +346,15 @@
     descriptionList:
       - description: Has an AS-VAL pattern locking system.
         color: "#4f94ad"
-        requireDetailRange: true
+        requireDetailRange: false
+      - description: Feeds 9x39mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineRifleASVAL
   id: MagazineRifleASVALShort
-  name: "AS-VAL magazine (9x39mm)"
+  name: "AS-VAL magazine"
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Rifle/ASVALshort.rsi
@@ -362,7 +364,7 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleASH12
-  name: "ASH-12 magazine (12.7x55mm)"
+  name: "ASH-12 magazine"
   description: Big and chunky mag, holding 20 12.7x55 bullets for eradicating "cag operators" in CQB with Russian brutality.
   components:
   - type: Tag
@@ -388,11 +390,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 12.7x55mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineRifleASH12
   id: MagazineRifleASH12Duplex
-  name: "ASH-12 magazine (12.7x55mm duplex)"
+  name: "ASH-12 magazine (duplex)"
   description: Apparantly one .50 caliber projectile wasn't enough, and ivan decided to put two in the same bullet. Each projectile does less damage on its own but they do more together.
   components:
   - type: BallisticAmmoProvider

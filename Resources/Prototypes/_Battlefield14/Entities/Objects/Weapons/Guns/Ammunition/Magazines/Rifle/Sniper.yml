@@ -2,7 +2,7 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineSniperM107
-  name: "M107 magazine (.50 BMG)"
+  name: "M107 magazine"
   description: A 5 round magazine for the M107, made to disable engine blocks on lightly armoured vehicles.
   components:
   - type: Tag
@@ -28,11 +28,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 12.7x99mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineSniperIntervention
-  name: "Intervention magazine (.408 CT)"
+  name: "Intervention magazine"
   description: A 5 round magazine for the M200 Intervention.
   components:
   - type: Tag
@@ -58,11 +63,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds .408 CT.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineSniperM40A5
-  name: "M40A5 magazine (7.62x51mm)"
+  name: "M40A5 magazine"
   description: It's a magazine.
   components:
   - type: Tag
@@ -88,11 +98,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 7.62x51mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineSniperAWP
-  name: "AWP magazine (7.62x51mm)"
+  name: "AWP magazine"
   description: It's a magazine.
   components:
   - type: Tag
@@ -118,11 +133,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 7.62x51mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: MagazineSniperAWP
   id: MagazineSniperAWM
-  name: "AWM magazine (.300WM)"
+  name: "AWM magazine"
   description: It's a magazine.
   components:
   - type: Tag
@@ -136,13 +156,18 @@
       tags:
         - BF_CartridgeRifle300WM
     capacity: 5
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds .300WM.
+        color: white
+        requireDetailRange: false
 
 #region PACT
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineSniperOSV96
-  name: "OSV-96 magazine (12.7x108mm)"
+  name: "OSV-96 magazine"
   description: A 5 round magazine for the OSV-96 anti-materiel rifle.
   components:
   - type: Tag
@@ -168,11 +193,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 12.7x108mm.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleSV98
-  name: "SV-98 magazine (7.62x54mmR)"
+  name: "SV-98 magazine"
   description: A small, 5 round magazine for the SV-98, but dont let its small size fool you, these rounds pack a punch.
   components:
   - type: Tag
@@ -198,11 +228,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 7.62x54mmR.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineSniperSVD
-  name: "SVD magazine (7.62x54mmR)"
+  name: "SVD magazine"
   description: A 10 round magazine for the SVD, for tapping americans a little further than your average infantryman.
   components:
   - type: Tag
@@ -228,11 +263,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 7.62x54mmR.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleVPO215
-  name: "VPO-215 magazine (.366mm)"
+  name: "VPO-215 magazine"
   description: A small, 4 round magazine for the VPO-215.
   components:
   - type: Tag
@@ -258,11 +298,16 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds .366 TKM.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleMagpulMosin
-  name: "Mosin-Nagant magazine (7.62x54mmR)"
+  name: "Mosin-Nagant magazine"
   description: A magpul aftermarket, 10 round magazine for the Mosin-Nagant,
   components:
   - type: Tag
@@ -288,3 +333,8 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 7.62x54mmR.
+        color: white
+        requireDetailRange: false

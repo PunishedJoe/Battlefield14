@@ -1,6 +1,6 @@
 - type: entity
   id: MagazineRifleM30MRC
-  name: "M-30 MR-C magazine (4.73x33mm caseless)"
+  name: "M-30 MR-C magazine"
   parent: BaseMagazineRifle
   components:
   - type: Tag
@@ -26,10 +26,15 @@
     steps: 3
     zeroVisible: false
   - type: Appearance
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 4.73x33mm caseless.
+        color: white
+        requireDetailRange: false
 
 - type: entity
   id: MagazineRifleM42A5
-  name: "M42A5 magazine (4.73x33mm caseless)"
+  name: "M42A5 magazine"
   parent: MagazineRifleM30MRC
   components:
   - type: Tag
@@ -45,3 +50,8 @@
     magState: mag
     steps: 8
     zeroVisible: false
+  - type: ExtendDescription
+    descriptionList:
+      - description: Feeds 4.73x33mm caseless.
+        color: white
+        requireDetailRange: false
