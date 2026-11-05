@@ -156,9 +156,9 @@
   id: DefensiveGrenadeUSM67
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m67.rsi
   - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m67.rsi
     state: base
 
 - type: entity
@@ -341,7 +341,7 @@
     tags:
       - Grenade
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/m67.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m67.rsi
     layers:
     - state: icon
     - state: primed
@@ -382,9 +382,10 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade
-    maxIntensity: 10
-    intensitySlope: 2
     totalIntensity: 30
+    intensitySlope: 4
+    maxIntensity: 6
+    maxTileBreak: 0
     canCreateVacuum: false
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeF1Fragment
@@ -419,6 +420,9 @@
   components:
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m18.rsi
+  - type: Icon
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m18.rsi
+    state: base
 
 - type: entity
   name: M84 flashbang
@@ -428,6 +432,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi
+    state: base
 
 - type: entity
   name: M58 CS gas grenade
@@ -541,6 +548,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/DM45.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/DM45.rsi
+    state: base
 
 #region RU
 
@@ -551,9 +561,9 @@
   id: OffensiveGrenadeRURGD5
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rgd5.rsi
   - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Grenades/rgd5.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rgd5.rsi
     state: base
   - type: TimerTriggerVisuals
     primingSound:
@@ -591,9 +601,9 @@
   id: DefensiveGrenadeRUF1
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/f1.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/f1.rsi
   - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Grenades/f1.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/f1.rsi
     state: base
   - type: ProjectileGrenade
     fillPrototype: BulletGrenadeF1Fragment
@@ -761,7 +771,10 @@
   id: SmokeGrenadeRURDG
   components:
   - type: Sprite
-    sprite: _Battlefield14/Objects/Weapons/Grenades/rdg2.rsi
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rdg2.rsi
+  - type: Icon
+    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/rdg2.rsi
+    state: base
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger3.ogg"
@@ -784,6 +797,9 @@
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Grenades/zarya.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Grenades/zarya.rsi
+    state: base
   - type: TimerTriggerVisuals
     primingSound:
       path: "/Audio/_Battlefield14/Weapons/Grenades/trigger1.ogg"

@@ -478,3 +478,24 @@
     contents:
     - id: BlisterPackSyretteNanoblood
       amount: 2
+
+#combination , syrettes first then pills
+
+- type: entity
+  id: MedicationBoxComboInaprovalineDexalin
+  parent: MedicationBoxBase
+  name: blister pack box
+  suffix: Inaprovaline + Dexalin
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Specific/Medical/medicationbox.rsi
+    layers:
+    - state: base
+    - state: overlay_stripe_purple
+    - state: overlay_pills_blue
+  - type: Label
+    currentLabel: inaprovaline + dexalin
+  - type: StorageFill
+    contents:
+    - id: BlisterPackSyretteInaprovaline
+    - id: BlisterPackDexalin
