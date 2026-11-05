@@ -1,3 +1,5 @@
+#region Base
+
 - type: entity
   parent: BoxCardboard
   id: BaseEVAKit
@@ -20,11 +22,13 @@
       - state: boxwide
       - state: extendedtank
 
+#region Combat
+
 - type: entity
   name: USMC combat EVA kit
   parent: BaseEVAKit
   id: EVAKitCombatUSMC
-  description: A kit containing everything needed to survive and thrive in space. Marine edition.
+  description: A kit containing everything needed to survive and fight in space. Marine edition.
   components:
   - type: StorageFill
     contents:
@@ -39,7 +43,7 @@
   name: fallschirmjager combat EVA kit
   parent: BaseEVAKit
   id: EVAKitCombatFSJ
-  description: A kit containing everything needed to survive and thrive in space. Fallschirmjager edition.
+  description: A kit containing everything needed to survive and fight in space. Fallschirmjager edition.
   components:
   - type: StorageFill
     contents:
@@ -54,7 +58,7 @@
   name: Russian combat EVA kit
   parent: BaseEVAKit
   id: EVAKitCombatRU
-  description: A kit containing everything needed to survive and thrive in space. Ruski edition.
+  description: A kit containing everything needed to survive and fight in space. Ruski edition.
   components:
   - type: StorageFill
     contents:
@@ -64,3 +68,35 @@
       - id: HandHeldMassScanner
       - id: HandheldGPSBasic
       - id: CrowbarRed
+
+#region EVA
+
+- type: entity
+  name: NASA EVA kit
+  parent: BaseEVAKit
+  id: EVAKitNASA
+  description: A kit containing everything needed to survive. NASA edition.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterSoftsuitNASA
+    - id: ClothingHeadHelmetSoftsuitNasa
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: HandHeldMassScanner
+    - id: HandheldGPSBasic
+    - id: CrowbarRed
+
+- type: entity
+  name: VKS EVA kit
+  parent: BaseEVAKit
+  id: EVAKitVKS
+  description: A kit containing everything needed to survive. VKS edition.
+  components:
+  - type: StorageFill
+    contents:
+    - id: ClothingOuterSoftsuitVKS
+    - id: ClothingHeadHelmetSoftsuitVKS
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: HandHeldMassScanner
+    - id: HandheldGPSBasic
+    - id: CrowbarRed

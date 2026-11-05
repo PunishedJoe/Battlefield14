@@ -7456,7 +7456,7 @@ entities:
     - type: Transform
       pos: -0.5,-21.5
       parent: 1
-- proto: ClosetEmergencyFilledRandom
+- proto: BF14ClosetEmergencyFilledNATO
   entities:
   - uid: 505
     components:
@@ -7611,7 +7611,7 @@ entities:
     - type: Transform
       pos: 14.5,-25.5
       parent: 1
-- proto: ClosetWallEmergencyFilledRandom
+- proto: BF14ClosetWallEmergencyFilledNATO
   entities:
   - uid: 1506
     components:
@@ -12509,7 +12509,7 @@ entities:
         344:
         - - Pressed
           - Toggle
-- proto: LockerArmoryNATO
+- proto: LockerArmoryNATOFilledEVAKitNASA
   entities:
   - uid: 3087
     components:

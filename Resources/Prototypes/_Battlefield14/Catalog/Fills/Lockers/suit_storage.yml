@@ -1,12 +1,12 @@
 - type: entity
   id: SuitStorageVoidsuitAmericanCombatMarine
   parent: SuitStorageBase
-  suffix: NATO, US Devil Dog
+  suffix: NATO, US, Marine
   components:
   - type: StorageFill
     contents:
     - id: ClothingOuterVoidsuitAmericanCombatMarine
-    - id: ClothingShoesBootsMagAshenFilled
+    - id: BF14ClothingShoesBootsMagTacticalFilled
     - id: JetpackBlackFilled
     - id: HandHeldMassScanner
     - id: HandheldGPSBasic
@@ -20,7 +20,7 @@
   - type: StorageFill
     contents:
     - id: ClothingOuterVoidsuitRussianCombat
-    - id: ClothingShoesBootsMagAshenFilled
+    - id: BF14ClothingShoesBootsMagTacticalFilled
     - id: JetpackBlackFilled
     - id: HandHeldMassScanner
     - id: HandheldGPSBasic
