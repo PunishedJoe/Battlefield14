@@ -1,4 +1,4 @@
-# TRUMPCARD 17.76mm Railgun
+#region TRUMPCARD 17.76mm Railgun
 - type: entity
   id: WeaponTurretTRUMPCARD
   name: TRUMPCARD 17.76mm railgun
@@ -22,7 +22,7 @@
     fireRate: 0.08
     minAngle: 0
     maxAngle: 0
-    projectileSpeed: 1600
+    projectileSpeed: 200
     shootThermalSignature: 20000000
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
@@ -60,7 +60,57 @@
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
-    shipClass: Heavy
+    shipClass: Superheavy
+
+#region TRUMPCARD 17.76mm Railgun ODP edition
+- type: entity
+  id: WeaponTurretTRUMPCARDODP
+  name: TRUMPCARD 17.76mm railgun
+  suffix: BF14, NATO, US, ODP only
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Battery
+    maxCharge: 8000
+    startingCharge: 8000
+  - type: FireControlRotate
+  - type: WirelessNetworkConnection
+    range: 500
+  - type: Gun
+    recoil: 100 # you know it
+    fireRate: 0.1
+    minAngle: 0
+    maxAngle: 0
+    projectileSpeed: 200
+    shootThermalSignature: 20000000
+    soundGunshot:
+      path: /Audio/_HaloSSE/Effects/mac_gun_fire.ogg
+  - type: SpaceArtillery
+    powerChargeRate: 400
+    powerUsePassive: 1200
+    powerUseActive: 4000
+  - type: Actions
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 2000
+  - type: ProjectileBatteryAmmoProvider
+    proto: Bullet1776mmRailgunArmingDistance1
+    fireCost: 1000
+  - type: DeviceLinkSink
+    ports:
+    - SpaceArtilleryFire
+    - SpaceArtilleryLoad
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: FireControllable
+    ignoreLos: true
+  - type: Transform
+    anchored: true
+  - type: ShipGunType
+    shipType: Ballistic
+  - type: ShipGunClass
+    shipClass: Superheavy
 
 # M5 Browning 12.7mm HMG
 - type: entity
@@ -390,6 +440,8 @@
           - Magazine40x53mmPlasmaGas
           - Magazine40x53mmChemicalSmoke
         whitelistFailPopup: gun-magazine-whitelist-fail
+  - type: FireControllable
+    ignoreLos: true
   - type: Destructible
     thresholds:
     - trigger:

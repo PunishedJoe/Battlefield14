@@ -486,7 +486,7 @@
     - Cartridge40x53mmHE
     - Cartridge40x53mmGrenade
   - type: CartridgeAmmo
-    proto: Bullet40x53mmHEArmingDistance
+    proto: Bullet40x53mmHE
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
@@ -550,7 +550,7 @@
     - Cartridge40x53mmHEDP
     - Cartridge40x53mmGrenade
   - type: CartridgeAmmo
-    proto: Bullet40x53mmHEDPArmingDistance
+    proto: Bullet40x53mmHEDP
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
@@ -592,7 +592,7 @@
     - Cartridge40x53mmFrag
     - Cartridge40x53mmGrenade
   - type: CartridgeAmmo
-    proto: Bullet40x53mmFragArmingDistance
+    proto: Bullet40x53mmFrag
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Casings/40x46.rsi
     layers:
