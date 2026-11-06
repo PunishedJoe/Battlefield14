@@ -32,6 +32,53 @@
     requireNoGrid: true
     shape: triangle
     radarColor: "#ffffff"
+  - type: ImmovableRod
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet1776mmRailgunArmingDistance1
+  name: 17.76mm depleted uranium penetrator
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Structural: 0
+    deleteOnCollide: false
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet1776mmRailgunArmingDistance2
+    distanceDelay: 50
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 100
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  id: Bullet1776mmRailgunArmingDistance2
+  name: 17.76mm depleted uranium penetrator
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Projectiles/ballistic.rsi
+    layers:
+    - state: grenade
+  - type: Projectile
+    damage:
+      types:
+        Structural: 0
+    deleteOnCollide: false
+  - type: SubmunitionProjectile
+    submunitionPrototype: Bullet1776mmRailgun
+    distanceDelay: 50
+    submunitionDelay: 0
+    submunitionCount: 1
+    spreadAngle: 0
+    velocityMultiplier: 10
 
 # 12.7mm M5 Browning AP
 - type: entity

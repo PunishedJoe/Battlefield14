@@ -16,16 +16,16 @@
         Pierce: 30
   - type: HeFragProjectile
     fillPrototype: Bullet25x40Fragment
-    capacity: 16
+    capacity: 30
     randomAngle: true
     minVelocity: 8
     maxVelocity: 15
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: HandGrenade
-    totalIntensity: 30
+    totalIntensity: 9
     intensitySlope: 1.5
-    maxIntensity: 10
+    maxIntensity: 1
     maxTileBreak: 0
   - type: StaminaDamageOnCollide
     damage: 25 # ~4 hits to stun
