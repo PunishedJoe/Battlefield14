@@ -4,7 +4,7 @@ meta:
   engineVersion: 264.0.13-fix-physics
   forkId: ""
   forkVersion: ""
-  time: 11/06/2026 12:24:57
+  time: 11/06/2026 12:41:20
   entityCount: 8006
 maps:
 - 19
@@ -136,7 +136,7 @@ entities:
           version: 7
         -2,-3:
           ind: -2,-3
-          tiles: CwAAAAAAAAsAAAAAAAALAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAKAAAAAAAACAAAAAAAAAoAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAGAAAAAAAACAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAIAAAAAAAABgAAAAAAAAgAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAACAAAAAAAAA==
+          tiles: CwAAAAAAAAsAAAAAAAALAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAsAAAAAAAALAAAAAAAACwAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAALAAAAAAAACwAAAAAAAAsAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACgAAAAAAAAoAAAAAAAAKAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAKAAAAAAAACAAAAAAAAAoAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAGAAAAAAAACAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAIAAAAAAAABgAAAAAAAAgAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAADAAAAAAAAAwAAAAAAAAMAAAAAAAACAAAAAAAAA==
           version: 7
         -1,-3:
           ind: -1,-3
@@ -550,8 +550,8 @@ entities:
       spreadQueues:
         MetalFoam: []
         Smoke: []
-        Puddle: []
         Kudzu: []
+        Puddle: []
       updateAccumulator: 0.19517422
     - type: Shuttle
       dampingModifier: 0.25
@@ -734,14 +734,12 @@ entities:
             0: 15
             1: 61440
           -8,-2:
-            1: 13105
-          -9,-2:
-            1: 15
+            1: 8737
           -8,-1:
-            1: 51
+            1: 50
             0: 12288
           -9,-1:
-            1: 9928
+            1: 1152
           -8,0:
             0: 1023
           -7,-3:
@@ -872,9 +870,9 @@ entities:
             0: 31
             1: 32768
           7,-2:
-            1: 26220
+            1: 8740
           7,-1:
-            1: 238
+            1: 226
             0: 24576
           7,0:
             0: 1791
@@ -886,20 +884,20 @@ entities:
             0: 15
             1: 61440
           8,-1:
-            1: 8976
+            1: 256
           -9,0:
             0: 204
-            1: 25122
+            1: 16384
           -8,1:
-            1: 13107
+            1: 8739
           -9,1:
-            1: 140
+            1: 8
           -8,2:
             2: 16
-            1: 3
+            1: 2
             0: 32768
           -9,2:
-            1: 4080
+            1: 3840
           -8,3:
             0: 65532
           -9,3:
@@ -911,7 +909,7 @@ entities:
           -7,3:
             0: 311
           -7,4:
-            1: 7140
+            1: 420
           -6,1:
             0: 52428
           -6,2:
@@ -926,7 +924,7 @@ entities:
             0: 65308
           -6,4:
             0: 8
-            1: 12544
+            1: 8448
           -5,4:
             0: 207
           -4,1:
@@ -1014,52 +1012,42 @@ entities:
           6,3:
             0: 36079
           6,4:
-            1: 52785
+            1: 3105
           7,3:
             0: 65521
           7,1:
-            1: 26350
+            1: 8750
           7,2:
-            1: 2182
+            1: 2050
             2: 64
           8,0:
             0: 17
-            1: 12834
-          8,1:
-            1: 1
+            1: 4096
           8,2:
-            1: 4080
+            1: 3840
           8,3:
             0: 65520
           -8,-17:
-            1: 32384
+            1: 26624
           -7,-17:
-            1: 376
+            1: 256
             0: 32768
           -7,-16:
-            0: 52428
-            3: 16
-            4: 256
-            5: 4096
+            0: 56796
           -6,-17:
             0: 65152
-            1: 1
           -6,-16:
             0: 65535
-          -6,-18:
-            1: 26624
           -5,-17:
             0: 48058
-          -5,-18:
-            1: 364
           -5,-16:
             0: 48059
-          -5,-19:
-            1: 32768
+          -5,-18:
+            1: 72
           -4,-17:
             0: 57995
           -4,-19:
-            1: 63232
+            1: 28672
           -4,-18:
             0: 43008
           -4,-16:
@@ -1068,20 +1056,18 @@ entities:
             0: 65280
           -3,-17:
             0: 62719
-          -3,-19:
-            1: 61440
           -3,-16:
             0: 3855
           -2,-18:
             0: 47872
           -2,-17:
             0: 63675
-          -2,-19:
-            1: 64512
           -2,-16:
             0: 3855
+          -2,-19:
+            1: 49152
           -1,-19:
-            1: 65280
+            1: 61440
           -1,-18:
             0: 65280
           -1,-17:
@@ -1089,7 +1075,7 @@ entities:
           -1,-16:
             0: 12175
           0,-19:
-            1: 65280
+            1: 61440
           0,-18:
             0: 47872
           0,-17:
@@ -1097,7 +1083,7 @@ entities:
           0,-16:
             0: 12047
           1,-19:
-            1: 63232
+            1: 28672
           1,-18:
             0: 47872
           1,-17:
@@ -1108,55 +1094,48 @@ entities:
             0: 65280
           2,-17:
             0: 62719
-          2,-19:
-            1: 61440
           2,-16:
             0: 36751
           3,-18:
             0: 13056
           3,-17:
             0: 47291
-          3,-19:
-            1: 64512
           3,-16:
             0: 40859
-          4,-19:
-            1: 4096
+          3,-19:
+            1: 49152
           4,-18:
-            1: 3171
+            1: 33
           4,-17:
             0: 61154
           4,-16:
             0: 3854
-          5,-18:
-            1: 12288
           5,-17:
             0: 62208
-            1: 12
           5,-16:
             0: 16191
-          6,-17:
-            1: 3312
           6,-16:
             0: 18241
+          6,-17:
+            1: 3072
           7,-17:
-            1: 62208
+            1: 12288
           -12,-13:
-            1: 13932
+            1: 9288
           -12,-12:
-            1: 275
+            1: 274
             0: 2184
           -12,-14:
-            1: 51328
+            1: 32768
           -11,-13:
             0: 30566
           -11,-14:
-            1: 275
+            1: 274
             0: 16384
           -11,-12:
             0: 10103
           -11,-15:
-            1: 14024
+            1: 9344
           -10,-15:
             0: 62656
             1: 1
@@ -1164,12 +1143,12 @@ entities:
             0: 65521
           -10,-13:
             0: 65535
-          -10,-16:
-            1: 32384
           -10,-12:
             0: 4095
+          -10,-16:
+            1: 26624
           -9,-16:
-            1: 382
+            1: 360
             0: 32768
           -9,-15:
             0: 61694
@@ -1179,8 +1158,6 @@ entities:
             0: 65535
           -9,-12:
             0: 61439
-          -9,-17:
-            1: 32768
           -8,-16:
             1: 1
             0: 30208
@@ -1193,31 +1170,13 @@ entities:
           -8,-12:
             0: 2039
           -7,-15:
-            6: 1
-            7: 16
-            8: 256
-            9: 4096
-            0: 52428
+            0: 56797
           -7,-14:
-            10: 1
-            11: 16
-            12: 256
-            13: 4096
-            0: 52428
+            0: 56797
           -7,-13:
-            14: 1
-            15: 16
-            16: 256
-            17: 4096
-            18: 32
-            19: 64
-            0: 49280
+            0: 53745
           -7,-12:
-            20: 1
-            0: 3276
-            21: 16
-            22: 256
-            23: 4096
+            0: 7645
           -6,-15:
             0: 65535
           -6,-14:
@@ -1334,27 +1293,27 @@ entities:
           7,-12:
             0: 36863
           8,-16:
-            1: 35955
+            1: 33840
           8,-14:
             0: 65520
           8,-13:
             0: 65535
           -14,-9:
-            1: 26316
+            1: 17544
           -14,-8:
-            1: 26214
+            1: 17476
           -14,-10:
-            1: 51328
+            1: 32768
           -13,-10:
-            1: 275
+            1: 274
           -13,-11:
-            1: 13932
+            1: 9288
           -13,-9:
             0: 52236
           -13,-8:
             0: 52428
           -13,-12:
-            1: 51328
+            1: 32768
           -12,-9:
             0: 65295
           -12,-11:
@@ -1386,19 +1345,11 @@ entities:
           -9,-9:
             0: 65519
           -8,-11:
-            0: 63233
-            24: 2
-            25: 4
-            26: 8
-            1: 128
+            0: 63247
           -8,-10:
             0: 2047
           -7,-11:
-            27: 1
-            0: 64776
-            28: 16
-            29: 2
-            30: 4
+            0: 64799
           -7,-10:
             0: 7679
           -6,-11:
@@ -1422,7 +1373,7 @@ entities:
           -2,-10:
             0: 65535
           -1,-11:
-            0: 3839
+            0: 2303
           -1,-10:
             0: 4095
           0,-11:
@@ -1504,31 +1455,29 @@ entities:
             0: 65295
           10,-13:
             0: 4096
-            1: 36038
+            1: 33858
           11,-12:
-            1: 25393
+            1: 8464
           11,-9:
             0: 30471
           11,-11:
-            1: 36038
+            1: 33858
           11,-10:
             1: 8
-          12,-11:
-            1: 4096
           12,-10:
-            1: 25393
+            1: 8464
           -16,-5:
             2: 16384
-            1: 44032
+            1: 32768
           -15,-5:
-            1: 65280
+            1: 61440
           -14,-5:
-            1: 14182
+            1: 13380
           -14,-7:
-            1: 26150
+            1: 17412
             2: 64
           -14,-6:
-            1: 26214
+            1: 17476
           -13,-7:
             0: 49356
           -13,-6:
@@ -1580,124 +1529,99 @@ entities:
           8,-5:
             0: 14335
           -16,-4:
-            1: 19
+            1: 18
             0: 49152
           -17,-4:
-            1: 9416
+            1: 128
           -16,-3:
             0: 1023
-          -16,-2:
-            1: 120
           -15,-4:
             0: 65280
           -15,-3:
             0: 31
             1: 28672
-          -15,-2:
-            1: 135
           -14,-4:
             0: 65280
           -14,-3:
             0: 30591
           -14,-2:
             0: 7
-            1: 240
           -13,-3:
             0: 15
             1: 61440
-          -13,-2:
-            1: 15
           -12,-3:
             0: 15
             1: 61440
-          -12,-2:
-            1: 15
           -11,-3:
             0: 15
             1: 61440
-          -11,-2:
-            1: 15
           -10,-3:
             0: 15
             1: 61440
-          -10,-2:
-            1: 15
           4,5:
-            1: 2040
+            1: 120
           3,5:
-            1: 32640
+            1: 1920
           5,5:
-            1: 19
+            1: 1
           5,4:
-            1: 27776
+            1: 9344
           7,4:
-            1: 65280
+            1: 3840
           8,4:
-            1: 65280
-          -17,-3:
-            1: 8738
-          -17,-2:
-            1: 194
+            1: 3840
           -16,2:
-            1: 135
             0: 12288
           -16,3:
             0: 3327
           -16,4:
-            1: 51761
+            1: 2081
             2: 1024
           -15,2:
-            1: 1912
+            1: 1792
           -15,3:
             0: 65521
           -14,2:
             0: 30576
-            1: 15
           -14,3:
             0: 65527
           -13,2:
-            1: 4080
+            1: 3840
           -13,3:
             0: 65520
           -12,2:
-            1: 4080
+            1: 3840
           -12,3:
             0: 65520
           -11,2:
-            1: 4080
+            1: 3840
           -11,3:
             0: 65520
           -10,2:
-            1: 4080
+            1: 3840
           -10,3:
             0: 65520
           -8,4:
-            1: 65280
+            1: 3840
           -9,4:
-            1: 65280
+            1: 3840
           -6,5:
-            1: 206
+            1: 12
           -5,5:
-            1: 4080
+            1: 240
           8,-15:
             1: 61026
-          9,-16:
-            1: 12288
           9,-15:
-            1: 40135
+            1: 37955
           9,-14:
             0: 29488
             1: 8
-          10,-15:
-            1: 4096
           10,-14:
-            1: 25393
-          11,-13:
-            1: 4096
+            1: 8464
           12,-9:
-            1: 52428
+            1: 17476
           12,-8:
-            1: 52428
+            1: 17476
           9,-7:
             0: 65527
           9,-6:
@@ -1729,39 +1653,30 @@ entities:
           12,-4:
             0: 65281
           12,-7:
-            1: 52364
+            1: 17412
             2: 64
           12,-6:
-            1: 52428
+            1: 17476
           12,-5:
-            1: 36044
+            1: 33860
           13,-5:
-            1: 65280
+            1: 61440
           14,-5:
-            1: 46848
+            1: 12288
             2: 16384
-          8,-2:
-            1: 15
           9,-3:
             0: 15
             1: 61440
-          9,-2:
-            1: 15
           10,-3:
             0: 15
             1: 61440
-          10,-2:
-            1: 15
           11,-3:
             0: 15
             1: 61440
-          11,-2:
-            1: 15
           12,-3:
             0: 34959
             1: 12288
           12,-2:
-            1: 195
             0: 8
           13,-4:
             0: 65280
@@ -1770,124 +1685,95 @@ entities:
             1: 32768
           13,-2:
             0: 3
-            1: 120
           14,-4:
             0: 62208
             1: 8
           14,-3:
             0: 239
             1: 12288
-          14,-2:
-            1: 135
           15,-4:
-            1: 2147
+            1: 33
           15,-3:
             0: 819
-          15,-5:
-            1: 4096
-          15,-2:
-            1: 240
-          16,-4:
-            1: 4096
-          16,-3:
-            1: 4369
-          16,-2:
-            1: 1
-          -17,2:
-            1: 8748
-          -17,3:
-            1: 16930
           -17,4:
-            1: 140
+            1: 8
           9,2:
-            1: 4080
+            1: 3840
           9,3:
             0: 65520
           10,2:
-            1: 4080
+            1: 3840
           10,3:
             0: 65520
           11,2:
-            1: 4080
+            1: 3840
           11,3:
             0: 65520
           12,2:
-            1: 828
+            1: 768
             0: 34944
           12,3:
             0: 65528
           13,2:
             0: 13104
-            1: 2183
+            1: 2048
           13,3:
             0: 65523
           14,2:
-            1: 382
+            1: 352
           14,3:
             0: 16382
           15,2:
             0: 12288
-            1: 15
           15,3:
             0: 51
-            1: 32768
-          15,4:
-            1: 310
-          16,2:
-            1: 4368
-          16,3:
-            1: 273
           -15,4:
-            1: 65280
+            1: 3840
           -14,4:
-            1: 65280
+            1: 3840
           -13,4:
-            1: 65280
+            1: 3840
           -12,4:
-            1: 65280
+            1: 3840
           -11,4:
-            1: 65280
+            1: 3840
           -10,4:
-            1: 65280
+            1: 3840
           -4,5:
-            1: 65280
+            1: 3840
           -3,5:
-            1: 65280
+            1: 3840
           -2,5:
             1: 61440
-          -2,6:
-            1: 15
           -1,5:
             1: 4096
             0: 12
           -1,6:
-            1: 239
+            1: 14
           0,5:
             0: 7
           0,6:
             2: 1
-            1: 254
+            1: 14
           1,5:
             1: 61440
-          1,6:
-            1: 15
           2,5:
-            1: 65024
-          2,6:
-            1: 1
+            1: 7680
           9,4:
-            1: 65280
+            1: 3840
           10,4:
-            1: 65280
+            1: 3840
           11,4:
-            1: 65280
+            1: 3840
           12,4:
-            1: 65280
+            1: 3840
           13,4:
-            1: 65280
+            1: 3840
           14,4:
-            1: 63232
+            1: 1792
             2: 2048
+          15,4:
+            1: 16
         uniqueMixes:
         - volume: 2500
           temperature: 293.15
@@ -1932,538 +1818,6 @@ entities:
           moles:
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 18.854908
-          - 70.930374
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 18.486433
-          - 69.544205
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.91408
-          - 67.39106
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.605413
-          - 66.2299
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.500626
-          - 65.83569
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.359907
-          - 65.30632
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.297056
-          - 65.069885
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.250296
-          - 64.893974
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.201952
-          - 64.712105
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.087997
-          - 64.28342
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 16.900988
-          - 63.57991
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 16.598038
-          - 62.440243
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 16.799644
-          - 63.19866
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 16.92214
-          - 63.659477
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 17.007896
-          - 63.98209
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 18.304617
-          - 68.86024
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 18.98155
-          - 71.40679
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.95276
-          moles:
-          - 16.783203
-          - 63.136818
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.9469
-          moles:
-          - 16.570438
-          - 62.33641
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.92838
-          moles:
-          - 15.876859
-          - 59.727226
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.90173
-          moles:
-          - 14.494657
-          - 54.527515
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.92706
-          moles:
-          - 14.495207
-          - 54.529587
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 275.8839
-          moles:
-          - 11.988486
-          - 45.09954
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 277.55356
-          moles:
-          - 8.347148
-          - 31.401175
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 277.45178
-          moles:
-          - 10.739337
-          - 40.40036
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 278.54288
-          moles:
-          - 3.2349153
-          - 12.169441
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 276.57687
-          moles:
-          - 16.116877
-          - 60.630154
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 276.04236
-          moles:
-          - 17.257973
-          - 64.92285
           - 0
           - 0
           - 0
@@ -19096,7 +18450,7 @@ entities:
       parent: 1
     - type: Door
       partial: True
-      secondsUntilStateChange: -4885.5674
+      secondsUntilStateChange: -4916.5347
       state: Closing
     - type: Physics
       canCollide: True
@@ -34763,9 +34117,8 @@ entities:
   - uid: 1944
     components:
     - type: Transform
-      anchored: False
       pos: -28.5,-42.5
-      parent: 19
+      parent: 1
   - uid: 1945
     components:
     - type: Transform
