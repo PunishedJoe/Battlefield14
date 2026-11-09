@@ -159,11 +159,6 @@
   parent: BF14GrenadeBaseDefensive
   id: DefensiveGrenadeUSM67
   components:
-  - type: ExpendableLight # Makes you have to do an extra Z input but with a sound effect, simulates the safety clip
-    litSound:
-      path: /Audio/Items/Handcuffs/rope_breakout.ogg
-  - type: PointLight
-    enabled: false
   - type: Sprite
     sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m67.rsi
   - type: Icon
@@ -178,10 +173,6 @@
       - description: Produces shrapnel.
         fontSize: 12
         color: white
-        requireDetailRange: true
-      - description: Requires a safety clip to be removed before the pin can be pulled.
-        fontSize: 12
-        color: red
         requireDetailRange: true
 
 - type: entity

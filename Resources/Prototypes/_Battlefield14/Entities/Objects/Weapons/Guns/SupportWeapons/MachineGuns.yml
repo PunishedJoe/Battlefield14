@@ -625,6 +625,7 @@
     - Burst
     selectedMode: Burst
     shotsPerBurst: 3
+    burstFireRate: 20
     burstCooldown: 0
   - type: ItemSlots
     slots:

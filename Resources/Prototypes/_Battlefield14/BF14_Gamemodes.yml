@@ -27,13 +27,13 @@
   id: BF14_ODP_NATO_VDV
   alias:
   - ODPNATO
-  name: Station control, NATO vs VDV
+  name: ODP Skirmish, NATO vs VDV
   showInVote: true
   supportedMaps: BF14MapPoolODPNATO
   description: Larp and frag, destroy or defend the ODP, beware the railgun.
   minPlayers: 10
   rules:
-  - NFAdventure
+  - ThirtyMinuteRestart
 
 #region groundwar
 
@@ -217,4 +217,12 @@
   components:
   - type: MaxTimeRestartRule
     roundMaxTime: 901 # 10 minutes
+    roundEndDelay: 120 # 2 minutes
+
+- type: entity
+  id: ThirtyMinuteRestart
+  parent: BaseGameRule
+  components:
+  - type: MaxTimeRestartRule
+    roundMaxTime: 1801 # 30 minutes
     roundEndDelay: 120 # 2 minutes

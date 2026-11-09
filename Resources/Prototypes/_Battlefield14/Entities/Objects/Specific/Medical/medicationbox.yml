@@ -479,7 +479,7 @@
     - id: BlisterPackSyretteNanoblood
       amount: 2
 
-#combination , syrettes first then pills
+#region combination , syrettes first then pills
 
 - type: entity
   id: MedicationBoxComboInaprovalineDexalin
