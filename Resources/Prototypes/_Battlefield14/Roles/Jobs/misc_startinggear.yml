@@ -48,7 +48,7 @@
     shoes: ClothingShoesBootsJackFilled
     pocket2: PouchFirstAidFilled
 
-#region TDM
+#region TDM blue
 
 - type: startingGear
   id: BF14TDMGearBlue
@@ -151,6 +151,8 @@
     - MagazineRifleM14
     - MagazineRifleM14
 
+#region TDM red
+
 - type: startingGear
   id: BF14TDMGearRed
   equipment:
@@ -162,7 +164,7 @@
     gloves: ClothingHandsGlovesFingerless
     outerClothing: ClothingOuterArmorPCVExtendedRecharging
     belt: ClothingBeltAssault
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJackFilledRU
     back: ClothingBackpackButtpackSurplus
     neck: ClothingNeckIFFRed
     leftarmband: FlashlightMilitaryAlt

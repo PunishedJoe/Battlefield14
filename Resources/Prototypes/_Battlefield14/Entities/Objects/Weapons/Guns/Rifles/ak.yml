@@ -1,8 +1,11 @@
+#region base
+
 - type: entity
   name: AK-74
   parent: BaseWeaponRifle
-  id: WeaponRifleRUAK74
+  id: BaseWeaponRifleRUAK74
   description: The communist response to the success of the M16.
+  abstract: true
   components:
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK74.rsi
@@ -82,9 +85,10 @@
 
 - type: entity
   name: AK-74M
-  parent: WeaponRifleRUAK74
-  id: WeaponRifleRUAK74M
+  parent: BaseWeaponRifleRUAK74
+  id: BaseWeaponRifleRUAK74M
   description: A modernised version of the successful AK-74 with polymer furniture.
+  abstract: true
   components:
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK74M.rsi
@@ -130,6 +134,301 @@
     zeroVisible: true
 
 - type: entity
+  name: AKM
+  parent: BaseWeaponRifleRUAK74
+  id: BaseWeaponRifleRUAKM
+  description: The right arm of the enslaved world.
+  abstract: true
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKM.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-akm
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-akm
+      - state: grip-ak74
+      - state: handguard-ak74
+      - state: barrel-akm
+      - state: ironsight-ak74
+      - state: mag-akm-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKM.rsi
+  - type: GunWieldBonus
+    minAngle: -29
+    maxAngle: -30
+  - type: Gun
+    minAngle: 31
+    maxAngle: 45
+    angleIncrease: 1.5
+    angleDecay: 16
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    selectedMode: FullAuto
+    fireRate: 10 # 600 RPM
+    projectileSpeed: 40
+    soundGunshot:
+      collection: BF_AK_762_Gunshots
+      params:
+        volume: -5
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAKM
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
+  - type: MagazineVisuals
+    magState: mag-akm
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+- type: entity
+  name: AK-12
+  parent: BaseWeaponRifleRUAK74
+  id: BaseWeaponRifleRUAK12
+  description: A "modernised" '74 pattern rifle, which looks attractive but doesn't advance much farther than the AK74M.
+  abstract: true
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK12.rsi
+  - type: Icon
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    state: icon-ak12
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-ak12
+      - state: grip-ak12
+      - state: handguard-ak12
+      - state: barrel-ak12
+      - state: collimator-1p87
+      - state: mag-ak12-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK12.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK12
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+  - type: MagazineVisuals
+    magState: mag-ak12
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
+  - type: WieldedCrosshair
+    rsi:
+      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
+      state: 1p87
+
+#region AK-74
+
+- type: entity
+  name: AK-74
+  parent: BaseWeaponRifleRUAK74
+  id: WeaponRifleRUAK74
+  description: The communist response to the success of the M16.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-ak74
+      - state: grip-ak74
+      - state: handguard-ak74
+      - state: barrel-ak74
+      - map: ["barrelAttachment"]
+        offset: 0.781 , 0.09
+      - state: ironsight-ak74
+      - state: mag-ak74-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK74
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+      attachment_barrel:
+        name: Barrel attachment
+        whitelist:
+          tags:
+            - BF14Bayonet6h4
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AK-74 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Takes 6h4 pattern bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: barrel attachment
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonet6h4
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-6h4
+        whitelist:
+          tags:
+          - BF14Bayonet6h4
+
+#region AK-74M
+
+- type: entity
+  name: AK-74M
+  parent: BaseWeaponRifleRUAK74M
+  id: WeaponRifleRUAK74M
+  description: A modernised version of the successful AK-74 with polymer furniture.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: stock-ak74black
+      - state: grip-ak74black
+      - state: handguard-ak74black
+      - state: barrel-ak74
+      - map: ["barrelAttachment"]
+        offset: 0.781 , 0.09
+      - state: ironsight-ak74
+      - state: mag-ak74black-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAK74Black
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAK74
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle545x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle545x39
+      attachment_barrel:
+        name: Barrel attachment
+        whitelist:
+          tags:
+            - BF14Bayonet6h4
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AK-74 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Takes 6h4 pattern bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: barrel attachment
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonet6h4
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-6h4
+        whitelist:
+          tags:
+          - BF14Bayonet6h4
+
+#region AK-74M UUK
+
+- type: entity
   name: AK-74M UUK
   parent: WeaponRifleRUAK74M
   id: WeaponRifleRUAK74MUUK
@@ -144,6 +443,8 @@
       - state: grip-UUK
       - state: handguard-UUK
       - state: barrel-ak74
+      - map: ["barrelAttachment"]
+        offset: 0.781 , 0.09
       - state: collimator-1p87black
       - state: foregrip-polymerblack
       - state: mag-ak74black-0
@@ -153,9 +454,11 @@
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
       state: 1p87
 
+#region AKS-74
+
 - type: entity
   name: AKS-74
-  parent: WeaponRifleRUAK74
+  parent: BaseWeaponRifleRUAK74
   id: WeaponRifleRUAKS74
   description: An AK-74 with a folding stock, for VDV paratroopers in the soviet union.
   components:
@@ -244,6 +547,8 @@
         whitelist:
           tags:
           - BF14TourniquetEsmarch
+
+#region AKS-74u
 
 - type: entity
   name: AKS-74u
@@ -362,17 +667,14 @@
         variation: 0.125
         range: 15
 
+#region AK-12
+
 - type: entity
   name: AK-12
-  parent: WeaponRifleRUAK74
+  parent: BaseWeaponRifleRUAK12
   id: WeaponRifleRUAK12
   description: A "modernised" '74 pattern rifle, which looks attractive but doesn't advance much farther than the AK74M.
   components:
-  - type: Item
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK12.rsi
-  - type: Icon
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
-    state: icon-ak12
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
     layers:
@@ -382,11 +684,11 @@
       - state: grip-ak12
       - state: handguard-ak12
       - state: barrel-ak12
+      - map: ["barrelAttachment"]
+        offset: 0.6875 , 0.09
       - state: collimator-1p87
       - state: mag-ak12-0
         map: ["enum.GunVisualLayers.Mag"]
-  - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK12.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -406,15 +708,47 @@
         whitelist:
           tags:
             - BF_CartridgeRifle545x39
-  - type: MagazineVisuals
-    magState: mag-ak12
-    steps: 5
-    zeroVisible: true
-  - type: Appearance
-  - type: WieldedCrosshair
-    rsi:
-      sprite: _Battlefield14/Interface/MousePointer/optics.rsi
-      state: 1p87
+      attachment_barrel:
+        name: Barrel attachment
+        whitelist:
+          tags:
+            - BF14Bayonet6h4
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AK-74 pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Takes 6h4 pattern bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: barrel attachment
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonet6h4
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-6h4
+        whitelist:
+          tags:
+          - BF14Bayonet6h4
 
 - type: entity
   name: AK-12 (Magnifier)
@@ -431,6 +765,8 @@
       - state: grip-ak12
       - state: handguard-ak12
       - state: barrel-ak12
+      - map: ["barrelAttachment"]
+        offset: 0.6875 , 0.09
       - state: collimator-1p87
       - state: foregrip-polymer
       - state: magnifier
@@ -455,6 +791,11 @@
         whitelist:
           tags:
             - BF_CartridgeRifle545x39
+      attachment_barrel:
+        name: Barrel attachment
+        whitelist:
+          tags:
+            - BF14Bayonet6h4
   - type: Gun
     angleIncrease: 1
   - type: CursorOffsetRequiresWield
@@ -462,15 +803,17 @@
     maxOffset: 5
     pvsIncrease: 0.35
 
+#region AK-12SK
+
 - type: entity
   name: AK-12SK
-  parent: WeaponRifleRUAK12
+  parent: BaseWeaponRifleRUAK12
   id: WeaponRifleRUAK12SK
   description: A shorter version of the AK-12 rifle, with a slightly shorter barrel than the AK-12K (no S) and lacking the suppressor package.
   components:
   - type: Item
     size: Large
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK12.rsi
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
     state: icon-ak12
@@ -487,7 +830,7 @@
       - state: mag-ak12-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
-    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK12.rsi
+    sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AK12.rsi
   - type: GunWieldBonus
     minAngle: -24
     maxAngle: -28
@@ -525,9 +868,11 @@
           tags:
             - BF_CartridgeRifle545x39
 
+#region AK-74 FSB MOD.
+
 - type: entity
   name: AK-74 FSB MOD.
-  parent: WeaponRifleRUAK74
+  parent: BaseWeaponRifleRUAK74
   id: WeaponRifleRUAK74FSB
   description: An AK-74 with aftermarket parts geared towards the needs of the FSB.
   components:
@@ -599,9 +944,11 @@
       sprite: _Battlefield14/Interface/MousePointer/optics.rsi
       state: acog
 
+#region AKM
+
 - type: entity
   name: AKM
-  parent: WeaponRifleRUAK74
+  parent: BaseWeaponRifleRUAK74
   id: WeaponRifleRUAKM
   description: The right arm of the enslaved world.
   components:
@@ -619,6 +966,8 @@
       - state: grip-ak74
       - state: handguard-ak74
       - state: barrel-akm
+      - map: ["barrelAttachment"]
+        offset: 0.718, 0.09
       - state: ironsight-ak74
       - state: mag-akm-0
         map: ["enum.GunVisualLayers.Mag"]
@@ -662,11 +1011,49 @@
         whitelist:
           tags:
             - BF_CartridgeRifle762x39
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
   - type: MagazineVisuals
     magState: mag-akm
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonet6h3
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-6h3
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
   - type: ExtendDescription
     descriptionList:
       - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Takes 6h3 pattern bayonets.
         color: "#4f94ad"
         requireDetailRange: true
 
@@ -690,11 +1077,15 @@
       - state: grip-ak74
       - state: handguard-ak74
       - state: barrel-akm
+      - map: ["barrelAttachment"]
+        offset: 0.718, 0.09
       - state: ironsight-ak74
       - state: mag-akm-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/AKMS.rsi
+
+#region MPi-KM
 
 - type: entity
   name: MPi-KM
@@ -716,6 +1107,8 @@
       - state: grip-ak74
       - state: handguard-mpi
       - state: barrel-akm
+      - map: ["barrelAttachment"]
+        offset: 0.718, 0.09
       - state: ironsight-ak74
       - state: mag-akm-0
         map: ["enum.GunVisualLayers.Mag"]
@@ -742,15 +1135,19 @@
       - state: grip-ak74
       - state: handguard-mpi
       - state: barrel-akm
+      - map: ["barrelAttachment"]
+        offset: 0.718, 0.09
       - state: ironsight-ak74
       - state: mag-akm-0
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/MPiKMS.rsi
 
+#region AK-103
+
 - type: entity
   name: AK-103
-  parent: WeaponRifleRUAKM
+  parent: BaseWeaponRifleRUAKM
   id: WeaponRifleRUAK103
   description: A later revision of the AKM rifle, with even moderner design.
   components:
@@ -769,7 +1166,7 @@
       - state: handguard-ak74black
       - state: barrel-ak74
       - map: ["barrelAttachment"]
-        offset: 0.8, 0.1
+        offset: 0.78, 0.09
       - state: ironsight-ak74
       - state: mag-ak103-0
         map: ["enum.GunVisualLayers.Mag"]
@@ -840,9 +1237,11 @@
         color: "#4f94ad"
         requireDetailRange: true
 
+#region AK-203
+
 - type: entity
   name: AK-203
-  parent: WeaponRifleRUAKM
+  parent: BaseWeaponRifleRUAKM
   id: WeaponRifleRUAK203
   description: A later revision of the AKM rifle, with even moderner design.
   components:
@@ -860,6 +1259,8 @@
       - state: grip-ak203
       - state: handguard-ak203
       - state: barrel-ak203
+      - map: ["barrelAttachment"]
+        offset: 0.75, 0.1
       - state: ironsight-ak74
         offset: -0.18, 0
       - state: mag-ak203-0
@@ -885,12 +1286,57 @@
         whitelist:
           tags:
             - BF_CartridgeRifle762x39
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
   - type: MagazineVisuals
     magState: mag-ak203
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonet6h3
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-6h3
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Takes 6h3 pattern bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
+
+#region Draco
 
 - type: entity
   name: draco
-  parent: WeaponRifleRUAKM
+  parent: BaseWeaponRifleRUAKM
   id: WeaponRifleRUAKMUDraco
   description: A chopped down AK47, unwieldy and impractical, with a reputation for being used by gang members.
   components:
@@ -936,10 +1382,75 @@
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
+      - map: ["barrelAttachment"]
+        sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AK/iconstates.rsi
+        offset: 0.531, 0.09
       - state: mag-0
         map: ["enum.GunVisualLayers.Mag"]
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineRifleAKM
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/AK_545/uc_ak_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineRifleAKM
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgeRifle762x39
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgeRifle762x39
+      attachment_barrel:
+        insertSound: /Audio/Items/screwdriver.ogg
+        ejectSound: /Audio/Items/screwdriver.ogg
+        priority: 0
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/draco_gold.rsi
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: es-gun-attachments-slot-name-barrel
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14Bayonet6h3
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-6h3
+        whitelist:
+          tags:
+          - BF14Bayonet6h3
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes AKM pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Takes 6h3 pattern bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
 
 - type: entity
   name: VPO-136
@@ -953,9 +1464,11 @@
     selectedMode: SemiAuto
     fireRate: 5
 
+#region AN-94
+
 - type: entity
   name: AN-94
-  parent: WeaponRifleRUAK74M
+  parent: BaseWeaponRifleRUAK74M
   id: WeaponRifleRUAN94
   description: An exceptionally rare, expensive, and complicated weapon designed to replace the AK-74, ended up in limited use with special forces. Famous for its hyperburst feature. GRAU designation 6P33.
   components:

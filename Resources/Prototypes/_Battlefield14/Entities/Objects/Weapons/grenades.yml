@@ -118,6 +118,7 @@
 - type: entity
   parent: GrenadeBase
   id: BF14GrenadeBaseFlashbang
+  abstract: true
   components:
   - type: OnUseTimerTrigger
     delay: 2

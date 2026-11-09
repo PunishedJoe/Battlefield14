@@ -146,7 +146,7 @@
     - name: Breaching
       entries:
       - id: BreachingCharge
-        amount: 10
+        amount: 20
       - id: BreachingSaw
         amount: 1
       - id: RemoteSignallerM57
