@@ -1,3 +1,5 @@
+#region US, clean
+
 - type: soundCollection
   id: GruntUSMedicClean
   files:
@@ -98,3 +100,31 @@
   - /Audio/_Battlefield14/Voice/Human/Belwoods/doctos/doctos2.ogg
   - /Audio/_Battlefield14/Voice/Human/Belwoods/doctos/doctos3.ogg
   - /Audio/_Battlefield14/Voice/Human/Belwoods/doctos/doctos4.ogg
+
+# US, filtered
+
+- type: soundCollection
+  id: GruntUSMedicTauntFiltered
+  files:
+  - /Audio/_Battlefield14/Voice/Human/Payday2/English/Filtered/Medictaunt/medictaunt_1.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/English/Filtered/Medictaunt/medictaunt_2.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/English/Filtered/Medictaunt/medictaunt_3.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/English/Filtered/Medictaunt/medictaunt_4.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/English/Filtered/Medictaunt/medictaunt_5.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/English/Filtered/Medictaunt/medictaunt_6.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/English/Filtered/Medictaunt/medictaunt_7.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/English/Filtered/Medictaunt/medictaunt_8.ogg
+
+# region RU, clean
+
+# region RU, filtered
+
+- type: soundCollection
+  id: GruntRUMedicTauntFiltered
+  files:
+  - /Audio/_Battlefield14/Voice/Human/Payday2/Russian/Filtered/Medictaunt/medictaunt_1.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/Russian/Filtered/Medictaunt/medictaunt_2.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/Russian/Filtered/Medictaunt/medictaunt_3.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/Russian/Filtered/Medictaunt/medictaunt_4.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/Russian/Filtered/Medictaunt/medictaunt_5.ogg
+  - /Audio/_Battlefield14/Voice/Human/Payday2/Russian/Filtered/Medictaunt/medictaunt_6.ogg

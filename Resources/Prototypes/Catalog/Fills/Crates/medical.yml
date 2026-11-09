@@ -3,15 +3,16 @@
   parent: CrateMedical
   name: medical supplies crate
   description: Basic medical supplies.
+  suffix: filled # BF14
   components:
   - type: StorageFill
     contents:
     - id: MedkitFilled
       amount: 2
-    - id: Gauze
+    - id: BF14GauzePacket # BF14
       amount: 2
-    - id: Bloodpack
-      amount: 2
+    - id: MedicationBoxSyrettesSaline # BF14
+    - id: MedicationBoxSyrettesEpinephrine # BF14
     - id: BoxLatexGloves
     - id: BoxSterileMask
     - id: BoxMouthSwab

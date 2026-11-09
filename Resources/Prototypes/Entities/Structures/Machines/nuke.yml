@@ -16,9 +16,9 @@
       map: ["enum.NukeVisualLayers.Unlit"]
       shader: unshaded
       visible: false
-    - state: nuclearbomb_gay
-      map: ["pride"]
-      visible: false
+#BF14    - state: nuclearbomb_gay
+#BF14      map: ["pride"]
+#BF14      visible: false
     - state: nukefestive
       map: ["christmas"]
       visible: false
@@ -27,15 +27,15 @@
     holidays:
       festive:
       - FestiveSeason
-#      pride:
-#      - PrideMonth
+#BF14      pride:
+#BF14      - PrideMonth
   - type: GenericVisualizer
     visuals:
       enum.HolidayVisuals.Holiday:
         christmas:
           festive: { visible: true }
-        pride:
-          pride: { visible: true }
+#BF14        pride:
+#BF14          pride: { visible: true }
       enum.NukeVisuals.Deployed:
         enum.NukeVisualLayers.Base:
           False: { state: nuclearbomb_base }
@@ -145,23 +145,23 @@
     - state: nukefestive
       map: ["christmas"]
       visible: false
-    - state: nuclearbomb_gay
-      map: [ "pride" ]
-      visible: false
+#BF14    - state: nuclearbomb_gay
+#BF14      map: [ "pride" ]
+#BF14      visible: false
   - type: Appearance
   - type: HolidayVisuals
     holidays:
       festive:
       - FestiveSeason
-      pride:
-      - PrideMonth
+#BF14      pride:
+#BF14      - PrideMonth
   - type: GenericVisualizer
     visuals:
       enum.HolidayVisuals.Holiday:
         christmas:
           festive: { visible: true }
-        pride:
-          pride: { visible: true }
+#BF14        pride:
+#BF14          pride: { visible: true }
   - type: Physics
     bodyType: Dynamic
   - type: Fixtures

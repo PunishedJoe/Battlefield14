@@ -41,7 +41,7 @@
   id: Belch
   name: chat-emote-name-belch
 #BF14  category: Vocal
-  available: false
+#BF14  available: false
   icon: _NF/Interface/Emotes/belch.png
   whitelist:
     components:

@@ -25,6 +25,8 @@
       rank: BF-rank-us-lancecorporal
     - type: SurgerySpeedModifier
       SpeedModifier: 1.65
+    - type: Speech
+      allowedEmotes: ['GruntUSMedicTauntFiltered']
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
   access:

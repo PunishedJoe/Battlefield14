@@ -142,3 +142,5 @@
       settings: short
   - type: SurgerySpeedModifier
     speedModifier: 2.25
+  - type: Speech
+    allowedEmotes: ['GruntUSMedicTauntFiltered']
