@@ -42,18 +42,24 @@
       collection: MaleDeathGasp
     Belch: # Frontier
       collection: Belch # Frontier
-    GruntUSMedicClean: # BF14
-      collection: GruntUSMedicClean # BF14
-    GruntUSContactClean: # BF14
-      collection: GruntUSContactClean # BF14
-    GruntUSChargeClean: # BF14
-      collection: GruntUSChargeClean # BF14
-    GruntUSGrenadeThrowingClean: # BF14
-      collection: GruntUSGrenadeThrowingClean # BF14
-    GruntUSGrenadeSurprisedClean: # BF14
-      collection: GruntUSGrenadeSurprisedClean # BF14
-    Doctos: #BF14
+# BF14 V
+    GruntUSMedicClean:
+      collection: GruntUSMedicClean
+    GruntUSContactClean:
+      collection: GruntUSContactClean
+    GruntUSChargeClean:
+      collection: GruntUSChargeClean
+    GruntUSGrenadeThrowingClean:
+      collection: GruntUSGrenadeThrowingClean
+    GruntUSGrenadeSurprisedClean:
+      collection: GruntUSGrenadeSurprisedClean
+    Doctos:
       collection: Doctos
+    GruntUSMedicTauntFiltered:
+      collection: GruntUSMedicTauntFiltered
+    GruntRUMedicTauntFiltered:
+      collection: GruntRUMedicTauntFiltered
+# BF14 ^
 
 - type: emoteSounds
   id: FemaleHuman

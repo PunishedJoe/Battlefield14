@@ -25,6 +25,8 @@
       SpeedModifier: 2.25
     - type: ChatRank
       rank: BF-rank-corporal
+    - type: Speech
+      allowedEmotes: ['GruntUSMedicTauntFiltered']
   - !type:AddImplantSpecial
     implants: [ TrackingImplantNATOUS ]
   access:

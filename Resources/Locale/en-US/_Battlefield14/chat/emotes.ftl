@@ -4,6 +4,7 @@ chat-emote-name-grunt-us-charge = Charge!
 chat-emote-name-grunt-us-grenadethrowing = Throwing a grenade!
 chat-emote-name-grunt-us-grenadesurprised = Shit, grenade!
 chat-emote-name-doctos = DOCTOS!!!
+chat-emote-name-grunt-us-medictaunt = Medic taunt
 
 chat-emote-msg-grunt-us-medic = screams for a medic!
 chat-emote-msg-grunt-us-contact = yells contact!
@@ -11,3 +12,4 @@ chat-emote-msg-grunt-us-charge = urges you to push forward!
 chat-emote-msg-grunt-us-grenadethrowing = is throwing a grenade!
 chat-emote-msg-grunt-us-grenadesurprised = spots a grenade!
 chat-emote-msg-doctos = screams DOCTOS outloud in fear!
+chat-emote-msg-grunt-us-medictaunt = flexes {POSS-ADJ($entity)} medical degree!

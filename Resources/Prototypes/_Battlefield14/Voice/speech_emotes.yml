@@ -1,6 +1,8 @@
 # Clean for raw audio
 # Mask for audio with a gas mask filter
 
+#region US, Clean
+
 - type: emote
   id: GruntUSMedicClean
   name: chat-emote-name-grunt-us-medic
@@ -21,7 +23,7 @@
   id: Doctos
   name: chat-emote-name-doctos
   category: Vocal
-  icon: _Battlefield14/Actions/Voicelines/medic.png
+  icon: _Battlefield14/Actions/Voicelines/doctos.png
   whitelist:
     components:
     - Vocal
@@ -95,3 +97,39 @@
     - grenade
     - nade
     - frag
+
+#region US filtered
+
+- type: emote
+  id: GruntUSMedicTauntFiltered
+  name: chat-emote-name-grunt-us-medictaunt
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/medictaunt.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-medictaunt"]
+  chatTriggers:
+    - medictaunt
+    - medic taunt
+    - medic up
+    - painkiller
+
+#region RU filtered
+
+- type: emote
+  id: GruntRUMedicTauntFiltered
+  name: chat-emote-name-grunt-us-medictaunt
+  category: Vocal
+  icon: _Battlefield14/Actions/Voicelines/medictaunt.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  chatMessages: ["chat-emote-msg-grunt-us-medictaunt"]
+  chatTriggers:
+    - medictaunt
+    - medic taunt
+    - medic up
+    - painkiller

@@ -25,6 +25,8 @@
     - type: NpcFactionMember
       factions:
       - FSB
+    - type: Speech
+      allowedEmotes: ['GruntRUMedicTauntFiltered']
   - !type:AddImplantSpecial
     implants: [ TrackingImplantPACTRU ]
   access:

@@ -111,6 +111,8 @@
       settings: short
   - type: SurgerySpeedModifier
     speedModifier: 2.25
+  - type: Speech
+    allowedEmotes: ['GruntUSMedicTauntFiltered']
 
 ## OUT OF ATMOSPHERE / SPACE
 
@@ -179,3 +181,5 @@
       settings: short
   - type: SurgerySpeedModifier
     speedModifier: 2.25
+  - type: Speech
+    allowedEmotes: ['GruntUSMedicTauntFiltered']

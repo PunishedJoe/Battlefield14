@@ -34,8 +34,8 @@
             sprite: Mobs/Species/Human/displacement.rsi
             state: jumpsuit-female
   - type: Carriable # Frontier: Carrying system from nyanotrasen.
-  - type: Speech # Frontier
-    allowedEmotes: ['Belch'] # Frontier
+#  - type: Speech # Frontier
+#    allowedEmotes: ['Belch'] # Frontier
   - type: Destructible # BF14 pain screams
     thresholds:
     - trigger:
