@@ -151,9 +151,9 @@
     - name: Breaching
       entries:
       - id: BreachingCharge
-        amount: 10
+        amount: 20
       - id: FUBAR
-        amount: 1
+        amount: 2
       - id: RemoteSignallerM57
         amount: 10
       - id: ThermiteCharge

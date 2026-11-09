@@ -158,7 +158,7 @@
     - name: Breaching
       entries:
       - id: BreachingCharge
-        amount: 10
+        amount: 20
       - id: SecBreachingHammer
         amount: 1
       - id: BoxChargeFuzeKit
