@@ -74,11 +74,6 @@
 #BF14          - Sidearm
   - type: ClothingSlowOnDamageModifier # Mono: Added to parent
     modifier: 0.75 # BF14
-  - type: FootstepModifier # BF14
-    footstepSoundCollection:
-      collection: BF_Footsteps_Boots
-      params:
-        variation: 0.07
 
 - type: entity
   abstract: true

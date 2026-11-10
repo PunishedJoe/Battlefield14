@@ -1,3 +1,5 @@
+#region M16A1
+
 - type: entity
   name: M16A1
   parent: BaseWeaponRifle
@@ -125,6 +127,8 @@
     steps: 1
     zeroVisible: true
 
+#region M16A2
+
 - type: entity
   name: M16A2
   parent: WeaponRifleUSM16A1
@@ -191,6 +195,8 @@
     zeroVisible: true
   - type: Appearance
 
+#region M16A3
+
 - type: entity
   name: M16A3
   parent: WeaponRifleUSM16A2
@@ -203,6 +209,8 @@
     - FullAuto
     selectedMode: FullAuto
     fireRate: 12.5 # 750 RPM
+
+#region M16A4
 
 - type: entity
   name: M16A4

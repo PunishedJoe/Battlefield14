@@ -22,7 +22,7 @@ public sealed partial class BarricadeBlockComponent : Component
     public bool Bidirectional = true;
 
     /// <summary>
-    /// Can it be used omnidirectionally (e.g. vending machines)
+    /// BF14 | Can it be used omnidirectionally (e.g. vending machines)
     /// </summary>
     [DataField("omnidirectional")]
     public bool Omnidirectional = true;
@@ -31,7 +31,7 @@ public sealed partial class BarricadeBlockComponent : Component
     /// Distance between the shooter and barricade
     /// </summary>
     [DataField("passthroughdistance")]
-    public float PassThroughDistance = 1.5f;
+    public float PassThroughDistance = 2.5f; // BF14 was 1.5
 
 }
 

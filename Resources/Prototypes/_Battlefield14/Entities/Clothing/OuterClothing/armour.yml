@@ -24,6 +24,11 @@
     walkModifier: 0.9
     sprintModifier: 0.85
   - type: HeldSpeedModifier
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: BF_Footsteps_Boots
+      params:
+        variation: 0.07
 
 - type: entity
   parent: ClothingOuterArmorPlateCarrierBlack
@@ -193,6 +198,11 @@
     walkModifier: 0.95
     sprintModifier: 0.85
   - type: HeldSpeedModifier
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: BF_Footsteps_Boots
+      params:
+        variation: 0.07
 
 - type: entity
   parent: [ClothingOuterArmorBasicPlateCarrierEmpty, ClothingArmorPlateLight]
@@ -224,6 +234,11 @@
     walkModifier: 0.9
     sprintModifier: 0.85
   - type: HeldSpeedModifier
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: BF_Footsteps_Boots
+      params:
+        variation: 0.07
 
 - type: entity
   parent: [ClothingOuterArmorWebVestSecEmpty, ClothingArmorPlateLight]
@@ -284,6 +299,11 @@
         Caustic: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: BF_Footsteps_Boots
+      params:
+        variation: 0.07
 
 - type: entity
   parent: [ClothingOuterArmorBase]
@@ -311,6 +331,11 @@
     walkModifier: 0.95
     sprintModifier: 0.95
   - type: HeldSpeedModifier
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: BF_Footsteps_Boots
+      params:
+        variation: 0.07
 
 - type: entity
   parent: ClothingOuterArmorBase
@@ -326,7 +351,7 @@
     modifiers:
       flatReductions:
         Blunt: 8
-        Slash: 25
+        Slash: 20
         Piercing: 9
   - type: ExplosionResistance
     damageCoefficient: 0.9
@@ -351,7 +376,7 @@
     modifiers:
       flatReductions:
         Blunt: 5
-        Slash: 20
+        Slash: 15
         Piercing: 7
   - type: ExplosionResistance
     damageCoefficient: 0.9
@@ -376,8 +401,8 @@
     modifiers:
       flatReductions:
         Blunt: 5
-        Slash: 12
-        Piercing: 4
+        Slash: 5
+        Piercing: 5
   - type: ExplosionResistance
     damageCoefficient: 0.95
   - type: StaminaDamageResistance
