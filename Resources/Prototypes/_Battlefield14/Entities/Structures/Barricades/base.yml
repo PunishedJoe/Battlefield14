@@ -50,6 +50,7 @@
     node: base
   - type: BarricadeBlock
     bidirectional: true
+#    passThroughDistance: 2.25
     blocking: 100
 
 - type: entity
