@@ -33,7 +33,7 @@
   - type: RandomSpawner
     offset: 0
     prototypes:
-      - CrateSecgearNATOFilledM870
+      - CrateSecgearNATOFilledM1014
       - CrateSecgearNATOFilledM590
     chance: 1
 

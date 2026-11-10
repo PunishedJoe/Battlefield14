@@ -80,6 +80,8 @@
         amount: 5
       - id: WeaponSubmachinegunDEMP510
         amount: 5
+      - id: WeaponShotgunUSM870
+        amount: 1
       - id: WeaponPistolUSMK27
         amount: 2
     - name: Utility
