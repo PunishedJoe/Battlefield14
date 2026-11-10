@@ -1,12 +1,12 @@
 - type: job
-  id: USMCAutomaticRifleman
-  name: job-name-usmc-automatic-rifleman
-  description: job-description-usmc-automatic-rifleman
-  playTimeTracker: JobUSMCAutomaticRifleman
+  id: NGAutomaticRifleman
+  name: job-name-ng-automatic-rifleman
+  description: job-description-ng-automatic-rifleman
+  playTimeTracker: JobNGAutomaticRifleman
   weight: 76
-  startingGear: USMCAutomaticRiflemanGear
+  startingGear: NGAutomaticRiflemanGear
   alwaysUseSpawner: true
-  icon: "JobIconNATOSupport"
+  icon: "JobIconNATOAllyMachinegunner"
   requireAdminNotify: false
   supervisors: job-supervisors-usgov
   canBeAntag: false
@@ -37,18 +37,19 @@
   - NATOArmory
 
 - type: startingGear
-  id: USMCAutomaticRiflemanGear
+  id: NGAutomaticRiflemanGear
   equipment:
-    id: USMCAutomaticRiflemanPDA
+    id: NGAutomaticRiflemanPDA
     ears: ClothingHeadsetAltUS
-    belt: ClothingBeltMilitaryWebbingUSFilledM249
-#    jumpsuit: ClothingUniformJumpsuitCamoUSMarpatDesert
-    head: ClothingHeadHatHelmetUSRiotACH
+    belt: ClothingBeltMilitaryWebbingUS
+    jumpsuit: ClothingUniformJumpsuitCamoUSM81Urban
+    head: ClothingHeadHatHelmetUSUrbanRiot
     outerClothing: ClothingOuterArmorPlateCarrierIOTVExtended
-    shoes: ClothingShoesBootsJackFilledUSMC
-    suitstorage: WeaponMachineGunUSM249Para
+    shoes: ClothingShoesBootsJack
+    suitstorage: WeaponMachineGunUSM60
+    suitstorage2: BF14ClothingArmbandSheathKnifeM7
     pocket1: PouchFirstAidFilled
-    pocket2: PouchGrenadesFilledUSMCSupport
+    pocket2: PouchGrenadesFilledUSASupport
     rightarmband: ClothingArmbandThighHolsterFilledUS
   storage:
     back:
@@ -57,3 +58,8 @@
     - ClothingMaskGasM40
     - Tourniquet
     - Zipties
+    belt:
+    - MagazineBeltBoxM60
+    - MagazinePistolM9
+    - MagazinePistolM9
+    - MagazineBeltBoxM60

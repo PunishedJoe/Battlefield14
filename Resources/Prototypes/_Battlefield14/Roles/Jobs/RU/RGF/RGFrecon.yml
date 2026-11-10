@@ -3,7 +3,7 @@
   name: job-name-rgf-recon
   description: job-description-vdv-recon
   playTimeTracker: JobRGFRecon
-  weight: 74
+  weight: 73
   startingGear: RGFReconGear
   alwaysUseSpawner: true
   icon: "JobIconPACTRecon"

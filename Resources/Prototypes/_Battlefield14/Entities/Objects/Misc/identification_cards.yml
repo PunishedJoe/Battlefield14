@@ -599,6 +599,20 @@
 
 - type: entity
   parent: IDCardStandard
+  id: RGFMachinegunnerIDCard
+  name: RGF ID card
+  suffix: machinegunner
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: RGFMachinegunner
+
+- type: entity
+  parent: IDCardStandard
   id: RGFMedicIDCard
   name: RGF ID card
   suffix: combat medic

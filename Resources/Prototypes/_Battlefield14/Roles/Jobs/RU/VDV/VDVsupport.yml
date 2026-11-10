@@ -6,7 +6,7 @@
   weight: 76
   startingGear: VDVAutomaticRiflemanGear
   alwaysUseSpawner: true
-  icon: "JobIconPACTSupport"
+  icon: "JobIconPACTAutoRifleman"
   requireAdminNotify: false
   supervisors: job-supervisors-rugov
   canBeAntag: false

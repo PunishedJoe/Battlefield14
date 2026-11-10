@@ -1,12 +1,12 @@
 - type: job
-  id: RGFAutomaticRifleman
+  id: RGFMachinegunner
   name: job-name-rgf-automatic-rifleman
   description: job-description-vdv-automatic-rifleman
-  playTimeTracker: JobRGFAutomaticRifleman
-  weight: 76
-  startingGear: RGFAutomaticRiflemanGear
+  playTimeTracker: JobRGFMachinegunner
+  weight: 75
+  startingGear: RGFMachinegunnerGear
   alwaysUseSpawner: true
-  icon: "JobIconPACTSupport"
+  icon: "JobIconPACTMachinegunner"
   requireAdminNotify: false
   supervisors: job-supervisors-rugov
   canBeAntag: false
@@ -38,9 +38,9 @@
   - PACTArmory
 
 - type: startingGear
-  id: RGFAutomaticRiflemanGear
+  id: RGFMachinegunnerGear
   equipment:
-    id: RGFAutomaticRiflemanPDA
+    id: RGFMachinegunnerPDA
     ears: ClothingHeadsetAltRU
     belt: ClothingBeltMilitaryWebbingRU
     jumpsuit: ClothingUniformJumpsuitRUGorka
@@ -53,7 +53,6 @@
     rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:
     back:
-    - SupplyBoxAmmoRUFilled
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussiaPMK4
     - BF14TourniquetEsmarch
