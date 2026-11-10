@@ -250,6 +250,21 @@
     access: [["NATOSoldier"]]
 
 - type: entity
+  id: CrateSecgearNATOFilledM1014
+  suffix: Filled, M1014
+  parent: CrateSecgear
+  name: M1014 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponShotgunUSM1014
+          amount: 2
+        - id: ShellBoxBF12GaugeBuckshot
+          amount: 2
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
   id: CrateSecgearNATOFilledM590
   suffix: Filled, M590
   parent: CrateSecgear

@@ -38,12 +38,16 @@ job-description-bw-recon = Go on the flanks and conduct surprise attacks or rela
 
 #Russian Federation#
 
+job-description-rgf-medic = Bring back your buds from the brink, go bangbangbang with your regular sized AK.
+
 job-description-vdv-lieutenant = Take top-down control of your airborne platoon and keep everything running smoothly.
 job-description-vdv-squadleader = Coordinate optimal American shooting for your fireteam.
 job-description-vdv-rifleman = Shoot Americans.
 job-description-vdv-automatic-rifleman = Lay down suppressing fire and resupply your team-mates.
+job-description-vdv-machinegunner = Lay down heavy suppressing fire.
 job-description-vdv-medic = Bring back your buds from the brink, go ratatat-tat with your little AK.
 job-description-vdv-recon = Go on the flanks and conduct surprise attacks or relay intel.
+job-description-vdv-marksman = Reach out farther than the average infantryman and take names.
 
 job-description-rkhb-squadleader = Coordinate optimal American shooting for your fireteam.
 job-description-rkhb-rifleman = Shoot Americans, but in hazardous conditions.

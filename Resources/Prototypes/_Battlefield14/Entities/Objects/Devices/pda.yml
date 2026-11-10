@@ -644,6 +644,22 @@
 
 - type: entity
   parent: BasePDA
+  id: RGFMachinegunnerPDA
+  name: RGF PDA
+  description: Filled with buff team fortress 2 edits.
+  suffix: machinegunner
+  components:
+  - type: Icon
+    sprite: _Battlefield14/Objects/Devices/pda.rsi
+    state: pda-ru
+  - type: Pda
+    id: RGFMachinegunnerIDCard
+    state: pda-ru
+  - type: PdaBorderColor
+    borderColor: "#a02829"
+
+- type: entity
+  parent: BasePDA
   id: RGFMedicPDA
   name: RGF PDA
   description: What's that guy with the sledgehammer doing?.

@@ -74,6 +74,27 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: JobIconNATOAutoRifleman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoautorifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOMachinegunner
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natomachinegunner
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOGrenadier
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoautogrenadier
+
+- type: jobIcon
+  parent: JobIcon
   id: JobIconNATOMedic
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
@@ -85,6 +106,13 @@
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: natorecon
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOMarksman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natomarksman
 
 - type: jobIcon
   parent: JobIcon
@@ -139,6 +167,27 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: JobIconNATOAllyAutoRifleman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallyautorifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllyMachinegunner
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallymachinegunner
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconNATOAllyGrenadier
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: natoallyautogrenadier
+
+- type: jobIcon
+  parent: JobIcon
   id: JobIconNATOAllyMedic
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
@@ -190,6 +239,27 @@
 
 - type: jobIcon
   parent: JobIcon
+  id: JobIconPACTAutoRifleman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactautorifleman
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTMachinegunner
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactmachinegunner
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTGrenadier
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactgrenadier
+
+- type: jobIcon
+  parent: JobIcon
   id: JobIconPACTMedic
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
@@ -201,6 +271,13 @@
   icon:
     sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
     state: pactrecon
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconPACTMarksman
+  icon:
+    sprite: /Textures/_Battlefield14/Interface/Misc/class_icons.rsi
+    state: pactmarksman
 
 - type: jobIcon
   parent: JobIcon

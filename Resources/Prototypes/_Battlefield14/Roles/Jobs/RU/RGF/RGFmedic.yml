@@ -1,9 +1,9 @@
 - type: job
   id: RGFMedic
   name: job-name-rgf-medic
-  description: job-description-vdv-medic
+  description: job-description-rgf-medic
   playTimeTracker: JobRGFMedic
-  weight: 75
+  weight: 74
   startingGear: RGFMedicGear
   alwaysUseSpawner: true
   icon: "JobIconPACTMedic"

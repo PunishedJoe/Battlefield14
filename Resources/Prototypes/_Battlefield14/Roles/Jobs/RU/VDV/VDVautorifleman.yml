@@ -1,12 +1,12 @@
 - type: job
-  id: RGFAutomaticRifleman
-  name: job-name-rgf-automatic-rifleman
+  id: VDVAutomaticRifleman
+  name: job-name-vdv-automatic-rifleman
   description: job-description-vdv-automatic-rifleman
-  playTimeTracker: JobRGFAutomaticRifleman
+  playTimeTracker: JobVDVAutomaticRifleman
   weight: 76
-  startingGear: RGFAutomaticRiflemanGear
+  startingGear: VDVAutomaticRiflemanGear
   alwaysUseSpawner: true
-  icon: "JobIconPACTSupport"
+  icon: "JobIconPACTAutoRifleman"
   requireAdminNotify: false
   supervisors: job-supervisors-rugov
   canBeAntag: false
@@ -38,28 +38,26 @@
   - PACTArmory
 
 - type: startingGear
-  id: RGFAutomaticRiflemanGear
+  id: VDVAutomaticRiflemanGear
   equipment:
-    id: RGFAutomaticRiflemanPDA
+    id: VDVAutomaticRiflemanPDA
     ears: ClothingHeadsetAltRU
-    belt: ClothingBeltMilitaryWebbingRU
-    jumpsuit: ClothingUniformJumpsuitRUGorka
+    belt: ClothingBeltMilitaryWebbingRUFilledAK74blackdrumTracerGreen
+#    jumpsuit: ClothingUniformJumpsuitCamoRUEMR
     head: ClothingHeadHatHelmetRU6b47Riot
     outerClothing: ClothingOuterArmorPlateCarrier6B45Heavy
     shoes: ClothingShoesBootsJackFilledRU
-    suitstorage: WeaponMachineGunRUPKP
+    neck: ClothingNeckIFFtapeWhite
+    suitstorage: WeaponRifleRURPK2016
     pocket1: PouchFirstAidFilledPACT
     pocket2: PouchGrenadesFilledVDVSupport
     rightarmband: ClothingArmbandThighHolsterFilledRU
   storage:
     back:
-    - SupplyBoxAmmoRUFilled
+    - SupplyBoxAmmoRUFilledVDV
+    - MagazinePistolMP443
+    - MagazinePistolMP443
     - FlashlightMilitaryAlt
     - ClothingMaskGasRussiaPMK4
     - BF14TourniquetEsmarch
     - Zipties
-    belt:
-    - MagazineBeltBoxPKM
-    - MagazinePistolMP443
-    - MagazinePistolMP443
-    - MagazineBeltBoxPKM

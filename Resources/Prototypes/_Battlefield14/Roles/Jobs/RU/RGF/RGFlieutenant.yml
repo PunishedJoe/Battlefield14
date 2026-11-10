@@ -1,7 +1,7 @@
 - type: job
   id: RGFLieutenant
   name: job-name-rgf-lieutenant
-  description: job-description-rgf-lieutenant
+  description: job-description-vdv-lieutenant
   playTimeTracker: JobRGFLieutenant
   weight: 78
   startingGear: RGFLieutenantGear

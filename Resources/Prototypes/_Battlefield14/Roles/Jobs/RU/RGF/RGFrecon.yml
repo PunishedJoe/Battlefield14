@@ -1,12 +1,12 @@
 - type: job
   id: RGFRecon
-  name: job-name-rgf-recon
-  description: job-description-vdv-recon
+  name: job-name-rgf-marksman
+  description: job-description-vdv-marksman
   playTimeTracker: JobRGFRecon
-  weight: 74
+  weight: 73
   startingGear: RGFReconGear
   alwaysUseSpawner: true
-  icon: "JobIconPACTRecon"
+  icon: "JobIconPACTMarksman"
   requireAdminNotify: false
   supervisors: job-supervisors-rugov
   canBeAntag: false

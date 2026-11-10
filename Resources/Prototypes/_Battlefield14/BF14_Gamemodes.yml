@@ -46,7 +46,6 @@
   showInVote: true
   supportedMaps: BF14MapPoolEarthUSA
   description: Larp and frag. American edition.
-  respawnMultiplier: 0.5 # 2.5 minutes
   minPlayers: 15
   rules:
   - NFAdventure
@@ -59,7 +58,6 @@
   showInVote: true
   supportedMaps: BF14MapPoolEarthGermany
   description: Larp and frag. German edition.
-  respawnMultiplier: 0.5 # 2.5 minutes
   minPlayers: 15
   rules:
   - NFAdventure
@@ -72,7 +70,6 @@
   showInVote: true
   supportedMaps: BF14MapPoolEarthRussia
   description: Larp and frag. Russian edition.
-  respawnMultiplier: 0.5 # 2.5 minutes
   minPlayers: 15
   rules:
   - NFAdventure

@@ -1,7 +1,7 @@
 - type: job
   id: RGFSquadLeader
   name: job-name-rgf-squadleader
-  description: job-description-rgf-squadleader
+  description: job-description-vdv-squadleader
   playTimeTracker: JobRGFSquadLeader
   weight: 78
   startingGear: RGFSquadLeaderGear

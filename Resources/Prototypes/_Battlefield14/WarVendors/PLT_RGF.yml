@@ -44,10 +44,6 @@
       - id: BoxGrenadesK52
         name: Sarin gas grenades
         points: 2
-      - id: CrateSecgearPACTFilledRPK74M
-        name: RPK-74M x3
-        points: 1
-        amount: 1
       - id: BF14WeaponCaseLongRUAN94
         name: AN-94
         points: 1

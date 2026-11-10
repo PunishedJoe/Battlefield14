@@ -1,7 +1,7 @@
 - type: job
   id: RGFRifleman
   name: job-name-rgf-rifleman
-  description: job-description-rgf-rifleman
+  description: job-description-vdv-rifleman
   playTimeTracker: JobRGFRifleman
   weight: 77
   startingGear: RGFRiflemanGear
