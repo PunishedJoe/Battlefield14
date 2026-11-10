@@ -1,7 +1,7 @@
 - type: job
   id: RGFMachinegunner
-  name: job-name-rgf-automatic-rifleman
-  description: job-description-vdv-automatic-rifleman
+  name: job-name-rgf-machinegunner
+  description: job-description-vdv-machinegunner
   playTimeTracker: JobRGFMachinegunner
   weight: 75
   startingGear: RGFMachinegunnerGear
