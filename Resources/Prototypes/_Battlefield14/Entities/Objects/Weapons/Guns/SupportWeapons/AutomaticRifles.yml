@@ -23,6 +23,8 @@
       - state: railcover
       - state: muzzle-comp
         offset: 0.19,0
+      - map: ["barrelAttachment"]
+        offset: 0.84 , 0.09 # 27, 3
       - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
@@ -49,6 +51,12 @@
         whitelist:
           tags:
             - BF_CartridgeRifle556x45
+      attachment_barrel:
+        name: Barrel attachment
+        whitelist:
+          tags:
+            - BF14BayonetM7
+            - BF14BayonetM9
   - type: GunWieldBonus
     minAngle: -30
     maxAngle: -30
@@ -76,12 +84,55 @@
   - type: EyeCursorOffset
     maxOffset: 5
     pvsIncrease: 0.35
+  - type: ExtendDescription
+    descriptionList:
+      - description: Takes STANAG pattern magazines.
+        color: "#4f94ad"
+        requireDetailRange: true
+      - description: Takes M7 pattern bayonets.
+        color: "#4f94ad"
+        requireDetailRange: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+      attachment_barrel: !type:ContainerSlot
+  - type: ESAttachableGun
+    slots:
+    - name: barrel attachment
+      containerId: attachment_barrel
+      whitelist:
+        tags:
+        - BF14BayonetM7
+  - type: ActivatableUI
+    key: enum.ESAttachableGunUiKey.Key
+    verbOnly: true
+    verbText: es-gun-attachments-verb-text
+  - type: UserInterface
+    interfaces:
+      enum.ESAttachableGunUiKey.Key:
+        type: ESGunAttachmentBui
+  - type: ESItemMapper
+    mappings:
+      barrelAttachment:
+      - containerId: attachment_barrel
+        state: bayonet-m7
+        whitelist:
+          tags:
+          - BF14BayonetM7
+      - containerId: attachment_barrel
+        state: bayonet-m9
+        whitelist:
+          tags:
+          - BF14BayonetM9
+
+#region RPK-16
 
 - type: entity
   name: RPK-16
   parent: WeaponRifleUSM27IAR
   id: WeaponRifleUSRPK16
-  description: "At some point, American civilians became obsessed with having their own M27-IAR, and with the legalisation of civilian-owned full auto leading up to the war; there was an explosion of 'RPK-16' configurations for the AR15, obviously reminiscent of the soviet RPK-74."
+  description: "At some point, American civilians became obsessed with having their own M27-IAR, and with the proliferation of technically not full auto triggers shortly before the war; there was an explosion of 'RPK-16' configurations for the AR15, obviously reminiscent of the soviet RPK-74."
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
@@ -92,6 +143,8 @@
       - state: longcog
       - state: stock-adjustable
       - state: rifle-length-barrel-M27
+      - map: ["barrelAttachment"]
+        offset: 0.718 , 0.09 # 23, 3
       - state: foregrip
       - state: mag-30-0
         map: ["enum.GunVisualLayers.Mag"]
@@ -245,9 +298,11 @@
         color: "#4f94ad"
         requireDetailRange: true
 
+#region RPK-74
+
 - type: entity
   name: RPK-74
-  parent: WeaponRifleRUAK74
+  parent: BaseWeaponRifleRUAK74
   id: WeaponRifleRURPK74
   description: An AK-74 with a heavier barrel and front trunnion, plus a bipod. For laying down hate soviet style.
   components:
@@ -372,6 +427,8 @@
     magState: mag-rpk74black
     steps: 1
     zeroVisible: true
+
+#region RPK
 
 - type: entity
   name: RPK
