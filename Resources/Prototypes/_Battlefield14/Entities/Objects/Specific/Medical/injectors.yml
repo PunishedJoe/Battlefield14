@@ -313,5 +313,5 @@
           Quantity: 5
         - ReagentId: Inaprovaline
           Quantity: 5
-        - ReagentId: Epinephrine # Painkiller
+        - ReagentId: Saline # Painkiller
           Quantity: 5

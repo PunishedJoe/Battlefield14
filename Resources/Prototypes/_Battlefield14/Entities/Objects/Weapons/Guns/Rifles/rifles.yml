@@ -90,7 +90,7 @@
   - type: Appearance
 
 - type: entity
-  name: XM8
+  name: XM8 carbine
   parent: WeaponRifleDEG36K
   id: WeaponRifleUSXM8
   description: The 5.56 rifle portion of the OICW, removed and made its own standalone rifle. Would later be developed into the G36 series of rifles.
@@ -176,7 +176,6 @@
           - BF14BayonetM9
 
 - type: entity
-  name: XM8
   parent: WeaponRifleUSXM8
   id: WeaponRifleUSXM8Tan
   suffix: tan

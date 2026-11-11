@@ -131,6 +131,38 @@
           - RussianUplink
 
 - type: listing
+  id: UplinkPACTRURGM40Crate
+  name: uplink-PACTRU-RGM40crate-name
+  description: uplink-PACTRU-RGM40crate-desc
+  productEntity: CrateSecgearPACTFilledRGM40
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/RGM40.rsi, state: icon }
+  cost:
+    PACTRequisition: 30 # 5 minutes
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
+  id: UplinkPACTRURG6Crate
+  name: uplink-PACTRU-RG6crate-name
+  description: uplink-PACTRU-RG6crate-desc
+  productEntity: CrateSecgearPACTFilledRG6
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/RG6.rsi, state: icon }
+  cost:
+    PACTRequisition: 50 # 8 minutes 20 seconds approx
+  categories:
+    - UplinkPACTRUWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - RussianUplink
+
+- type: listing
   id: UplinkPACTRUPKMCrate
   name: uplink-PACTRU-PKMcrate-name
   description: uplink-PACTRU-PKMcrate-desc

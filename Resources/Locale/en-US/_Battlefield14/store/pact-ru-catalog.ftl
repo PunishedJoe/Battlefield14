@@ -39,8 +39,14 @@ uplink-PACTRU-RPOAShmelcrate-desc = 5 disposable RPO-A thermobaric launchers.
 uplink-PACTRU-iglacrate-name = Igla MANPADS x5
 uplink-PACTRU-iglacrate-desc = 5 igla MANPADS systems for shooting down fighters.
 
-uplink-PACTRU-GM94crate-name = GM-94 x2
-uplink-PACTRU-GM94crate-desc = 2 GM-94 pump-action grenade launchers, along with two boxes each of HE-Frag, Thermobaric, and chemical smoke grenades.
+uplink-PACTRU-GM94crate-name = GM-94
+uplink-PACTRU-GM94crate-desc = One GM-94 pump-action grenade launcher, along with one box each of HE-Frag, Thermobaric, and chemical smoke grenades.
+
+uplink-PACTRU-RGM40crate-name = RGM-40
+uplink-PACTRU-RGM40crate-desc = One RGM-40 grenade launcher, along with one box each of HE-Frag, Thermobaric, and chemical smoke grenades.
+
+uplink-PACTRU-RG6crate-name = RG-6
+uplink-PACTRU-RG6crate-desc = One RG-6 revolving grenade launcher, along with one box each of HE-Frag, Thermobaric, and chemical smoke grenades.
 
 ## Ammo
 
