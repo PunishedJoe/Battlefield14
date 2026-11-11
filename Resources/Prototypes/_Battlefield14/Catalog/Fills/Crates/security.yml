@@ -288,7 +288,7 @@
   - type: StorageFill
     contents:
         - id: WeaponGrenadeLauncherUSM320
-        - id: BoxMagazine40x46HE
+        - id: BoxMagazine40x46Mixed
         - id: BoxMagazine40x46HEDP
         - id: BoxMagazine40x46Frag
         - id: BoxMagazine40x46ChemicalSmoke
@@ -305,6 +305,22 @@
   - type: StorageFill
     contents:
         - id: WeaponGrenadeLauncherUSM320
+        - id: BoxMagazine40x46ChemicalSmoke
+        - id: BoxMagazine40x46mmIllumination
+  - type: AccessReader
+    access: [["NATOSoldier"]]
+
+- type: entity
+  id: CrateSecgearNATOFilledM32A1
+  suffix: Filled, M32A1
+  parent: CrateSecgear
+  name: M32A1 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherUSM32A1
+        - id: BoxMagazine40x46Mixed
+        - id: BoxMagazine40x46HEDP
         - id: BoxMagazine40x46ChemicalSmoke
         - id: BoxMagazine40x46mmIllumination
   - type: AccessReader
@@ -765,6 +781,22 @@
         - id: BoxMagazineVOG25ChemicalSmoke
         - id: BoxMagazineVOG25Illumination
         - id: BoxMagazineVOG25IlluminationPara
+  - type: AccessReader
+    access: [["PACTSoldier"]]
+
+- type: entity
+  id: CrateSecgearPACTFilledRG6
+  suffix: Filled, RG-6
+  parent: CrateSecgear
+  name: RG-6 crate
+  components:
+  - type: StorageFill
+    contents:
+        - id: WeaponGrenadeLauncherRURG6
+        - id: BoxMagazineVOG25HEFrag
+        - id: BoxMagazineVOG25Thermobaric
+        - id: BoxMagazineVOG25ChemicalSmoke
+        - id: BoxMagazineVOG25Illumination
   - type: AccessReader
     access: [["PACTSoldier"]]
 

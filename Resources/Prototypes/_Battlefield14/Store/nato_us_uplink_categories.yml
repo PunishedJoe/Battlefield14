@@ -132,6 +132,24 @@
           - BundeswehrUplink
 
 - type: listing
+  id: UplinkNATOUSM32A1
+  name: uplink-NATOUS-M32A1-name
+  description: uplink-NATOUS-M32A1-desc
+  productEntity: CrateSecgearNATOFilledM32A1
+  icon: { sprite: _Battlefield14/Objects/Weapons/Guns/GrenadeLaunchers/Milkor.rsi, state: icon }
+  cost:
+    NATORequisition: 50 # 8 minutes 20 seconds approx
+  categories:
+    - UplinkNATOUSWeapons
+    - UplinkNATODEWeapons
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - AmericanUplink
+          - BundeswehrUplink
+
+- type: listing
   id: UplinkNATOUSM27IARCrate
   name: uplink-natous-m27iarcrate-name
   description: uplink-natous-m27iarcrate-desc

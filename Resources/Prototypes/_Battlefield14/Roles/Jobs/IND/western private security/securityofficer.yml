@@ -45,8 +45,9 @@
     jumpsuit: ClothingUniformJumpsuitUtilityCrewblackSec
     head: ClothingHeadHatHelmetSecurityBF14
     outerClothing: ClothingOuterArmorWebVestSec
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJack
 #    back: ClothingBackpackSecurity
+    pocket1: BF14KnifeFlipTaticool
     pocket2: PouchFirstAidFilled
   storage:
     back:
