@@ -48,23 +48,24 @@
     damage:
       types:
         Structural: 100
-        Blunt: 25
-    deleteOnCollide: false
+        Blunt: 50
   - type: ArmorPiercing
-    piercingThickness: 7
-  - type: Heat
-    explosionDelay: 0.1
-    fragmentationDelay: 0.1
-    fragmentationCount: 40
-    fragmentationPrototype: Bullet84mmHEATFragment
+    piercingThickness: 3 # 7
+  - type: HeFragProjectile
+    fillPrototype: Bullet84mmHEATFragment
+    capacity: 30
+    randomAngle: true
+    minVelocity: 15
+    maxVelocity: 22
   - type: StaminaDamageOnCollide
     damage: 50
+  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    totalIntensity: 300
-    intensitySlope: 5
-    maxIntensity: 50
-    maxTileBreak: 2
+    totalIntensity: 200
+    intensitySlope: 25
+    maxIntensity: 100
+    maxTileBreak: 1
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -382,20 +383,21 @@
         Blunt: 25
     deleteOnCollide: false
   - type: ArmorPiercing
-    piercingThickness: 5
-  - type: Heat
-    explosionDelay: 0.2
-    fragmentationDelay: 0.2
-    fragmentationCount: 30
-    fragmentationPrototype: Bullet84mmHEATFragment
+    piercingThickness: 3 # 5
+  - type: HeFragProjectile
+    fillPrototype: Bullet84mmHEATFragment
+    capacity: 30
+    randomAngle: true
+    minVelocity: 15
+    maxVelocity: 22
   - type: StaminaDamageOnCollide
     damage: 50
-#  - type: ExplodeOnTrigger
+  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
     totalIntensity: 100
-    intensitySlope: 5
-    maxIntensity: 9
+    intensitySlope: 25
+    maxIntensity: 50
     maxTileBreak: 1
 
 - type: entity
@@ -550,22 +552,28 @@
       types:
         Structural: 100
         Blunt: 25
-    deleteOnCollide: false
   - type: ArmorPiercing
-    piercingThickness: 7
-  - type: Heat
-    explosionDelay: 0.1
-    fragmentationDelay: 0.1
-    fragmentationCount: 40
-    fragmentationPrototype: BulletRPG7OG7VFragment
+    piercingThickness: 5 # 7
+#  - type: Heat
+#    explosionDelay: 0.1
+#    fragmentationDelay: 0.1
+#    fragmentationCount: 40
+#    fragmentationPrototype: BulletRPG7OG7VFragment
+  - type: HeFragProjectile
+    fillPrototype: BulletRPG7OG7VFragment
+    capacity: 30
+    randomAngle: true
+    minVelocity: 15
+    maxVelocity: 22
   - type: StaminaDamageOnCollide
     damage: 50
+  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    totalIntensity: 300
-    intensitySlope: 5
-    maxIntensity: 50
-    maxTileBreak: 2
+    totalIntensity: 200
+    intensitySlope: 25
+    maxIntensity: 100
+    maxTileBreak: 1
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -710,20 +718,26 @@
       types:
         Structural: 100
         Blunt: 25
-    deleteOnCollide: false
   - type: ArmorPiercing
-    piercingThickness: 5
-  - type: Heat
-    explosionDelay: 0.1
-    fragmentationDelay: 0.1
-    fragmentationCount: 20
-    fragmentationPrototype: BulletRPG7OG7VFragment
+    piercingThickness: 3 # 5
+#  - type: Heat
+#    explosionDelay: 0.1
+#    fragmentationDelay: 0.1
+#    fragmentationCount: 20
+#    fragmentationPrototype: BulletRPG7OG7VFragment
   - type: StaminaDamageOnCollide
     damage: 50
+  - type: HeFragProjectile
+    fillPrototype: BulletRPG7OG7VFragment
+    capacity: 30
+    randomAngle: true
+    minVelocity: 15
+    maxVelocity: 22
+  - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: DemolitionCharge
-    totalIntensity: 200
-    intensitySlope: 5
+    totalIntensity: 100
+    intensitySlope: 25
     maxIntensity: 50
     maxTileBreak: 1
 
