@@ -434,9 +434,9 @@
   id: SmokeGrenadeUSM18
   components:
   - type: Sprite
-    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m18.rsi
+    sprite: _Battlefield14/Objects/Weapons/Grenades/M18.rsi
   - type: Icon
-    sprite: _WorldAblaze1968/Objects/Weapons/Explosives/m18.rsi
+    sprite: _Battlefield14/Objects/Weapons/Grenades/M18.rsi
     state: base
 
 - type: entity
@@ -740,6 +740,8 @@
   parent: ImpactGrenadeRURGO
   id: ImpactGrenadeRURGN
   components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Grenades/rgn.rsi
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
