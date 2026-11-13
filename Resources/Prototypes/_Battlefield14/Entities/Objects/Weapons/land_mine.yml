@@ -1,3 +1,5 @@
+#region TM62
+
 - type: entity
   name: TM-62
   description: FUCK CQB, SLAVIC USE TM-62.
@@ -41,6 +43,9 @@
     graph: TM62Disarm
     node: start
     deconstructionTarget: start
+  - type: DisassembleOnAltVerb
+    prototype: TM62Item
+    doAfter: 10
   - type: ExtendDescription
     descriptionList:
       - description: It is ARMED. Use a multitool to disarm, or use the context menu to link it to a device.
@@ -69,6 +74,8 @@
       - description: It is disarmed, left click on a tile to place and arm it.
         color: green
         requireDetailRange: true
+
+#region M16A2
 
 - type: entity
   name: M16A2 APM
@@ -99,6 +106,9 @@
     graph: M16A2APMDisarm
     node: start
     deconstructionTarget: start
+  - type: DisassembleOnAltVerb
+    prototype: LandMineM16A2APMItem
+    doAfter: 10
   - type: ExtendDescription
     descriptionList:
       - description: It is ARMED. Use a multitool to disarm, or use the context menu to link it to a device.
@@ -127,6 +137,8 @@
       - description: It is disarmed, left click on a tile to place and arm it.
         color: green
         requireDetailRange: true
+
+#region PFM-1
 
 - type: entity
   name: PFM-1

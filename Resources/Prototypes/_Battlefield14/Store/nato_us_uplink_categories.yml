@@ -388,7 +388,7 @@
   name: uplink-natous-m84-box-name
   description: uplink-natous-m84-box-desc
   productEntity: BoxGrenadesM84
-  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/M84.rsi, state: base }
   cost:
     NATORequisition: 9 # 1 minute 30 seconds
   categories:
@@ -406,7 +406,7 @@
   name: uplink-natous-m18-box-name
   description: uplink-natous-m18-box-desc
   productEntity: BoxGrenadesM18
-  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/M18.rsi, state: icon }
+  icon: { sprite: _Battlefield14/Objects/Weapons/Grenades/M18.rsi, state: base }
   cost:
     NATORequisition: 9 # 1 minute 30 seconds
   categories:

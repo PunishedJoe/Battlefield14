@@ -18,7 +18,7 @@
       - WeaponShotgunUSM590Buckshot
       - WeaponSubmachinegunATSP9
       - BF14KnifeSwitchblade
-      - BF14KnifeFlipTaticool
+      - BF14KnifeFlipTacticool
     chance: 1
 
 - type: entity
@@ -171,7 +171,7 @@
       - WeaponShotgunUSM590Buckshot
       - WeaponPistolRevolverBRJudge
       - BF14KnifeSwitchblade
-      - BF14KnifeFlipTaticool
+      - BF14KnifeFlipTacticool
     chance: 1
 
 - type: entity
@@ -313,7 +313,7 @@
       - WeaponPistolDEUSP45
       - WeaponPistolDEUSP9
       - BF14KnifeSwitchblade
-      - BF14KnifeFlipTaticool
+      - BF14KnifeFlipTacticool
     chance: 1
 
 - type: entity
@@ -445,9 +445,8 @@
       - WeaponRifleRUMP18
       - WeaponShotgunRUMP133
       - WeaponShotgunRUMP43C1
-      - WeaponRifleRUMP18
       - BF14KnifeSwitchblade
-      - BF14KnifeFlipTaticool
+      - BF14KnifeFlipTacticool
     chance: 1
 
 - type: entity
@@ -472,7 +471,6 @@
       - WeaponRifleRUAKMUDraco
       - WeaponRifleRUSKS
       - WeaponSniperRUVPO215
-      - WeaponRifleRUMP18
     chance: 1
 
 - type: entity
@@ -514,6 +512,7 @@
       - MagazinePistolPM
       - MagazinePistolTT33
       - MagazinePistolAPS
+      - SpeedLoaderSKS
       - MagazineBox762x54r
       - ShellBoxBF12GaugeBuckshot
       - SmokeGrenadeRURDG
@@ -543,6 +542,7 @@
       - MagazineSubmachinegunPPSh
       - MagazineSubmachinegunKedr
       - MagazineSubmachinegunVityaz
+      - SpeedLoaderSKS
       - SmokeGrenadeRURDG
       - DefensiveGrenadeRUF1
       - FlashbangGrenadeRUZarya

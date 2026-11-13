@@ -85,7 +85,7 @@
 - type: entity
   name: tactical folding knife
   parent: BF14KnifeSwitchblade
-  id: BF14KnifeFlipTaticool
+  id: BF14KnifeFlipTacticool
   description: A manual flip knife, for enthusiasts and practical application.
   components:
   - type: Sprite
@@ -112,8 +112,8 @@
           tacticool-handle: Sixteen
 
 - type: entity
-  parent: BF14KnifeFlipTaticool
-  id: BF14KnifeFlipTaticoolBlack
+  parent: BF14KnifeFlipTacticool
+  id: BF14KnifeFlipTacticoolBlack
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Melee/Knives/flip.rsi
