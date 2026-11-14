@@ -22,12 +22,13 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -20
+    minAngle: -47
+    maxAngle: -30
   - type: Gun
-    minAngle: 21
-    maxAngle: 35
-    angleIncrease: 1
+    minAngle: 50 # 3
+    maxAngle: 50 # 20
+    angleIncrease: 2
+    angleDecay: 80
     availableModes:
     - SemiAuto
     - FullAuto
@@ -97,14 +98,15 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -10
-    maxAngle: -10
+    minAngle: -47
+    maxAngle: -30
   - type: Gun
-    minAngle: 16
-    maxAngle: 40
-    angleIncrease: 4
-    angleDecay: 60
+    minAngle: 50 # 3
+    maxAngle: 50 # 20
+    angleIncrease: 3
+    angleDecay: 80
     projectileSpeed: 50
+    fireRate: 12.5 # 750 RPM
     availableModes:
     - SemiAuto
     - FullAuto
@@ -113,7 +115,6 @@
       path: /Audio/Weapons/Guns/Gunshots/m41.ogg
       params:
         variation: 0.125
-    fireRate: 8
   - type: ChamberMagazineAmmoProvider
     soundBoltClosed:
       path: /Audio/_Battlefield14/Weapons/Guns/M16/uc_m16_chamber_press.ogg
@@ -170,7 +171,7 @@
     minAngle: 21
     maxAngle: 180
     angleIncrease: 8
-    angleDecay: 16
+    angleDecay: 80
     availableModes:
     - SemiAuto
     - FullAuto
@@ -248,12 +249,13 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -19
-    maxAngle: -20
+    minAngle: -47
+    maxAngle: -30
   - type: Gun
-    minAngle: 21
-    maxAngle: 35
-    angleIncrease: 1.5
+    minAngle: 50 # 3
+    maxAngle: 50 # 20
+    angleIncrease: 3
+    angleDecay: 80
     availableModes:
     - SemiAuto
     - FullAuto
@@ -320,13 +322,13 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -14
-    maxAngle: -10
+    minAngle: -42
+    maxAngle: -42
   - type: Gun
-    minAngle: 16
-    maxAngle: 40
-    angleIncrease: 4
-    angleDecay: 60
+    minAngle: 50 # 8
+    maxAngle: 50 # 8
+    angleIncrease: 3
+    angleDecay: 2
     projectileSpeed: 50
     availableModes:
     - SemiAuto

@@ -45,11 +45,14 @@
     deconstructionTarget: start
   - type: DisassembleOnAltVerb
     prototype: TM62Item
-    doAfter: 10
+    doAfter: 15
   - type: ExtendDescription
     descriptionList:
-      - description: It is ARMED. Use a multitool to disarm, or use the context menu to link it to a device.
+      - description: It is ARMED.
         color: red
+        requireDetailRange: true
+      - description: Use a multitool to disarm, or use the context menu to link it to a device.
+        color: white
         requireDetailRange: true
 
 - type: entity
@@ -108,11 +111,14 @@
     deconstructionTarget: start
   - type: DisassembleOnAltVerb
     prototype: LandMineM16A2APMItem
-    doAfter: 10
+    doAfter: 15
   - type: ExtendDescription
     descriptionList:
-      - description: It is ARMED. Use a multitool to disarm, or use the context menu to link it to a device.
+      - description: It is ARMED.
         color: red
+        requireDetailRange: true
+      - description: Use a multitool to disarm, or use the context menu to link it to a device.
+        color: white
         requireDetailRange: true
 
 - type: entity
@@ -171,8 +177,14 @@
     timeRemaining: 144000 # 40 hours
   - type: ExtendDescription
     descriptionList:
-      - description: It is ARMED. Use a multitool to link it to a device. Self destructs after 40 hours.
+      - description: It is ARMED.
         color: red
+        requireDetailRange: true
+      - description: Use a multitool to link it to a device.
+        color: white
+        requireDetailRange: true
+      - description: Self destructs after 40 hours.
+        color: green
         requireDetailRange: true
 
 - type: entity

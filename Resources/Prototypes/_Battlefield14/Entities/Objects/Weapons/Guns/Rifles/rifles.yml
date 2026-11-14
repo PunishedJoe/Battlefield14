@@ -29,7 +29,7 @@
     minAngle: 20
     maxAngle: 60
     angleIncrease: 4
-    angleDecay: 16
+    angleDecay: 80
     projectileSpeed: 50
     soundGunshot:
       collection: BF_M14_Gunshots
@@ -218,13 +218,7 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
-  - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -27
   - type: Gun
-    minAngle: 26
-    maxAngle: 40
-    angleIncrease: 1
     projectileSpeed: 45
     soundGunshot:
       collection: BF_SCARL_Gunshots
@@ -271,13 +265,14 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SCAR.rsi
   - type: GunWieldBonus
-    minAngle: -18
-    maxAngle: -45
+    minAngle: -48
+    maxAngle: -25
   - type: Gun
     fireRate: 10 # 600 RPM
-    minAngle: 20
-    maxAngle: 60
-    angleIncrease: 1.5
+    minAngle: 50
+    maxAngle: 50
+    angleIncrease: 4
+    angleDecay: 80
     projectileSpeed: 45
     soundGunshot:
       collection: BF_SCARH_Gunshots
@@ -351,13 +346,13 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/F2000.rsi
   - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -27
+    minAngle: -48
+    maxAngle: -30
   - type: Gun
-    minAngle: 26
-    maxAngle: 40
-    angleIncrease: 1
-    angleDecay: 10
+    minAngle: 50 # 3
+    maxAngle: 50 # 20
+    angleIncrease: 2
+    angleDecay: 110
     projectileSpeed: 50 # bullpup so long barrel
     soundGunshot:
       collection: BF_SCARL_Gunshots
@@ -411,16 +406,16 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
   - type: Item
     shape:
-    - 0,0,5,2
+    - 0,0,4,2
   - type: GunWieldBonus
-    minAngle: -20
-    maxAngle: -40
+    minAngle: -50
+    maxAngle: -30
   - type: Gun
-    fireRate: 10.8 # 650 RPM
-    minAngle: 20
-    maxAngle: 60
+    minAngle: 50 # 0
+    maxAngle: 50 # 25
     angleIncrease: 4
-    angleDecay: 16
+    angleDecay: 80
+    fireRate: 10.8 # 650 RPM
     projectileSpeed: 50
     soundGunshot:
       collection: BF_FAL_Gunshots
@@ -499,6 +494,8 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FALPara.rsi
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FALPara.rsi
+    shape:
+    - 0,0,3,2
   - type: Icon
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/FAL.rsi
     state: icon-para
@@ -524,14 +521,14 @@
     shape:
     - 0,0,5,2
   - type: GunWieldBonus
-    minAngle: -18
-    maxAngle: -45
+    minAngle: -50
+    maxAngle: -30
   - type: Gun
+    minAngle: 50 # 0
+    maxAngle: 50 # 25
+    angleIncrease: 4
+    angleDecay: 80
     fireRate: 10 # 600 RPM
-    minAngle: 20
-    maxAngle: 60
-    angleIncrease: 1.5
-    angleDecay: 4
     projectileSpeed: 50
     soundGunshot:
       collection: BF_M14_Gunshots
@@ -609,12 +606,13 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3.rsi
   - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -27
+    minAngle: -50
+    maxAngle: -30
   - type: Gun
-    minAngle: 26
-    maxAngle: 40
-    angleIncrease: 1
+    minAngle: 50 # 0
+    maxAngle: 50 # 25
+    angleIncrease: 4
+    angleDecay: 80
     projectileSpeed: 50
     fireRate: 10 # 600 RPM
     soundGunshot:
@@ -712,7 +710,7 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G3A3ZF.rsi
   - type: Gun
-    angleIncrease: 1.5
+    angleIncrease: 4
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 5
@@ -744,20 +742,8 @@
       - state: furniture-HK51
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/HK51.rsi
-  - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -25
   - type: Gun
-    minAngle: 26
-    maxAngle: 40
-    angleIncrease: 1.5
-    projectileSpeed: 45
-    fireRate: 10 # 600 RPM
-    soundGunshot:
-      collection: BF_G3_Gunshots
-      params:
-        volume: -1
-        variation: 0.125
+    projectileSpeed: 40
   - type: PointLight
     enabled: false
     mask: /Textures/_Battlefield14/Effects/LightMasks/cone_focused.png
@@ -787,11 +773,13 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36K.rsi
   - type: GunWieldBonus
-    minAngle: -29
-    maxAngle: -34
+    minAngle: -47
+    maxAngle: -30
   - type: Gun
-    minAngle: 31
-    maxAngle: 42
+    minAngle: 50 # 3
+    maxAngle: 50 # 20
+    angleIncrease: 2
+    angleDecay: 80
     availableModes:
     - SemiAuto
     - FullAuto
@@ -869,14 +857,9 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36.rsi
-  - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -28
   - type: Gun
-    minAngle: 26
-    maxAngle: 42
-    angleIncrease: 1.5
-    projectileSpeed: 45
+    angleIncrease: 2.5
+    projectileSpeed: 50
     soundGunshot:
       collection: BF_SCARL_Gunshots
       params:
@@ -913,19 +896,8 @@
       - state: holosight
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/G36C.rsi
-  - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -28
   - type: Gun
-    minAngle: 26
-    maxAngle: 42
-    angleIncrease: 1.25
     projectileSpeed: 40 # Shorter barrel
-    soundGunshot:
-      collection: BF_SCARL_Gunshots
-      params:
-        volume: -5
-        variation: 0.125
 
 - type: entity
   name: G36C SUPP.
@@ -1080,7 +1052,7 @@
 
 - type: entity
   name: vz. 58
-  parent: BaseWeaponRifle
+  parent: BaseWeaponRifleRUAKM
   id: WeaponRifleCZVZ58
   description: When you're told to make an AK but you don't want to make an AK.
   components:
@@ -1097,25 +1069,9 @@
         offset: 0.28, 0.0
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/vz58.rsi
-  - type: GunWieldBonus
-    minAngle: -29
-    maxAngle: -30
   - type: Gun
-    minAngle: 31
-    maxAngle: 45
-    angleIncrease: 2
-    angleDecay: 20
-    availableModes:
-    - SemiAuto
-    - FullAuto
-    selectedMode: FullAuto
     fireRate: 13.3
     projectileSpeed: 45
-    soundGunshot:
-      collection: BF_AK_762_Gunshots
-      params:
-        volume: -5
-        variation: 0.125
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -1204,8 +1160,8 @@
   - type: Gun
     minAngle: 31
     maxAngle: 40
-    angleIncrease: 1
-    angleDecay: 16
+    angleIncrease: 2
+    angleDecay: 20
     availableModes:
     - SemiAuto
     selectedMode: SemiAuto
@@ -1314,18 +1270,19 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -29
+    minAngle: -47
+    maxAngle: -30
   - type: Gun
-    minAngle: 26
-    maxAngle: 42
-    angleIncrease: 1
+    minAngle: 50 # 3
+    maxAngle: 50 # 20
+    angleIncrease: 3
+    angleDecay: 80
     availableModes:
     - SemiAuto
     - FullAuto
     selectedMode: FullAuto
     fireRate: 13.3 # 800 RPM
-    projectileSpeed: 40 # subsonic
+    projectileSpeed: 45 # subsonic
     soundGunshot:
       collection: BF_M16_Gunshots_SUPP # Looks weird, but these sound more pew pew than the galil (used by M4A1 SUPP) and this is an ASVAL
       params:
@@ -1386,17 +1343,7 @@
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/SR3M.rsi
   - type: Wieldable
     unwieldOnUse: false
-  - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -29
   - type: Gun
-    minAngle: 26
-    maxAngle: 42
-    angleIncrease: 1
-    availableModes:
-    - SemiAuto
-    - FullAuto
-    selectedMode: FullAuto
     projectileSpeed: 40 # short barrel
     soundGunshot:
       collection: BF_AK_762_Gunshots
@@ -1463,13 +1410,13 @@
   - type: Wieldable
     unwieldOnUse: false
   - type: GunWieldBonus
-    minAngle: -24
-    maxAngle: -29
+    minAngle: -47
+    maxAngle: -25
   - type: Gun
-    minAngle: 26
-    maxAngle: 42
-    angleIncrease: 1.5
-    angleDecay: 10
+    minAngle: 50 # 3
+    maxAngle: 50 # 25
+    angleIncrease: 4
+    angleDecay: 80
     availableModes:
     - SemiAuto
     - FullAuto
