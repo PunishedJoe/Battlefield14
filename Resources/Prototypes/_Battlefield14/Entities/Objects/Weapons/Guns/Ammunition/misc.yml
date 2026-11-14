@@ -35,6 +35,11 @@
   - type: Tag
     tags:
     - PulsePlug
+  - type: EmitSoundOnLand
+    sound:
+      collection: BF_Cartridge_Drop_556x45
+      params:
+        volume: -1
 
 - type: entity
   id: BF_CartridgePulseLinked
@@ -54,3 +59,8 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
+  - type: EmitSoundOnLand
+    sound:
+      collection: BF_Cartridge_Drop_556x45
+      params:
+        volume: -1

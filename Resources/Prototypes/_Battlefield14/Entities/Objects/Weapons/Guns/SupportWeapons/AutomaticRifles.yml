@@ -58,11 +58,11 @@
             - BF14BayonetM7
             - BF14BayonetM9
   - type: GunWieldBonus
-    minAngle: -30
-    maxAngle: -30
+    minAngle: -42
+    maxAngle: -42
   - type: Gun
-    minAngle: 36 # wielded 6
-    maxAngle: 45 # wielded 15
+    minAngle: 50 # 8
+    maxAngle: 50 # 8
     angleIncrease: 1
     angleDecay: 20
     availableModes:
@@ -169,11 +169,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/MachineGuns/MG36onmob.rsi
   - type: GunWieldBonus
-    minAngle: -17
-    maxAngle: -24
+    minAngle: -42
+    maxAngle: -42
   - type: Gun
-    minAngle: 20 # wielded = 3
-    maxAngle: 40 # wielded = 24
+    minAngle: 50 # 8
+    maxAngle: 50 # 8
     angleIncrease: 1.5
     projectileSpeed: 50
     soundGunshot:
@@ -236,11 +236,11 @@
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: -30
-    maxAngle: -30
+    minAngle: -42
+    maxAngle: -42
   - type: Gun
-    minAngle: 36 # wielded 6
-    maxAngle: 45 # wielded 15
+    minAngle: 50 # 8
+    maxAngle: 50 # 8
     angleIncrease: 0.5
     angleDecay: 22
     availableModes:
@@ -329,11 +329,11 @@
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: -30
-    maxAngle: -30
+    minAngle: -42
+    maxAngle: -42
   - type: Gun
-    minAngle: 36 # wielded 6
-    maxAngle: 45 # wielded 15
+    minAngle: 50 # 8
+    maxAngle: 50 # 8
     angleIncrease: 0.5
     angleDecay: 20
     availableModes:
@@ -459,11 +459,11 @@
     unwieldOnUse: false
   - type: GunRequiresWield
   - type: GunWieldBonus
-    minAngle: -30
-    maxAngle: -30
+    minAngle: -42
+    maxAngle: -42
   - type: Gun
-    minAngle: 36 # wielded 6
-    maxAngle: 45 # wielded 15
+    minAngle: 50 # 8
+    maxAngle: 50 # 8
     angleIncrease: 1
     angleDecay: 20
     availableModes:

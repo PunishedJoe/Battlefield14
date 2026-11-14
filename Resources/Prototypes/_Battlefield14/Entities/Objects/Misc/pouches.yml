@@ -100,6 +100,7 @@
     whitelist:
       tags:
       - Magazine
+      - Cartridge
     storageOpenSound:
       collection: BF_Magpouch_Open
       params:
@@ -162,6 +163,11 @@
     whitelist:
       tags:
       - PistolMagazine
+      - Cartridge
+    blacklist:
+      tags:
+      - Grenade
+      - Cartridge40x46mmGrenade
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100
@@ -181,9 +187,6 @@
     maxItemSize: Small
     grid:
     - 0,0,5,1
-    whitelist:
-      tags:
-      - PistolMagazine
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100

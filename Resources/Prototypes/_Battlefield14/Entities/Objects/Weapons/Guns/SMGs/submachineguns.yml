@@ -32,7 +32,7 @@
     minAngle: 3
     maxAngle: 30
     fireRate: 15
-    angleIncrease: 2.2
+    angleIncrease: 2
     angleDecay: 20
     projectileSpeed: 35 # pistol caliber
     availableModes:
@@ -212,8 +212,8 @@
       suitstorage2:
       - state: A4-equipped-BACKPACK
   - type: Gun
-    minAngle: 3
-    maxAngle: 12
+    minAngle: 7
+    maxAngle: 7
     fireRate: 11.6 # 700 RPM
     angleIncrease: 3
     angleDecay: 10
@@ -413,10 +413,10 @@
       suitstorage2:
       - state: A5-equipped-BACKPACK
   - type: Gun
-    minAngle: 3
+    minAngle: 5
     maxAngle: 10
     fireRate: 13.3 # 800 RPM
-    angleIncrease: 1.5
+    angleIncrease: 1
     angleDecay: 15
     projectileSpeed: 35 # pistol caliber
     availableModes:
@@ -475,11 +475,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP7.rsi
   - type: GunWieldBonus
-    minAngle: -2
-    maxAngle: -10
+    minAngle: -7
+    maxAngle: -4
   - type: Gun
-    minAngle: 3
-    maxAngle: 15
+    minAngle: 10
+    maxAngle: 12
     fireRate: 15.8 # 950 RPM
     angleIncrease: 2
     angleDecay: 15
@@ -552,11 +552,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/P90.rsi
   - type: GunWieldBonus
-    minAngle: -8
-    maxAngle: -12
+    minAngle: -7
+    maxAngle: -4
   - type: Gun
     minAngle: 10
-    maxAngle: 20
+    maxAngle: 12
     fireRate: 15 # 900 RPM
     angleIncrease: 2
     angleDecay: 15
@@ -628,6 +628,7 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: tmp-overlay
   - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP9.rsi
     quickEquip: false
     slots:
     - Back
@@ -640,7 +641,7 @@
     minAngle: 3
     maxAngle: 30
     fireRate: 15
-    angleIncrease: 2.2
+    angleIncrease: 2
     angleDecay: 20
     projectileSpeed: 35 # pistol caliber
     availableModes:
@@ -790,10 +791,10 @@
   description: A cheap, compact, and concealable package. Singlefire only for the civilian market.
   components:
   - type: GunWieldBonus
-    minAngle: 0
+    minAngle: -2
     maxAngle: -5
   - type: Gun
-    minAngle: 3
+    minAngle: 5
     maxAngle: 10
     availableModes:
     - SemiAuto
@@ -820,8 +821,8 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
   - type: Gun
-    minAngle: 3
-    maxAngle: 10
+    minAngle: 7
+    maxAngle: 7
     fireRate: 11.6 # 700 RPM
     angleIncrease: 1.5
     angleDecay: 15
@@ -897,7 +898,7 @@
     minAngle: 3
     maxAngle: 30
     fireRate: 16.5 #worse damage than 9x19
-    angleIncrease: 2.2
+    angleIncrease: 2
     angleDecay: 20
     projectileSpeed: 35 # pistol caliber
     availableModes:
@@ -965,8 +966,8 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/PPSh.rsi
   - type: Gun
-    minAngle: 0
-    maxAngle: 10
+    minAngle: 8
+    maxAngle: 8
     fireRate: 15 # 900 RPM
     angleIncrease: 1.5
     angleDecay: 15
@@ -1054,11 +1055,11 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/SR2MP.rsi
   - type: GunWieldBonus
-    minAngle: -2
-    maxAngle: -10
+    minAngle: -7
+    maxAngle: -4
   - type: Gun
-    minAngle: 3
-    maxAngle: 15
+    minAngle: 10
+    maxAngle: 12
     fireRate: 15.8 # 950 RPM
     angleIncrease: 2
     angleDecay: 15
