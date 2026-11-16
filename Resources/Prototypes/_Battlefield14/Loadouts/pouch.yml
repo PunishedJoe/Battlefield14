@@ -34,6 +34,11 @@
     pouch: PouchMags
 
 - type: loadout
-  id: LoadoutPouchMagsUSP45
+  id: LoadoutPouchMagsPistol
+  equipment:
+    pouch: PouchMagsPistol
+
+- type: loadout
+  id: LoadoutPouchMagsPistolUSP45
   equipment:
     pouch: PouchMagsPistolFilledUSP45

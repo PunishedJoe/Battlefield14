@@ -540,7 +540,10 @@
   minLimit: 0
   maxLimit: 1
   loadouts:
+  - LoadoutPouchMags
+  - LoadoutPouchDump
   - LoadoutPouchFlaresGlowsticksBlue
+  - LoadoutPouchFlares
   - LoadoutPouchGasMask
 
 - type: loadoutGroup
@@ -549,8 +552,21 @@
   minLimit: 0
   maxLimit: 1
   loadouts:
+  - LoadoutPouchMags
+  - LoadoutPouchDump
   - LoadoutPouchFlaresGlowsticksRed
+  - LoadoutPouchFlares
   - LoadoutPouchGasMask
+
+- type: loadoutGroup
+  id: BF_PouchSuspect
+  name: loadout-group-BF14-pouch
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutPouchMagsPistolUSP45
+  - LoadoutPouchDump
+  - LoadoutPouchFlares
 
 #region MISC
 

@@ -99,10 +99,9 @@
     state: webbing
   - type: Clothing
     sprite: _RMC14/Clothing/Webbing/ml66a_pouch.rsi
+    slots: WEBBING
     clothingVisuals:
-      leftarmband:
-      - state: equipped
-      rightarmband:
+      webbing:
       - state: equipped
   - type: ItemSlots
     slots:
