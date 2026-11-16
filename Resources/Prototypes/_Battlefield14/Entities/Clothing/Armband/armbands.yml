@@ -12,15 +12,14 @@
     sprite: _Battlefield14/Clothing/Accessories/dumppouchblack.rsi
   - type: Clothing
     sprite: _Battlefield14/Clothing/Accessories/dumppouchblack.rsi
+    slots: WEBBING
     clothingVisuals:
-      leftarmband:
+      webbing:
       - state: equipped-ARMBANDLEFT
-      rightarmband:
-      - state: equipped-ARMBANDRIGHT
   - type: Storage
     grid:
-    - 0,0,2,1
-    maxItemSize: Small
+    - 0,0,1,1
+    maxItemSize: Normal
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
