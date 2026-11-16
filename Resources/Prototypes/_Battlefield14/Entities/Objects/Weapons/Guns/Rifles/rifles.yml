@@ -90,10 +90,10 @@
   - type: Appearance
 
 - type: entity
-  name: XM8 carbine
+  name: M8A1
   parent: WeaponRifleDEG36K
   id: WeaponRifleUSXM8
-  description: The 5.56 rifle portion of the OICW, removed and made its own standalone rifle. Would later be developed into the G36 series of rifles.
+  description: The 5.56 rifle portion of the OICW, removed and made its own standalone rifle. A spin-off of the G36 series of rifles.
   components:
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/XM8.rsi
@@ -105,7 +105,7 @@
     layers:
       - map: ["barrelAttachment"]
         sprite: _Battlefield14/Objects/Weapons/Guns/Rifles/AR15/iconstates.rsi
-        offset: 0.5625 , 0.031 # 18, -1
+        offset: 0.5937 , 0.062 # 19, -2
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-0

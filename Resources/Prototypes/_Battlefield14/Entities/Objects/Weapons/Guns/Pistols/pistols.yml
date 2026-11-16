@@ -94,7 +94,7 @@
 
 - type: entity
   name: Mk 27
-  parent: WeaponPistolATGlock17
+  parent: WeaponPistolATGlock19
   id: WeaponPistolUSMK27
   description: The US military designation for the Glock-19 pistol, mostly issued to MARSOC and SEALs.
 
@@ -575,10 +575,10 @@
 #region AT
 
 - type: entity
-  name: Glock-17
+  name: Glock 17
   parent: BaseWeaponPistol
   id: WeaponPistolATGlock17
-  description: The Glock-17 pistol, the media called it a "ghost gun" due to its high use of polymers, which led to people thinking you could get it through metal detectors without getting discovered.
+  description: The Glock 17 pistol, the media called it a "ghost gun" due to its high use of polymers, which led to people thinking you could get it through metal detectors without getting discovered.
   components:
   - type: Sprite
     sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/glock17.rsi
@@ -641,6 +641,15 @@
       - description: Takes Glock-17 pattern magazines.
         color: "#4f94ad"
         requireDetailRange: true
+
+- type: entity
+  name: Glock 19
+  parent: WeaponPistolATGlock17
+  id: WeaponPistolATGlock19
+  description: A compact Glock pistol designed for military or police use, frequently used by civilians for concealed carry purposes.
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Pistols/glock19.rsi
 
 - type: entity
   name: Glock-20

@@ -167,6 +167,7 @@
       - WeaponPistolUSM1911
       - WeaponPistolM9
       - WeaponPistolATGlock17
+      - WeaponPistolATGlock19
       - WeaponSubmachinegunUSSP5
       - WeaponShotgunUSM590Buckshot
       - WeaponPistolRevolverBRJudge
@@ -187,7 +188,7 @@
     offset: 0.3
     prototypes:
       - WeaponPistolILDeagle
-      - WeaponPistolUSMK27
+      - WeaponPistolATGlock17
       - WeaponRifleUSAR15
       - WeaponSubmachinegunDEMP5A5
       - WeaponSubmachinegunUSMAC10
