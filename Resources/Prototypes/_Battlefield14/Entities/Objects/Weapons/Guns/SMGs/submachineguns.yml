@@ -212,8 +212,8 @@
       suitstorage2:
       - state: A4-equipped-BACKPACK
   - type: Gun
-    minAngle: 7
-    maxAngle: 7
+    minAngle: 5
+    maxAngle: 5
     fireRate: 11.6 # 700 RPM
     angleIncrease: 3
     angleDecay: 10
@@ -821,8 +821,8 @@
   - type: Clothing
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/Vityaz.rsi
   - type: Gun
-    minAngle: 7
-    maxAngle: 7
+    minAngle: 5
+    maxAngle: 5
     fireRate: 11.6 # 700 RPM
     angleIncrease: 1.5
     angleDecay: 15

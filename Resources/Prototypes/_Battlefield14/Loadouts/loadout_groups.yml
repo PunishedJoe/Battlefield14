@@ -532,6 +532,42 @@
   - LoadoutGunSR1MPVDVSLVET
   - LoadoutGunRUTT33VDVVET
 
+#region POUCHES
+
+- type: loadoutGroup
+  id: BF_PouchNATO
+  name: loadout-group-BF14-pouch
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutPouchMags
+  - LoadoutPouchDump
+  - LoadoutPouchFlaresGlowsticksBlue
+  - LoadoutPouchFlares
+  - LoadoutPouchGasMask
+
+- type: loadoutGroup
+  id: BF_PouchPACT
+  name: loadout-group-BF14-pouch
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutPouchMags
+  - LoadoutPouchDump
+  - LoadoutPouchFlaresGlowsticksRed
+  - LoadoutPouchFlares
+  - LoadoutPouchGasMask
+
+- type: loadoutGroup
+  id: BF_PouchSuspect
+  name: loadout-group-BF14-pouch
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - LoadoutPouchMagsPistolUSP45
+  - LoadoutPouchDump
+  - LoadoutPouchFlares
+
 #region MISC
 
 - type: loadoutGroup
@@ -544,8 +580,6 @@
   - LoadoutMiscItemsEntrenchingTool
   - LoadoutMiscItemsBinoculars
   - LoadoutMiscItemsMonsterWhite
-  - LoadoutMiscItemsPouchFlaresGlowsticksBlue
-  - LoadoutMiscItemsGasMaskPouch
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsCamonet15
@@ -563,8 +597,6 @@
   - LoadoutMiscItemsEntrenchingTool
   - LoadoutMiscItemsBinoculars
   - LoadoutMiscItemsMonsterWhite
-  - LoadoutMiscItemsPouchFlaresGlowsticksRed
-  - LoadoutMiscItemsGasMaskPouch
   - LoadoutMiscItemsBible
   - LoadoutMiscItemsCalculator
   - LoadoutMiscItemsCamonet15
@@ -617,7 +649,7 @@
   - LoadoutItemsIFFBoxPACTRed
   - LoadoutItemsIFFBoxPACTStGeorge
 
-#region Grenades
+#region GRENADES
 
 - type: loadoutGroup
   id: BF_GrenadePouch40x46

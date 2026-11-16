@@ -1,3 +1,5 @@
+#region base
+
 - type: entity
   id: BasePouch
   parent: BaseStorageItem
@@ -7,6 +9,9 @@
     sprite: _Battlefield14/Objects/Misc/pouches.rsi
     layers:
       - state: utility
+  - type: Clothing
+    slots: WEBBING
+    quickEquip: false
   - type: Item
     size: Small
     shape:
@@ -21,6 +26,8 @@
       Plastic: 100
   - type: StaticPrice
     price: 100
+
+#region first aid
 
 - type: entity
   id: PouchFirstAid
@@ -51,6 +58,19 @@
     damageCoefficient: 0.0
 
 - type: entity
+  id: PouchFirstAidSmall
+  parent: PouchFirstAid
+  name: first aid pouch
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: small_firstaid
+  - type: Storage
+    grid:
+    - 0,0,2,1
+
+- type: entity
   id: PouchMedkit
   parent: PouchFirstAid
   name: medkit pouch
@@ -78,6 +98,87 @@
         - Injector
         - Pill
 
+- type: entity
+  parent: ClothingArmbandSheathKnifePolymer
+  id: PouchFirstAidInjectors
+  name: injector pouch
+  description: A small pouch with the sole purpose of injectors at the ready in your time of need.
+  components:
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,1
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Misc/pouches.rsi
+    layers:
+      - state: firstaid_injector
+  - type: Clothing
+    sprite: null
+    slots: WEBBING
+  - type: ItemSlots
+    slots:
+      injector1:
+        name: "slot 1"
+        insertSound:
+          collection: BF_Magpouch_Insert
+        ejectSound:
+          collection: BF_Magpouch_Remove
+        whitelist:
+          tags:
+          - Syrette
+        components:
+          - Hypospray
+          - Injector
+      injector2:
+        name: "slot 2"
+        insertSound:
+          collection: BF_Magpouch_Insert
+        ejectSound:
+          collection: BF_Magpouch_Remove
+        whitelist:
+          tags:
+          - Syrette
+        components:
+          - Hypospray
+          - Injector
+      injector3:
+        name: "slot 3"
+        insertSound:
+          collection: BF_Magpouch_Insert
+        ejectSound:
+          collection: BF_Magpouch_Remove
+        whitelist:
+          tags:
+          - Syrette
+        components:
+          - Hypospray
+          - Injector
+      injector4:
+        name: "slot 4"
+        insertSound:
+          collection: BF_Magpouch_Insert
+        ejectSound:
+          collection: BF_Magpouch_Remove
+        whitelist:
+          tags:
+          - Syrette
+        components:
+          - Hypospray
+          - Injector
+      injector5:
+        name: "slot 5"
+        insertSound:
+          collection: BF_Magpouch_Insert
+        ejectSound:
+          collection: BF_Magpouch_Remove
+        whitelist:
+          tags:
+          - Syrette
+        components:
+          - Hypospray
+          - Injector
+
+#region mags
 
 - type: entity
   id: PouchMags
@@ -96,7 +197,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,2,1
+    - 0,0,1,1
     whitelist:
       tags:
       - Magazine
@@ -139,7 +240,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,3,1
+    - 0,0,2,1
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100
@@ -159,7 +260,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,3,1
+    - 0,0,2,1
     whitelist:
       tags:
       - PistolMagazine
@@ -186,12 +287,14 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,5,1
+    - 0,0,4,1
   - type: PhysicalComposition
     materialComposition:
       Plastic: 100
   - type: StaticPrice
     price: 100
+
+#region grenades
 
 - type: entity
   id: PouchGrenades
@@ -220,6 +323,8 @@
   - type: ExplosionResistance # add to medical pouches too btw
     damageCoefficient: 0.0
 
+#region flares
+
 - type: entity
   id: PouchFlares
   parent: BasePouch
@@ -241,8 +346,3 @@
     whitelist:
       tags:
         - Flare
-  - type: Clothing
-    quickEquip: false
-    slots:
-    - ARMBANDLEFT
-    - ARMBANDRIGHT

@@ -1,0 +1,44 @@
+- type: loadout
+  id: LoadoutPouchFlares
+  equipment:
+    pouch: PouchFlaresFilled
+
+- type: loadout
+  id: LoadoutMiscItemsPouchFlaresGlowsticksGreen
+  equipment:
+    pocket2: PouchFlaresFilledGlowsticksGreen
+
+- type: loadout
+  id: LoadoutPouchFlaresGlowsticksBlue
+  equipment:
+    pouch: PouchFlaresFilledGlowsticksBlue
+
+- type: loadout
+  id: LoadoutPouchFlaresGlowsticksRed
+  equipment:
+    pouch: PouchFlaresFilledGlowsticksRed
+
+- type: loadout
+  id: LoadoutPouchGasMask
+  equipment:
+    pouch: ClothingArmbandGasMaskPouch
+
+- type: loadout
+  id: LoadoutPouchDump
+  equipment:
+    pouch: ClothingArmbandDumpPouchBlack
+
+- type: loadout
+  id: LoadoutPouchMags
+  equipment:
+    pouch: PouchMags
+
+- type: loadout
+  id: LoadoutPouchMagsPistol
+  equipment:
+    pouch: PouchMagsPistol
+
+- type: loadout
+  id: LoadoutPouchMagsPistolUSP45
+  equipment:
+    pouch: PouchMagsPistolFilledUSP45

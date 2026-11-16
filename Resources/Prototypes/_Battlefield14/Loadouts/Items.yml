@@ -53,31 +53,6 @@
     - MortarCalculatorGreen
 
 - type: loadout
-  id: LoadoutMiscItemsPouchFlares
-  equipment:
-    leftarmband: PouchFlaresFilled
-
-- type: loadout
-  id: LoadoutMiscItemsPouchFlaresGlowsticksGreen
-  equipment:
-    leftarmband: PouchFlaresFilledGlowsticksGreen
-
-- type: loadout
-  id: LoadoutMiscItemsPouchFlaresGlowsticksBlue
-  equipment:
-    leftarmband: PouchFlaresFilledGlowsticksBlue
-
-- type: loadout
-  id: LoadoutMiscItemsPouchFlaresGlowsticksRed
-  equipment:
-    leftarmband: PouchFlaresFilledGlowsticksRed
-
-- type: loadout
-  id: LoadoutMiscItemsGasMaskPouch
-  equipment:
-    leftarmband: ClothingArmbandGasMaskPouch
-
-- type: loadout
   id: LoadoutMiscItemsBinoculars
   storage:
     back:

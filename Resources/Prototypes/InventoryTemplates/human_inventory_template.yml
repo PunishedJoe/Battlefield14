@@ -180,4 +180,12 @@
       uiWindowPos: 2,6
       strippingWindowPos: 3,5
       displayName: Auxillary suit storage
+    - name: webbing
+      slotTexture: pouch
+      slotFlags: WEBBING
+      stripTime: 3
+      uiWindowPos: 1,2
+      strippingWindowPos: 0,3
+      dependsOn: outerClothing
+      displayName: Webbing
     # End BF14

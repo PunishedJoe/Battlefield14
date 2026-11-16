@@ -18,3 +18,4 @@ loadout-group-BF14-sidearm = Sidearm
 loadout-group-BF14-map = Navigation
 loadout-group-BF14-shoes = Shoes
 loadout-group-BF14-pouchgrenades = Grenade pouch
+loadout-group-BF14-pouch = Armour pouch

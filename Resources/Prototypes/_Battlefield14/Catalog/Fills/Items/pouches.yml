@@ -70,7 +70,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleSTANAG
-      amount: 3
+      amount: 2
 
 - type: entity
   parent: PouchMagsLarge
@@ -80,7 +80,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleSTANAG
-      amount: 4
+      amount: 3
 
 - type: entity
   parent: PouchMags
@@ -90,7 +90,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleSTANAGShort
-      amount: 3
+      amount: 2
 
 - type: entity
   parent: PouchMagsLarge
@@ -100,7 +100,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleSTANAGShort
-      amount: 4
+      amount: 3
 
 - type: entity
   parent: PouchMags
@@ -110,7 +110,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleG36
-      amount: 3
+      amount: 2
 
 - type: entity
   parent: PouchMagsLarge
@@ -120,7 +120,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleG36
-      amount: 4
+      amount: 3
 
 - type: entity
   parent: PouchMags
@@ -130,7 +130,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleAK74
-      amount: 3
+      amount: 2
 
 - type: entity
   parent: PouchMagsLarge
@@ -140,7 +140,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleAK74
-      amount: 4
+      amount: 3
 
 - type: entity
   parent: PouchMagsLarge
@@ -150,7 +150,7 @@
   - type: StorageFill
     contents:
     - id: MagazineRifleAK74Black
-      amount: 4
+      amount: 3
 
 - type: entity
   parent: PouchMagsPistol
@@ -160,7 +160,7 @@
   - type: StorageFill
     contents:
     - id: MagazinePistolUSP45
-      amount: 4
+      amount: 3
 
 - type: entity
   parent: PouchMagsPistolLarge
@@ -170,7 +170,7 @@
   - type: StorageFill
     contents:
     - id: MagazineSubmachinegunMP5
-      amount: 6
+      amount: 5
 
 - type: entity
   parent: PouchMagsPistolLarge
@@ -180,7 +180,7 @@
   - type: StorageFill
     contents:
     - id: MagazineSubmachinegunMP7
-      amount: 6
+      amount: 5
 
 - type: entity
   parent: PouchMagsPistolLarge
@@ -190,7 +190,7 @@
   - type: StorageFill
     contents:
     - id: MagazineSubmachinegunVityaz
-      amount: 6
+      amount: 5
 
 - type: entity
   parent: PouchMagsPistolLarge
@@ -200,7 +200,7 @@
   - type: StorageFill
     contents:
     - id: MagazineSubmachinegunSR2MP
-      amount: 6
+      amount: 5
 
 #region grenade pouches
 
