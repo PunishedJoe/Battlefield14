@@ -14,6 +14,7 @@
   - BF_NATOIFF
   - BF_SoldierGloves
   - BF_JumpsuitsUSMC
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -31,6 +32,7 @@
   - BF_SoldierGloves
   - BF_JumpsuitsUSMC
   - BF_GrenadePouch40x46
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -47,6 +49,7 @@
   - BF_NATOIFF
   - BF_SoldierGloves
   - BF_JumpsuitsUSMC
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -62,6 +65,7 @@
   - BF_NATOIFF
   - BF_SoldierGloves
   - BF_JumpsuitsUSMC
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -78,6 +82,7 @@
   - BF_SoldierGloves
   - BF_JumpsuitsUSMC
   - BF_NATOIFF
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -92,6 +97,7 @@
   - BF_NATOIFF
   - BF_SoldierGloves
   - BF_JumpsuitsUSMC
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -102,12 +108,14 @@
 - type: roleLoadout
   id: JobHECUSquadLeader
   groups:
+  - BF_PouchNATO
   - BF_MiscItemsNATO
   - BF_Map
 
 - type: roleLoadout
   id: JobHECURifleman
   groups:
+  - BF_PouchNATO
   - BF_CombatMasks
   - BF_MiscItemsNATO
   - BF_Map
@@ -115,6 +123,7 @@
 - type: roleLoadout
   id: JobHECUMedic
   groups:
+  - BF_PouchNATO
   - BF_CombatMasks
   - BF_MiscItemsNATO
   - BF_Map
@@ -122,6 +131,7 @@
 - type: roleLoadout
   id: JobHECUSupport
   groups:
+  - BF_PouchNATO
   - BF_MiscItemsNATO
   - BF_Map
 
@@ -132,6 +142,7 @@
   groups:
   - BF_SoldierGlassesTan
   - BF_NATOIFF
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -143,6 +154,7 @@
   - BF_SoldierGlassesTan
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -153,6 +165,7 @@
   groups:
   - BF_CombatMasks
   - BF_NATOIFF
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - ContractorWallet
@@ -166,6 +179,7 @@
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
   - BF_GrenadePouch40x46
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -180,6 +194,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
@@ -195,6 +210,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -210,6 +226,7 @@
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
   - BF_GrenadePouch40x46
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -225,6 +242,7 @@
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
   - BF_LongarmsARNGRifleman
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -238,6 +256,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
@@ -252,6 +271,7 @@
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
   - BF_LongarmsARNGMedic
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -265,6 +285,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_LongarmsARNGRecon
+  - BF_PouchNATO
   - BF_BackpacksTan
   - BF_MiscItemsNATO
   - BF_Map
@@ -277,6 +298,7 @@
   groups:
   - BF_CrewGlasses
   - BF_WPSGloves
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - BF_Map
@@ -287,6 +309,7 @@
   groups:
   - BF_CrewGlasses
   - BF_WPSGloves
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - BF_Map
@@ -297,6 +320,7 @@
   groups:
   - BF_CrewGlasses
   - BF_WPSGloves
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - BF_Map
@@ -310,6 +334,7 @@
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
@@ -323,6 +348,7 @@
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
@@ -335,6 +361,7 @@
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
@@ -350,6 +377,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsBW
@@ -364,6 +392,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsBW
@@ -378,6 +407,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
@@ -391,6 +421,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsBW
@@ -404,6 +435,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_NATOIFF
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
@@ -416,6 +448,7 @@
   - BF_SoldierGloves
   - BF_NATOIFF
   - BF_HelmetAttachmentNATO
+  - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_Map
@@ -435,6 +468,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsRGFSL
@@ -450,6 +484,7 @@
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
   - BF_GrenadePouchVOG25
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsRGFSL
@@ -465,6 +500,7 @@
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
   - BF_LongarmsRGFRifleman
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -478,6 +514,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -491,6 +528,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -504,6 +542,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -516,6 +555,7 @@
   - BF_CombatMasks
   - BF_SoldierGloves
   - BF_PACTIFF
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -534,6 +574,7 @@
   - BF_PACTIFF
   - BF_SoldierGloves
   - BF_JumpsuitsVDV
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -552,6 +593,7 @@
   - BF_SoldierGloves
   - BF_JumpsuitsVDV
   - BF_GrenadePouchVOG25
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -569,6 +611,7 @@
   - BF_PACTIFF
   - BF_SoldierGloves
   - BF_JumpsuitsVDV
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -585,6 +628,7 @@
   - BF_PACTIFF
   - BF_SoldierGloves
   - BF_JumpsuitsVDV
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -601,6 +645,7 @@
   - BF_PACTIFF
   - BF_SoldierGloves
   - BF_JumpsuitsVDV
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -617,6 +662,7 @@
   - BF_PACTIFF
   - BF_SoldierGloves
   - BF_JumpsuitsVDV
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -629,6 +675,7 @@
   groups:
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -639,6 +686,7 @@
   groups:
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - ContractorWallet
@@ -648,6 +696,7 @@
   groups:
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - ContractorWallet
@@ -656,6 +705,7 @@
   id: JobRKhBMedic
   groups:
   - BF_CombatMasks
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - ContractorWallet
@@ -668,6 +718,7 @@
   - BF_VDVHead
   - BF_SoldierGlassesGreen
   - BF_PACTIFF
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -679,6 +730,7 @@
   - BF_SoldierGlassesGreen
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -689,6 +741,7 @@
   groups:
   - BF_CombatMasks
   - BF_PACTIFF
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - ContractorWallet
@@ -698,26 +751,31 @@
 - type: roleLoadout
   id: JobFSBSquadLeader
   groups:
+  - BF_PouchPACT
   - ContractorWallet # required so you spawn with anything
 
 - type: roleLoadout
   id: JobFSBRifleman
   groups:
+  - BF_PouchPACT
   - ContractorWallet
 
 - type: roleLoadout
   id: JobFSBSupport
   groups:
+  - BF_PouchPACT
   - ContractorWallet
 
 - type: roleLoadout
   id: JobFSBMedic
   groups:
+  - BF_PouchPACT
   - ContractorWallet
 
 - type: roleLoadout
   id: JobFSBRecon
   groups:
+  - BF_PouchPACT
   - ContractorWallet
 
 #region OMON
@@ -731,6 +789,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -746,6 +805,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_PistolsVDVSL
@@ -761,6 +821,7 @@
   - BF_SoldierGloves
   - BF_PACTIFF
   - BF_HelmetAttachmentPACT
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsPACT
   - BF_Map
@@ -777,6 +838,7 @@
   - BF_CrewGlasses
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - ContractorWallet
@@ -787,6 +849,7 @@
   - BF_CrewGlasses
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - ContractorWallet
@@ -797,6 +860,7 @@
   - BF_CrewGlasses
   - BF_CombatMasks
   - BF_WPSGloves
+  - BF_PouchPACT
   - BF_BackpacksBlack
   - BF_MiscItemsIND
   - ContractorWallet
@@ -844,6 +908,7 @@
   - BF_CombatMasks
   - BF_CrewGlasses
   - BF_JumpsuitsSuspectUS
+  - BF_PouchSuspect
   - BF_WPSGloves
   - BF_ShoesCivilian
   - BF_MiscItemsIND
@@ -856,6 +921,7 @@
   - BF_CombatMasks
   - BF_CrewGlasses
   - BF_SoldierGloves
+  - BF_PouchNATO
   - BF_MiscItemsNATO
   - BF_NATOIFF
   - ContractorWallet
@@ -867,6 +933,7 @@
   - BF_CombatMasks
   - BF_CrewGlasses
   - BF_SoldierGloves
+  - BF_PouchPACT
   - BF_MiscItemsPACT
   - BF_PACTIFF
   - ContractorWallet
