@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "license": "CC-BY-NC-SA-4.0",
-  "copyright": "Made by WillyBillyGilly, permission given for use in the Battlefield14 project. Do not re-use these sprites without permission from WillyBillyGilly.",
+  "license": "All rights reserved",
+  "copyright": "Made by WillyBillyGilly for the Battlefield 14 project, do not relicense, edit, or reuse without permission",
   "size": {
-    "x": 48,
+    "x": 64,
     "y": 32
   },
   "states": [
@@ -18,15 +18,6 @@
     },
     {
       "name": "mag-0"
-    },
-    {
-      "name": "alt-mag-0"
-    },
-    {
-      "name": "alt-2-mag-0"
-    },
-    {
-      "name": "stripes"
     },
     {
       "name": "inhand-left",
@@ -45,11 +36,11 @@
       "directions": 4
     },
     {
-      "name": "equipped-BACKPACK",
+      "name": "equipped-SUITSTORAGE",
       "directions": 4
     },
     {
-      "name": "equipped-SUITSTORAGE",
+      "name": "equipped-BACKPACK",
       "directions": 4
     }
   ]
