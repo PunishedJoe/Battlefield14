@@ -94356,6 +94356,13 @@ entities:
     - type: Transform
       pos: 323.5,50.5
       parent: 1
+- proto: SpawnPointRGFMachinegunner
+  entities:
+  - uid: 55999
+    components:
+    - type: Transform
+      pos: 327.5,50.5
+      parent: 1
 - proto: SpawnPointRGFLieutenant
   entities:
   - uid: 1773

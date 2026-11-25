@@ -53,7 +53,7 @@
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: natosupport
+    - state: natomachinegunner
       scale: 1.5,1.5
 
 - type: entity
@@ -416,7 +416,7 @@
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: natosupport
+    - state: natomachinegunner
       scale: 1.5,1.5
 
 - type: entity
@@ -500,7 +500,20 @@
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: pactsupport
+    - state: pactautorifleman
+      scale: 1.5,1.5
+
+- type: entity
+  id: SpawnPointRGFMachinegunner
+  parent: SpawnPointJobBase
+  name: RGF Machinegunner
+  components:
+  - type: SpawnPoint
+    job_id: RGFMachinegunner
+  - type: Sprite
+    sprite: _Battlefield14/Interface/Misc/class_icons.rsi
+    layers:
+    - state: pactmachinegunner
       scale: 1.5,1.5
 
 - type: entity
@@ -580,7 +593,7 @@
   - type: Sprite
     sprite: _Battlefield14/Interface/Misc/class_icons.rsi
     layers:
-    - state: pactsupport
+    - state: pactautorifleman
       scale: 1.5,1.5
 
 - type: entity
