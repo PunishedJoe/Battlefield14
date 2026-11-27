@@ -8,6 +8,12 @@
   },
   "states": [
     {
+      "name": "algo"
+    },
+    {
+      "name": "kies"
+    },
+    {
       "name": "gas1"
     },
     {

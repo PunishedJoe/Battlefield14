@@ -1,0 +1,133 @@
+- type: entity
+  name: Kies
+  parent: [ BaseMob, MobCombat, MobDamageable ]
+  id: BF14MobKies
+  description: A large metal key with a face
+  suffix: Admeme
+  components:
+  - type: LanguageKnowledge # Einstein Engines - Languages (all mobs should speak TauCeti unless otherwise specified, to prevent universal.)
+    speaks:
+    - TauCetiBasic
+    understands:
+    - TauCetiBasic
+    - Russian
+    - Ukrainian
+    - English
+    - Sign
+    - German
+    - Mexican
+    - Esperanto
+    - Red
+    - Blue
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: alive
+      sprite: _Battlefield14/Mobs/kies.rsi
+  - type: Physics
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.48
+        density: 200
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: ContainerContainer
+  - type: MovementAlwaysTouching
+  - type: Tag
+    tags:
+    - FootstepSound
+    - DoorBumpOpener
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 5
+    baseSprintSpeed: 5
+    weightlessAcceleration: 2
+    weightlessFriction: 2
+    baseWeightlessModifier: 2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+#      590: Critical
+      600: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: alive
+      Critical:
+        Base: dead
+      Dead:
+        Base: dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      450: 0.85
+      550: 0.7
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    damage:
+      types:
+        Blunt: 35
+    animation: WeaponArcFist
+  - type: ActionGrant
+    actions:
+    - ActionKiesTalk1
+    - ActionKiesTalk2
+  - type: Puller
+    needsHands: false
+  - type: Body
+    prototype: Aghost
+    thermalVisibility: false
+  - type: ComplexInteraction
+  - type: ZombieImmune
+  - type: NightVision # Gen 3 wide-quadtube
+    relayOverlay: false
+    goggleEffect: true
+    viewCircleRadius: 600
+    viewCircleCount: 1
+    viewCircleSpacing: 280
+    action: ActionToggleNightVision
+    phosphorColor: "#00FF00"
+    lightingColor: "#FFFFFF32"
+  - type: RadarConsole
+    maxRange: 512
+    followEntity: true
+  - type: ActivatableUI
+    key: enum.RadarConsoleUiKey.Key
+    inHandsOnly: false
+    singleUser: true
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+  - type: Insulated
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    name: "Kies"
+    description: "Kies kies kies, o algo o algo."
+    rules: "Kies kies kies, o algo o algo."
+    raffle:
+      settings: short
+  - type: Damageable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTypeTrigger
+        damageType: Blunt
+        damage: 600
+      behaviors:
+      - !type:GibBehavior { }
