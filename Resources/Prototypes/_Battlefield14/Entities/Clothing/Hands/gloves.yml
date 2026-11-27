@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: BF14ClothingHandsGlovesCombatDesert
+  components:
+  - type: Sprite
+    sprite: _Battlefield14/Clothing/Hands/Gloves/combatdesert.rsi
+  - type: Clothing
+    sprite: _Battlefield14/Clothing/Hands/Gloves/combatdesert.rsi
