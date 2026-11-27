@@ -1,7 +1,7 @@
 - type: loadout
   id: LoadoutPouchFlares
   equipment:
-    pouch: PouchFlaresFilled
+    webbing: PouchFlaresFilled
 
 - type: loadout
   id: LoadoutMiscItemsPouchFlaresGlowsticksGreen
@@ -11,34 +11,34 @@
 - type: loadout
   id: LoadoutPouchFlaresGlowsticksBlue
   equipment:
-    pouch: PouchFlaresFilledGlowsticksBlue
+    webbing: PouchFlaresFilledGlowsticksBlue
 
 - type: loadout
   id: LoadoutPouchFlaresGlowsticksRed
   equipment:
-    pouch: PouchFlaresFilledGlowsticksRed
+    webbing: PouchFlaresFilledGlowsticksRed
 
 - type: loadout
   id: LoadoutPouchGasMask
   equipment:
-    pouch: ClothingArmbandGasMaskPouch
+    webbing: ClothingArmbandGasMaskPouch
 
 - type: loadout
   id: LoadoutPouchDump
   equipment:
-    pouch: ClothingArmbandDumpPouchBlack
+    webbing: ClothingArmbandDumpPouchBlack
 
 - type: loadout
   id: LoadoutPouchMags
   equipment:
-    pouch: PouchMags
+    webbing: PouchMags
 
 - type: loadout
   id: LoadoutPouchMagsPistol
   equipment:
-    pouch: PouchMagsPistol
+    webbing: PouchMagsPistol
 
 - type: loadout
   id: LoadoutPouchMagsPistolUSP45
   equipment:
-    pouch: PouchMagsPistolFilledUSP45
+    webbing: PouchMagsPistolFilledUSP45

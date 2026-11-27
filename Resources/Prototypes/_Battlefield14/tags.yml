@@ -308,6 +308,9 @@
   id: MagazineSubmachinegunMP9
 
 - type: Tag
+  id: MagazineSubmachinegunUMP45
+
+- type: Tag
   id: MagazinePistolP90
 
 - type: Tag

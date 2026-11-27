@@ -44,11 +44,10 @@
   id: USSFCrewmanGear
   equipment:
     id: USSFCrewmanPDA
-    head: ClothingHeadHatBlacksoft
+    head: ClothingHeadHatCruelSoft
     ears: ClothingHeadsetAltUS
     jumpsuit: ClothingUniformJumpsuitSpaceForceCrewman
     shoes: ClothingShoesBootsJackFilledUSMC
-#    back: ClothingBackpackSecurity
     belt: ClothingBeltAssaultFilledToolsSRD
     outerClothing: ClothingOuterArmorWebVestSec
     gloves: ClothingHandsGlovesCombat

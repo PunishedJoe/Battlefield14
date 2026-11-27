@@ -43,6 +43,7 @@
         - BF14WeaponCaseLongDEMP5A5
         - BF14WeaponCaseLongDEMP5SD6
         - BF14WeaponCaseLongDEMP7
+        - BF14WeaponCaseLongDEUMP45
         - BF14WeaponCaseLongRUSR2MP
         - BF14WeaponCaseLongRUPPsh41
         - BF14WeaponCaseLongRUVityaz
@@ -174,7 +175,10 @@
     - type: TimedSpawner
       prototypes:
         - BF14WeaponCaseLongDEMP5A5
+        - BF14WeaponCaseLongDEMP5SD6
+        - BF14WeaponCaseLongDEMP510
         - BF14WeaponCaseLongDEMP7
+        - BF14WeaponCaseLongDEUMP45
       chance: 1
       intervalSeconds: 60
       minimumEntitiesSpawned: 1

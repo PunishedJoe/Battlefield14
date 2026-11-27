@@ -157,7 +157,7 @@
 #region SWAT
 
 - type: loadout
-  id: LoadoutGunAR15Police
+  id: LoadoutGunAR15Police # Outdated convention, should be LoadoutGunCase
   name: AR15 police carbine gun case
   inhand:
   - BF14WeaponCaseLongUSAR15Police
@@ -169,15 +169,22 @@
   - BF14WeaponCaseLongDEMP5A4
 
 - type: loadout
+  id: LoadoutGunCaseUMP45
+  name: UMP45 gun case
+  inhand:
+  - BF14WeaponCaseLongDEUMP45
+
+- type: loadout
   id: LoadoutGunM870
   name: M870 gun case
   inhand:
   - BF14WeaponCaseLongUSM870
 
+
 #region OMON
 
 - type: loadout
-  id: LoadoutGunAKS74U
+  id: LoadoutGunAKS74U # Outdated convention, should be LoadoutGunCase
   name: AKS-74U gun case
   inhand:
   - BF14WeaponCaseLongRUAKS74U

@@ -256,6 +256,17 @@
     - id: MagazineSubmachinegunMP7
       amount: 5
 
+- type: entity
+  parent: WeaponCaseLong
+  id: BF14WeaponCaseLongDEUMP45
+  suffix: UMP45
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponSubmachinegunDEUMP45
+    - id: MagazineSubmachinegunUMP45
+      amount: 5
+
 #region Shotguns, US
 
 - type: entity
