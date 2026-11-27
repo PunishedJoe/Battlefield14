@@ -37,6 +37,7 @@
       - WeaponPistolBEFiveSeven
       - WeaponRifleUSAR15
       - WeaponSubmachinegunDEMP5A5
+      - WeaponSubmachinegunDEUMP45
       - WeaponSubmachinegunUSMAC10
       - WeaponSubmachinegunATMP9
       - WeaponRifleUSM16A2
@@ -114,6 +115,7 @@
       - MagazineRifleSTANAG
       - MagazineRifleG36
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunUMP45
       - MagazineSubmachinegunMP9
       - MagazineSubmachinegunMAC10
       - SmokeGrenadeUSM18
@@ -143,6 +145,7 @@
       - MagazineRifleFAL
       - MagazineRifleFAL30
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunUMP45
       - MagazineSubmachinegunMAC10
       - FlashbangGrenadeUSM84
       - SmokeGrenadeUSM18
@@ -191,6 +194,7 @@
       - WeaponPistolATGlock17
       - WeaponRifleUSAR15
       - WeaponSubmachinegunDEMP5A5
+      - WeaponSubmachinegunDEUMP45
       - WeaponSubmachinegunUSMAC10
       - WeaponShotgunUS1887Short
       - WeaponShotgunUSM870
@@ -238,6 +242,7 @@
       - MagazinePistolM1911
       - MagazinePistolGlock17
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunUMP45
       - MagazineRifleSTANAGShort
       - ShellBoxBF12GaugeBuckshot
       - ShellBox410Bore
@@ -265,6 +270,7 @@
       - MagazineRifleM14
       - MagazineRifleSTANAG
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunUMP45
       - MagazineSubmachinegunMAC10
       - SmokeGrenadeUSM18
       - FlashbangGrenadeUSM84
@@ -289,6 +295,7 @@
       - MagazineRifleSTANAG
       - MagazineSniperM40A5
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunUMP45
       - MagazineSubmachinegunMAC10
       - SmokeGrenadeUSM18
       - FlashbangGrenadeUSM84
@@ -332,6 +339,7 @@
       - WeaponPistolDEP8A1
       - WeaponRifleDEG36C
       - WeaponSubmachinegunDEMP5A5
+      - WeaponSubmachinegunDEUMP45
       - WeaponShotgunUSM870
     chance: 1
 
@@ -372,6 +380,7 @@
       - MagazinePistolUSP45
       - MagazinePistolUSP9
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunUMP45
       - ShellBoxBF12GaugeBuckshot
       - SmokeGrenadeDEDM45
     chance: 1
@@ -396,6 +405,7 @@
       - MagazineRifleG3
       - MagazineRifleG36
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunUMP45
       - SmokeGrenadeDEDM45
       - FlashbangGrenadeUSM84
       - OffensiveGrenadeDEDM51
@@ -420,6 +430,7 @@
       - MagazineRifleG28
       - MagazineRifleG36
       - MagazineSubmachinegunMP5
+      - MagazineSubmachinegunUMP45
       - SmokeGrenadeDEDM45
       - FlashbangGrenadeUSM84
       - DefensiveGrenadeDEDM51
