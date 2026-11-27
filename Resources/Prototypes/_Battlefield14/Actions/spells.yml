@@ -1,4 +1,36 @@
 - type: entity
+  id: ActionKiesTalk1
+  name: Kies
+  description: This spell opens nearby doors.
+  components:
+  - type: InstantAction
+    useDelay: 10
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Battlefield14/Misc/kies/kies.ogg
+    itemIconStyle: BigAction
+    icon:
+      sprite: _Battlefield14/Objects/Misc/spells.rsi
+      state: kies
+    event: !type:KnockSpellEvent
+      speech: Kies kies kies.
+
+- type: entity
+  id: ActionKiesTalk2
+  name: Algo
+  description: This spell opens nearby doors.
+  components:
+  - type: InstantAction
+    useDelay: 10
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Battlefield14/Misc/kies/oalgo.ogg
+    itemIconStyle: BigAction
+    icon:
+      sprite: _Battlefield14/Objects/Misc/spells.rsi
+      state: algo
+    event: !type:KnockSpellEvent
+      speech: O algo O algo.
+
+- type: entity
   id: ActionGassyTeleport
   name: Teleport
   description: Teleport to the clicked location.
