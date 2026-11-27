@@ -405,6 +405,7 @@
   - LoadoutHandsGlovesSoldierCombat
   - LoadoutHandsGlovesSoldierMercCombat
   - LoadoutHandsGlovesSoldierMercFingerless
+  - LoadoutHandsGlovesSoldierCombatDesert
 
 - type: loadoutGroup
   id: BF_WPSGloves

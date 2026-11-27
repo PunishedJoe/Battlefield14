@@ -14,16 +14,23 @@
   equipment:
     gloves: ClothingHandsGlovesFingerless
 
+
 - type: loadout
   id: LoadoutHandsGlovesSoldierMercCombat
   equipment:
     gloves: ClothingHandsMercenaryGlovesCombat
-
-        
+   
 - type: loadout
   id: LoadoutHandsGlovesSoldierMercFingerless
   equipment:
     gloves: ClothingHandsGlovesMercFingerless
+
+
+- type: loadout
+  id: LoadoutHandsGlovesSoldierCombatDesert
+  equipment:
+    gloves: BF14ClothingHandsGlovesCombatDesert
+
 
 - type: loadout
   id: LoadoutHandsGlovesSoldierWristwatch
