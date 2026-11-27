@@ -189,7 +189,7 @@
   name: MP5A4
   parent: BaseWeaponSubMachineGun
   id: WeaponSubmachinegunDEMP5A4
-  description: An MP5A5 rechambered in 10x25mm Auto designed for use by the FBI. Features an automatic bolt hold open.
+  description: Featherlight recoil, swag, and a reputation; all you need in a submachinegun.
   components:
   - type: Item
     sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/MP5A4.rsi
@@ -385,6 +385,7 @@
 
 - type: entity
   name: MP5/10
+  description: An MP5A5 rechambered in 10x25mm Auto designed for use by the FBI. Features an automatic bolt hold open.
   parent: WeaponSubmachinegunDEMP5A4Flashlight
   id: WeaponSubmachinegunDEMP510
   components:
@@ -531,6 +532,85 @@
   - type: MagazineVisuals
     magState: mag
     steps: 1
+    zeroVisible: true
+  - type: Appearance
+
+- type: entity
+  name: UMP45
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubmachinegunDEUMP45
+  description: Designed as a cheaper alternative to the MP5.
+  components:
+  - type: Item
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/UMP45.rsi
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/UMP45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Battlefield14/Objects/Weapons/Guns/SMGs/UMP45.rsi
+    clothingVisuals:
+      suitstorage2:
+      - state: equipped-BACKPACK
+  - type: Gun
+    minAngle: 5.5
+    maxAngle: 5.5
+    fireRate: 10 # 600 RPM
+    angleIncrease: 3
+    angleDecay: 10
+    projectileSpeed: 35 # pistol caliber
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    - Burst
+    burstCooldown: 0.2
+    soundGunshot:
+      collection: BF_MP5_Gunshots
+      params:
+        volume: -5
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_rack.ogg
+      params:
+        volume: -3
+    soundBoltClosed:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_slap.ogg
+      params:
+        volume: -3
+    soundBoltOpened:
+      path: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_chlock.ogg
+      params:
+        volume: -3
+        variation: 0.125
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineSubmachinegunUMP45
+        insertSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magin.ogg
+        ejectSound: /Audio/_Battlefield14/Weapons/Guns/MP5/uc_mp5_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineSubmachinegunUMP45
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: BF_CartridgePistol45ACP
+        priority: 1
+        whitelist:
+          tags:
+            - BF_CartridgePistol45ACP
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
     zeroVisible: true
   - type: Appearance
 

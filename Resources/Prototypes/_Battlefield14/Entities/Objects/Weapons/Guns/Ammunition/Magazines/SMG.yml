@@ -42,3 +42,34 @@
       - MagazineSubmachinegunAR9
       - Magazine
       - PistolMagazine
+
+- type: entity
+  parent: BaseMagazineSMG
+  id: MagazineSubmachinegunUMP45
+  name: UMP45 magazine (.45 ACP)
+  description: Gun food.
+  components:
+  - type: Tag
+    tags:
+      - MagazineSubmachinegunUMP45
+      - Magazine
+      - PistolMagazine
+  - type: BallisticAmmoProvider
+    proto: BF_CartridgePistol45ACP
+    mayTransfer: true
+    whitelist:
+      tags:
+        - BF_CartridgePistol45ACP
+    capacity: 25
+  - type: Sprite
+    sprite: _Battlefield14/Objects/Weapons/Guns/Ammunition/Magazines/Pistolcaliber/UMP45.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: Appearance

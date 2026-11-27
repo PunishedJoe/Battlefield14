@@ -146,6 +146,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -158,6 +159,7 @@
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
   - BF_PistolsUSMCSL
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout
@@ -168,6 +170,7 @@
   - BF_PouchNATO
   - BF_BackpacksBlack
   - BF_MiscItemsNATO
+  - BF_Map
   - ContractorWallet
 
 - type: roleLoadout

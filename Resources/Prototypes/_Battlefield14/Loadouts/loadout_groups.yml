@@ -492,6 +492,7 @@
   loadouts:
   - LoadoutGunAR15Police
   - LoadoutGunMP5
+  - LoadoutGunCaseUMP45
   - LoadoutGunM870
 
 #region SIDEARMS
